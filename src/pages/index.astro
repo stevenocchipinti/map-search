@@ -91,107 +91,74 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 				
 				<!-- Card Containers -->
-				<div id="cards-container" class="hidden space-y-4">
+				<div id="cards-container" class="space-y-4">
 				<!-- School Card -->
-				<div id="school-card-container" class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+				<div id="school-card-container" class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
 					<!-- Primary Card -->
 					<div id="school-primary-card" class="p-4">
-						<div class="flex items-start justify-between gap-4">
-							<div class="flex-1">
-								<div class="flex items-center gap-2 mb-2">
-									<svg id="school-icon" class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C6.5 6.253 3 9.756 3 14s3.5 7.747 9 7.747m0-13c5.5 0 9-3.503 9-7.747m0 0c0-.016 0-.032 0-.048"/></svg>
-									<h3 class="text-lg font-semibold text-gray-900">Loading...</h3>
-								</div>
-								<p class="text-sm text-gray-600 mb-3">—</p>
-								<div class="flex items-center gap-4">
-									<div class="flex items-center gap-2 text-gray-500 text-sm">
-										<span class="inline-block w-4 h-4">🚶</span>
-										<span>Loading...</span>
-									</div>
-								</div>
+						<div class="flex items-center gap-3 text-gray-400">
+							<div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">
+								<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.75 3a1.25 1.25 0 0 0-1.25 1.25v.25H3.5a1 1 0 0 0-.825 1.554l5.362 8.042a1 1 0 0 0 1.65-.001l5.364-8.042A1 1 0 0 0 14.225 4.5h-1.725v-.25A1.25 1.25 0 0 0 11.25 3h-.5ZM12.75 6H15l-4.5 6.75L6 6h2.25v2.25a.75.75 0 0 0 1.5 0V6h1.5v2.25a.75.75 0 0 0 1.5 0V6Z"/><path d="M4 14.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H4.75a.75.75 0 0 1-.75-.75Z"/></svg>
 							</div>
-							<button class="school-toggle text-blue-600 hover:text-blue-700 font-medium text-sm hidden">
-								▼ <span class="school-alt-count">0</span>
-							</button>
+							<span class="font-medium">Schools</span>
 						</div>
 					</div>
 					
 					<!-- Alternatives Toggle -->
 					<div id="school-alternatives-toggle" class="hidden border-t border-gray-200 px-4 py-3 hover:bg-gray-50 cursor-pointer transition">
-						<button class="text-blue-600 hover:text-blue-700 text-sm font-medium">
-							▼ View <span class="school-alt-count">0</span> more options
+						<button class="text-blue-600 hover:text-blue-700 text-sm font-medium w-full flex items-center justify-between">
+							<span>View <span class="school-alt-count">0</span> more options</span>
+							<svg class="w-4 h-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
 						</button>
 					</div>
 					
 					<!-- Alternatives List -->
-					<div id="school-alternatives" class="hidden border-t border-gray-200 max-h-60 overflow-y-auto">
+					<div id="school-alternatives" class="hidden border-t border-gray-200 max-h-60 overflow-y-auto bg-gray-50">
 						<!-- Populated by JavaScript -->
 					</div>
 				</div>
 				
 				<!-- Station Card -->
-				<div id="station-card-container" class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+				<div id="station-card-container" class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
 					<div id="station-primary-card" class="p-4">
-						<div class="flex items-start justify-between gap-4">
-							<div class="flex-1">
-								<div class="flex items-center gap-2 mb-2">
-									<svg id="station-icon" class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-									<h3 class="text-lg font-semibold text-gray-900">Loading...</h3>
-								</div>
-								<p class="text-sm text-gray-600 mb-3">Train Station</p>
-								<div class="flex items-center gap-4">
-									<div class="flex items-center gap-2 text-gray-500 text-sm">
-										<span class="inline-block w-4 h-4">🚶</span>
-										<span>Loading...</span>
-									</div>
-								</div>
+						<div class="flex items-center gap-3 text-gray-400">
+							<div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">
+								<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-1l-2 4h-2l2-4H9l2 4H9l-2-4H6a2 2 0 0 1-2-2V4Zm2 0v5h12V4H6Zm0 7v5h12v-5H6Zm2 1.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm7.5 0a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"/></svg>
 							</div>
-							<button class="station-toggle text-blue-600 hover:text-blue-700 font-medium text-sm hidden">
-								▼ <span class="station-alt-count">0</span>
-							</button>
+							<span class="font-medium">Train Stations</span>
 						</div>
 					</div>
 					
 					<div id="station-alternatives-toggle" class="hidden border-t border-gray-200 px-4 py-3 hover:bg-gray-50 cursor-pointer transition">
-						<button class="text-blue-600 hover:text-blue-700 text-sm font-medium">
-							▼ View <span class="station-alt-count">0</span> more options
+						<button class="text-blue-600 hover:text-blue-700 text-sm font-medium w-full flex items-center justify-between">
+							<span>View <span class="station-alt-count">0</span> more options</span>
+							<svg class="w-4 h-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
 						</button>
 					</div>
 					
-					<div id="station-alternatives" class="hidden border-t border-gray-200 max-h-60 overflow-y-auto">
+					<div id="station-alternatives" class="hidden border-t border-gray-200 max-h-60 overflow-y-auto bg-gray-50">
 					</div>
 				</div>
 					
 				<!-- Supermarket Card -->
-				<div id="grocery-card-container" class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+				<div id="grocery-card-container" class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
 					<div id="grocery-primary-card" class="p-4">
-						<div class="flex items-start justify-between gap-4">
-							<div class="flex-1">
-								<div class="flex items-center gap-2 mb-2">
-									<svg id="grocery-icon" class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a1 1 0 00-1-1H9a1 1 0 00-1 1v4M5 9h14l1 12H4L5 9z"/></svg>
-									<h3 class="text-lg font-semibold text-gray-900">Loading...</h3>
-								</div>
-								<p class="text-sm text-gray-600 mb-3">Supermarket</p>
-								<div class="flex items-center gap-4">
-									<div class="flex items-center gap-2 text-gray-500 text-sm">
-										<span class="inline-block w-4 h-4">🚶</span>
-										<span>Loading...</span>
-									</div>
-								</div>
+						<div class="flex items-center gap-3 text-gray-400">
+							<div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">
+								<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M1 4h3l2.68 12.43a2 2 0 0 0 2 1.57h8.8a2 2 0 0 0 2-1.57L21.8 6H5.2l-.4-2H1v2zm4.5 14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm10 0a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>
 							</div>
-							<button class="grocery-toggle text-blue-600 hover:text-blue-700 font-medium text-sm hidden">
-								▼ <span class="grocery-alt-count">0</span>
-							</button>
+							<span class="font-medium">Supermarkets</span>
 						</div>
 					</div>
 					
 					<div id="grocery-alternatives-toggle" class="hidden border-t border-gray-200 px-4 py-3 hover:bg-gray-50 cursor-pointer transition">
-						<button class="text-blue-600 hover:text-blue-700 text-sm font-medium">
-							▼ View <span class="grocery-alt-count">0</span> more options
+						<button class="text-blue-600 hover:text-blue-700 text-sm font-medium w-full flex items-center justify-between">
+							<span>View <span class="grocery-alt-count">0</span> more options</span>
+							<svg class="w-4 h-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
 						</button>
 					</div>
 					
-					<div id="grocery-alternatives" class="hidden border-t border-gray-200 max-h-60 overflow-y-auto">
+					<div id="grocery-alternatives" class="hidden border-t border-gray-200 max-h-60 overflow-y-auto bg-gray-50">
 					</div>
 				</div>
 				</div>
@@ -383,34 +350,77 @@ import Layout from '../layouts/Layout.astro';
 
 	// Initialize map
 	const map = L.map('map').setView([-25.2744, 133.7751], 4);
-	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
 	}).addTo(map);
 
 	// State
-	let markers: L.Marker[] = [];
+	let markers: Map<string, L.Marker> = new Map();
 	let polylines: Map<string, L.Layer> = new Map();
 	let currentResults: SearchResponse | null = null;
 	let userLat: number = 0;
 	let userLng: number = 0;
 	let routeCache: Map<string, CachedRoute> = new Map();
+	let selectedIndices = { school: 0, station: 0, grocery: 0 };
+
+	// Icons
+	const icons = {
+		school: '<path d="M11.75 3a1.25 1.25 0 0 0-1.25 1.25v.25H3.5a1 1 0 0 0-.825 1.554l5.362 8.042a1 1 0 0 0 1.65-.001l5.364-8.042A1 1 0 0 0 14.225 4.5h-1.725v-.25A1.25 1.25 0 0 0 11.25 3h-.5ZM12.75 6H15l-4.5 6.75L6 6h2.25v2.25a.75.75 0 0 0 1.5 0V6h1.5v2.25a.75.75 0 0 0 1.5 0V6Z"/><path d="M4 14.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H4.75a.75.75 0 0 1-.75-.75Z"/>',
+		station: '<path d="M4 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-1l-2 4h-2l2-4H9l2 4H9l-2-4H6a2 2 0 0 1-2-2V4Zm2 0v5h12V4H6Zm0 7v5h12v-5H6Zm2 1.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm7.5 0a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"/>',
+		grocery: '<path d="M1 4h3l2.68 12.43a2 2 0 0 0 2 1.57h8.8a2 2 0 0 0 2-1.57L21.8 6H5.2l-.4-2H1v2zm4.5 14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm10 0a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/>',
+		user: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />'
+	};
+
+	// Helper to get SVG icon for category
+	function getIconSvg(type: 'school' | 'station' | 'grocery' | 'user'): string {
+		return `<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">${icons[type]}</svg>`;
+	}
 
 	// Create marker icon
-	function createMarkerIcon(color: string, size: number = 12): L.DivIcon {
-		return L.divIcon({
-			className: 'custom-marker',
-			html: `<div style="
-				width: ${size}px;
-				height: ${size}px;
-				background-color: ${color};
-				border: 2px solid white;
-				border-radius: 50%;
-				box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-			"></div>`,
-			iconSize: [size + 4, size + 4],
-			iconAnchor: [(size + 4) / 2, (size + 4) / 2],
-			popupAnchor: [0, -(size / 2 + 2)]
-		});
+	function createMarkerIcon(type: 'school' | 'station' | 'grocery' | 'user', color: string, isSelected: boolean): L.DivIcon {
+		if (type === 'user') {
+			return L.divIcon({
+				className: 'user-marker',
+				html: `<div style="width: 16px; height: 16px; background-color: ${color}; border: 3px solid white; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>`,
+				iconSize: [20, 20],
+				iconAnchor: [10, 10]
+			});
+		}
+
+		if (isSelected) {
+			const svg = `
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 42" width="32" height="42">
+				<path d="M16 0C7.16 0 0 7.16 0 16c0 8.84 16 26 16 26s16-17.16 16-26c0-8.84-7.16-16-16-16z" fill="${color}" stroke="white" stroke-width="2"/>
+				<g transform="translate(6, 6)" style="color: white;">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+						${icons[type]}
+					</svg>
+				</g>
+			</svg>`;
+			
+			return L.divIcon({
+				className: 'custom-pin-marker',
+				html: svg,
+				iconSize: [32, 42],
+				iconAnchor: [16, 42],
+				popupAnchor: [0, -42]
+			});
+		} else {
+			return L.divIcon({
+				className: 'custom-dot-marker',
+				html: `<div style="
+					width: 14px;
+					height: 14px;
+					background-color: white;
+					border: 3px solid ${color};
+					border-radius: 50%;
+					box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+				"></div>`,
+				iconSize: [14, 14],
+				iconAnchor: [7, 7],
+				popupAnchor: [0, -7]
+			});
+		}
 	}
 
 	// Get selected sectors
@@ -441,7 +451,7 @@ import Layout from '../layouts/Layout.astro';
 	// Clear markers and polylines
 	function clearMarkers(): void {
 		markers.forEach(marker => marker.remove());
-		markers = [];
+		markers.clear();
 		polylines.forEach(line => line.remove());
 		polylines.clear();
 	}
@@ -495,7 +505,7 @@ import Layout from '../layouts/Layout.astro';
 		const card = document.getElementById(cardId) as HTMLElement;
 		if (!card) return;
 
-		const title = 'name' in item ? item.name : item.name;
+		const title = item.name;
 		const details = category === 'school' 
 			? `${(item as School).suburb}, ${(item as School).state} · ${(item as School).type}`
 			: category === 'station' ? 'Train Station' : 'Supermarket';
@@ -505,22 +515,18 @@ import Layout from '../layouts/Layout.astro';
 			: category === 'station' ? colors.station : colors.grocery;
 
 		card.innerHTML = `
-			<div class="flex items-start justify-between gap-4">
-				<div class="flex-1">
-					<div class="flex items-center gap-2 mb-2">
-						<div style="width: 24px; height: 24px; background-color: ${iconColor}; border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"></div>
-						<h3 class="text-lg font-semibold text-gray-900">${title}</h3>
-					</div>
-					<p class="text-sm text-gray-600 mb-3">${details}</p>
-					<div class="flex items-center gap-3">
+			<div class="flex items-start gap-3">
+				<div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0" style="color: ${iconColor}">
+					${getIconSvg(category)}
+				</div>
+				<div class="flex-1 min-w-0">
+					<h3 class="font-medium text-gray-900 truncate">${title}</h3>
+					<p class="text-sm text-gray-500 truncate mb-2">${details}</p>
+					<div class="flex items-center gap-2">
 						${formatTime(item.walkingTime, item.distance, isLoading)}
 						${formatDistance(item.distance)}
 					</div>
 				</div>
-				${currentResults && currentResults.results[category === 'school' ? 'schools' : category === 'station' ? 'stations' : 'groceries'].length > 1 
-					? `<button class="${category}-toggle text-blue-600 hover:text-blue-700 font-medium text-sm">▼ <span class="${category}-alt-count">${currentResults.results[category === 'school' ? 'schools' : category === 'station' ? 'stations' : 'groceries'].length - 1}</span></button>`
-					: ''
-				}
 			</div>
 		`;
 	}
@@ -575,8 +581,28 @@ import Layout from '../layouts/Layout.astro';
 
 		if (index >= items.length) return;
 
+		// Update selection state
+		selectedIndices[category] = index;
+
 		const item = items[index];
 		const cacheKey = getCacheKey({ lat: userLat, lng: userLng }, { lat: item.latitude || item.lat, lng: item.longitude || item.lng }, category, (item as any).name || item.id);
+
+		// Update markers for this category
+		items.forEach((itm, idx) => {
+			const itemId = (itm as any).name || itm.id;
+			const markerKey = `${category}-${itemId}`;
+			const marker = markers.get(markerKey);
+			
+			if (marker) {
+				const isSelected = idx === index;
+				const color = category === 'school' 
+					? colors[(itm as School).sector?.toLowerCase() as keyof typeof colors] || colors.government
+					: category === 'station' ? colors.station : colors.grocery;
+				
+				marker.setIcon(createMarkerIcon(category, color, isSelected));
+				marker.setZIndexOffset(isSelected ? 1000 : 0); // Bring selected to front
+			}
+		});
 
 		// Show loading state
 		updatePrimaryCard(category, item, true);
@@ -620,9 +646,19 @@ import Layout from '../layouts/Layout.astro';
 		}
 
 		// Close alternatives (but keep toggle visible)
-		const altContainer = document.getElementById(`${category}-alternatives`) as HTMLElement;
-		if (altContainer) {
-			altContainer.classList.add('hidden');
+		const altList = document.getElementById(`${category}-alternatives`) as HTMLElement;
+		const altToggle = document.getElementById(`${category}-alternatives-toggle`) as HTMLElement;
+		
+		if (altList) {
+			altList.classList.add('hidden');
+		}
+		
+		// Reset arrow rotation
+		if (altToggle) {
+			const svg = altToggle.querySelector('svg');
+			if (svg) {
+				svg.style.transform = 'rotate(0)';
+			}
 		}
 	}
 
@@ -670,10 +706,10 @@ import Layout from '../layouts/Layout.astro';
 		cardsContainer.classList.remove('hidden');
 
 		// Add user marker
-		const userMarker = L.marker([data.userLocation.lat, data.userLocation.lng], { icon: createMarkerIcon(colors.user, 14) });
+		const userMarker = L.marker([data.userLocation.lat, data.userLocation.lng], { icon: createMarkerIcon('user', colors.user, true) });
 		userMarker.bindPopup(`<strong>Your Location</strong><br>${data.userLocation.address}`);
 		userMarker.addTo(map);
-		markers.push(userMarker);
+		markers.set('user', userMarker);
 
 		// Process each category
 		const categories = [
@@ -681,6 +717,9 @@ import Layout from '../layouts/Layout.astro';
 			{ type: 'station' as const, items: data.results.stations, color: colors.station },
 			{ type: 'grocery' as const, items: data.results.groceries, color: colors.grocery }
 		];
+
+		// Reset selection indices
+		selectedIndices = { school: 0, station: 0, grocery: 0 };
 
 		for (const category of categories) {
 			if (category.items.length === 0) {
@@ -690,14 +729,25 @@ import Layout from '../layouts/Layout.astro';
 			}
 
 			// Add markers for all items
-			category.items.forEach(item => {
+			category.items.forEach((item, index) => {
 				const markerColor = category.type === 'school' 
 					? colors[(item as School).sector?.toLowerCase() as keyof typeof colors] || colors.government
 					: category.color;
 				
-				const marker = L.marker([item.latitude || item.lat, item.longitude || item.lng], { icon: createMarkerIcon(markerColor) });
+				const isSelected = index === 0;
+				const marker = L.marker([item.latitude || item.lat, item.longitude || item.lng], { 
+					icon: createMarkerIcon(category.type, markerColor, isSelected),
+					zIndexOffset: isSelected ? 1000 : 0
+				});
+				
+				// Add click handler
+				marker.on('click', () => {
+					selectAlternative(category.type, index);
+				});
+
 				marker.addTo(map);
-				markers.push(marker);
+				const itemId = (item as any).name || item.id;
+				markers.set(`${category.type}-${itemId}`, marker);
 			});
 
 			// Update primary card
@@ -711,6 +761,7 @@ import Layout from '../layouts/Layout.astro';
 			// Handle alternatives
 			const altContainer = document.getElementById(`${category.type}-alternatives`) as HTMLElement;
 			const altToggle = document.getElementById(`${category.type}-alternatives-toggle`) as HTMLElement;
+			const altList = document.getElementById(`${category.type}-alternatives`) as HTMLElement;
 
 			if (category.items.length > 1) {
 				// Populate alternatives
@@ -727,9 +778,18 @@ import Layout from '../layouts/Layout.astro';
 
 				// Show toggle
 				altToggle.classList.remove('hidden');
-				altToggle.addEventListener('click', () => {
-					altContainer.classList.toggle('hidden');
-				});
+				altToggle.onclick = () => {
+					const isHidden = altList.classList.contains('hidden');
+					altList.classList.toggle('hidden');
+					// Rotate arrow
+					const svg = altToggle.querySelector('svg');
+					if (svg) {
+						svg.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0)';
+					}
+				};
+			} else {
+				altToggle.classList.add('hidden');
+				altList.classList.add('hidden');
 			}
 		}
 
