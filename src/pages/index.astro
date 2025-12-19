@@ -389,7 +389,7 @@ import Layout from '../layouts/Layout.astro';
 
 	// State
 	let markers: L.Marker[] = [];
-	let polylines: Map<string, L.Polyline> = new Map();
+	let polylines: Map<string, L.Layer> = new Map();
 	let currentResults: SearchResponse | null = null;
 	let userLat: number = 0;
 	let userLng: number = 0;
@@ -462,10 +462,12 @@ import Layout from '../layouts/Layout.astro';
 		}
 		// Draw new polyline
 		const color = category === 'school' ? '#3b82f6' : category === 'station' ? '#0891b2' : '#eab308';
-		const line = L.polyline(walkingPath.coordinates, {
-			color,
-			weight: 3,
-			opacity: 0.7
+		const line = L.geoJSON(walkingPath, {
+			style: {
+				color,
+				weight: 4,
+				opacity: 0.7
+			}
 		}).addTo(map);
 		polylines.set(polylineKey, line);
 	}
