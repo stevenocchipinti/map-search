@@ -22,3 +22,14 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# vercel deployment artifacts
+.vercel/
+
+# source data files
+*.xlsx
+
+# screenshots and documentation images
+*.png
+*.jpg
+*.jpeg
