@@ -4,10 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vercel dev",
+    "dev:vite": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "test:api": "tsx test-api.ts",
     "data:schools": "tsx scripts/process-schools.ts",
     "data:stations": "tsx scripts/process-stations.ts",
     "data:all": "tsx scripts/process-all.ts"

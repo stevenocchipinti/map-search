@@ -2,15 +2,16 @@
 
 This is a condensed reference for continuing implementation.
 
-## Current Status (Phase 1 Complete)
+## Current Status (Phases 1 & 2 Complete)
 
 ✅ Project setup complete
 ✅ Data processing complete (10,994 schools + 1,709 stations → 8 state files each)
 ✅ Type definitions created
 ✅ Tailwind configured
 ✅ Documentation written
+✅ **Phase 2: Backend API endpoints complete and tested**
 
-**Next Phase**: Phase 2 - Backend API Endpoints
+**Next Phase**: Phase 3 - Core Hooks & Data Loading
 
 ---
 
@@ -18,18 +19,37 @@ This is a condensed reference for continuing implementation.
 
 ```bash
 # Development
-npm run dev              # Start dev server (http://localhost:5173)
+npm run dev              # Start Vercel dev server (Vite + API functions) - http://localhost:3000
+npm run dev:vite         # Start Vite dev server only (frontend only) - http://localhost:5173
 npm run build            # Build for production
 npm run preview          # Preview production build
+npm run test:api         # Test API functions directly
 
 # Data Processing
 npm run data:all         # Process all data files
 npm run data:schools     # Process schools only
 npm run data:stations    # Process stations only
 
-# Environment
+# Environment Setup
 cp .env.example .env     # Create .env file
-# Then copy ORS_API_KEY from ../map-search/.env
+vercel login             # Authenticate with Vercel (first time only)
+npm install -g vercel    # Install Vercel CLI globally (if needed)
+
+# API Testing (with Vercel dev running)
+# Test geocode
+curl -X POST http://localhost:3000/api/geocode \
+  -H "Content-Type: application/json" \
+  -d '{"address": "123 Elizabeth St, Sydney NSW"}'
+
+# Test supermarkets
+curl -X POST http://localhost:3000/api/supermarkets \
+  -H "Content-Type: application/json" \
+  -d '{"lat": -33.8688, "lng": 151.2093}'
+
+# Test walking routes
+curl -X POST http://localhost:3000/api/walking-routes \
+  -H "Content-Type: application/json" \
+  -d '{"routes": [{"fromLat": -33.8688, "fromLng": 151.2093, "toLat": -33.87, "toLng": 151.21, "category": "school", "itemId": "test-1"}]}'
 ```
 
 ---
@@ -39,13 +59,15 @@ cp .env.example .env     # Create .env file
 ```
 map-search2/
 ├── api/                      # Vercel serverless functions
-│   ├── geocode.ts           # [TODO] Nominatim wrapper
-│   ├── supermarkets.ts      # [TODO] Overpass wrapper
-│   └── walking-routes.ts    # [TODO] OpenRouteService wrapper
+│   ├── geocode.ts           # ✅ Nominatim wrapper
+│   ├── supermarkets.ts      # ✅ Overpass wrapper
+│   ├── walking-routes.ts    # ✅ OpenRouteService wrapper
+│   └── tsconfig.json        # ✅ TypeScript config for API
 ├── docs/                     # Documentation
 │   ├── ARCHITECTURE.md      # Technical architecture
 │   ├── DECISIONS.md         # Key decisions & rationale
-│   └── IMPLEMENTATION_PLAN.md # Phase-by-phase plan
+│   ├── IMPLEMENTATION_PLAN.md # Phase-by-phase plan
+│   └── PHASE_2_COMPLETE.md  # ✅ Phase 2 completion report
 ├── public/
 │   ├── data/                # Processed state files
 │   │   └── {state}/
@@ -60,7 +82,10 @@ map-search2/
 ├── src/
 │   ├── components/          # [TODO] React components
 │   ├── hooks/              # [TODO] Custom hooks
-│   ├── lib/                # [TODO] Utilities
+│   ├── lib/                # ✅ Utilities
+│   │   ├── haversine.ts    # ✅ Distance calculations
+│   │   ├── overpass.ts     # ✅ Overpass API client
+│   │   └── openroute.ts    # ✅ OpenRouteService client
 │   ├── types/              # ✅ TypeScript types
 │   ├── utils/              # [TODO] Helper functions
 │   ├── App.tsx             # Main app component

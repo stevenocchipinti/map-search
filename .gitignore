@@ -30,3 +30,4 @@ data-sources/
 *.njsproj
 *.sln
 *.sw?
+.vercel

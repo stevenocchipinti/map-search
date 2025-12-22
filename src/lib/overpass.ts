@@ -2,7 +2,7 @@
  * Overpass API client for querying OpenStreetMap POIs (supermarkets)
  */
 
-import { haversineDistance } from './haversine';
+import { haversineDistance } from './haversine.js';
 
 const OVERPASS_API_URL = 'https://overpass-api.de/api/interpreter';
 

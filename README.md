@@ -28,6 +28,7 @@ A mobile-first Progressive Web App for finding the nearest schools, train statio
 
 - Node.js 18+ (tested with v22)
 - npm or yarn
+- Vercel CLI (for local development)
 
 ### Installation
 
@@ -42,35 +43,76 @@ cd map-search2
 npm install
 ```
 
-3. Set up environment variables:
+3. Install Vercel CLI globally (if not already installed):
 ```bash
-cp .env.example .env
-# Edit .env and add your OpenRouteService API key
+npm install -g vercel
 ```
 
-4. Process data files (first time only):
+4. Set up environment variables:
+```bash
+cp .env.example .env
+# Edit .env and add your OpenRouteService API key:
+# ORS_API_KEY=your_api_key_here
+```
+
+Get a free API key at: https://openrouteservice.org/dev/#/signup
+
+5. Process data files (first time only):
 ```bash
 npm run data:all
 ```
 
 This will split the source data files by state and generate optimized files in `public/data/{state}/`.
 
-5. Start the development server:
+6. Authenticate with Vercel (first time only):
+```bash
+vercel login
+```
+
+Follow the prompts to authenticate.
+
+7. Start the development server:
 ```bash
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173`
+The app will be available at `http://localhost:3000` (or the next available port).
+
+**Note:** The development server uses `vercel dev` which runs both the Vite dev server AND the serverless API functions locally. This is required for testing the full application including API endpoints.
 
 ## Development Scripts
 
-- `npm run dev` - Start development server
+- `npm run dev` - Start development server with Vercel (includes API functions)
+- `npm run dev:vite` - Start Vite dev server only (frontend only, no API)
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Lint code
+- `npm run test:api` - Test API functions directly (no HTTP)
 - `npm run data:all` - Process all data files
 - `npm run data:schools` - Process schools data only
 - `npm run data:stations` - Process stations data only
+
+### Development Workflow
+
+**For full-stack development** (recommended):
+```bash
+npm run dev
+# Access at http://localhost:3000
+# API endpoints available at /api/*
+```
+
+**For frontend-only development** (faster, but no API):
+```bash
+npm run dev:vite
+# Access at http://localhost:5173
+# API endpoints will not work
+```
+
+**Testing API functions directly** (without HTTP layer):
+```bash
+npm run test:api
+# Tests geocode, supermarkets, and walking routes functions
+```
 
 ## Data Updates
 
@@ -152,6 +194,61 @@ The app is a Progressive Web App with:
 - **Offline-capable**: Works without internet for previously loaded areas
 - **Share target**: Can receive addresses shared from other apps (e.g., real estate apps)
 - **App-like**: Runs in standalone mode without browser UI
+
+## Troubleshooting
+
+### "Cannot find module" errors in API functions
+
+If you see errors like:
+```
+Error: Cannot find module '/Users/.../src/lib/overpass' imported from .../api/supermarkets.ts
+```
+
+**Solution:** Make sure all imports in the `src/lib/` folder use `.js` extensions for ESM compatibility:
+```typescript
+// Correct
+import { haversineDistance } from './haversine.js';
+
+// Incorrect
+import { haversineDistance } from './haversine';
+```
+
+### Blank page with "Expected a JavaScript module script" error
+
+This happens when you navigate to `http://localhost:3000/` directly. The Vite frontend is not yet implemented.
+
+**Solution:** Test the API endpoints directly:
+```bash
+# Test geocode
+curl -X POST http://localhost:3000/api/geocode \
+  -H "Content-Type: application/json" \
+  -d '{"address": "123 Elizabeth St, Sydney NSW"}'
+```
+
+Or use the test script:
+```bash
+npm run test:api
+```
+
+### "No existing credentials found" error from Vercel CLI
+
+**Solution:** Authenticate with Vercel:
+```bash
+vercel login
+```
+
+### Port already in use
+
+If port 3000 is already in use, Vercel will automatically use the next available port (3001, 3002, etc.). Check the terminal output for the actual URL.
+
+### API key not working
+
+Make sure your `.env` file has the correct format:
+```bash
+ORS_API_KEY=your_actual_key_here
+```
+
+No quotes, no extra spaces. Restart `npm run dev` after changing the `.env` file.
 
 ## Contributing
 

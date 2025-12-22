@@ -1,0 +1,34 @@
+### Test Geocode API
+POST http://localhost:3000/api/geocode
+Content-Type: application/json
+
+{
+  "address": "123 Elizabeth St, Sydney NSW"
+}
+
+### Test Supermarkets API (Sydney CBD)
+POST http://localhost:3000/api/supermarkets
+Content-Type: application/json
+
+{
+  "lat": -33.8688,
+  "lng": 151.2093,
+  "radius": 2000
+}
+
+### Test Walking Routes API
+POST http://localhost:3000/api/walking-routes
+Content-Type: application/json
+
+{
+  "routes": [
+    {
+      "fromLat": -33.8688,
+      "fromLng": 151.2093,
+      "toLat": -33.8700,
+      "toLng": 151.2100,
+      "category": "school",
+      "itemId": "test-school-1"
+    }
+  ]
+}

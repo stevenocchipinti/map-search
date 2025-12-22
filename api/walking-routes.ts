@@ -4,8 +4,8 @@
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { getWalkingRoutesBatch } from '../src/lib/openroute';
-import type { POICategory } from '../src/types';
+import { getWalkingRoutesBatch } from '../src/lib/openroute.js';
+import type { POICategory } from '../src/types/index.js';
 
 interface RouteRequest {
   fromLat: number;
