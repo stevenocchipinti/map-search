@@ -1,0 +1,68 @@
+[
+  {
+    "name": "IMPADNA",
+    "state": "NT",
+    "latitude": -25.154294748999973,
+    "longitude": 133.57074281500002
+  },
+  {
+    "name": "EWANINGA",
+    "state": "NT",
+    "latitude": -23.977853247999974,
+    "longitude": 133.9327818060001
+  },
+  {
+    "name": "ROE CREEK",
+    "state": "NT",
+    "latitude": -23.87449274499994,
+    "longitude": 133.84053981800002
+  },
+  {
+    "name": "MACDONNELL SIDING",
+    "state": "NT",
+    "latitude": -23.777698244999954,
+    "longitude": 133.8681303180001
+  },
+  {
+    "name": "KULGERA",
+    "state": "NT",
+    "latitude": -25.867598250999947,
+    "longitude": 133.41636781500006
+  },
+  {
+    "name": "HUGH RIVER",
+    "state": "NT",
+    "latitude": -24.45678524699997,
+    "longitude": 133.71555431700006
+  },
+  {
+    "name": "MEREENIE",
+    "state": "NT",
+    "latitude": -23.912565744999938,
+    "longitude": 133.84541631700006
+  },
+  {
+    "name": "ALICE SPRINGS",
+    "state": "NT",
+    "latitude": -23.69574774399996,
+    "longitude": 133.8710563190001
+  },
+  {
+    "name": "DARWIN",
+    "state": "NT",
+    "latitude": -12.472438619999934,
+    "longitude": 130.90385670700005
+  },
+  {
+    "name": "TENNANT CREEK",
+    "state": "NT",
+    "latitude": -19.693186220999962,
+    "longitude": 134.17561838900008
+  },
+  {
+    "name": "KATHERINE",
+    "state": "NT",
+    "latitude": -14.514424148999979,
+    "longitude": 132.2537216170001
+  }
+]

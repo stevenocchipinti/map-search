@@ -1,0 +1,2872 @@
+[
+  {
+    "name": "Corpus Christi Catholic School",
+    "suburb": "BELLERIVE",
+    "state": "TAS",
+    "postcode": "7018",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -42.871256,
+    "longitude": 147.371473
+  },
+  {
+    "name": "Fahan School",
+    "suburb": "SANDY BAY",
+    "state": "TAS",
+    "postcode": "7005",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.91615827,
+    "longitude": 147.35276438
+  },
+  {
+    "name": "Geneva Christian College",
+    "suburb": "LATROBE",
+    "state": "TAS",
+    "postcode": "7307",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -41.226741,
+    "longitude": 146.438726
+  },
+  {
+    "name": "Holy Rosary Catholic School",
+    "suburb": "CLAREMONT",
+    "state": "TAS",
+    "postcode": "7011",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -42.789375,
+    "longitude": 147.248306
+  },
+  {
+    "name": "Immaculate Heart of Mary Catholic School",
+    "suburb": "LENAH VALLEY",
+    "state": "TAS",
+    "postcode": "7008",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -42.865543,
+    "longitude": 147.290159
+  },
+  {
+    "name": "John Calvin School",
+    "suburb": "LAUNCESTON",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -41.447919,
+    "longitude": 147.144799
+  },
+  {
+    "name": "Larmenier Catholic School",
+    "suburb": "ST LEONARDS",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -41.460784,
+    "longitude": 147.194752
+  },
+  {
+    "name": "Launceston Church Grammar School",
+    "suburb": "MOWBRAY",
+    "state": "TAS",
+    "postcode": "7248",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -41.408156,
+    "longitude": 147.128813
+  },
+  {
+    "name": "St James Catholic College",
+    "suburb": "CYGNET",
+    "state": "TAS",
+    "postcode": "7112",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -43.161812,
+    "longitude": 147.075798
+  },
+  {
+    "name": "Our Lady of Lourdes Catholic School",
+    "suburb": "DEVONPORT",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -41.18021,
+    "longitude": 146.355196
+  },
+  {
+    "name": "Our Lady of Mercy Catholic School",
+    "suburb": "DELORAINE",
+    "state": "TAS",
+    "postcode": "7304",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -41.525172,
+    "longitude": 146.64995
+  },
+  {
+    "name": "Sacred Heart Catholic School",
+    "suburb": "ULVERSTONE",
+    "state": "TAS",
+    "postcode": "7315",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -41.155798,
+    "longitude": 146.186851
+  },
+  {
+    "name": "Sacred Heart Catholic School",
+    "suburb": "GEEVESTON",
+    "state": "TAS",
+    "postcode": "7116",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -43.165474,
+    "longitude": 146.943967
+  },
+  {
+    "name": "St Aloysius Catholic College - Kingston Beach Campus",
+    "suburb": "KINGSTON BEACH",
+    "state": "TAS",
+    "postcode": "7050",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -42.99075,
+    "longitude": 147.322982
+  },
+  {
+    "name": "St Anthony's Catholic School",
+    "suburb": "RIVERSIDE",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -41.4062,
+    "longitude": 147.095
+  },
+  {
+    "name": "St Peter Chanel Catholic School",
+    "suburb": "SMITHTON",
+    "state": "TAS",
+    "postcode": "7330",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -40.845638,
+    "longitude": 145.131883
+  },
+  {
+    "name": "St Brigid's Catholic School",
+    "suburb": "NEW NORFOLK",
+    "state": "TAS",
+    "postcode": "7140",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -42.78063,
+    "longitude": 147.056171
+  },
+  {
+    "name": "St Brigid's Catholic School",
+    "suburb": "WYNYARD",
+    "state": "TAS",
+    "postcode": "7325",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -40.988286,
+    "longitude": 145.726855
+  },
+  {
+    "name": "St Cuthbert's Catholic School",
+    "suburb": "LINDISFARNE",
+    "state": "TAS",
+    "postcode": "7015",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -42.843192,
+    "longitude": 147.355348
+  },
+  {
+    "name": "St John's Catholic School",
+    "suburb": "RICHMOND",
+    "state": "TAS",
+    "postcode": "7025",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -42.733415,
+    "longitude": 147.441563
+  },
+  {
+    "name": "St Joseph's Catholic School",
+    "suburb": "ROSEBERY",
+    "state": "TAS",
+    "postcode": "7470",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -41.780321,
+    "longitude": 145.543953
+  },
+  {
+    "name": "St Joseph's Catholic School",
+    "suburb": "QUEENSTOWN",
+    "state": "TAS",
+    "postcode": "7467",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -42.081342,
+    "longitude": 145.559515
+  },
+  {
+    "name": "St Mary's College",
+    "suburb": "HOBART",
+    "state": "TAS",
+    "postcode": "7000",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -42.881808,
+    "longitude": 147.319687
+  },
+  {
+    "name": "St Patrick's Catholic School",
+    "suburb": "LATROBE",
+    "state": "TAS",
+    "postcode": "7307",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -41.235575,
+    "longitude": 146.418418
+  },
+  {
+    "name": "St Therese's Catholic School",
+    "suburb": "MOONAH",
+    "state": "TAS",
+    "postcode": "7009",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -42.846795,
+    "longitude": 147.290228
+  },
+  {
+    "name": "Hilliard Christian School",
+    "suburb": "WEST MOONAH",
+    "state": "TAS",
+    "postcode": "7009",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.853786,
+    "longitude": 147.28761
+  },
+  {
+    "name": "Star of the Sea Catholic College",
+    "suburb": "GEORGE TOWN",
+    "state": "TAS",
+    "postcode": "7253",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -41.107781,
+    "longitude": 146.829593
+  },
+  {
+    "name": "Stella Maris Catholic School",
+    "suburb": "BURNIE",
+    "state": "TAS",
+    "postcode": "7320",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -41.051103,
+    "longitude": 145.887728
+  },
+  {
+    "name": "The Friends' School",
+    "suburb": "NORTH HOBART",
+    "state": "TAS",
+    "postcode": "7000",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.869285,
+    "longitude": 147.313375
+  },
+  {
+    "name": "The Hutchins School",
+    "suburb": "SANDY BAY",
+    "state": "TAS",
+    "postcode": "7005",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.905952,
+    "longitude": 147.330242
+  },
+  {
+    "name": "The Cottage School",
+    "suburb": "BELLERIVE",
+    "state": "TAS",
+    "postcode": "7018",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -42.875405,
+    "longitude": 147.367494
+  },
+  {
+    "name": "Launceston Christian School",
+    "suburb": "RIVERSIDE",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -41.401842,
+    "longitude": 147.090571
+  },
+  {
+    "name": "Leighland Christian School",
+    "suburb": "ULVERSTONE",
+    "state": "TAS",
+    "postcode": "7315",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -41.153547,
+    "longitude": 146.195067
+  },
+  {
+    "name": "North West Christian School",
+    "suburb": "PENGUIN",
+    "state": "TAS",
+    "postcode": "7316",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -41.123571,
+    "longitude": 146.080384
+  },
+  {
+    "name": "St Michael's Collegiate School",
+    "suburb": "HOBART",
+    "state": "TAS",
+    "postcode": "7000",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.888185,
+    "longitude": 147.323435
+  },
+  {
+    "name": "Scotch Oakburn College",
+    "suburb": "NEWSTEAD",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -41.449213,
+    "longitude": 147.168873
+  },
+  {
+    "name": "John Paul II Catholic School",
+    "suburb": "CLARENDON VALE",
+    "state": "TAS",
+    "postcode": "7019",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -42.8945,
+    "longitude": 147.447
+  },
+  {
+    "name": "The Launceston Preparatory School",
+    "suburb": "LAUNCESTON",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -41.4374,
+    "longitude": 147.158
+  },
+  {
+    "name": "Eastside Lutheran College",
+    "suburb": "WARRANE",
+    "state": "TAS",
+    "postcode": "7018",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.851645,
+    "longitude": 147.383845
+  },
+  {
+    "name": "St Thomas More's Catholic School",
+    "suburb": "NEWSTEAD",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -41.44512,
+    "longitude": 147.157534
+  },
+  {
+    "name": "St Paul's Catholic School",
+    "suburb": "BRIDGEWATER",
+    "state": "TAS",
+    "postcode": "7030",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -42.737339,
+    "longitude": 147.247605
+  },
+  {
+    "name": "Circular Head Christian School",
+    "suburb": "SMITHTON",
+    "state": "TAS",
+    "postcode": "7330",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -40.8497,
+    "longitude": 145.118
+  },
+  {
+    "name": "Southern Christian College",
+    "suburb": "KINGSTON",
+    "state": "TAS",
+    "postcode": "7050",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.990905,
+    "longitude": 147.307777
+  },
+  {
+    "name": "Brooks High School",
+    "suburb": "ROCHERLEA",
+    "state": "TAS",
+    "postcode": "7248",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.37813391,
+    "longitude": 147.12135989
+  },
+  {
+    "name": "Flinders Island District High School",
+    "suburb": "WHITEMARK",
+    "state": "TAS",
+    "postcode": "7255",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -40.11254151,
+    "longitude": 148.03486284
+  },
+  {
+    "name": "Lilydale District School",
+    "suburb": "LILYDALE",
+    "state": "TAS",
+    "postcode": "7268",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.25251745,
+    "longitude": 147.21598294
+  },
+  {
+    "name": "Ravenswood Heights Primary School",
+    "suburb": "RAVENSWOOD",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.41878768,
+    "longitude": 147.17536832
+  },
+  {
+    "name": "Scottsdale High School",
+    "suburb": "SCOTTSDALE",
+    "state": "TAS",
+    "postcode": "7260",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.1546,
+    "longitude": 147.51
+  },
+  {
+    "name": "Parklands High School",
+    "suburb": "ROMAINE",
+    "state": "TAS",
+    "postcode": "7320",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.07905504,
+    "longitude": 145.90176001
+  },
+  {
+    "name": "Reece High School",
+    "suburb": "DEVONPORT",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.189,
+    "longitude": 146.352
+  },
+  {
+    "name": "Ulverstone Secondary College",
+    "suburb": "ULVERSTONE",
+    "state": "TAS",
+    "postcode": "7315",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.16325954,
+    "longitude": 146.17082335
+  },
+  {
+    "name": "Wynyard High School",
+    "suburb": "WYNYARD",
+    "state": "TAS",
+    "postcode": "7325",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -40.98627358,
+    "longitude": 145.71764283
+  },
+  {
+    "name": "Cosgrove High School",
+    "suburb": "GLENORCHY",
+    "state": "TAS",
+    "postcode": "7010",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.83650615,
+    "longitude": 147.28318696
+  },
+  {
+    "name": "Dover District School",
+    "suburb": "DOVER",
+    "state": "TAS",
+    "postcode": "7117",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -43.31008295,
+    "longitude": 147.01303372
+  },
+  {
+    "name": "Geeveston Primary School",
+    "suburb": "GEEVESTON",
+    "state": "TAS",
+    "postcode": "7116",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -43.16224412,
+    "longitude": 146.92212626
+  },
+  {
+    "name": "Huonville High School",
+    "suburb": "HUONVILLE",
+    "state": "TAS",
+    "postcode": "7109",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -43.02374508,
+    "longitude": 147.04694878
+  },
+  {
+    "name": "Bayview Secondary College",
+    "suburb": "ROKEBY",
+    "state": "TAS",
+    "postcode": "7019",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.89719843,
+    "longitude": 147.44500423
+  },
+  {
+    "name": "Bothwell District High School",
+    "suburb": "BOTHWELL",
+    "state": "TAS",
+    "postcode": "7030",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -42.38402831,
+    "longitude": 147.01571956
+  },
+  {
+    "name": "Deloraine High School",
+    "suburb": "DELORAINE",
+    "state": "TAS",
+    "postcode": "7304",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.52974888,
+    "longitude": 146.66018027
+  },
+  {
+    "name": "Glenora District School",
+    "suburb": "GLENORA",
+    "state": "TAS",
+    "postcode": "7140",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -42.69690112,
+    "longitude": 146.88944893
+  },
+  {
+    "name": "New Norfolk High School",
+    "suburb": "NEW NORFOLK",
+    "state": "TAS",
+    "postcode": "7140",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.78854201,
+    "longitude": 147.06123199
+  },
+  {
+    "name": "Oatlands District High School",
+    "suburb": "OATLANDS",
+    "state": "TAS",
+    "postcode": "7120",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -42.30055552,
+    "longitude": 147.37080165
+  },
+  {
+    "name": "Ouse District School",
+    "suburb": "OUSE",
+    "state": "TAS",
+    "postcode": "7140",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.48152312,
+    "longitude": 146.70746597
+  },
+  {
+    "name": "Rosebery District School",
+    "suburb": "ROSEBERY",
+    "state": "TAS",
+    "postcode": "7470",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.77912684,
+    "longitude": 145.54247225
+  },
+  {
+    "name": "St Helens District High School",
+    "suburb": "ST HELENS",
+    "state": "TAS",
+    "postcode": "7216",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.32453944,
+    "longitude": 148.24629738
+  },
+  {
+    "name": "St Marys District School",
+    "suburb": "ST MARYS",
+    "state": "TAS",
+    "postcode": "7215",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.58478994,
+    "longitude": 148.18939889
+  },
+  {
+    "name": "Triabunna District School",
+    "suburb": "TRIABUNNA",
+    "state": "TAS",
+    "postcode": "7190",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -42.50742508,
+    "longitude": 147.91106789
+  },
+  {
+    "name": "Burnie High School",
+    "suburb": "COOEE",
+    "state": "TAS",
+    "postcode": "7320",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.0415376,
+    "longitude": 145.86646528
+  },
+  {
+    "name": "Campbell Town District High School",
+    "suburb": "CAMPBELL TOWN",
+    "state": "TAS",
+    "postcode": "7210",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.92446399,
+    "longitude": 147.49096762
+  },
+  {
+    "name": "Cressy District High School",
+    "suburb": "CRESSY",
+    "state": "TAS",
+    "postcode": "7302",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.69093755,
+    "longitude": 147.0771548
+  },
+  {
+    "name": "Dunalley Primary School",
+    "suburb": "DUNALLEY",
+    "state": "TAS",
+    "postcode": "7177",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.88518675,
+    "longitude": 147.81215862
+  },
+  {
+    "name": "Exeter High School",
+    "suburb": "EXETER",
+    "state": "TAS",
+    "postcode": "7275",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.30062736,
+    "longitude": 146.95752176
+  },
+  {
+    "name": "King Island District High School",
+    "suburb": "CURRIE",
+    "state": "TAS",
+    "postcode": "7256",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -39.92665469,
+    "longitude": 143.8559413
+  },
+  {
+    "name": "Kingston High School",
+    "suburb": "KINGSTON",
+    "state": "TAS",
+    "postcode": "7050",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.97371542,
+    "longitude": 147.30813147
+  },
+  {
+    "name": "Kings Meadows High School",
+    "suburb": "KINGS MEADOWS",
+    "state": "TAS",
+    "postcode": "7249",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.47386659,
+    "longitude": 147.15956905
+  },
+  {
+    "name": "Prospect High School",
+    "suburb": "PROSPECT",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.47580035,
+    "longitude": 147.13093189
+  },
+  {
+    "name": "Riverside High School",
+    "suburb": "RIVERSIDE",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.40905097,
+    "longitude": 147.09955797
+  },
+  {
+    "name": "Smithton High School",
+    "suburb": "SMITHTON",
+    "state": "TAS",
+    "postcode": "7330",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -40.83816677,
+    "longitude": 145.11644883
+  },
+  {
+    "name": "Sorell School",
+    "suburb": "SORELL",
+    "state": "TAS",
+    "postcode": "7172",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -42.78592321,
+    "longitude": 147.56062331
+  },
+  {
+    "name": "Taroona High School",
+    "suburb": "TAROONA",
+    "state": "TAS",
+    "postcode": "7053",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.94341,
+    "longitude": 147.3559
+  },
+  {
+    "name": "Tasman District School",
+    "suburb": "NUBEENA",
+    "state": "TAS",
+    "postcode": "7184",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -43.09833639,
+    "longitude": 147.74706551
+  },
+  {
+    "name": "Winnaleah District High School",
+    "suburb": "WINNALEAH",
+    "state": "TAS",
+    "postcode": "7265",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.096531,
+    "longitude": 147.822868
+  },
+  {
+    "name": "Woodbridge School",
+    "suburb": "WOODBRIDGE",
+    "state": "TAS",
+    "postcode": "7162",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -43.164652,
+    "longitude": 147.239683
+  },
+  {
+    "name": "Yolla District School",
+    "suburb": "YOLLA",
+    "state": "TAS",
+    "postcode": "7325",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.12266948,
+    "longitude": 145.72009949
+  },
+  {
+    "name": "North West Support School",
+    "suburb": "ACTON",
+    "state": "TAS",
+    "postcode": "7320",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.072282,
+    "longitude": 145.893098
+  },
+  {
+    "name": "Invermay Primary School",
+    "suburb": "INVERMAY",
+    "state": "TAS",
+    "postcode": "7248",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.42163515,
+    "longitude": 147.13138403
+  },
+  {
+    "name": "Mowbray Heights Primary School",
+    "suburb": "MOWBRAY",
+    "state": "TAS",
+    "postcode": "7248",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.40275864,
+    "longitude": 147.13341299
+  },
+  {
+    "name": "Rose Bay High School",
+    "suburb": "ROSE BAY",
+    "state": "TAS",
+    "postcode": "7015",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.86154099,
+    "longitude": 147.35891671
+  },
+  {
+    "name": "Queechy High School",
+    "suburb": "NORWOOD",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.45195332,
+    "longitude": 147.17607496
+  },
+  {
+    "name": "Devonport High School",
+    "suburb": "DEVONPORT",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.17795098,
+    "longitude": 146.34877035
+  },
+  {
+    "name": "Sacred Heart Catholic School",
+    "suburb": "LAUNCESTON",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -41.445,
+    "longitude": 147.133337
+  },
+  {
+    "name": "Albuera Street Primary School",
+    "suburb": "BATTERY POINT",
+    "state": "TAS",
+    "postcode": "7004",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.89123278,
+    "longitude": 147.32588298
+  },
+  {
+    "name": "Campbell Street Primary School",
+    "suburb": "NORTH HOBART",
+    "state": "TAS",
+    "postcode": "7000",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.87254263,
+    "longitude": 147.32268319
+  },
+  {
+    "name": "Goulburn Street Primary School",
+    "suburb": "WEST HOBART",
+    "state": "TAS",
+    "postcode": "7000",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.88779991,
+    "longitude": 147.31692503
+  },
+  {
+    "name": "Lansdowne Crescent Primary School",
+    "suburb": "WEST HOBART",
+    "state": "TAS",
+    "postcode": "7000",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.882125,
+    "longitude": 147.30871
+  },
+  {
+    "name": "Mount Stuart Primary School",
+    "suburb": "MOUNT STUART",
+    "state": "TAS",
+    "postcode": "7000",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.87507847,
+    "longitude": 147.29906955
+  },
+  {
+    "name": "South Hobart Primary School",
+    "suburb": "SOUTH HOBART",
+    "state": "TAS",
+    "postcode": "7004",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.891817,
+    "longitude": 147.309568
+  },
+  {
+    "name": "Princes Street Primary School",
+    "suburb": "SANDY BAY",
+    "state": "TAS",
+    "postcode": "7005",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.89924147,
+    "longitude": 147.31840447
+  },
+  {
+    "name": "Waimea Heights Primary School",
+    "suburb": "SANDY BAY",
+    "state": "TAS",
+    "postcode": "7005",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.90892028808594,
+    "longitude": 147.3369140625
+  },
+  {
+    "name": "Taroona Primary School",
+    "suburb": "TAROONA",
+    "state": "TAS",
+    "postcode": "7053",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.94315177,
+    "longitude": 147.3527989
+  },
+  {
+    "name": "Mount Nelson Primary School",
+    "suburb": "MOUNT NELSON",
+    "state": "TAS",
+    "postcode": "7007",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.91290931,
+    "longitude": 147.32237076
+  },
+  {
+    "name": "Lenah Valley Primary School",
+    "suburb": "LENAH VALLEY",
+    "state": "TAS",
+    "postcode": "7008",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.860997,
+    "longitude": 147.289568
+  },
+  {
+    "name": "New Town Primary School",
+    "suburb": "NEW TOWN",
+    "state": "TAS",
+    "postcode": "7008",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.85748163,
+    "longitude": 147.30001235
+  },
+  {
+    "name": "Bowen Road Primary School",
+    "suburb": "MOONAH",
+    "state": "TAS",
+    "postcode": "7009",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.84736447,
+    "longitude": 147.30763733
+  },
+  {
+    "name": "Goodwood Primary School",
+    "suburb": "DERWENT PARK",
+    "state": "TAS",
+    "postcode": "7009",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.83224516,
+    "longitude": 147.29255312
+  },
+  {
+    "name": "Moonah Primary School",
+    "suburb": "DERWENT PARK",
+    "state": "TAS",
+    "postcode": "7009",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.83809219,
+    "longitude": 147.29646337
+  },
+  {
+    "name": "Springfield Gardens Primary School",
+    "suburb": "WEST MOONAH",
+    "state": "TAS",
+    "postcode": "7009",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.84764764,
+    "longitude": 147.27594789
+  },
+  {
+    "name": "Rosetta Primary School",
+    "suburb": "ROSETTA",
+    "state": "TAS",
+    "postcode": "7010",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.82210911,
+    "longitude": 147.25730077
+  },
+  {
+    "name": "Collinsvale Primary School",
+    "suburb": "COLLINSVALE",
+    "state": "TAS",
+    "postcode": "7012",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.83667338,
+    "longitude": 147.19839968
+  },
+  {
+    "name": "Lindisfarne North Primary School",
+    "suburb": "GEILSTON BAY",
+    "state": "TAS",
+    "postcode": "7015",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.838657,
+    "longitude": 147.350274
+  },
+  {
+    "name": "Lindisfarne Primary School",
+    "suburb": "LINDISFARNE",
+    "state": "TAS",
+    "postcode": "7015",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.85201252,
+    "longitude": 147.36372444
+  },
+  {
+    "name": "Risdon Vale Primary School",
+    "suburb": "RISDON VALE",
+    "state": "TAS",
+    "postcode": "7016",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.81259813,
+    "longitude": 147.35329662
+  },
+  {
+    "name": "Bellerive Primary School",
+    "suburb": "BELLERIVE",
+    "state": "TAS",
+    "postcode": "7018",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.87227607,
+    "longitude": 147.37011063
+  },
+  {
+    "name": "Clarence High School",
+    "suburb": "BELLERIVE",
+    "state": "TAS",
+    "postcode": "7018",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.877901,
+    "longitude": 147.38924026
+  },
+  {
+    "name": "Howrah Primary School",
+    "suburb": "HOWRAH",
+    "state": "TAS",
+    "postcode": "7018",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.88107919,
+    "longitude": 147.40211048
+  },
+  {
+    "name": "Montagu Bay Primary School",
+    "suburb": "MONTAGU BAY",
+    "state": "TAS",
+    "postcode": "7018",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.86449013,
+    "longitude": 147.35223353
+  },
+  {
+    "name": "Warrane Primary School",
+    "suburb": "WARRANE",
+    "state": "TAS",
+    "postcode": "7018",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.86122275,
+    "longitude": 147.38262197
+  },
+  {
+    "name": "Clarendon Vale Primary School",
+    "suburb": "CLARENDON VALE",
+    "state": "TAS",
+    "postcode": "7019",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.88738509,
+    "longitude": 147.44439485
+  },
+  {
+    "name": "Rokeby Primary School",
+    "suburb": "ROKEBY",
+    "state": "TAS",
+    "postcode": "7019",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.89897973,
+    "longitude": 147.43372383
+  },
+  {
+    "name": "Lauderdale Primary School",
+    "suburb": "LAUDERDALE",
+    "state": "TAS",
+    "postcode": "7021",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.905072,
+    "longitude": 147.47854
+  },
+  {
+    "name": "South Arm Primary School",
+    "suburb": "SOUTH ARM",
+    "state": "TAS",
+    "postcode": "7022",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -43.02586187,
+    "longitude": 147.42019695
+  },
+  {
+    "name": "Richmond Primary School",
+    "suburb": "RICHMOND",
+    "state": "TAS",
+    "postcode": "7025",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.73928054,
+    "longitude": 147.43798461
+  },
+  {
+    "name": "Campania District School",
+    "suburb": "CAMPANIA",
+    "state": "TAS",
+    "postcode": "7026",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -42.66628398,
+    "longitude": 147.42367813
+  },
+  {
+    "name": "Glen Huon Primary School",
+    "suburb": "GLEN HUON",
+    "state": "TAS",
+    "postcode": "7109",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -43.02813851,
+    "longitude": 146.96237801
+  },
+  {
+    "name": "Huonville Primary School",
+    "suburb": "HUONVILLE",
+    "state": "TAS",
+    "postcode": "7109",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -43.02374508,
+    "longitude": 147.04694878
+  },
+  {
+    "name": "Cygnet Primary School",
+    "suburb": "CYGNET",
+    "state": "TAS",
+    "postcode": "7112",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -43.15825931,
+    "longitude": 147.07223964
+  },
+  {
+    "name": "Franklin Primary School",
+    "suburb": "FRANKLIN",
+    "state": "TAS",
+    "postcode": "7113",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -43.08553093,
+    "longitude": 147.01185573
+  },
+  {
+    "name": "Kingston Primary School",
+    "suburb": "KINGSTON",
+    "state": "TAS",
+    "postcode": "7050",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.97934878,
+    "longitude": 147.30991854
+  },
+  {
+    "name": "Blackmans Bay Primary School",
+    "suburb": "BLACKMANS BAY",
+    "state": "TAS",
+    "postcode": "7052",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.99699352,
+    "longitude": 147.32126417
+  },
+  {
+    "name": "Margate Primary School",
+    "suburb": "MARGATE",
+    "state": "TAS",
+    "postcode": "7054",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -43.028852,
+    "longitude": 147.262095
+  },
+  {
+    "name": "Snug Primary School",
+    "suburb": "SNUG",
+    "state": "TAS",
+    "postcode": "7054",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -43.06533258,
+    "longitude": 147.25426938
+  },
+  {
+    "name": "Bruny Island District School",
+    "suburb": "ALONNAH",
+    "state": "TAS",
+    "postcode": "7150",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -43.31756067,
+    "longitude": 147.24605186
+  },
+  {
+    "name": "Cambridge Primary School",
+    "suburb": "CAMBRIDGE",
+    "state": "TAS",
+    "postcode": "7170",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.83620708,
+    "longitude": 147.44182458
+  },
+  {
+    "name": "Evandale Primary School",
+    "suburb": "EVANDALE",
+    "state": "TAS",
+    "postcode": "7212",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.567519,
+    "longitude": 147.249153
+  },
+  {
+    "name": "Bicheno Primary School",
+    "suburb": "BICHENO",
+    "state": "TAS",
+    "postcode": "7215",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.87237979,
+    "longitude": 148.30570234
+  },
+  {
+    "name": "East Launceston Primary School",
+    "suburb": "EAST LAUNCESTON",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.44202283,
+    "longitude": 147.1520445
+  },
+  {
+    "name": "Glen Dhu Primary School",
+    "suburb": "SOUTH LAUNCESTON",
+    "state": "TAS",
+    "postcode": "7249",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.45590244,
+    "longitude": 147.1439905
+  },
+  {
+    "name": "Norwood Primary School",
+    "suburb": "NORWOOD",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.46210661,
+    "longitude": 147.17427556
+  },
+  {
+    "name": "Punchbowl Primary School",
+    "suburb": "NEWSTEAD",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.45252801,
+    "longitude": 147.16532986
+  },
+  {
+    "name": "Riverside Primary School",
+    "suburb": "RIVERSIDE",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.41277009,
+    "longitude": 147.10063288
+  },
+  {
+    "name": "St Leonards Primary School",
+    "suburb": "ST LEONARDS",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.45970425,
+    "longitude": 147.2003125
+  },
+  {
+    "name": "Summerdale Primary School",
+    "suburb": "SUMMERHILL",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.46827258,
+    "longitude": 147.12970713
+  },
+  {
+    "name": "Trevallyn Primary School",
+    "suburb": "TREVALLYN",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.43814374,
+    "longitude": 147.11466237
+  },
+  {
+    "name": "Waverley Primary School",
+    "suburb": "WAVERLEY",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.43207254,
+    "longitude": 147.19013249
+  },
+  {
+    "name": "West Launceston Primary School",
+    "suburb": "WEST LAUNCESTON",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.44906993,
+    "longitude": 147.12848365
+  },
+  {
+    "name": "Youngtown Primary School",
+    "suburb": "YOUNGTOWN",
+    "state": "TAS",
+    "postcode": "7249",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.482606,
+    "longitude": 147.163844
+  },
+  {
+    "name": "Port Dalrymple School",
+    "suburb": "GEORGE TOWN",
+    "state": "TAS",
+    "postcode": "7253",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.09971856,
+    "longitude": 146.82811512
+  },
+  {
+    "name": "South George Town Primary School",
+    "suburb": "GEORGE TOWN",
+    "state": "TAS",
+    "postcode": "7253",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.11362094,
+    "longitude": 146.83363318
+  },
+  {
+    "name": "Bridport Primary School",
+    "suburb": "BRIDPORT",
+    "state": "TAS",
+    "postcode": "7262",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.00162041,
+    "longitude": 147.38937093
+  },
+  {
+    "name": "Ringarooma Primary School",
+    "suburb": "RINGAROOMA",
+    "state": "TAS",
+    "postcode": "7263",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.24228469,
+    "longitude": 147.73323945
+  },
+  {
+    "name": "Scottsdale Primary School",
+    "suburb": "SCOTTSDALE",
+    "state": "TAS",
+    "postcode": "7260",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.16034658,
+    "longitude": 147.50665375
+  },
+  {
+    "name": "Hagley Farm Primary School",
+    "suburb": "HAGLEY",
+    "state": "TAS",
+    "postcode": "7292",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.52669149,
+    "longitude": 146.90340231
+  },
+  {
+    "name": "Orford Primary School",
+    "suburb": "ORFORD",
+    "state": "TAS",
+    "postcode": "7190",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.56331933,
+    "longitude": 147.87384235
+  },
+  {
+    "name": "Swansea Primary School",
+    "suburb": "SWANSEA",
+    "state": "TAS",
+    "postcode": "7190",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.12236781,
+    "longitude": 148.07320103
+  },
+  {
+    "name": "Bracknell Primary School",
+    "suburb": "BRACKNELL",
+    "state": "TAS",
+    "postcode": "7302",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.65243695,
+    "longitude": 146.93358694
+  },
+  {
+    "name": "Perth Primary School",
+    "suburb": "PERTH",
+    "state": "TAS",
+    "postcode": "7300",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.57317837,
+    "longitude": 147.17437105
+  },
+  {
+    "name": "Longford Primary School",
+    "suburb": "LONGFORD",
+    "state": "TAS",
+    "postcode": "7301",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.59593583,
+    "longitude": 147.11694321
+  },
+  {
+    "name": "Westbury Primary School",
+    "suburb": "WESTBURY",
+    "state": "TAS",
+    "postcode": "7303",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.53170299,
+    "longitude": 146.83805102
+  },
+  {
+    "name": "Deloraine Primary School",
+    "suburb": "DELORAINE",
+    "state": "TAS",
+    "postcode": "7304",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.52867221,
+    "longitude": 146.66271544
+  },
+  {
+    "name": "Mole Creek Primary School",
+    "suburb": "MOLE CREEK",
+    "state": "TAS",
+    "postcode": "7304",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.55845075,
+    "longitude": 146.40554897
+  },
+  {
+    "name": "Latrobe Primary School",
+    "suburb": "LATROBE",
+    "state": "TAS",
+    "postcode": "7307",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.23961898,
+    "longitude": 146.41601313
+  },
+  {
+    "name": "Sheffield School",
+    "suburb": "SHEFFIELD",
+    "state": "TAS",
+    "postcode": "7306",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.38460175,
+    "longitude": 146.3245746
+  },
+  {
+    "name": "Latrobe High School",
+    "suburb": "LATROBE",
+    "state": "TAS",
+    "postcode": "7307",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.23650373,
+    "longitude": 146.42525319
+  },
+  {
+    "name": "Sassafras Primary School",
+    "suburb": "SASSAFRAS",
+    "state": "TAS",
+    "postcode": "7307",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.2871478,
+    "longitude": 146.50331382
+  },
+  {
+    "name": "Devonport Primary School",
+    "suburb": "DEVONPORT",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.18023239,
+    "longitude": 146.35740161
+  },
+  {
+    "name": "East Devonport Primary School",
+    "suburb": "EAST DEVONPORT",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.17792747,
+    "longitude": 146.37211466
+  },
+  {
+    "name": "Forth Primary School",
+    "suburb": "FORTH",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.19291547,
+    "longitude": 146.24858234
+  },
+  {
+    "name": "Hillcrest Primary School",
+    "suburb": "DEVONPORT",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.1870573,
+    "longitude": 146.33315893
+  },
+  {
+    "name": "Miandetta Primary School",
+    "suburb": "MIANDETTA",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.1954,
+    "longitude": 146.349
+  },
+  {
+    "name": "Nixon Street Primary School",
+    "suburb": "DEVONPORT",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.1729974,
+    "longitude": 146.33828234
+  },
+  {
+    "name": "Spreyton Primary School",
+    "suburb": "SPREYTON",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.21202919,
+    "longitude": 146.34585593
+  },
+  {
+    "name": "Wilmot Primary School",
+    "suburb": "WILMOT",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.38699434,
+    "longitude": 146.17536786
+  },
+  {
+    "name": "East Ulverstone Primary School",
+    "suburb": "ULVERSTONE",
+    "state": "TAS",
+    "postcode": "7315",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.15452656,
+    "longitude": 146.19175434
+  },
+  {
+    "name": "Sprent Primary School",
+    "suburb": "SPRENT",
+    "state": "TAS",
+    "postcode": "7315",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.26294106,
+    "longitude": 146.15942756
+  },
+  {
+    "name": "Ulverstone Primary School",
+    "suburb": "ULVERSTONE",
+    "state": "TAS",
+    "postcode": "7315",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.16076112,
+    "longitude": 146.16414432
+  },
+  {
+    "name": "West Ulverstone Primary School",
+    "suburb": "WEST ULVERSTONE",
+    "state": "TAS",
+    "postcode": "7315",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.14816145,
+    "longitude": 146.15951375
+  },
+  {
+    "name": "Riana Primary School",
+    "suburb": "RIANA",
+    "state": "TAS",
+    "postcode": "7316",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.20249009,
+    "longitude": 145.9989877
+  },
+  {
+    "name": "Burnie Primary School",
+    "suburb": "PARK GROVE",
+    "state": "TAS",
+    "postcode": "7320",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.0584334,
+    "longitude": 145.88530288
+  },
+  {
+    "name": "Cooee Primary School",
+    "suburb": "COOEE",
+    "state": "TAS",
+    "postcode": "7320",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.0415376,
+    "longitude": 145.86646528
+  },
+  {
+    "name": "Montello Primary School",
+    "suburb": "MONTELLO",
+    "state": "TAS",
+    "postcode": "7320",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.05990677,
+    "longitude": 145.89857951
+  },
+  {
+    "name": "Boat Harbour Primary School",
+    "suburb": "BOAT HARBOUR",
+    "state": "TAS",
+    "postcode": "7321",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -40.94562609,
+    "longitude": 145.63535686
+  },
+  {
+    "name": "Havenview Primary School",
+    "suburb": "HAVENVIEW",
+    "state": "TAS",
+    "postcode": "7320",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.08386446,
+    "longitude": 145.91116837
+  },
+  {
+    "name": "Natone Primary School",
+    "suburb": "NATONE",
+    "state": "TAS",
+    "postcode": "7321",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.17012891,
+    "longitude": 145.92177351
+  },
+  {
+    "name": "Ridgley Primary School",
+    "suburb": "RIDGLEY",
+    "state": "TAS",
+    "postcode": "7321",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.13997773,
+    "longitude": 145.8377718
+  },
+  {
+    "name": "Table Cape Primary School",
+    "suburb": "WYNYARD",
+    "state": "TAS",
+    "postcode": "7325",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -40.98316517,
+    "longitude": 145.71486624
+  },
+  {
+    "name": "Edith Creek Primary School",
+    "suburb": "EDITH CREEK",
+    "state": "TAS",
+    "postcode": "7330",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -40.97052056,
+    "longitude": 145.09340726
+  },
+  {
+    "name": "Forest Primary School",
+    "suburb": "FOREST",
+    "state": "TAS",
+    "postcode": "7330",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -40.84838284,
+    "longitude": 145.24941532
+  },
+  {
+    "name": "Redpa Primary School",
+    "suburb": "REDPA",
+    "state": "TAS",
+    "postcode": "7330",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -40.932925,
+    "longitude": 144.761834
+  },
+  {
+    "name": "Smithton Primary School",
+    "suburb": "SMITHTON",
+    "state": "TAS",
+    "postcode": "7330",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -40.84946046,
+    "longitude": 145.11605256
+  },
+  {
+    "name": "Stanley Primary School",
+    "suburb": "STANLEY",
+    "state": "TAS",
+    "postcode": "7331",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -40.75956582,
+    "longitude": 145.29098508
+  },
+  {
+    "name": "Brighton Primary School",
+    "suburb": "BRIGHTON",
+    "state": "TAS",
+    "postcode": "7030",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.69909438,
+    "longitude": 147.25845801
+  },
+  {
+    "name": "Bagdad Primary School",
+    "suburb": "BAGDAD",
+    "state": "TAS",
+    "postcode": "7030",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.62489064,
+    "longitude": 147.22295679
+  },
+  {
+    "name": "Kempton Primary School",
+    "suburb": "KEMPTON",
+    "state": "TAS",
+    "postcode": "7030",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.5311126,
+    "longitude": 147.19913449
+  },
+  {
+    "name": "Fairview Primary School",
+    "suburb": "NEW NORFOLK",
+    "state": "TAS",
+    "postcode": "7140",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.77432027,
+    "longitude": 147.05092241
+  },
+  {
+    "name": "New Norfolk Primary School",
+    "suburb": "NEW NORFOLK",
+    "state": "TAS",
+    "postcode": "7140",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.77900115,
+    "longitude": 147.06366914
+  },
+  {
+    "name": "Molesworth Primary School",
+    "suburb": "MOLESWORTH",
+    "state": "TAS",
+    "postcode": "7140",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.80404026,
+    "longitude": 147.15677869
+  },
+  {
+    "name": "Westerway Primary School",
+    "suburb": "WESTERWAY",
+    "state": "TAS",
+    "postcode": "7140",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.67762923,
+    "longitude": 146.78735111
+  },
+  {
+    "name": "Strahan Primary School",
+    "suburb": "STRAHAN",
+    "state": "TAS",
+    "postcode": "7468",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.15342033,
+    "longitude": 145.32034704
+  },
+  {
+    "name": "Zeehan Primary School",
+    "suburb": "ZEEHAN",
+    "state": "TAS",
+    "postcode": "7469",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.88801157,
+    "longitude": 145.33959279
+  },
+  {
+    "name": "Tarremah Steiner School",
+    "suburb": "HUNTINGFIELD",
+    "state": "TAS",
+    "postcode": "7055",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.997854,
+    "longitude": 147.289813
+  },
+  {
+    "name": "Australian Christian College - Burnie",
+    "suburb": "SOMERSET",
+    "state": "TAS",
+    "postcode": "7322",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -41.0444,
+    "longitude": 145.81
+  },
+  {
+    "name": "MacKillop Catholic College",
+    "suburb": "MORNINGTON",
+    "state": "TAS",
+    "postcode": "7018",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -42.857456,
+    "longitude": 147.400625
+  },
+  {
+    "name": "Devonport Christian School",
+    "suburb": "DON",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -41.18196,
+    "longitude": 146.3234
+  },
+  {
+    "name": "St Finn Barr's Catholic Primary School",
+    "suburb": "INVERMAY",
+    "state": "TAS",
+    "postcode": "7248",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -41.415572,
+    "longitude": 147.132923
+  },
+  {
+    "name": "Giant Steps Tasmania",
+    "suburb": "DELORAINE",
+    "state": "TAS",
+    "postcode": "7304",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -41.5225,
+    "longitude": 146.652
+  },
+  {
+    "name": "Dominic College",
+    "suburb": "GLENORCHY",
+    "state": "TAS",
+    "postcode": "7010",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -42.848604,
+    "longitude": 147.257738
+  },
+  {
+    "name": "Mount Carmel College",
+    "suburb": "SANDY BAY",
+    "state": "TAS",
+    "postcode": "7005",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -42.901946,
+    "longitude": 147.33217
+  },
+  {
+    "name": "Sacred Heart College",
+    "suburb": "NEW TOWN",
+    "state": "TAS",
+    "postcode": "7008",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -42.86218,
+    "longitude": 147.304645
+  },
+  {
+    "name": "Dodges Ferry Primary School",
+    "suburb": "DODGES FERRY",
+    "state": "TAS",
+    "postcode": "7173",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.84870944,
+    "longitude": 147.62474666
+  },
+  {
+    "name": "Exeter Primary School",
+    "suburb": "EXETER",
+    "state": "TAS",
+    "postcode": "7275",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.29885674,
+    "longitude": 146.95637398
+  },
+  {
+    "name": "Illawarra Primary School",
+    "suburb": "BLACKMANS BAY",
+    "state": "TAS",
+    "postcode": "7052",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -43.0086344,
+    "longitude": 147.31937793
+  },
+  {
+    "name": "OneSchool Global - Hobart Campus",
+    "suburb": "CLAREMONT",
+    "state": "TAS",
+    "postcode": "7011",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.797041,
+    "longitude": 147.262784
+  },
+  {
+    "name": "Beaconsfield Primary School",
+    "suburb": "BEACONSFIELD",
+    "state": "TAS",
+    "postcode": "7270",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.20319085,
+    "longitude": 146.8219466
+  },
+  {
+    "name": "Newstead Christian School",
+    "suburb": "NEWSTEAD",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -41.438287,
+    "longitude": 147.165078
+  },
+  {
+    "name": "St Virgil's College",
+    "suburb": "AUSTINS FERRY",
+    "state": "TAS",
+    "postcode": "7011",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -42.774178,
+    "longitude": 147.251698
+  },
+  {
+    "name": "Peregrine",
+    "suburb": "NICHOLLS RIVULET",
+    "state": "TAS",
+    "postcode": "7112",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -43.141636,
+    "longitude": 147.152841
+  },
+  {
+    "name": "Mountain Heights School",
+    "suburb": "QUEENSTOWN",
+    "state": "TAS",
+    "postcode": "7467",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -42.09410938,
+    "longitude": 145.54957398
+  },
+  {
+    "name": "St Brendan-Shaw College",
+    "suburb": "DEVONPORT",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -41.167167,
+    "longitude": 146.342373
+  },
+  {
+    "name": "St Patrick's College",
+    "suburb": "PROSPECT VALE",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -41.473557,
+    "longitude": 147.127444
+  },
+  {
+    "name": "Marist Regional College",
+    "suburb": "BURNIE",
+    "state": "TAS",
+    "postcode": "7320",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -41.04803,
+    "longitude": 145.886284
+  },
+  {
+    "name": "Ashley School",
+    "suburb": "DELORAINE",
+    "state": "TAS",
+    "postcode": "7304",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.52487563,
+    "longitude": 146.70431781
+  },
+  {
+    "name": "Cape Barren Island School",
+    "suburb": "CAPE BARREN ISLAND",
+    "state": "TAS",
+    "postcode": "7257",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -40.369305,
+    "longitude": 148.024571
+  },
+  {
+    "name": "Southern Support School",
+    "suburb": "HOWRAH",
+    "state": "TAS",
+    "postcode": "7018",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -42.880164,
+    "longitude": 147.401683
+  },
+  {
+    "name": "Calvin Christian School",
+    "suburb": "KINGSTON",
+    "state": "TAS",
+    "postcode": "7050",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -42.97993089,
+    "longitude": 147.30502043
+  },
+  {
+    "name": "Northern Support School",
+    "suburb": "RAVENSWOOD",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.423615,
+    "longitude": 147.172268
+  },
+  {
+    "name": "Launceston Church Grammar School - Junior Campus",
+    "suburb": "EAST LAUNCESTON",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -41.433996,
+    "longitude": 147.149315
+  },
+  {
+    "name": "Scotch Oakburn College - Elphin Campus",
+    "suburb": "LAUNCESTON",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -41.434589,
+    "longitude": 147.152685
+  },
+  {
+    "name": "Leighland Christian School - Burnie Campus",
+    "suburb": "WIVENHOE",
+    "state": "TAS",
+    "postcode": "7320",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -41.069016,
+    "longitude": 145.935864
+  },
+  {
+    "name": "St Virgil's College - St Virgil's Junior School",
+    "suburb": "HOBART",
+    "state": "TAS",
+    "postcode": "7000",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -42.882906,
+    "longitude": 147.317603
+  },
+  {
+    "name": "OneSchool Global - Launceston Campus",
+    "suburb": "KINGS MEADOWS",
+    "state": "TAS",
+    "postcode": "7249",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -41.451375,
+    "longitude": 147.160437
+  },
+  {
+    "name": "Australian Christian College - Launceston",
+    "suburb": "NEWNHAM",
+    "state": "TAS",
+    "postcode": "7248",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -41.3858,
+    "longitude": 147.127401
+  },
+  {
+    "name": "Emmanuel Christian School",
+    "suburb": "ROKEBY",
+    "state": "TAS",
+    "postcode": "7019",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.90075556,
+    "longitude": 147.43857962
+  },
+  {
+    "name": "Northern Christian School",
+    "suburb": "BRIDGEWATER",
+    "state": "TAS",
+    "postcode": "7030",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -42.730637,
+    "longitude": 147.223489
+  },
+  {
+    "name": "Channel Christian School",
+    "suburb": "MARGATE",
+    "state": "TAS",
+    "postcode": "7054",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -43.027034,
+    "longitude": 147.271393
+  },
+  {
+    "name": "Australian Christian College - Hobart",
+    "suburb": "GEILSTON BAY",
+    "state": "TAS",
+    "postcode": "7015",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.839719,
+    "longitude": 147.352713
+  },
+  {
+    "name": "Launceston College",
+    "suburb": "LAUNCESTON",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.43992227,
+    "longitude": 147.13289463
+  },
+  {
+    "name": "Elizabeth College",
+    "suburb": "NORTH HOBART",
+    "state": "TAS",
+    "postcode": "7000",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.87760164,
+    "longitude": 147.31775523
+  },
+  {
+    "name": "Rosny College",
+    "suburb": "ROSNY PARK",
+    "state": "TAS",
+    "postcode": "7018",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.86932994,
+    "longitude": 147.36533631
+  },
+  {
+    "name": "Guilford Young College",
+    "suburb": "GLENORCHY",
+    "state": "TAS",
+    "postcode": "7010",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -42.835,
+    "longitude": 147.27
+  },
+  {
+    "name": "Claremont College",
+    "suburb": "CLAREMONT",
+    "state": "TAS",
+    "postcode": "7011",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.79584451,
+    "longitude": 147.25055132
+  },
+  {
+    "name": "Sandy Bay Infant School",
+    "suburb": "SANDY BAY",
+    "state": "TAS",
+    "postcode": "7005",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.90961521,
+    "longitude": 147.34937869
+  },
+  {
+    "name": "Montrose Bay High School",
+    "suburb": "ROSETTA",
+    "state": "TAS",
+    "postcode": "7010",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.82023857,
+    "longitude": 147.2669231
+  },
+  {
+    "name": "Glenorchy Primary School",
+    "suburb": "GLENORCHY",
+    "state": "TAS",
+    "postcode": "7010",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.83091402,
+    "longitude": 147.26726531
+  },
+  {
+    "name": "Guilford Young College - Hobart Campus",
+    "suburb": "HOBART",
+    "state": "TAS",
+    "postcode": "7000",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -42.882963,
+    "longitude": 147.317521
+  },
+  {
+    "name": "St Aloysius Catholic College",
+    "suburb": "HUNTINGFIELD",
+    "state": "TAS",
+    "postcode": "7055",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -42.997539,
+    "longitude": 147.289506
+  },
+  {
+    "name": "The Friends' School - Argyle Street Campus",
+    "suburb": "NORTH HOBART",
+    "state": "TAS",
+    "postcode": "7000",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.868493,
+    "longitude": 147.315695
+  },
+  {
+    "name": "Calvin Christian School - Secondary Campus",
+    "suburb": "KINGSTON",
+    "state": "TAS",
+    "postcode": "7050",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -42.979386,
+    "longitude": 147.30494
+  },
+  {
+    "name": "Somerset Primary School",
+    "suburb": "SOMERSET",
+    "state": "TAS",
+    "postcode": "7322",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.03817706,
+    "longitude": 145.81934074
+  },
+  {
+    "name": "Don College",
+    "suburb": "DEVONPORT",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.16761222,
+    "longitude": 146.33334709
+  },
+  {
+    "name": "Hellyer College",
+    "suburb": "SHOREWELL PARK",
+    "state": "TAS",
+    "postcode": "7320",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.061313,
+    "longitude": 145.881671
+  },
+  {
+    "name": "Hobart College",
+    "suburb": "MOUNT NELSON",
+    "state": "TAS",
+    "postcode": "7007",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.917107,
+    "longitude": 147.318165
+  },
+  {
+    "name": "Romaine Park Primary School",
+    "suburb": "ROMAINE",
+    "state": "TAS",
+    "postcode": "7320",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.07792938,
+    "longitude": 145.90136514
+  },
+  {
+    "name": "Tasmanian eSchool",
+    "suburb": "DERWENT PARK",
+    "state": "TAS",
+    "postcode": "7009",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -42.83237517,
+    "longitude": 147.29333613
+  },
+  {
+    "name": "Windermere Primary School",
+    "suburb": "CLAREMONT",
+    "state": "TAS",
+    "postcode": "7011",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.79929094,
+    "longitude": 147.25774957
+  },
+  {
+    "name": "Austins Ferry Primary School",
+    "suburb": "CLAREMONT",
+    "state": "TAS",
+    "postcode": "7011",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.78491896,
+    "longitude": 147.23896666
+  },
+  {
+    "name": "JRLF - Senior School",
+    "suburb": "BRIDGEWATER",
+    "state": "TAS",
+    "postcode": "7030",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.73735506,
+    "longitude": 147.23949761
+  },
+  {
+    "name": "JRLF - Gagebrook Primary School",
+    "suburb": "GAGEBROOK",
+    "state": "TAS",
+    "postcode": "7030",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.74882742,
+    "longitude": 147.27580782
+  },
+  {
+    "name": "JRLF - Herdsmans Cove Primary School",
+    "suburb": "HERDSMANS COVE",
+    "state": "TAS",
+    "postcode": "7030",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.74886383,
+    "longitude": 147.26385697
+  },
+  {
+    "name": "JRLF - East Derwent Primary School",
+    "suburb": "BRIDGEWATER",
+    "state": "TAS",
+    "postcode": "7030",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -42.74341148,
+    "longitude": 147.24993062
+  },
+  {
+    "name": "Launceston Big Picture School",
+    "suburb": "INVERMAY",
+    "state": "TAS",
+    "postcode": "7248",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.42794676,
+    "longitude": 147.13906078
+  },
+  {
+    "name": "Newstead College",
+    "suburb": "NEWSTEAD",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -41.43310275,
+    "longitude": 147.16077778
+  },
+  {
+    "name": "Lambert School",
+    "suburb": "NORTH HOBART",
+    "state": "TAS",
+    "postcode": "7002",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.876215,
+    "longitude": 147.319525
+  },
+  {
+    "name": "Port Sorell Primary School",
+    "suburb": "PORT SORELL",
+    "state": "TAS",
+    "postcode": "7307",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.16379772,
+    "longitude": 146.55001066
+  },
+  {
+    "name": "Andrews Creek Primary School",
+    "suburb": "WESLEY VALE",
+    "state": "TAS",
+    "postcode": "7307",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.18898408,
+    "longitude": 146.45880233
+  },
+  {
+    "name": "East Tamar Primary School",
+    "suburb": "MAYFIELD",
+    "state": "TAS",
+    "postcode": "7248",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -41.38769971,
+    "longitude": 147.12989373
+  },
+  {
+    "name": "Penguin District School",
+    "suburb": "PENGUIN",
+    "state": "TAS",
+    "postcode": "7316",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.12693898,
+    "longitude": 146.06930478
+  },
+  {
+    "name": "St Michael's Collegiate School - Middle School Campus",
+    "suburb": "HOBART",
+    "state": "TAS",
+    "postcode": "7000",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.889026,
+    "longitude": 147.322708
+  },
+  {
+    "name": "St Francis Flexible Learning Centre",
+    "suburb": "CHIGWELL",
+    "state": "TAS",
+    "postcode": "7011",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -42.8046047,
+    "longitude": 147.2449819
+  },
+  {
+    "name": "Scotch Oakburn College - Valley Campus",
+    "suburb": "FINGAL",
+    "state": "TAS",
+    "postcode": "7214",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -41.70202,
+    "longitude": 147.834949
+  },
+  {
+    "name": "St Patrick’s College - Croagh Patrick Centre",
+    "suburb": "PROSPECT",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -41.470703,
+    "longitude": 147.123315
+  },
+  {
+    "name": "St Michael's Collegiate School - Sports Campus",
+    "suburb": "TOLMANS HILL",
+    "state": "TAS",
+    "postcode": "7007",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -42.9164678,
+    "longitude": 147.3071886
+  },
+  {
+    "name": "St Michael's Collegiate School - Junior School Campus",
+    "suburb": "HOBART",
+    "state": "TAS",
+    "postcode": "7004",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -42.8933739,
+    "longitude": 147.3094085
+  },
+  {
+    "name": "Tamar Valley Steiner School",
+    "suburb": "LAUNCESTON",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -41.46292572,
+    "longitude": 147.202281
+  },
+  {
+    "name": "Indie School - Glenorchy",
+    "suburb": "GLENORCHY",
+    "state": "TAS",
+    "postcode": "7010",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -42.833839,
+    "longitude": 147.27975
+  },
+  {
+    "name": "Indie School - Devonport",
+    "suburb": "DEVONPORT",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -41.1769,
+    "longitude": 146.3593
+  },
+  {
+    "name": "Indie School - Devonport (Burnie Campus)",
+    "suburb": "Burnie",
+    "state": "TAS",
+    "postcode": "7320",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -41.0506605882828,
+    "longitude": 145.906568397793
+  },
+  {
+    "name": "Hobart City High School",
+    "suburb": "NEW TOWN",
+    "state": "TAS",
+    "postcode": "7008",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.85515258,
+    "longitude": 147.3003688
+  },
+  {
+    "name": "Indie School - Glenorchy (Sorell Campus)",
+    "suburb": "Sorell",
+    "state": "TAS",
+    "postcode": "7172",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -42.7849539901336,
+    "longitude": 147.561197597848
+  },
+  {
+    "name": "Hobart City High School Sub-Campus",
+    "suburb": "NEW TOWN",
+    "state": "TAS",
+    "postcode": "7008",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -42.8512789240331,
+    "longitude": 147.301810561363
+  },
+  {
+    "name": "Indie School - Devonport (Launceston Campus)",
+    "suburb": "LAUNCESTON",
+    "state": "TAS",
+    "postcode": "7250",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -41.4365499493869,
+    "longitude": 147.13791689751
+  },
+  {
+    "name": "Indie School - Glenorchy (Kingston Campus)",
+    "suburb": "KINGSTON",
+    "state": "TAS",
+    "postcode": "7050",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -42.9820958289964,
+    "longitude": 147.295521828836
+  },
+  {
+    "name": "North West Support School - Miandetta Campus",
+    "suburb": "MIANDETTA",
+    "state": "TAS",
+    "postcode": "7310",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -41.072309,
+    "longitude": 145.892976
+  },
+  {
+    "name": "Indie School - Devonport (Wynard Campus)",
+    "suburb": "WYNYARD",
+    "state": "TAS",
+    "postcode": "7325",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -40.9897744713531,
+    "longitude": 145.726178089719
+  },
+  {
+    "name": "Indie School - Devonport (George Town Campus)",
+    "suburb": "GEORGE TOWN",
+    "state": "TAS",
+    "postcode": "7253",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -41.1070966192687,
+    "longitude": 146.823332037188
+  },
+  {
+    "name": "Indie School - Glenorchy (New Norfolk Campus)",
+    "suburb": "NEW NORFOLK",
+    "state": "TAS",
+    "postcode": "7140",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -42.7846760970202,
+    "longitude": 147.063860723821
+  },
+  {
+    "name": "Nipakawa Steiner School",
+    "suburb": "DYNNYRNE",
+    "state": "TAS",
+    "postcode": "7005",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -42.9044635411674,
+    "longitude": 147.301588339177
+  },
+  {
+    "name": "Marisol Miro Quesada Le Roux - School name yet to be determined",
+    "suburb": "DODGES FERRY",
+    "state": "TAS",
+    "postcode": "7173",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -42.85568,
+    "longitude": 147.623731
+  }
+]

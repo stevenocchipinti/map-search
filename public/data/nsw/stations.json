@@ -1,0 +1,2618 @@
+[
+  {
+    "name": "KILLARA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.76544248299996,
+    "longitude": 151.1617656080001
+  },
+  {
+    "name": "MARTIN PLACE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.86793383799994,
+    "longitude": 151.211764968
+  },
+  {
+    "name": "WYNYARD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.865888618999975,
+    "longitude": 151.2056344030001
+  },
+  {
+    "name": "CIRCULAR QUAY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.86133186799998,
+    "longitude": 151.21086481400005
+  },
+  {
+    "name": "NORTH SYDNEY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.84110565499998,
+    "longitude": 151.20690880100005
+  },
+  {
+    "name": "MILSONS POINT RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.84596181399996,
+    "longitude": 151.2119283510001
+  },
+  {
+    "name": "HEATHCOTE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.088134354999966,
+    "longitude": 151.00804500900006
+  },
+  {
+    "name": "LOFTUS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.045502743999975,
+    "longitude": 151.05137330700006
+  },
+  {
+    "name": "GYMEA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.034808623999936,
+    "longitude": 151.08545607700012
+  },
+  {
+    "name": "CARINGBAH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.04163694899995,
+    "longitude": 151.12228136200008
+  },
+  {
+    "name": "CRONULLA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.055587387999935,
+    "longitude": 151.15137554600005
+  },
+  {
+    "name": "SUTHERLAND RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.031741963999934,
+    "longitude": 151.05721070200002
+  },
+  {
+    "name": "HURSTVILLE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.96730180299994,
+    "longitude": 151.10252470300009
+  },
+  {
+    "name": "KOGARAH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.96201049199993,
+    "longitude": 151.13275147600007
+  },
+  {
+    "name": "CROYDON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.88336199499997,
+    "longitude": 151.11586972500004
+  },
+  {
+    "name": "HURLSTONE PARK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.91053906899998,
+    "longitude": 151.13185028600003
+  },
+  {
+    "name": "ST PETERS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.90704329199997,
+    "longitude": 151.1809003190001
+  },
+  {
+    "name": "CENTRAL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.88393484799997,
+    "longitude": 151.2067582300001
+  },
+  {
+    "name": "KINGS CROSS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.874466833999975,
+    "longitude": 151.2220175440001
+  },
+  {
+    "name": "EDGECLIFF RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.87944987099996,
+    "longitude": 151.23694649800007
+  },
+  {
+    "name": "COOLAMON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.81592024599996,
+    "longitude": 147.2019391330001
+  },
+  {
+    "name": "TARAGO RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -35.06994918099997,
+    "longitude": 149.65137055800005
+  },
+  {
+    "name": "PARKES RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.14225682599994,
+    "longitude": 148.17336209500002
+  },
+  {
+    "name": "BATHURST RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.42565853899998,
+    "longitude": 149.58329105100006
+  },
+  {
+    "name": "BLAYNEY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.52702752399995,
+    "longitude": 149.25452184000005
+  },
+  {
+    "name": "INDIAN PACIFIC RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.30088754899998,
+    "longitude": 149.10131921800007
+  },
+  {
+    "name": "ORANGE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.286546621999946,
+    "longitude": 149.10383296700002
+  },
+  {
+    "name": "TARANA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.524121252999976,
+    "longitude": 149.90758144500012
+  },
+  {
+    "name": "LOCKHART RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -35.226304857999935,
+    "longitude": 146.7208028760001
+  },
+  {
+    "name": "NARRANDERA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.74050287699998,
+    "longitude": 146.55706132900002
+  },
+  {
+    "name": "GRIFFITH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.28659404199993,
+    "longitude": 146.0476624590001
+  },
+  {
+    "name": "WELLINGTON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.553891686999975,
+    "longitude": 148.94683492000001
+  },
+  {
+    "name": "NIAGARA PARK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.38320671399998,
+    "longitude": 151.35450791300002
+  },
+  {
+    "name": "NARARA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.39469980599995,
+    "longitude": 151.34444146500005
+  },
+  {
+    "name": "KOOLEWONG RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.46640274799995,
+    "longitude": 151.31854491800004
+  },
+  {
+    "name": "GOSFORD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.42357722099996,
+    "longitude": 151.34173616200007
+  },
+  {
+    "name": "POINT CLARE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.44613225299997,
+    "longitude": 151.32847665000008
+  },
+  {
+    "name": "TASCOTT RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.45095454799997,
+    "longitude": 151.31858511300004
+  },
+  {
+    "name": "HAWKESBURY RIVER RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.547081541999944,
+    "longitude": 151.2264063890001
+  },
+  {
+    "name": "SPRINGWOOD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.69879550199994,
+    "longitude": 150.56378642800007
+  },
+  {
+    "name": "FAULCONBRIDGE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.69640212799993,
+    "longitude": 150.53499941300004
+  },
+  {
+    "name": "VALLEY HEIGHTS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.70446553099998,
+    "longitude": 150.58393018700008
+  },
+  {
+    "name": "BLAXLAND RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.743573201999936,
+    "longitude": 150.60966488500003
+  },
+  {
+    "name": "BINNAWAY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.550124471999936,
+    "longitude": 149.3820278190001
+  },
+  {
+    "name": "WATERFALL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.13464957299993,
+    "longitude": 150.99459081600003
+  },
+  {
+    "name": "YERRINBOOL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.37168564399997,
+    "longitude": 150.54349487500008
+  },
+  {
+    "name": "WOMBARRA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.275629210999966,
+    "longitude": 150.9534019780001
+  },
+  {
+    "name": "THIRROUL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.31809813299998,
+    "longitude": 150.91882699500002
+  },
+  {
+    "name": "WOONONA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.34945145299997,
+    "longitude": 150.91522118700004
+  },
+  {
+    "name": "LEUMEAH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.050895544999946,
+    "longitude": 150.83031379800002
+  },
+  {
+    "name": "CORRIMAL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.37551214299998,
+    "longitude": 150.9050290340001
+  },
+  {
+    "name": "TOWRADGI RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.38453474599993,
+    "longitude": 150.90128591600012
+  },
+  {
+    "name": "PORT KEMBLA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.47728773399996,
+    "longitude": 150.90145951800002
+  },
+  {
+    "name": "UNANDERRA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.45461155199996,
+    "longitude": 150.84601023400012
+  },
+  {
+    "name": "WOLLONGONG RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.42757888899996,
+    "longitude": 150.88810542500005
+  },
+  {
+    "name": "MOREE AIRPORT",
+    "state": "NSW",
+    "latitude": -29.49618668399995,
+    "longitude": 149.8494616590001
+  },
+  {
+    "name": "KOOTINGAL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.05874506699996,
+    "longitude": 151.0562013230001
+  },
+  {
+    "name": "WALCHA ROAD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -30.941035797999973,
+    "longitude": 151.4023260030001
+  },
+  {
+    "name": "ALBION PARK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.56286965399994,
+    "longitude": 150.79874694400007
+  },
+  {
+    "name": "OAK FLATS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.57199931799994,
+    "longitude": 150.82032355700005
+  },
+  {
+    "name": "DUNMORE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.60594929699994,
+    "longitude": 150.84006767100004
+  },
+  {
+    "name": "BERRY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.780359386999976,
+    "longitude": 150.69660877100011
+  },
+  {
+    "name": "BOMADERRY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.85379536999994,
+    "longitude": 150.60990768200008
+  },
+  {
+    "name": "GERRINGONG RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.744799257999944,
+    "longitude": 150.81749342500007
+  },
+  {
+    "name": "MINNAMURRA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.62625789699996,
+    "longitude": 150.85271813400004
+  },
+  {
+    "name": "BOMBO RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.65856210099997,
+    "longitude": 150.8538828720001
+  },
+  {
+    "name": "KIAMA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.67240541499996,
+    "longitude": 150.8548614760001
+  },
+  {
+    "name": "BUNDANOON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.655953986999975,
+    "longitude": 150.29943936000006
+  },
+  {
+    "name": "MOSS VALE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.54793838699993,
+    "longitude": 150.37152716600008
+  },
+  {
+    "name": "EXETER RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.61367931899997,
+    "longitude": 150.31737931400005
+  },
+  {
+    "name": "WINGELLO RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.69215027699994,
+    "longitude": 150.15838619200008
+  },
+  {
+    "name": "MITTAGONG RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.45262860999998,
+    "longitude": 150.44791124900007
+  },
+  {
+    "name": "RYDAL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.48359049399994,
+    "longitude": 150.03185014000007
+  },
+  {
+    "name": "ARMIDALE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -30.515361026999983,
+    "longitude": 151.65175909200002
+  },
+  {
+    "name": "URALLA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -30.644027765999965,
+    "longitude": 151.50510323700007
+  },
+  {
+    "name": "GRAFTON CITY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -29.703893687999937,
+    "longitude": 152.9416981490001
+  },
+  {
+    "name": "BLACKHEATH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.63319141699998,
+    "longitude": 150.28440574600006
+  },
+  {
+    "name": "WOODFORD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.73541609899996,
+    "longitude": 150.48217095300004
+  },
+  {
+    "name": "HAZELBROOK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.72394409499998,
+    "longitude": 150.45456894400002
+  },
+  {
+    "name": "BELL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.50564773699995,
+    "longitude": 150.2789737820001
+  },
+  {
+    "name": "KEMPSEY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.076839741999947,
+    "longitude": 152.83304501700002
+  },
+  {
+    "name": "LITHGOW RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.48042221399993,
+    "longitude": 150.15736484500007
+  },
+  {
+    "name": "OTFORD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.21075677799996,
+    "longitude": 151.00568334700006
+  },
+  {
+    "name": "SCARBOROUGH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.26490407699998,
+    "longitude": 150.96573837300002
+  },
+  {
+    "name": "COLEDALE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.289313826999944,
+    "longitude": 150.94328327900007
+  },
+  {
+    "name": "AUSTINMER RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.306435646999944,
+    "longitude": 150.92929236500004
+  },
+  {
+    "name": "BULLI RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.33446926999994,
+    "longitude": 150.91472995300012
+  },
+  {
+    "name": "BELLAMBI RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.36280779599997,
+    "longitude": 150.90999718400008
+  },
+  {
+    "name": "MOUNT VICTORIA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.58788789399995,
+    "longitude": 150.25694834600006
+  },
+  {
+    "name": "STANWELL PARK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.22663921599997,
+    "longitude": 150.98104366200005
+  },
+  {
+    "name": "COALCLIFF RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.24222415199995,
+    "longitude": 150.97744712500003
+  },
+  {
+    "name": "HELENSBURGH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.17684145199996,
+    "longitude": 150.99486157100011
+  },
+  {
+    "name": "PYMBLE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.744646502999956,
+    "longitude": 151.1420908010001
+  },
+  {
+    "name": "NORTH WOLLONGONG RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.41238934799998,
+    "longitude": 150.89137258300002
+  },
+  {
+    "name": "FAIRY MEADOW RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.39526720199996,
+    "longitude": 150.89640519400007
+  },
+  {
+    "name": "CONISTON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.43773135599997,
+    "longitude": 150.88526140400006
+  },
+  {
+    "name": "LYSAGHTS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.45484141299994,
+    "longitude": 150.87608427400005
+  },
+  {
+    "name": "CRINGILA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.466999277999946,
+    "longitude": 150.878415022
+  },
+  {
+    "name": "PORT KEMBLA NORTH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.47279954099997,
+    "longitude": 150.88832955300006
+  },
+  {
+    "name": "KEMBLA GRANGE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.47010704199994,
+    "longitude": 150.81758072800005
+  },
+  {
+    "name": "DAPTO RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.49212623099993,
+    "longitude": 150.79230320200008
+  },
+  {
+    "name": "DENILIQUIN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -35.53078018999997,
+    "longitude": 144.95765392300007
+  },
+  {
+    "name": "MINTO RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.02732960399993,
+    "longitude": 150.84256236200008
+  },
+  {
+    "name": "CAMPBELLTOWN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.063697306999984,
+    "longitude": 150.81436382100003
+  },
+  {
+    "name": "MACARTHUR RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.07204017299995,
+    "longitude": 150.79692665100004
+  },
+  {
+    "name": "GORDON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.75601612999998,
+    "longitude": 151.15453444000002
+  },
+  {
+    "name": "WARRIMOO RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.72119898099993,
+    "longitude": 150.60235387800003
+  },
+  {
+    "name": "ENGADINE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.06773778199994,
+    "longitude": 151.0148127550001
+  },
+  {
+    "name": "WOOLOOWARE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.04763362999995,
+    "longitude": 151.14415155500012
+  },
+  {
+    "name": "ROYAL NATIONAL PARK TRAMWAY STATION",
+    "state": "NSW",
+    "latitude": -34.06258772199993,
+    "longitude": 151.05664627700003
+  },
+  {
+    "name": "KIRRAWEE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.03502847599998,
+    "longitude": 151.07138652000003
+  },
+  {
+    "name": "COMO RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.00436875899993,
+    "longitude": 151.06817970200007
+  },
+  {
+    "name": "JANNALI RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.01599158299996,
+    "longitude": 151.06466919500008
+  },
+  {
+    "name": "MIRANDA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.03636081999997,
+    "longitude": 151.10246293500006
+  },
+  {
+    "name": "ALLAWAH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.96964798099998,
+    "longitude": 151.11446939200005
+  },
+  {
+    "name": "CARLTON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.968252045999975,
+    "longitude": 151.12453177300006
+  },
+  {
+    "name": "PENSHURST RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.96609903199993,
+    "longitude": 151.08909934300004
+  },
+  {
+    "name": "MORTDALE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.97069267999996,
+    "longitude": 151.081324579
+  },
+  {
+    "name": "BEVERLY HILLS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.948929831999976,
+    "longitude": 151.08127849400012
+  },
+  {
+    "name": "ROCKDALE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.95200184299995,
+    "longitude": 151.1368915490001
+  },
+  {
+    "name": "BANKSIA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.94535307999996,
+    "longitude": 151.14048633200002
+  },
+  {
+    "name": "ARNCLIFFE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.93631067299998,
+    "longitude": 151.14737726500005
+  },
+  {
+    "name": "TEMPE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.92381308599994,
+    "longitude": 151.1566920450001
+  },
+  {
+    "name": "BEXLEY NORTH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.937476542999946,
+    "longitude": 151.11350768400007
+  },
+  {
+    "name": "KINGSGROVE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.940498497999954,
+    "longitude": 151.1006111810001
+  },
+  {
+    "name": "BARDWELL PARK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.93146759899997,
+    "longitude": 151.12501246700003
+  },
+  {
+    "name": "TURRELLA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.92986500899997,
+    "longitude": 151.1399313490001
+  },
+  {
+    "name": "BELMORE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.91711931799995,
+    "longitude": 151.0887258360001
+  },
+  {
+    "name": "DULWICH HILL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.911014000999955,
+    "longitude": 151.1412187300001
+  },
+  {
+    "name": "MARRICKVILLE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.913915937999946,
+    "longitude": 151.1535622450001
+  },
+  {
+    "name": "ASHFIELD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.887372709999966,
+    "longitude": 151.12552471000004
+  },
+  {
+    "name": "SUMMER HILL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.890400462999935,
+    "longitude": 151.13946872200006
+  },
+  {
+    "name": "STANMORE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.89442446999993,
+    "longitude": 151.163904472
+  },
+  {
+    "name": "LEWISHAM RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.893198138999935,
+    "longitude": 151.14743916400005
+  },
+  {
+    "name": "PETERSHAM RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.89386978099998,
+    "longitude": 151.15511729500008
+  },
+  {
+    "name": "BURWOOD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.87710675099993,
+    "longitude": 151.10402636000003
+  },
+  {
+    "name": "CENTRAL SLR STOP",
+    "state": "NSW",
+    "latitude": -33.882359193999946,
+    "longitude": 151.2066858080001
+  },
+  {
+    "name": "TOWN HALL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.87392116199993,
+    "longitude": 151.2068531010001
+  },
+  {
+    "name": "NEWTOWN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.89784313499996,
+    "longitude": 151.17963971400002
+  },
+  {
+    "name": "MACDONALDTOWN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.89672200199993,
+    "longitude": 151.18635481500007
+  },
+  {
+    "name": "REDFERN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.89164519099995,
+    "longitude": 151.19884737200005
+  },
+  {
+    "name": "ERSKINEVILLE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.90008652699993,
+    "longitude": 151.1855810620001
+  },
+  {
+    "name": "GREEN SQUARE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.90604117899994,
+    "longitude": 151.20263327200007
+  },
+  {
+    "name": "SYDENHAM RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.91480234399995,
+    "longitude": 151.16604925600006
+  },
+  {
+    "name": "WOLLI CREEK INTERCHANGE STATION",
+    "state": "NSW",
+    "latitude": -33.92850796199997,
+    "longitude": 151.15406281200012
+  },
+  {
+    "name": "INTERNATIONAL TERMINAL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.93516137199998,
+    "longitude": 151.16652018600007
+  },
+  {
+    "name": "MASCOT RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.92299139099998,
+    "longitude": 151.1872701630001
+  },
+  {
+    "name": "DOMESTIC TERMINAL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.93364032699998,
+    "longitude": 151.18104394400007
+  },
+  {
+    "name": "BONDI JUNCTION RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.891325397999935,
+    "longitude": 151.24842329700004
+  },
+  {
+    "name": "CANTERBURY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.91193277299993,
+    "longitude": 151.11848631200007
+  },
+  {
+    "name": "MUSEUM RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.876536278999936,
+    "longitude": 151.20973657500008
+  },
+  {
+    "name": "WONDABYNE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.492080311999985,
+    "longitude": 151.25706670700004
+  },
+  {
+    "name": "WOY WOY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.48568805499997,
+    "longitude": 151.323348892
+  },
+  {
+    "name": "LISAROW RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.38212487599998,
+    "longitude": 151.3701413000001
+  },
+  {
+    "name": "PERISHER VALLEY SKITUBE",
+    "state": "NSW",
+    "latitude": -36.40519976899998,
+    "longitude": 148.411850737
+  },
+  {
+    "name": "BLUECOW SKITUBE",
+    "state": "NSW",
+    "latitude": -36.38609926099997,
+    "longitude": 148.3930064870001
+  },
+  {
+    "name": "BULLOCKS FLAT SKITUBE",
+    "state": "NSW",
+    "latitude": -36.44243870699995,
+    "longitude": 148.44229385300002
+  },
+  {
+    "name": "ROSEVILLE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.78419621499995,
+    "longitude": 151.17741500600005
+  },
+  {
+    "name": "CHATSWOOD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.79699643199996,
+    "longitude": 151.18090719300005
+  },
+  {
+    "name": "ARTARMON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.808854302999976,
+    "longitude": 151.18504349900002
+  },
+  {
+    "name": "ST LEONARDS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.82272212099997,
+    "longitude": 151.19420871300008
+  },
+  {
+    "name": "WOLLSTONECRAFT RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.83191015399996,
+    "longitude": 151.1917772260001
+  },
+  {
+    "name": "WAVERTON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.837602355999934,
+    "longitude": 151.19741858800012
+  },
+  {
+    "name": "LINDFIELD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.775076024999976,
+    "longitude": 151.16906841500008
+  },
+  {
+    "name": "CONVENTION SLR STOP",
+    "state": "NSW",
+    "latitude": -33.872603640999955,
+    "longitude": 151.198100661
+  },
+  {
+    "name": "STRATHFIELD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.87179054099994,
+    "longitude": 151.094343395
+  },
+  {
+    "name": "ST JAMES RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.87028084699995,
+    "longitude": 151.21205326200004
+  },
+  {
+    "name": "WYONG RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.28546458399995,
+    "longitude": 151.42525015600006
+  },
+  {
+    "name": "TUGGERAH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.30774716999997,
+    "longitude": 151.4202320270001
+  },
+  {
+    "name": "OURIMBAH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.35956454799998,
+    "longitude": 151.3699759320001
+  },
+  {
+    "name": "WARNERVALE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.24734672599993,
+    "longitude": 151.44888608700012
+  },
+  {
+    "name": "WYEE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.18047113199998,
+    "longitude": 151.48720442600006
+  },
+  {
+    "name": "MORISSET RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.109086126999955,
+    "longitude": 151.48792531900006
+  },
+  {
+    "name": "CASINO RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -28.861194385999966,
+    "longitude": 153.03808026500008
+  },
+  {
+    "name": "BUNGENDORE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -35.25597202599994,
+    "longitude": 149.446458709
+  },
+  {
+    "name": "CANBERRA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -35.31922360999994,
+    "longitude": 149.14933887000007
+  },
+  {
+    "name": "QUEANBEYAN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -35.34283316699998,
+    "longitude": 149.22759161500005
+  },
+  {
+    "name": "MACQUARIE UNIVERSITY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.777646509999954,
+    "longitude": 151.11840871700008
+  },
+  {
+    "name": "MACQUARIE PARK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.78528265099993,
+    "longitude": 151.128852036
+  },
+  {
+    "name": "NORTH RYDE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.79417434199996,
+    "longitude": 151.13802623000004
+  },
+  {
+    "name": "GEURIE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.39782137199995,
+    "longitude": 148.83051927400004
+  },
+  {
+    "name": "CASINO AIRFIELD",
+    "state": "NSW",
+    "latitude": -28.879511297999954,
+    "longitude": 153.05361928900004
+  },
+  {
+    "name": "ROZELLE BAY SLR STOP",
+    "state": "NSW",
+    "latitude": -33.87184439699996,
+    "longitude": 151.1727512440001
+  },
+  {
+    "name": "BOTTOM POINTS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.47337553299997,
+    "longitude": 150.20259532500006
+  },
+  {
+    "name": "ZIG ZAG RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.47164815499997,
+    "longitude": 150.20196667000005
+  },
+  {
+    "name": "TOP POINTS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.47007709199994,
+    "longitude": 150.19056328600004
+  },
+  {
+    "name": "SYDNEY DOMESTIC AIRPORT",
+    "state": "NSW",
+    "latitude": -33.93302818899997,
+    "longitude": 151.1763662190001
+  },
+  {
+    "name": "TUMUT RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -35.29503405599996,
+    "longitude": 148.21204825000007
+  },
+  {
+    "name": "PADDYS MARKETS SLR STOP",
+    "state": "NSW",
+    "latitude": -33.87927840899994,
+    "longitude": 151.20270147600002
+  },
+  {
+    "name": "EXHIBITION CENTRE SLR STOP",
+    "state": "NSW",
+    "latitude": -33.87716260399998,
+    "longitude": 151.19964341700006
+  },
+  {
+    "name": "JOHN STREET SQUARE SLR STOP",
+    "state": "NSW",
+    "latitude": -33.86732283099997,
+    "longitude": 151.1921816250001
+  },
+  {
+    "name": "THE STAR SLR STOP",
+    "state": "NSW",
+    "latitude": -33.867222924999965,
+    "longitude": 151.1950461240001
+  },
+  {
+    "name": "PYRMONT BAY SLR STOP",
+    "state": "NSW",
+    "latitude": -33.869529315999955,
+    "longitude": 151.1978355320001
+  },
+  {
+    "name": "FISH MARKET SLR STOP",
+    "state": "NSW",
+    "latitude": -33.87092384899995,
+    "longitude": 151.19241596200004
+  },
+  {
+    "name": "LILYFIELD SLR STOP",
+    "state": "NSW",
+    "latitude": -33.87412829799996,
+    "longitude": 151.1648835730001
+  },
+  {
+    "name": "JUBILEE PARK SLR STOP",
+    "state": "NSW",
+    "latitude": -33.87539205099995,
+    "longitude": 151.17873013500002
+  },
+  {
+    "name": "GLEBE SLR STOP",
+    "state": "NSW",
+    "latitude": -33.87718289299994,
+    "longitude": 151.18741743900011
+  },
+  {
+    "name": "WENTWORTH PARK SLR STOP",
+    "state": "NSW",
+    "latitude": -33.87442281199998,
+    "longitude": 151.19398926200006
+  },
+  {
+    "name": "LEICHHARDT NORTH SLR STOP",
+    "state": "NSW",
+    "latitude": -33.87497115699995,
+    "longitude": 151.15398440800004
+  },
+  {
+    "name": "HAWTHORNE SLR STOP",
+    "state": "NSW",
+    "latitude": -33.87952548699997,
+    "longitude": 151.14721758500002
+  },
+  {
+    "name": "MARION SLR STOP",
+    "state": "NSW",
+    "latitude": -33.88391792799996,
+    "longitude": 151.14510970700007
+  },
+  {
+    "name": "TAVERNERS HILL SLR STOP",
+    "state": "NSW",
+    "latitude": -33.889302122999936,
+    "longitude": 151.14523850900002
+  },
+  {
+    "name": "LEWISHAM WEST SLR STOP",
+    "state": "NSW",
+    "latitude": -33.89366394999996,
+    "longitude": 151.14352307000001
+  },
+  {
+    "name": "WARATAH MILLS SLR STOP",
+    "state": "NSW",
+    "latitude": -33.89875892599997,
+    "longitude": 151.1401582300001
+  },
+  {
+    "name": "ARLINGTON SLR STOP",
+    "state": "NSW",
+    "latitude": -33.90181722099993,
+    "longitude": 151.13808656100002
+  },
+  {
+    "name": "DULWICH GROVE SLR STOP",
+    "state": "NSW",
+    "latitude": -33.90503823599994,
+    "longitude": 151.13903669
+  },
+  {
+    "name": "DULWICH HILL SLR STOP",
+    "state": "NSW",
+    "latitude": -33.910393315999954,
+    "longitude": 151.14016060100005
+  },
+  {
+    "name": "CULCAIRN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -35.666080346999934,
+    "longitude": 147.03817241700006
+  },
+  {
+    "name": "HENTY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -35.517693194999936,
+    "longitude": 147.03526675900002
+  },
+  {
+    "name": "THE ROCK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -35.271678632999965,
+    "longitude": 147.11852948700005
+  },
+  {
+    "name": "WAGGA WAGGA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -35.12042871799997,
+    "longitude": 147.3684538120001
+  },
+  {
+    "name": "CONDOBOLIN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.08391825299998,
+    "longitude": 147.15330605400004
+  },
+  {
+    "name": "EUABALONG WEST RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.054340836999984,
+    "longitude": 146.3929951560001
+  },
+  {
+    "name": "ALBURY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -36.08394984499995,
+    "longitude": 146.92470814700005
+  },
+  {
+    "name": "IVANHOE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.91428881099995,
+    "longitude": 144.3117671120001
+  },
+  {
+    "name": "DARNICK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.85061424699995,
+    "longitude": 143.62287638700002
+  },
+  {
+    "name": "MENINDEE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.389277410999966,
+    "longitude": 142.4247750950001
+  },
+  {
+    "name": "GOULBURN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.75827566899994,
+    "longitude": 149.71939872600012
+  },
+  {
+    "name": "GUNNING RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.77970243499993,
+    "longitude": 149.26132814000005
+  },
+  {
+    "name": "DUBBO RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.24505410399996,
+    "longitude": 148.60841909200008
+  },
+  {
+    "name": "JOPPA JUNCTION RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.78983648499997,
+    "longitude": 149.67700777000005
+  },
+  {
+    "name": "NARRABRI RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -30.32523062599995,
+    "longitude": 149.79215472700002
+  },
+  {
+    "name": "BELLATA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -29.918476149999947,
+    "longitude": 149.79051075600012
+  },
+  {
+    "name": "BOGGABRI RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -30.703638943999977,
+    "longitude": 150.039977388
+  },
+  {
+    "name": "GUNNEDAH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -30.979357351999965,
+    "longitude": 150.24800059000006
+  },
+  {
+    "name": "KYOGLE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -28.620240403999958,
+    "longitude": 153.00119587300003
+  },
+  {
+    "name": "COFFS HARBOUR RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -30.306206161999967,
+    "longitude": 153.1378664890001
+  },
+  {
+    "name": "MACKSVILLE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -30.709299990999966,
+    "longitude": 152.9132211750001
+  },
+  {
+    "name": "EUNGAI RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -30.849661366999953,
+    "longitude": 152.90009662400007
+  },
+  {
+    "name": "URUNGA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -30.499022992999983,
+    "longitude": 153.01862285800007
+  },
+  {
+    "name": "NAMBUCCA HEADS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -30.62909300299998,
+    "longitude": 152.97739415400008
+  },
+  {
+    "name": "SAWTELL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -30.359465444999955,
+    "longitude": 153.09749363000003
+  },
+  {
+    "name": "WAUCHOPE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.45590666299995,
+    "longitude": 152.73652020800012
+  },
+  {
+    "name": "KENDALL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.63534694699996,
+    "longitude": 152.70635808600002
+  },
+  {
+    "name": "TELARAH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.72370754499997,
+    "longitude": 151.539654637
+  },
+  {
+    "name": "MAITLAND RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.738045005999936,
+    "longitude": 151.55202567300012
+  },
+  {
+    "name": "MURRURUNDI RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.768419845999972,
+    "longitude": 150.839459228
+  },
+  {
+    "name": "QUIRINDI RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.50538543999994,
+    "longitude": 150.68111471400005
+  },
+  {
+    "name": "WILLOW TREE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.650058980999972,
+    "longitude": 150.72612136400005
+  },
+  {
+    "name": "MINDARIBBA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.669198678999976,
+    "longitude": 151.58423987900005
+  },
+  {
+    "name": "PATERSON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.60233865899994,
+    "longitude": 151.61465351300012
+  },
+  {
+    "name": "MARTINS CREEK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.558727300999976,
+    "longitude": 151.61857322800006
+  },
+  {
+    "name": "WALLAROBBA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.49610042799998,
+    "longitude": 151.69561746800002
+  },
+  {
+    "name": "GLOUCESTER RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.00478970599994,
+    "longitude": 151.96683083900007
+  },
+  {
+    "name": "DUNGOG RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.40241510799996,
+    "longitude": 151.759481466
+  },
+  {
+    "name": "WIRRAGULLA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.46295253699998,
+    "longitude": 151.74253333500008
+  },
+  {
+    "name": "HILLDALE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.50448268599996,
+    "longitude": 151.64974219300007
+  },
+  {
+    "name": "ABERDEEN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.16682861099997,
+    "longitude": 150.89201849800008
+  },
+  {
+    "name": "BRANXTON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.66219514699998,
+    "longitude": 151.34554587600007
+  },
+  {
+    "name": "GRETA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.68638516599998,
+    "longitude": 151.38402905500004
+  },
+  {
+    "name": "MUSWELLBROOK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.26748577999996,
+    "longitude": 150.89035434900006
+  },
+  {
+    "name": "SCONE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.046927953999955,
+    "longitude": 150.86690805900002
+  },
+  {
+    "name": "LOCHINVAR RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.720671289999984,
+    "longitude": 151.44946155200012
+  },
+  {
+    "name": "SINGLETON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.572058090999974,
+    "longitude": 151.16562323400012
+  },
+  {
+    "name": "VICTORIA STREET RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.751000259999955,
+    "longitude": 151.59383948000004
+  },
+  {
+    "name": "HIGH STREET RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.74150565999997,
+    "longitude": 151.56390549900004
+  },
+  {
+    "name": "EAST MAITLAND RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.74502630699993,
+    "longitude": 151.58742223000002
+  },
+  {
+    "name": "MARULAN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.70952790399997,
+    "longitude": 150.0060017390001
+  },
+  {
+    "name": "TALLONG RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.718333910999945,
+    "longitude": 150.08642355200004
+  },
+  {
+    "name": "PENROSE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.67247303199997,
+    "longitude": 150.2118655060001
+  },
+  {
+    "name": "BROKEN HILL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.959396382999955,
+    "longitude": 141.4668382320001
+  },
+  {
+    "name": "BOWRAL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.47794365899995,
+    "longitude": 150.4167862810001
+  },
+  {
+    "name": "BURRADOO RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.494065208999984,
+    "longitude": 150.3982645740001
+  },
+  {
+    "name": "CAMPSIE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.91048178799997,
+    "longitude": 151.10297952700012
+  },
+  {
+    "name": "JUNEE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.87026161399996,
+    "longitude": 147.5838585880001
+  },
+  {
+    "name": "YASS JUNCTION RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.80891164499997,
+    "longitude": 148.91502922400002
+  },
+  {
+    "name": "STUART TOWN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.80144695799993,
+    "longitude": 149.07862618900003
+  },
+  {
+    "name": "TAREE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.90639419799993,
+    "longitude": 152.45716794300006
+  },
+  {
+    "name": "WINGHAM RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.868089599999962,
+    "longitude": 152.36721082300005
+  },
+  {
+    "name": "LEETON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.55425263799998,
+    "longitude": 146.39744806400006
+  },
+  {
+    "name": "WERRIS CREEK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.34947636199996,
+    "longitude": 150.6465053070001
+  },
+  {
+    "name": "TAMWORTH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.087241646999928,
+    "longitude": 150.9308668650001
+  },
+  {
+    "name": "DORA CREEK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.08371393799996,
+    "longitude": 151.50097060200005
+  },
+  {
+    "name": "METFORD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.76486911999996,
+    "longitude": 151.61794417600004
+  },
+  {
+    "name": "THORNTON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.78354835799996,
+    "longitude": 151.63984054200012
+  },
+  {
+    "name": "TARRO RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.80900642199998,
+    "longitude": 151.669594049
+  },
+  {
+    "name": "HEXHAM RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.829016528999944,
+    "longitude": 151.684164731
+  },
+  {
+    "name": "SANDGATE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.87152736899998,
+    "longitude": 151.70249336900008
+  },
+  {
+    "name": "COCKLE CREEK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.942730997999945,
+    "longitude": 151.62354490500002
+  },
+  {
+    "name": "WARATAH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.902765848999934,
+    "longitude": 151.73168671400003
+  },
+  {
+    "name": "BROADMEADOW RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.92301085199995,
+    "longitude": 151.7343053940001
+  },
+  {
+    "name": "ADAMSTOWN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.933790416999955,
+    "longitude": 151.72002636000002
+  },
+  {
+    "name": "CARDIFF RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.94158711599994,
+    "longitude": 151.6626993530001
+  },
+  {
+    "name": "KOTARA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.94143974899998,
+    "longitude": 151.69852151600003
+  },
+  {
+    "name": "TERALBA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.96252106899993,
+    "longitude": 151.603628887
+  },
+  {
+    "name": "BERESFIELD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.79914760499997,
+    "longitude": 151.65805200900002
+  },
+  {
+    "name": "BOORAGUL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.971396864999974,
+    "longitude": 151.60482630400008
+  },
+  {
+    "name": "FASSIFERN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.98537085299995,
+    "longitude": 151.58106955800008
+  },
+  {
+    "name": "AWABA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.01297757899994,
+    "longitude": 151.54200573100002
+  },
+  {
+    "name": "WARABROOK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.88715807699998,
+    "longitude": 151.7100503150001
+  },
+  {
+    "name": "DOONSIDE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.763698534999946,
+    "longitude": 150.86902074700004
+  },
+  {
+    "name": "TOONGABBIE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.78728774899997,
+    "longitude": 150.95162605200005
+  },
+  {
+    "name": "SEVEN HILLS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.774155536999956,
+    "longitude": 150.93587408700012
+  },
+  {
+    "name": "MERRYLANDS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.836579823999955,
+    "longitude": 150.99258322000003
+  },
+  {
+    "name": "BLACKTOWN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.76846037599995,
+    "longitude": 150.90732845200012
+  },
+  {
+    "name": "BEECROFT RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.749395291999974,
+    "longitude": 151.0666319170001
+  },
+  {
+    "name": "CHELTENHAM RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.755622252999956,
+    "longitude": 151.07854075900002
+  },
+  {
+    "name": "PENDLE HILL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.80135422899997,
+    "longitude": 150.95654863100003
+  },
+  {
+    "name": "WENTWORTHVILLE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.80699943999997,
+    "longitude": 150.9726503720001
+  },
+  {
+    "name": "WESTMEAD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.808268700999974,
+    "longitude": 150.98777736700004
+  },
+  {
+    "name": "EPPING RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.77273015499998,
+    "longitude": 151.08224829200003
+  },
+  {
+    "name": "EASTWOOD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.79011565199994,
+    "longitude": 151.08227644400006
+  },
+  {
+    "name": "DENISTONE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.79970441299997,
+    "longitude": 151.0871472340001
+  },
+  {
+    "name": "TELOPEA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.79388696099994,
+    "longitude": 151.04147794400012
+  },
+  {
+    "name": "DUNDAS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.80385342599993,
+    "longitude": 151.03315852200012
+  },
+  {
+    "name": "RYDALMERE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.810085440999956,
+    "longitude": 151.02912236100008
+  },
+  {
+    "name": "CAMELLIA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.81887368799994,
+    "longitude": 151.02420113800008
+  },
+  {
+    "name": "ROSEHILL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.82306452499995,
+    "longitude": 151.0220436080001
+  },
+  {
+    "name": "HARRIS PARK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.82330038699996,
+    "longitude": 151.00764216700009
+  },
+  {
+    "name": "PARRAMATTA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.81761115299997,
+    "longitude": 151.00537607600006
+  },
+  {
+    "name": "GRANVILLE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.83309112599994,
+    "longitude": 151.01239069700011
+  },
+  {
+    "name": "CLYDE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.836090372999934,
+    "longitude": 151.01731237100012
+  },
+  {
+    "name": "MEADOWBANK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.81567276199996,
+    "longitude": 151.09015041800012
+  },
+  {
+    "name": "WEST RYDE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.80731922299998,
+    "longitude": 151.0901352300001
+  },
+  {
+    "name": "HOMEBUSH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.866866364999964,
+    "longitude": 151.0864556130001
+  },
+  {
+    "name": "NORTH STRATHFIELD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.858956768999974,
+    "longitude": 151.08820318800008
+  },
+  {
+    "name": "CONCORD WEST RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.84851197199998,
+    "longitude": 151.0856418720001
+  },
+  {
+    "name": "RHODES RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.83049785999998,
+    "longitude": 151.08713575900003
+  },
+  {
+    "name": "WAITARA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.710015462999934,
+    "longitude": 151.10448335700005
+  },
+  {
+    "name": "WAHROONGA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.71746836899996,
+    "longitude": 151.1170573820001
+  },
+  {
+    "name": "WARRAWEE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.72418290899998,
+    "longitude": 151.12179828700005
+  },
+  {
+    "name": "TURRAMURRA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.732284919999984,
+    "longitude": 151.12845889800008
+  },
+  {
+    "name": "NORMANHURST RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.72115166899994,
+    "longitude": 151.09653023900012
+  },
+  {
+    "name": "PENNANT HILLS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.73790586999996,
+    "longitude": 151.07258852500001
+  },
+  {
+    "name": "QUAKERS HILL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.72797622499996,
+    "longitude": 150.88679377900007
+  },
+  {
+    "name": "MARAYONG RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.74637303999998,
+    "longitude": 150.90025745800006
+  },
+  {
+    "name": "COWAN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.593345220999936,
+    "longitude": 151.17179373700003
+  },
+  {
+    "name": "HORNSBY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.702710915999944,
+    "longitude": 151.09852143600006
+  },
+  {
+    "name": "ASQUITH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.68869321599993,
+    "longitude": 151.10808632700002
+  },
+  {
+    "name": "MOUNT KU-RING-GAI RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.65313579599996,
+    "longitude": 151.13695534300007
+  },
+  {
+    "name": "BEROWRA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.62364700999996,
+    "longitude": 151.1531302190001
+  },
+  {
+    "name": "THORNLEIGH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.731748438999944,
+    "longitude": 151.07834434500012
+  },
+  {
+    "name": "MOUNT COLAH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.67194140299995,
+    "longitude": 151.11465009100004
+  },
+  {
+    "name": "SCHOFIELDS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.70434015799998,
+    "longitude": 150.87385097300012
+  },
+  {
+    "name": "LINDEN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.71483907499993,
+    "longitude": 150.50541493700007
+  },
+  {
+    "name": "ROOTY HILL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.77157203899998,
+    "longitude": 150.84428260200002
+  },
+  {
+    "name": "ST MARYS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.761959504999936,
+    "longitude": 150.7752896400001
+  },
+  {
+    "name": "VINEYARD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.65037268499998,
+    "longitude": 150.8511886860001
+  },
+  {
+    "name": "MULGRAVE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.626551107999944,
+    "longitude": 150.8304976400001
+  },
+  {
+    "name": "RIVERSTONE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.67924730599998,
+    "longitude": 150.86035034600002
+  },
+  {
+    "name": "EAST RICHMOND RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.60174318899993,
+    "longitude": 150.75917777900008
+  },
+  {
+    "name": "KINGSWOOD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.75822289299998,
+    "longitude": 150.71983980100003
+  },
+  {
+    "name": "PENRITH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.749987175999934,
+    "longitude": 150.69583484800012
+  },
+  {
+    "name": "GLENBROOK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.76895029899998,
+    "longitude": 150.6207685930001
+  },
+  {
+    "name": "LAPSTONE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.77339003999998,
+    "longitude": 150.64282764300003
+  },
+  {
+    "name": "RICHMOND RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.598711253999966,
+    "longitude": 150.7526321580001
+  },
+  {
+    "name": "CLARENDON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.60856509599995,
+    "longitude": 150.7879273000001
+  },
+  {
+    "name": "WINDSOR RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.613794034999955,
+    "longitude": 150.8111716740001
+  },
+  {
+    "name": "EMU PLAINS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.74561469399998,
+    "longitude": 150.6718773340001
+  },
+  {
+    "name": "WERRINGTON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.75913381899994,
+    "longitude": 150.75757302300008
+  },
+  {
+    "name": "MOUNT DRUITT RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.769459696999945,
+    "longitude": 150.8201732880001
+  },
+  {
+    "name": "AUBURN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.849289296999984,
+    "longitude": 151.0328454580001
+  },
+  {
+    "name": "OLYMPIC PARK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.84650394899995,
+    "longitude": 151.06937269200012
+  },
+  {
+    "name": "MACQUARIE FIELDS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.984876671999984,
+    "longitude": 150.87882913400006
+  },
+  {
+    "name": "GLENFIELD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.97219730099994,
+    "longitude": 150.89309484300009
+  },
+  {
+    "name": "LEIGHTONFIELD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.88148238399998,
+    "longitude": 150.9850598170001
+  },
+  {
+    "name": "CASULA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.95006871199996,
+    "longitude": 150.91185562300006
+  },
+  {
+    "name": "LIVERPOOL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.92512599499997,
+    "longitude": 150.92700034000006
+  },
+  {
+    "name": "WARWICK FARM RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.913528192999934,
+    "longitude": 150.93507573300008
+  },
+  {
+    "name": "CABRAMATTA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.89490820499998,
+    "longitude": 150.938812868
+  },
+  {
+    "name": "CANLEY VALE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.886760212999945,
+    "longitude": 150.94402248900008
+  },
+  {
+    "name": "CARRAMAR RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.88436146199996,
+    "longitude": 150.96107829200002
+  },
+  {
+    "name": "INGLEBURN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.99736252399998,
+    "longitude": 150.86473628900012
+  },
+  {
+    "name": "YENNORA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.864872194999975,
+    "longitude": 150.9706644800001
+  },
+  {
+    "name": "FAIRFIELD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.87226259899995,
+    "longitude": 150.95718020900006
+  },
+  {
+    "name": "GUILDFORD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.854260618999945,
+    "longitude": 150.98449637500005
+  },
+  {
+    "name": "PADSTOW RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.95183865799993,
+    "longitude": 151.03223151300006
+  },
+  {
+    "name": "RIVERWOOD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.95145956299996,
+    "longitude": 151.0520568190001
+  },
+  {
+    "name": "OATLEY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.98080276899998,
+    "longitude": 151.07910892400002
+  },
+  {
+    "name": "PUNCHBOWL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.925335778999965,
+    "longitude": 151.05552822200002
+  },
+  {
+    "name": "VILLAWOOD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.88082056099995,
+    "longitude": 150.9760489240001
+  },
+  {
+    "name": "EAST HILLS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.96166590299998,
+    "longitude": 150.98498546200005
+  },
+  {
+    "name": "PANANIA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.954360263999945,
+    "longitude": 150.99802266900008
+  },
+  {
+    "name": "NARWEE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.94748223999994,
+    "longitude": 151.07015833200012
+  },
+  {
+    "name": "LAKEMBA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.919926197999985,
+    "longitude": 151.0762343990001
+  },
+  {
+    "name": "SEFTON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.88517363699998,
+    "longitude": 151.0115106190001
+  },
+  {
+    "name": "REGENTS PARK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.88297032199995,
+    "longitude": 151.02409041700002
+  },
+  {
+    "name": "BIRRONG RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.89332614199998,
+    "longitude": 151.0241121800001
+  },
+  {
+    "name": "BANKSTOWN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.91781640299996,
+    "longitude": 151.03412173300012
+  },
+  {
+    "name": "YAGOONA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.90647183599998,
+    "longitude": 151.0242435670001
+  },
+  {
+    "name": "REVESBY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.95239011799998,
+    "longitude": 151.0148411660001
+  },
+  {
+    "name": "WILEY PARK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.922941084999934,
+    "longitude": 151.06730580900012
+  },
+  {
+    "name": "CHESTER HILL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.88348078399997,
+    "longitude": 150.9995338430001
+  },
+  {
+    "name": "FLEMINGTON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.86483980099996,
+    "longitude": 151.06977210500008
+  },
+  {
+    "name": "BERALA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.871934289999956,
+    "longitude": 151.0321007220001
+  },
+  {
+    "name": "LIDCOMBE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.86386553699998,
+    "longitude": 151.04521351000005
+  },
+  {
+    "name": "HOLSWORTHY RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.96313201099997,
+    "longitude": 150.95655329800002
+  },
+  {
+    "name": "EDMONDSON PARK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.96922508399996,
+    "longitude": 150.85867210600009
+  },
+  {
+    "name": "LEPPINGTON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.954387922999956,
+    "longitude": 150.80803660000004
+  },
+  {
+    "name": "MENANGLE PARK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.103603213999975,
+    "longitude": 150.7449543470001
+  },
+  {
+    "name": "MENANGLE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.12553555799997,
+    "longitude": 150.744264906
+  },
+  {
+    "name": "PICTON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.17906630599998,
+    "longitude": 150.6125726470001
+  },
+  {
+    "name": "DOUGLAS PARK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.18320688799997,
+    "longitude": 150.71015822900006
+  },
+  {
+    "name": "TAHMOOR RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.22352420499993,
+    "longitude": 150.59002290500007
+  },
+  {
+    "name": "BARGO RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.29105124399996,
+    "longitude": 150.58009542000002
+  },
+  {
+    "name": "MEDLOW BATH RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.67352793699996,
+    "longitude": 150.28072941400012
+  },
+  {
+    "name": "KATOOMBA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.71181567699995,
+    "longitude": 150.31139039700008
+  },
+  {
+    "name": "LEURA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.711830299999974,
+    "longitude": 150.33052941300002
+  },
+  {
+    "name": "WENTWORTH FALLS RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.709904920999975,
+    "longitude": 150.37650734800002
+  },
+  {
+    "name": "BULLABURRA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.72356866299998,
+    "longitude": 150.41455022200012
+  },
+  {
+    "name": "LAWSON RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.718964513999936,
+    "longitude": 150.42992251400005
+  },
+  {
+    "name": "HARDEN RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.553413810999984,
+    "longitude": 148.37101247400005
+  },
+  {
+    "name": "TALLAWONG RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.691845985999976,
+    "longitude": 150.90510390600002
+  },
+  {
+    "name": "NORWEST RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.73464540799995,
+    "longitude": 150.9635265490001
+  },
+  {
+    "name": "BELLA VISTA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.73060301999993,
+    "longitude": 150.944107
+  },
+  {
+    "name": "KELLYVILLE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.71340722599996,
+    "longitude": 150.93532804900008
+  },
+  {
+    "name": "ROUSE HILL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.69164906499998,
+    "longitude": 150.92405544000007
+  },
+  {
+    "name": "HILLS SHOWGROUND RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.72784801499995,
+    "longitude": 150.9871349970001
+  },
+  {
+    "name": "CASTLE HILL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.731501641999955,
+    "longitude": 151.00772037000002
+  },
+  {
+    "name": "CHERRYBROOK RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.736522788999935,
+    "longitude": 151.03202047700006
+  },
+  {
+    "name": "CARLINGFORD RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.78213340899998,
+    "longitude": 151.0470186010001
+  },
+  {
+    "name": "NARROMINE RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -32.234028157999944,
+    "longitude": 148.2403258390001
+  },
+  {
+    "name": "BRIDGE STREET LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.86393064299995,
+    "longitude": 151.20738816200003
+  },
+  {
+    "name": "CENTRAL CHALMERS STREET LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.88445676499998,
+    "longitude": 151.20742413000005
+  },
+  {
+    "name": "CHINATOWN LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.87924293899994,
+    "longitude": 151.2054081560001
+  },
+  {
+    "name": "CIRCULAR QUAY LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.86144273399998,
+    "longitude": 151.2108112090001
+  },
+  {
+    "name": "ES MARKS LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.905628201999946,
+    "longitude": 151.22399973400002
+  },
+  {
+    "name": "HAYMARKET LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.881447924999975,
+    "longitude": 151.20533508500012
+  },
+  {
+    "name": "JUNIORS KINGSFORD LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.92513437599996,
+    "longitude": 151.22946342500006
+  },
+  {
+    "name": "KENSINGTON LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.90949900299995,
+    "longitude": 151.22330363000003
+  },
+  {
+    "name": "KINGSFORD LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.92229442599995,
+    "longitude": 151.2269246830001
+  },
+  {
+    "name": "MOORE PARK LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.89422949999994,
+    "longitude": 151.22181768500002
+  },
+  {
+    "name": "QVB LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.871730654999965,
+    "longitude": 151.2069680080001
+  },
+  {
+    "name": "RANDWICK LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.917068609999944,
+    "longitude": 151.2405961060001
+  },
+  {
+    "name": "ROYAL RANDWICK LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.905480824999984,
+    "longitude": 151.22972314800006
+  },
+  {
+    "name": "SURRY HILLS LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.88830444699994,
+    "longitude": 151.2123381660001
+  },
+  {
+    "name": "UNSW ANZAC PARADE LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.915904660999956,
+    "longitude": 151.22578896900006
+  },
+  {
+    "name": "UNSW HIGH STREET LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.91638924599994,
+    "longitude": 151.23585220000007
+  },
+  {
+    "name": "WANSEY ROAD LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.91065203399995,
+    "longitude": 151.23538619900012
+  },
+  {
+    "name": "WYNYARD LIGHT RAIL STOP",
+    "state": "NSW",
+    "latitude": -33.866174970999964,
+    "longitude": 151.20719989200006
+  },
+  {
+    "name": "CAPITOL SQUARE SLR STOP",
+    "state": "NSW",
+    "latitude": -33.879720384999985,
+    "longitude": 151.205496551
+  },
+  {
+    "name": "COOTAMUNDRA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.64115321899993,
+    "longitude": 148.03068665700005
+  },
+  {
+    "name": "MERRIWAGGA RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -33.817090554999936,
+    "longitude": 145.6216453830001
+  },
+  {
+    "name": "GRONG GRONG RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.73969564699996,
+    "longitude": 146.78492004600002
+  },
+  {
+    "name": "WARRAL RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -31.16070904299994,
+    "longitude": 150.86258257400004
+  },
+  {
+    "name": "SHELLHARBOUR JUNCTION RAILWAY STATION",
+    "state": "NSW",
+    "latitude": -34.591273548999936,
+    "longitude": 150.84475594000003
+  }
+]

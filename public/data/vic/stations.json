@@ -1,0 +1,2480 @@
+[
+  {
+    "name": "BEULAH",
+    "state": "VIC",
+    "latitude": -35.94259968499995,
+    "longitude": 142.42198815200004
+  },
+  {
+    "name": "HORSHAM",
+    "state": "VIC",
+    "latitude": -36.70738192099998,
+    "longitude": 142.20086925400005
+  },
+  {
+    "name": "GARDENVALE",
+    "state": "VIC",
+    "latitude": -37.89668026999993,
+    "longitude": 145.00417113800006
+  },
+  {
+    "name": "NORTH BRIGHTON",
+    "state": "VIC",
+    "latitude": -37.90486992099994,
+    "longitude": 145.00260982300006
+  },
+  {
+    "name": "MIDDLE BRIGHTON",
+    "state": "VIC",
+    "latitude": -37.91512213599998,
+    "longitude": 144.9963044220001
+  },
+  {
+    "name": "SANDRINGHAM",
+    "state": "VIC",
+    "latitude": -37.95031582799993,
+    "longitude": 145.0045724890001
+  },
+  {
+    "name": "HAWKSBURN",
+    "state": "VIC",
+    "latitude": -37.844581147999975,
+    "longitude": 145.0021434130001
+  },
+  {
+    "name": "GLEN HUNTLY",
+    "state": "VIC",
+    "latitude": -37.88970397399993,
+    "longitude": 145.042223744
+  },
+  {
+    "name": "HIGHETT",
+    "state": "VIC",
+    "latitude": -37.94841334899996,
+    "longitude": 145.04187870600003
+  },
+  {
+    "name": "CHELTENHAM",
+    "state": "VIC",
+    "latitude": -37.96663985199996,
+    "longitude": 145.05456354900002
+  },
+  {
+    "name": "MENTONE",
+    "state": "VIC",
+    "latitude": -37.98185209799993,
+    "longitude": 145.06517733700002
+  },
+  {
+    "name": "ASPENDALE",
+    "state": "VIC",
+    "latitude": -38.027209780999954,
+    "longitude": 145.10215792400004
+  },
+  {
+    "name": "EDITHVALE",
+    "state": "VIC",
+    "latitude": -38.038041686999975,
+    "longitude": 145.10854494000012
+  },
+  {
+    "name": "SEAFORD",
+    "state": "VIC",
+    "latitude": -38.104004078999935,
+    "longitude": 145.1282338970001
+  },
+  {
+    "name": "LEAWARRA",
+    "state": "VIC",
+    "latitude": -38.15202343399994,
+    "longitude": 145.13954095000008
+  },
+  {
+    "name": "MOOROODUC",
+    "state": "VIC",
+    "latitude": -38.214145852999934,
+    "longitude": 145.10666874900005
+  },
+  {
+    "name": "TANTI PARK",
+    "state": "VIC",
+    "latitude": -38.223407348999956,
+    "longitude": 145.0672603710001
+  },
+  {
+    "name": "NARAMBI",
+    "state": "VIC",
+    "latitude": -38.22970308599997,
+    "longitude": 145.05758737200006
+  },
+  {
+    "name": "HASTINGS",
+    "state": "VIC",
+    "latitude": -38.30564739399995,
+    "longitude": 145.18598473600002
+  },
+  {
+    "name": "PRAHRAN",
+    "state": "VIC",
+    "latitude": -37.84950344899994,
+    "longitude": 144.98986639500004
+  },
+  {
+    "name": "WARRACKNABEAL",
+    "state": "VIC",
+    "latitude": -36.25076248899995,
+    "longitude": 142.4012869940001
+  },
+  {
+    "name": "TRAFALGAR",
+    "state": "VIC",
+    "latitude": -38.20733317999998,
+    "longitude": 146.15488300800007
+  },
+  {
+    "name": "MURTOA",
+    "state": "VIC",
+    "latitude": -36.61419618799994,
+    "longitude": 142.47160594500008
+  },
+  {
+    "name": "OUYEN",
+    "state": "VIC",
+    "latitude": -35.07040159699994,
+    "longitude": 142.3180296490001
+  },
+  {
+    "name": "DINGEE",
+    "state": "VIC",
+    "latitude": -36.369080321999945,
+    "longitude": 144.231077722
+  },
+  {
+    "name": "BENALLA",
+    "state": "VIC",
+    "latitude": -36.54453674499996,
+    "longitude": 145.98392024600003
+  },
+  {
+    "name": "BENDIGO JOSS HOUSE TEMPLE",
+    "state": "VIC",
+    "latitude": -36.74077429699997,
+    "longitude": 144.29125023400002
+  },
+  {
+    "name": "TYSONS REEF HOTEL",
+    "state": "VIC",
+    "latitude": -36.745372301999964,
+    "longitude": 144.28925906900008
+  },
+  {
+    "name": "FLAGSTAFF",
+    "state": "VIC",
+    "latitude": -37.81196514199996,
+    "longitude": 144.95565918800003
+  },
+  {
+    "name": "YELTA",
+    "state": "VIC",
+    "latitude": -34.12793203599995,
+    "longitude": 141.99312700200005
+  },
+  {
+    "name": "STRATFORD",
+    "state": "VIC",
+    "latitude": -37.96720364899994,
+    "longitude": 147.0816674900001
+  },
+  {
+    "name": "JEPARIT",
+    "state": "VIC",
+    "latitude": -36.13941878199995,
+    "longitude": 141.9876821160001
+  },
+  {
+    "name": "CHILTERN",
+    "state": "VIC",
+    "latitude": -36.15562135999994,
+    "longitude": 146.61138617300003
+  },
+  {
+    "name": "MARYBOROUGH",
+    "state": "VIC",
+    "latitude": -37.05122293599993,
+    "longitude": 143.7426787280001
+  },
+  {
+    "name": "ELMORE",
+    "state": "VIC",
+    "latitude": -36.49484534199996,
+    "longitude": 144.60754660700002
+  },
+  {
+    "name": "ECHUCA",
+    "state": "VIC",
+    "latitude": -36.13101834399998,
+    "longitude": 144.75319834200002
+  },
+  {
+    "name": "PIANGIL",
+    "state": "VIC",
+    "latitude": -35.05679896099997,
+    "longitude": 143.30958726400002
+  },
+  {
+    "name": "SHERWOOD PARK",
+    "state": "VIC",
+    "latitude": -38.38635889699998,
+    "longitude": 142.5390069770001
+  },
+  {
+    "name": "HAMILTON",
+    "state": "VIC",
+    "latitude": -37.746377105999954,
+    "longitude": 142.0286257130001
+  },
+  {
+    "name": "HAWKSTOWE",
+    "state": "VIC",
+    "latitude": -37.62256561099997,
+    "longitude": 145.09747540900003
+  },
+  {
+    "name": "CHARLTON",
+    "state": "VIC",
+    "latitude": -36.26679484999994,
+    "longitude": 143.3526916190001
+  },
+  {
+    "name": "LANGWARRIN",
+    "state": "VIC",
+    "latitude": -38.16785624099998,
+    "longitude": 145.16708812600007
+  },
+  {
+    "name": "DOOKIE",
+    "state": "VIC",
+    "latitude": -36.32800374799996,
+    "longitude": 145.6861866260001
+  },
+  {
+    "name": "MOOROOPNA",
+    "state": "VIC",
+    "latitude": -36.39910207499997,
+    "longitude": 145.35773927200012
+  },
+  {
+    "name": "MUCKLEFORD",
+    "state": "VIC",
+    "latitude": -37.02296729799997,
+    "longitude": 144.15105747200005
+  },
+  {
+    "name": "BROADFORD",
+    "state": "VIC",
+    "latitude": -37.20733902899997,
+    "longitude": 145.04296784200005
+  },
+  {
+    "name": "ELTHAM",
+    "state": "VIC",
+    "latitude": -37.71357001599995,
+    "longitude": 145.1478684320001
+  },
+  {
+    "name": "BAYSWATER",
+    "state": "VIC",
+    "latitude": -37.84169965999996,
+    "longitude": 145.26816716100006
+  },
+  {
+    "name": "BOORT",
+    "state": "VIC",
+    "latitude": -36.11429651599997,
+    "longitude": 143.7219346400001
+  },
+  {
+    "name": "WANGARATTA",
+    "state": "VIC",
+    "latitude": -36.355016811999974,
+    "longitude": 146.316871568
+  },
+  {
+    "name": "MIDDLE PARK",
+    "state": "VIC",
+    "latitude": -37.849378255999966,
+    "longitude": 144.9653075220001
+  },
+  {
+    "name": "BRIGHTON BEACH",
+    "state": "VIC",
+    "latitude": -37.92649822899995,
+    "longitude": 144.98927477400002
+  },
+  {
+    "name": "MOORABBIN",
+    "state": "VIC",
+    "latitude": -37.93487500899994,
+    "longitude": 145.03663987400012
+  },
+  {
+    "name": "WEST FOOTSCRAY",
+    "state": "VIC",
+    "latitude": -37.80157349299998,
+    "longitude": 144.88328129900003
+  },
+  {
+    "name": "CLARKEFIELD",
+    "state": "VIC",
+    "latitude": -37.48378411199997,
+    "longitude": 144.74566517300002
+  },
+  {
+    "name": "BREAKWATER",
+    "state": "VIC",
+    "latitude": -38.17727622599995,
+    "longitude": 144.36757807900005
+  },
+  {
+    "name": "MERNDA",
+    "state": "VIC",
+    "latitude": -37.601544597999975,
+    "longitude": 145.10119929200005
+  },
+  {
+    "name": "LAKERS SIDING",
+    "state": "VIC",
+    "latitude": -38.26132930799997,
+    "longitude": 144.61448471000006
+  },
+  {
+    "name": "CAMBERWELL",
+    "state": "VIC",
+    "latitude": -37.82655105799995,
+    "longitude": 145.05869808800003
+  },
+  {
+    "name": "NOBLE PARK",
+    "state": "VIC",
+    "latitude": -37.96656361299995,
+    "longitude": 145.17618104400003
+  },
+  {
+    "name": "NORTH WILLIAMSTOWN",
+    "state": "VIC",
+    "latitude": -37.85731775399995,
+    "longitude": 144.889073638
+  },
+  {
+    "name": "ASHBURTON",
+    "state": "VIC",
+    "latitude": -37.86195499399997,
+    "longitude": 145.0813471350001
+  },
+  {
+    "name": "UPWEY",
+    "state": "VIC",
+    "latitude": -37.90367893699994,
+    "longitude": 145.33134137000002
+  },
+  {
+    "name": "FOOTSCRAY",
+    "state": "VIC",
+    "latitude": -37.801072286999954,
+    "longitude": 144.9032004710001
+  },
+  {
+    "name": "AUBURN",
+    "state": "VIC",
+    "latitude": -37.82238581399997,
+    "longitude": 145.04584886500004
+  },
+  {
+    "name": "KOOYONG",
+    "state": "VIC",
+    "latitude": -37.83991375299996,
+    "longitude": 145.03355603600005
+  },
+  {
+    "name": "GENERAL MOTORS",
+    "state": "VIC",
+    "latitude": -38.010236634999956,
+    "longitude": 145.24481566600002
+  },
+  {
+    "name": "GISBORNE",
+    "state": "VIC",
+    "latitude": -37.45908548399996,
+    "longitude": 144.59919783400005
+  },
+  {
+    "name": "THOMASTOWN",
+    "state": "VIC",
+    "latitude": -37.680322556999954,
+    "longitude": 145.01429088400005
+  },
+  {
+    "name": "BRUNSWICK",
+    "state": "VIC",
+    "latitude": -37.76770534399998,
+    "longitude": 144.9595977460001
+  },
+  {
+    "name": "BATMAN",
+    "state": "VIC",
+    "latitude": -37.73351155499995,
+    "longitude": 144.96284307700012
+  },
+  {
+    "name": "RESERVOIR",
+    "state": "VIC",
+    "latitude": -37.716876282999976,
+    "longitude": 145.0069989850001
+  },
+  {
+    "name": "HALLAM",
+    "state": "VIC",
+    "latitude": -38.01773044899994,
+    "longitude": 145.26977930700002
+  },
+  {
+    "name": "NEWMARKET",
+    "state": "VIC",
+    "latitude": -37.78731291299994,
+    "longitude": 144.92899064300002
+  },
+  {
+    "name": "GLEN WAVERLEY",
+    "state": "VIC",
+    "latitude": -37.87977195099995,
+    "longitude": 145.16306510300012
+  },
+  {
+    "name": "WESTALL",
+    "state": "VIC",
+    "latitude": -37.938479137999934,
+    "longitude": 145.13884041300003
+  },
+  {
+    "name": "WANDONG",
+    "state": "VIC",
+    "latitude": -37.354601111999955,
+    "longitude": 145.02654964500005
+  },
+  {
+    "name": "WALLAN",
+    "state": "VIC",
+    "latitude": -37.417170098999975,
+    "longitude": 145.0053162920001
+  },
+  {
+    "name": "HARTWELL",
+    "state": "VIC",
+    "latitude": -37.84394174099998,
+    "longitude": 145.07563546100005
+  },
+  {
+    "name": "LILYDALE",
+    "state": "VIC",
+    "latitude": -37.75546996899993,
+    "longitude": 145.3476714950001
+  },
+  {
+    "name": "LONGWARRY",
+    "state": "VIC",
+    "latitude": -38.112915260999955,
+    "longitude": 145.77102220900008
+  },
+  {
+    "name": "BALLARAT",
+    "state": "VIC",
+    "latitude": -37.55864160899995,
+    "longitude": 143.85945636000008
+  },
+  {
+    "name": "WARRAGUL",
+    "state": "VIC",
+    "latitude": -38.16510067699994,
+    "longitude": 145.93313292200003
+  },
+  {
+    "name": "AVENEL",
+    "state": "VIC",
+    "latitude": -36.89357256999995,
+    "longitude": 145.22945538700003
+  },
+  {
+    "name": "WENDOUREE",
+    "state": "VIC",
+    "latitude": -37.539766327999985,
+    "longitude": 143.8200342240001
+  },
+  {
+    "name": "COLAC",
+    "state": "VIC",
+    "latitude": -38.34335285399993,
+    "longitude": 143.5869865420001
+  },
+  {
+    "name": "EUROA",
+    "state": "VIC",
+    "latitude": -36.74906035799995,
+    "longitude": 145.56799210000008
+  },
+  {
+    "name": "MITCHAM",
+    "state": "VIC",
+    "latitude": -37.81807670699993,
+    "longitude": 145.19284699600007
+  },
+  {
+    "name": "GARFIELD",
+    "state": "VIC",
+    "latitude": -38.09109477199996,
+    "longitude": 145.67434235100006
+  },
+  {
+    "name": "THOMSON",
+    "state": "VIC",
+    "latitude": -37.95989802499997,
+    "longitude": 146.4195064490001
+  },
+  {
+    "name": "GOWRIE",
+    "state": "VIC",
+    "latitude": -37.70066380999998,
+    "longitude": 144.958883613
+  },
+  {
+    "name": "GEMBROOK",
+    "state": "VIC",
+    "latitude": -37.95014810499998,
+    "longitude": 145.5484616230001
+  },
+  {
+    "name": "OAKLEIGH",
+    "state": "VIC",
+    "latitude": -37.90035548499998,
+    "longitude": 145.08831970800009
+  },
+  {
+    "name": "CLEMATIS",
+    "state": "VIC",
+    "latitude": -37.92836503899997,
+    "longitude": 145.42371069500007
+  },
+  {
+    "name": "FIELDER",
+    "state": "VIC",
+    "latitude": -37.94656174299996,
+    "longitude": 145.5052351180001
+  },
+  {
+    "name": "PUFFING BILLY",
+    "state": "VIC",
+    "latitude": -37.90763820999996,
+    "longitude": 145.35636910100004
+  },
+  {
+    "name": "LOCH",
+    "state": "VIC",
+    "latitude": -38.367435195999974,
+    "longitude": 145.70925940200004
+  },
+  {
+    "name": "SUNBURY",
+    "state": "VIC",
+    "latitude": -37.579233673999966,
+    "longitude": 144.72797186900004
+  },
+  {
+    "name": "ROSANNA",
+    "state": "VIC",
+    "latitude": -37.74286279699993,
+    "longitude": 145.06614632900005
+  },
+  {
+    "name": "DENNIS",
+    "state": "VIC",
+    "latitude": -37.779170344999955,
+    "longitude": 145.00824601800002
+  },
+  {
+    "name": "RIVERSDALE",
+    "state": "VIC",
+    "latitude": -37.831489587999954,
+    "longitude": 145.0696540350001
+  },
+  {
+    "name": "MACLEOD",
+    "state": "VIC",
+    "latitude": -37.725997063999955,
+    "longitude": 145.06915291200005
+  },
+  {
+    "name": "MENZIES CREEK",
+    "state": "VIC",
+    "latitude": -37.920716314999936,
+    "longitude": 145.40559998600008
+  },
+  {
+    "name": "GLENBERVIE",
+    "state": "VIC",
+    "latitude": -37.74720160299995,
+    "longitude": 144.9209509000001
+  },
+  {
+    "name": "ALTONA",
+    "state": "VIC",
+    "latitude": -37.86713855299996,
+    "longitude": 144.8296531750001
+  },
+  {
+    "name": "INVERLEIGH",
+    "state": "VIC",
+    "latitude": -38.10545268399994,
+    "longitude": 144.04828265000003
+  },
+  {
+    "name": "NAR NAR GOON",
+    "state": "VIC",
+    "latitude": -38.081577411999945,
+    "longitude": 145.57167602700008
+  },
+  {
+    "name": "HAWTHORN",
+    "state": "VIC",
+    "latitude": -37.821810943999935,
+    "longitude": 145.02290309300008
+  },
+  {
+    "name": "ALPHINGTON",
+    "state": "VIC",
+    "latitude": -37.77838316799995,
+    "longitude": 145.0312572890001
+  },
+  {
+    "name": "DAYLESFORD",
+    "state": "VIC",
+    "latitude": -37.34115848299996,
+    "longitude": 144.15261192200012
+  },
+  {
+    "name": "NYORA",
+    "state": "VIC",
+    "latitude": -38.333015381999985,
+    "longitude": 145.67045765500006
+  },
+  {
+    "name": "BELGRAVE",
+    "state": "VIC",
+    "latitude": -37.90908648299995,
+    "longitude": 145.35529722700005
+  },
+  {
+    "name": "MELBOURNE CENTRAL",
+    "state": "VIC",
+    "latitude": -37.80992360399995,
+    "longitude": 144.96260488000007
+  },
+  {
+    "name": "CARDINIA ROAD",
+    "state": "VIC",
+    "latitude": -38.07125749099998,
+    "longitude": 145.43763062900007
+  },
+  {
+    "name": "EPSOM STATION",
+    "state": "VIC",
+    "latitude": -36.70711142799996,
+    "longitude": 144.3208537280001
+  },
+  {
+    "name": "BUNYIP",
+    "state": "VIC",
+    "latitude": -38.099044499999934,
+    "longitude": 145.72074332800003
+  },
+  {
+    "name": "PAKENHAM",
+    "state": "VIC",
+    "latitude": -38.08042778299995,
+    "longitude": 145.48576067400006
+  },
+  {
+    "name": "BIRREGURRA",
+    "state": "VIC",
+    "latitude": -38.32870726099998,
+    "longitude": 143.7833190450001
+  },
+  {
+    "name": "CAVE HILL (PROPOSED)",
+    "state": "VIC",
+    "latitude": -37.773986452999964,
+    "longitude": 145.33263966200002
+  },
+  {
+    "name": "HEYINGTON",
+    "state": "VIC",
+    "latitude": -37.834692287999985,
+    "longitude": 145.02272804100005
+  },
+  {
+    "name": "CHARING CROSS",
+    "state": "VIC",
+    "latitude": -36.75946618099994,
+    "longitude": 144.27876090000007
+  },
+  {
+    "name": "CENTRAL DEBORAH GOLD MINE",
+    "state": "VIC",
+    "latitude": -36.76504273799998,
+    "longitude": 144.26975802100003
+  },
+  {
+    "name": "BENDIGO TRAMWAYS DEPOT",
+    "state": "VIC",
+    "latitude": -36.75408235699996,
+    "longitude": 144.28874208000002
+  },
+  {
+    "name": "DUNOLLY",
+    "state": "VIC",
+    "latitude": -36.86418903899994,
+    "longitude": 143.72991654600003
+  },
+  {
+    "name": "TARNEIT",
+    "state": "VIC",
+    "latitude": -37.83207760999994,
+    "longitude": 144.69407851300002
+  },
+  {
+    "name": "MOBILTOWN",
+    "state": "VIC",
+    "latitude": -37.85238698999996,
+    "longitude": 144.85294041500003
+  },
+  {
+    "name": "ST ARNAUD",
+    "state": "VIC",
+    "latitude": -36.62129857499997,
+    "longitude": 143.25831575000007
+  },
+  {
+    "name": "WOODEND",
+    "state": "VIC",
+    "latitude": -37.35932493599995,
+    "longitude": 144.52623355700007
+  },
+  {
+    "name": "MONTMORENCY",
+    "state": "VIC",
+    "latitude": -37.715284063999945,
+    "longitude": 145.1215170580001
+  },
+  {
+    "name": "KENSINGTON",
+    "state": "VIC",
+    "latitude": -37.79376428799998,
+    "longitude": 144.93053167400012
+  },
+  {
+    "name": "SEDDON",
+    "state": "VIC",
+    "latitude": -37.80898882899993,
+    "longitude": 144.89567428100008
+  },
+  {
+    "name": "HEATHERDALE",
+    "state": "VIC",
+    "latitude": -37.81888365699996,
+    "longitude": 145.21279111400008
+  },
+  {
+    "name": "CHATHAM",
+    "state": "VIC",
+    "latitude": -37.824291819999985,
+    "longitude": 145.08865879100006
+  },
+  {
+    "name": "NEWPORT",
+    "state": "VIC",
+    "latitude": -37.842701828999964,
+    "longitude": 144.8836101490001
+  },
+  {
+    "name": "WILLIAMSTOWN",
+    "state": "VIC",
+    "latitude": -37.86774143399998,
+    "longitude": 144.90533000900007
+  },
+  {
+    "name": "EMERALD",
+    "state": "VIC",
+    "latitude": -37.933809431999975,
+    "longitude": 145.43981108800006
+  },
+  {
+    "name": "GLENORCHY",
+    "state": "VIC",
+    "latitude": -36.90529774099997,
+    "longitude": 142.6645629310001
+  },
+  {
+    "name": "WILLIAMS LANDING",
+    "state": "VIC",
+    "latitude": -37.87001682599998,
+    "longitude": 144.74733356600007
+  },
+  {
+    "name": "LEONGATHA",
+    "state": "VIC",
+    "latitude": -38.477538308999954,
+    "longitude": 145.9479150080001
+  },
+  {
+    "name": "ARARAT",
+    "state": "VIC",
+    "latitude": -37.28219238899993,
+    "longitude": 142.93664017800006
+  },
+  {
+    "name": "HOPPERS CROSSING",
+    "state": "VIC",
+    "latitude": -37.88322843699996,
+    "longitude": 144.70111511900006
+  },
+  {
+    "name": "CORIO",
+    "state": "VIC",
+    "latitude": -38.072360843999945,
+    "longitude": 144.37981804000003
+  },
+  {
+    "name": "MARSHALL",
+    "state": "VIC",
+    "latitude": -38.198653769999964,
+    "longitude": 144.35492875600005
+  },
+  {
+    "name": "WYNDHAM VALE",
+    "state": "VIC",
+    "latitude": -37.87278059099998,
+    "longitude": 144.60831811800006
+  },
+  {
+    "name": "KANYAPELLA",
+    "state": "VIC",
+    "latitude": -36.164929694999955,
+    "longitude": 144.78662799900007
+  },
+  {
+    "name": "KOYUGA",
+    "state": "VIC",
+    "latitude": -36.22022124199998,
+    "longitude": 144.8844982170001
+  },
+  {
+    "name": "KYVALLEY",
+    "state": "VIC",
+    "latitude": -36.28145320699997,
+    "longitude": 145.00129606000007
+  },
+  {
+    "name": "BYRNESIDE",
+    "state": "VIC",
+    "latitude": -36.41707217499993,
+    "longitude": 145.18980677500008
+  },
+  {
+    "name": "TATURA",
+    "state": "VIC",
+    "latitude": -36.44206882299994,
+    "longitude": 145.23378504900006
+  },
+  {
+    "name": "BULLARTO",
+    "state": "VIC",
+    "latitude": -37.39462254299997,
+    "longitude": 144.22157317200003
+  },
+  {
+    "name": "MACEDON",
+    "state": "VIC",
+    "latitude": -37.423489347999976,
+    "longitude": 144.5611954640001
+  },
+  {
+    "name": "UPFIELD",
+    "state": "VIC",
+    "latitude": -37.666063649999955,
+    "longitude": 144.94675107600006
+  },
+  {
+    "name": "BROADMEADOWS",
+    "state": "VIC",
+    "latitude": -37.68303811299995,
+    "longitude": 144.91962093100005
+  },
+  {
+    "name": "BACCHUS MARSH",
+    "state": "VIC",
+    "latitude": -37.687464587999955,
+    "longitude": 144.43593536800006
+  },
+  {
+    "name": "JACANA",
+    "state": "VIC",
+    "latitude": -37.69512043799995,
+    "longitude": 144.9158617060001
+  },
+  {
+    "name": "GREENSBOROUGH",
+    "state": "VIC",
+    "latitude": -37.70393712199996,
+    "longitude": 145.10825575100012
+  },
+  {
+    "name": "GLENROY",
+    "state": "VIC",
+    "latitude": -37.70452141199996,
+    "longitude": 144.91722535200006
+  },
+  {
+    "name": "RUTHVEN",
+    "state": "VIC",
+    "latitude": -37.70788606899998,
+    "longitude": 145.00952023700006
+  },
+  {
+    "name": "REGENT",
+    "state": "VIC",
+    "latitude": -37.72838705699996,
+    "longitude": 145.00277742800006
+  },
+  {
+    "name": "PRESTON",
+    "state": "VIC",
+    "latitude": -37.73866098899998,
+    "longitude": 145.0005330040001
+  },
+  {
+    "name": "BELL",
+    "state": "VIC",
+    "latitude": -37.74555345099998,
+    "longitude": 145.00015868700007
+  },
+  {
+    "name": "THORNBURY",
+    "state": "VIC",
+    "latitude": -37.75503580499998,
+    "longitude": 144.9985827270001
+  },
+  {
+    "name": "ESSENDON",
+    "state": "VIC",
+    "latitude": -37.75599561799993,
+    "longitude": 144.91620454000008
+  },
+  {
+    "name": "EAGLEMONT",
+    "state": "VIC",
+    "latitude": -37.76357314699993,
+    "longitude": 145.05395192000003
+  },
+  {
+    "name": "CROXTON",
+    "state": "VIC",
+    "latitude": -37.76408567499993,
+    "longitude": 144.99706362200004
+  },
+  {
+    "name": "NORTHCOTE",
+    "state": "VIC",
+    "latitude": -37.76985202299994,
+    "longitude": 144.99528864600006
+  },
+  {
+    "name": "DAREBIN",
+    "state": "VIC",
+    "latitude": -37.774949162999974,
+    "longitude": 145.03848260000007
+  },
+  {
+    "name": "JEWELL",
+    "state": "VIC",
+    "latitude": -37.77497147799994,
+    "longitude": 144.95872164700006
+  },
+  {
+    "name": "WESTGARTH",
+    "state": "VIC",
+    "latitude": -37.78060523399995,
+    "longitude": 144.99923780500012
+  },
+  {
+    "name": "CLIFTON HILL",
+    "state": "VIC",
+    "latitude": -37.788641422999945,
+    "longitude": 144.9954231150001
+  },
+  {
+    "name": "TOTTENHAM",
+    "state": "VIC",
+    "latitude": -37.79924191199996,
+    "longitude": 144.86295427800007
+  },
+  {
+    "name": "SOUTH KENSINGTON",
+    "state": "VIC",
+    "latitude": -37.79952059499993,
+    "longitude": 144.9254752280001
+  },
+  {
+    "name": "RINGWOOD",
+    "state": "VIC",
+    "latitude": -37.815877727999975,
+    "longitude": 145.228975998
+  },
+  {
+    "name": "JOLIMONT",
+    "state": "VIC",
+    "latitude": -37.81651684299993,
+    "longitude": 144.98410191200003
+  },
+  {
+    "name": "LABURNUM",
+    "state": "VIC",
+    "latitude": -37.82076442599998,
+    "longitude": 145.1407115190001
+  },
+  {
+    "name": "GLENFERRIE",
+    "state": "VIC",
+    "latitude": -37.82145301299994,
+    "longitude": 145.03644461900012
+  },
+  {
+    "name": "SURREY HILLS",
+    "state": "VIC",
+    "latitude": -37.82413146399995,
+    "longitude": 145.09878378300004
+  },
+  {
+    "name": "EAST CAMBERWELL",
+    "state": "VIC",
+    "latitude": -37.825879069999985,
+    "longitude": 145.06819492500006
+  },
+  {
+    "name": "BURNLEY",
+    "state": "VIC",
+    "latitude": -37.82754506499998,
+    "longitude": 145.00755959000003
+  },
+  {
+    "name": "ALAMEIN",
+    "state": "VIC",
+    "latitude": -37.86830474799996,
+    "longitude": 145.07966567100004
+  },
+  {
+    "name": "DARLING",
+    "state": "VIC",
+    "latitude": -37.868943274999936,
+    "longitude": 145.06295185800002
+  },
+  {
+    "name": "TECOMA",
+    "state": "VIC",
+    "latitude": -37.90810297399997,
+    "longitude": 145.34300546100008
+  },
+  {
+    "name": "PASCOE VALE",
+    "state": "VIC",
+    "latitude": -37.73074151499998,
+    "longitude": 144.92820080800004
+  },
+  {
+    "name": "MOONEE PONDS",
+    "state": "VIC",
+    "latitude": -37.76569121099993,
+    "longitude": 144.91916437200007
+  },
+  {
+    "name": "MERRI",
+    "state": "VIC",
+    "latitude": -37.777830535999954,
+    "longitude": 144.9929820420001
+  },
+  {
+    "name": "GLEN IRIS",
+    "state": "VIC",
+    "latitude": -37.859293194999964,
+    "longitude": 145.05822928200007
+  },
+  {
+    "name": "JORDANVILLE",
+    "state": "VIC",
+    "latitude": -37.873586563999936,
+    "longitude": 145.11209560500004
+  },
+  {
+    "name": "LAKESIDE",
+    "state": "VIC",
+    "latitude": -37.930028782999955,
+    "longitude": 145.4593933210001
+  },
+  {
+    "name": "NOBELIUS",
+    "state": "VIC",
+    "latitude": -37.93385115099994,
+    "longitude": 145.4552798410001
+  },
+  {
+    "name": "LITTLE RIVER",
+    "state": "VIC",
+    "latitude": -37.96284381399994,
+    "longitude": 144.4988896200001
+  },
+  {
+    "name": "LARA",
+    "state": "VIC",
+    "latitude": -38.021762767999974,
+    "longitude": 144.41469995900002
+  },
+  {
+    "name": "BEACONSFIELD",
+    "state": "VIC",
+    "latitude": -38.05081531899998,
+    "longitude": 145.36607468300008
+  },
+  {
+    "name": "CRAIGIEBURN",
+    "state": "VIC",
+    "latitude": -37.60191187799995,
+    "longitude": 144.94331586500005
+  },
+  {
+    "name": "KEON PARK",
+    "state": "VIC",
+    "latitude": -37.69485396599998,
+    "longitude": 145.01188885300007
+  },
+  {
+    "name": "OAK PARK",
+    "state": "VIC",
+    "latitude": -37.71793673199994,
+    "longitude": 144.9215210740001
+  },
+  {
+    "name": "COBURG",
+    "state": "VIC",
+    "latitude": -37.74232841199995,
+    "longitude": 144.96334854600002
+  },
+  {
+    "name": "MORELAND",
+    "state": "VIC",
+    "latitude": -37.754468447999955,
+    "longitude": 144.96182926100005
+  },
+  {
+    "name": "ASCOT VALE",
+    "state": "VIC",
+    "latitude": -37.77529684199993,
+    "longitude": 144.92183149100003
+  },
+  {
+    "name": "FAIRFIELD",
+    "state": "VIC",
+    "latitude": -37.77916084999998,
+    "longitude": 145.01690974200005
+  },
+  {
+    "name": "RUSHALL",
+    "state": "VIC",
+    "latitude": -37.78320429299998,
+    "longitude": 144.99240879500007
+  },
+  {
+    "name": "MIDDLE FOOTSCRAY",
+    "state": "VIC",
+    "latitude": -37.80248815599998,
+    "longitude": 144.8914802710001
+  },
+  {
+    "name": "YARRAVILLE",
+    "state": "VIC",
+    "latitude": -37.81583593299996,
+    "longitude": 144.88994072600008
+  },
+  {
+    "name": "MONT ALBERT",
+    "state": "VIC",
+    "latitude": -37.81941421299996,
+    "longitude": 145.1055396170001
+  },
+  {
+    "name": "WILLISON",
+    "state": "VIC",
+    "latitude": -37.83569962299998,
+    "longitude": 145.07030443500003
+  },
+  {
+    "name": "WILLIAMSTOWN BEACH",
+    "state": "VIC",
+    "latitude": -37.86396897599997,
+    "longitude": 144.89449281200007
+  },
+  {
+    "name": "SEAHOLME",
+    "state": "VIC",
+    "latitude": -37.86783028999997,
+    "longitude": 144.84096379000005
+  },
+  {
+    "name": "EAST MALVERN",
+    "state": "VIC",
+    "latitude": -37.87691756399994,
+    "longitude": 145.06940330100008
+  },
+  {
+    "name": "UPPER FERNTREE GULLY",
+    "state": "VIC",
+    "latitude": -37.89266077999997,
+    "longitude": 145.30753131900008
+  },
+  {
+    "name": "BERWICK",
+    "state": "VIC",
+    "latitude": -38.040397171999984,
+    "longitude": 145.34572742400007
+  },
+  {
+    "name": "LYNDHURST",
+    "state": "VIC",
+    "latitude": -38.047361670999976,
+    "longitude": 145.24431192600002
+  },
+  {
+    "name": "OFFICER",
+    "state": "VIC",
+    "latitude": -38.06612952299997,
+    "longitude": 145.4109984480001
+  },
+  {
+    "name": "MERLYNSTON",
+    "state": "VIC",
+    "latitude": -37.72092393199995,
+    "longitude": 144.96131781400004
+  },
+  {
+    "name": "IVANHOE",
+    "state": "VIC",
+    "latitude": -37.76888520899996,
+    "longitude": 145.0454322480001
+  },
+  {
+    "name": "FLEMINGTON BRIDGE",
+    "state": "VIC",
+    "latitude": -37.78812444099998,
+    "longitude": 144.93932774000007
+  },
+  {
+    "name": "NORTH RICHMOND",
+    "state": "VIC",
+    "latitude": -37.81038338299993,
+    "longitude": 144.99250652900002
+  },
+  {
+    "name": "SPOTSWOOD",
+    "state": "VIC",
+    "latitude": -37.83062246399993,
+    "longitude": 144.88594195300004
+  },
+  {
+    "name": "YARRAMAN",
+    "state": "VIC",
+    "latitude": -37.97824017099998,
+    "longitude": 145.19160314300007
+  },
+  {
+    "name": "FAWKNER",
+    "state": "VIC",
+    "latitude": -37.71460928199997,
+    "longitude": 144.96055511200007
+  },
+  {
+    "name": "ALBION",
+    "state": "VIC",
+    "latitude": -37.77764234199998,
+    "longitude": 144.82471546300008
+  },
+  {
+    "name": "NORTH MELBOURNE",
+    "state": "VIC",
+    "latitude": -37.80629617599993,
+    "longitude": 144.94151587600004
+  },
+  {
+    "name": "RINGWOOD EAST",
+    "state": "VIC",
+    "latitude": -37.81195507099994,
+    "longitude": 145.2501991460001
+  },
+  {
+    "name": "WYCHEPROOF",
+    "state": "VIC",
+    "latitude": -36.08151874199996,
+    "longitude": 143.22746135700004
+  },
+  {
+    "name": "EPPING",
+    "state": "VIC",
+    "latitude": -37.65225721599995,
+    "longitude": 145.03141104000008
+  },
+  {
+    "name": "BURWOOD",
+    "state": "VIC",
+    "latitude": -37.85154805099995,
+    "longitude": 145.08051436000005
+  },
+  {
+    "name": "HAMPTON",
+    "state": "VIC",
+    "latitude": -37.93805292899998,
+    "longitude": 145.00142884000002
+  },
+  {
+    "name": "MORDIALLOC",
+    "state": "VIC",
+    "latitude": -38.00657449999994,
+    "longitude": 145.08766194800012
+  },
+  {
+    "name": "MONTAGUE",
+    "state": "VIC",
+    "latitude": -37.83022233699995,
+    "longitude": 144.9486073910001
+  },
+  {
+    "name": "GEELONG SOUTH",
+    "state": "VIC",
+    "latitude": -38.15844936399998,
+    "longitude": 144.35912661400005
+  },
+  {
+    "name": "UNKNOWN",
+    "state": "VIC",
+    "latitude": -38.35387530799994,
+    "longitude": 141.60319100100003
+  },
+  {
+    "name": "UNKNOWN",
+    "state": "VIC",
+    "latitude": -38.352960106999944,
+    "longitude": 141.610689932
+  },
+  {
+    "name": "WINDSOR",
+    "state": "VIC",
+    "latitude": -37.856038111999965,
+    "longitude": 144.99203905700006
+  },
+  {
+    "name": "BALACLAVA",
+    "state": "VIC",
+    "latitude": -37.869472980999944,
+    "longitude": 144.993520417
+  },
+  {
+    "name": "RIPPONLEA",
+    "state": "VIC",
+    "latitude": -37.87589551399998,
+    "longitude": 144.99523990300008
+  },
+  {
+    "name": "SEA LAKE",
+    "state": "VIC",
+    "latitude": -35.50455731699998,
+    "longitude": 142.84601817400005
+  },
+  {
+    "name": "KERANG",
+    "state": "VIC",
+    "latitude": -35.73291256899995,
+    "longitude": 143.9244512450001
+  },
+  {
+    "name": "PORT MELBOURNE",
+    "state": "VIC",
+    "latitude": -37.840924592999954,
+    "longitude": 144.93271253800003
+  },
+  {
+    "name": "ST KILDA",
+    "state": "VIC",
+    "latitude": -37.859578400999965,
+    "longitude": 144.97768585400001
+  },
+  {
+    "name": "SELBY",
+    "state": "VIC",
+    "latitude": -37.91523230799993,
+    "longitude": 145.37119208100012
+  },
+  {
+    "name": "NHILL",
+    "state": "VIC",
+    "latitude": -36.33251446199995,
+    "longitude": 141.65548647700007
+  },
+  {
+    "name": "MILDURA",
+    "state": "VIC",
+    "latitude": -34.181780481999965,
+    "longitude": 142.16317755300008
+  },
+  {
+    "name": "PATTERSON",
+    "state": "VIC",
+    "latitude": -37.92513294799994,
+    "longitude": 145.03547455300009
+  },
+  {
+    "name": "PARKDALE",
+    "state": "VIC",
+    "latitude": -37.99306408799998,
+    "longitude": 145.07633637900005
+  },
+  {
+    "name": "KANANOOK",
+    "state": "VIC",
+    "latitude": -38.12174161899998,
+    "longitude": 145.13538395500007
+  },
+  {
+    "name": "BAXTER",
+    "state": "VIC",
+    "latitude": -38.19403451299996,
+    "longitude": 145.16053171700003
+  },
+  {
+    "name": "SOMERVILLE",
+    "state": "VIC",
+    "latitude": -38.22532884599997,
+    "longitude": 145.17625211000006
+  },
+  {
+    "name": "BITTERN",
+    "state": "VIC",
+    "latitude": -38.33737767699995,
+    "longitude": 145.1780319730001
+  },
+  {
+    "name": "BALLAN",
+    "state": "VIC",
+    "latitude": -37.604203792999954,
+    "longitude": 144.22547109900006
+  },
+  {
+    "name": "COOLAROO",
+    "state": "VIC",
+    "latitude": -37.660983072999954,
+    "longitude": 144.92606104800007
+  },
+  {
+    "name": "ROCHESTER",
+    "state": "VIC",
+    "latitude": -36.36205669299994,
+    "longitude": 144.69856043000004
+  },
+  {
+    "name": "MAROONA",
+    "state": "VIC",
+    "latitude": -37.44078784299995,
+    "longitude": 142.8605513550001
+  },
+  {
+    "name": "KYABRAM",
+    "state": "VIC",
+    "latitude": -36.30987568399996,
+    "longitude": 145.04799107000008
+  },
+  {
+    "name": "GARDINER",
+    "state": "VIC",
+    "latitude": -37.85316686099998,
+    "longitude": 145.0518207880001
+  },
+  {
+    "name": "QUEENSCLIFF",
+    "state": "VIC",
+    "latitude": -38.264265518999935,
+    "longitude": 144.6622120400001
+  },
+  {
+    "name": "ROCKBANK",
+    "state": "VIC",
+    "latitude": -37.72915630799997,
+    "longitude": 144.6507423820001
+  },
+  {
+    "name": "MURCHISON EAST",
+    "state": "VIC",
+    "latitude": -36.61298242299995,
+    "longitude": 145.2407022550001
+  },
+  {
+    "name": "STRATHMERTON",
+    "state": "VIC",
+    "latitude": -35.926385911999944,
+    "longitude": 145.48207607100005
+  },
+  {
+    "name": "WAURN PONDS",
+    "state": "VIC",
+    "latitude": -38.215784688999975,
+    "longitude": 144.30694221700003
+  },
+  {
+    "name": "SWAN HILL",
+    "state": "VIC",
+    "latitude": -35.34148077899994,
+    "longitude": 143.56252390100008
+  },
+  {
+    "name": "HOPETOUN",
+    "state": "VIC",
+    "latitude": -35.73047621499995,
+    "longitude": 142.36133995700004
+  },
+  {
+    "name": "ELSTERNWICK",
+    "state": "VIC",
+    "latitude": -37.88472403499998,
+    "longitude": 145.00093033400003
+  },
+  {
+    "name": "RICHMOND",
+    "state": "VIC",
+    "latitude": -37.82382438299993,
+    "longitude": 144.9896069460001
+  },
+  {
+    "name": "MT WAVERLEY",
+    "state": "VIC",
+    "latitude": -37.87526754499993,
+    "longitude": 145.12841688900005
+  },
+  {
+    "name": "SYNDAL",
+    "state": "VIC",
+    "latitude": -37.876304398999935,
+    "longitude": 145.1494600310001
+  },
+  {
+    "name": "HOLMESGLEN",
+    "state": "VIC",
+    "latitude": -37.87446942999998,
+    "longitude": 145.09033971000008
+  },
+  {
+    "name": "CRESWICK",
+    "state": "VIC",
+    "latitude": -37.42466026899996,
+    "longitude": 143.8881495710001
+  },
+  {
+    "name": "BEAUFORT",
+    "state": "VIC",
+    "latitude": -37.42761656399995,
+    "longitude": 143.38238907400012
+  },
+  {
+    "name": "LAVERTON",
+    "state": "VIC",
+    "latitude": -37.863659009999935,
+    "longitude": 144.7726141590001
+  },
+  {
+    "name": "WERRIBEE",
+    "state": "VIC",
+    "latitude": -37.899346444999935,
+    "longitude": 144.66111366000007
+  },
+  {
+    "name": "MALVERN TRAM DEPOT",
+    "state": "VIC",
+    "latitude": -37.85874864699997,
+    "longitude": 145.02847477500006
+  },
+  {
+    "name": "NORTH SHORE",
+    "state": "VIC",
+    "latitude": -38.09742021499994,
+    "longitude": 144.36580942600006
+  },
+  {
+    "name": "PIMPINIO",
+    "state": "VIC",
+    "latitude": -36.58574806499996,
+    "longitude": 142.12271322200002
+  },
+  {
+    "name": "SHEPPARTON",
+    "state": "VIC",
+    "latitude": -36.38344662399993,
+    "longitude": 145.4063191990001
+  },
+  {
+    "name": "TYABB",
+    "state": "VIC",
+    "latitude": -38.259772289999944,
+    "longitude": 145.1862375400001
+  },
+  {
+    "name": "NARRE WARREN",
+    "state": "VIC",
+    "latitude": -38.02757987699994,
+    "longitude": 145.30366320300004
+  },
+  {
+    "name": "NUMURKAH",
+    "state": "VIC",
+    "latitude": -36.09247727999997,
+    "longitude": 145.43742361800003
+  },
+  {
+    "name": "CRANBOURNE",
+    "state": "VIC",
+    "latitude": -38.09929553699993,
+    "longitude": 145.28019537500006
+  },
+  {
+    "name": "FRANKSTON",
+    "state": "VIC",
+    "latitude": -38.14325909099995,
+    "longitude": 145.12604532800003
+  },
+  {
+    "name": "WESTONA",
+    "state": "VIC",
+    "latitude": -37.86515231499993,
+    "longitude": 144.81349496600012
+  },
+  {
+    "name": "BENTLEIGH",
+    "state": "VIC",
+    "latitude": -37.91789241299995,
+    "longitude": 145.0369000290001
+  },
+  {
+    "name": "MCKINNON",
+    "state": "VIC",
+    "latitude": -37.91070071599995,
+    "longitude": 145.03823346700005
+  },
+  {
+    "name": "FLINDERS STREET",
+    "state": "VIC",
+    "latitude": -37.81829546899996,
+    "longitude": 144.96697348300006
+  },
+  {
+    "name": "SANDOWN PARK",
+    "state": "VIC",
+    "latitude": -37.95672313199998,
+    "longitude": 145.16300204800007
+  },
+  {
+    "name": "CHELSEA",
+    "state": "VIC",
+    "latitude": -38.051946520999934,
+    "longitude": 145.11604250100004
+  },
+  {
+    "name": "DANDENONG",
+    "state": "VIC",
+    "latitude": -37.98993055099993,
+    "longitude": 145.20963721900011
+  },
+  {
+    "name": "NUNAWADING",
+    "state": "VIC",
+    "latitude": -37.82052546999995,
+    "longitude": 145.17501487700008
+  },
+  {
+    "name": "TOORAK",
+    "state": "VIC",
+    "latitude": -37.85075769599996,
+    "longitude": 145.01391317500008
+  },
+  {
+    "name": "SOUTH YARRA",
+    "state": "VIC",
+    "latitude": -37.83843195299994,
+    "longitude": 144.99234772400007
+  },
+  {
+    "name": "BONBEACH",
+    "state": "VIC",
+    "latitude": -38.06292401199994,
+    "longitude": 145.11975127300002
+  },
+  {
+    "name": "ARMADALE",
+    "state": "VIC",
+    "latitude": -37.856301256999984,
+    "longitude": 145.01916106500005
+  },
+  {
+    "name": "MALVERN",
+    "state": "VIC",
+    "latitude": -37.86610334599993,
+    "longitude": 145.02931597500003
+  },
+  {
+    "name": "EAST RICHMOND",
+    "state": "VIC",
+    "latitude": -37.826390611999955,
+    "longitude": 144.9970740450001
+  },
+  {
+    "name": "HEYWOOD",
+    "state": "VIC",
+    "latitude": -38.134801109999955,
+    "longitude": 141.63055540800008
+  },
+  {
+    "name": "GINIFER",
+    "state": "VIC",
+    "latitude": -37.75997566299998,
+    "longitude": 144.8112723490001
+  },
+  {
+    "name": "KYNETON",
+    "state": "VIC",
+    "latitude": -37.25826172899997,
+    "longitude": 144.4506105380001
+  },
+  {
+    "name": "PORTLAND",
+    "state": "VIC",
+    "latitude": -38.337885073999985,
+    "longitude": 141.5992152980001
+  },
+  {
+    "name": "DRYSDALE",
+    "state": "VIC",
+    "latitude": -38.17994829199995,
+    "longitude": 144.55712034500004
+  },
+  {
+    "name": "SALE",
+    "state": "VIC",
+    "latitude": -38.103238534999946,
+    "longitude": 147.05443176200004
+  },
+  {
+    "name": "DONALD",
+    "state": "VIC",
+    "latitude": -36.36828999199997,
+    "longitude": 142.98776904500005
+  },
+  {
+    "name": "ALBERT PARK",
+    "state": "VIC",
+    "latitude": -37.84104605799996,
+    "longitude": 144.95907675800004
+  },
+  {
+    "name": "MORRADOO",
+    "state": "VIC",
+    "latitude": -38.354022319999956,
+    "longitude": 145.18961185400008
+  },
+  {
+    "name": "KILMORE EAST",
+    "state": "VIC",
+    "latitude": -37.293638665999936,
+    "longitude": 144.98357753900007
+  },
+  {
+    "name": "WATER GARDENS",
+    "state": "VIC",
+    "latitude": -37.70111450199994,
+    "longitude": 144.77419197100005
+  },
+  {
+    "name": "BENDIGO",
+    "state": "VIC",
+    "latitude": -36.76563522799995,
+    "longitude": 144.2829907050001
+  },
+  {
+    "name": "CANTERBURY",
+    "state": "VIC",
+    "latitude": -37.82447653599996,
+    "longitude": 145.08123204000003
+  },
+  {
+    "name": "BOX HILL",
+    "state": "VIC",
+    "latitude": -37.81920622699994,
+    "longitude": 145.12143368300008
+  },
+  {
+    "name": "LAL LAL",
+    "state": "VIC",
+    "latitude": -37.67580971599995,
+    "longitude": 144.0137841600001
+  },
+  {
+    "name": "KEILOR PLAINS",
+    "state": "VIC",
+    "latitude": -37.72926330399997,
+    "longitude": 144.7937397930001
+  },
+  {
+    "name": "ROXBURGH PARK",
+    "state": "VIC",
+    "latitude": -37.638218697999946,
+    "longitude": 144.93554385700008
+  },
+  {
+    "name": "SUMA PARK",
+    "state": "VIC",
+    "latitude": -38.25288566699993,
+    "longitude": 144.59988222100003
+  },
+  {
+    "name": "WODONGA",
+    "state": "VIC",
+    "latitude": -36.10590018299996,
+    "longitude": 146.87163992000012
+  },
+  {
+    "name": "MIDDLE GORGE",
+    "state": "VIC",
+    "latitude": -37.64395253199996,
+    "longitude": 145.0922968330001
+  },
+  {
+    "name": "BAIRNSDALE",
+    "state": "VIC",
+    "latitude": -37.82888574599997,
+    "longitude": 147.62731722600006
+  },
+  {
+    "name": "CLAYTON",
+    "state": "VIC",
+    "latitude": -37.92479942799997,
+    "longitude": 145.12082446800002
+  },
+  {
+    "name": "LYNBROOK",
+    "state": "VIC",
+    "latitude": -38.057543091999946,
+    "longitude": 145.249532
+  },
+  {
+    "name": "SOUTH MELBOURNE",
+    "state": "VIC",
+    "latitude": -37.83432009899997,
+    "longitude": 144.95596673700004
+  },
+  {
+    "name": "PARLIAMENT",
+    "state": "VIC",
+    "latitude": -37.81104222499994,
+    "longitude": 144.97291357000006
+  },
+  {
+    "name": "UNKNOWN",
+    "state": "VIC",
+    "latitude": -38.35470211699993,
+    "longitude": 141.606618
+  },
+  {
+    "name": "HEATHMONT",
+    "state": "VIC",
+    "latitude": -37.82830501899997,
+    "longitude": 145.2445593440001
+  },
+  {
+    "name": "AIRCRAFT",
+    "state": "VIC",
+    "latitude": -37.86658957599997,
+    "longitude": 144.76081537900006
+  },
+  {
+    "name": "TYNONG",
+    "state": "VIC",
+    "latitude": -38.084981899999946,
+    "longitude": 145.62823768900012
+  },
+  {
+    "name": "MELTON",
+    "state": "VIC",
+    "latitude": -37.703276518999985,
+    "longitude": 144.57253125300008
+  },
+  {
+    "name": "STRATHMORE",
+    "state": "VIC",
+    "latitude": -37.74358015399997,
+    "longitude": 144.92732622500012
+  },
+  {
+    "name": "ANSTEY",
+    "state": "VIC",
+    "latitude": -37.761226713999974,
+    "longitude": 144.96069223000006
+  },
+  {
+    "name": "MACAULAY",
+    "state": "VIC",
+    "latitude": -37.794250819999945,
+    "longitude": 144.9361767260001
+  },
+  {
+    "name": "BLACKBURN",
+    "state": "VIC",
+    "latitude": -37.820056431999944,
+    "longitude": 145.1500202190001
+  },
+  {
+    "name": "ARDEER",
+    "state": "VIC",
+    "latitude": -37.78292940999995,
+    "longitude": 144.80126633600003
+  },
+  {
+    "name": "MORNINGTON",
+    "state": "VIC",
+    "latitude": -38.22989824299998,
+    "longitude": 145.05023945300002
+  },
+  {
+    "name": "FLEMINGTON SHOWGROUNDS",
+    "state": "VIC",
+    "latitude": -37.78354044399998,
+    "longitude": 144.91494019800007
+  },
+  {
+    "name": "COLLINGWOOD",
+    "state": "VIC",
+    "latitude": -37.804510421999964,
+    "longitude": 144.9937512670001
+  },
+  {
+    "name": "NORTH GEELONG",
+    "state": "VIC",
+    "latitude": -38.12282368999996,
+    "longitude": 144.3522832960001
+  },
+  {
+    "name": "LALOR",
+    "state": "VIC",
+    "latitude": -37.66583985799997,
+    "longitude": 145.01720185400006
+  },
+  {
+    "name": "TOORONGA",
+    "state": "VIC",
+    "latitude": -37.84935729299997,
+    "longitude": 145.04174051600012
+  },
+  {
+    "name": "MUSK",
+    "state": "VIC",
+    "latitude": -37.37096256499996,
+    "longitude": 144.19115912000007
+  },
+  {
+    "name": "WEST RICHMOND",
+    "state": "VIC",
+    "latitude": -37.81493267199994,
+    "longitude": 144.99142456100003
+  },
+  {
+    "name": "CROYDON",
+    "state": "VIC",
+    "latitude": -37.795446427999934,
+    "longitude": 145.28045490700003
+  },
+  {
+    "name": "MOOROOLBARK",
+    "state": "VIC",
+    "latitude": -37.784769076999964,
+    "longitude": 145.31258663100004
+  },
+  {
+    "name": "LETHBRIDGE",
+    "state": "VIC",
+    "latitude": -37.96408274399994,
+    "longitude": 144.1303183120001
+  },
+  {
+    "name": "MALMSBURY",
+    "state": "VIC",
+    "latitude": -37.18976808999997,
+    "longitude": 144.37531070300008
+  },
+  {
+    "name": "HEATHCOTE JUNCTION",
+    "state": "VIC",
+    "latitude": -37.367731685999956,
+    "longitude": 145.02622277800003
+  },
+  {
+    "name": "CASTLEMAINE",
+    "state": "VIC",
+    "latitude": -37.063147639999954,
+    "longitude": 144.21380005600008
+  },
+  {
+    "name": "YARRAWONGA",
+    "state": "VIC",
+    "latitude": -36.017197565999936,
+    "longitude": 145.9986377670001
+  },
+  {
+    "name": "SPRINGVALE",
+    "state": "VIC",
+    "latitude": -37.949408750999964,
+    "longitude": 145.15356666000002
+  },
+  {
+    "name": "HEALESVILLE",
+    "state": "VIC",
+    "latitude": -37.65489644799993,
+    "longitude": 145.5101564460001
+  },
+  {
+    "name": "TALLAROOK",
+    "state": "VIC",
+    "latitude": -37.09226677999993,
+    "longitude": 145.102899771
+  },
+  {
+    "name": "ORMOND",
+    "state": "VIC",
+    "latitude": -37.90354999099998,
+    "longitude": 145.0395493530001
+  },
+  {
+    "name": "TALBOT",
+    "state": "VIC",
+    "latitude": -37.17185524699994,
+    "longitude": 143.70618098600005
+  },
+  {
+    "name": "CAULFIELD",
+    "state": "VIC",
+    "latitude": -37.87749601199994,
+    "longitude": 145.04247596100004
+  },
+  {
+    "name": "KANIVA",
+    "state": "VIC",
+    "latitude": -36.37708862299996,
+    "longitude": 141.2418066790001
+  },
+  {
+    "name": "WAIL",
+    "state": "VIC",
+    "latitude": -36.506599137999956,
+    "longitude": 142.09805630800008
+  },
+  {
+    "name": "MALDON",
+    "state": "VIC",
+    "latitude": -36.99240158799995,
+    "longitude": 144.07395837800004
+  },
+  {
+    "name": "SEYMOUR",
+    "state": "VIC",
+    "latitude": -37.02429920299994,
+    "longitude": 145.138429104
+  },
+  {
+    "name": "KANGAROO FLAT",
+    "state": "VIC",
+    "latitude": -36.79494005599997,
+    "longitude": 144.24898723600006
+  },
+  {
+    "name": "ST ALBANS",
+    "state": "VIC",
+    "latitude": -37.74494613799993,
+    "longitude": 144.79985526000007
+  },
+  {
+    "name": "MOE",
+    "state": "VIC",
+    "latitude": -38.17675947699996,
+    "longitude": 146.26278560100002
+  },
+  {
+    "name": "RIDDELLS CREEK",
+    "state": "VIC",
+    "latitude": -37.464947172999985,
+    "longitude": 144.6799724450001
+  },
+  {
+    "name": "NAGAMBIE",
+    "state": "VIC",
+    "latitude": -36.785276608999936,
+    "longitude": 145.16058666000004
+  },
+  {
+    "name": "ROSEDALE",
+    "state": "VIC",
+    "latitude": -38.156525905999956,
+    "longitude": 146.7870286220001
+  },
+  {
+    "name": "DROUIN",
+    "state": "VIC",
+    "latitude": -38.136464186999945,
+    "longitude": 145.85592774000008
+  },
+  {
+    "name": "MORWELL",
+    "state": "VIC",
+    "latitude": -38.23672934099994,
+    "longitude": 146.39675035200003
+  },
+  {
+    "name": "YARRAGON",
+    "state": "VIC",
+    "latitude": -38.20314273499997,
+    "longitude": 146.0630713370001
+  },
+  {
+    "name": "TRARALGON",
+    "state": "VIC",
+    "latitude": -38.19889222499995,
+    "longitude": 146.53789645100005
+  },
+  {
+    "name": "WESTMERE",
+    "state": "VIC",
+    "latitude": -37.691210671999954,
+    "longitude": 142.97006160400008
+  },
+  {
+    "name": "WRIGHT",
+    "state": "VIC",
+    "latitude": -37.92927016099998,
+    "longitude": 145.4709833810001
+  },
+  {
+    "name": "INGLEWOOD",
+    "state": "VIC",
+    "latitude": -36.57373320499994,
+    "longitude": 143.87373195800012
+  },
+  {
+    "name": "KORUMBURRA",
+    "state": "VIC",
+    "latitude": -38.43084814499997,
+    "longitude": 145.82398937000005
+  },
+  {
+    "name": "DIGGERS REST",
+    "state": "VIC",
+    "latitude": -37.62772545799993,
+    "longitude": 144.720030962
+  },
+  {
+    "name": "GEELONG",
+    "state": "VIC",
+    "latitude": -38.14422447499993,
+    "longitude": 144.3549585510001
+  },
+  {
+    "name": "COCKATOO",
+    "state": "VIC",
+    "latitude": -37.93474912599993,
+    "longitude": 145.49161583700004
+  },
+  {
+    "name": "MEREDITH",
+    "state": "VIC",
+    "latitude": -37.84461841199993,
+    "longitude": 144.06980016700004
+  },
+  {
+    "name": "SERVICETON",
+    "state": "VIC",
+    "latitude": -36.37540773599994,
+    "longitude": 140.988457347
+  },
+  {
+    "name": "SPRINGHURST",
+    "state": "VIC",
+    "latitude": -36.186106559999985,
+    "longitude": 146.47044149300007
+  },
+  {
+    "name": "DIMBOOLA",
+    "state": "VIC",
+    "latitude": -36.451953851999974,
+    "longitude": 142.0310824060001
+  },
+  {
+    "name": "VIOLET TOWN",
+    "state": "VIC",
+    "latitude": -36.63786232199993,
+    "longitude": 145.71894747500005
+  },
+  {
+    "name": "SOUTHERN CROSS",
+    "state": "VIC",
+    "latitude": -37.818533817999935,
+    "longitude": 144.95193247500004
+  },
+  {
+    "name": "STAWELL",
+    "state": "VIC",
+    "latitude": -37.059363462999954,
+    "longitude": 142.77325561100008
+  },
+  {
+    "name": "BIRCHIP",
+    "state": "VIC",
+    "latitude": -35.98150279599997,
+    "longitude": 142.92113162600003
+  },
+  {
+    "name": "WARRNAMBOOL",
+    "state": "VIC",
+    "latitude": -38.385205026999984,
+    "longitude": 142.47540627700005
+  },
+  {
+    "name": "FLEMINGTON RACECOURSE",
+    "state": "VIC",
+    "latitude": -37.78718584799998,
+    "longitude": 144.90759860200012
+  },
+  {
+    "name": "MERINDA PARK",
+    "state": "VIC",
+    "latitude": -38.07899054899997,
+    "longitude": 145.263513417
+  },
+  {
+    "name": "CRIB POINT",
+    "state": "VIC",
+    "latitude": -38.36600095799997,
+    "longitude": 145.20411867200005
+  },
+  {
+    "name": "DIAMOND CREEK",
+    "state": "VIC",
+    "latitude": -37.673396638999975,
+    "longitude": 145.15846167300003
+  },
+  {
+    "name": "FERNTREE GULLY",
+    "state": "VIC",
+    "latitude": -37.88168421499995,
+    "longitude": 145.29526060900002
+  },
+  {
+    "name": "STONY POINT",
+    "state": "VIC",
+    "latitude": -38.37397864899998,
+    "longitude": 145.221842551
+  },
+  {
+    "name": "LAKE WEEROONA",
+    "state": "VIC",
+    "latitude": -36.748736976999965,
+    "longitude": 144.28930334500012
+  },
+  {
+    "name": "VICTORIA PARK",
+    "state": "VIC",
+    "latitude": -37.79914229999997,
+    "longitude": 144.99445323400005
+  },
+  {
+    "name": "ROYAL PARK",
+    "state": "VIC",
+    "latitude": -37.78118138199994,
+    "longitude": 144.95187345800002
+  },
+  {
+    "name": "PYRAMID HILL",
+    "state": "VIC",
+    "latitude": -36.053083055999934,
+    "longitude": 144.11320200600005
+  },
+  {
+    "name": "WALHALLA",
+    "state": "VIC",
+    "latitude": -37.95128068599996,
+    "longitude": 146.4478614830001
+  },
+  {
+    "name": "CARRUM",
+    "state": "VIC",
+    "latitude": -38.077457471999935,
+    "longitude": 145.12301619800007
+  },
+  {
+    "name": "SOUTHLAND",
+    "state": "VIC",
+    "latitude": -37.95850045199995,
+    "longitude": 145.0488978190001
+  },
+  {
+    "name": "CAMPERDOWN",
+    "state": "VIC",
+    "latitude": -38.22863920899994,
+    "longitude": 143.15061895600002
+  },
+  {
+    "name": "CLUNES",
+    "state": "VIC",
+    "latitude": -37.30270876299994,
+    "longitude": 143.78195019600003
+  },
+  {
+    "name": "RED CLIFFS",
+    "state": "VIC",
+    "latitude": -34.30770652199993,
+    "longitude": 142.1860017260001
+  },
+  {
+    "name": "TERANG",
+    "state": "VIC",
+    "latitude": -38.23622742499998,
+    "longitude": 142.9114872570001
+  },
+  {
+    "name": "SOUTH MORANG",
+    "state": "VIC",
+    "latitude": -37.64908688899993,
+    "longitude": 145.067757668
+  },
+  {
+    "name": "HURSTBRIDGE",
+    "state": "VIC",
+    "latitude": -37.63944203099993,
+    "longitude": 145.1920856490001
+  },
+  {
+    "name": "SUNSHINE",
+    "state": "VIC",
+    "latitude": -37.78848210899997,
+    "longitude": 144.83297115000005
+  },
+  {
+    "name": "WATTLE GLEN",
+    "state": "VIC",
+    "latitude": -37.66396857299998,
+    "longitude": 145.18169460100012
+  },
+  {
+    "name": "WATSONIA",
+    "state": "VIC",
+    "latitude": -37.71089240699996,
+    "longitude": 145.08371473300008
+  },
+  {
+    "name": "CARNEGIE",
+    "state": "VIC",
+    "latitude": -37.88617326099995,
+    "longitude": 145.05861729900005
+  },
+  {
+    "name": "WINCHELSEA",
+    "state": "VIC",
+    "latitude": -38.24011251899998,
+    "longitude": 143.98373781300006
+  },
+  {
+    "name": "MURRUMBEENA",
+    "state": "VIC",
+    "latitude": -37.890138985999954,
+    "longitude": 145.0674161190001
+  },
+  {
+    "name": "HUNTINGDALE",
+    "state": "VIC",
+    "latitude": -37.91104839399998,
+    "longitude": 145.10230523400003
+  },
+  {
+    "name": "DEER PARK",
+    "state": "VIC",
+    "latitude": -37.77756336099998,
+    "longitude": 144.77162680700008
+  },
+  {
+    "name": "BORONIA",
+    "state": "VIC",
+    "latitude": -37.86054232399994,
+    "longitude": 145.28487743200003
+  },
+  {
+    "name": "CAROLINE SPRINGS",
+    "state": "VIC",
+    "latitude": -37.76690318999994,
+    "longitude": 144.7374763040001
+  },
+  {
+    "name": "TONGALA",
+    "state": "VIC",
+    "latitude": -36.25216729999994,
+    "longitude": 144.9508490400001
+  },
+  {
+    "name": "MERRIGUM",
+    "state": "VIC",
+    "latitude": -36.37120383299998,
+    "longitude": 145.13047106600004
+  },
+  {
+    "name": "HUGHESDALE",
+    "state": "VIC",
+    "latitude": -37.894206088999965,
+    "longitude": 145.07646512600002
+  },
+  {
+    "name": "DONNYBROOK",
+    "state": "VIC",
+    "latitude": -37.54225835899996,
+    "longitude": 144.97016843200004
+  },
+  {
+    "name": "HEIDELBERG",
+    "state": "VIC",
+    "latitude": -37.757070442999975,
+    "longitude": 145.06071028300005
+  },
+  {
+    "name": "WIRREGA",
+    "state": "VIC",
+    "latitude": -36.206023035999976,
+    "longitude": 140.58496198700004
+  },
+  {
+    "name": "BORDERTOWN",
+    "state": "VIC",
+    "latitude": -36.31046778499996,
+    "longitude": 140.77754593800012
+  }
+]
