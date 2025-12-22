@@ -73,17 +73,16 @@ Follow the prompts to authenticate.
 
 7. Start the development server:
 ```bash
-npm run dev
+vercel dev
 ```
 
 The app will be available at `http://localhost:3000` (or the next available port).
 
-**Note:** The development server uses `vercel dev` which runs both the Vite dev server AND the serverless API functions locally. This is required for testing the full application including API endpoints.
+**Note:** Use `vercel dev` (not `npm run dev`) to run both the Vite dev server AND the serverless API functions locally. This is required for testing the full application including API endpoints.
 
 ## Development Scripts
 
-- `npm run dev` - Start development server with Vercel (includes API functions)
-- `npm run dev:vite` - Start Vite dev server only (frontend only, no API)
+- `npm run dev` - Start Vite dev server only (frontend only, no API)
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Lint code
@@ -96,14 +95,14 @@ The app will be available at `http://localhost:3000` (or the next available port
 
 **For full-stack development** (recommended):
 ```bash
-npm run dev
+vercel dev
 # Access at http://localhost:3000
 # API endpoints available at /api/*
 ```
 
 **For frontend-only development** (faster, but no API):
 ```bash
-npm run dev:vite
+npm run dev
 # Access at http://localhost:5173
 # API endpoints will not work
 ```
@@ -196,6 +195,15 @@ The app is a Progressive Web App with:
 - **App-like**: Runs in standalone mode without browser UI
 
 ## Troubleshooting
+
+### "vercel dev must not recursively invoke itself" error
+
+This happens if you try to run `npm run dev` when `vercel dev` is already configured to use it.
+
+**Solution:** Run `vercel dev` directly from the command line, not through npm scripts:
+```bash
+vercel dev
+```
 
 ### "Cannot find module" errors in API functions
 

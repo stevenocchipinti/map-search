@@ -19,8 +19,8 @@ This is a condensed reference for continuing implementation.
 
 ```bash
 # Development
-npm run dev              # Start Vercel dev server (Vite + API functions) - http://localhost:3000
-npm run dev:vite         # Start Vite dev server only (frontend only) - http://localhost:5173
+vercel dev               # Start Vercel dev (Vite + API functions) - http://localhost:3000
+npm run dev              # Start Vite dev server only (frontend only) - http://localhost:5173
 npm run build            # Build for production
 npm run preview          # Preview production build
 npm run test:api         # Test API functions directly
