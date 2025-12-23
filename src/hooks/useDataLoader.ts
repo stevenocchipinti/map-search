@@ -12,7 +12,7 @@ interface DataLoaderResult {
   loadedStates: Set<AustralianState>;
   loading: boolean;
   error: string | null;
-  loadState: (state: AustralianState) => Promise<void>;
+  loadState: (state: AustralianState) => Promise<{schools: School[], stations: Station[]}>;
   loadMultipleStates: (states: AustralianState[]) => Promise<void>;
   getSchools: (state: AustralianState) => School[];
   getStations: (state: AustralianState) => Station[];
@@ -27,10 +27,13 @@ export function useDataLoader(): DataLoaderResult {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const loadState = useCallback(async (state: AustralianState): Promise<void> => {
+  const loadState = useCallback(async (state: AustralianState): Promise<{schools: School[], stations: Station[]}> => {
     // Skip if already loaded
     if (loadedStates.has(state)) {
-      return;
+      return {
+        schools: schoolsData.get(state) || [],
+        stations: stationsData.get(state) || []
+      };
     }
 
     setLoading(true);
@@ -64,6 +67,8 @@ export function useDataLoader(): DataLoaderResult {
         schools: schools.length,
         stations: stations.length,
       });
+      
+      return { schools, stations };
     } catch (err) {
       const errorMsg = err instanceof Error ? err.message : 'Failed to load state data';
       console.error('Data loading error:', err);
@@ -72,7 +77,7 @@ export function useDataLoader(): DataLoaderResult {
     } finally {
       setLoading(false);
     }
-  }, [loadedStates]);
+  }, [loadedStates, schoolsData, stationsData]);
 
   const loadMultipleStates = useCallback(async (states: AustralianState[]): Promise<void> => {
     const unloadedStates = states.filter(state => !loadedStates.has(state));
