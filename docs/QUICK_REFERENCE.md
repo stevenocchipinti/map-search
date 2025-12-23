@@ -1,17 +1,17 @@
 # Quick Reference
 
-This is a condensed reference for continuing implementation.
+This is a condensed reference for common tasks and patterns.
 
-## Current Status (Phases 1 & 2 Complete)
+## Project Status
 
-✅ Project setup complete
-✅ Data processing complete (10,994 schools + 1,709 stations → 8 state files each)
-✅ Type definitions created
-✅ Tailwind configured
-✅ Documentation written
-✅ **Phase 2: Backend API endpoints complete and tested**
-
-**Next Phase**: Phase 3 - Core Hooks & Data Loading
+✅ **All Development Complete - Production Ready**
+- Project setup and data processing
+- Backend API endpoints (geocode, supermarkets, walking-routes)
+- Core hooks and data loading
+- Map components (Leaflet)
+- Sidebar and UI components
+- Service worker and PWA functionality
+- Property platform-inspired style refinements
 
 ---
 
@@ -19,11 +19,10 @@ This is a condensed reference for continuing implementation.
 
 ```bash
 # Development
-vercel dev               # Start Vercel dev (Vite + API functions) - http://localhost:3000
+vercel dev               # Start Vercel dev (Vite + API functions) - http://localhost:3001
 npm run dev              # Start Vite dev server only (frontend only) - http://localhost:5173
 npm run build            # Build for production
 npm run preview          # Preview production build
-npm run test:api         # Test API functions directly
 
 # Data Processing
 npm run data:all         # Process all data files
@@ -56,6 +55,51 @@ curl -X POST http://localhost:3000/api/walking-routes \
 
 ## File Structure
 
+```
+map-search/
+├── api/                      # Vercel serverless functions
+│   ├── geocode.ts           # ✅ Nominatim wrapper
+│   ├── supermarkets.ts      # ✅ Overpass wrapper
+│   ├── walking-routes.ts    # ✅ OpenRouteService wrapper
+│   └── tsconfig.json        # ✅ TypeScript config for API
+├── docs/                     # Documentation
+│   ├── ARCHITECTURE.md      # Technical architecture
+│   ├── DATA_SOURCES.md      # Data sources & processing
+│   ├── DECISIONS.md         # Key decisions & rationale
+│   └── QUICK_REFERENCE.md   # This file
+├── public/
+│   ├── data/                # Processed state files
+│   │   └── {state}/
+│   │       ├── schools.json
+│   │       └── stations.json
+│   ├── manifest.json        # PWA manifest
+│   ├── service-worker.js    # Service worker
+│   └── icon.svg            # App icon
+├── scripts/                 # Data processing
+│   ├── process-schools.ts
+│   ├── process-stations.ts
+│   └── process-all.ts
+├── src/
+│   ├── components/          # ✅ React components
+│   │   ├── Map/            # Leaflet components
+│   │   ├── Settings/       # Settings panel
+│   │   ├── Sidebar/        # Search & results
+│   │   └── UI/             # Reusable components
+│   ├── hooks/              # ✅ Custom hooks
+│   ├── lib/                # ✅ Utilities
+│   │   ├── api-client.ts   # Backend API wrappers
+│   │   ├── haversine.ts    # Distance calculations
+│   │   ├── overpass.ts     # Overpass API client
+│   │   └── openroute.ts    # OpenRouteService client
+│   ├── types/              # ✅ TypeScript types
+│   ├── utils/              # ✅ Helper functions
+│   ├── App.tsx             # Main app component
+│   ├── main.tsx            # Entry point
+│   └── index.css           # ✅ Global styles (Tailwind)
+├── .env.example            # Environment template
+├── AGENTS.md               # Guide for AI assistants
+├── README.md               # Project overview
+└── package.json            # Dependencies & scripts
 ```
 map-search2/
 ├── api/                      # Vercel serverless functions
@@ -99,7 +143,7 @@ map-search2/
 
 ---
 
-## API Endpoints (To Implement)
+## API Endpoints
 
 ### POST /api/geocode
 ```typescript
@@ -119,7 +163,7 @@ Uses:   Overpass API (1 req/sec rate limit)
 ```typescript
 Input:  { routes: RouteRequest[] }
 Output: { routes: (WalkingRoute | null)[] } | { error }
-Uses:   OpenRouteService (500ms between requests)
+Uses:   OpenRouteService (1000ms between requests)
 ```
 
 ---
@@ -188,22 +232,23 @@ interface WalkingRoute {
 
 ---
 
-## Component Hierarchy (Planned)
+## Component Hierarchy
 
 ```
 App
 ├── Sidebar
 │   ├── SearchBar
-│   │   ├── TextInput
-│   │   └── GeolocationButton
+│   │   └── Button (Search / Use Location)
 │   ├── POICard (School)
-│   │   ├── SectorCheckboxes (in card, not search bar!)
+│   │   ├── SectorCheckboxes
 │   │   ├── SelectedPOI
 │   │   │   ├── TimeBadge (gray estimate → blue actual)
 │   │   │   └── DistanceBadge
 │   │   └── POIAlternatives (collapsible)
 │   ├── POICard (Station)
-│   └── POICard (Supermarket)
+│   ├── POICard (Supermarket)
+│   ├── OfflineBanner
+│   └── SettingsPanel
 └── Map (Leaflet)
     ├── UserMarker (red circle)
     ├── POIMarkers (colored pins/dots)
@@ -333,46 +378,46 @@ if (sharedText) {
 
 ## Testing Checklist
 
-### Phase 2 Checkpoint (After Backend)
-- [ ] `/api/geocode` returns correct state
-- [ ] `/api/supermarkets` returns nearby stores
-- [ ] `/api/walking-routes` returns valid polylines
-- [ ] Rate limiting works (no 429 errors)
+### Backend
+- [x] `/api/geocode` returns correct state
+- [x] `/api/supermarkets` returns nearby stores
+- [x] `/api/walking-routes` returns valid polylines
+- [x] Rate limiting works (no 429 errors)
 
-### Phase 3 Checkpoint (After Core Hooks)
-- [ ] useDataLoader fetches state files correctly
-- [ ] useWalkingRoutes caches and deduplicates
-- [ ] useSectorPreferences persists to localStorage
-- [ ] Haversine filtering works
+### Core Hooks
+- [x] useDataLoader fetches state files correctly
+- [x] useWalkingRoutes caches and deduplicates
+- [x] useSectorPreferences persists to localStorage
+- [x] Haversine filtering works
 
-### Phase 4 Checkpoint (After Map)
-- [ ] Map renders with Carto tiles
-- [ ] Markers appear (correct colors/styles)
-- [ ] Polylines draw when routes load
-- [ ] Click alternative updates map
+### Map Components
+- [x] Map renders with Carto tiles
+- [x] Markers appear (correct colors/styles)
+- [x] Polylines draw when routes load
+- [x] Click alternative updates map
 
-### Phase 5 Checkpoint (After Sidebar)
-- [ ] Full search workflow works
-- [ ] POI cards display correctly
-- [ ] Alternatives toggle and select
-- [ ] Sector filtering updates results
-- [ ] Mobile sidebar slides in/out
-- [ ] Desktop shows side-by-side
+### UI Components
+- [x] Full search workflow works
+- [x] POI cards display correctly
+- [x] Alternatives toggle and select
+- [x] Sector filtering updates results
+- [x] Mobile responsive design
+- [x] Desktop layout
 
-### Phase 6 Checkpoint (After Service Worker)
-- [ ] Service worker registers
-- [ ] Static assets cached
-- [ ] Data files cached
-- [ ] API responses cached with TTL
-- [ ] Offline mode works
-- [ ] PWA installable
+### Service Worker & PWA
+- [x] Service worker registers
+- [x] Static assets cached
+- [x] Data files cached
+- [x] API responses cached with TTL
+- [x] Offline mode works
+- [x] PWA installable
 
-### Phase 7 Checkpoint (Final)
-- [ ] No console errors
-- [ ] Smooth on mobile and desktop
-- [ ] Keyboard navigation works
-- [ ] Loading states clear
-- [ ] Error handling graceful
+### Polish
+- [x] No console errors
+- [x] Smooth on mobile and desktop
+- [x] Keyboard navigation works
+- [x] Loading states clear
+- [x] Error handling graceful
 
 ---
 
@@ -404,16 +449,6 @@ if (sharedText) {
 
 ---
 
-## Next Steps
-
-1. **Copy API key**: Get ORS_API_KEY from ../map-search/.env
-2. **Start Phase 2**: Copy shared utilities from map-search
-3. **Create API endpoints**: geocode, supermarkets, walking-routes
-4. **Test endpoints**: Use curl or Postman
-5. **Continue to Phase 3**: Core hooks & data loading
-
----
-
 ## Useful Links
 
 - **OpenRouteService**: https://openrouteservice.org/
@@ -428,14 +463,16 @@ if (sharedText) {
 
 ## Getting Help
 
-If stuck or context runs low:
+If stuck or need reference:
 
-1. **Check docs**: ARCHITECTURE.md, IMPLEMENTATION_PLAN.md, DECISIONS.md
-2. **Check types**: src/types/index.ts has all interfaces
-3. **Check original**: ../map-search for reference implementations
-4. **Start new session**: Use these docs to resume from any phase
+1. **Check docs**: 
+   - `AGENTS.md` - Comprehensive guide for AI assistants
+   - `ARCHITECTURE.md` - Technical architecture details
+   - `DECISIONS.md` - Decision rationale and context
+   - `QUICK_REFERENCE.md` - This file
+2. **Check types**: `src/types/index.ts` has all interfaces
+3. **Check components**: Well-documented React components in `src/components/`
 
 ---
 
-**Last Updated**: Phase 1 Complete (Foundation)
-**Next Task**: Phase 2.1 - Copy shared utilities from map-search
+**Last Updated**: December 2024 - All phases complete, production ready

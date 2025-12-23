@@ -21,6 +21,7 @@ The app uses three types of Point of Interest (POI) data:
 **Format**: JSON array or Excel spreadsheet
 
 **Schema**:
+
 ```json
 {
   "name": "School Name",
@@ -46,6 +47,7 @@ The processing script (`scripts/process-schools.ts`) performs the following:
 4. Writes separate JSON files for each state to `public/data/{state}/schools.json`
 
 **Output files**:
+
 - `public/data/nsw/schools.json` - ~3,400 schools (~770KB)
 - `public/data/vic/schools.json` - ~2,800 schools (~650KB)
 - `public/data/qld/schools.json` - ~2,000 schools (~450KB)
@@ -77,6 +79,7 @@ The processing script (`scripts/process-schools.ts`) performs the following:
 **Format**: GeoJSON FeatureCollection with Point geometries
 
 **Schema**:
+
 ```json
 {
   "type": "Feature",
@@ -108,6 +111,7 @@ The processing script (`scripts/process-stations.ts`) performs the following:
 6. Writes separate JSON files (simplified format) for each state
 
 **Output Schema** (simplified):
+
 ```json
 {
   "name": "Station Name",
@@ -118,6 +122,7 @@ The processing script (`scripts/process-stations.ts`) performs the following:
 ```
 
 **Output files**:
+
 - `public/data/nsw/stations.json` - ~440 stations (~60KB)
 - `public/data/vic/stations.json` - ~410 stations (~51KB)
 - `public/data/qld/stations.json` - ~380 stations (~47KB)
@@ -151,6 +156,7 @@ The processing script (`scripts/process-stations.ts`) performs the following:
 ### Why Not Pre-processed?
 
 Supermarket data changes more frequently than schools/stations:
+
 - New stores open regularly
 - Stores close or relocate
 - Hours and details change
@@ -160,6 +166,7 @@ Using live data ensures users always see current information.
 ### Future Enhancement
 
 Consider pre-processing supermarket data (similar to schools/stations) if:
+
 - API rate limits become problematic
 - Offline support for supermarkets is required
 - Data freshness requirements change (e.g., quarterly updates acceptable)
@@ -212,6 +219,7 @@ The processing scripts perform light validation:
 - ✅ **State is valid**: Matches one of the 8 Australian states/territories
 
 **Not validated** (assumed from official sources):
+
 - Coordinate accuracy (within Australia bounding box)
 - Postal code format
 - Name/suburb formatting
@@ -223,6 +231,7 @@ This keeps processing fast and simple since data comes from official government 
 ### Processing fails with "File not found"
 
 Ensure source files exist in `data-sources/`:
+
 ```bash
 ls -lh data-sources/
 # Should show: schools.json, stations.geojson
@@ -231,6 +240,7 @@ ls -lh data-sources/
 ### Output files are empty
 
 Check the console output for warnings. Common issues:
+
 - Source file is corrupted
 - JSON parsing failed
 - All records filtered out due to validation
@@ -238,6 +248,7 @@ Check the console output for warnings. Common issues:
 ### State counts seem wrong
 
 Compare with source data:
+
 ```bash
 # Count schools by state in source file
 cat data-sources/schools.json | jq '[.[] | .state] | group_by(.) | map({state: .[0], count: length})'
@@ -271,10 +282,12 @@ map-search2/
 ## Git Ignore
 
 **Ignored** (`.gitignore`):
+
 - `data-sources/` - Large source files, don't commit
 - `.env` - API keys
 
 **Committed**:
+
 - `public/data/*/*.json` - Processed state files (part of app)
 - `.env.example` - Template for environment variables
 

@@ -86,7 +86,6 @@ The app will be available at `http://localhost:3000` (or the next available port
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Lint code
-- `npm run test:api` - Test API functions directly (no HTTP)
 - `npm run data:all` - Process all data files
 - `npm run data:schools` - Process schools data only
 - `npm run data:stations` - Process stations data only
@@ -107,12 +106,6 @@ npm run dev
 # API endpoints will not work
 ```
 
-**Testing API functions directly** (without HTTP layer):
-```bash
-npm run test:api
-# Tests geocode, supermarkets, and walking routes functions
-```
-
 ## Data Updates
 
 The app uses pre-processed data for schools and train stations. To update this data:
@@ -128,17 +121,17 @@ npm run data:all
 
 3. The processed files will be generated in `public/data/{state}/`
 
-See [DATA_SOURCES.md](./DATA_SOURCES.md) for more details on data sources and processing.
+See [DATA_SOURCES.md](./docs/DATA_SOURCES.md) for more details on data sources and processing.
 
 ## Documentation
 
 Comprehensive documentation is available in the `docs/` directory:
 
+- **[AGENTS.md](./AGENTS.md)** - Comprehensive guide for AI assistants working on this codebase
 - **[ARCHITECTURE.md](./docs/ARCHITECTURE.md)** - Technical architecture, caching strategies, data flow diagrams
-- **[IMPLEMENTATION_PLAN.md](./docs/IMPLEMENTATION_PLAN.md)** - Phase-by-phase implementation plan with detailed task breakdowns
 - **[DECISIONS.md](./docs/DECISIONS.md)** - All key decisions and rationale (why we chose what we chose)
 - **[QUICK_REFERENCE.md](./docs/QUICK_REFERENCE.md)** - Quick reference for commands, types, and common tasks
-- **[DATA_SOURCES.md](./DATA_SOURCES.md)** - Data sources and processing instructions
+- **[DATA_SOURCES.md](./docs/DATA_SOURCES.md)** - Data sources and processing instructions
 
 ## Architecture
 
@@ -221,23 +214,6 @@ import { haversineDistance } from './haversine.js';
 import { haversineDistance } from './haversine';
 ```
 
-### Blank page with "Expected a JavaScript module script" error
-
-This happens when you navigate to `http://localhost:3000/` directly. The Vite frontend is not yet implemented.
-
-**Solution:** Test the API endpoints directly:
-```bash
-# Test geocode
-curl -X POST http://localhost:3000/api/geocode \
-  -H "Content-Type: application/json" \
-  -d '{"address": "123 Elizabeth St, Sydney NSW"}'
-```
-
-Or use the test script:
-```bash
-npm run test:api
-```
-
 ### "No existing credentials found" error from Vercel CLI
 
 **Solution:** Authenticate with Vercel:
@@ -257,10 +233,6 @@ ORS_API_KEY=your_actual_key_here
 ```
 
 No quotes, no extra spaces. Restart `npm run dev` after changing the `.env` file.
-
-## Contributing
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for development guidelines.
 
 ## License
 
