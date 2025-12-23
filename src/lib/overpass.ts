@@ -1,11 +1,8 @@
 /**
- * Overpass API client for querying OpenStreetMap POIs
- * 
- * NOTE: Station queries are deprecated - stations are now loaded from static GeoJSON file
- * (see src/pages/api/search.ts loadStations() function)
+ * Overpass API client for querying OpenStreetMap POIs (supermarkets)
  */
 
-import { haversineDistance } from './haversine';
+import { haversineDistance } from './haversine.js';
 
 const OVERPASS_API_URL = 'https://overpass-api.de/api/interpreter';
 
@@ -14,23 +11,15 @@ let lastOverpassCall = 0;
 const OVERPASS_RATE_LIMIT_MS = 1000; // 1 second between calls
 
 // Resource limits to avoid 504 errors
-const OVERPASS_TIMEOUT_SECONDS = 60; // Increased from 10 to 60 for reliability
-const OVERPASS_MAX_SIZE_BYTES = 268435456; // 256 MB - reasonable limit for POI queries
+const OVERPASS_TIMEOUT_SECONDS = 60;
+const OVERPASS_MAX_SIZE_BYTES = 268435456; // 256 MB
 
-export interface Station {
+export interface Supermarket {
   id: string;
   name: string;
   lat: number;
   lng: number;
-  type: 'station';
-}
-
-export interface Grocery {
-  id: string;
-  name: string;
-  lat: number;
-  lng: number;
-  type: 'grocery';
+  type: 'supermarket';
   suburb?: string;
   street?: string;
   postcode?: string;
@@ -71,15 +60,10 @@ async function queryOverpass(query: string): Promise<any> {
 }
 
 /**
- * Format grocery store name with location context
+ * Format supermarket name with location context
  * Priority: Name - Suburb > Name - Street > Name - Branch > Name - Postcode > Name (distance)
- * 
- * @param element The OSM element with tags
- * @param userLat User's latitude for distance calculation
- * @param userLng User's longitude for distance calculation
- * @returns Formatted name with location context
  */
-function formatGroceryName(element: any, userLat: number, userLng: number): string {
+function formatSupermarketName(element: any, userLat: number, userLng: number): string {
   const baseName = element.tags?.name || 'Supermarket';
   
   // Remove store numbers/branch suffixes from base name
@@ -133,61 +117,13 @@ function formatGroceryName(element: any, userLat: number, userLng: number): stri
 }
 
 /**
- * Find nearby train stations
- * @deprecated This function is no longer used - stations are loaded from static GeoJSON file.
- * See src/pages/api/search.ts loadStations() function instead.
- * @param lat Latitude
- * @param lng Longitude
- * @param radiusMeters Search radius in meters
+ * Find nearby supermarkets
  */
-export async function findNearbyStations(
+export async function findNearbySupermarkets(
   lat: number,
   lng: number,
-  radiusMeters: number = 2000 // Reduced from 3000 to 2000m for efficiency
-): Promise<Station[]> {
-  console.warn('findNearbyStations() is deprecated. Use static GeoJSON file instead.');
-  const query = `
-    [out:json][timeout:${OVERPASS_TIMEOUT_SECONDS}][maxsize:${OVERPASS_MAX_SIZE_BYTES}];
-    (
-      node(around:${radiusMeters},${lat},${lng})["railway"="station"];
-    );
-    out center;
-  `;
-
-  try {
-    const data = await queryOverpass(query);
-    
-    return data.elements
-      .filter((el: any) => {
-        // Exclude subway/metro-only stations, keep heavy rail
-        const station = el.tags?.station;
-        return station !== 'subway' && station !== 'monorail';
-      })
-      .map((el: any) => ({
-        id: `station-${el.id}`,
-        name: el.tags?.name || 'Train Station',
-        lat: el.center?.lat ?? el.lat,
-        lng: el.center?.lon ?? el.lon,
-        type: 'station' as const,
-      }))
-      .filter((s: Station) => s.lat && s.lng); // Ensure valid coordinates
-  } catch (error) {
-    console.error('Overpass stations query failed:', error);
-    throw error;
-  }
-}
-
-/**
- * Find nearby grocery stores (supermarkets)
- * @param lat Latitude
- * @param lng Longitude
- * @param radiusMeters Search radius in meters
- */
-export async function findNearbyGroceries(
-  lat: number,
-  lng: number,
-  radiusMeters: number = 2000 // Reduced from 3000 to 2000m for efficiency
-): Promise<Grocery[]> {
+  radiusMeters: number = 2000
+): Promise<Supermarket[]> {
   const query = `
     [out:json][timeout:${OVERPASS_TIMEOUT_SECONDS}][maxsize:${OVERPASS_MAX_SIZE_BYTES}];
     (
@@ -205,19 +141,19 @@ export async function findNearbyGroceries(
       const elLng = el.center?.lon ?? el.lon;
       
       return {
-        id: `grocery-${el.id}`,
-        name: formatGroceryName(el, lat, lng),
+        id: `supermarket-${el.id}`,
+        name: formatSupermarketName(el, lat, lng),
         lat: elLat,
         lng: elLng,
-        type: 'grocery' as const,
+        type: 'supermarket' as const,
         suburb: el.tags?.['addr:suburb'],
         street: el.tags?.['addr:street'],
         postcode: el.tags?.['addr:postcode']
       };
     })
-    .filter((g: Grocery) => g.lat && g.lng); // Ensure valid coordinates
+    .filter((s: Supermarket) => s.lat && s.lng); // Ensure valid coordinates
   } catch (error) {
-    console.error('Overpass groceries query failed:', error);
+    console.error('Overpass supermarkets query failed:', error);
     throw error;
   }
 }

@@ -1,0 +1,764 @@
+[
+  {
+    "name": "CHRISTIE DOWNS",
+    "state": "SA",
+    "latitude": -35.12929216599997,
+    "longitude": 138.49628394800004
+  },
+  {
+    "name": "GOOLWA",
+    "state": "SA",
+    "latitude": -35.50461797999998,
+    "longitude": 138.78529557800005
+  },
+  {
+    "name": "ADELAIDE SHOWGROUND",
+    "state": "SA",
+    "latitude": -34.944339267999965,
+    "longitude": 138.5833397450001
+  },
+  {
+    "name": "MITCHELL PARK",
+    "state": "SA",
+    "latitude": -35.00203256799995,
+    "longitude": 138.566788244
+  },
+  {
+    "name": "CLOVELLY PARK",
+    "state": "SA",
+    "latitude": -35.00777356799995,
+    "longitude": 138.56718764400011
+  },
+  {
+    "name": "TONSLEY",
+    "state": "SA",
+    "latitude": -35.01543276799998,
+    "longitude": 138.56604274400001
+  },
+  {
+    "name": "NOARLUNGA CENTRE",
+    "state": "SA",
+    "latitude": -35.140285965999965,
+    "longitude": 138.492316748
+  },
+  {
+    "name": "SEAFORD",
+    "state": "SA",
+    "latitude": -35.18923426499998,
+    "longitude": 138.4835143460001
+  },
+  {
+    "name": "SEAFORD MEADOWS",
+    "state": "SA",
+    "latitude": -35.178666765999935,
+    "longitude": 138.48766174600007
+  },
+  {
+    "name": "ALBERT PARK",
+    "state": "SA",
+    "latitude": -34.88154606499995,
+    "longitude": 138.52324745900012
+  },
+  {
+    "name": "SEATON PARK",
+    "state": "SA",
+    "latitude": -34.890392764999945,
+    "longitude": 138.51507416000004
+  },
+  {
+    "name": "EAST GRANGE",
+    "state": "SA",
+    "latitude": -34.899197663999985,
+    "longitude": 138.50168746100007
+  },
+  {
+    "name": "GRANGE",
+    "state": "SA",
+    "latitude": -34.90027816399993,
+    "longitude": 138.49082426300004
+  },
+  {
+    "name": "MILLSWOOD",
+    "state": "SA",
+    "latitude": -34.95883166799996,
+    "longitude": 138.59056284300004
+  },
+  {
+    "name": "MORPHETT ROAD (STOP 12)",
+    "state": "SA",
+    "latitude": -34.97569996599998,
+    "longitude": 138.5382070510001
+  },
+  {
+    "name": "COROMANDEL",
+    "state": "SA",
+    "latitude": -35.02518066999994,
+    "longitude": 138.61434333500006
+  },
+  {
+    "name": "GLENALTA",
+    "state": "SA",
+    "latitude": -35.01129876999994,
+    "longitude": 138.62320743500004
+  },
+  {
+    "name": "PINERA",
+    "state": "SA",
+    "latitude": -35.00071146999994,
+    "longitude": 138.62432093500001
+  },
+  {
+    "name": "CITY SOUTH",
+    "state": "SA",
+    "latitude": -34.93311646899997,
+    "longitude": 138.60027684300007
+  },
+  {
+    "name": "GLANDORE (STOP 7)",
+    "state": "SA",
+    "latitude": -34.960435967999956,
+    "longitude": 138.5683089470001
+  },
+  {
+    "name": "COOK",
+    "state": "SA",
+    "latitude": -30.613062643999967,
+    "longitude": 130.4133826110001
+  },
+  {
+    "name": "BUGLE RANGES",
+    "state": "SA",
+    "latitude": -35.13795148199995,
+    "longitude": 138.87509788600005
+  },
+  {
+    "name": "GAWLER RACECOURSE",
+    "state": "SA",
+    "latitude": -34.61295547299994,
+    "longitude": 138.73873184100012
+  },
+  {
+    "name": "PORT ELLIOT STATION",
+    "state": "SA",
+    "latitude": -35.532710975999976,
+    "longitude": 138.68052179300003
+  },
+  {
+    "name": "MITCHAM",
+    "state": "SA",
+    "latitude": -34.977182368999934,
+    "longitude": 138.6086730390001
+  },
+  {
+    "name": "ELIZABETH INTERCHANGE",
+    "state": "SA",
+    "latitude": -34.717334069999936,
+    "longitude": 138.66464064600007
+  },
+  {
+    "name": "ELIZABETH SOUTH",
+    "state": "SA",
+    "latitude": -34.73110646999993,
+    "longitude": 138.65594344700003
+  },
+  {
+    "name": "EVANSTON",
+    "state": "SA",
+    "latitude": -34.62076437199994,
+    "longitude": 138.73245614100006
+  },
+  {
+    "name": "KUDLA",
+    "state": "SA",
+    "latitude": -34.651797570999975,
+    "longitude": 138.70668744400007
+  },
+  {
+    "name": "MUNNO PARA",
+    "state": "SA",
+    "latitude": -34.66849167099997,
+    "longitude": 138.6964835440001
+  },
+  {
+    "name": "SMITHFIELD RAILWAY STATION",
+    "state": "SA",
+    "latitude": -34.68202987099994,
+    "longitude": 138.6868673450001
+  },
+  {
+    "name": "TAMBELIN",
+    "state": "SA",
+    "latitude": -34.628516171999934,
+    "longitude": 138.7259157420001
+  },
+  {
+    "name": "WOMMA",
+    "state": "SA",
+    "latitude": -34.70430996999994,
+    "longitude": 138.67001464600003
+  },
+  {
+    "name": "ALBERTON",
+    "state": "SA",
+    "latitude": -34.85811306499994,
+    "longitude": 138.51844146100007
+  },
+  {
+    "name": "BLACKWOOD",
+    "state": "SA",
+    "latitude": -35.02094176999998,
+    "longitude": 138.6190192350001
+  },
+  {
+    "name": "BRIGHTON",
+    "state": "SA",
+    "latitude": -35.021517065999944,
+    "longitude": 138.51919625100004
+  },
+  {
+    "name": "CHELTENHAM",
+    "state": "SA",
+    "latitude": -34.86598186499998,
+    "longitude": 138.5247708590001
+  },
+  {
+    "name": "CLARENCE PARK",
+    "state": "SA",
+    "latitude": -34.961433667999984,
+    "longitude": 138.58040564500004
+  },
+  {
+    "name": "GOODWOOD",
+    "state": "SA",
+    "latitude": -34.95161146799995,
+    "longitude": 138.58489974500003
+  },
+  {
+    "name": "HALLETT COVE BEACH",
+    "state": "SA",
+    "latitude": -35.07941596599994,
+    "longitude": 138.50191245000008
+  },
+  {
+    "name": "HALLETT COVE",
+    "state": "SA",
+    "latitude": -35.06627146599993,
+    "longitude": 138.50564715000007
+  },
+  {
+    "name": "HOVE",
+    "state": "SA",
+    "latitude": -35.01227466599994,
+    "longitude": 138.52371245100005
+  },
+  {
+    "name": "LONSDALE",
+    "state": "SA",
+    "latitude": -35.10916056499997,
+    "longitude": 138.49157715
+  },
+  {
+    "name": "MARINO ROCKS",
+    "state": "SA",
+    "latitude": -35.046132065999984,
+    "longitude": 138.5126929500001
+  },
+  {
+    "name": "MARINO",
+    "state": "SA",
+    "latitude": -35.04220586599996,
+    "longitude": 138.51733075000004
+  },
+  {
+    "name": "MILE END",
+    "state": "SA",
+    "latitude": -34.925102367999955,
+    "longitude": 138.58028944700004
+  },
+  {
+    "name": "OAKLANDS",
+    "state": "SA",
+    "latitude": -35.00954036699994,
+    "longitude": 138.5406410480001
+  },
+  {
+    "name": "PETERHEAD",
+    "state": "SA",
+    "latitude": -34.83471246399995,
+    "longitude": 138.49196166700006
+  },
+  {
+    "name": "SEACLIFF",
+    "state": "SA",
+    "latitude": -35.031600165999976,
+    "longitude": 138.52142875000004
+  },
+  {
+    "name": "WARRADALE",
+    "state": "SA",
+    "latitude": -35.01134576599998,
+    "longitude": 138.5336312490001
+  },
+  {
+    "name": "WOODLANDS PARK",
+    "state": "SA",
+    "latitude": -34.98291066799993,
+    "longitude": 138.56721614600008
+  },
+  {
+    "name": "BOWDEN",
+    "state": "SA",
+    "latitude": -34.90710716799998,
+    "longitude": 138.5770177490001
+  },
+  {
+    "name": "CHIDDA",
+    "state": "SA",
+    "latitude": -34.774895468999944,
+    "longitude": 138.63794504700002
+  },
+  {
+    "name": "CROYDON",
+    "state": "SA",
+    "latitude": -34.89703736699994,
+    "longitude": 138.56387805100007
+  },
+  {
+    "name": "DRY CREEK",
+    "state": "SA",
+    "latitude": -34.83491196799997,
+    "longitude": 138.58559425200008
+  },
+  {
+    "name": "DUDLEY PARK",
+    "state": "SA",
+    "latitude": -34.88497376799995,
+    "longitude": 138.58332084900007
+  },
+  {
+    "name": "GREENFIELDS",
+    "state": "SA",
+    "latitude": -34.79891466899994,
+    "longitude": 138.61663344900012
+  },
+  {
+    "name": "ISLINGTON",
+    "state": "SA",
+    "latitude": -34.875281867999945,
+    "longitude": 138.58181265000007
+  },
+  {
+    "name": "KILBURN",
+    "state": "SA",
+    "latitude": -34.85955526699996,
+    "longitude": 138.5783806510001
+  },
+  {
+    "name": "KILKENNY",
+    "state": "SA",
+    "latitude": -34.886183965999976,
+    "longitude": 138.5496756540001
+  },
+  {
+    "name": "MAWSON LAKES",
+    "state": "SA",
+    "latitude": -34.80360746799994,
+    "longitude": 138.61246564900011
+  },
+  {
+    "name": "NORTH ADELAIDE",
+    "state": "SA",
+    "latitude": -34.90668486799996,
+    "longitude": 138.58181964800008
+  },
+  {
+    "name": "NURLUTTA",
+    "state": "SA",
+    "latitude": -34.75134426899996,
+    "longitude": 138.64393304700002
+  },
+  {
+    "name": "OVINGHAM",
+    "state": "SA",
+    "latitude": -34.89611846799994,
+    "longitude": 138.58434534800006
+  },
+  {
+    "name": "PARAFIELD GARDENS",
+    "state": "SA",
+    "latitude": -34.791235368999935,
+    "longitude": 138.6234133480001
+  },
+  {
+    "name": "PARAFIELD",
+    "state": "SA",
+    "latitude": -34.78288866899993,
+    "longitude": 138.63093514800005
+  },
+  {
+    "name": "SALISBURY INTERCHANGE",
+    "state": "SA",
+    "latitude": -34.76314566899998,
+    "longitude": 138.64244074700002
+  },
+  {
+    "name": "WEST CROYDON",
+    "state": "SA",
+    "latitude": -34.89175246699995,
+    "longitude": 138.55698915300002
+  },
+  {
+    "name": "WOODVILLE PARK",
+    "state": "SA",
+    "latitude": -34.88142556599996,
+    "longitude": 138.54351875600003
+  },
+  {
+    "name": "WOODVILLE",
+    "state": "SA",
+    "latitude": -34.87708646599998,
+    "longitude": 138.53773705700007
+  },
+  {
+    "name": "ASCOT PARK",
+    "state": "SA",
+    "latitude": -34.990907266999955,
+    "longitude": 138.56123154600004
+  },
+  {
+    "name": "GAWLER",
+    "state": "SA",
+    "latitude": -34.608633072999964,
+    "longitude": 138.7397374410001
+  },
+  {
+    "name": "GLANVILLE",
+    "state": "SA",
+    "latitude": -34.842266363999954,
+    "longitude": 138.493576866
+  },
+  {
+    "name": "BELAIR",
+    "state": "SA",
+    "latitude": -34.998043070999984,
+    "longitude": 138.63290743400012
+  },
+  {
+    "name": "BROADMEADOWS",
+    "state": "SA",
+    "latitude": -34.69588866999993,
+    "longitude": 138.6741134460001
+  },
+  {
+    "name": "DRAPER",
+    "state": "SA",
+    "latitude": -34.81431916399998,
+    "longitude": 138.4989547670001
+  },
+  {
+    "name": "EDEN HILLS",
+    "state": "SA",
+    "latitude": -35.021582268999964,
+    "longitude": 138.59440793900012
+  },
+  {
+    "name": "EDWARDSTOWN",
+    "state": "SA",
+    "latitude": -34.97217726799994,
+    "longitude": 138.57121574600012
+  },
+  {
+    "name": "EMERSON",
+    "state": "SA",
+    "latitude": -34.96654966799997,
+    "longitude": 138.57386034500007
+  },
+  {
+    "name": "ETHELTON",
+    "state": "SA",
+    "latitude": -34.84864896399995,
+    "longitude": 138.49497666500008
+  },
+  {
+    "name": "GAWLER CENTRAL",
+    "state": "SA",
+    "latitude": -34.59443687299995,
+    "longitude": 138.74814294100008
+  },
+  {
+    "name": "GAWLER OVAL",
+    "state": "SA",
+    "latitude": -34.59518197299997,
+    "longitude": 138.74100714200006
+  },
+  {
+    "name": "LYNTON",
+    "state": "SA",
+    "latitude": -34.99519536899993,
+    "longitude": 138.60589513900004
+  },
+  {
+    "name": "MIDLUNGA",
+    "state": "SA",
+    "latitude": -34.799511663999965,
+    "longitude": 138.49911476800003
+  },
+  {
+    "name": "NORTH HAVEN",
+    "state": "SA",
+    "latitude": -34.78630006299994,
+    "longitude": 138.49475596900004
+  },
+  {
+    "name": "OSBORNE",
+    "state": "SA",
+    "latitude": -34.79225406399996,
+    "longitude": 138.49897206800006
+  },
+  {
+    "name": "PORT ADELAIDE",
+    "state": "SA",
+    "latitude": -34.84921386399998,
+    "longitude": 138.50741686300012
+  },
+  {
+    "name": "TAPEROO",
+    "state": "SA",
+    "latitude": -34.80553786399997,
+    "longitude": 138.49907776700002
+  },
+  {
+    "name": "TORRENS PARK",
+    "state": "SA",
+    "latitude": -34.98390916999995,
+    "longitude": 138.61108573800004
+  },
+  {
+    "name": "UNLEY PARK",
+    "state": "SA",
+    "latitude": -34.966546568999945,
+    "longitude": 138.59785844200007
+  },
+  {
+    "name": "SEAFORD MEADOWS",
+    "state": "SA",
+    "latitude": -35.178676965999955,
+    "longitude": 138.4876927460001
+  },
+  {
+    "name": "LARGS",
+    "state": "SA",
+    "latitude": -34.827421363999974,
+    "longitude": 138.49110046700002
+  },
+  {
+    "name": "ANGASTON",
+    "state": "SA",
+    "latitude": -34.500626084999965,
+    "longitude": 139.04300850000004
+  },
+  {
+    "name": "BRAMERA",
+    "state": "SA",
+    "latitude": -34.25408034999998,
+    "longitude": 140.47207979400002
+  },
+  {
+    "name": "KAROOM",
+    "state": "SA",
+    "latitude": -34.278610853999965,
+    "longitude": 140.54411608100008
+  },
+  {
+    "name": "BERRI",
+    "state": "SA",
+    "latitude": -34.27087435599998,
+    "longitude": 140.59628067300002
+  },
+  {
+    "name": "MIDDLETON",
+    "state": "SA",
+    "latitude": -35.51197057699994,
+    "longitude": 138.70402529000012
+  },
+  {
+    "name": "CURRENCY CREEK",
+    "state": "SA",
+    "latitude": -35.447165878999954,
+    "longitude": 138.76385828500008
+  },
+  {
+    "name": "BLACK SWAMP",
+    "state": "SA",
+    "latitude": -35.40739007999997,
+    "longitude": 138.79321108200008
+  },
+  {
+    "name": "STRATHALBYN",
+    "state": "SA",
+    "latitude": -35.26122728299998,
+    "longitude": 138.89204367600007
+  },
+  {
+    "name": "DARKE PEAK",
+    "state": "SA",
+    "latitude": -33.46851487199996,
+    "longitude": 136.1983219970001
+  },
+  {
+    "name": "WIRRIDA",
+    "state": "SA",
+    "latitude": -29.522117599999945,
+    "longitude": 134.54456298000002
+  },
+  {
+    "name": "YANINEE",
+    "state": "SA",
+    "latitude": -32.947958340999946,
+    "longitude": 135.27329535800004
+  },
+  {
+    "name": "MINNIPA",
+    "state": "SA",
+    "latitude": -32.85584993699996,
+    "longitude": 135.15450927900008
+  },
+  {
+    "name": "THEVENARD",
+    "state": "SA",
+    "latitude": -32.14715809699993,
+    "longitude": 133.653258724
+  },
+  {
+    "name": "CHARRA",
+    "state": "SA",
+    "latitude": -32.05247068999995,
+    "longitude": 133.3298334740001
+  },
+  {
+    "name": "MOULE",
+    "state": "SA",
+    "latitude": -32.061790093999946,
+    "longitude": 133.5481387420001
+  },
+  {
+    "name": "TANUNDA",
+    "state": "SA",
+    "latitude": -34.52620288199995,
+    "longitude": 138.961926811
+  },
+  {
+    "name": "MALBOOMA",
+    "state": "SA",
+    "latitude": -30.673949298999958,
+    "longitude": 134.17661139300003
+  },
+  {
+    "name": "ST CLAIR",
+    "state": "SA",
+    "latitude": -34.87074736499994,
+    "longitude": 138.52978405800002
+  },
+  {
+    "name": "BORDERTOWN",
+    "state": "SA",
+    "latitude": -36.31050407799995,
+    "longitude": 140.777366991
+  },
+  {
+    "name": "PETERBOROUGH",
+    "state": "SA",
+    "latitude": -32.974186465999935,
+    "longitude": 138.83638022600007
+  },
+  {
+    "name": "CALTOWIE",
+    "state": "SA",
+    "latitude": -33.18379565299995,
+    "longitude": 138.48342656600005
+  },
+  {
+    "name": "GLADSTONE",
+    "state": "SA",
+    "latitude": -33.26965984799995,
+    "longitude": 138.35788248000006
+  },
+  {
+    "name": "TAILEM BEND",
+    "state": "SA",
+    "latitude": -35.25487520799993,
+    "longitude": 139.45598758500012
+  },
+  {
+    "name": "KULGERA",
+    "state": "SA",
+    "latitude": -25.87077715099997,
+    "longitude": 133.41597971500005
+  },
+  {
+    "name": "UNKNOWN",
+    "state": "SA",
+    "latitude": -34.81997486399996,
+    "longitude": 138.49480106700003
+  },
+  {
+    "name": "SALTIA SIDING",
+    "state": "SA",
+    "latitude": -32.47187082599993,
+    "longitude": 137.9363535870001
+  },
+  {
+    "name": "WOOLSHED FLAT",
+    "state": "SA",
+    "latitude": -32.454066127999965,
+    "longitude": 137.97530808200008
+  },
+  {
+    "name": "OLD WILLOWS",
+    "state": "SA",
+    "latitude": -32.40556852699996,
+    "longitude": 137.9709574850001
+  },
+  {
+    "name": "FLINDERS",
+    "state": "SA",
+    "latitude": -35.01924536799993,
+    "longitude": 138.56891414300003
+  },
+  {
+    "name": "CHANDLER",
+    "state": "SA",
+    "latitude": -26.968988356999944,
+    "longitude": 133.37017849500012
+  },
+  {
+    "name": "OUTER HARBOR",
+    "state": "SA",
+    "latitude": -34.77823096299994,
+    "longitude": 138.48430187100007
+  },
+  {
+    "name": "ADELAIDE",
+    "state": "SA",
+    "latitude": -34.92098656899998,
+    "longitude": 138.59677444500005
+  },
+  {
+    "name": "ADELAIDE PARKLANDS TERMINAL",
+    "state": "SA",
+    "latitude": -34.93792056799998,
+    "longitude": 138.58115594600008
+  },
+  {
+    "name": "DEAKIN",
+    "state": "SA",
+    "latitude": -30.767195439999966,
+    "longitude": 128.9689380090001
+  },
+  {
+    "name": "MANGURI",
+    "state": "SA",
+    "latitude": -28.97307129199993,
+    "longitude": 134.3751106190001
+  }
+]

@@ -1,0 +1,2202 @@
+[
+  {
+    "name": "Darwin High School",
+    "suburb": "THE GARDENS",
+    "state": "NT",
+    "postcode": "0820",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -12.43893,
+    "longitude": 130.83398
+  },
+  {
+    "name": "Northern Territory School of Distance Education",
+    "suburb": "THE GARDENS",
+    "state": "NT",
+    "postcode": "0820",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -12.4396483748962,
+    "longitude": 130.833994695587
+  },
+  {
+    "name": "Centralian Senior College",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -23.6979,
+    "longitude": 133.8953
+  },
+  {
+    "name": "Kiana School",
+    "suburb": "ROBINSON RIVER",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -17.24244,
+    "longitude": 136.18325
+  },
+  {
+    "name": "Woolaning School",
+    "suburb": "LITCHFIELD PARK",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -13.098819,
+    "longitude": 130.654431
+  },
+  {
+    "name": "Araluen Christian College",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -23.70771,
+    "longitude": 133.85232
+  },
+  {
+    "name": "Holy Family Catholic Primary School",
+    "suburb": "KARAMA",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -12.39367,
+    "longitude": 130.91166
+  },
+  {
+    "name": "Holy Spirit Catholic Primary School",
+    "suburb": "WANGURI",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -12.373488,
+    "longitude": 130.88543
+  },
+  {
+    "name": "O'Loughlin Catholic College",
+    "suburb": "KARAMA",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -12.39337,
+    "longitude": 130.91045
+  },
+  {
+    "name": "Our Lady of the Sacred Heart Catholic College",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -23.707543,
+    "longitude": 133.876955
+  },
+  {
+    "name": "Sacred Heart Catholic Primary School",
+    "suburb": "WOODROFFE",
+    "state": "NT",
+    "postcode": "0830",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -12.49588,
+    "longitude": 130.97937
+  },
+  {
+    "name": "St Francis of Assisi Catholic Primary School",
+    "suburb": "HUMPTY DOO",
+    "state": "NT",
+    "postcode": "0836",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -12.581199,
+    "longitude": 131.099073
+  },
+  {
+    "name": "St John's Catholic College",
+    "suburb": "THE GARDENS",
+    "state": "NT",
+    "postcode": "0820",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -12.440794,
+    "longitude": 130.837954
+  },
+  {
+    "name": "St Joseph's Catholic College",
+    "suburb": "KATHERINE",
+    "state": "NT",
+    "postcode": "0850",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -14.46194,
+    "longitude": 132.27593
+  },
+  {
+    "name": "St Mary's Catholic Primary School",
+    "suburb": "DARWIN",
+    "state": "NT",
+    "postcode": "0800",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -12.45935,
+    "longitude": 130.83883
+  },
+  {
+    "name": "St Paul's Catholic Primary School",
+    "suburb": "RAPID CREEK",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -12.38695,
+    "longitude": 130.85821
+  },
+  {
+    "name": "Casuarina Senior College",
+    "suburb": "MOIL",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -12.3836,
+    "longitude": 130.879
+  },
+  {
+    "name": "Kintore Street School",
+    "suburb": "KATHERINE",
+    "state": "NT",
+    "postcode": "0850",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -14.46361,
+    "longitude": 132.25918
+  },
+  {
+    "name": "NT Christian College",
+    "suburb": "MARRARA",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -12.40795029,
+    "longitude": 130.917266
+  },
+  {
+    "name": "Arlparra School",
+    "suburb": "UTOPIA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -22.087628,
+    "longitude": 134.775047
+  },
+  {
+    "name": "Mapuru Yirralka College",
+    "suburb": "MAPURU",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -12.252298,
+    "longitude": 135.437467
+  },
+  {
+    "name": "Our Lady of the Sacred Heart College - Bath Street Campus",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -23.696568,
+    "longitude": 133.881831
+  },
+  {
+    "name": "Our Lady of the Sacred Heart College - Sadadeen Road Campus",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -23.703528,
+    "longitude": 133.896303
+  },
+  {
+    "name": "Nyangatjatjara College - Imanpa Secondary Campus",
+    "suburb": "IMANPA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -25.129449,
+    "longitude": 132.570809
+  },
+  {
+    "name": "Nyangatjatjara College - Kaltukatjara Campus (Docker River) Primary Campus",
+    "suburb": "KALTUKATJARA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -24.8729892831282,
+    "longitude": 129.082349495758
+  },
+  {
+    "name": "Nyangatjatjara College - Mutitjulu Campus",
+    "suburb": "MUTITJULU",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -25.350771,
+    "longitude": 131.066363
+  },
+  {
+    "name": "Yirara College - Kintore Campus",
+    "suburb": "KINTORE",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -23.278159,
+    "longitude": 129.389765
+  },
+  {
+    "name": "Good Shepherd Lutheran College",
+    "suburb": "HOWARD SPRINGS",
+    "state": "NT",
+    "postcode": "0835",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -12.495852,
+    "longitude": 131.024977
+  },
+  {
+    "name": "Dripstone Middle School",
+    "suburb": "TIWI",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -12.3661,
+    "longitude": 130.88296
+  },
+  {
+    "name": "Katherine High School",
+    "suburb": "KATHERINE EAST",
+    "state": "NT",
+    "postcode": "0850",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -14.46347,
+    "longitude": 132.28306
+  },
+  {
+    "name": "Nhulunbuy High School",
+    "suburb": "NHULUNBUY",
+    "state": "NT",
+    "postcode": "0880",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -12.18676,
+    "longitude": 136.78298
+  },
+  {
+    "name": "Nightcliff Middle School",
+    "suburb": "NIGHTCLIFF",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -12.3787,
+    "longitude": 130.85177
+  },
+  {
+    "name": "Sanderson Middle School",
+    "suburb": "MALAK",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -12.38821,
+    "longitude": 130.89878
+  },
+  {
+    "name": "Taminmin College",
+    "suburb": "HUMPTY DOO",
+    "state": "NT",
+    "postcode": "0836",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -12.58037,
+    "longitude": 131.10089
+  },
+  {
+    "name": "Tennant Creek High School",
+    "suburb": "TENNANT CREEK",
+    "state": "NT",
+    "postcode": "0860",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -19.644142,
+    "longitude": 134.196942
+  },
+  {
+    "name": "Alice Springs School Of The Air",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -23.67805,
+    "longitude": 133.86618
+  },
+  {
+    "name": "Katherine School Of The Air",
+    "suburb": "KATHERINE",
+    "state": "NT",
+    "postcode": "0850",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -14.4502,
+    "longitude": 132.26948
+  },
+  {
+    "name": "Alawa Primary School",
+    "suburb": "ALAWA",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.38022,
+    "longitude": 130.87754
+  },
+  {
+    "name": "Anula Primary School",
+    "suburb": "ANULA",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.39162,
+    "longitude": 130.89369
+  },
+  {
+    "name": "Bakewell Primary School",
+    "suburb": "BAKEWELL",
+    "state": "NT",
+    "postcode": "0832",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.49362,
+    "longitude": 130.99373
+  },
+  {
+    "name": "Bees Creek Primary School",
+    "suburb": "FREDS PASS",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.5408,
+    "longitude": 131.0528
+  },
+  {
+    "name": "Berry Springs Primary School",
+    "suburb": "BERRY SPRINGS",
+    "state": "NT",
+    "postcode": "0838",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.7159,
+    "longitude": 130.98749
+  },
+  {
+    "name": "Bradshaw Primary School",
+    "suburb": "GILLEN",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -23.7085,
+    "longitude": 133.8595
+  },
+  {
+    "name": "Braitling Primary School",
+    "suburb": "BRAITLING",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -23.677393,
+    "longitude": 133.867691
+  },
+  {
+    "name": "Casuarina Street Primary School",
+    "suburb": "KATHERINE EAST",
+    "state": "NT",
+    "postcode": "0850",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -14.466,
+    "longitude": 132.29644
+  },
+  {
+    "name": "Clyde Fenton Primary School",
+    "suburb": "KATHERINE",
+    "state": "NT",
+    "postcode": "0850",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -14.4512,
+    "longitude": 132.27042
+  },
+  {
+    "name": "Driver Primary School",
+    "suburb": "DRIVER",
+    "state": "NT",
+    "postcode": "0830",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.48559,
+    "longitude": 130.97518
+  },
+  {
+    "name": "Durack Primary School",
+    "suburb": "DURACK",
+    "state": "NT",
+    "postcode": "0830",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.47586,
+    "longitude": 130.97409
+  },
+  {
+    "name": "Gillen Primary School",
+    "suburb": "GILLEN",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -23.708104,
+    "longitude": 133.869042
+  },
+  {
+    "name": "Girraween Primary School",
+    "suburb": "GIRRAWEEN",
+    "state": "NT",
+    "postcode": "0836",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.5224,
+    "longitude": 131.103
+  },
+  {
+    "name": "Gray Primary School",
+    "suburb": "GRAY",
+    "state": "NT",
+    "postcode": "0830",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.48961,
+    "longitude": 130.98015
+  },
+  {
+    "name": "Howard Springs Primary School",
+    "suburb": "HOWARD SPRINGS",
+    "state": "NT",
+    "postcode": "0835",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.4955,
+    "longitude": 131.04519
+  },
+  {
+    "name": "Humpty Doo Primary School",
+    "suburb": "HUMPTY DOO",
+    "state": "NT",
+    "postcode": "0836",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.576142,
+    "longitude": 131.1027
+  },
+  {
+    "name": "Jingili Primary School",
+    "suburb": "JINGILI",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.38719,
+    "longitude": 130.87423
+  },
+  {
+    "name": "Karama Primary School",
+    "suburb": "KARAMA",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.39838,
+    "longitude": 130.91438
+  },
+  {
+    "name": "Katherine South Primary School",
+    "suburb": "KATHERINE SOUTH",
+    "state": "NT",
+    "postcode": "0850",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -14.4802,
+    "longitude": 132.255
+  },
+  {
+    "name": "Larapinta Primary School",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -23.696514,
+    "longitude": 133.833392
+  },
+  {
+    "name": "Larrakeyah Primary School",
+    "suburb": "LARRAKEYAH",
+    "state": "NT",
+    "postcode": "0820",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.45787,
+    "longitude": 130.82965
+  },
+  {
+    "name": "Leanyer Primary School",
+    "suburb": "LEANYER",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.37524696,
+    "longitude": 130.90042061
+  },
+  {
+    "name": "Ludmilla Primary School",
+    "suburb": "LUDMILLA",
+    "state": "NT",
+    "postcode": "0820",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.42534,
+    "longitude": 130.85556
+  },
+  {
+    "name": "MacFarlane Primary School",
+    "suburb": "KATHERINE EAST",
+    "state": "NT",
+    "postcode": "0850",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -14.4666,
+    "longitude": 132.28311
+  },
+  {
+    "name": "Malak Primary School",
+    "suburb": "MALAK",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.39283,
+    "longitude": 130.90309
+  },
+  {
+    "name": "Manunda Terrace Primary School",
+    "suburb": "KARAMA",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.40311,
+    "longitude": 130.91926
+  },
+  {
+    "name": "Millner Primary School",
+    "suburb": "MILLNER",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.390722,
+    "longitude": 130.85947
+  },
+  {
+    "name": "Moil Primary School",
+    "suburb": "MOIL",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.38794,
+    "longitude": 130.88067
+  },
+  {
+    "name": "Moulden Primary School",
+    "suburb": "MOULDEN",
+    "state": "NT",
+    "postcode": "0830",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.5065,
+    "longitude": 130.97113
+  },
+  {
+    "name": "Nakara Primary School",
+    "suburb": "NAKARA",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.37014,
+    "longitude": 130.87776
+  },
+  {
+    "name": "Nhulunbuy Primary School",
+    "suburb": "NHULUNBUY",
+    "state": "NT",
+    "postcode": "0880",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.1821,
+    "longitude": 136.7841
+  },
+  {
+    "name": "Nightcliff Primary School",
+    "suburb": "NIGHTCLIFF",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.38057,
+    "longitude": 130.84984
+  },
+  {
+    "name": "Parap Primary School",
+    "suburb": "PARAP",
+    "state": "NT",
+    "postcode": "0820",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.42984,
+    "longitude": 130.84432
+  },
+  {
+    "name": "Ross Park Primary School",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -23.6936,
+    "longitude": 133.8919
+  },
+  {
+    "name": "Sadadeen Primary School",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -23.701331,
+    "longitude": 133.8975
+  },
+  {
+    "name": "Stuart Park Primary School",
+    "suburb": "STUART PARK",
+    "state": "NT",
+    "postcode": "0820",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.44091,
+    "longitude": 130.8451
+  },
+  {
+    "name": "Tennant Creek Primary School",
+    "suburb": "TENNANT CREEK",
+    "state": "NT",
+    "postcode": "0860",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -19.6501,
+    "longitude": 134.18925
+  },
+  {
+    "name": "Wagaman Primary School",
+    "suburb": "WAGAMAN",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.37957,
+    "longitude": 130.88474
+  },
+  {
+    "name": "Wanguri Primary School",
+    "suburb": "WANGURI",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.37129,
+    "longitude": 130.88711
+  },
+  {
+    "name": "Woodroffe Primary School",
+    "suburb": "WOODROFFE",
+    "state": "NT",
+    "postcode": "0830",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.50617,
+    "longitude": 130.98241
+  },
+  {
+    "name": "Wulagi Primary School",
+    "suburb": "WULAGI",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.38335,
+    "longitude": 130.89537
+  },
+  {
+    "name": "Alyangula Area School",
+    "suburb": "ALYANGULA",
+    "state": "NT",
+    "postcode": "0885",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -13.84964,
+    "longitude": 136.42011
+  },
+  {
+    "name": "Batchelor Area School",
+    "suburb": "BATCHELOR",
+    "state": "NT",
+    "postcode": "0845",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -13.046103,
+    "longitude": 131.033019
+  },
+  {
+    "name": "Jabiru Area School",
+    "suburb": "JABIRU",
+    "state": "NT",
+    "postcode": "0886",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -12.67577,
+    "longitude": 132.83534
+  },
+  {
+    "name": "Alekarenge School",
+    "suburb": "ALI CURUNG",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -21.003806,
+    "longitude": 134.405661
+  },
+  {
+    "name": "Angurugu School",
+    "suburb": "ANGURUGU",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -13.98253,
+    "longitude": 136.45933
+  },
+  {
+    "name": "Borroloola School",
+    "suburb": "BORROLOOLA",
+    "state": "NT",
+    "postcode": "0854",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -16.0582,
+    "longitude": 136.30649
+  },
+  {
+    "name": "Gapuwiyak School",
+    "suburb": "GAPUWIYAK",
+    "state": "NT",
+    "postcode": "0880",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -12.50553,
+    "longitude": 135.80806
+  },
+  {
+    "name": "Gunbalanya School",
+    "suburb": "GUNBALANYA",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -12.32135,
+    "longitude": 133.05709
+  },
+  {
+    "name": "Kalkaringi School",
+    "suburb": "KALKARINDJI",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -17.44597,
+    "longitude": 130.83233
+  },
+  {
+    "name": "Lajamanu School",
+    "suburb": "LAJAMANU",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -18.3353,
+    "longitude": 130.633981
+  },
+  {
+    "name": "Maningrida College",
+    "suburb": "MANINGRIDA",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -12.05041,
+    "longitude": 134.22333
+  },
+  {
+    "name": "Milingimbi School",
+    "suburb": "MILINGIMBI",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -12.1021,
+    "longitude": 134.9201
+  },
+  {
+    "name": "Ngukurr School",
+    "suburb": "NGUKURR",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -14.7285,
+    "longitude": 134.733
+  },
+  {
+    "name": "Numbulwar School",
+    "suburb": "NUMBULWAR",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -14.27811,
+    "longitude": 135.74119
+  },
+  {
+    "name": "Ramingining School",
+    "suburb": "RAMINGINING",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -12.32641,
+    "longitude": 134.92619
+  },
+  {
+    "name": "Shepherdson College",
+    "suburb": "GALIWINKU",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -12.02856,
+    "longitude": 135.56757
+  },
+  {
+    "name": "Yirrkala School",
+    "suburb": "YIRRKALA",
+    "state": "NT",
+    "postcode": "0880",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -12.25189,
+    "longitude": 136.89452
+  },
+  {
+    "name": "Yuendumu School",
+    "suburb": "YUENDUMU",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -22.25565,
+    "longitude": 131.796889
+  },
+  {
+    "name": "Henbury School",
+    "suburb": "TIWI",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -12.36771254021427,
+    "longitude": 130.88412789556298
+  },
+  {
+    "name": "Nemarluk School",
+    "suburb": "ALAWA",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.380037,
+    "longitude": 130.874967
+  },
+  {
+    "name": "Laynhapuy Homelands School",
+    "suburb": "YIRRKALA",
+    "state": "NT",
+    "postcode": "0880",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -12.2528,
+    "longitude": 136.888
+  },
+  {
+    "name": "Acacia Hill School",
+    "suburb": "SADADEEN",
+    "state": "NT",
+    "postcode": "0871",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -23.7007,
+    "longitude": 133.898
+  },
+  {
+    "name": "Adelaide River School",
+    "suburb": "ADELAIDE RIVER",
+    "state": "NT",
+    "postcode": "0846",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -13.2371,
+    "longitude": 131.10926
+  },
+  {
+    "name": "Alcoota School",
+    "suburb": "ENGAWALA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -22.80235,
+    "longitude": 134.45452
+  },
+  {
+    "name": "Alpurrurulam School",
+    "suburb": "ALPURRURULAM",
+    "state": "NT",
+    "postcode": "4825",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -20.98775,
+    "longitude": 137.84839
+  },
+  {
+    "name": "Amoonguna School",
+    "suburb": "AMOONGUNA",
+    "state": "NT",
+    "postcode": "0873",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -23.767906,
+    "longitude": 133.938539
+  },
+  {
+    "name": "Ampilatwatja School",
+    "suburb": "AMPILATWATJA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -21.65369,
+    "longitude": 135.22478
+  },
+  {
+    "name": "Areyonga School",
+    "suburb": "AREYONGA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -24.0737,
+    "longitude": 132.27011
+  },
+  {
+    "name": "Barunga School",
+    "suburb": "BARUNGA",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -14.52456,
+    "longitude": 132.86603
+  },
+  {
+    "name": "Belyuen School",
+    "suburb": "BELYUEN",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -12.5393,
+    "longitude": 130.701214
+  },
+  {
+    "name": "Bonya School",
+    "suburb": "ANATYE",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -22.77886,
+    "longitude": 136.16675
+  },
+  {
+    "name": "Bulla Camp School",
+    "suburb": "BAINES",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -15.9353,
+    "longitude": 129.7122
+  },
+  {
+    "name": "Bulman School",
+    "suburb": "BULMAN WEEMOL",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -13.66483,
+    "longitude": 134.33036
+  },
+  {
+    "name": "Canteen Creek School",
+    "suburb": "CANTEEN CREEK",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -20.644769,
+    "longitude": 135.584506
+  },
+  {
+    "name": "Douglas Daly School",
+    "suburb": "DOUGLAS-DALY",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -13.8323,
+    "longitude": 131.188
+  },
+  {
+    "name": "Dundee Beach School",
+    "suburb": "DUNDEE BEACH",
+    "state": "NT",
+    "postcode": "0840",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -12.7514,
+    "longitude": 130.378
+  },
+  {
+    "name": "Elliott School",
+    "suburb": "ELLIOTT",
+    "state": "NT",
+    "postcode": "0862",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -17.5553,
+    "longitude": 133.54
+  },
+  {
+    "name": "Epenarra School",
+    "suburb": "WUTUNUGURRA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -20.46311,
+    "longitude": 135.24972
+  },
+  {
+    "name": "Finke School",
+    "suburb": "FINKE",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -25.5821,
+    "longitude": 134.578486
+  },
+  {
+    "name": "Haasts Bluff School",
+    "suburb": "HAASTS BLUFF",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -23.44753,
+    "longitude": 131.88003
+  },
+  {
+    "name": "Harts Range School",
+    "suburb": "ATITJERE",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -22.9844,
+    "longitude": 134.933
+  },
+  {
+    "name": "Imanpa School",
+    "suburb": "IMANPA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -25.1291,
+    "longitude": 132.5731
+  },
+  {
+    "name": "Jilkminggan School",
+    "suburb": "JILKMINGGAN",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -14.95402,
+    "longitude": 133.30123
+  },
+  {
+    "name": "Laramba School",
+    "suburb": "LARAMBA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -22.533,
+    "longitude": 132.75683
+  },
+  {
+    "name": "Watarrka School",
+    "suburb": "PETERMANN",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -24.30093,
+    "longitude": 131.60146
+  },
+  {
+    "name": "Mamaruni School",
+    "suburb": "MINJILANG",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -11.14856,
+    "longitude": 132.57775
+  },
+  {
+    "name": "Mataranka School",
+    "suburb": "MATARANKA",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -14.921873,
+    "longitude": 133.065136
+  },
+  {
+    "name": "Mbunghara School",
+    "suburb": "PAPUNYA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -23.29019,
+    "longitude": 132.35687
+  },
+  {
+    "name": "Middle Point School",
+    "suburb": "MIDDLE POINT",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.57599,
+    "longitude": 131.31486
+  },
+  {
+    "name": "Milikapiti School",
+    "suburb": "MILIKAPITI",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -11.4194,
+    "longitude": 130.6711
+  },
+  {
+    "name": "Milyakburra School",
+    "suburb": "MILYAKBURRA",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -13.7818,
+    "longitude": 136.1956
+  },
+  {
+    "name": "Minyerri School",
+    "suburb": "MINIYERI",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -15.221225,
+    "longitude": 134.08281
+  },
+  {
+    "name": "Mount Allan School",
+    "suburb": "YUELAMU",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -22.2566,
+    "longitude": 132.2081
+  },
+  {
+    "name": "Murray Downs School",
+    "suburb": "ALI CURUNG",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -21.0477,
+    "longitude": 134.67685
+  },
+  {
+    "name": "Mutitjulu School",
+    "suburb": "MUTITJULU",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -25.3481,
+    "longitude": 131.064
+  },
+  {
+    "name": "Neutral Junction School",
+    "suburb": "BARROW CREEK",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -21.515756,
+    "longitude": 133.994783
+  },
+  {
+    "name": "Newcastle Waters School",
+    "suburb": "NEWCASTLE WATERS",
+    "state": "NT",
+    "postcode": "0862",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -17.37253,
+    "longitude": 133.41007
+  },
+  {
+    "name": "Nganmarriyanga School",
+    "suburb": "NGANMARRIYANGA",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -14.3528,
+    "longitude": 129.882
+  },
+  {
+    "name": "Ntaria School",
+    "suburb": "HERMANNSBURG",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -23.94262,
+    "longitude": 132.776051
+  },
+  {
+    "name": "Nyirripi School",
+    "suburb": "NYIRRIPI",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -22.64994,
+    "longitude": 130.55281
+  },
+  {
+    "name": "Papunya School",
+    "suburb": "PAPUNYA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -23.20283,
+    "longitude": 131.91031
+  },
+  {
+    "name": "Peppimenarti School",
+    "suburb": "PEPPIMENARTI",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -14.14978,
+    "longitude": 130.077
+  },
+  {
+    "name": "Pigeon Hole School",
+    "suburb": "PIGEON HOLE",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -16.81439,
+    "longitude": 131.22025
+  },
+  {
+    "name": "Pine Creek School",
+    "suburb": "PINE CREEK",
+    "state": "NT",
+    "postcode": "0847",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -13.8219,
+    "longitude": 131.836
+  },
+  {
+    "name": "Pularumpi School",
+    "suburb": "PIRLANGIMPI",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -11.4036,
+    "longitude": 130.417
+  },
+  {
+    "name": "Robinson River School",
+    "suburb": "ROBINSON RIVER",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -16.7597,
+    "longitude": 136.981
+  },
+  {
+    "name": "Stirling School",
+    "suburb": "WILORA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -21.73983,
+    "longitude": 133.73247
+  },
+  {
+    "name": "Ti Tree School",
+    "suburb": "TI TREE",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -22.12793,
+    "longitude": 133.41976
+  },
+  {
+    "name": "Timber Creek School",
+    "suburb": "TIMBER CREEK",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -15.6481,
+    "longitude": 130.46513
+  },
+  {
+    "name": "Tipperary Station School",
+    "suburb": "TIPPERARY",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -13.73335,
+    "longitude": 131.04168
+  },
+  {
+    "name": "Titjikala School",
+    "suburb": "TITJIKALA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -24.67244,
+    "longitude": 134.07331
+  },
+  {
+    "name": "Alyarrmandumanja Umbakumba School",
+    "suburb": "UMBAKUMBA",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -13.85975,
+    "longitude": 136.81193
+  },
+  {
+    "name": "Urapunga School",
+    "suburb": "WILTON",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -14.710481,
+    "longitude": 134.564289
+  },
+  {
+    "name": "Wallace Rockhole School",
+    "suburb": "WALLACE ROCKHOLE",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -24.1233,
+    "longitude": 133.085237
+  },
+  {
+    "name": "Walungurru School",
+    "suburb": "KINTORE",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -23.27712,
+    "longitude": 129.38771
+  },
+  {
+    "name": "Warruwi School",
+    "suburb": "WARRUWI",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -11.64742,
+    "longitude": 133.38947
+  },
+  {
+    "name": "Watiyawanu School",
+    "suburb": "MOUNT LIEBIG",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -23.266169,
+    "longitude": 131.274489
+  },
+  {
+    "name": "Willowra School",
+    "suburb": "WILLOWRA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -21.244506,
+    "longitude": 132.616106
+  },
+  {
+    "name": "Rockhampton Downs School",
+    "suburb": "TABLELANDS",
+    "state": "NT",
+    "postcode": "0862",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -18.947861,
+    "longitude": 135.19435
+  },
+  {
+    "name": "Woolianna School",
+    "suburb": "DALY RIVER",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -13.7109,
+    "longitude": 130.681
+  },
+  {
+    "name": "Wugularr School",
+    "suburb": "BESWICK",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -14.5614,
+    "longitude": 133.118
+  },
+  {
+    "name": "Yarralin School",
+    "suburb": "YARRALIN",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -16.44684,
+    "longitude": 130.88179
+  },
+  {
+    "name": "Yulara School",
+    "suburb": "YULARA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -25.23514,
+    "longitude": 130.98364
+  },
+  {
+    "name": "Manyallaluk School",
+    "suburb": "EVA VALLEY",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -14.2666,
+    "longitude": 132.829
+  },
+  {
+    "name": "Amanbidji School",
+    "suburb": "TIMBER CREEK",
+    "state": "NT",
+    "postcode": "0852",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -16.427522,
+    "longitude": 129.617986
+  },
+  {
+    "name": "Baniyala Garrangali School",
+    "suburb": "EAST ARNHEM",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -13.2004,
+    "longitude": 136.2261
+  },
+  {
+    "name": "Darwin Middle School",
+    "suburb": "THE GARDENS",
+    "state": "NT",
+    "postcode": "0820",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -12.4384,
+    "longitude": 130.836
+  },
+  {
+    "name": "Centralian Middle School",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -23.7091,
+    "longitude": 133.866
+  },
+  {
+    "name": "Ltyentye Apurte Catholic School",
+    "suburb": "SANTA TERESA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -24.12922,
+    "longitude": 134.37461
+  },
+  {
+    "name": "Murrupurtiyanuwu Catholic Primary School",
+    "suburb": "WURRUMIYANGA",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -11.758671,
+    "longitude": 130.638203
+  },
+  {
+    "name": "Our Lady of the Sacred Heart Thamarrurr Catholic College",
+    "suburb": "WADEYE",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -14.2404,
+    "longitude": 129.5205
+  },
+  {
+    "name": "St Francis Xavier Catholic School",
+    "suburb": "DALY RIVER",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -13.75194,
+    "longitude": 130.68797
+  },
+  {
+    "name": "Xavier Catholic College",
+    "suburb": "BATHURST ISLAND",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -11.757347,
+    "longitude": 130.63894
+  },
+  {
+    "name": "The Essington School",
+    "suburb": "RAPID CREEK",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -12.38071,
+    "longitude": 130.855996
+  },
+  {
+    "name": "Good Shepherd Lutheran College - Palmerston Campus",
+    "suburb": "GRAY",
+    "state": "NT",
+    "postcode": "0830",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -12.493755,
+    "longitude": 130.975536
+  },
+  {
+    "name": "Haileybury Rendall School",
+    "suburb": "BERRIMAH",
+    "state": "NT",
+    "postcode": "0828",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -12.44235,
+    "longitude": 130.92232
+  },
+  {
+    "name": "Sattler Christian College",
+    "suburb": "FREDS PASS",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -12.54134,
+    "longitude": 131.05488
+  },
+  {
+    "name": "Living Waters Lutheran School",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0871",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -23.69766,
+    "longitude": 133.83155
+  },
+  {
+    "name": "Marrara Christian College",
+    "suburb": "MARRARA",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -12.40983686,
+    "longitude": 130.91763078
+  },
+  {
+    "name": "Palmerston Christian College",
+    "suburb": "MARLOW LAGOON",
+    "state": "NT",
+    "postcode": "0830",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -12.49057,
+    "longitude": 130.9645
+  },
+  {
+    "name": "St Philip's College",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0871",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -23.690364169117,
+    "longitude": 133.883128746033
+  },
+  {
+    "name": "Yirara College",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -23.762231,
+    "longitude": 133.868978
+  },
+  {
+    "name": "Alice Springs Steiner School",
+    "suburb": "ROSS",
+    "state": "NT",
+    "postcode": "0873",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -23.743824,
+    "longitude": 133.881575
+  },
+  {
+    "name": "Woolaning Homeland Christian College",
+    "suburb": "BATCHELOR",
+    "state": "NT",
+    "postcode": "0845",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -13.091077,
+    "longitude": 130.661183
+  },
+  {
+    "name": "Nhulunbuy Christian College",
+    "suburb": "NHULUNBUY",
+    "state": "NT",
+    "postcode": "0881",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -12.18901,
+    "longitude": 136.79099
+  },
+  {
+    "name": "Nyangatjatjara College",
+    "suburb": "YULARA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -25.228808,
+    "longitude": 130.971231
+  },
+  {
+    "name": "Yipirinya School",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0871",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -23.69766,
+    "longitude": 133.8581
+  },
+  {
+    "name": "Milkwood Steiner School",
+    "suburb": "BERRIMAH",
+    "state": "NT",
+    "postcode": "0828",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -12.414473,
+    "longitude": 130.922305
+  },
+  {
+    "name": "Gawa Christian School",
+    "suburb": "GALIWINKU",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -11.759762,
+    "longitude": 135.903958
+  },
+  {
+    "name": "Tiwi College",
+    "suburb": "TIWI ISLANDS",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -11.76667,
+    "longitude": 130.88972
+  },
+  {
+    "name": "Rosebery Primary School",
+    "suburb": "ROSEBERY",
+    "state": "NT",
+    "postcode": "0832",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.51111,
+    "longitude": 130.993714
+  },
+  {
+    "name": "Nganambala School",
+    "suburb": "PEPPIMENARTI",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -14.1701,
+    "longitude": 130.32521
+  },
+  {
+    "name": "Mulga Bore School",
+    "suburb": "TI TREE",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -22.452287,
+    "longitude": 134.211096
+  },
+  {
+    "name": "St Joseph's Catholic Flexible School",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -23.703629,
+    "longitude": 133.873888
+  },
+  {
+    "name": "MacKillop Catholic College",
+    "suburb": "JOHNSTON",
+    "state": "NT",
+    "postcode": "0832",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -12.49811605229597,
+    "longitude": 131.00909330359656
+  },
+  {
+    "name": "The Essington School - Senior Campus",
+    "suburb": "RAPID CREEK",
+    "state": "NT",
+    "postcode": "0810",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -12.38223,
+    "longitude": 130.85719
+  },
+  {
+    "name": "Good Shepherd Lutheran College - St Andrews Campus",
+    "suburb": "LEANYER",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -12.374,
+    "longitude": 130.8991
+  },
+  {
+    "name": "Forrest Parade School",
+    "suburb": "BELLAMACK",
+    "state": "NT",
+    "postcode": "0832",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.513504,
+    "longitude": 130.980774
+  },
+  {
+    "name": "Top End School of Flexible Learning",
+    "suburb": "MALAK",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -12.396194,
+    "longitude": 130.904415
+  },
+  {
+    "name": "Mother Teresa Catholic Primary School",
+    "suburb": "ZUCCOLI",
+    "state": "NT",
+    "postcode": "0832",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -12.509629,
+    "longitude": 131.005781
+  },
+  {
+    "name": "Palmerston College",
+    "suburb": "DRIVER",
+    "state": "NT",
+    "postcode": "0830",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -12.49487,
+    "longitude": 130.97198
+  },
+  {
+    "name": "NT Christian College - Nhulunbuy Campus",
+    "suburb": "NHULUNBUY",
+    "state": "NT",
+    "postcode": "0881",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -12.188862996382,
+    "longitude": 136.790904152156
+  },
+  {
+    "name": "NT Christian College - Palmerston Campus",
+    "suburb": "MARLOW LAGOON",
+    "state": "NT",
+    "postcode": "0830",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -12.490437,
+    "longitude": 130.964347
+  },
+  {
+    "name": "Nawarddeken Academy Kabulwarnamyo School",
+    "suburb": "WEST ARNHEM LAND",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -12.764671,
+    "longitude": 133.845033
+  },
+  {
+    "name": "NT Christian College - Sattler Campus",
+    "suburb": "FREDS PASS",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -12.54134,
+    "longitude": 131.05488
+  },
+  {
+    "name": "Zuccoli Primary School",
+    "suburb": "ZUCCOLI",
+    "state": "NT",
+    "postcode": "0830",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -12.51105,
+    "longitude": 131.006152
+  },
+  {
+    "name": "Alice Springs School Of The Air - Corella Creek Campus",
+    "suburb": "CORELLA CREEK",
+    "state": "NT",
+    "postcode": "0860",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -18.643466,
+    "longitude": 136.029808
+  },
+  {
+    "name": "NT Christian College - Araluen Campus",
+    "suburb": "ALICE SPRINGS",
+    "state": "NT",
+    "postcode": "0870",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -23.7075749450483,
+    "longitude": 133.852292010946
+  },
+  {
+    "name": "Dhupuma Barker",
+    "suburb": "East Arnhem",
+    "state": "NT",
+    "postcode": "0880",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -12.21816265,
+    "longitude": 136.7055423
+  },
+  {
+    "name": "Nawarddeken Academy Mamadawerre School",
+    "suburb": "West Arnhem Land",
+    "state": "NT",
+    "postcode": "0886",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -12.25745447,
+    "longitude": 133.523957
+  },
+  {
+    "name": "Nawarddeken Academy Manmoyi School",
+    "suburb": "West Arnhem Land",
+    "state": "NT",
+    "postcode": "0886",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -12.54418519,
+    "longitude": 134.1134967
+  },
+  {
+    "name": "Australian International Islamic College Darwin",
+    "suburb": "BERRIMAH",
+    "state": "NT",
+    "postcode": "0828",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -12.41994528,
+    "longitude": 130.9175261
+  },
+  {
+    "name": "SEDA College NT",
+    "suburb": "FANNIE BAY",
+    "state": "NT",
+    "postcode": "0820",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -12.42397113,
+    "longitude": 130.8377671
+  },
+  {
+    "name": "SEDA College NT - Tennis NT campus",
+    "suburb": "MARRARA",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -12.3987292981919,
+    "longitude": 130.879065654219
+  },
+  {
+    "name": "SEDA College NT - St Mary's Club campus",
+    "suburb": "MARRARA",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -12.3999267555475,
+    "longitude": 130.888108454219
+  },
+  {
+    "name": "SEDA College NT - Waratah Club campus",
+    "suburb": "THE GARDENS",
+    "state": "NT",
+    "postcode": "0820",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -12.4466619378404,
+    "longitude": 130.833646196547
+  },
+  {
+    "name": "SEDA College NT - Terriory Rugby League Stadium campus",
+    "suburb": "MARRARA",
+    "state": "NT",
+    "postcode": "0812",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -12.3966298304737,
+    "longitude": 130.887335865653
+  },
+  {
+    "name": "Haileybury Rendall School - Haileybury Pangea Distance Learning Campus",
+    "suburb": "BERRIMAH",
+    "state": "NT",
+    "postcode": "0828",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -12.44235,
+    "longitude": 130.92232
+  },
+  {
+    "name": "St Francis Xavier Catholic School - Wudikapildiyer Homeland Learning Centre Campus",
+    "suburb": "WOODYCUPALDIYA",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -13.8593246864877,
+    "longitude": 130.002167496203
+  },
+  {
+    "name": "Nyangatjatjara College - Imanpa Primary Campus",
+    "suburb": "IMANPA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -25.1289463566993,
+    "longitude": 132.572889164417
+  },
+  {
+    "name": "Wurriyukwayuwa-Langwa College",
+    "suburb": "MILYAKBURRA",
+    "state": "NT",
+    "postcode": "0822",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -13.7831597717274,
+    "longitude": 136.197700288031
+  },
+  {
+    "name": "Nyangatjatjara College - Kaltukatjara Campus (Docker River) Secondary Campus",
+    "suburb": "KALTUKATJARA",
+    "state": "NT",
+    "postcode": "0872",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -24.8812918779094,
+    "longitude": 129.076019609991
+  }
+]

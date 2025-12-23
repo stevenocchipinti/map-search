@@ -1,0 +1,7922 @@
+[
+  {
+    "name": "Sunrise Christian School Fullarton",
+    "suburb": "FULLARTON",
+    "state": "SA",
+    "postcode": "5063",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.954499,
+    "longitude": 138.621828
+  },
+  {
+    "name": "Port Neill Primary School",
+    "suburb": "PORT NEILL",
+    "state": "SA",
+    "postcode": "5604",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.11700739,
+    "longitude": 136.34277034
+  },
+  {
+    "name": "Thebarton Senior College",
+    "suburb": "TORRENSVILLE",
+    "state": "SA",
+    "postcode": "5031",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.917275,
+    "longitude": 138.562772
+  },
+  {
+    "name": "Kangaroo Island Community Education - Penneshaw Campus",
+    "suburb": "PENNESHAW",
+    "state": "SA",
+    "postcode": "5222",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.720872,
+    "longitude": 137.931836
+  },
+  {
+    "name": "OneSchool Global SA - Mount Gambier Campus",
+    "suburb": "MOUNT GAMBIER",
+    "state": "SA",
+    "postcode": "5290",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -37.816856,
+    "longitude": 140.796901
+  },
+  {
+    "name": "Sunrise Christian School Marion",
+    "suburb": "MARION",
+    "state": "SA",
+    "postcode": "5043",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.016798,
+    "longitude": 138.557341
+  },
+  {
+    "name": "Muirden Senior College",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.933349,
+    "longitude": 138.600554
+  },
+  {
+    "name": "Sacred Heart College - Marcellin Campus",
+    "suburb": "SOMERTON PARK",
+    "state": "SA",
+    "postcode": "5044",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.996682,
+    "longitude": 138.521367
+  },
+  {
+    "name": "Northern Adelaide Senior College",
+    "suburb": "ELIZABETH",
+    "state": "SA",
+    "postcode": "5112",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.71345547,
+    "longitude": 138.67101822
+  },
+  {
+    "name": "Marden Senior College",
+    "suburb": "MARDEN",
+    "state": "SA",
+    "postcode": "5070",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.891954,
+    "longitude": 138.63523
+  },
+  {
+    "name": "Edward John Eyre High School",
+    "suburb": "WHYALLA NORRIE",
+    "state": "SA",
+    "postcode": "5608",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -33.026208,
+    "longitude": 137.540961
+  },
+  {
+    "name": "Central Yorke School - Point Pearce Campus",
+    "suburb": "POINT PEARCE",
+    "state": "SA",
+    "postcode": "5573",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.427855,
+    "longitude": 137.504945
+  },
+  {
+    "name": "Port Lincoln Junior Primary School",
+    "suburb": "PORT LINCOLN",
+    "state": "SA",
+    "postcode": "5606",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.724303,
+    "longitude": 135.857806
+  },
+  {
+    "name": "Youth Education Centre - Goldsborough Road Campus (Cavan)",
+    "suburb": "CAVAN",
+    "state": "SA",
+    "postcode": "5072",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.828265,
+    "longitude": 138.60253
+  },
+  {
+    "name": "Australian Science and Mathematics School",
+    "suburb": "BEDFORD PARK",
+    "state": "SA",
+    "postcode": "5042",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.024872,
+    "longitude": 138.573379
+  },
+  {
+    "name": "University Senior College at Adelaide University - Jordan Campus",
+    "suburb": "ADELAIDE UNIVERSITY",
+    "state": "SA",
+    "postcode": "5005",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.917855,
+    "longitude": 138.601817
+  },
+  {
+    "name": "St Patrick's Technical College",
+    "suburb": "EDINBURGH NORTH",
+    "state": "SA",
+    "postcode": "5113",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.710863,
+    "longitude": 138.664167
+  },
+  {
+    "name": "Cardijn College - Marcellin Campus",
+    "suburb": "CHRISTIE DOWNS",
+    "state": "SA",
+    "postcode": "5164",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -35.137418,
+    "longitude": 138.491643
+  },
+  {
+    "name": "St Joseph's Memorial School - Junior Primary Campus",
+    "suburb": "KENSINGTON",
+    "state": "SA",
+    "postcode": "5068",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.924045,
+    "longitude": 138.645992
+  },
+  {
+    "name": "Saint Ignatius' College - Junior School Campus",
+    "suburb": "NORWOOD",
+    "state": "SA",
+    "postcode": "5067",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.923106,
+    "longitude": 138.639103
+  },
+  {
+    "name": "St George College - Junior Campus",
+    "suburb": "MILE END",
+    "state": "SA",
+    "postcode": "5031",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.922038,
+    "longitude": 138.572809
+  },
+  {
+    "name": "St Michael's College - Primary Campus",
+    "suburb": "BEVERLEY",
+    "state": "SA",
+    "postcode": "5009",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.899831,
+    "longitude": 138.550873
+  },
+  {
+    "name": "St Mark's College - Benedict Campus",
+    "suburb": "PORT PIRIE",
+    "state": "SA",
+    "postcode": "5540",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -33.186266,
+    "longitude": 138.01058
+  },
+  {
+    "name": "Trinity College Senior",
+    "suburb": "EVANSTON SOUTH",
+    "state": "SA",
+    "postcode": "5116",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.63298246,
+    "longitude": 138.73444239
+  },
+  {
+    "name": "Samaritan College - Our Lady Help of Christians Campus",
+    "suburb": "WHYALLA STUART",
+    "state": "SA",
+    "postcode": "5608",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -33.024309,
+    "longitude": 137.528464
+  },
+  {
+    "name": "Samaritan College - St Teresa's Campus",
+    "suburb": "WHYALLA",
+    "state": "SA",
+    "postcode": "5600",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -33.0371368621117,
+    "longitude": 137.584027041346
+  },
+  {
+    "name": "Nazareth Catholic College - Flinders Park Campus",
+    "suburb": "FLINDERS PARK",
+    "state": "SA",
+    "postcode": "5025",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.911800384521484,
+    "longitude": 138.5467987060547
+  },
+  {
+    "name": "Pinnacle College - Elizabeth East Campus",
+    "suburb": "ELIZABETH EAST",
+    "state": "SA",
+    "postcode": "5112",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.721678,
+    "longitude": 138.677943
+  },
+  {
+    "name": "John Hartley School B-6",
+    "suburb": "SMITHFIELD PLAINS",
+    "state": "SA",
+    "postcode": "5114",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.680413,
+    "longitude": 138.673586
+  },
+  {
+    "name": "Coromandel Valley Primary School",
+    "suburb": "COROMANDEL VALLEY",
+    "state": "SA",
+    "postcode": "5051",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.033562,
+    "longitude": 138.626758
+  },
+  {
+    "name": "Cowandilla Primary School",
+    "suburb": "COWANDILLA",
+    "state": "SA",
+    "postcode": "5033",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.93416,
+    "longitude": 138.559877
+  },
+  {
+    "name": "Crafers Primary School",
+    "suburb": "CRAFERS",
+    "state": "SA",
+    "postcode": "5152",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.993387,
+    "longitude": 138.71348
+  },
+  {
+    "name": "Crystal Brook Primary School",
+    "suburb": "CRYSTAL BROOK",
+    "state": "SA",
+    "postcode": "5523",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.352948,
+    "longitude": 138.213543
+  },
+  {
+    "name": "Curramulka Primary School",
+    "suburb": "CURRAMULKA",
+    "state": "SA",
+    "postcode": "5580",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.695502,
+    "longitude": 137.713697
+  },
+  {
+    "name": "Murray Bridge Special School",
+    "suburb": "MURRAY BRIDGE",
+    "state": "SA",
+    "postcode": "5253",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.116966,
+    "longitude": 139.271426
+  },
+  {
+    "name": "Gilles Street Primary School",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.93449,
+    "longitude": 138.604464
+  },
+  {
+    "name": "Echunga Primary and Preschool",
+    "suburb": "ECHUNGA",
+    "state": "SA",
+    "postcode": "5153",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.09763397,
+    "longitude": 138.79139351
+  },
+  {
+    "name": "Eden Hills Primary School",
+    "suburb": "EDEN HILLS",
+    "state": "SA",
+    "postcode": "5050",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.020546,
+    "longitude": 138.595317
+  },
+  {
+    "name": "Edwardstown Primary School",
+    "suburb": "MELROSE PARK",
+    "state": "SA",
+    "postcode": "5039",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.978729,
+    "longitude": 138.57801
+  },
+  {
+    "name": "Elliston Area School",
+    "suburb": "ELLISTON",
+    "state": "SA",
+    "postcode": "5670",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -33.644153,
+    "longitude": 134.892451
+  },
+  {
+    "name": "Norwood Primary School",
+    "suburb": "NORWOOD",
+    "state": "SA",
+    "postcode": "5067",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.922403,
+    "longitude": 138.63167
+  },
+  {
+    "name": "Flinders Park Primary School",
+    "suburb": "FLINDERS PARK",
+    "state": "SA",
+    "postcode": "5025",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.91064,
+    "longitude": 138.548871
+  },
+  {
+    "name": "Lenswood Primary School",
+    "suburb": "LENSWOOD",
+    "state": "SA",
+    "postcode": "5240",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.922274,
+    "longitude": 138.823468
+  },
+  {
+    "name": "Frances Primary School",
+    "suburb": "FRANCES",
+    "state": "SA",
+    "postcode": "5262",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -36.70864019,
+    "longitude": 140.95684181
+  },
+  {
+    "name": "Freeling Primary School",
+    "suburb": "FREELING",
+    "state": "SA",
+    "postcode": "5372",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.457842,
+    "longitude": 138.811414
+  },
+  {
+    "name": "Gawler Primary School",
+    "suburb": "GAWLER",
+    "state": "SA",
+    "postcode": "5118",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.597541,
+    "longitude": 138.740692
+  },
+  {
+    "name": "Evanston Gardens Primary School",
+    "suburb": "EVANSTON GARDENS",
+    "state": "SA",
+    "postcode": "5116",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.623986,
+    "longitude": 138.720025
+  },
+  {
+    "name": "Geranium Primary School",
+    "suburb": "GERANIUM",
+    "state": "SA",
+    "postcode": "5301",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.379478,
+    "longitude": 140.160128
+  },
+  {
+    "name": "Gladstone Primary School",
+    "suburb": "GLADSTONE",
+    "state": "SA",
+    "postcode": "5473",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.266137,
+    "longitude": 138.350584
+  },
+  {
+    "name": "Glenburnie Primary School",
+    "suburb": "GLENBURNIE",
+    "state": "SA",
+    "postcode": "5291",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.84041,
+    "longitude": 140.863876
+  },
+  {
+    "name": "Glen Osmond Primary School",
+    "suburb": "MYRTLE BANK",
+    "state": "SA",
+    "postcode": "5064",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.957051,
+    "longitude": 138.637255
+  },
+  {
+    "name": "Glossop Community School",
+    "suburb": "GLOSSOP",
+    "state": "SA",
+    "postcode": "5344",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.271342,
+    "longitude": 140.524768
+  },
+  {
+    "name": "Goodwood Primary School",
+    "suburb": "GOODWOOD",
+    "state": "SA",
+    "postcode": "5034",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.951478,
+    "longitude": 138.588905
+  },
+  {
+    "name": "Goolwa Primary School",
+    "suburb": "GOOLWA",
+    "state": "SA",
+    "postcode": "5214",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.497553,
+    "longitude": 138.780252
+  },
+  {
+    "name": "Greenock Primary School",
+    "suburb": "GREENOCK",
+    "state": "SA",
+    "postcode": "5360",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.459939,
+    "longitude": 138.921793
+  },
+  {
+    "name": "Gumeracha Primary School",
+    "suburb": "GUMERACHA",
+    "state": "SA",
+    "postcode": "5233",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.824981,
+    "longitude": 138.880956
+  },
+  {
+    "name": "Hahndorf Primary School",
+    "suburb": "HAHNDORF",
+    "state": "SA",
+    "postcode": "5245",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.027474,
+    "longitude": 138.810676
+  },
+  {
+    "name": "Hamley Bridge Primary School",
+    "suburb": "HAMLEY BRIDGE",
+    "state": "SA",
+    "postcode": "5401",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.354549,
+    "longitude": 138.684929
+  },
+  {
+    "name": "Rose Park Primary School",
+    "suburb": "ROSE PARK",
+    "state": "SA",
+    "postcode": "5067",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.93161,
+    "longitude": 138.628893
+  },
+  {
+    "name": "Happy Valley Primary School",
+    "suburb": "HAPPY VALLEY",
+    "state": "SA",
+    "postcode": "5159",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.086923,
+    "longitude": 138.583583
+  },
+  {
+    "name": "Hawker Area School",
+    "suburb": "HAWKER",
+    "state": "SA",
+    "postcode": "5434",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -31.89042,
+    "longitude": 138.427892
+  },
+  {
+    "name": "Heathfield Primary School",
+    "suburb": "HEATHFIELD",
+    "state": "SA",
+    "postcode": "5153",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.029961,
+    "longitude": 138.727279
+  },
+  {
+    "name": "Henley Beach Primary School",
+    "suburb": "HENLEY BEACH SOUTH",
+    "state": "SA",
+    "postcode": "5022",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.929734,
+    "longitude": 138.499429
+  },
+  {
+    "name": "North Adelaide Primary School",
+    "suburb": "NORTH ADELAIDE",
+    "state": "SA",
+    "postcode": "5006",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.905096,
+    "longitude": 138.597558
+  },
+  {
+    "name": "Jervois Primary School",
+    "suburb": "JERVOIS",
+    "state": "SA",
+    "postcode": "5259",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.266177,
+    "longitude": 139.437094
+  },
+  {
+    "name": "Kalangadoo Primary School",
+    "suburb": "KALANGADOO",
+    "state": "SA",
+    "postcode": "5278",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.56535658,
+    "longitude": 140.69556079
+  },
+  {
+    "name": "Kangarilla Primary School",
+    "suburb": "KANGARILLA",
+    "state": "SA",
+    "postcode": "5157",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.147815,
+    "longitude": 138.659484
+  },
+  {
+    "name": "Kapunda Primary School",
+    "suburb": "KAPUNDA",
+    "state": "SA",
+    "postcode": "5373",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.337884,
+    "longitude": 138.918053
+  },
+  {
+    "name": "Alberton Primary School",
+    "suburb": "QUEENSTOWN",
+    "state": "SA",
+    "postcode": "5014",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.862679,
+    "longitude": 138.512645
+  },
+  {
+    "name": "Kersbrook Primary School",
+    "suburb": "KERSBROOK",
+    "state": "SA",
+    "postcode": "5231",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.782369,
+    "longitude": 138.849721
+  },
+  {
+    "name": "Keyneton Primary School",
+    "suburb": "KEYNETON",
+    "state": "SA",
+    "postcode": "5353",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.554333,
+    "longitude": 139.1338
+  },
+  {
+    "name": "Kilkenny Primary School",
+    "suburb": "WEST CROYDON",
+    "state": "SA",
+    "postcode": "5008",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.890875,
+    "longitude": 138.552927
+  },
+  {
+    "name": "Kingston-on-Murray Primary School",
+    "suburb": "KINGSTON ON MURRAY",
+    "state": "SA",
+    "postcode": "5331",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.222619,
+    "longitude": 140.346866
+  },
+  {
+    "name": "Aldgate Primary School",
+    "suburb": "ALDGATE",
+    "state": "SA",
+    "postcode": "5154",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.019502,
+    "longitude": 138.748939
+  },
+  {
+    "name": "Kongorong Primary School",
+    "suburb": "KONGORONG",
+    "state": "SA",
+    "postcode": "5291",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.902247,
+    "longitude": 140.561148
+  },
+  {
+    "name": "Koolunga Primary School",
+    "suburb": "KOOLUNGA",
+    "state": "SA",
+    "postcode": "5464",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.580835,
+    "longitude": 138.335026
+  },
+  {
+    "name": "Mid North Education Centre",
+    "suburb": "PORT PIRIE",
+    "state": "SA",
+    "postcode": "5540",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -33.17503,
+    "longitude": 138.005415
+  },
+  {
+    "name": "Eastern Fleurieu R-12 School - Langhorne Creek R-6 Campus",
+    "suburb": "LANGHORNE CREEK",
+    "state": "SA",
+    "postcode": "5255",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.296558,
+    "longitude": 139.036435
+  },
+  {
+    "name": "Largs Bay School",
+    "suburb": "LARGS BAY",
+    "state": "SA",
+    "postcode": "5016",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.823666,
+    "longitude": 138.494282
+  },
+  {
+    "name": "Laura Primary School",
+    "suburb": "LAURA",
+    "state": "SA",
+    "postcode": "5480",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.18682857,
+    "longitude": 138.30449459
+  },
+  {
+    "name": "Le Fevre Peninsula Primary School",
+    "suburb": "BIRKENHEAD",
+    "state": "SA",
+    "postcode": "5015",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.840072,
+    "longitude": 138.495412
+  },
+  {
+    "name": "Aldinga Beach Primary School",
+    "suburb": "ALDINGA",
+    "state": "SA",
+    "postcode": "5173",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.269294,
+    "longitude": 138.461896
+  },
+  {
+    "name": "Light Pass Primary School",
+    "suburb": "LIGHT PASS",
+    "state": "SA",
+    "postcode": "5355",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.46919,
+    "longitude": 139.025019
+  },
+  {
+    "name": "Littlehampton Primary School",
+    "suburb": "LITTLEHAMPTON",
+    "state": "SA",
+    "postcode": "5250",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.049417,
+    "longitude": 138.868095
+  },
+  {
+    "name": "Lobethal Primary School",
+    "suburb": "LOBETHAL",
+    "state": "SA",
+    "postcode": "5241",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.901735,
+    "longitude": 138.871761
+  },
+  {
+    "name": "Lock Area School",
+    "suburb": "LOCK",
+    "state": "SA",
+    "postcode": "5633",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -33.567298,
+    "longitude": 135.754637
+  },
+  {
+    "name": "Lockleys Primary School",
+    "suburb": "BROOKLYN PARK",
+    "state": "SA",
+    "postcode": "5032",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.930203,
+    "longitude": 138.535095
+  },
+  {
+    "name": "Lyndoch Primary School",
+    "suburb": "LYNDOCH",
+    "state": "SA",
+    "postcode": "5351",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.60554,
+    "longitude": 138.885678
+  },
+  {
+    "name": "Macclesfield Primary School",
+    "suburb": "MACCLESFIELD",
+    "state": "SA",
+    "postcode": "5153",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.171315,
+    "longitude": 138.83847
+  },
+  {
+    "name": "Mallala Primary School",
+    "suburb": "MALLALA",
+    "state": "SA",
+    "postcode": "5502",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.43456,
+    "longitude": 138.510526
+  },
+  {
+    "name": "Angaston Primary School",
+    "suburb": "ANGASTON",
+    "state": "SA",
+    "postcode": "5353",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.499092,
+    "longitude": 139.050833
+  },
+  {
+    "name": "Manoora Primary School",
+    "suburb": "MANOORA",
+    "state": "SA",
+    "postcode": "5414",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.006284,
+    "longitude": 138.814121
+  },
+  {
+    "name": "Marree Aboriginal School",
+    "suburb": "MARREE",
+    "state": "SA",
+    "postcode": "5733",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -29.649185,
+    "longitude": 138.061054
+  },
+  {
+    "name": "Marryatville Primary School",
+    "suburb": "KENSINGTON",
+    "state": "SA",
+    "postcode": "5068",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.924542,
+    "longitude": 138.649185
+  },
+  {
+    "name": "McLaren Flat Primary School",
+    "suburb": "MCLAREN FLAT",
+    "state": "SA",
+    "postcode": "5171",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.206114,
+    "longitude": 138.587248
+  },
+  {
+    "name": "McLaren Vale Primary School",
+    "suburb": "MCLAREN VALE",
+    "state": "SA",
+    "postcode": "5171",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.211655,
+    "longitude": 138.531438
+  },
+  {
+    "name": "Meadows Primary School",
+    "suburb": "MEADOWS",
+    "state": "SA",
+    "postcode": "5201",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.180498,
+    "longitude": 138.761924
+  },
+  {
+    "name": "Melrose Primary School",
+    "suburb": "MELROSE",
+    "state": "SA",
+    "postcode": "5483",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -32.823832,
+    "longitude": 138.187995
+  },
+  {
+    "name": "Angle Vale Primary School",
+    "suburb": "ANGLE VALE",
+    "state": "SA",
+    "postcode": "5117",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.643346,
+    "longitude": 138.647362
+  },
+  {
+    "name": "Eastern Fleurieu R-12 School - Milang R-6 Campus",
+    "suburb": "MILANG",
+    "state": "SA",
+    "postcode": "5256",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.405466,
+    "longitude": 138.973058
+  },
+  {
+    "name": "Mil Lel Primary School",
+    "suburb": "MIL LEL",
+    "state": "SA",
+    "postcode": "5291",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.781125,
+    "longitude": 140.825631
+  },
+  {
+    "name": "Mitcham Primary School",
+    "suburb": "KINGSWOOD",
+    "state": "SA",
+    "postcode": "5062",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.972708,
+    "longitude": 138.616124
+  },
+  {
+    "name": "Modbury School P-6",
+    "suburb": "MODBURY NORTH",
+    "state": "SA",
+    "postcode": "5092",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.825869,
+    "longitude": 138.69228
+  },
+  {
+    "name": "Monash Primary and Preschool",
+    "suburb": "MONASH",
+    "state": "SA",
+    "postcode": "5342",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.236306,
+    "longitude": 140.559419
+  },
+  {
+    "name": "Moorak Primary School",
+    "suburb": "MOORAK",
+    "state": "SA",
+    "postcode": "5291",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.86419411,
+    "longitude": 140.73666799
+  },
+  {
+    "name": "Moorook Primary School",
+    "suburb": "MOOROOK",
+    "state": "SA",
+    "postcode": "5332",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.276231,
+    "longitude": 140.351142
+  },
+  {
+    "name": "Morgan Primary School",
+    "suburb": "MORGAN",
+    "state": "SA",
+    "postcode": "5320",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.030239,
+    "longitude": 139.670103
+  },
+  {
+    "name": "Mount Barker Primary School",
+    "suburb": "MOUNT BARKER",
+    "state": "SA",
+    "postcode": "5251",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.067641,
+    "longitude": 138.853522
+  },
+  {
+    "name": "Mount Burr Primary School",
+    "suburb": "MOUNT BURR",
+    "state": "SA",
+    "postcode": "5279",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.541193,
+    "longitude": 140.4591
+  },
+  {
+    "name": "Mount Compass Area School",
+    "suburb": "MOUNT COMPASS",
+    "state": "SA",
+    "postcode": "5210",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.350245,
+    "longitude": 138.619809
+  },
+  {
+    "name": "Reidy Park Primary School",
+    "suburb": "MOUNT GAMBIER",
+    "state": "SA",
+    "postcode": "5290",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.834544,
+    "longitude": 140.771765
+  },
+  {
+    "name": "Mount Pleasant Primary School",
+    "suburb": "MOUNT PLEASANT",
+    "state": "SA",
+    "postcode": "5235",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.774374,
+    "longitude": 139.053842
+  },
+  {
+    "name": "Mundulla Primary School",
+    "suburb": "MUNDULLA",
+    "state": "SA",
+    "postcode": "5270",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -36.357628,
+    "longitude": 140.693069
+  },
+  {
+    "name": "Murray Bridge North School",
+    "suburb": "MURRAY BRIDGE",
+    "state": "SA",
+    "postcode": "5253",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.116966,
+    "longitude": 139.271426
+  },
+  {
+    "name": "Mylor Primary School",
+    "suburb": "MYLOR",
+    "state": "SA",
+    "postcode": "5153",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.040998,
+    "longitude": 138.760099
+  },
+  {
+    "name": "Mypolonga Primary School",
+    "suburb": "MYPOLONGA",
+    "state": "SA",
+    "postcode": "5254",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.040591,
+    "longitude": 139.357523
+  },
+  {
+    "name": "Myponga Primary School",
+    "suburb": "MYPONGA",
+    "state": "SA",
+    "postcode": "5202",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.3927497,
+    "longitude": 138.46425608
+  },
+  {
+    "name": "Nailsworth Primary School",
+    "suburb": "NAILSWORTH",
+    "state": "SA",
+    "postcode": "5083",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.8829157832097,
+    "longitude": 138.60388611045073
+  },
+  {
+    "name": "Nairne School - Preschool and Primary",
+    "suburb": "NAIRNE",
+    "state": "SA",
+    "postcode": "5252",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.038365,
+    "longitude": 138.903587
+  },
+  {
+    "name": "Napperby Primary School",
+    "suburb": "NAPPERBY",
+    "state": "SA",
+    "postcode": "5540",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.15317163,
+    "longitude": 138.11414129
+  },
+  {
+    "name": "Naracoorte Primary School",
+    "suburb": "NARACOORTE",
+    "state": "SA",
+    "postcode": "5271",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -36.951082,
+    "longitude": 140.738119
+  },
+  {
+    "name": "Old Noarlunga Primary School",
+    "suburb": "OLD NOARLUNGA",
+    "state": "SA",
+    "postcode": "5168",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.182997,
+    "longitude": 138.500633
+  },
+  {
+    "name": "Northfield Primary School",
+    "suburb": "NORTHFIELD",
+    "state": "SA",
+    "postcode": "5085",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.848975,
+    "longitude": 138.619862
+  },
+  {
+    "name": "Norton Summit Primary School",
+    "suburb": "NORTON SUMMIT",
+    "state": "SA",
+    "postcode": "5136",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.927695,
+    "longitude": 138.728837
+  },
+  {
+    "name": "Nuriootpa Primary School",
+    "suburb": "NURIOOTPA",
+    "state": "SA",
+    "postcode": "5355",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.472908,
+    "longitude": 139.001322
+  },
+  {
+    "name": "One Tree Hill Primary School",
+    "suburb": "ONE TREE HILL",
+    "state": "SA",
+    "postcode": "5114",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.713273,
+    "longitude": 138.766521
+  },
+  {
+    "name": "Coorara Primary School",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.131326,
+    "longitude": 138.542009
+  },
+  {
+    "name": "Oodnadatta Aboriginal School",
+    "suburb": "OODNADATTA",
+    "state": "SA",
+    "postcode": "5734",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -27.548502,
+    "longitude": 135.445814
+  },
+  {
+    "name": "Owen Primary School",
+    "suburb": "OWEN",
+    "state": "SA",
+    "postcode": "5460",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.271731,
+    "longitude": 138.543051
+  },
+  {
+    "name": "Palmer Primary School",
+    "suburb": "PALMER",
+    "state": "SA",
+    "postcode": "5237",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.854365,
+    "longitude": 139.160882
+  },
+  {
+    "name": "Paracombe Primary and Preschool",
+    "suburb": "PARACOMBE",
+    "state": "SA",
+    "postcode": "5132",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.851674,
+    "longitude": 138.781984
+  },
+  {
+    "name": "Parkside Primary School",
+    "suburb": "PARKSIDE",
+    "state": "SA",
+    "postcode": "5063",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.944657,
+    "longitude": 138.620087
+  },
+  {
+    "name": "Pennington School R-6",
+    "suburb": "PENNINGTON",
+    "state": "SA",
+    "postcode": "5013",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.857424,
+    "longitude": 138.53236
+  },
+  {
+    "name": "Penong Primary School",
+    "suburb": "PENONG",
+    "state": "SA",
+    "postcode": "5690",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -31.928614,
+    "longitude": 133.005406
+  },
+  {
+    "name": "Peterborough Primary School",
+    "suburb": "PETERBOROUGH",
+    "state": "SA",
+    "postcode": "5422",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -32.971345,
+    "longitude": 138.83202
+  },
+  {
+    "name": "Ascot Park Primary School",
+    "suburb": "PARK HOLME",
+    "state": "SA",
+    "postcode": "5043",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.990774,
+    "longitude": 138.554376
+  },
+  {
+    "name": "Eastern Fleurieu R-12 School - Ashbourne R-6 Campus",
+    "suburb": "ASHBOURNE",
+    "state": "SA",
+    "postcode": "5157",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.288382,
+    "longitude": 138.76577
+  },
+  {
+    "name": "Plympton Primary School",
+    "suburb": "PLYMPTON",
+    "state": "SA",
+    "postcode": "5038",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.96108793,
+    "longitude": 138.55656934
+  },
+  {
+    "name": "Poonindie Community Learning Centre",
+    "suburb": "POONINDIE",
+    "state": "SA",
+    "postcode": "5607",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.58049457,
+    "longitude": 135.8806603
+  },
+  {
+    "name": "Pooraka Primary School",
+    "suburb": "POORAKA",
+    "state": "SA",
+    "postcode": "5095",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.833519,
+    "longitude": 138.613108
+  },
+  {
+    "name": "Port Augusta West Primary School",
+    "suburb": "PORT AUGUSTA WEST",
+    "state": "SA",
+    "postcode": "5700",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -32.483205,
+    "longitude": 137.754202
+  },
+  {
+    "name": "Port Elliot Primary School",
+    "suburb": "PORT ELLIOT",
+    "state": "SA",
+    "postcode": "5212",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.523024,
+    "longitude": 138.677243
+  },
+  {
+    "name": "Port Lincoln Primary School",
+    "suburb": "PORT LINCOLN",
+    "state": "SA",
+    "postcode": "5606",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.723909,
+    "longitude": 135.857158
+  },
+  {
+    "name": "Port Noarlunga Primary School",
+    "suburb": "PORT NOARLUNGA",
+    "state": "SA",
+    "postcode": "5167",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.143866,
+    "longitude": 138.473063
+  },
+  {
+    "name": "Port Pirie West Primary School",
+    "suburb": "PORT PIRIE",
+    "state": "SA",
+    "postcode": "5540",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.181868,
+    "longitude": 138.002596
+  },
+  {
+    "name": "Port Wakefield Primary School",
+    "suburb": "PORT WAKEFIELD",
+    "state": "SA",
+    "postcode": "5550",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.187379,
+    "longitude": 138.149302
+  },
+  {
+    "name": "Prospect Primary School",
+    "suburb": "PROSPECT",
+    "state": "SA",
+    "postcode": "5082",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.884916,
+    "longitude": 138.59012
+  },
+  {
+    "name": "Ramco Primary School",
+    "suburb": "RAMCO",
+    "state": "SA",
+    "postcode": "5322",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.169812,
+    "longitude": 139.932662
+  },
+  {
+    "name": "Rendelsham Primary School",
+    "suburb": "RENDELSHAM",
+    "state": "SA",
+    "postcode": "5280",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.551353,
+    "longitude": 140.225103
+  },
+  {
+    "name": "Renmark Primary School",
+    "suburb": "RENMARK",
+    "state": "SA",
+    "postcode": "5341",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.172644,
+    "longitude": 140.74104
+  },
+  {
+    "name": "Renmark North School",
+    "suburb": "RENMARK NORTH",
+    "state": "SA",
+    "postcode": "5341",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.120509,
+    "longitude": 140.720156
+  },
+  {
+    "name": "Renmark West Primary School",
+    "suburb": "RENMARK",
+    "state": "SA",
+    "postcode": "5341",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.166218,
+    "longitude": 140.710298
+  },
+  {
+    "name": "Reynella Primary School",
+    "suburb": "OLD REYNELLA",
+    "state": "SA",
+    "postcode": "5161",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.100928,
+    "longitude": 138.537502
+  },
+  {
+    "name": "Richmond Primary School",
+    "suburb": "KESWICK",
+    "state": "SA",
+    "postcode": "5035",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.943391,
+    "longitude": 138.571798
+  },
+  {
+    "name": "Riverton Primary School",
+    "suburb": "RIVERTON",
+    "state": "SA",
+    "postcode": "5412",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.15606,
+    "longitude": 138.744199
+  },
+  {
+    "name": "Robe Primary School",
+    "suburb": "ROBE",
+    "state": "SA",
+    "postcode": "5276",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.163742,
+    "longitude": 139.761639
+  },
+  {
+    "name": "Robertstown Primary School",
+    "suburb": "ROBERTSTOWN",
+    "state": "SA",
+    "postcode": "5381",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.989691,
+    "longitude": 139.084056
+  },
+  {
+    "name": "Roseworthy Primary School",
+    "suburb": "ROSEWORTHY",
+    "state": "SA",
+    "postcode": "5371",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.53392,
+    "longitude": 138.748218
+  },
+  {
+    "name": "Saddleworth Primary School",
+    "suburb": "SADDLEWORTH",
+    "state": "SA",
+    "postcode": "5413",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.084411,
+    "longitude": 138.784802
+  },
+  {
+    "name": "St Leonards Primary School",
+    "suburb": "GLENELG NORTH",
+    "state": "SA",
+    "postcode": "5045",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.972261,
+    "longitude": 138.519785
+  },
+  {
+    "name": "Salisbury Primary School",
+    "suburb": "SALISBURY",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.766984,
+    "longitude": 138.647399
+  },
+  {
+    "name": "Sandy Creek Primary School",
+    "suburb": "COCKATOO VALLEY",
+    "state": "SA",
+    "postcode": "5351",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.610068,
+    "longitude": 138.829663
+  },
+  {
+    "name": "Scott Creek Primary School",
+    "suburb": "SCOTT CREEK",
+    "state": "SA",
+    "postcode": "5153",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.056668,
+    "longitude": 138.706377
+  },
+  {
+    "name": "Seaton Park Primary School",
+    "suburb": "SEATON",
+    "state": "SA",
+    "postcode": "5023",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.895535,
+    "longitude": 138.519943
+  },
+  {
+    "name": "Solomontown Primary School",
+    "suburb": "PORT PIRIE",
+    "state": "SA",
+    "postcode": "5540",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.18994,
+    "longitude": 138.019589
+  },
+  {
+    "name": "Spalding Primary School",
+    "suburb": "SPALDING",
+    "state": "SA",
+    "postcode": "5454",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.496312,
+    "longitude": 138.611066
+  },
+  {
+    "name": "Springton Primary School",
+    "suburb": "SPRINGTON",
+    "state": "SA",
+    "postcode": "5235",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.706581,
+    "longitude": 139.088713
+  },
+  {
+    "name": "Stansbury Primary School",
+    "suburb": "STANSBURY",
+    "state": "SA",
+    "postcode": "5582",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.907642,
+    "longitude": 137.794689
+  },
+  {
+    "name": "Stirling East Primary School",
+    "suburb": "STIRLING",
+    "state": "SA",
+    "postcode": "5152",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.002222,
+    "longitude": 138.734746
+  },
+  {
+    "name": "Eastern Fleurieu R-12 School - Strathalbyn R-6 Campus",
+    "suburb": "STRATHALBYN",
+    "state": "SA",
+    "postcode": "5255",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.256067,
+    "longitude": 138.899049
+  },
+  {
+    "name": "Athelstone School",
+    "suburb": "ATHELSTONE",
+    "state": "SA",
+    "postcode": "5076",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.867392,
+    "longitude": 138.699416
+  },
+  {
+    "name": "Suttontown Primary School",
+    "suburb": "SUTTONTOWN",
+    "state": "SA",
+    "postcode": "5291",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.797141,
+    "longitude": 140.76955
+  },
+  {
+    "name": "Swan Reach Area School",
+    "suburb": "SWAN REACH",
+    "state": "SA",
+    "postcode": "5354",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.57182086,
+    "longitude": 139.60274529
+  },
+  {
+    "name": "Tailem Bend Primary School",
+    "suburb": "TAILEM BEND",
+    "state": "SA",
+    "postcode": "5260",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.259104,
+    "longitude": 139.457249
+  },
+  {
+    "name": "Auburn Primary School",
+    "suburb": "AUBURN",
+    "state": "SA",
+    "postcode": "5451",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.026245,
+    "longitude": 138.683689
+  },
+  {
+    "name": "Tanunda Primary School",
+    "suburb": "TANUNDA",
+    "state": "SA",
+    "postcode": "5352",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.526253,
+    "longitude": 138.959337
+  },
+  {
+    "name": "Tarlee Primary School",
+    "suburb": "TARLEE",
+    "state": "SA",
+    "postcode": "5411",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.269925,
+    "longitude": 138.772668
+  },
+  {
+    "name": "Tea Tree Gully Primary School",
+    "suburb": "TEA TREE GULLY",
+    "state": "SA",
+    "postcode": "5091",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.822942,
+    "longitude": 138.727177
+  },
+  {
+    "name": "Tintinara Area School",
+    "suburb": "TINTINARA",
+    "state": "SA",
+    "postcode": "5266",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.883195,
+    "longitude": 140.059952
+  },
+  {
+    "name": "Truro Primary School",
+    "suburb": "TRURO",
+    "state": "SA",
+    "postcode": "5356",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.41121,
+    "longitude": 139.126378
+  },
+  {
+    "name": "Two Wells Primary School",
+    "suburb": "TWO WELLS",
+    "state": "SA",
+    "postcode": "5501",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.59263489,
+    "longitude": 138.51705599
+  },
+  {
+    "name": "Ungarra Primary School",
+    "suburb": "UNGARRA",
+    "state": "SA",
+    "postcode": "5607",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.180902,
+    "longitude": 136.046934
+  },
+  {
+    "name": "Unley Primary School",
+    "suburb": "UNLEY",
+    "state": "SA",
+    "postcode": "5061",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.954188,
+    "longitude": 138.609128
+  },
+  {
+    "name": "Upper Sturt Primary School",
+    "suburb": "UPPER STURT",
+    "state": "SA",
+    "postcode": "5156",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.018986,
+    "longitude": 138.683375
+  },
+  {
+    "name": "Uraidla Primary School",
+    "suburb": "URAIDLA",
+    "state": "SA",
+    "postcode": "5142",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.95915027,
+    "longitude": 138.74384238
+  },
+  {
+    "name": "Victor Harbor Primary School",
+    "suburb": "VICTOR HARBOR",
+    "state": "SA",
+    "postcode": "5211",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.541373,
+    "longitude": 138.624567
+  },
+  {
+    "name": "Virginia Primary School",
+    "suburb": "VIRGINIA",
+    "state": "SA",
+    "postcode": "5120",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.664655,
+    "longitude": 138.555957
+  },
+  {
+    "name": "Waikerie Primary School",
+    "suburb": "WAIKERIE",
+    "state": "SA",
+    "postcode": "5330",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.181117,
+    "longitude": 139.981115
+  },
+  {
+    "name": "Walkerville Primary School",
+    "suburb": "WALKERVILLE",
+    "state": "SA",
+    "postcode": "5081",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.895194,
+    "longitude": 138.613241
+  },
+  {
+    "name": "Wallaroo Primary School",
+    "suburb": "WALLAROO",
+    "state": "SA",
+    "postcode": "5556",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.932746,
+    "longitude": 137.624271
+  },
+  {
+    "name": "Wallaroo Mines Primary School",
+    "suburb": "KADINA",
+    "state": "SA",
+    "postcode": "5554",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.965894,
+    "longitude": 137.69872
+  },
+  {
+    "name": "Warooka Primary School",
+    "suburb": "WAROOKA",
+    "state": "SA",
+    "postcode": "5577",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.990564,
+    "longitude": 137.39902
+  },
+  {
+    "name": "Wasleys Primary School",
+    "suburb": "WASLEYS",
+    "state": "SA",
+    "postcode": "5400",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.471456,
+    "longitude": 138.680418
+  },
+  {
+    "name": "Watervale Primary School",
+    "suburb": "WATERVALE",
+    "state": "SA",
+    "postcode": "5452",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.960982,
+    "longitude": 138.644648
+  },
+  {
+    "name": "Allenby Gardens Primary School",
+    "suburb": "ALLENBY GARDENS",
+    "state": "SA",
+    "postcode": "5009",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.902081,
+    "longitude": 138.554563
+  },
+  {
+    "name": "Trinity Gardens School",
+    "suburb": "TRINITY GARDENS",
+    "state": "SA",
+    "postcode": "5068",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.908388,
+    "longitude": 138.641387
+  },
+  {
+    "name": "Westbourne Park Primary School",
+    "suburb": "WESTBOURNE PARK",
+    "state": "SA",
+    "postcode": "5041",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.969224,
+    "longitude": 138.591941
+  },
+  {
+    "name": "Adelaide North Special School",
+    "suburb": "MUNNO PARA WEST",
+    "state": "SA",
+    "postcode": "5115",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.663611,
+    "longitude": 138.68494
+  },
+  {
+    "name": "Balaklava Primary School",
+    "suburb": "BALAKLAVA",
+    "state": "SA",
+    "postcode": "5461",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.151438,
+    "longitude": 138.416488
+  },
+  {
+    "name": "Whyalla Town Primary School",
+    "suburb": "WHYALLA",
+    "state": "SA",
+    "postcode": "5600",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.035938,
+    "longitude": 137.584382
+  },
+  {
+    "name": "Memorial Oval Primary School",
+    "suburb": "WHYALLA",
+    "state": "SA",
+    "postcode": "5600",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.033445,
+    "longitude": 137.568711
+  },
+  {
+    "name": "Williamstown Primary School",
+    "suburb": "WILLIAMSTOWN",
+    "state": "SA",
+    "postcode": "5351",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.66877581,
+    "longitude": 138.89015185
+  },
+  {
+    "name": "Wilmington Primary School",
+    "suburb": "WILMINGTON",
+    "state": "SA",
+    "postcode": "5485",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -32.6511089,
+    "longitude": 138.10117531
+  },
+  {
+    "name": "Woodside Primary School",
+    "suburb": "WOODSIDE",
+    "state": "SA",
+    "postcode": "5244",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.952342,
+    "longitude": 138.879672
+  },
+  {
+    "name": "Woodville Primary School",
+    "suburb": "WOODVILLE SOUTH",
+    "state": "SA",
+    "postcode": "5011",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.880569,
+    "longitude": 138.532716
+  },
+  {
+    "name": "Yahl Primary School",
+    "suburb": "YAHL",
+    "state": "SA",
+    "postcode": "5291",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.879293,
+    "longitude": 140.832014
+  },
+  {
+    "name": "Barmera Primary School",
+    "suburb": "BARMERA",
+    "state": "SA",
+    "postcode": "5345",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.25159,
+    "longitude": 140.478058
+  },
+  {
+    "name": "Andamooka Primary School",
+    "suburb": "ANDAMOOKA",
+    "state": "SA",
+    "postcode": "5722",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -30.449978,
+    "longitude": 137.167467
+  },
+  {
+    "name": "Basket Range Primary School",
+    "suburb": "BASKET RANGE",
+    "state": "SA",
+    "postcode": "5138",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.938262,
+    "longitude": 138.766577
+  },
+  {
+    "name": "Beachport Primary School",
+    "suburb": "BEACHPORT",
+    "state": "SA",
+    "postcode": "5280",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.475436,
+    "longitude": 140.009715
+  },
+  {
+    "name": "Belair Primary School",
+    "suburb": "BELAIR",
+    "state": "SA",
+    "postcode": "5052",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.00488,
+    "longitude": 138.625814
+  },
+  {
+    "name": "Eastern Fleurieu R-12 School",
+    "suburb": "STRATHALBYN",
+    "state": "SA",
+    "postcode": "5255",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.258179,
+    "longitude": 138.903269
+  },
+  {
+    "name": "Berri Primary School",
+    "suburb": "BERRI",
+    "state": "SA",
+    "postcode": "5343",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.279661,
+    "longitude": 140.594112
+  },
+  {
+    "name": "Wynn Vale School",
+    "suburb": "WYNN VALE",
+    "state": "SA",
+    "postcode": "5127",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.799662,
+    "longitude": 138.687828
+  },
+  {
+    "name": "Aberfoyle Hub Primary School",
+    "suburb": "ABERFOYLE PARK",
+    "state": "SA",
+    "postcode": "5159",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.078139,
+    "longitude": 138.595142
+  },
+  {
+    "name": "Parafield Gardens Primary School",
+    "suburb": "PARAFIELD GARDENS",
+    "state": "SA",
+    "postcode": "5107",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.785192,
+    "longitude": 138.616383
+  },
+  {
+    "name": "Birdwood Primary School",
+    "suburb": "BIRDWOOD",
+    "state": "SA",
+    "postcode": "5234",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.821593,
+    "longitude": 138.959001
+  },
+  {
+    "name": "Black Forest Primary School",
+    "suburb": "BLACK FOREST",
+    "state": "SA",
+    "postcode": "5035",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.960682,
+    "longitude": 138.573308
+  },
+  {
+    "name": "Whyalla Special Education Centre",
+    "suburb": "WHYALLA NORRIE",
+    "state": "SA",
+    "postcode": "5608",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -33.029861,
+    "longitude": 137.548506
+  },
+  {
+    "name": "Lake Wangary School",
+    "suburb": "WANGARY",
+    "state": "SA",
+    "postcode": "5607",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.550294,
+    "longitude": 135.479343
+  },
+  {
+    "name": "Blackwood Primary School",
+    "suburb": "EDEN HILLS",
+    "state": "SA",
+    "postcode": "5050",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.026849,
+    "longitude": 138.605897
+  },
+  {
+    "name": "Blanchetown Primary School",
+    "suburb": "BLANCHETOWN",
+    "state": "SA",
+    "postcode": "5357",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.350655,
+    "longitude": 139.61118
+  },
+  {
+    "name": "Para Hills High School",
+    "suburb": "PARA HILLS WEST",
+    "state": "SA",
+    "postcode": "5096",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.799266,
+    "longitude": 138.650711
+  },
+  {
+    "name": "Blyth Primary School",
+    "suburb": "BLYTH",
+    "state": "SA",
+    "postcode": "5462",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.843766,
+    "longitude": 138.490696
+  },
+  {
+    "name": "Nangwarry Primary School",
+    "suburb": "NANGWARRY",
+    "state": "SA",
+    "postcode": "5277",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.541501,
+    "longitude": 140.818328
+  },
+  {
+    "name": "Padthaway Primary School",
+    "suburb": "PADTHAWAY",
+    "state": "SA",
+    "postcode": "5271",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -36.593103,
+    "longitude": 140.496881
+  },
+  {
+    "name": "Highbury Primary School",
+    "suburb": "HOPE VALLEY",
+    "state": "SA",
+    "postcode": "5090",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.847954,
+    "longitude": 138.709995
+  },
+  {
+    "name": "Booborowie Primary School",
+    "suburb": "BOOBOROWIE",
+    "state": "SA",
+    "postcode": "5417",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.56690979003906,
+    "longitude": 138.75961303710938
+  },
+  {
+    "name": "Millicent North Primary School",
+    "suburb": "MILLICENT",
+    "state": "SA",
+    "postcode": "5280",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.592968,
+    "longitude": 140.343376
+  },
+  {
+    "name": "Whyalla Stuart Primary School R-6",
+    "suburb": "WHYALLA STUART",
+    "state": "SA",
+    "postcode": "5608",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.015064,
+    "longitude": 137.517105
+  },
+  {
+    "name": "Keller Road Primary School",
+    "suburb": "SALISBURY EAST",
+    "state": "SA",
+    "postcode": "5109",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.792341,
+    "longitude": 138.656283
+  },
+  {
+    "name": "Bridgewater Primary School",
+    "suburb": "BRIDGEWATER",
+    "state": "SA",
+    "postcode": "5155",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.00499562,
+    "longitude": 138.76169186
+  },
+  {
+    "name": "Brighton Primary School",
+    "suburb": "BRIGHTON",
+    "state": "SA",
+    "postcode": "5048",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.015974,
+    "longitude": 138.526228
+  },
+  {
+    "name": "Wirreanda Secondary School",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.12807898,
+    "longitude": 138.53323288
+  },
+  {
+    "name": "Hallett Cove School",
+    "suburb": "HALLETT COVE",
+    "state": "SA",
+    "postcode": "5158",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.075965,
+    "longitude": 138.511116
+  },
+  {
+    "name": "Seaford Secondary College",
+    "suburb": "SEAFORD",
+    "state": "SA",
+    "postcode": "5169",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.187173,
+    "longitude": 138.482221
+  },
+  {
+    "name": "Brompton Primary School",
+    "suburb": "RENOWN PARK",
+    "state": "SA",
+    "postcode": "5008",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.893989,
+    "longitude": 138.581272
+  },
+  {
+    "name": "Linden Park Primary School",
+    "suburb": "LINDEN PARK",
+    "state": "SA",
+    "postcode": "5065",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.94781,
+    "longitude": 138.645603
+  },
+  {
+    "name": "Madison Park School",
+    "suburb": "SALISBURY EAST",
+    "state": "SA",
+    "postcode": "5109",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.783863,
+    "longitude": 138.662355
+  },
+  {
+    "name": "Rapid Bay Primary School",
+    "suburb": "RAPID BAY",
+    "state": "SA",
+    "postcode": "5204",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.526676,
+    "longitude": 138.193855
+  },
+  {
+    "name": "Forbes Primary School",
+    "suburb": "SOUTH PLYMPTON",
+    "state": "SA",
+    "postcode": "5038",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.97818822,
+    "longitude": 138.55739693
+  },
+  {
+    "name": "Enfield Primary School",
+    "suburb": "ENFIELD",
+    "state": "SA",
+    "postcode": "5085",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.865392,
+    "longitude": 138.60299
+  },
+  {
+    "name": "Salisbury North Primary School",
+    "suburb": "SALISBURY NORTH",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.753217,
+    "longitude": 138.63533
+  },
+  {
+    "name": "Hillcrest Primary School",
+    "suburb": "HILLCREST",
+    "state": "SA",
+    "postcode": "5086",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.866383,
+    "longitude": 138.638678
+  },
+  {
+    "name": "Darlington Primary School",
+    "suburb": "SEACOMBE GARDENS",
+    "state": "SA",
+    "postcode": "5047",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.027204,
+    "longitude": 138.546916
+  },
+  {
+    "name": "Paringa Park Primary School",
+    "suburb": "NORTH BRIGHTON",
+    "state": "SA",
+    "postcode": "5048",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.002543,
+    "longitude": 138.525628
+  },
+  {
+    "name": "Hendon Primary School",
+    "suburb": "ROYAL PARK",
+    "state": "SA",
+    "postcode": "5014",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.877824,
+    "longitude": 138.510886
+  },
+  {
+    "name": "Nicolson Avenue Primary School",
+    "suburb": "WHYALLA NORRIE",
+    "state": "SA",
+    "postcode": "5608",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.029095,
+    "longitude": 137.549705
+  },
+  {
+    "name": "Loxton North School",
+    "suburb": "LOXTON NORTH",
+    "state": "SA",
+    "postcode": "5333",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.413133,
+    "longitude": 140.624328
+  },
+  {
+    "name": "Willsden Primary School",
+    "suburb": "PORT AUGUSTA",
+    "state": "SA",
+    "postcode": "5700",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -32.506303,
+    "longitude": 137.780351
+  },
+  {
+    "name": "Risdon Park Primary School",
+    "suburb": "PORT PIRIE",
+    "state": "SA",
+    "postcode": "5540",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.203247,
+    "longitude": 138.008071
+  },
+  {
+    "name": "Elizabeth South Primary School",
+    "suburb": "ELIZABETH SOUTH",
+    "state": "SA",
+    "postcode": "5112",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.73111,
+    "longitude": 138.66211
+  },
+  {
+    "name": "Hampstead Primary School",
+    "suburb": "GREENACRES",
+    "state": "SA",
+    "postcode": "5086",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.870813,
+    "longitude": 138.625981
+  },
+  {
+    "name": "Burnside Primary School",
+    "suburb": "BURNSIDE",
+    "state": "SA",
+    "postcode": "5066",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.935601,
+    "longitude": 138.661574
+  },
+  {
+    "name": "Bute Early Learning and Primary School",
+    "suburb": "BUTE",
+    "state": "SA",
+    "postcode": "5560",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.864926,
+    "longitude": 138.003827
+  },
+  {
+    "name": "Callington Primary School",
+    "suburb": "CALLINGTON",
+    "state": "SA",
+    "postcode": "5254",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.114544,
+    "longitude": 139.039395
+  },
+  {
+    "name": "Challa Gardens Primary School",
+    "suburb": "KILKENNY",
+    "state": "SA",
+    "postcode": "5009",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.877562,
+    "longitude": 138.555082
+  },
+  {
+    "name": "Clare Primary School",
+    "suburb": "CLARE",
+    "state": "SA",
+    "postcode": "5453",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.840746,
+    "longitude": 138.618052
+  },
+  {
+    "name": "Clarendon Primary School",
+    "suburb": "CLARENDON",
+    "state": "SA",
+    "postcode": "5157",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.101631,
+    "longitude": 138.633639
+  },
+  {
+    "name": "Cobdogla Primary School",
+    "suburb": "COBDOGLA",
+    "state": "SA",
+    "postcode": "5346",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.242439,
+    "longitude": 140.406113
+  },
+  {
+    "name": "Colonel Light Gardens Primary School",
+    "suburb": "COLONEL LIGHT GARDENS",
+    "state": "SA",
+    "postcode": "5041",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.986809,
+    "longitude": 138.59544
+  },
+  {
+    "name": "Compton Primary School",
+    "suburb": "SUTTONTOWN",
+    "state": "SA",
+    "postcode": "5291",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.801357,
+    "longitude": 140.728606
+  },
+  {
+    "name": "Coomandook Area School",
+    "suburb": "COOMANDOOK",
+    "state": "SA",
+    "postcode": "5261",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.475958,
+    "longitude": 139.708742
+  },
+  {
+    "name": "Ardrossan Area School",
+    "suburb": "ARDROSSAN",
+    "state": "SA",
+    "postcode": "5571",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.423756,
+    "longitude": 137.91592
+  },
+  {
+    "name": "Bordertown Primary School",
+    "suburb": "BORDERTOWN",
+    "state": "SA",
+    "postcode": "5268",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -36.31465,
+    "longitude": 140.76598
+  },
+  {
+    "name": "Ceduna Area School",
+    "suburb": "CEDUNA",
+    "state": "SA",
+    "postcode": "5690",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -32.137676,
+    "longitude": 133.671396
+  },
+  {
+    "name": "Cowell Area School",
+    "suburb": "COWELL",
+    "state": "SA",
+    "postcode": "5602",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -33.682729,
+    "longitude": 136.918442
+  },
+  {
+    "name": "Kimba Area School",
+    "suburb": "KIMBA",
+    "state": "SA",
+    "postcode": "5641",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -33.135605,
+    "longitude": 136.419417
+  },
+  {
+    "name": "Kingston Community School",
+    "suburb": "KINGSTON SE",
+    "state": "SA",
+    "postcode": "5275",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -36.83636633,
+    "longitude": 139.85766276
+  },
+  {
+    "name": "Orroroo Area School",
+    "suburb": "ORROROO",
+    "state": "SA",
+    "postcode": "5431",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -32.728505,
+    "longitude": 138.612211
+  },
+  {
+    "name": "Port Broughton Area School",
+    "suburb": "PORT BROUGHTON",
+    "state": "SA",
+    "postcode": "5522",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -33.604039,
+    "longitude": 137.933111
+  },
+  {
+    "name": "Snowtown Primary School",
+    "suburb": "SNOWTOWN",
+    "state": "SA",
+    "postcode": "5520",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.783548,
+    "longitude": 138.221653
+  },
+  {
+    "name": "Tumby Bay Area School",
+    "suburb": "TUMBY BAY",
+    "state": "SA",
+    "postcode": "5605",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.37575,
+    "longitude": 136.099182
+  },
+  {
+    "name": "Willunga Primary School",
+    "suburb": "WILLUNGA",
+    "state": "SA",
+    "postcode": "5172",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.26919892,
+    "longitude": 138.55287645
+  },
+  {
+    "name": "Streaky Bay Area School",
+    "suburb": "STREAKY BAY",
+    "state": "SA",
+    "postcode": "5680",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -32.798217,
+    "longitude": 134.201213
+  },
+  {
+    "name": "Woomera Area School",
+    "suburb": "WOOMERA",
+    "state": "SA",
+    "postcode": "5720",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -31.19727554,
+    "longitude": 136.82552519
+  },
+  {
+    "name": "Cambrai Primary School",
+    "suburb": "CAMBRAI",
+    "state": "SA",
+    "postcode": "5353",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.652888,
+    "longitude": 139.280966
+  },
+  {
+    "name": "Leigh Creek Area School",
+    "suburb": "LEIGH CREEK",
+    "state": "SA",
+    "postcode": "5731",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -30.592851,
+    "longitude": 138.401496
+  },
+  {
+    "name": "Lucindale Area School",
+    "suburb": "LUCINDALE",
+    "state": "SA",
+    "postcode": "5272",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -36.964206,
+    "longitude": 140.370633
+  },
+  {
+    "name": "Meningie Area School",
+    "suburb": "MENINGIE",
+    "state": "SA",
+    "postcode": "5264",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.682635,
+    "longitude": 139.342158
+  },
+  {
+    "name": "Allendale East Area School",
+    "suburb": "ALLENDALE EAST",
+    "state": "SA",
+    "postcode": "5291",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -38.00299273,
+    "longitude": 140.7102306
+  },
+  {
+    "name": "Brinkworth Primary and Early Childhood Centre",
+    "suburb": "BRINKWORTH",
+    "state": "SA",
+    "postcode": "5464",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.68829943,
+    "longitude": 138.40421358
+  },
+  {
+    "name": "Cleve Area School",
+    "suburb": "CLEVE",
+    "state": "SA",
+    "postcode": "5640",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -33.699647,
+    "longitude": 136.497429
+  },
+  {
+    "name": "Cummins Area School",
+    "suburb": "CUMMINS",
+    "state": "SA",
+    "postcode": "5631",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.263356,
+    "longitude": 135.72233
+  },
+  {
+    "name": "Eudunda Area School",
+    "suburb": "EUDUNDA",
+    "state": "SA",
+    "postcode": "5374",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.183042,
+    "longitude": 139.091288
+  },
+  {
+    "name": "Karoonda Area School",
+    "suburb": "KAROONDA",
+    "state": "SA",
+    "postcode": "5307",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.092167,
+    "longitude": 139.89422
+  },
+  {
+    "name": "Keith Area School",
+    "suburb": "KEITH",
+    "state": "SA",
+    "postcode": "5267",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -36.099603,
+    "longitude": 140.351249
+  },
+  {
+    "name": "Kangaroo Island Community Education",
+    "suburb": "KINGSCOTE",
+    "state": "SA",
+    "postcode": "5223",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.650387,
+    "longitude": 137.633343
+  },
+  {
+    "name": "Lameroo Regional Community School",
+    "suburb": "LAMEROO",
+    "state": "SA",
+    "postcode": "5302",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.331434,
+    "longitude": 140.522579
+  },
+  {
+    "name": "Loxton Primary School",
+    "suburb": "LOXTON",
+    "state": "SA",
+    "postcode": "5333",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.451324,
+    "longitude": 140.567155
+  },
+  {
+    "name": "Central Yorke School",
+    "suburb": "MAITLAND",
+    "state": "SA",
+    "postcode": "5573",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.368261,
+    "longitude": 137.673481
+  },
+  {
+    "name": "Oakbank School",
+    "suburb": "OAKBANK",
+    "state": "SA",
+    "postcode": "5243",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.988726,
+    "longitude": 138.837232
+  },
+  {
+    "name": "Penola Primary School",
+    "suburb": "PENOLA",
+    "state": "SA",
+    "postcode": "5277",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.379147,
+    "longitude": 140.833229
+  },
+  {
+    "name": "Pinnaroo Primary School",
+    "suburb": "PINNAROO",
+    "state": "SA",
+    "postcode": "5304",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.255862,
+    "longitude": 140.907922
+  },
+  {
+    "name": "Wudinna Area School",
+    "suburb": "WUDINNA",
+    "state": "SA",
+    "postcode": "5652",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -33.044622,
+    "longitude": 135.462876
+  },
+  {
+    "name": "Yankalilla Area School",
+    "suburb": "YANKALILLA",
+    "state": "SA",
+    "postcode": "5203",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.4533,
+    "longitude": 138.333092
+  },
+  {
+    "name": "Yorketown Area School",
+    "suburb": "YORKETOWN",
+    "state": "SA",
+    "postcode": "5576",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.015376,
+    "longitude": 137.615442
+  },
+  {
+    "name": "Adelaide High School",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.925733,
+    "longitude": 138.586678
+  },
+  {
+    "name": "Balaklava High School",
+    "suburb": "BALAKLAVA",
+    "state": "SA",
+    "postcode": "5461",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.1503,
+    "longitude": 138.41511
+  },
+  {
+    "name": "Birdwood High School",
+    "suburb": "BIRDWOOD",
+    "state": "SA",
+    "postcode": "5234",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.821593,
+    "longitude": 138.959001
+  },
+  {
+    "name": "Booleroo Centre District School",
+    "suburb": "BOOLEROO CENTRE",
+    "state": "SA",
+    "postcode": "5482",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -32.8776,
+    "longitude": 138.35
+  },
+  {
+    "name": "Clare High School",
+    "suburb": "CLARE",
+    "state": "SA",
+    "postcode": "5453",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -33.822384,
+    "longitude": 138.596522
+  },
+  {
+    "name": "Gawler and District College B-12",
+    "suburb": "EVANSTON",
+    "state": "SA",
+    "postcode": "5116",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.619476,
+    "longitude": 138.736184
+  },
+  {
+    "name": "Gladstone High School",
+    "suburb": "GLADSTONE",
+    "state": "SA",
+    "postcode": "5473",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -33.27380028,
+    "longitude": 138.35234161
+  },
+  {
+    "name": "Jamestown Community School",
+    "suburb": "JAMESTOWN",
+    "state": "SA",
+    "postcode": "5491",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -33.204904,
+    "longitude": 138.609566
+  },
+  {
+    "name": "Kadina Memorial School",
+    "suburb": "KADINA",
+    "state": "SA",
+    "postcode": "5554",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -33.9627,
+    "longitude": 137.708
+  },
+  {
+    "name": "Kapunda High School",
+    "suburb": "KAPUNDA",
+    "state": "SA",
+    "postcode": "5373",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.332945,
+    "longitude": 138.910495
+  },
+  {
+    "name": "Millicent High School",
+    "suburb": "MILLICENT",
+    "state": "SA",
+    "postcode": "5280",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -37.590971,
+    "longitude": 140.358711
+  },
+  {
+    "name": "Minlaton District School",
+    "suburb": "MINLATON",
+    "state": "SA",
+    "postcode": "5575",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.765873,
+    "longitude": 137.593581
+  },
+  {
+    "name": "Mount Barker High School",
+    "suburb": "MOUNT BARKER",
+    "state": "SA",
+    "postcode": "5251",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.074991,
+    "longitude": 138.85705
+  },
+  {
+    "name": "Mount Gambier High School",
+    "suburb": "MOUNT GAMBIER",
+    "state": "SA",
+    "postcode": "5290",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -37.826147,
+    "longitude": 140.765689
+  },
+  {
+    "name": "Murray Bridge High School",
+    "suburb": "MURRAY BRIDGE",
+    "state": "SA",
+    "postcode": "5253",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.135051,
+    "longitude": 139.285294
+  },
+  {
+    "name": "Naracoorte High School",
+    "suburb": "NARACOORTE",
+    "state": "SA",
+    "postcode": "5271",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -36.948548,
+    "longitude": 140.726873
+  },
+  {
+    "name": "Norwood International High School",
+    "suburb": "MAGILL",
+    "state": "SA",
+    "postcode": "5072",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.918101,
+    "longitude": 138.672233
+  },
+  {
+    "name": "Nuriootpa High School",
+    "suburb": "NURIOOTPA",
+    "state": "SA",
+    "postcode": "5355",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.470127,
+    "longitude": 139.003304
+  },
+  {
+    "name": "Peterborough High School",
+    "suburb": "PETERBOROUGH",
+    "state": "SA",
+    "postcode": "5422",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -32.9787,
+    "longitude": 138.836212
+  },
+  {
+    "name": "Port Augusta Secondary School",
+    "suburb": "PORT AUGUSTA",
+    "state": "SA",
+    "postcode": "5700",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -32.493756,
+    "longitude": 137.768758
+  },
+  {
+    "name": "Port Lincoln High School",
+    "suburb": "PORT LINCOLN",
+    "state": "SA",
+    "postcode": "5606",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.723847,
+    "longitude": 135.853942
+  },
+  {
+    "name": "John Pirie Secondary School",
+    "suburb": "PORT PIRIE",
+    "state": "SA",
+    "postcode": "5540",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -33.183024,
+    "longitude": 138.010153
+  },
+  {
+    "name": "Quorn Area School",
+    "suburb": "QUORN",
+    "state": "SA",
+    "postcode": "5433",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -32.348904,
+    "longitude": 138.036572
+  },
+  {
+    "name": "Renmark High School",
+    "suburb": "RENMARK",
+    "state": "SA",
+    "postcode": "5341",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.172088,
+    "longitude": 140.741263
+  },
+  {
+    "name": "Riverton and District High School",
+    "suburb": "RIVERTON",
+    "state": "SA",
+    "postcode": "5412",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.156173,
+    "longitude": 138.749643
+  },
+  {
+    "name": "Unley High School",
+    "suburb": "NETHERBY",
+    "state": "SA",
+    "postcode": "5062",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.970162,
+    "longitude": 138.620336
+  },
+  {
+    "name": "Urrbrae Agricultural High School",
+    "suburb": "NETHERBY",
+    "state": "SA",
+    "postcode": "5062",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.966958,
+    "longitude": 138.625341
+  },
+  {
+    "name": "Victor Harbor High School",
+    "suburb": "VICTOR HARBOR",
+    "state": "SA",
+    "postcode": "5211",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.556148,
+    "longitude": 138.611226
+  },
+  {
+    "name": "Waikerie High School",
+    "suburb": "WAIKERIE",
+    "state": "SA",
+    "postcode": "5330",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.184584,
+    "longitude": 139.973102
+  },
+  {
+    "name": "Woodville High School",
+    "suburb": "ST CLAIR",
+    "state": "SA",
+    "postcode": "5011",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.872943,
+    "longitude": 138.540808
+  },
+  {
+    "name": "Brighton Secondary School",
+    "suburb": "NORTH BRIGHTON",
+    "state": "SA",
+    "postcode": "5048",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.003619,
+    "longitude": 138.519676
+  },
+  {
+    "name": "Findon High School",
+    "suburb": "FINDON",
+    "state": "SA",
+    "postcode": "5023",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.898332,
+    "longitude": 138.526613
+  },
+  {
+    "name": "Henley High School",
+    "suburb": "HENLEY BEACH",
+    "state": "SA",
+    "postcode": "5022",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.92287645,
+    "longitude": 138.50126862
+  },
+  {
+    "name": "Le Fevre High School",
+    "suburb": "SEMAPHORE SOUTH",
+    "state": "SA",
+    "postcode": "5019",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.845622,
+    "longitude": 138.484995
+  },
+  {
+    "name": "Marryatville High School",
+    "suburb": "MARRYATVILLE",
+    "state": "SA",
+    "postcode": "5068",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.9291,
+    "longitude": 138.645443
+  },
+  {
+    "name": "Whyalla High School",
+    "suburb": "WHYALLA",
+    "state": "SA",
+    "postcode": "5600",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -33.03941218,
+    "longitude": 137.58166046
+  },
+  {
+    "name": "Hamilton Secondary College",
+    "suburb": "MITCHELL PARK",
+    "state": "SA",
+    "postcode": "5043",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.99837,
+    "longitude": 138.560781
+  },
+  {
+    "name": "Elizabeth North Primary School",
+    "suburb": "ELIZABETH NORTH",
+    "state": "SA",
+    "postcode": "5113",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.703341,
+    "longitude": 138.674156
+  },
+  {
+    "name": "The Grove Education Centre",
+    "suburb": "WOODVILLE",
+    "state": "SA",
+    "postcode": "5011",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.873425,
+    "longitude": 138.544354
+  },
+  {
+    "name": "Raukkan Aboriginal School",
+    "suburb": "RAUKKAN",
+    "state": "SA",
+    "postcode": "5259",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.50823405,
+    "longitude": 139.13156223
+  },
+  {
+    "name": "Open Access College",
+    "suburb": "MARDEN",
+    "state": "SA",
+    "postcode": "5070",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.891954,
+    "longitude": 138.63523
+  },
+  {
+    "name": "Salisbury High School",
+    "suburb": "SALISBURY NORTH",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.755983,
+    "longitude": 138.640772
+  },
+  {
+    "name": "Seaview High School",
+    "suburb": "SEACOMBE HEIGHTS",
+    "state": "SA",
+    "postcode": "5047",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.030039,
+    "longitude": 138.547313
+  },
+  {
+    "name": "Bordertown High School",
+    "suburb": "BORDERTOWN",
+    "state": "SA",
+    "postcode": "5268",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -36.31465,
+    "longitude": 140.76598
+  },
+  {
+    "name": "Loxton High School",
+    "suburb": "LOXTON",
+    "state": "SA",
+    "postcode": "5333",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.443732,
+    "longitude": 140.584808
+  },
+  {
+    "name": "Elizabeth Grove Primary School",
+    "suburb": "ELIZABETH GROVE",
+    "state": "SA",
+    "postcode": "5112",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.731832,
+    "longitude": 138.671495
+  },
+  {
+    "name": "Klemzig Primary School",
+    "suburb": "KLEMZIG",
+    "state": "SA",
+    "postcode": "5087",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.877176,
+    "longitude": 138.637665
+  },
+  {
+    "name": "Kirton Point Primary School",
+    "suburb": "PORT LINCOLN",
+    "state": "SA",
+    "postcode": "5606",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.731891,
+    "longitude": 135.868237
+  },
+  {
+    "name": "Mitcham Girls High School",
+    "suburb": "KINGSWOOD",
+    "state": "SA",
+    "postcode": "5062",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.969865,
+    "longitude": 138.610036
+  },
+  {
+    "name": "Blackwood High School",
+    "suburb": "EDEN HILLS",
+    "state": "SA",
+    "postcode": "5050",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.026849,
+    "longitude": 138.605897
+  },
+  {
+    "name": "Avenues College",
+    "suburb": "WINDSOR GARDENS",
+    "state": "SA",
+    "postcode": "5087",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.861073,
+    "longitude": 138.656806
+  },
+  {
+    "name": "Plympton International College",
+    "suburb": "PLYMPTON",
+    "state": "SA",
+    "postcode": "5038",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.964442,
+    "longitude": 138.547829
+  },
+  {
+    "name": "Ocean View P-12 College",
+    "suburb": "TAPEROO",
+    "state": "SA",
+    "postcode": "5017",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.805538,
+    "longitude": 138.498125
+  },
+  {
+    "name": "Willunga High School",
+    "suburb": "WILLUNGA",
+    "state": "SA",
+    "postcode": "5172",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.263056,
+    "longitude": 138.555471
+  },
+  {
+    "name": "Playford International College",
+    "suburb": "ELIZABETH",
+    "state": "SA",
+    "postcode": "5112",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.723738,
+    "longitude": 138.665902
+  },
+  {
+    "name": "Lockleys North Primary School",
+    "suburb": "LOCKLEYS",
+    "state": "SA",
+    "postcode": "5032",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.920591,
+    "longitude": 138.537668
+  },
+  {
+    "name": "Seacliff Primary School",
+    "suburb": "SEACLIFF",
+    "state": "SA",
+    "postcode": "5049",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.037444,
+    "longitude": 138.523767
+  },
+  {
+    "name": "Coober Pedy Area School",
+    "suburb": "COOBER PEDY",
+    "state": "SA",
+    "postcode": "5723",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -29.012416,
+    "longitude": 134.752049
+  },
+  {
+    "name": "Christies Beach Primary School",
+    "suburb": "CHRISTIES BEACH",
+    "state": "SA",
+    "postcode": "5165",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.138009,
+    "longitude": 138.479076
+  },
+  {
+    "name": "Stradbroke School",
+    "suburb": "ROSTREVOR",
+    "state": "SA",
+    "postcode": "5073",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.89348,
+    "longitude": 138.684457
+  },
+  {
+    "name": "Ingle Farm East Primary School",
+    "suburb": "INGLE FARM",
+    "state": "SA",
+    "postcode": "5098",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.833826,
+    "longitude": 138.651948
+  },
+  {
+    "name": "Heathfield High School",
+    "suburb": "HEATHFIELD",
+    "state": "SA",
+    "postcode": "5153",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.020536,
+    "longitude": 138.712609
+  },
+  {
+    "name": "Glenunga International High School",
+    "suburb": "GLENUNGA",
+    "state": "SA",
+    "postcode": "5064",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.949336,
+    "longitude": 138.635192
+  },
+  {
+    "name": "Grant High School",
+    "suburb": "MOUNT GAMBIER",
+    "state": "SA",
+    "postcode": "5290",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -37.84719,
+    "longitude": 140.796014
+  },
+  {
+    "name": "Penola High School",
+    "suburb": "PENOLA",
+    "state": "SA",
+    "postcode": "5277",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -37.373662,
+    "longitude": 140.843789
+  },
+  {
+    "name": "Clovelly Park Primary School",
+    "suburb": "CLOVELLY PARK",
+    "state": "SA",
+    "postcode": "5042",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.998429,
+    "longitude": 138.565416
+  },
+  {
+    "name": "Warradale Primary School",
+    "suburb": "WARRADALE",
+    "state": "SA",
+    "postcode": "5046",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.003708,
+    "longitude": 138.537005
+  },
+  {
+    "name": "Fulham Gardens Primary School",
+    "suburb": "HENLEY BEACH",
+    "state": "SA",
+    "postcode": "5022",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.912392,
+    "longitude": 138.503289
+  },
+  {
+    "name": "Para Hills School",
+    "suburb": "PARA HILLS",
+    "state": "SA",
+    "postcode": "5096",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.812358,
+    "longitude": 138.653129
+  },
+  {
+    "name": "Naracoorte South Primary School",
+    "suburb": "NARACOORTE",
+    "state": "SA",
+    "postcode": "5271",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -36.97269,
+    "longitude": 140.746742
+  },
+  {
+    "name": "Hincks Avenue Primary School",
+    "suburb": "WHYALLA NORRIE",
+    "state": "SA",
+    "postcode": "5608",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.018515,
+    "longitude": 137.544825
+  },
+  {
+    "name": "Seaton High School",
+    "suburb": "SEATON",
+    "state": "SA",
+    "postcode": "5023",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.886112,
+    "longitude": 138.505556
+  },
+  {
+    "name": "Elizabeth East Primary School",
+    "suburb": "ELIZABETH EAST",
+    "state": "SA",
+    "postcode": "5112",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.725069,
+    "longitude": 138.677471
+  },
+  {
+    "name": "Elizabeth Downs Primary School",
+    "suburb": "ELIZABETH DOWNS",
+    "state": "SA",
+    "postcode": "5113",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.698783,
+    "longitude": 138.69474
+  },
+  {
+    "name": "Elizabeth Park Primary School",
+    "suburb": "ELIZABETH PARK",
+    "state": "SA",
+    "postcode": "5113",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.712946,
+    "longitude": 138.684899
+  },
+  {
+    "name": "Elizabeth Vale Primary School",
+    "suburb": "ELIZABETH VALE",
+    "state": "SA",
+    "postcode": "5112",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.746118,
+    "longitude": 138.669137
+  },
+  {
+    "name": "Murray Bridge South Primary School",
+    "suburb": "MURRAY BRIDGE",
+    "state": "SA",
+    "postcode": "5253",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.132254,
+    "longitude": 139.282374
+  },
+  {
+    "name": "Clapham Primary School",
+    "suburb": "CLAPHAM",
+    "state": "SA",
+    "postcode": "5062",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.99406,
+    "longitude": 138.604347
+  },
+  {
+    "name": "Mount Gambier North Primary School",
+    "suburb": "MOUNT GAMBIER",
+    "state": "SA",
+    "postcode": "5290",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.81683,
+    "longitude": 140.775534
+  },
+  {
+    "name": "Kangaroo Inn Area School",
+    "suburb": "KANGAROO INN",
+    "state": "SA",
+    "postcode": "5280",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -37.337672,
+    "longitude": 140.244361
+  },
+  {
+    "name": "Riverland Special School",
+    "suburb": "BERRI",
+    "state": "SA",
+    "postcode": "5343",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.278394549839,
+    "longitude": 140.6106734
+  },
+  {
+    "name": "Modbury High School",
+    "suburb": "MODBURY",
+    "state": "SA",
+    "postcode": "5092",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.836789,
+    "longitude": 138.697008
+  },
+  {
+    "name": "Underdale High School",
+    "suburb": "UNDERDALE",
+    "state": "SA",
+    "postcode": "5032",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.918948,
+    "longitude": 138.544174
+  },
+  {
+    "name": "Vale Park Primary School",
+    "suburb": "VALE PARK",
+    "state": "SA",
+    "postcode": "5081",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.885256,
+    "longitude": 138.626323
+  },
+  {
+    "name": "Fisk Street Primary School",
+    "suburb": "WHYALLA NORRIE",
+    "state": "SA",
+    "postcode": "5608",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.0166545,
+    "longitude": 137.53235498
+  },
+  {
+    "name": "Newbery Park Primary School",
+    "suburb": "MILLICENT",
+    "state": "SA",
+    "postcode": "5280",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.60813772,
+    "longitude": 140.36250817
+  },
+  {
+    "name": "East Torrens Primary School",
+    "suburb": "HECTORVILLE",
+    "state": "SA",
+    "postcode": "5073",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.889946,
+    "longitude": 138.666334
+  },
+  {
+    "name": "Hawthorndene Primary School",
+    "suburb": "HAWTHORNDENE",
+    "state": "SA",
+    "postcode": "5051",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.020774,
+    "longitude": 138.636088
+  },
+  {
+    "name": "Paradise Primary School",
+    "suburb": "PARADISE",
+    "state": "SA",
+    "postcode": "5075",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.870802,
+    "longitude": 138.68457
+  },
+  {
+    "name": "Springbank Secondary College",
+    "suburb": "PASADENA",
+    "state": "SA",
+    "postcode": "5042",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.993333,
+    "longitude": 138.590102
+  },
+  {
+    "name": "Craigmore High School",
+    "suburb": "BLAKEVIEW",
+    "state": "SA",
+    "postcode": "5114",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.69116,
+    "longitude": 138.701176
+  },
+  {
+    "name": "Airdale Primary School",
+    "suburb": "PORT PIRIE",
+    "state": "SA",
+    "postcode": "5540",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.200515,
+    "longitude": 137.990371
+  },
+  {
+    "name": "Carlton School",
+    "suburb": "PORT AUGUSTA",
+    "state": "SA",
+    "postcode": "5700",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -32.489832,
+    "longitude": 137.77222
+  },
+  {
+    "name": "Dernancourt School",
+    "suburb": "DERNANCOURT",
+    "state": "SA",
+    "postcode": "5075",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.861164,
+    "longitude": 138.673148
+  },
+  {
+    "name": "Brahma Lodge Primary School",
+    "suburb": "BRAHMA LODGE",
+    "state": "SA",
+    "postcode": "5109",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.775528,
+    "longitude": 138.650326
+  },
+  {
+    "name": "Seaview Downs Primary School",
+    "suburb": "SEAVIEW DOWNS",
+    "state": "SA",
+    "postcode": "5049",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.041379,
+    "longitude": 138.536114
+  },
+  {
+    "name": "Mawson Lakes School",
+    "suburb": "MAWSON LAKES",
+    "state": "SA",
+    "postcode": "5095",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.809171,
+    "longitude": 138.61436
+  },
+  {
+    "name": "Augusta Park Primary School",
+    "suburb": "PORT AUGUSTA",
+    "state": "SA",
+    "postcode": "5700",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -32.495595,
+    "longitude": 137.784949
+  },
+  {
+    "name": "Marion Primary School",
+    "suburb": "MARION",
+    "state": "SA",
+    "postcode": "5043",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.00407914,
+    "longitude": 138.55564467
+  },
+  {
+    "name": "Wandana Primary School",
+    "suburb": "GILLES PLAINS",
+    "state": "SA",
+    "postcode": "5086",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.849122,
+    "longitude": 138.661511
+  },
+  {
+    "name": "Kidman Park Primary School",
+    "suburb": "KIDMAN PARK",
+    "state": "SA",
+    "postcode": "5025",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.911672,
+    "longitude": 138.523797
+  },
+  {
+    "name": "Adelaide East Education Centre",
+    "suburb": "CAMPBELLTOWN",
+    "state": "SA",
+    "postcode": "5074",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.873042,
+    "longitude": 138.672971
+  },
+  {
+    "name": "Yalata Anangu School",
+    "suburb": "YALATA",
+    "state": "SA",
+    "postcode": "5690",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -31.480046,
+    "longitude": 131.843571
+  },
+  {
+    "name": "Amata Anangu School",
+    "suburb": "AMATA",
+    "state": "SA",
+    "postcode": "5710",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -26.152169,
+    "longitude": 131.137746
+  },
+  {
+    "name": "Koonibba Aboriginal School",
+    "suburb": "KOONIBBA",
+    "state": "SA",
+    "postcode": "5690",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -31.902744,
+    "longitude": 133.425975
+  },
+  {
+    "name": "West Beach Primary School",
+    "suburb": "WEST BEACH",
+    "state": "SA",
+    "postcode": "5024",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.937821,
+    "longitude": 138.508809
+  },
+  {
+    "name": "Gawler East Primary School",
+    "suburb": "GAWLER EAST",
+    "state": "SA",
+    "postcode": "5118",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.598085,
+    "longitude": 138.761294
+  },
+  {
+    "name": "Oak Valley Aboriginal School",
+    "suburb": "OAK VALLEY",
+    "state": "SA",
+    "postcode": "5690",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -29.402589,
+    "longitude": 130.738549
+  },
+  {
+    "name": "Salisbury East High School",
+    "suburb": "SALISBURY EAST",
+    "state": "SA",
+    "postcode": "5109",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.775903,
+    "longitude": 138.667185
+  },
+  {
+    "name": "Christies Beach High School",
+    "suburb": "CHRISTIE DOWNS",
+    "state": "SA",
+    "postcode": "5164",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.136982,
+    "longitude": 138.497694
+  },
+  {
+    "name": "SA School and Services for Vision Impaired",
+    "suburb": "PARK HOLME",
+    "state": "SA",
+    "postcode": "5043",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.991605,
+    "longitude": 138.555007
+  },
+  {
+    "name": "Banksia Park School R-6",
+    "suburb": "BANKSIA PARK",
+    "state": "SA",
+    "postcode": "5091",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.808854,
+    "longitude": 138.72609
+  },
+  {
+    "name": "Charles Campbell College",
+    "suburb": "PARADISE",
+    "state": "SA",
+    "postcode": "5075",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.8746243455682,
+    "longitude": 138.673265830689
+  },
+  {
+    "name": "Ernabella Anangu School",
+    "suburb": "GHAN",
+    "state": "SA",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -26.283792,
+    "longitude": 132.135237
+  },
+  {
+    "name": "Taparra Primary School",
+    "suburb": "ELIZABETH DOWNS",
+    "state": "SA",
+    "postcode": "5113",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.706102,
+    "longitude": 138.685487
+  },
+  {
+    "name": "East Marden Primary School",
+    "suburb": "CAMPBELLTOWN",
+    "state": "SA",
+    "postcode": "5074",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.881964,
+    "longitude": 138.65353
+  },
+  {
+    "name": "Reynella South Primary School",
+    "suburb": "REYNELLA",
+    "state": "SA",
+    "postcode": "5161",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.103687,
+    "longitude": 138.524457
+  },
+  {
+    "name": "Para Hills West Primary School",
+    "suburb": "PARA HILLS WEST",
+    "state": "SA",
+    "postcode": "5096",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.80070589532208,
+    "longitude": 138.6526763551865
+  },
+  {
+    "name": "Modbury South Primary School",
+    "suburb": "HOPE VALLEY",
+    "state": "SA",
+    "postcode": "5090",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.840321,
+    "longitude": 138.697193
+  },
+  {
+    "name": "Para Vista Primary School",
+    "suburb": "PARA VISTA",
+    "state": "SA",
+    "postcode": "5093",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.830178,
+    "longitude": 138.662895
+  },
+  {
+    "name": "Ridgehaven Primary School",
+    "suburb": "RIDGEHAVEN",
+    "state": "SA",
+    "postcode": "5097",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.817978,
+    "longitude": 138.710285
+  },
+  {
+    "name": "Hallett Cove East Primary School",
+    "suburb": "HALLETT COVE",
+    "state": "SA",
+    "postcode": "5158",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.069288,
+    "longitude": 138.518245
+  },
+  {
+    "name": "Hallett Cove South Primary School",
+    "suburb": "HALLETT COVE",
+    "state": "SA",
+    "postcode": "5158",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.082581,
+    "longitude": 138.503953
+  },
+  {
+    "name": "Woodend Primary School",
+    "suburb": "SHEIDOW PARK",
+    "state": "SA",
+    "postcode": "5158",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.079379,
+    "longitude": 138.533847
+  },
+  {
+    "name": "Pimpala Primary School",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.112846,
+    "longitude": 138.530333
+  },
+  {
+    "name": "O'Sullivan Beach Primary School",
+    "suburb": "O'SULLIVAN BEACH",
+    "state": "SA",
+    "postcode": "5166",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.125399,
+    "longitude": 138.479637
+  },
+  {
+    "name": "Hackham East Primary School",
+    "suburb": "HACKHAM",
+    "state": "SA",
+    "postcode": "5163",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.13973736,
+    "longitude": 138.53342158
+  },
+  {
+    "name": "Huntfield Heights School P-6",
+    "suburb": "HUNTFIELD HEIGHTS",
+    "state": "SA",
+    "postcode": "5163",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.15342,
+    "longitude": 138.518018
+  },
+  {
+    "name": "Noarlunga Downs Primary School",
+    "suburb": "NOARLUNGA DOWNS",
+    "state": "SA",
+    "postcode": "5168",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.150105,
+    "longitude": 138.496303
+  },
+  {
+    "name": "Moana Primary School",
+    "suburb": "SEAFORD",
+    "state": "SA",
+    "postcode": "5169",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.191836,
+    "longitude": 138.474624
+  },
+  {
+    "name": "Redwood Park Primary School",
+    "suburb": "REDWOOD PARK",
+    "state": "SA",
+    "postcode": "5097",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.815018,
+    "longitude": 138.701072
+  },
+  {
+    "name": "St Agnes School P - 6",
+    "suburb": "ST AGNES",
+    "state": "SA",
+    "postcode": "5097",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.83106,
+    "longitude": 138.718391
+  },
+  {
+    "name": "Lonsdale Heights Primary School",
+    "suburb": "CHRISTIE DOWNS",
+    "state": "SA",
+    "postcode": "5164",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.124772,
+    "longitude": 138.501556
+  },
+  {
+    "name": "Paralowie School",
+    "suburb": "PARALOWIE",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.75282923,
+    "longitude": 138.62089416
+  },
+  {
+    "name": "Surrey Downs Primary School",
+    "suburb": "SURREY DOWNS",
+    "state": "SA",
+    "postcode": "5126",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.79966396,
+    "longitude": 138.71345957
+  },
+  {
+    "name": "Fairview Park Primary School",
+    "suburb": "FAIRVIEW PARK",
+    "state": "SA",
+    "postcode": "5126",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.797794,
+    "longitude": 138.731846
+  },
+  {
+    "name": "Banksia Park International High School",
+    "suburb": "BANKSIA PARK",
+    "state": "SA",
+    "postcode": "5091",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.814401,
+    "longitude": 138.726168
+  },
+  {
+    "name": "Miltaburra Area School",
+    "suburb": "WIRRULLA",
+    "state": "SA",
+    "postcode": "5661",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -32.375617,
+    "longitude": 134.33113
+  },
+  {
+    "name": "Karcultaby Area School",
+    "suburb": "KARCULTABY",
+    "state": "SA",
+    "postcode": "5654",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -32.760606,
+    "longitude": 134.974385
+  },
+  {
+    "name": "Long Street Primary School",
+    "suburb": "WHYALLA NORRIE",
+    "state": "SA",
+    "postcode": "5608",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -33.038921,
+    "longitude": 137.533009
+  },
+  {
+    "name": "East Para Primary School",
+    "suburb": "PARA HILLS",
+    "state": "SA",
+    "postcode": "5096",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.81765,
+    "longitude": 138.666078
+  },
+  {
+    "name": "Karrendi Primary School",
+    "suburb": "PARAFIELD GARDENS",
+    "state": "SA",
+    "postcode": "5107",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.790544,
+    "longitude": 138.618502
+  },
+  {
+    "name": "Bellevue Heights Primary School",
+    "suburb": "BELLEVUE HEIGHTS",
+    "state": "SA",
+    "postcode": "5050",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.028955,
+    "longitude": 138.588869
+  },
+  {
+    "name": "Parafield Gardens High School",
+    "suburb": "PARAFIELD GARDENS",
+    "state": "SA",
+    "postcode": "5107",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.786022,
+    "longitude": 138.618914
+  },
+  {
+    "name": "Salisbury Park Primary School",
+    "suburb": "SALISBURY PARK",
+    "state": "SA",
+    "postcode": "5109",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.759701,
+    "longitude": 138.668718
+  },
+  {
+    "name": "Flaxmill School P-6",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.127831,
+    "longitude": 138.519309
+  },
+  {
+    "name": "Thorndon Park Primary School",
+    "suburb": "ATHELSTONE",
+    "state": "SA",
+    "postcode": "5076",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.884079,
+    "longitude": 138.693612
+  },
+  {
+    "name": "Lincoln Gardens Primary School",
+    "suburb": "PORT LINCOLN",
+    "state": "SA",
+    "postcode": "5606",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.741991,
+    "longitude": 135.847525
+  },
+  {
+    "name": "Ingle Farm Primary School",
+    "suburb": "INGLE FARM",
+    "state": "SA",
+    "postcode": "5098",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.827631,
+    "longitude": 138.643207
+  },
+  {
+    "name": "Braeview School",
+    "suburb": "HAPPY VALLEY",
+    "state": "SA",
+    "postcode": "5159",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.080686,
+    "longitude": 138.554101
+  },
+  {
+    "name": "Fulham North Primary School",
+    "suburb": "HENLEY BEACH",
+    "state": "SA",
+    "postcode": "5022",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.919552,
+    "longitude": 138.505142
+  },
+  {
+    "name": "Mannum Community College",
+    "suburb": "MANNUM",
+    "state": "SA",
+    "postcode": "5238",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.912544,
+    "longitude": 139.303495
+  },
+  {
+    "name": "Indulkana Anangu School",
+    "suburb": "INDULKANA",
+    "state": "SA",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -26.965582,
+    "longitude": 133.310573
+  },
+  {
+    "name": "Salisbury Heights Primary School",
+    "suburb": "SALISBURY HEIGHTS",
+    "state": "SA",
+    "postcode": "5109",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.758984,
+    "longitude": 138.678709
+  },
+  {
+    "name": "North Ingle School",
+    "suburb": "INGLE FARM",
+    "state": "SA",
+    "postcode": "5098",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.819255,
+    "longitude": 138.64517
+  },
+  {
+    "name": "Valley View Secondary School",
+    "suburb": "PARA VISTA",
+    "state": "SA",
+    "postcode": "5093",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.83428,
+    "longitude": 138.656585
+  },
+  {
+    "name": "Morphett Vale East School",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.121601,
+    "longitude": 138.530921
+  },
+  {
+    "name": "Salisbury Downs Primary School",
+    "suburb": "SALISBURY DOWNS",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.771193,
+    "longitude": 138.622667
+  },
+  {
+    "name": "Stuart High School",
+    "suburb": "WHYALLA STUART",
+    "state": "SA",
+    "postcode": "5608",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -33.015064,
+    "longitude": 137.517105
+  },
+  {
+    "name": "Fregon Anangu School",
+    "suburb": "FREGON",
+    "state": "SA",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -26.765074,
+    "longitude": 132.028403
+  },
+  {
+    "name": "Gulfview Heights Primary School",
+    "suburb": "GULFVIEW HEIGHTS",
+    "state": "SA",
+    "postcode": "5096",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.792078,
+    "longitude": 138.668666
+  },
+  {
+    "name": "Westport Primary School",
+    "suburb": "SEMAPHORE PARK",
+    "state": "SA",
+    "postcode": "5019",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.855007,
+    "longitude": 138.491158
+  },
+  {
+    "name": "South Port Primary School",
+    "suburb": "PORT NOARLUNGA SOUTH",
+    "state": "SA",
+    "postcode": "5167",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.175691,
+    "longitude": 138.472006
+  },
+  {
+    "name": "Glencoe Central Primary School",
+    "suburb": "GLENCOE",
+    "state": "SA",
+    "postcode": "5291",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.669641,
+    "longitude": 140.594383
+  },
+  {
+    "name": "Craigburn Primary School",
+    "suburb": "FLAGSTAFF HILL",
+    "state": "SA",
+    "postcode": "5159",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.056187,
+    "longitude": 138.615495
+  },
+  {
+    "name": "West Lakes Shore School",
+    "suburb": "WEST LAKES SHORE",
+    "state": "SA",
+    "postcode": "5020",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.863454,
+    "longitude": 138.481808
+  },
+  {
+    "name": "Torrensville Primary School",
+    "suburb": "TORRENSVILLE",
+    "state": "SA",
+    "postcode": "5031",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.919368,
+    "longitude": 138.556719
+  },
+  {
+    "name": "Warriappendi Secondary School",
+    "suburb": "MARLESTON",
+    "state": "SA",
+    "postcode": "5033",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.942677,
+    "longitude": 138.570592
+  },
+  {
+    "name": "Kilparrin Teaching and Assessment School and Services",
+    "suburb": "PARK HOLME",
+    "state": "SA",
+    "postcode": "5043",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.991605,
+    "longitude": 138.555007
+  },
+  {
+    "name": "North Haven School",
+    "suburb": "NORTH HAVEN",
+    "state": "SA",
+    "postcode": "5018",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.790181,
+    "longitude": 138.497846
+  },
+  {
+    "name": "Fraser Park Primary School",
+    "suburb": "MURRAY BRIDGE",
+    "state": "SA",
+    "postcode": "5253",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.140404,
+    "longitude": 139.281525
+  },
+  {
+    "name": "Flinders View Primary School",
+    "suburb": "PORT AUGUSTA WEST",
+    "state": "SA",
+    "postcode": "5700",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -32.472843,
+    "longitude": 137.753921
+  },
+  {
+    "name": "Port Augusta Special School",
+    "suburb": "PORT AUGUSTA",
+    "state": "SA",
+    "postcode": "5700",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -32.47313321,
+    "longitude": 137.75215553
+  },
+  {
+    "name": "Modbury Special School",
+    "suburb": "HOPE VALLEY",
+    "state": "SA",
+    "postcode": "5090",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.840321,
+    "longitude": 138.697193
+  },
+  {
+    "name": "Adelaide West Special Education Centre",
+    "suburb": "TAPEROO",
+    "state": "SA",
+    "postcode": "5017",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.801247,
+    "longitude": 138.494073
+  },
+  {
+    "name": "Errington Special Education Centre",
+    "suburb": "PLYMPTON",
+    "state": "SA",
+    "postcode": "5038",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.962236,
+    "longitude": 138.547561
+  },
+  {
+    "name": "Bowden Brompton Community School",
+    "suburb": "BROMPTON",
+    "state": "SA",
+    "postcode": "5007",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.895043,
+    "longitude": 138.580071
+  },
+  {
+    "name": "Riverdale Primary School",
+    "suburb": "SALISBURY DOWNS",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.766448,
+    "longitude": 138.613754
+  },
+  {
+    "name": "The Heights School",
+    "suburb": "MODBURY HEIGHTS",
+    "state": "SA",
+    "postcode": "5092",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.811143,
+    "longitude": 138.682725
+  },
+  {
+    "name": "Burra Community School",
+    "suburb": "BURRA",
+    "state": "SA",
+    "postcode": "5417",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -33.676848,
+    "longitude": 138.93781
+  },
+  {
+    "name": "Craigmore South Primary School",
+    "suburb": "CRAIGMORE",
+    "state": "SA",
+    "postcode": "5114",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.70978,
+    "longitude": 138.706148
+  },
+  {
+    "name": "Stirling North Primary School",
+    "suburb": "STIRLING NORTH",
+    "state": "SA",
+    "postcode": "5710",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -32.513732,
+    "longitude": 137.837712
+  },
+  {
+    "name": "Munno Para Primary School",
+    "suburb": "MUNNO PARA",
+    "state": "SA",
+    "postcode": "5115",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.669751,
+    "longitude": 138.700613
+  },
+  {
+    "name": "Moonta Area School",
+    "suburb": "MOONTA",
+    "state": "SA",
+    "postcode": "5558",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.070885,
+    "longitude": 137.59135
+  },
+  {
+    "name": "Pipalyatjara Anangu School",
+    "suburb": "PIPALYATJARA",
+    "state": "SA",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -26.162537,
+    "longitude": 129.172134
+  },
+  {
+    "name": "Mimili Anangu School",
+    "suburb": "MIMILI",
+    "state": "SA",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -27.006258,
+    "longitude": 132.708658
+  },
+  {
+    "name": "Sheidow Park Primary School",
+    "suburb": "SHEIDOW PARK",
+    "state": "SA",
+    "postcode": "5158",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.071074,
+    "longitude": 138.533052
+  },
+  {
+    "name": "Mount Barker South Primary School",
+    "suburb": "MOUNT BARKER",
+    "state": "SA",
+    "postcode": "5251",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.080093,
+    "longitude": 138.859874
+  },
+  {
+    "name": "Ardtornish Primary School",
+    "suburb": "ST AGNES",
+    "state": "SA",
+    "postcode": "5097",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.833595,
+    "longitude": 138.704599
+  },
+  {
+    "name": "Gordon Education Centre",
+    "suburb": "MOUNT GAMBIER",
+    "state": "SA",
+    "postcode": "5290",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -37.825123,
+    "longitude": 140.768224
+  },
+  {
+    "name": "Mulga Street Primary School",
+    "suburb": "MOUNT GAMBIER",
+    "state": "SA",
+    "postcode": "5290",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.811663,
+    "longitude": 140.759988
+  },
+  {
+    "name": "Thiele Primary School",
+    "suburb": "ABERFOYLE PARK",
+    "state": "SA",
+    "postcode": "5159",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.067805,
+    "longitude": 138.594104
+  },
+  {
+    "name": "Aberfoyle Park High School",
+    "suburb": "ABERFOYLE PARK",
+    "state": "SA",
+    "postcode": "5159",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.073158,
+    "longitude": 138.594931
+  },
+  {
+    "name": "Adelaide Secondary School of English",
+    "suburb": "WEST CROYDON",
+    "state": "SA",
+    "postcode": "5008",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.886429,
+    "longitude": 138.566342
+  },
+  {
+    "name": "Kenmore Park Anangu School",
+    "suburb": "ALICE SPRINGS",
+    "state": "SA",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -26.327188,
+    "longitude": 132.446337
+  },
+  {
+    "name": "Woodcroft Primary School",
+    "suburb": "WOODCROFT",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.10505,
+    "longitude": 138.556331
+  },
+  {
+    "name": "The Pines School",
+    "suburb": "PARAFIELD GARDENS",
+    "state": "SA",
+    "postcode": "5107",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.77288,
+    "longitude": 138.607741
+  },
+  {
+    "name": "Kaurna Plains School",
+    "suburb": "ELIZABETH",
+    "state": "SA",
+    "postcode": "5112",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.725693,
+    "longitude": 138.664561
+  },
+  {
+    "name": "Port Lincoln Special School",
+    "suburb": "PORT LINCOLN",
+    "state": "SA",
+    "postcode": "5606",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.741941,
+    "longitude": 135.846117
+  },
+  {
+    "name": "Roxby Downs Area School",
+    "suburb": "ROXBY DOWNS",
+    "state": "SA",
+    "postcode": "5725",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -30.560299,
+    "longitude": 136.897084
+  },
+  {
+    "name": "Golden Grove High School",
+    "suburb": "GOLDEN GROVE",
+    "state": "SA",
+    "postcode": "5125",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.792874,
+    "longitude": 138.696789
+  },
+  {
+    "name": "Burton Primary School",
+    "suburb": "BURTON",
+    "state": "SA",
+    "postcode": "5110",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.741477,
+    "longitude": 138.597764
+  },
+  {
+    "name": "Keithcot Farm Primary School",
+    "suburb": "WYNN VALE",
+    "state": "SA",
+    "postcode": "5127",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.800056,
+    "longitude": 138.676961
+  },
+  {
+    "name": "Golden Grove Primary School",
+    "suburb": "GOLDEN GROVE",
+    "state": "SA",
+    "postcode": "5125",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.786332,
+    "longitude": 138.708915
+  },
+  {
+    "name": "Settlers Farm Campus R-6",
+    "suburb": "PARALOWIE",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.756588,
+    "longitude": 138.595761
+  },
+  {
+    "name": "Blakeview Primary School",
+    "suburb": "BLAKEVIEW",
+    "state": "SA",
+    "postcode": "5114",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.687809,
+    "longitude": 138.699956
+  },
+  {
+    "name": "Seaford Rise Primary School",
+    "suburb": "SEAFORD RISE",
+    "state": "SA",
+    "postcode": "5169",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.199278,
+    "longitude": 138.487571
+  },
+  {
+    "name": "Greenwith Primary School",
+    "suburb": "GREENWITH",
+    "state": "SA",
+    "postcode": "5125",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.77021,
+    "longitude": 138.720617
+  },
+  {
+    "name": "Murputja Anangu School",
+    "suburb": "ALICE SPRINGS",
+    "state": "SA",
+    "postcode": "0872",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -26.159381,
+    "longitude": 130.183673
+  },
+  {
+    "name": "Hewett Primary School",
+    "suburb": "HEWETT",
+    "state": "SA",
+    "postcode": "5118",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.57568732,
+    "longitude": 138.75025811
+  },
+  {
+    "name": "Playford Primary School",
+    "suburb": "CRAIGMORE",
+    "state": "SA",
+    "postcode": "5114",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.68844934,
+    "longitude": 138.7125013
+  },
+  {
+    "name": "Sturt Street Community School",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.933817,
+    "longitude": 138.590211
+  },
+  {
+    "name": "Mark Oliphant College (B-12)",
+    "suburb": "MUNNO PARA WEST",
+    "state": "SA",
+    "postcode": "5115",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.665475,
+    "longitude": 138.683575
+  },
+  {
+    "name": "Catherine McAuley School",
+    "suburb": "CRAIGMORE",
+    "state": "SA",
+    "postcode": "5114",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.6890139854153,
+    "longitude": 138.71201166997568
+  },
+  {
+    "name": "St Francis Xavier's Regional Catholic School",
+    "suburb": "WYNN VALE",
+    "state": "SA",
+    "postcode": "5127",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.80216,
+    "longitude": 138.699787
+  },
+  {
+    "name": "Cardijn College - Marian Campus",
+    "suburb": "NOARLUNGA DOWNS",
+    "state": "SA",
+    "postcode": "5168",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -35.14545072,
+    "longitude": 138.49763053
+  },
+  {
+    "name": "Gleeson College",
+    "suburb": "GOLDEN GROVE",
+    "state": "SA",
+    "postcode": "5125",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.795321,
+    "longitude": 138.696688
+  },
+  {
+    "name": "St Columba College",
+    "suburb": "ANDREWS FARM",
+    "state": "SA",
+    "postcode": "5114",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.672019,
+    "longitude": 138.666137
+  },
+  {
+    "name": "Samaritan College - St John's Campus",
+    "suburb": "WHYALLA",
+    "state": "SA",
+    "postcode": "5600",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -33.023798,
+    "longitude": 137.55218
+  },
+  {
+    "name": "St Barbara's Parish School",
+    "suburb": "ROXBY DOWNS",
+    "state": "SA",
+    "postcode": "5725",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -30.557942,
+    "longitude": 136.900098
+  },
+  {
+    "name": "Blackfriars Priory School",
+    "suburb": "PROSPECT",
+    "state": "SA",
+    "postcode": "5082",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.894854,
+    "longitude": 138.594895
+  },
+  {
+    "name": "Christian Brothers College - Senior Campus",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.928526,
+    "longitude": 138.609052
+  },
+  {
+    "name": "St Mary's Memorial School",
+    "suburb": "GLENELG",
+    "state": "SA",
+    "postcode": "5045",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.981292,
+    "longitude": 138.514716
+  },
+  {
+    "name": "Dominican School",
+    "suburb": "SEMAPHORE",
+    "state": "SA",
+    "postcode": "5019",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.837777,
+    "longitude": 138.483715
+  },
+  {
+    "name": "St Brigid's Catholic School",
+    "suburb": "EVANSTON",
+    "state": "SA",
+    "postcode": "5116",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.621382,
+    "longitude": 138.735231
+  },
+  {
+    "name": "Kildare College",
+    "suburb": "HOLDEN HILL",
+    "state": "SA",
+    "postcode": "5088",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.856591,
+    "longitude": 138.671421
+  },
+  {
+    "name": "Loreto College",
+    "suburb": "MARRYATVILLE",
+    "state": "SA",
+    "postcode": "5068",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.927394,
+    "longitude": 138.642036
+  },
+  {
+    "name": "Tenison Woods College",
+    "suburb": "MOUNT GAMBIER",
+    "state": "SA",
+    "postcode": "5290",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -37.828252,
+    "longitude": 140.754855
+  },
+  {
+    "name": "Mercedes College",
+    "suburb": "SPRINGFIELD",
+    "state": "SA",
+    "postcode": "5062",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.976008,
+    "longitude": 138.629265
+  },
+  {
+    "name": "Mount Carmel College Secondary Campus",
+    "suburb": "ROSEWATER",
+    "state": "SA",
+    "postcode": "5013",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.85615315,
+    "longitude": 138.52230041
+  },
+  {
+    "name": "Our Lady of the Sacred Heart College",
+    "suburb": "ENFIELD",
+    "state": "SA",
+    "postcode": "5085",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.873,
+    "longitude": 138.604
+  },
+  {
+    "name": "Rostrevor College",
+    "suburb": "WOODFORDE",
+    "state": "SA",
+    "postcode": "5072",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.901122,
+    "longitude": 138.685159
+  },
+  {
+    "name": "St Aloysius College",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.928662,
+    "longitude": 138.602952
+  },
+  {
+    "name": "St Dominic's Priory College",
+    "suburb": "NORTH ADELAIDE",
+    "state": "SA",
+    "postcode": "5006",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.908618,
+    "longitude": 138.585765
+  },
+  {
+    "name": "Saint Ignatius' College - Senior School Campus",
+    "suburb": "ATHELSTONE",
+    "state": "SA",
+    "postcode": "5076",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.8759,
+    "longitude": 138.698072
+  },
+  {
+    "name": "St Joseph's School",
+    "suburb": "BARMERA",
+    "state": "SA",
+    "postcode": "5345",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.253733,
+    "longitude": 140.458831
+  },
+  {
+    "name": "St Joseph's School",
+    "suburb": "WEST HINDMARSH",
+    "state": "SA",
+    "postcode": "5007",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.903945,
+    "longitude": 138.563327
+  },
+  {
+    "name": "St Joseph's School",
+    "suburb": "PORT LINCOLN",
+    "state": "SA",
+    "postcode": "5606",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.72671,
+    "longitude": 135.855854
+  },
+  {
+    "name": "St Joseph's School",
+    "suburb": "RENMARK",
+    "state": "SA",
+    "postcode": "5341",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.16671,
+    "longitude": 140.74961
+  },
+  {
+    "name": "Mary MacKillop College",
+    "suburb": "KENSINGTON",
+    "state": "SA",
+    "postcode": "5068",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.92323107,
+    "longitude": 138.64271254
+  },
+  {
+    "name": "St Mark's College - Bosco Campus",
+    "suburb": "PORT PIRIE",
+    "state": "SA",
+    "postcode": "5540",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -33.20611753,
+    "longitude": 138.00454426
+  },
+  {
+    "name": "Cabra Dominican College",
+    "suburb": "CUMBERLAND PARK",
+    "state": "SA",
+    "postcode": "5041",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.967266,
+    "longitude": 138.586651
+  },
+  {
+    "name": "St Mary's College",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.9281,
+    "longitude": 138.589
+  },
+  {
+    "name": "St Paul's College",
+    "suburb": "GILLES PLAINS",
+    "state": "SA",
+    "postcode": "5086",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.8472,
+    "longitude": 138.655
+  },
+  {
+    "name": "Star of the Sea School",
+    "suburb": "HENLEY BEACH",
+    "state": "SA",
+    "postcode": "5022",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.914709,
+    "longitude": 138.493588
+  },
+  {
+    "name": "Sacred Heart College - Champagnat Campus",
+    "suburb": "MITCHELL PARK",
+    "state": "SA",
+    "postcode": "5043",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.995286,
+    "longitude": 138.566007
+  },
+  {
+    "name": "St Michael's College - Secondary Campus",
+    "suburb": "HENLEY BEACH",
+    "state": "SA",
+    "postcode": "5022",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.914854,
+    "longitude": 138.504499
+  },
+  {
+    "name": "Saint David's Parish School",
+    "suburb": "TEA TREE GULLY",
+    "state": "SA",
+    "postcode": "5091",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.816087,
+    "longitude": 138.72581
+  },
+  {
+    "name": "Holy Family Catholic School",
+    "suburb": "PARAFIELD GARDENS",
+    "state": "SA",
+    "postcode": "5107",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.781836,
+    "longitude": 138.60961
+  },
+  {
+    "name": "Thomas More College",
+    "suburb": "SALISBURY DOWNS",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.779061,
+    "longitude": 138.63089
+  },
+  {
+    "name": "School of the Nativity",
+    "suburb": "ABERFOYLE PARK",
+    "state": "SA",
+    "postcode": "5159",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -35.06909,
+    "longitude": 138.593075
+  },
+  {
+    "name": "St Martin de Porres School",
+    "suburb": "SHEIDOW PARK",
+    "state": "SA",
+    "postcode": "5158",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -35.07369,
+    "longitude": 138.526881
+  },
+  {
+    "name": "Xavier College - Head Campus",
+    "suburb": "GAWLER BELT",
+    "state": "SA",
+    "postcode": "5118",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.576112,
+    "longitude": 138.734345
+  },
+  {
+    "name": "Our Lady Queen of Peace School",
+    "suburb": "ALBERT PARK",
+    "state": "SA",
+    "postcode": "5014",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.880974,
+    "longitude": 138.521119
+  },
+  {
+    "name": "Our Lady of the River School",
+    "suburb": "BERRI",
+    "state": "SA",
+    "postcode": "5343",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.283556,
+    "longitude": 140.597655
+  },
+  {
+    "name": "Immaculate Heart of Mary School",
+    "suburb": "BROMPTON",
+    "state": "SA",
+    "postcode": "5007",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.89823701,
+    "longitude": 138.58185516
+  },
+  {
+    "name": "St John Bosco School",
+    "suburb": "BROOKLYN PARK",
+    "state": "SA",
+    "postcode": "5032",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.929302,
+    "longitude": 138.549981
+  },
+  {
+    "name": "St Francis of Assisi School",
+    "suburb": "NEWTON",
+    "state": "SA",
+    "postcode": "5074",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.881915,
+    "longitude": 138.674519
+  },
+  {
+    "name": "St John The Apostle Parish School",
+    "suburb": "CHRISTIES BEACH",
+    "state": "SA",
+    "postcode": "5165",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -35.129465,
+    "longitude": 138.478262
+  },
+  {
+    "name": "St Joseph's School",
+    "suburb": "CLARE",
+    "state": "SA",
+    "postcode": "5453",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -33.836276,
+    "longitude": 138.609983
+  },
+  {
+    "name": "St Gabriel's School",
+    "suburb": "ENFIELD",
+    "state": "SA",
+    "postcode": "5085",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.851394,
+    "longitude": 138.603973
+  },
+  {
+    "name": "St Therese School",
+    "suburb": "COLONEL LIGHT GARDENS",
+    "state": "SA",
+    "postcode": "5041",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.990002,
+    "longitude": 138.5933
+  },
+  {
+    "name": "St Margaret Mary's School",
+    "suburb": "CROYDON PARK",
+    "state": "SA",
+    "postcode": "5008",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.882934,
+    "longitude": 138.562492
+  },
+  {
+    "name": "St Anthony's School",
+    "suburb": "EDWARDSTOWN",
+    "state": "SA",
+    "postcode": "5039",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.969861,
+    "longitude": 138.572155
+  },
+  {
+    "name": "St Patrick's Special School",
+    "suburb": "DULWICH",
+    "state": "SA",
+    "postcode": "5065",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.937041,
+    "longitude": 138.63359
+  },
+  {
+    "name": "St Mary Magdalene's School",
+    "suburb": "ELIZABETH GROVE",
+    "state": "SA",
+    "postcode": "5112",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.733974,
+    "longitude": 138.666299
+  },
+  {
+    "name": "St Thomas More School",
+    "suburb": "ELIZABETH PARK",
+    "state": "SA",
+    "postcode": "5113",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.715431,
+    "longitude": 138.681394
+  },
+  {
+    "name": "St Joseph's Parish School",
+    "suburb": "GLADSTONE",
+    "state": "SA",
+    "postcode": "5473",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -33.265716,
+    "longitude": 138.351827
+  },
+  {
+    "name": "Our Lady of La Vang School",
+    "suburb": "FLINDERS PARK",
+    "state": "SA",
+    "postcode": "5025",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.906911,
+    "longitude": 138.538253
+  },
+  {
+    "name": "Our Lady of Grace School",
+    "suburb": "GLENGOWRIE",
+    "state": "SA",
+    "postcode": "5044",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.984032,
+    "longitude": 138.533289
+  },
+  {
+    "name": "St Thomas' School",
+    "suburb": "GOODWOOD",
+    "state": "SA",
+    "postcode": "5034",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.953603,
+    "longitude": 138.592342
+  },
+  {
+    "name": "St Martin's Catholic Primary School",
+    "suburb": "GREENACRES",
+    "state": "SA",
+    "postcode": "5086",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.867085,
+    "longitude": 138.628602
+  },
+  {
+    "name": "St Joseph's School",
+    "suburb": "HECTORVILLE",
+    "state": "SA",
+    "postcode": "5073",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.890383,
+    "longitude": 138.658841
+  },
+  {
+    "name": "Nazareth Catholic College - Findon Campus",
+    "suburb": "FINDON",
+    "state": "SA",
+    "postcode": "5023",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.895058,
+    "longitude": 138.532239
+  },
+  {
+    "name": "St James School",
+    "suburb": "JAMESTOWN",
+    "state": "SA",
+    "postcode": "5491",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -33.206834,
+    "longitude": 138.611314
+  },
+  {
+    "name": "St Brigid's School",
+    "suburb": "KILBURN",
+    "state": "SA",
+    "postcode": "5084",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.861678,
+    "longitude": 138.587265
+  },
+  {
+    "name": "St Joseph's School",
+    "suburb": "KINGSWOOD",
+    "state": "SA",
+    "postcode": "5062",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.971049,
+    "longitude": 138.614053
+  },
+  {
+    "name": "St Francis School",
+    "suburb": "LOCKLEYS",
+    "state": "SA",
+    "postcode": "5032",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.925853,
+    "longitude": 138.526172
+  },
+  {
+    "name": "St Albert's Catholic School",
+    "suburb": "LOXTON",
+    "state": "SA",
+    "postcode": "5333",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.45484399,
+    "longitude": 140.57462552
+  },
+  {
+    "name": "St Patrick's School",
+    "suburb": "MANSFIELD PARK",
+    "state": "SA",
+    "postcode": "5012",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.854471,
+    "longitude": 138.552328
+  },
+  {
+    "name": "St Anthony's Catholic Primary School",
+    "suburb": "MILLICENT",
+    "state": "SA",
+    "postcode": "5280",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -37.600228,
+    "longitude": 140.359672
+  },
+  {
+    "name": "St Francis de Sales College",
+    "suburb": "MOUNT BARKER",
+    "state": "SA",
+    "postcode": "5251",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -35.06656802,
+    "longitude": 138.8671809
+  },
+  {
+    "name": "St Joseph's School",
+    "suburb": "MURRAY BRIDGE",
+    "state": "SA",
+    "postcode": "5253",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -35.118583,
+    "longitude": 139.267352
+  },
+  {
+    "name": "St Joseph's Memorial School",
+    "suburb": "NORWOOD",
+    "state": "SA",
+    "postcode": "5067",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.923688,
+    "longitude": 138.640687
+  },
+  {
+    "name": "St Joseph's School",
+    "suburb": "OTTOWAY",
+    "state": "SA",
+    "postcode": "5013",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.846462,
+    "longitude": 138.538254
+  },
+  {
+    "name": "St Raphael's School",
+    "suburb": "PARKSIDE",
+    "state": "SA",
+    "postcode": "5063",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.945278,
+    "longitude": 138.622685
+  },
+  {
+    "name": "St Joseph's School",
+    "suburb": "PAYNEHAM SOUTH",
+    "state": "SA",
+    "postcode": "5070",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.902242,
+    "longitude": 138.639817
+  },
+  {
+    "name": "Mary MacKillop Memorial School",
+    "suburb": "PENOLA",
+    "state": "SA",
+    "postcode": "5277",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -37.380561,
+    "longitude": 140.840272
+  },
+  {
+    "name": "St Joseph's School",
+    "suburb": "PETERBOROUGH",
+    "state": "SA",
+    "postcode": "5422",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -32.975567,
+    "longitude": 138.841893
+  },
+  {
+    "name": "St John the Baptist Catholic School",
+    "suburb": "PLYMPTON",
+    "state": "SA",
+    "postcode": "5038",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.967366,
+    "longitude": 138.550997
+  },
+  {
+    "name": "Rosary School",
+    "suburb": "PROSPECT",
+    "state": "SA",
+    "postcode": "5082",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.884596,
+    "longitude": 138.590364
+  },
+  {
+    "name": "Tenison Woods Catholic Primary School",
+    "suburb": "RICHMOND",
+    "state": "SA",
+    "postcode": "5033",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.93943,
+    "longitude": 138.561084
+  },
+  {
+    "name": "St Bernadette's School",
+    "suburb": "ST MARYS",
+    "state": "SA",
+    "postcode": "5042",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -35.002727,
+    "longitude": 138.576125
+  },
+  {
+    "name": "St Augustine's Parish School",
+    "suburb": "SALISBURY",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.763221,
+    "longitude": 138.650407
+  },
+  {
+    "name": "Stella Maris Parish School",
+    "suburb": "SEACOMBE GARDENS",
+    "state": "SA",
+    "postcode": "5047",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -35.026466,
+    "longitude": 138.545662
+  },
+  {
+    "name": "St Catherine's School",
+    "suburb": "STIRLING",
+    "state": "SA",
+    "postcode": "5152",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -35.004028,
+    "longitude": 138.709651
+  },
+  {
+    "name": "Our Lady of the Visitation School",
+    "suburb": "TAPEROO",
+    "state": "SA",
+    "postcode": "5017",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.805364,
+    "longitude": 138.500261
+  },
+  {
+    "name": "St Joseph's School",
+    "suburb": "TRANMERE",
+    "state": "SA",
+    "postcode": "5073",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.91332338,
+    "longitude": 138.6656505
+  },
+  {
+    "name": "St Monica's Parish School",
+    "suburb": "WALKERVILLE",
+    "state": "SA",
+    "postcode": "5081",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.88746,
+    "longitude": 138.616185
+  },
+  {
+    "name": "Christ the King School",
+    "suburb": "WARRADALE",
+    "state": "SA",
+    "postcode": "5046",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -35.0087,
+    "longitude": 138.538
+  },
+  {
+    "name": "St Pius X School",
+    "suburb": "WINDSOR GARDENS",
+    "state": "SA",
+    "postcode": "5087",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.868377,
+    "longitude": 138.643236
+  },
+  {
+    "name": "Whitefriars School",
+    "suburb": "WOODVILLE PARK",
+    "state": "SA",
+    "postcode": "5011",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.879377,
+    "longitude": 138.547442
+  },
+  {
+    "name": "St Columba's Memorial School",
+    "suburb": "YORKETOWN",
+    "state": "SA",
+    "postcode": "5576",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -35.019657,
+    "longitude": 137.599844
+  },
+  {
+    "name": "Caritas College",
+    "suburb": "PORT AUGUSTA WEST",
+    "state": "SA",
+    "postcode": "5700",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -32.484292,
+    "longitude": 137.749093
+  },
+  {
+    "name": "Antonio Catholic School",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -35.116347,
+    "longitude": 138.524727
+  },
+  {
+    "name": "Cardijn College - Galilee Campus",
+    "suburb": "ALDINGA",
+    "state": "SA",
+    "postcode": "5173",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -35.26851368,
+    "longitude": 138.47098809
+  },
+  {
+    "name": "Emmaus Catholic School",
+    "suburb": "WOODCROFT",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -35.103863,
+    "longitude": 138.558145
+  },
+  {
+    "name": "All Saints Catholic Primary School",
+    "suburb": "SEAFORD",
+    "state": "SA",
+    "postcode": "5169",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -35.186059,
+    "longitude": 138.480264
+  },
+  {
+    "name": "Our Lady of Hope School",
+    "suburb": "GREENWITH",
+    "state": "SA",
+    "postcode": "5125",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.769434,
+    "longitude": 138.719799
+  },
+  {
+    "name": "St John's Grammar School - Secondary Campus",
+    "suburb": "BELAIR",
+    "state": "SA",
+    "postcode": "5052",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.001044,
+    "longitude": 138.620236
+  },
+  {
+    "name": "Prescott College",
+    "suburb": "PROSPECT",
+    "state": "SA",
+    "postcode": "5082",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.89232523,
+    "longitude": 138.59663991
+  },
+  {
+    "name": "Heritage College Incorporated",
+    "suburb": "OAKDEN",
+    "state": "SA",
+    "postcode": "5086",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.852418,
+    "longitude": 138.640582
+  },
+  {
+    "name": "Crossways Lutheran School Ceduna",
+    "suburb": "CEDUNA",
+    "state": "SA",
+    "postcode": "5690",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -32.135305,
+    "longitude": 133.676981
+  },
+  {
+    "name": "Calvary Lutheran Primary School",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -35.136467,
+    "longitude": 138.510797
+  },
+  {
+    "name": "The Hills Christian Community School",
+    "suburb": "VERDUN",
+    "state": "SA",
+    "postcode": "5245",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.011201,
+    "longitude": 138.787052
+  },
+  {
+    "name": "Temple Christian College",
+    "suburb": "MILE END",
+    "state": "SA",
+    "postcode": "5031",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.92290832,
+    "longitude": 138.5790301
+  },
+  {
+    "name": "Concordia College",
+    "suburb": "HIGHGATE",
+    "state": "SA",
+    "postcode": "5063",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.959761,
+    "longitude": 138.618183
+  },
+  {
+    "name": "Tyndale Christian School Strathalbyn",
+    "suburb": "STRATHALBYN",
+    "state": "SA",
+    "postcode": "5255",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.255362,
+    "longitude": 138.897646
+  },
+  {
+    "name": "Woodcroft College",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.113848,
+    "longitude": 138.543969
+  },
+  {
+    "name": "Southern Montessori School",
+    "suburb": "O'SULLIVAN BEACH",
+    "state": "SA",
+    "postcode": "5166",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -35.1251798,
+    "longitude": 138.47892175
+  },
+  {
+    "name": "Sunrise Christian School Whyalla",
+    "suburb": "WHYALLA NORRIE",
+    "state": "SA",
+    "postcode": "5608",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -33.04169572,
+    "longitude": 137.53771883
+  },
+  {
+    "name": "Cornerstone College",
+    "suburb": "MOUNT BARKER",
+    "state": "SA",
+    "postcode": "5251",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -35.06023135,
+    "longitude": 138.85483814
+  },
+  {
+    "name": "Immanuel Primary School",
+    "suburb": "NOVAR GARDENS",
+    "state": "SA",
+    "postcode": "5040",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.971648,
+    "longitude": 138.534865
+  },
+  {
+    "name": "Immanuel College",
+    "suburb": "NOVAR GARDENS",
+    "state": "SA",
+    "postcode": "5040",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.970855,
+    "longitude": 138.535954
+  },
+  {
+    "name": "Southern Vales Christian College - Aldinga Campus",
+    "suburb": "ALDINGA BEACH",
+    "state": "SA",
+    "postcode": "5173",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.280799,
+    "longitude": 138.468556
+  },
+  {
+    "name": "Sunrise Christian School Morphett Vale",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -35.105889,
+    "longitude": 138.537528
+  },
+  {
+    "name": "Sunrise Christian School Paradise",
+    "suburb": "PARADISE",
+    "state": "SA",
+    "postcode": "5075",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.870387,
+    "longitude": 138.667779
+  },
+  {
+    "name": "Cedar College",
+    "suburb": "NORTHGATE",
+    "state": "SA",
+    "postcode": "5085",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.8546,
+    "longitude": 138.634651
+  },
+  {
+    "name": "Concordia College (St Peters Campus, Blackwood)",
+    "suburb": "BLACKWOOD",
+    "state": "SA",
+    "postcode": "5051",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -35.032657,
+    "longitude": 138.610123
+  },
+  {
+    "name": "Temple Christian College - Bethany Campus",
+    "suburb": "PARALOWIE",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.761871,
+    "longitude": 138.605464
+  },
+  {
+    "name": "Saint Spyridon College",
+    "suburb": "UNLEY",
+    "state": "SA",
+    "postcode": "5061",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.95028569,
+    "longitude": 138.60871848
+  },
+  {
+    "name": "Annesley College",
+    "suburb": "WAYVILLE",
+    "state": "SA",
+    "postcode": "5034",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.942,
+    "longitude": 138.598
+  },
+  {
+    "name": "Sunrise Christian School Naracoorte",
+    "suburb": "NARACOORTE",
+    "state": "SA",
+    "postcode": "5271",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -36.963756,
+    "longitude": 140.753438
+  },
+  {
+    "name": "Seymour College",
+    "suburb": "GLEN OSMOND",
+    "state": "SA",
+    "postcode": "5064",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.955977,
+    "longitude": 138.646167
+  },
+  {
+    "name": "Prince Alfred College",
+    "suburb": "KENT TOWN",
+    "state": "SA",
+    "postcode": "5067",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.923142,
+    "longitude": 138.617615
+  },
+  {
+    "name": "Pulteney Grammar School",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.9352105444499,
+    "longitude": 138.60279832275393
+  },
+  {
+    "name": "St Peter's College",
+    "suburb": "ST PETERS",
+    "state": "SA",
+    "postcode": "5069",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.916908,
+    "longitude": 138.618412
+  },
+  {
+    "name": "St Peter's Collegiate Girls' School",
+    "suburb": "STONYFELL",
+    "state": "SA",
+    "postcode": "5066",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.9295859,
+    "longitude": 138.66956177
+  },
+  {
+    "name": "Scotch College - Torrens Park Campus",
+    "suburb": "TORRENS PARK",
+    "state": "SA",
+    "postcode": "5062",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.982544,
+    "longitude": 138.615072
+  },
+  {
+    "name": "Walford Anglican School for Girls",
+    "suburb": "HYDE PARK",
+    "state": "SA",
+    "postcode": "5061",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.957688,
+    "longitude": 138.607888
+  },
+  {
+    "name": "Westminster School",
+    "suburb": "MARION",
+    "state": "SA",
+    "postcode": "5043",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.002183,
+    "longitude": 138.552641
+  },
+  {
+    "name": "Wilderness School",
+    "suburb": "MEDINDIE",
+    "state": "SA",
+    "postcode": "5081",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.898444,
+    "longitude": 138.608521
+  },
+  {
+    "name": "Willunga Waldorf School",
+    "suburb": "WILLUNGA",
+    "state": "SA",
+    "postcode": "5172",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.269509,
+    "longitude": 138.543829
+  },
+  {
+    "name": "Trinity College South",
+    "suburb": "EVANSTON SOUTH",
+    "state": "SA",
+    "postcode": "5116",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.63490967,
+    "longitude": 138.73179844
+  },
+  {
+    "name": "Trinity College Blakeview",
+    "suburb": "BLAKEVIEW",
+    "state": "SA",
+    "postcode": "5114",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.68915237,
+    "longitude": 138.70220578
+  },
+  {
+    "name": "Harvest Christian College",
+    "suburb": "KADINA",
+    "state": "SA",
+    "postcode": "5554",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -33.95761225,
+    "longitude": 137.71141987
+  },
+  {
+    "name": "Trinity College Gawler River",
+    "suburb": "ANGLE VALE",
+    "state": "SA",
+    "postcode": "5117",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.63875672,
+    "longitude": 138.64743337
+  },
+  {
+    "name": "Tyndale Christian School Murray Bridge",
+    "suburb": "MURRAY BRIDGE",
+    "state": "SA",
+    "postcode": "5253",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.12767,
+    "longitude": 139.25641
+  },
+  {
+    "name": "Faith Lutheran College - Faith Campus",
+    "suburb": "TANUNDA",
+    "state": "SA",
+    "postcode": "5352",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.52014,
+    "longitude": 138.98404
+  },
+  {
+    "name": "Golden Grove Lutheran Primary School",
+    "suburb": "WYNN VALE",
+    "state": "SA",
+    "postcode": "5127",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.801095,
+    "longitude": 138.687658
+  },
+  {
+    "name": "Immanuel Gawler",
+    "suburb": "GAWLER EAST",
+    "state": "SA",
+    "postcode": "5118",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.59616434,
+    "longitude": 138.7523043
+  },
+  {
+    "name": "Our Saviour Lutheran School Happy Valley Incorporated",
+    "suburb": "ABERFOYLE PARK",
+    "state": "SA",
+    "postcode": "5159",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -35.073891,
+    "longitude": 138.589491
+  },
+  {
+    "name": "St George College - Senior Campus",
+    "suburb": "MILE END",
+    "state": "SA",
+    "postcode": "5031",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.922881,
+    "longitude": 138.570108
+  },
+  {
+    "name": "Trinity College North",
+    "suburb": "EVANSTON SOUTH",
+    "state": "SA",
+    "postcode": "5116",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.63396646,
+    "longitude": 138.73526608
+  },
+  {
+    "name": "St Martins Lutheran College",
+    "suburb": "MOUNT GAMBIER",
+    "state": "SA",
+    "postcode": "5290",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -37.820967,
+    "longitude": 140.797573
+  },
+  {
+    "name": "Mount Barker Waldorf School",
+    "suburb": "MOUNT BARKER",
+    "state": "SA",
+    "postcode": "5251",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.083141,
+    "longitude": 138.877102
+  },
+  {
+    "name": "Pembroke School - Middle School Campus",
+    "suburb": "KENSINGTON PARK",
+    "state": "SA",
+    "postcode": "5068",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.920945,
+    "longitude": 138.650495
+  },
+  {
+    "name": "Portside Christian College",
+    "suburb": "NEW PORT",
+    "state": "SA",
+    "postcode": "5015",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.851379,
+    "longitude": 138.495582
+  },
+  {
+    "name": "Prescott College Southern",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.104906,
+    "longitude": 138.543642
+  },
+  {
+    "name": "Unity College",
+    "suburb": "MURRAY BRIDGE",
+    "state": "SA",
+    "postcode": "5253",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.146912,
+    "longitude": 139.29118059
+  },
+  {
+    "name": "Waikerie Lutheran Primary School",
+    "suburb": "WAIKERIE",
+    "state": "SA",
+    "postcode": "5330",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.186397,
+    "longitude": 139.988812
+  },
+  {
+    "name": "Emmaus Christian College",
+    "suburb": "SOUTH PLYMPTON",
+    "state": "SA",
+    "postcode": "5038",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.971186,
+    "longitude": 138.558631
+  },
+  {
+    "name": "Torrens Valley Christian School",
+    "suburb": "HOPE VALLEY",
+    "state": "SA",
+    "postcode": "5090",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.84301032,
+    "longitude": 138.70083628
+  },
+  {
+    "name": "Southern Vales Christian College - Morphett Vale Campus",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.112045,
+    "longitude": 138.536621
+  },
+  {
+    "name": "Good Shepherd Lutheran School - Para Vista",
+    "suburb": "PARA VISTA",
+    "state": "SA",
+    "postcode": "5093",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.829033,
+    "longitude": 138.667333
+  },
+  {
+    "name": "St Mark's Lutheran School",
+    "suburb": "MOUNT BARKER",
+    "state": "SA",
+    "postcode": "5251",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -35.07277511,
+    "longitude": 138.86149889
+  },
+  {
+    "name": "King's Baptist Grammar School - Wynn Vale Campus",
+    "suburb": "WYNN VALE",
+    "state": "SA",
+    "postcode": "5127",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.799045,
+    "longitude": 138.676692
+  },
+  {
+    "name": "The Hills Montessori School - Yultiwirra Campus",
+    "suburb": "ALDGATE",
+    "state": "SA",
+    "postcode": "5154",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.00935,
+    "longitude": 138.72868
+  },
+  {
+    "name": "Hope Christian College",
+    "suburb": "CRAIGMORE",
+    "state": "SA",
+    "postcode": "5114",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.707556,
+    "longitude": 138.706251
+  },
+  {
+    "name": "Bethany Christian School Incorporated",
+    "suburb": "PARALOWIE",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.761758,
+    "longitude": 138.60554
+  },
+  {
+    "name": "Navigator College",
+    "suburb": "PORT LINCOLN",
+    "state": "SA",
+    "postcode": "5606",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.741841,
+    "longitude": 135.860955
+  },
+  {
+    "name": "Pilgrim School",
+    "suburb": "ABERFOYLE PARK",
+    "state": "SA",
+    "postcode": "5159",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -35.06805486,
+    "longitude": 138.59503715
+  },
+  {
+    "name": "Tyndale Christian School",
+    "suburb": "SALISBURY EAST",
+    "state": "SA",
+    "postcode": "5109",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.774042,
+    "longitude": 138.669964
+  },
+  {
+    "name": "Pedare Christian College",
+    "suburb": "GOLDEN GROVE",
+    "state": "SA",
+    "postcode": "5125",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.794746,
+    "longitude": 138.692862
+  },
+  {
+    "name": "Rivergum Christian College",
+    "suburb": "GLOSSOP",
+    "state": "SA",
+    "postcode": "5344",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.263984,
+    "longitude": 140.540191
+  },
+  {
+    "name": "Horizon Christian School",
+    "suburb": "BALAKLAVA",
+    "state": "SA",
+    "postcode": "5461",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.151782,
+    "longitude": 138.413987
+  },
+  {
+    "name": "OneSchool Global SA - Aberfoyle Campus",
+    "suburb": "ABERFOYLE PARK",
+    "state": "SA",
+    "postcode": "5159",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.075078,
+    "longitude": 138.589503
+  },
+  {
+    "name": "Tatachilla Lutheran College",
+    "suburb": "MCLAREN VALE",
+    "state": "SA",
+    "postcode": "5171",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.223254,
+    "longitude": 138.521492
+  },
+  {
+    "name": "Endeavour College",
+    "suburb": "MAWSON LAKES",
+    "state": "SA",
+    "postcode": "5095",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.812749,
+    "longitude": 138.621874
+  },
+  {
+    "name": "St John's Grammar School - Junior Campus",
+    "suburb": "BELAIR",
+    "state": "SA",
+    "postcode": "5052",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.997653,
+    "longitude": 138.631841
+  },
+  {
+    "name": "St Andrew's School",
+    "suburb": "WALKERVILLE",
+    "state": "SA",
+    "postcode": "5081",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.892871,
+    "longitude": 138.61638
+  },
+  {
+    "name": "St Peter's Woodlands Grammar School",
+    "suburb": "GLENELG",
+    "state": "SA",
+    "postcode": "5045",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.983454,
+    "longitude": 138.518341
+  },
+  {
+    "name": "Encounter Lutheran College",
+    "suburb": "VICTOR HARBOR",
+    "state": "SA",
+    "postcode": "5211",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.529454,
+    "longitude": 138.637557
+  },
+  {
+    "name": "Mid North Christian College",
+    "suburb": "PORT PIRIE",
+    "state": "SA",
+    "postcode": "5540",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -33.208372,
+    "longitude": 137.988656
+  },
+  {
+    "name": "Pinnacle College - Gilles Plains Campus",
+    "suburb": "GILLES PLAINS",
+    "state": "SA",
+    "postcode": "5086",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.847796,
+    "longitude": 138.66044
+  },
+  {
+    "name": "Good Shepherd Lutheran School - Angaston",
+    "suburb": "ANGASTON",
+    "state": "SA",
+    "postcode": "5353",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.5091304,
+    "longitude": 139.04738087
+  },
+  {
+    "name": "St John's Lutheran School",
+    "suburb": "EUDUNDA",
+    "state": "SA",
+    "postcode": "5374",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.173916,
+    "longitude": 139.088769
+  },
+  {
+    "name": "St Michael's Lutheran School, Hahndorf Inc",
+    "suburb": "HAHNDORF",
+    "state": "SA",
+    "postcode": "5245",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -35.0285,
+    "longitude": 138.812
+  },
+  {
+    "name": "Redeemer Lutheran School",
+    "suburb": "NURIOOTPA",
+    "state": "SA",
+    "postcode": "5355",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.465395,
+    "longitude": 138.984503
+  },
+  {
+    "name": "Lobethal Lutheran School",
+    "suburb": "LOBETHAL",
+    "state": "SA",
+    "postcode": "5241",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.90417,
+    "longitude": 138.875597
+  },
+  {
+    "name": "Loxton Lutheran School",
+    "suburb": "LOXTON",
+    "state": "SA",
+    "postcode": "5333",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.445971,
+    "longitude": 140.575094
+  },
+  {
+    "name": "St Jakobi Lutheran School",
+    "suburb": "LYNDOCH",
+    "state": "SA",
+    "postcode": "5351",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.619979,
+    "longitude": 138.893126
+  },
+  {
+    "name": "Maitland Lutheran School",
+    "suburb": "MAITLAND",
+    "state": "SA",
+    "postcode": "5573",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.370763,
+    "longitude": 137.679852
+  },
+  {
+    "name": "Faith Lutheran College - Tanunda Lutheran Campus",
+    "suburb": "TANUNDA",
+    "state": "SA",
+    "postcode": "5352",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.52579929,
+    "longitude": 138.95422526
+  },
+  {
+    "name": "Prescott Primary School, Northern",
+    "suburb": "PARA VISTA",
+    "state": "SA",
+    "postcode": "5093",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.83443823,
+    "longitude": 138.6640717
+  },
+  {
+    "name": "St Paul Lutheran School",
+    "suburb": "BLAIR ATHOL",
+    "state": "SA",
+    "postcode": "5084",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.861586,
+    "longitude": 138.599498
+  },
+  {
+    "name": "Suneden Specialist School",
+    "suburb": "MITCHELL PARK",
+    "state": "SA",
+    "postcode": "5043",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.01444,
+    "longitude": 138.560448
+  },
+  {
+    "name": "Vineyard Lutheran School",
+    "suburb": "CLARE",
+    "state": "SA",
+    "postcode": "5453",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -33.8495,
+    "longitude": 138.62
+  },
+  {
+    "name": "Investigator College",
+    "suburb": "VICTOR HARBOR",
+    "state": "SA",
+    "postcode": "5211",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.555378,
+    "longitude": 138.598981
+  },
+  {
+    "name": "Christie Downs Primary School",
+    "suburb": "CHRISTIE DOWNS",
+    "state": "SA",
+    "postcode": "5164",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.13242,
+    "longitude": 138.494017
+  },
+  {
+    "name": "Flagstaff Hill Primary School",
+    "suburb": "FLAGSTAFF HILL",
+    "state": "SA",
+    "postcode": "5159",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.04944,
+    "longitude": 138.589485
+  },
+  {
+    "name": "McDonald Park School",
+    "suburb": "MOUNT GAMBIER",
+    "state": "SA",
+    "postcode": "5290",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.825702,
+    "longitude": 140.793167
+  },
+  {
+    "name": "Glenelg Primary School",
+    "suburb": "GLENELG EAST",
+    "state": "SA",
+    "postcode": "5045",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.98525332,
+    "longitude": 138.52189294
+  },
+  {
+    "name": "Melaleuca Park Primary School",
+    "suburb": "MOUNT GAMBIER",
+    "state": "SA",
+    "postcode": "5290",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -37.841094,
+    "longitude": 140.794392
+  },
+  {
+    "name": "St Mary MacKillop School",
+    "suburb": "WALLAROO",
+    "state": "SA",
+    "postcode": "5556",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -33.931675,
+    "longitude": 137.631729
+  },
+  {
+    "name": "Kangaroo Island Community Education - Parndana Campus",
+    "suburb": "PARNDANA",
+    "state": "SA",
+    "postcode": "5220",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.786767,
+    "longitude": 137.263093
+  },
+  {
+    "name": "Grange Primary School",
+    "suburb": "GRANGE",
+    "state": "SA",
+    "postcode": "5022",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.903495,
+    "longitude": 138.497089
+  },
+  {
+    "name": "East Adelaide School",
+    "suburb": "ST PETERS",
+    "state": "SA",
+    "postcode": "5069",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.905142,
+    "longitude": 138.627298
+  },
+  {
+    "name": "Swallowcliffe School P-6",
+    "suburb": "DAVOREN PARK",
+    "state": "SA",
+    "postcode": "5113",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.696782,
+    "longitude": 138.664155
+  },
+  {
+    "name": "Highgate School",
+    "suburb": "HIGHGATE",
+    "state": "SA",
+    "postcode": "5063",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.962788,
+    "longitude": 138.622561
+  },
+  {
+    "name": "Hackham West School",
+    "suburb": "HACKHAM WEST",
+    "state": "SA",
+    "postcode": "5163",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.144159,
+    "longitude": 138.517588
+  },
+  {
+    "name": "Modbury West School",
+    "suburb": "MODBURY",
+    "state": "SA",
+    "postcode": "5092",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.833258,
+    "longitude": 138.676618
+  },
+  {
+    "name": "Magill School",
+    "suburb": "MAGILL",
+    "state": "SA",
+    "postcode": "5072",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.91362,
+    "longitude": 138.676746
+  },
+  {
+    "name": "Blair Athol North B-6 School",
+    "suburb": "BLAIR ATHOL",
+    "state": "SA",
+    "postcode": "5084",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.853092,
+    "longitude": 138.597637
+  },
+  {
+    "name": "Woodville Gardens School Birth-6",
+    "suburb": "WOODVILLE GARDENS",
+    "state": "SA",
+    "postcode": "5012",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.863263,
+    "longitude": 138.551003
+  },
+  {
+    "name": "Morphett Vale Primary School",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -35.107523,
+    "longitude": 138.514358
+  },
+  {
+    "name": "Reynella East College",
+    "suburb": "REYNELLA EAST",
+    "state": "SA",
+    "postcode": "5161",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.09071,
+    "longitude": 138.555575
+  },
+  {
+    "name": "Lake Windemere B-6 School",
+    "suburb": "SALISBURY NORTH",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.740265,
+    "longitude": 138.619702
+  },
+  {
+    "name": "Bowden Brompton Community School - Little Para Campus",
+    "suburb": "SALISBURY NORTH",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.753917,
+    "longitude": 138.636016
+  },
+  {
+    "name": "Bowden Brompton Community School - Beach Campus",
+    "suburb": "CHRISTIES BEACH",
+    "state": "SA",
+    "postcode": "5165",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.137419,
+    "longitude": 138.4914178
+  },
+  {
+    "name": "Youth Education Centre - Jonal Drive Campus (Cavan)",
+    "suburb": "CAVAN",
+    "state": "SA",
+    "postcode": "5094",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.824075,
+    "longitude": 138.60206
+  },
+  {
+    "name": "Christian Brothers College - Junior Campus",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.927696,
+    "longitude": 138.612632
+  },
+  {
+    "name": "Penong Primary School - Coorabie Campus",
+    "suburb": "COORABIE",
+    "state": "SA",
+    "postcode": "5690",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -31.928301,
+    "longitude": 133.006255
+  },
+  {
+    "name": "Eastern Fleurieu R-12 School - Strathalbyn 7-12 Campus",
+    "suburb": "STRATHALBYN",
+    "state": "SA",
+    "postcode": "5255",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.258136,
+    "longitude": 138.902292
+  },
+  {
+    "name": "Berri Regional Secondary College",
+    "suburb": "BERRI",
+    "state": "SA",
+    "postcode": "5343",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.27838125,
+    "longitude": 140.6106948
+  },
+  {
+    "name": "Roma Mitchell Secondary College",
+    "suburb": "GEPPS CROSS",
+    "state": "SA",
+    "postcode": "5094",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.843058,
+    "longitude": 138.618235
+  },
+  {
+    "name": "Open Access College - Port Augusta School of the Air Campus",
+    "suburb": "PORT AUGUSTA",
+    "state": "SA",
+    "postcode": "5700",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -32.494117,
+    "longitude": 137.784043
+  },
+  {
+    "name": "Felixstow Primary School",
+    "suburb": "FELIXSTOW",
+    "state": "SA",
+    "postcode": "5070",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.89258269,
+    "longitude": 138.64475363
+  },
+  {
+    "name": "Prospect North Primary School",
+    "suburb": "PROSPECT",
+    "state": "SA",
+    "postcode": "5082",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -34.874715,
+    "longitude": 138.596729
+  },
+  {
+    "name": "The Hills Montessori School - Wairoa Campus",
+    "suburb": "ALDGATE",
+    "state": "SA",
+    "postcode": "5154",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.01289,
+    "longitude": 138.74869
+  },
+  {
+    "name": "Bowden Brompton Community School - Torrens Road Campus",
+    "suburb": "SALISBURY NORTH",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.136982,
+    "longitude": 138.497477
+  },
+  {
+    "name": "Kangaroo Island Community Education - Kingscote Campus",
+    "suburb": "KINGSCOTE",
+    "state": "SA",
+    "postcode": "5223",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.651176,
+    "longitude": 137.633109
+  },
+  {
+    "name": "Scotch College - Mitcham Campus",
+    "suburb": "MITCHAM",
+    "state": "SA",
+    "postcode": "5062",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.979644,
+    "longitude": 138.621071
+  },
+  {
+    "name": "Pembroke School - Junior School Campus",
+    "suburb": "KENSINGTON PARK",
+    "state": "SA",
+    "postcode": "5068",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.92175,
+    "longitude": 138.65579
+  },
+  {
+    "name": "Pembroke School - Senior School Campus",
+    "suburb": "KENSINGTON PARK",
+    "state": "SA",
+    "postcode": "5068",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.92233,
+    "longitude": 138.655
+  },
+  {
+    "name": "Blakes Crossing Christian College",
+    "suburb": "BLAKEVIEW",
+    "state": "SA",
+    "postcode": "5114",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.68123005,
+    "longitude": 138.70562196
+  },
+  {
+    "name": "Garden College",
+    "suburb": "PARAFIELD GARDENS",
+    "state": "SA",
+    "postcode": "5107",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.7829,
+    "longitude": 138.608783
+  },
+  {
+    "name": "FAME - Flexible Accredited Meaningful Engagement - Wardli Youth Centre",
+    "suburb": "CHRISTIE DOWNS",
+    "state": "SA",
+    "postcode": "5164",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -35.13633892247478,
+    "longitude": 138.48858732984164
+  },
+  {
+    "name": "Specialised Assistance School For Youth (SASY)",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.9251754,
+    "longitude": 138.6032937
+  },
+  {
+    "name": "Adelaide International School",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.923006,
+    "longitude": 138.604176
+  },
+  {
+    "name": "Daws Road Centre",
+    "suburb": "ST MARYS",
+    "state": "SA",
+    "postcode": "5042",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.992937,
+    "longitude": 138.576704
+  },
+  {
+    "name": "Mount Torrens Christian School",
+    "suburb": "MOUNT TORRENS",
+    "state": "SA",
+    "postcode": "5244",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.873097,
+    "longitude": 138.963386
+  },
+  {
+    "name": "Seaview Christian College",
+    "suburb": "PORT AUGUSTA",
+    "state": "SA",
+    "postcode": "5700",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -32.5008809,
+    "longitude": 137.7830325
+  },
+  {
+    "name": "FAME - Flexible Accredited Meaningful Engagement - The Cottage Campus",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -35.103926,
+    "longitude": 138.528849
+  },
+  {
+    "name": "Aspect Treetop School",
+    "suburb": "ASHFORD",
+    "state": "SA",
+    "postcode": "5035",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.950892,
+    "longitude": 138.574872
+  },
+  {
+    "name": "IQRA College",
+    "suburb": "O'HALLORAN HILL",
+    "state": "SA",
+    "postcode": "5158",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.052122,
+    "longitude": 138.553342
+  },
+  {
+    "name": "Dara School",
+    "suburb": "MORPHETTVILLE",
+    "state": "SA",
+    "postcode": "5043",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.989241,
+    "longitude": 138.544412
+  },
+  {
+    "name": "Playford College",
+    "suburb": "ELIZABETH",
+    "state": "SA",
+    "postcode": "5112",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.710357,
+    "longitude": 138.672678
+  },
+  {
+    "name": "Youth Education Centre - Flexicentre Campus (Kilburn)",
+    "suburb": "KILBURN",
+    "state": "SA",
+    "postcode": "5084",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.855272,
+    "longitude": 138.585254
+  },
+  {
+    "name": "Garden College - Elizabeth Campus",
+    "suburb": "DAVERON PARK",
+    "state": "SA",
+    "postcode": "5113",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.687466,
+    "longitude": 138.67294
+  },
+  {
+    "name": "Australian Islamic College Adelaide",
+    "suburb": "WEST CROYDON",
+    "state": "SA",
+    "postcode": "5008",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.89203,
+    "longitude": 138.563909
+  },
+  {
+    "name": "Adelaide Botanic High School",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.916908,
+    "longitude": 138.606591
+  },
+  {
+    "name": "Youthinc. Enterprise Academy",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.922993,
+    "longitude": 138.595482
+  },
+  {
+    "name": "McAuley Community School",
+    "suburb": "HOVE",
+    "state": "SA",
+    "postcode": "5048",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -35.012,
+    "longitude": 138.5193
+  },
+  {
+    "name": "Peterborough Primary School -  Yunta Campus",
+    "suburb": "YUNTA",
+    "state": "SA",
+    "postcode": "5440",
+    "sector": "Government",
+    "type": "Primary",
+    "latitude": -32.581189,
+    "longitude": 139.563178
+  },
+  {
+    "name": "Maple Leaf School - University of South Australia",
+    "suburb": "MAWSON LAKES",
+    "state": "SA",
+    "postcode": "5095",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.810851,
+    "longitude": 138.611959
+  },
+  {
+    "name": "SEDA College SA - Glandore Recreation Centre",
+    "suburb": "GLANDORE",
+    "state": "SA",
+    "postcode": "5037",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.964269,
+    "longitude": 138.565705
+  },
+  {
+    "name": "Emmaus Christian College -  Brooklyn Park Campus",
+    "suburb": "BROOKLYN PARK",
+    "state": "SA",
+    "postcode": "5032",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.9301,
+    "longitude": 138.548408
+  },
+  {
+    "name": "Pinnacle College - Golden Grove",
+    "suburb": "GOLDEN GROVE",
+    "state": "SA",
+    "postcode": "5125",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.785459,
+    "longitude": 138.710429
+  },
+  {
+    "name": "Southern Montessori School - Middle School Campus",
+    "suburb": "MORPHETT VALE",
+    "state": "SA",
+    "postcode": "5162",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.11066,
+    "longitude": 138.54089
+  },
+  {
+    "name": "University Senior College at Adelaide University - Gawler Place Campus",
+    "suburb": "GAWLER PLACE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.921955,
+    "longitude": 138.601534
+  },
+  {
+    "name": "SEDA College SA - West Adelaide Football Club",
+    "suburb": "RICHMOND",
+    "state": "SA",
+    "postcode": "5033",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.937061,
+    "longitude": 138.567974
+  },
+  {
+    "name": "SEDA College SA - The Parks Campus",
+    "suburb": "ANGLE PARK",
+    "state": "SA",
+    "postcode": "5010",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.8579037728277,
+    "longitude": 138.558158583067
+  },
+  {
+    "name": "Xavier College - Two Wells Campus",
+    "suburb": "TWO WELLS",
+    "state": "SA",
+    "postcode": "5501",
+    "sector": "Catholic",
+    "type": "Combined",
+    "latitude": -34.5869168497221,
+    "longitude": 138.505416797141
+  },
+  {
+    "name": "SEDA College SA - Edwardstown Oval",
+    "suburb": "SOUTH PLYMPTON",
+    "state": "SA",
+    "postcode": "5038",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.981327,
+    "longitude": 138.563141
+  },
+  {
+    "name": "Indie School Elizabeth Campus",
+    "suburb": "ELIZABETH",
+    "state": "SA",
+    "postcode": "5112",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.7226,
+    "longitude": 138.6675
+  },
+  {
+    "name": "Ngutu College",
+    "suburb": "WOODVILLE NORTH",
+    "state": "SA",
+    "postcode": "5012",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -34.866124,
+    "longitude": 138.538896
+  },
+  {
+    "name": "Edmund Rice Flexi School",
+    "suburb": "ELIZABETH",
+    "state": "SA",
+    "postcode": "5112",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.71330752,
+    "longitude": 138.6710054
+  },
+  {
+    "name": "King's Baptist Grammar School - Mount Barker Campus",
+    "suburb": "MOUNT BARKER",
+    "state": "SA",
+    "postcode": "5251",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -35.0759043874049,
+    "longitude": 138.847539207421
+  },
+  {
+    "name": "Nazareth Catholic College - St Gabriel Centre Campus",
+    "suburb": "UNDERDALE",
+    "state": "SA",
+    "postcode": "5032",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.917302920943,
+    "longitude": 138.54699626035
+  },
+  {
+    "name": "St Francis of Assisi College",
+    "suburb": "RENMARK",
+    "state": "SA",
+    "postcode": "5341",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.17594128,
+    "longitude": 140.7313365
+  },
+  {
+    "name": "SEDA College SA - St. Clair YMCA Recreation Centre",
+    "suburb": "WOODVILLE",
+    "state": "SA",
+    "postcode": "5011",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.8739890814208,
+    "longitude": 138.541172913206
+  },
+  {
+    "name": "Whyalla Secondary College",
+    "suburb": "WHYALLA NORRIE",
+    "state": "SA",
+    "postcode": "5608",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -33.0263567,
+    "longitude": 137.533411
+  },
+  {
+    "name": "Riverbanks College B-12",
+    "suburb": "ANGLE VALE",
+    "state": "SA",
+    "postcode": "5117",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -34.63520382,
+    "longitude": 138.6631941
+  },
+  {
+    "name": "Aldinga Payinthi College",
+    "suburb": "ALDINGA",
+    "state": "SA",
+    "postcode": "5173",
+    "sector": "Government",
+    "type": "Combined",
+    "latitude": -35.26771678,
+    "longitude": 138.470119
+  },
+  {
+    "name": "Goolwa Secondary College",
+    "suburb": "GOOLWA",
+    "state": "SA",
+    "postcode": "5214",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -35.49290718,
+    "longitude": 138.7733067
+  },
+  {
+    "name": "SEDA College SA - The Cove Campus",
+    "suburb": "HALLETT COVE",
+    "state": "SA",
+    "postcode": "5158",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -35.0869286803315,
+    "longitude": 138.505712897159
+  },
+  {
+    "name": "SEDA College SA - South Adelaide Football Club Campus",
+    "suburb": "NOARLUNGA DOWNS",
+    "state": "SA",
+    "postcode": "5168",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -35.1457526531823,
+    "longitude": 138.492276297161
+  },
+  {
+    "name": "Compass Catholic Community",
+    "suburb": "DAVOREN PARK",
+    "state": "SA",
+    "postcode": "5113",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.68567,
+    "longitude": 138.673053
+  },
+  {
+    "name": "Edmund Rice Flexi School - Davoren Park Campus",
+    "suburb": "DAVOREN PARK",
+    "state": "SA",
+    "postcode": "5113",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.6874033584413,
+    "longitude": 138.672898954855
+  },
+  {
+    "name": "Mount Carmel College Primary Campus",
+    "suburb": "PENNINGTON",
+    "state": "SA",
+    "postcode": "5013",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.8589676748921,
+    "longitude": 138.524211140185
+  },
+  {
+    "name": "Indie School Salisbury Campus",
+    "suburb": "SALISBURY",
+    "state": "SA",
+    "postcode": "5108",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.7605475804131,
+    "longitude": 138.649265797186
+  },
+  {
+    "name": "Morialta Secondary College",
+    "suburb": "ROSTREVOR",
+    "state": "SA",
+    "postcode": "5073",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.90064898,
+    "longitude": 138.6763528
+  },
+  {
+    "name": "SEDA College SA - Football SA State Performance Centre",
+    "suburb": "GEPPS CROSS",
+    "state": "SA",
+    "postcode": "5094",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.84123745,
+    "longitude": 138.6216347
+  },
+  {
+    "name": "SEDA College SA - Mitchell Park Campus",
+    "suburb": "MITCHELL PARK",
+    "state": "SA",
+    "postcode": "5043",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -35.0019997036906,
+    "longitude": 138.564306798307
+  },
+  {
+    "name": "Trinity College Roseworthy",
+    "suburb": "ROSEWORTHY",
+    "state": "SA",
+    "postcode": "5371",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.55050507,
+    "longitude": 138.7471509
+  },
+  {
+    "name": "Nazareth Catholic College - Kidman Park Campus",
+    "suburb": "KIDMAN PARK",
+    "state": "SA",
+    "postcode": "5025",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -34.9094727873437,
+    "longitude": 138.531440939574
+  },
+  {
+    "name": "Xavier College - Evanston Campus",
+    "suburb": "EVANSTON",
+    "state": "SA",
+    "postcode": "5116",
+    "sector": "Catholic",
+    "type": "Primary",
+    "latitude": -34.6215803514498,
+    "longitude": 138.736142739563
+  },
+  {
+    "name": "Horizon Christian School Clare Campus",
+    "suburb": "CLARE",
+    "state": "SA",
+    "postcode": "5453",
+    "sector": "Independent",
+    "type": "Combined",
+    "latitude": -33.8484196447756,
+    "longitude": 138.619772928836
+  },
+  {
+    "name": "Indie School Port Adelaide Campus",
+    "suburb": "PORT ADELAIDE",
+    "state": "SA",
+    "postcode": "5015",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.8464743025028,
+    "longitude": 138.504629728834
+  },
+  {
+    "name": "SEDA College SA - North Adelaide Football Club",
+    "suburb": "Prospect South",
+    "state": "SA",
+    "postcode": "5082",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.8855524408593,
+    "longitude": 138.599752640984
+  },
+  {
+    "name": "St Benedict School",
+    "suburb": "MOUNT TORRENS",
+    "state": "SA",
+    "postcode": "5244",
+    "sector": "Independent",
+    "type": "Primary",
+    "latitude": -34.89451407,
+    "longitude": 138.9507391
+  },
+  {
+    "name": "Findon High School - Findon Technical College",
+    "suburb": "FINDON",
+    "state": "SA",
+    "postcode": "5023",
+    "sector": "Government",
+    "type": "Secondary",
+    "latitude": -34.898332,
+    "longitude": 138.526613
+  },
+  {
+    "name": "SEDA College SA - Adelaide Comets",
+    "suburb": "ADELAIDE",
+    "state": "SA",
+    "postcode": "5000",
+    "sector": "Independent",
+    "type": "Secondary",
+    "latitude": -34.9277862727266,
+    "longitude": 138.583390872638
+  },
+  {
+    "name": "FAME - Flexible Accredited Meaningful Engagement",
+    "suburb": "CHRISTIE DOWNS",
+    "state": "SA",
+    "postcode": "5164",
+    "sector": "Catholic",
+    "type": "Secondary",
+    "latitude": -35.137379,
+    "longitude": 138.4896051
+  }
+]

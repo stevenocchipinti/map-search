@@ -1,0 +1,2054 @@
+[
+  {
+    "name": "PARKESTON",
+    "state": "WA",
+    "latitude": -30.72722635599996,
+    "longitude": 121.50080984100009
+  },
+  {
+    "name": "KIRUP",
+    "state": "WA",
+    "latitude": -33.70788611299997,
+    "longitude": 115.89469433600004
+  },
+  {
+    "name": "PORT HEDLAND",
+    "state": "WA",
+    "latitude": -20.31699840999994,
+    "longitude": 118.59269767500007
+  },
+  {
+    "name": "BOLGART",
+    "state": "WA",
+    "latitude": -31.27410606899997,
+    "longitude": 116.50661856400006
+  },
+  {
+    "name": "BASSENDEAN",
+    "state": "WA",
+    "latitude": -31.90363160199996,
+    "longitude": 115.94700918900003
+  },
+  {
+    "name": "WEST LEEDERVILLE",
+    "state": "WA",
+    "latitude": -31.942664607999973,
+    "longitude": 115.83302620900008
+  },
+  {
+    "name": "MCIVER",
+    "state": "WA",
+    "latitude": -31.95180010599995,
+    "longitude": 115.86616220500002
+  },
+  {
+    "name": "DAGLISH",
+    "state": "WA",
+    "latitude": -31.95178010899997,
+    "longitude": 115.81343171200001
+  },
+  {
+    "name": "VICTORIA PARK",
+    "state": "WA",
+    "latitude": -31.971679604999963,
+    "longitude": 115.90229570100007
+  },
+  {
+    "name": "SHOWGROUNDS",
+    "state": "WA",
+    "latitude": -31.976892110999984,
+    "longitude": 115.78710271800003
+  },
+  {
+    "name": "CARLISLE",
+    "state": "WA",
+    "latitude": -31.980902103999938,
+    "longitude": 115.91128370000001
+  },
+  {
+    "name": "KONDININ",
+    "state": "WA",
+    "latitude": -32.495726488999935,
+    "longitude": 118.26874039400002
+  },
+  {
+    "name": "YEALERING",
+    "state": "WA",
+    "latitude": -32.59278651899996,
+    "longitude": 117.623960495
+  },
+  {
+    "name": "KULIN",
+    "state": "WA",
+    "latitude": -32.66902649399998,
+    "longitude": 118.15774042100009
+  },
+  {
+    "name": "YORNANING",
+    "state": "WA",
+    "latitude": -32.736656541999935,
+    "longitude": 117.16280057300003
+  },
+  {
+    "name": "TOOLIBIN",
+    "state": "WA",
+    "latitude": -32.94707652099993,
+    "longitude": 117.62344051900004
+  },
+  {
+    "name": "BONNIE VALE",
+    "state": "WA",
+    "latitude": -30.841826367999943,
+    "longitude": 121.15073989400003
+  },
+  {
+    "name": "COOROW",
+    "state": "WA",
+    "latitude": -29.883286588999965,
+    "longitude": 116.02162053000006
+  },
+  {
+    "name": "BOWGADA",
+    "state": "WA",
+    "latitude": -29.334331077999934,
+    "longitude": 116.1718619720001
+  },
+  {
+    "name": "REDMINE",
+    "state": "WA",
+    "latitude": -31.186206352999932,
+    "longitude": 121.68049983500009
+  },
+  {
+    "name": "WALKAWAY",
+    "state": "WA",
+    "latitude": -28.93931465399993,
+    "longitude": 114.8016191160001
+  },
+  {
+    "name": "BURRACOPPIN",
+    "state": "WA",
+    "latitude": -31.38624647399996,
+    "longitude": 118.48393029500005
+  },
+  {
+    "name": "PINGARING",
+    "state": "WA",
+    "latitude": -32.75338647399997,
+    "longitude": 118.62622035700008
+  },
+  {
+    "name": "CARRABIN",
+    "state": "WA",
+    "latitude": -31.39197646599996,
+    "longitude": 118.66994026900011
+  },
+  {
+    "name": "AMERY",
+    "state": "WA",
+    "latitude": -31.150659538999946,
+    "longitude": 117.08756097500009
+  },
+  {
+    "name": "EWINGTON MINE",
+    "state": "WA",
+    "latitude": -33.361746591999974,
+    "longitude": 116.23903075700002
+  },
+  {
+    "name": "WESTERN NO2",
+    "state": "WA",
+    "latitude": -33.43033659199995,
+    "longitude": 116.24266076100002
+  },
+  {
+    "name": "BINDI BINDI",
+    "state": "WA",
+    "latitude": -30.63063457399994,
+    "longitude": 116.36410803800004
+  },
+  {
+    "name": "PIAWANING",
+    "state": "WA",
+    "latitude": -30.839915572999928,
+    "longitude": 116.38737105000007
+  },
+  {
+    "name": "MOONIJIN",
+    "state": "WA",
+    "latitude": -30.943696537999983,
+    "longitude": 117.08065046200011
+  },
+  {
+    "name": "VICTORIA STREET",
+    "state": "WA",
+    "latitude": -32.01204261299995,
+    "longitude": 115.75496922500008
+  },
+  {
+    "name": "CADOUX",
+    "state": "WA",
+    "latitude": -30.768446533999963,
+    "longitude": 117.13595044300007
+  },
+  {
+    "name": "MARCHAGEE",
+    "state": "WA",
+    "latitude": -30.055407586999934,
+    "longitude": 116.07338853600004
+  },
+  {
+    "name": "CANNING BRIDGE",
+    "state": "WA",
+    "latitude": -32.00937260699993,
+    "longitude": 115.85597771000005
+  },
+  {
+    "name": "CUTHBERT",
+    "state": "WA",
+    "latitude": -35.016105521999975,
+    "longitude": 117.78689463400008
+  },
+  {
+    "name": "BOWGADA NORTH",
+    "state": "WA",
+    "latitude": -29.32122857899998,
+    "longitude": 116.14581347400008
+  },
+  {
+    "name": "CANNA",
+    "state": "WA",
+    "latitude": -28.89909959299996,
+    "longitude": 115.86292948000005
+  },
+  {
+    "name": "MOUNT TOM PRICE",
+    "state": "WA",
+    "latitude": -22.75032146199993,
+    "longitude": 117.77287387800004
+  },
+  {
+    "name": "BURNGUP",
+    "state": "WA",
+    "latitude": -33.01744647199996,
+    "longitude": 118.6893603640001
+  },
+  {
+    "name": "PEMBERTON",
+    "state": "WA",
+    "latitude": -34.44313060799993,
+    "longitude": 116.03290537200007
+  },
+  {
+    "name": "GOOMALLING",
+    "state": "WA",
+    "latitude": -31.297936551999953,
+    "longitude": 116.82666052200011
+  },
+  {
+    "name": "TOODYAY",
+    "state": "WA",
+    "latitude": -31.552106571999957,
+    "longitude": 116.4687605900001
+  },
+  {
+    "name": "MILLENDON JUNCTION",
+    "state": "WA",
+    "latitude": -31.80513809699994,
+    "longitude": 116.02853167
+  },
+  {
+    "name": "GUILDFORD",
+    "state": "WA",
+    "latitude": -31.898919100999933,
+    "longitude": 115.96564118600008
+  },
+  {
+    "name": "SUCCESS HILL",
+    "state": "WA",
+    "latitude": -31.900149600999953,
+    "longitude": 115.95585768800004
+  },
+  {
+    "name": "MAYLANDS",
+    "state": "WA",
+    "latitude": -31.92826910499997,
+    "longitude": 115.8917536990001
+  },
+  {
+    "name": "CITY WEST",
+    "state": "WA",
+    "latitude": -31.944709607999982,
+    "longitude": 115.84522970700004
+  },
+  {
+    "name": "BROOKTON",
+    "state": "WA",
+    "latitude": -32.36813654799994,
+    "longitude": 117.00956057000008
+  },
+  {
+    "name": "WICKEPIN",
+    "state": "WA",
+    "latitude": -32.78031652599998,
+    "longitude": 117.50061052600006
+  },
+  {
+    "name": "JAURDI",
+    "state": "WA",
+    "latitude": -30.842556400999968,
+    "longitude": 120.20954002500002
+  },
+  {
+    "name": "IRWIN",
+    "state": "WA",
+    "latitude": -29.218174638999983,
+    "longitude": 115.08743960200002
+  },
+  {
+    "name": "RGC NORTH",
+    "state": "WA",
+    "latitude": -29.891986629999963,
+    "longitude": 115.28446062800003
+  },
+  {
+    "name": "BUNJIL",
+    "state": "WA",
+    "latitude": -29.65268556899997,
+    "longitude": 116.36634146900008
+  },
+  {
+    "name": "BOORAAN",
+    "state": "WA",
+    "latitude": -31.436746478999964,
+    "longitude": 118.37834031300008
+  },
+  {
+    "name": "MERREDIN",
+    "state": "WA",
+    "latitude": -31.482396482999945,
+    "longitude": 118.27731033000009
+  },
+  {
+    "name": "KELLERBERRIN",
+    "state": "WA",
+    "latitude": -31.633366509999973,
+    "longitude": 117.7193904180001
+  },
+  {
+    "name": "MOORINE ROCK",
+    "state": "WA",
+    "latitude": -31.319186447999982,
+    "longitude": 119.0750502080001
+  },
+  {
+    "name": "CRAMPHORNE",
+    "state": "WA",
+    "latitude": -31.80332647199998,
+    "longitude": 118.56055030900006
+  },
+  {
+    "name": "WOGARL",
+    "state": "WA",
+    "latitude": -31.90278647399998,
+    "longitude": 118.52659032000008
+  },
+  {
+    "name": "HARVEY",
+    "state": "WA",
+    "latitude": -33.08113660999993,
+    "longitude": 115.89512078700011
+  },
+  {
+    "name": "BUNBURY TERMINAL",
+    "state": "WA",
+    "latitude": -33.34485662399993,
+    "longitude": 115.6579008430001
+  },
+  {
+    "name": "CARDIFF",
+    "state": "WA",
+    "latitude": -33.44322659299996,
+    "longitude": 116.23520076400007
+  },
+  {
+    "name": "YERECOIN",
+    "state": "WA",
+    "latitude": -30.92261357299998,
+    "longitude": 116.38991505500007
+  },
+  {
+    "name": "BURAKIN",
+    "state": "WA",
+    "latitude": -30.52538653099998,
+    "longitude": 117.17374042100005
+  },
+  {
+    "name": "WELBUNGIN",
+    "state": "WA",
+    "latitude": -30.825596492999978,
+    "longitude": 117.99118032900003
+  },
+  {
+    "name": "KWINANA CONTAINER TERMINAL",
+    "state": "WA",
+    "latitude": -32.23427311199998,
+    "longitude": 115.78447723800002
+  },
+  {
+    "name": "MUNDIJONG",
+    "state": "WA",
+    "latitude": -32.29503560099994,
+    "longitude": 115.98656821300006
+  },
+  {
+    "name": "CURRAMBINE",
+    "state": "WA",
+    "latitude": -31.72561811199995,
+    "longitude": 115.7507967040001
+  },
+  {
+    "name": "MURDOCH",
+    "state": "WA",
+    "latitude": -32.066497107999965,
+    "longitude": 115.85046721600008
+  },
+  {
+    "name": "KATANNING",
+    "state": "WA",
+    "latitude": -33.69217152699997,
+    "longitude": 117.55725608000012
+  },
+  {
+    "name": "GUTHA",
+    "state": "WA",
+    "latitude": -28.98836708899995,
+    "longitude": 115.9430999760001
+  },
+  {
+    "name": "DONGARA",
+    "state": "WA",
+    "latitude": -29.24539264699996,
+    "longitude": 114.94438062200004
+  },
+  {
+    "name": "BROCKMAN NO 4",
+    "state": "WA",
+    "latitude": -22.581351987999938,
+    "longitude": 117.22769392000009
+  },
+  {
+    "name": "COLLINS",
+    "state": "WA",
+    "latitude": -34.41581760499997,
+    "longitude": 116.09365236100007
+  },
+  {
+    "name": "BARRONHURST",
+    "state": "WA",
+    "latitude": -34.42563510599996,
+    "longitude": 116.06975386500005
+  },
+  {
+    "name": "THE CASCADES",
+    "state": "WA",
+    "latitude": -34.47713010799998,
+    "longitude": 116.03064937500005
+  },
+  {
+    "name": "TERRY",
+    "state": "WA",
+    "latitude": -34.60662310399994,
+    "longitude": 116.11289887300006
+  },
+  {
+    "name": "MOOLIABEENEE",
+    "state": "WA",
+    "latitude": -31.328300594999973,
+    "longitude": 116.02332613600004
+  },
+  {
+    "name": "COBBLER POOL",
+    "state": "WA",
+    "latitude": -31.56252657999994,
+    "longitude": 116.32592061100002
+  },
+  {
+    "name": "WHITFORDS",
+    "state": "WA",
+    "latitude": -31.799419609999973,
+    "longitude": 115.78235820500004
+  },
+  {
+    "name": "YORK",
+    "state": "WA",
+    "latitude": -31.89429655799995,
+    "longitude": 116.76578057200004
+  },
+  {
+    "name": "EAST GUILDFORD",
+    "state": "WA",
+    "latitude": -31.89675459999995,
+    "longitude": 115.97945618400001
+  },
+  {
+    "name": "GLENDALOUGH",
+    "state": "WA",
+    "latitude": -31.91470310899996,
+    "longitude": 115.82312570800002
+  },
+  {
+    "name": "FORRESTFIELD",
+    "state": "WA",
+    "latitude": -31.957268599999963,
+    "longitude": 115.99113218700006
+  },
+  {
+    "name": "SUBIACO",
+    "state": "WA",
+    "latitude": -31.94500660899996,
+    "longitude": 115.82415071000003
+  },
+  {
+    "name": "CLAISEBROOK",
+    "state": "WA",
+    "latitude": -31.94887760599994,
+    "longitude": 115.87565670300012
+  },
+  {
+    "name": "CLAREMONT",
+    "state": "WA",
+    "latitude": -31.98076961099997,
+    "longitude": 115.78153571900009
+  },
+  {
+    "name": "SWANBOURNE",
+    "state": "WA",
+    "latitude": -31.982739111999933,
+    "longitude": 115.77058722100003
+  },
+  {
+    "name": "OATS STREET",
+    "state": "WA",
+    "latitude": -31.98664860399998,
+    "longitude": 115.91576970000006
+  },
+  {
+    "name": "BENDERING",
+    "state": "WA",
+    "latitude": -32.39318648699998,
+    "longitude": 118.30129038300004
+  },
+  {
+    "name": "PINGELLY",
+    "state": "WA",
+    "latitude": -32.53247654499995,
+    "longitude": 117.08500057000003
+  },
+  {
+    "name": "YILLIMINNING",
+    "state": "WA",
+    "latitude": -32.90110653199997,
+    "longitude": 117.37550055300005
+  },
+  {
+    "name": "NARROGIN",
+    "state": "WA",
+    "latitude": -32.93479654199996,
+    "longitude": 117.17932058500003
+  },
+  {
+    "name": "DUDININ",
+    "state": "WA",
+    "latitude": -32.87109650699995,
+    "longitude": 117.90221047200009
+  },
+  {
+    "name": "LEONORA",
+    "state": "WA",
+    "latitude": -28.885506351999936,
+    "longitude": 121.32609978700009
+  },
+  {
+    "name": "STEWART",
+    "state": "WA",
+    "latitude": -30.91265637999993,
+    "longitude": 120.81541994400004
+  },
+  {
+    "name": "BOOKARA",
+    "state": "WA",
+    "latitude": -29.04692315099993,
+    "longitude": 114.86028111700011
+  },
+  {
+    "name": "STRAWBERRY",
+    "state": "WA",
+    "latitude": -29.209455628999933,
+    "longitude": 115.25465458000008
+  },
+  {
+    "name": "RGC SOUTH MINE",
+    "state": "WA",
+    "latitude": -29.930918129999952,
+    "longitude": 115.28549963000012
+  },
+  {
+    "name": "HAMPTON",
+    "state": "WA",
+    "latitude": -31.024426355999935,
+    "longitude": 121.54273984800011
+  },
+  {
+    "name": "KORBEL",
+    "state": "WA",
+    "latitude": -31.65429648999998,
+    "longitude": 118.15066035900009
+  },
+  {
+    "name": "KARLGARIN",
+    "state": "WA",
+    "latitude": -32.49689646899998,
+    "longitude": 118.71233032900011
+  },
+  {
+    "name": "KOOLYANOBBING EAST",
+    "state": "WA",
+    "latitude": -30.821026426999936,
+    "longitude": 119.52885011700005
+  },
+  {
+    "name": "COWCOWING",
+    "state": "WA",
+    "latitude": -30.99537651999998,
+    "longitude": 117.45125041400001
+  },
+  {
+    "name": "KOONADGIN",
+    "state": "WA",
+    "latitude": -31.60570647399993,
+    "longitude": 118.50946030500006
+  },
+  {
+    "name": "BENGER",
+    "state": "WA",
+    "latitude": -33.17406661199993,
+    "longitude": 115.86266079900008
+  },
+  {
+    "name": "PICTON JUNCTION",
+    "state": "WA",
+    "latitude": -33.34586662099997,
+    "longitude": 115.71394083500002
+  },
+  {
+    "name": "KONDUT",
+    "state": "WA",
+    "latitude": -30.709616551999943,
+    "longitude": 116.7736704880001
+  },
+  {
+    "name": "KULJA",
+    "state": "WA",
+    "latitude": -30.480926525999962,
+    "longitude": 117.28463040300005
+  },
+  {
+    "name": "QUEENS PARK",
+    "state": "WA",
+    "latitude": -32.007300602999976,
+    "longitude": 115.9386776980001
+  },
+  {
+    "name": "CANNINGTON",
+    "state": "WA",
+    "latitude": -32.013714601999936,
+    "longitude": 115.94519969800001
+  },
+  {
+    "name": "FREMANTLE",
+    "state": "WA",
+    "latitude": -32.051962113999934,
+    "longitude": 115.74509073000002
+  },
+  {
+    "name": "SUCCESS HARBOUR",
+    "state": "WA",
+    "latitude": -32.06739261299998,
+    "longitude": 115.75060623000002
+  },
+  {
+    "name": "CHALLIS",
+    "state": "WA",
+    "latitude": -32.12666159899993,
+    "longitude": 116.01267169700009
+  },
+  {
+    "name": "SERPENTINE",
+    "state": "WA",
+    "latitude": -32.36398860199995,
+    "longitude": 115.97612572000003
+  },
+  {
+    "name": "CALCINE",
+    "state": "WA",
+    "latitude": -32.65117660499993,
+    "longitude": 115.95137074600007
+  },
+  {
+    "name": "ISANDRA",
+    "state": "WA",
+    "latitude": -32.69623660499997,
+    "longitude": 115.94916074900004
+  },
+  {
+    "name": "COOLUP",
+    "state": "WA",
+    "latitude": -32.74109660899995,
+    "longitude": 115.8757707640001
+  },
+  {
+    "name": "MCLEVIE",
+    "state": "WA",
+    "latitude": -30.251186555999936,
+    "longitude": 116.66922047100002
+  },
+  {
+    "name": "NAMBAN",
+    "state": "WA",
+    "latitude": -30.380637588999946,
+    "longitude": 116.0482850630001
+  },
+  {
+    "name": "GREENWOOD",
+    "state": "WA",
+    "latitude": -31.818595109999933,
+    "longitude": 115.7832272060001
+  },
+  {
+    "name": "NEWMAN",
+    "state": "WA",
+    "latitude": -23.375209880999932,
+    "longitude": 119.6914467250001
+  },
+  {
+    "name": "CAPE LAMBERT",
+    "state": "WA",
+    "latitude": -20.611041480999972,
+    "longitude": 117.16443331100004
+  },
+  {
+    "name": "NARRIKUP",
+    "state": "WA",
+    "latitude": -34.773050024999975,
+    "longitude": 117.7033501310001
+  },
+  {
+    "name": "PARKER POINT",
+    "state": "WA",
+    "latitude": -20.645807503999947,
+    "longitude": 116.72684735000007
+  },
+  {
+    "name": "WOMBAT JUNCTION",
+    "state": "WA",
+    "latitude": -22.686593460999973,
+    "longitude": 117.78527787300004
+  },
+  {
+    "name": "AREA C MINE",
+    "state": "WA",
+    "latitude": -22.919748407999975,
+    "longitude": 118.97795777200008
+  },
+  {
+    "name": "KENDENUP",
+    "state": "WA",
+    "latitude": -34.486910026999965,
+    "longitude": 117.62904212300009
+  },
+  {
+    "name": "SALMON GUMS",
+    "state": "WA",
+    "latitude": -32.997578362999946,
+    "longitude": 121.64945441700002
+  },
+  {
+    "name": "WARREN BRIDGE",
+    "state": "WA",
+    "latitude": -34.50793810899995,
+    "longitude": 116.02893337800003
+  },
+  {
+    "name": "MOGUMBER",
+    "state": "WA",
+    "latitude": -31.041211592999957,
+    "longitude": 116.0435496120001
+  },
+  {
+    "name": "TOODYAY WEST",
+    "state": "WA",
+    "latitude": -31.533366572999967,
+    "longitude": 116.44389059200012
+  },
+  {
+    "name": "SEABROOK",
+    "state": "WA",
+    "latitude": -31.657096557999978,
+    "longitude": 116.74491055800002
+  },
+  {
+    "name": "JOONDALUP",
+    "state": "WA",
+    "latitude": -31.74400161099993,
+    "longitude": 115.7674802030001
+  },
+  {
+    "name": "MILLENDON",
+    "state": "WA",
+    "latitude": -31.782928596999966,
+    "longitude": 116.02531466900007
+  },
+  {
+    "name": "MIDLAND",
+    "state": "WA",
+    "latitude": -31.891774098999974,
+    "longitude": 116.00077068100006
+  },
+  {
+    "name": "PERTH",
+    "state": "WA",
+    "latitude": -31.951441606999936,
+    "longitude": 115.86044870500007
+  },
+  {
+    "name": "BULLARING",
+    "state": "WA",
+    "latitude": -32.49732651299996,
+    "longitude": 117.74274047100005
+  },
+  {
+    "name": "SULLIVAN",
+    "state": "WA",
+    "latitude": -28.712978600999975,
+    "longitude": 115.70505448600011
+  },
+  {
+    "name": "MENZIES",
+    "state": "WA",
+    "latitude": -29.69595636599996,
+    "longitude": 121.03158986000005
+  },
+  {
+    "name": "KALGOORLIE",
+    "state": "WA",
+    "latitude": -30.746376356999974,
+    "longitude": 121.46632984700011
+  },
+  {
+    "name": "NORTHERN GULLY",
+    "state": "WA",
+    "latitude": -28.71384414599993,
+    "longitude": 114.9221355840001
+  },
+  {
+    "name": "DOWERIN",
+    "state": "WA",
+    "latitude": -31.19387654199994,
+    "longitude": 117.03034048600011
+  },
+  {
+    "name": "BEELA",
+    "state": "WA",
+    "latitude": -33.234086608999974,
+    "longitude": 115.91419079600007
+  },
+  {
+    "name": "BRUNSWICK JUNCTION",
+    "state": "WA",
+    "latitude": -33.25829661399996,
+    "longitude": 115.83865080900011
+  },
+  {
+    "name": "BABAKIN",
+    "state": "WA",
+    "latitude": -32.12508649799997,
+    "longitude": 118.02436040600003
+  },
+  {
+    "name": "PICTON",
+    "state": "WA",
+    "latitude": -33.353046621999965,
+    "longitude": 115.688530839
+  },
+  {
+    "name": "PICTON EAST",
+    "state": "WA",
+    "latitude": -33.35779662099998,
+    "longitude": 115.71909083500009
+  },
+  {
+    "name": "WONGAN HILLS",
+    "state": "WA",
+    "latitude": -30.893416555999977,
+    "longitude": 116.71598050900002
+  },
+  {
+    "name": "CLEARY",
+    "state": "WA",
+    "latitude": -30.434526507999976,
+    "longitude": 117.64617035100002
+  },
+  {
+    "name": "MOLLERIN",
+    "state": "WA",
+    "latitude": -30.454336513999976,
+    "longitude": 117.52839036900002
+  },
+  {
+    "name": "MOSMAN PARK",
+    "state": "WA",
+    "latitude": -32.006776112999944,
+    "longitude": 115.75750472400011
+  },
+  {
+    "name": "SPEARWOOD",
+    "state": "WA",
+    "latitude": -32.10373361199993,
+    "longitude": 115.78033222900001
+  },
+  {
+    "name": "KELMSCOTT",
+    "state": "WA",
+    "latitude": -32.11315959899997,
+    "longitude": 116.01329219600007
+  },
+  {
+    "name": "COCKBURN NORTH",
+    "state": "WA",
+    "latitude": -32.115191110999945,
+    "longitude": 115.79728272700004
+  },
+  {
+    "name": "COCKBURN SOUTH",
+    "state": "WA",
+    "latitude": -32.12732361099995,
+    "longitude": 115.7996632280001
+  },
+  {
+    "name": "SHERWOOD",
+    "state": "WA",
+    "latitude": -32.13787659899998,
+    "longitude": 116.01042069800008
+  },
+  {
+    "name": "WYALKATCHEM",
+    "state": "WA",
+    "latitude": -31.18020652399997,
+    "longitude": 117.38049043600006
+  },
+  {
+    "name": "DWELLINGUP",
+    "state": "WA",
+    "latitude": -32.71125659899997,
+    "longitude": 116.063070734
+  },
+  {
+    "name": "WAGERUP",
+    "state": "WA",
+    "latitude": -32.91219660899998,
+    "longitude": 115.89699077400007
+  },
+  {
+    "name": "DALWALLINU",
+    "state": "WA",
+    "latitude": -30.275956555999983,
+    "longitude": 116.66293047300007
+  },
+  {
+    "name": "KWINANA",
+    "state": "WA",
+    "latitude": -32.23504560899994,
+    "longitude": 115.84255173000008
+  },
+  {
+    "name": "COCKBURN",
+    "state": "WA",
+    "latitude": -32.12504560799994,
+    "longitude": 115.85824071900004
+  },
+  {
+    "name": "YANDI NO 1",
+    "state": "WA",
+    "latitude": -22.73341790099994,
+    "longitude": 119.11555525000006
+  },
+  {
+    "name": "MOULYINNING",
+    "state": "WA",
+    "latitude": -33.227785506999965,
+    "longitude": 117.92836999200006
+  },
+  {
+    "name": "GRASS PATCH",
+    "state": "WA",
+    "latitude": -33.22802036199994,
+    "longitude": 121.71661891600002
+  },
+  {
+    "name": "PERENJORI",
+    "state": "WA",
+    "latitude": -29.441659071999936,
+    "longitude": 116.285900964
+  },
+  {
+    "name": "MORAWA",
+    "state": "WA",
+    "latitude": -29.210449085999983,
+    "longitude": 116.0099359840001
+  },
+  {
+    "name": "PARABURDOO",
+    "state": "WA",
+    "latitude": -23.23211697199997,
+    "longitude": 117.62187942000003
+  },
+  {
+    "name": "FIRETAIL",
+    "state": "WA",
+    "latitude": -22.144293448999974,
+    "longitude": 117.96886332600002
+  },
+  {
+    "name": "ESPLANADE",
+    "state": "WA",
+    "latitude": -31.956744606999962,
+    "longitude": 115.85540120700011
+  },
+  {
+    "name": "NORTH GREENBUSHES",
+    "state": "WA",
+    "latitude": -33.82331560499995,
+    "longitude": 116.04995482100003
+  },
+  {
+    "name": "DOMBAKUP",
+    "state": "WA",
+    "latitude": -34.590047605999985,
+    "longitude": 116.08036887600008
+  },
+  {
+    "name": "JENNACUBBINE",
+    "state": "WA",
+    "latitude": -31.445046558999934,
+    "longitude": 116.7205605470001
+  },
+  {
+    "name": "FRENCHES",
+    "state": "WA",
+    "latitude": -31.563356561999967,
+    "longitude": 116.65618056400001
+  },
+  {
+    "name": "MOONDYNE",
+    "state": "WA",
+    "latitude": -31.609276586999954,
+    "longitude": 116.20226063100006
+  },
+  {
+    "name": "AVON YARD",
+    "state": "WA",
+    "latitude": -31.640036562999967,
+    "longitude": 116.64958057000001
+  },
+  {
+    "name": "JUMPERKINE",
+    "state": "WA",
+    "latitude": -31.707878092999977,
+    "longitude": 116.085848155
+  },
+  {
+    "name": "WARWICK",
+    "state": "WA",
+    "latitude": -31.844781609999984,
+    "longitude": 115.79641870600005
+  },
+  {
+    "name": "BAYSWATER",
+    "state": "WA",
+    "latitude": -31.91809310399998,
+    "longitude": 115.9124836950001
+  },
+  {
+    "name": "EAST PERTH",
+    "state": "WA",
+    "latitude": -31.94428010599995,
+    "longitude": 115.87721120300012
+  },
+  {
+    "name": "KARRAKATTA",
+    "state": "WA",
+    "latitude": -31.968416609999963,
+    "longitude": 115.7962257160001
+  },
+  {
+    "name": "GRANT STREET",
+    "state": "WA",
+    "latitude": -31.98692461199994,
+    "longitude": 115.76480872200011
+  },
+  {
+    "name": "HARRISMITH",
+    "state": "WA",
+    "latitude": -32.93485650899993,
+    "longitude": 117.859420483
+  },
+  {
+    "name": "BOUNDAIN",
+    "state": "WA",
+    "latitude": -32.94187653499995,
+    "longitude": 117.32143056400002
+  },
+  {
+    "name": "TINCURRIN",
+    "state": "WA",
+    "latitude": -32.97677651399994,
+    "longitude": 117.7746204980001
+  },
+  {
+    "name": "ENEABBA",
+    "state": "WA",
+    "latitude": -29.834626131999983,
+    "longitude": 115.25511812700006
+  },
+  {
+    "name": "NARNGULU",
+    "state": "WA",
+    "latitude": -28.817206659999954,
+    "longitude": 114.69406062000007
+  },
+  {
+    "name": "MALCOLM",
+    "state": "WA",
+    "latitude": -28.933516345999976,
+    "longitude": 121.51599976400007
+  },
+  {
+    "name": "SOUTHERN CROSS",
+    "state": "WA",
+    "latitude": -31.21807643799997,
+    "longitude": 119.30802017000008
+  },
+  {
+    "name": "MECKERING",
+    "state": "WA",
+    "latitude": -31.623858043999974,
+    "longitude": 117.01369651800007
+  },
+  {
+    "name": "NAREMBEEN",
+    "state": "WA",
+    "latitude": -32.065336480999974,
+    "longitude": 118.39703034900003
+  },
+  {
+    "name": "COLLIE",
+    "state": "WA",
+    "latitude": -33.35832659699997,
+    "longitude": 116.1505107700001
+  },
+  {
+    "name": "BOYANUP",
+    "state": "WA",
+    "latitude": -33.47958662099995,
+    "longitude": 115.73127084300006
+  },
+  {
+    "name": "MOORA",
+    "state": "WA",
+    "latitude": -30.63371809299997,
+    "longitude": 116.005464587
+  },
+  {
+    "name": "MANMANNING",
+    "state": "WA",
+    "latitude": -30.845936536999943,
+    "longitude": 117.09917045300006
+  },
+  {
+    "name": "KALANNIE",
+    "state": "WA",
+    "latitude": -30.36271653299997,
+    "longitude": 117.1195604180001
+  },
+  {
+    "name": "ESPLANADE",
+    "state": "WA",
+    "latitude": -32.05885861399997,
+    "longitude": 115.74542423000003
+  },
+  {
+    "name": "GOSNELLS",
+    "state": "WA",
+    "latitude": -32.07111509999993,
+    "longitude": 115.99947719500005
+  },
+  {
+    "name": "SEAFORTH",
+    "state": "WA",
+    "latitude": -32.08458309899993,
+    "longitude": 116.01108869400002
+  },
+  {
+    "name": "BEVERLEY",
+    "state": "WA",
+    "latitude": -32.10729655099993,
+    "longitude": 116.92556056400008
+  },
+  {
+    "name": "SOUNDCHEM",
+    "state": "WA",
+    "latitude": -32.14582061099998,
+    "longitude": 115.79694872900006
+  },
+  {
+    "name": "GABBIN",
+    "state": "WA",
+    "latitude": -30.79905650799998,
+    "longitude": 117.68054037000002
+  },
+  {
+    "name": "BENCUBBIN",
+    "state": "WA",
+    "latitude": -30.811066498999935,
+    "longitude": 117.8606803460001
+  },
+  {
+    "name": "MUKINBUDIN",
+    "state": "WA",
+    "latitude": -30.91412698399995,
+    "longitude": 118.20785980500011
+  },
+  {
+    "name": "WARNBRO",
+    "state": "WA",
+    "latitude": -32.326603113999965,
+    "longitude": 115.76789424700007
+  },
+  {
+    "name": "ROCKINGHAM",
+    "state": "WA",
+    "latitude": -32.289472613999976,
+    "longitude": 115.76144874600004
+  },
+  {
+    "name": "WELLARD",
+    "state": "WA",
+    "latitude": -32.26388761099997,
+    "longitude": 115.81719773500004
+  },
+  {
+    "name": "HOPE DOWNS 1",
+    "state": "WA",
+    "latitude": -22.969494401999953,
+    "longitude": 119.11753476100012
+  },
+  {
+    "name": "YARRIE",
+    "state": "WA",
+    "latitude": -20.623271840999962,
+    "longitude": 120.3036945450001
+  },
+  {
+    "name": "KUKERIN",
+    "state": "WA",
+    "latitude": -33.18913749999996,
+    "longitude": 118.08417596600009
+  },
+  {
+    "name": "TAMBELLUP",
+    "state": "WA",
+    "latitude": -34.04431452499995,
+    "longitude": 117.64076609100005
+  },
+  {
+    "name": "MULLEWA",
+    "state": "WA",
+    "latitude": -28.542961610999953,
+    "longitude": 115.51165749800009
+  },
+  {
+    "name": "WEST ANGELAS MINE",
+    "state": "WA",
+    "latitude": -23.16748691899994,
+    "longitude": 118.76353280600006
+  },
+  {
+    "name": "MESA A MINE",
+    "state": "WA",
+    "latitude": -21.67220505399996,
+    "longitude": 115.9080769850001
+  },
+  {
+    "name": "HOPE DOWNS 4",
+    "state": "WA",
+    "latitude": -23.135832884999957,
+    "longitude": 119.55279222700005
+  },
+  {
+    "name": "KONNONGORRING",
+    "state": "WA",
+    "latitude": -31.053316553999935,
+    "longitude": 116.77417051200007
+  },
+  {
+    "name": "EDGEWATER",
+    "state": "WA",
+    "latitude": -31.77238061099996,
+    "longitude": 115.77886320300001
+  },
+  {
+    "name": "STIRLING",
+    "state": "WA",
+    "latitude": -31.894599609999943,
+    "longitude": 115.80517970900007
+  },
+  {
+    "name": "ASHFIELD",
+    "state": "WA",
+    "latitude": -31.912774601999956,
+    "longitude": 115.93609819200003
+  },
+  {
+    "name": "BELMONT PARK",
+    "state": "WA",
+    "latitude": -31.950266604999968,
+    "longitude": 115.8930537010001
+  },
+  {
+    "name": "POPANYINNING",
+    "state": "WA",
+    "latitude": -32.65893654399997,
+    "longitude": 117.12420057300005
+  },
+  {
+    "name": "MAYA",
+    "state": "WA",
+    "latitude": -29.885156062999954,
+    "longitude": 116.50468246700007
+  },
+  {
+    "name": "CARNAMAH",
+    "state": "WA",
+    "latitude": -29.69093809499998,
+    "longitude": 115.88525153400008
+  },
+  {
+    "name": "LATHAM",
+    "state": "WA",
+    "latitude": -29.754795564999938,
+    "longitude": 116.44332046600005
+  },
+  {
+    "name": "KAMBALDA",
+    "state": "WA",
+    "latitude": -31.16406635499993,
+    "longitude": 121.60966984400011
+  },
+  {
+    "name": "NORSEMAN",
+    "state": "WA",
+    "latitude": -32.19229635499994,
+    "longitude": 121.78170986300006
+  },
+  {
+    "name": "DOODLAKINE",
+    "state": "WA",
+    "latitude": -31.60992650199995,
+    "longitude": 117.87791039400008
+  },
+  {
+    "name": "KORBELKA",
+    "state": "WA",
+    "latitude": -31.697086489999947,
+    "longitude": 118.16255036000007
+  },
+  {
+    "name": "ARDATH",
+    "state": "WA",
+    "latitude": -32.031086493999965,
+    "longitude": 118.09662039000011
+  },
+  {
+    "name": "SOUTH KUMMININ",
+    "state": "WA",
+    "latitude": -32.19677648399994,
+    "longitude": 118.3343403660001
+  },
+  {
+    "name": "BECKENHAM",
+    "state": "WA",
+    "latitude": -32.02219810199995,
+    "longitude": 115.95396569700006
+  },
+  {
+    "name": "NORTH FREMANTLE",
+    "state": "WA",
+    "latitude": -32.02910311299996,
+    "longitude": 115.751861727
+  },
+  {
+    "name": "ARMADALE",
+    "state": "WA",
+    "latitude": -32.15410309899994,
+    "longitude": 116.0127721990001
+  },
+  {
+    "name": "KIRWAN",
+    "state": "WA",
+    "latitude": -30.59543653199995,
+    "longitude": 117.17276042600008
+  },
+  {
+    "name": "MINNIVALE",
+    "state": "WA",
+    "latitude": -31.136406533999946,
+    "longitude": 117.18371046100003
+  },
+  {
+    "name": "PINJARRA EAST",
+    "state": "WA",
+    "latitude": -32.64291660799995,
+    "longitude": 115.889940754
+  },
+  {
+    "name": "WAROONA",
+    "state": "WA",
+    "latitude": -32.84503660699994,
+    "longitude": 115.91982076500005
+  },
+  {
+    "name": "ELLEKER",
+    "state": "WA",
+    "latitude": -35.00716452499995,
+    "longitude": 117.73274114300011
+  },
+  {
+    "name": "FORRESTFIELD SOUTH",
+    "state": "WA",
+    "latitude": -31.98399809999995,
+    "longitude": 115.97963519100006
+  },
+  {
+    "name": "CLOUD BREAK",
+    "state": "WA",
+    "latitude": -22.32037038699997,
+    "longitude": 119.39303970300011
+  },
+  {
+    "name": "WAGIN",
+    "state": "WA",
+    "latitude": -33.309939035999946,
+    "longitude": 117.34580708600004
+  },
+  {
+    "name": "TARIN ROCK",
+    "state": "WA",
+    "latitude": -33.10892899299995,
+    "longitude": 118.23489293800003
+  },
+  {
+    "name": "LAKE GRACE",
+    "state": "WA",
+    "latitude": -33.10042298299993,
+    "longitude": 118.46474240300006
+  },
+  {
+    "name": "PINTHARUKA",
+    "state": "WA",
+    "latitude": -29.096428586999934,
+    "longitude": 115.98249847900001
+  },
+  {
+    "name": "MINGENEW",
+    "state": "WA",
+    "latitude": -29.189837617999956,
+    "longitude": 115.4441240540001
+  },
+  {
+    "name": "MARANDOO",
+    "state": "WA",
+    "latitude": -22.633971944999928,
+    "longitude": 118.11507583900004
+  },
+  {
+    "name": "CHRISTMAS CREEK",
+    "state": "WA",
+    "latitude": -22.408083373999943,
+    "longitude": 119.72617217700008
+  },
+  {
+    "name": "MESA J",
+    "state": "WA",
+    "latitude": -21.75732203499996,
+    "longitude": 116.26221245800002
+  },
+  {
+    "name": "FINUCANE",
+    "state": "WA",
+    "latitude": -20.309873411999945,
+    "longitude": 118.56059267700005
+  },
+  {
+    "name": "BUNICHE",
+    "state": "WA",
+    "latitude": -33.00207646599995,
+    "longitude": 118.8262903420001
+  },
+  {
+    "name": "NORTHCLIFFE",
+    "state": "WA",
+    "latitude": -34.63236360399998,
+    "longitude": 116.12471687300001
+  },
+  {
+    "name": "BURSWOOD",
+    "state": "WA",
+    "latitude": -31.96018710499993,
+    "longitude": 115.89996970000004
+  },
+  {
+    "name": "MELTHAM",
+    "state": "WA",
+    "latitude": -31.922463103999974,
+    "longitude": 115.90025469800003
+  },
+  {
+    "name": "SHENTON PARK",
+    "state": "WA",
+    "latitude": -31.959244609999928,
+    "longitude": 115.80568721400005
+  },
+  {
+    "name": "LOCH STREET",
+    "state": "WA",
+    "latitude": -31.971730110999943,
+    "longitude": 115.79159571700006
+  },
+  {
+    "name": "WELSHPOOL",
+    "state": "WA",
+    "latitude": -31.99524310399994,
+    "longitude": 115.92350020000003
+  },
+  {
+    "name": "COTTESLOE",
+    "state": "WA",
+    "latitude": -31.996757612999943,
+    "longitude": 115.76089872300008
+  },
+  {
+    "name": "YARLOOP",
+    "state": "WA",
+    "latitude": -32.95515660899997,
+    "longitude": 115.8992207770001
+  },
+  {
+    "name": "CORRIGIN",
+    "state": "WA",
+    "latitude": -32.330136505999974,
+    "longitude": 117.872380442
+  },
+  {
+    "name": "JITARNING",
+    "state": "WA",
+    "latitude": -32.786936501999946,
+    "longitude": 118.00001045200008
+  },
+  {
+    "name": "KUENDER",
+    "state": "WA",
+    "latitude": -32.95367647899997,
+    "longitude": 118.53462038300006
+  },
+  {
+    "name": "WEST KALGOORLIE",
+    "state": "WA",
+    "latitude": -30.77570635899997,
+    "longitude": 121.424239854
+  },
+  {
+    "name": "ARROWSMITH",
+    "state": "WA",
+    "latitude": -29.57079164099997,
+    "longitude": 115.06760163100012
+  },
+  {
+    "name": "THREE SPRINGS",
+    "state": "WA",
+    "latitude": -29.53346610099993,
+    "longitude": 115.76271053900007
+  },
+  {
+    "name": "QUARRY",
+    "state": "WA",
+    "latitude": -30.935716356999933,
+    "longitude": 121.50483984900006
+  },
+  {
+    "name": "HINES HILL",
+    "state": "WA",
+    "latitude": -31.53029649299998,
+    "longitude": 118.07876036100004
+  },
+  {
+    "name": "CUNDERDIN",
+    "state": "WA",
+    "latitude": -31.646376532999966,
+    "longitude": 117.2434604870001
+  },
+  {
+    "name": "BELKA",
+    "state": "WA",
+    "latitude": -31.734446488999936,
+    "longitude": 118.17295036000007
+  },
+  {
+    "name": "BODALLIN",
+    "state": "WA",
+    "latitude": -31.37385645699993,
+    "longitude": 118.87158024000007
+  },
+  {
+    "name": "KOOLYANOBBING",
+    "state": "WA",
+    "latitude": -30.828056427999968,
+    "longitude": 119.51309012000002
+  },
+  {
+    "name": "DARRINE",
+    "state": "WA",
+    "latitude": -30.85149641299995,
+    "longitude": 119.89909006800008
+  },
+  {
+    "name": "EJANDING",
+    "state": "WA",
+    "latitude": -31.013176536999936,
+    "longitude": 117.11253046200011
+  },
+  {
+    "name": "HAMILTON",
+    "state": "WA",
+    "latitude": -33.234326600999964,
+    "longitude": 116.0671007730001
+  },
+  {
+    "name": "BALLIDU",
+    "state": "WA",
+    "latitude": -30.59771655199995,
+    "longitude": 116.77007048100006
+  },
+  {
+    "name": "GABALONG",
+    "state": "WA",
+    "latitude": -30.72144057299994,
+    "longitude": 116.38863604100004
+  },
+  {
+    "name": "MADDINGTON",
+    "state": "WA",
+    "latitude": -32.04934060099998,
+    "longitude": 115.98289619500008
+  },
+  {
+    "name": "SOUTH BEACH",
+    "state": "WA",
+    "latitude": -32.07726561299995,
+    "longitude": 115.7529622300001
+  },
+  {
+    "name": "COCKBURN EAST",
+    "state": "WA",
+    "latitude": -32.11990811099997,
+    "longitude": 115.80518622600005
+  },
+  {
+    "name": "ALCOA",
+    "state": "WA",
+    "latitude": -32.18600811199997,
+    "longitude": 115.77768673500009
+  },
+  {
+    "name": "MUNDIJONG JUNCTION",
+    "state": "WA",
+    "latitude": -32.27510510099995,
+    "longitude": 115.99152271100002
+  },
+  {
+    "name": "PINJARRA SOUTH",
+    "state": "WA",
+    "latitude": -32.64555660899998,
+    "longitude": 115.88119075500003
+  },
+  {
+    "name": "ALUMINA JUNCTION",
+    "state": "WA",
+    "latitude": -32.64620660799994,
+    "longitude": 115.89296075400011
+  },
+  {
+    "name": "ETMILYN",
+    "state": "WA",
+    "latitude": -32.737116594999975,
+    "longitude": 116.13679072500008
+  },
+  {
+    "name": "WATHEROO",
+    "state": "WA",
+    "latitude": -30.29667208899997,
+    "longitude": 116.05727555500005
+  },
+  {
+    "name": "RIDGEWOOD",
+    "state": "WA",
+    "latitude": -31.66240761299997,
+    "longitude": 115.72928970200007
+  },
+  {
+    "name": "MELVILLE",
+    "state": "WA",
+    "latitude": -35.022471518999964,
+    "longitude": 117.86027762300012
+  },
+  {
+    "name": "KENWICK JUNCTION",
+    "state": "WA",
+    "latitude": -32.03098260099995,
+    "longitude": 115.96818419600004
+  },
+  {
+    "name": "YANDI NO 2",
+    "state": "WA",
+    "latitude": -22.719981403999952,
+    "longitude": 119.04205575600008
+  },
+  {
+    "name": "YANDI JUNCTION",
+    "state": "WA",
+    "latitude": -22.540155896999977,
+    "longitude": 119.1841147340001
+  },
+  {
+    "name": "WOODANILLING",
+    "state": "WA",
+    "latitude": -33.56311353299998,
+    "longitude": 117.43125859000008
+  },
+  {
+    "name": "CRANBROOK",
+    "state": "WA",
+    "latitude": -34.29567752999998,
+    "longitude": 117.55533262200004
+  },
+  {
+    "name": "EAST INTERCOURSE ISLAND",
+    "state": "WA",
+    "latitude": -20.680848004999973,
+    "longitude": 116.69843735400002
+  },
+  {
+    "name": "JIMBLEBAR",
+    "state": "WA",
+    "latitude": -23.388822863999962,
+    "longitude": 120.1237421830001
+  },
+  {
+    "name": "RAWLINNA",
+    "state": "WA",
+    "latitude": -31.008487767999952,
+    "longitude": 125.33198531800008
+  },
+  {
+    "name": "NEWDEGATE",
+    "state": "WA",
+    "latitude": -33.09117645899994,
+    "longitude": 119.02305031800006
+  },
+  {
+    "name": "YEAGARUP",
+    "state": "WA",
+    "latitude": -34.54502760799994,
+    "longitude": 116.04698087800011
+  },
+  {
+    "name": "COONDLE",
+    "state": "WA",
+    "latitude": -31.47738407299994,
+    "longitude": 116.44036408800002
+  },
+  {
+    "name": "GRASS VALLEY",
+    "state": "WA",
+    "latitude": -31.638096555999937,
+    "longitude": 116.78598055100008
+  },
+  {
+    "name": "EAST NORTHAM",
+    "state": "WA",
+    "latitude": -31.648086561999946,
+    "longitude": 116.67810056700012
+  },
+  {
+    "name": "NORTHAM",
+    "state": "WA",
+    "latitude": -31.658026562999964,
+    "longitude": 116.65603057100009
+  },
+  {
+    "name": "SPRING HILL",
+    "state": "WA",
+    "latitude": -31.716902562999962,
+    "longitude": 116.66000157400003
+  },
+  {
+    "name": "MOUNT LAWLEY",
+    "state": "WA",
+    "latitude": -31.934586605999982,
+    "longitude": 115.8811187010001
+  },
+  {
+    "name": "LEEDERVILLE",
+    "state": "WA",
+    "latitude": -31.939185107999947,
+    "longitude": 115.84053470700007
+  },
+  {
+    "name": "LATHLAIN",
+    "state": "WA",
+    "latitude": -31.97496110399993,
+    "longitude": 115.9055737010001
+  },
+  {
+    "name": "KEWDALE",
+    "state": "WA",
+    "latitude": -31.984340601999975,
+    "longitude": 115.95906719400011
+  },
+  {
+    "name": "COOKERNUP",
+    "state": "WA",
+    "latitude": -32.99291660999995,
+    "longitude": 115.89346078000005
+  },
+  {
+    "name": "NOMANS LAKE",
+    "state": "WA",
+    "latitude": -32.92422652499994,
+    "longitude": 117.52329053200003
+  },
+  {
+    "name": "CUBALLING",
+    "state": "WA",
+    "latitude": -32.82062654199996,
+    "longitude": 117.17846057700001
+  },
+  {
+    "name": "ALBANY",
+    "state": "WA",
+    "latitude": -35.02819351699998,
+    "longitude": 117.88660961900007
+  },
+  {
+    "name": "WALLAROO",
+    "state": "WA",
+    "latitude": -30.875126387999956,
+    "longitude": 120.56328997700007
+  },
+  {
+    "name": "WEST MERREDIN",
+    "state": "WA",
+    "latitude": -31.485179484999946,
+    "longitude": 118.25016933400002
+  },
+  {
+    "name": "TAMMIN",
+    "state": "WA",
+    "latitude": -31.642386520999935,
+    "longitude": 117.48831045200006
+  },
+  {
+    "name": "HYDEN",
+    "state": "WA",
+    "latitude": -32.44970646199994,
+    "longitude": 118.86544030400012
+  },
+  {
+    "name": "LAKE JULIA",
+    "state": "WA",
+    "latitude": -31.014856435999945,
+    "longitude": 119.33902015400008
+  },
+  {
+    "name": "BRUCE ROCK",
+    "state": "WA",
+    "latitude": -31.87782649099995,
+    "longitude": 118.15011037300008
+  },
+  {
+    "name": "MUNTADGIN",
+    "state": "WA",
+    "latitude": -31.758226471999933,
+    "longitude": 118.56043030700005
+  },
+  {
+    "name": "WORSLEY",
+    "state": "WA",
+    "latitude": -33.29109660499995,
+    "longitude": 116.00586078700007
+  },
+  {
+    "name": "BEACON",
+    "state": "WA",
+    "latitude": -30.44760649699998,
+    "longitude": 117.8671303220001
+  },
+  {
+    "name": "CANNING VALE",
+    "state": "WA",
+    "latitude": -32.07136060399995,
+    "longitude": 115.91834520600003
+  },
+  {
+    "name": "ROBB JETTY",
+    "state": "WA",
+    "latitude": -32.08814361299994,
+    "longitude": 115.75727273100006
+  },
+  {
+    "name": "KOORDA",
+    "state": "WA",
+    "latitude": -30.82392651799995,
+    "longitude": 117.48192039900005
+  },
+  {
+    "name": "MOUNT KOKEBY",
+    "state": "WA",
+    "latitude": -32.21090654899996,
+    "longitude": 116.97257056400008
+  },
+  {
+    "name": "BYFORD",
+    "state": "WA",
+    "latitude": -32.225077099999965,
+    "longitude": 116.00703420500008
+  },
+  {
+    "name": "NORTH DANDALUP",
+    "state": "WA",
+    "latitude": -32.51826660299997,
+    "longitude": 115.96846073300003
+  },
+  {
+    "name": "PINJARRA",
+    "state": "WA",
+    "latitude": -32.628096608999954,
+    "longitude": 115.879900754
+  },
+  {
+    "name": "MILING",
+    "state": "WA",
+    "latitude": -30.490496572999973,
+    "longitude": 116.36061952900002
+  },
+  {
+    "name": "CLARKSON",
+    "state": "WA",
+    "latitude": -31.69069461199996,
+    "longitude": 115.73806170300008
+  },
+  {
+    "name": "MANDURAH",
+    "state": "WA",
+    "latitude": -32.52694761599997,
+    "longitude": 115.74682976600002
+  },
+  {
+    "name": "BULLCREEK",
+    "state": "WA",
+    "latitude": -32.04699860799997,
+    "longitude": 115.85416271400004
+  },
+  {
+    "name": "KALGAN",
+    "state": "WA",
+    "latitude": -23.18184587099995,
+    "longitude": 119.9030726950001
+  },
+  {
+    "name": "KENWICK",
+    "state": "WA",
+    "latitude": -32.03642260099997,
+    "longitude": 115.96965869600001
+  },
+  {
+    "name": "YANDICOOGINA",
+    "state": "WA",
+    "latitude": -22.77867639799996,
+    "longitude": 119.19728974400005
+  },
+  {
+    "name": "BROOMEHILL VILLAGE",
+    "state": "WA",
+    "latitude": -33.844076523999945,
+    "longitude": 117.6398150770001
+  },
+  {
+    "name": "DUMBLEYUNG",
+    "state": "WA",
+    "latitude": -33.31510151699996,
+    "longitude": 117.73903152600008
+  },
+  {
+    "name": "BALLAYING",
+    "state": "WA",
+    "latitude": -33.307136524999976,
+    "longitude": 117.55593955400002
+  },
+  {
+    "name": "ESPERANCE WHARF",
+    "state": "WA",
+    "latitude": -33.85235985999998,
+    "longitude": 121.89968791500007
+  },
+  {
+    "name": "ESPERANCE",
+    "state": "WA",
+    "latitude": -33.872388359999945,
+    "longitude": 121.8982329160001
+  },
+  {
+    "name": "ARRINO",
+    "state": "WA",
+    "latitude": -29.441588107999962,
+    "longitude": 115.6293010490001
+  },
+  {
+    "name": "KARARA MINE",
+    "state": "WA",
+    "latitude": -29.197007544999963,
+    "longitude": 116.77258738500007
+  },
+  {
+    "name": "WILLIAM STREET",
+    "state": "WA",
+    "latitude": -31.95173860699998,
+    "longitude": 115.85790720600005
+  },
+  {
+    "name": "THORNLIE",
+    "state": "WA",
+    "latitude": -32.04712460199994,
+    "longitude": 115.95221020000008
+  }
+]

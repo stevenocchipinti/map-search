@@ -1,0 +1,2264 @@
+[
+  {
+    "name": "THE VILLAGE",
+    "state": "QLD",
+    "latitude": -17.372470712999927,
+    "longitude": 145.3864256920001
+  },
+  {
+    "name": "ROLLESTON",
+    "state": "QLD",
+    "latitude": -24.44878700199996,
+    "longitude": 148.42806684000004
+  },
+  {
+    "name": "MIDDLEMOUNT",
+    "state": "QLD",
+    "latitude": -22.881567505999953,
+    "longitude": 148.63702897300004
+  },
+  {
+    "name": "LAKE VERMONT",
+    "state": "QLD",
+    "latitude": -22.46652648299994,
+    "longitude": 148.40547253300008
+  },
+  {
+    "name": "MILLENNIUM",
+    "state": "QLD",
+    "latitude": -22.03505046899994,
+    "longitude": 148.26934508500005
+  },
+  {
+    "name": "SOUTH WALKER",
+    "state": "QLD",
+    "latitude": -21.78932098399997,
+    "longitude": 148.4859410900001
+  },
+  {
+    "name": "EAST END",
+    "state": "QLD",
+    "latitude": -23.875492217999977,
+    "longitude": 150.96721366100007
+  },
+  {
+    "name": "FISHERMANS LANDING",
+    "state": "QLD",
+    "latitude": -23.79723923499995,
+    "longitude": 151.1548941520001
+  },
+  {
+    "name": "COMALCO",
+    "state": "QLD",
+    "latitude": -23.834367234999945,
+    "longitude": 151.1529841480001
+  },
+  {
+    "name": "WIGGINS ISLAND BALLOON LOOP",
+    "state": "QLD",
+    "latitude": -23.862535736999973,
+    "longitude": 151.17180414300003
+  },
+  {
+    "name": "SONOMA",
+    "state": "QLD",
+    "latitude": -20.63438142399997,
+    "longitude": 147.86268724600006
+  },
+  {
+    "name": "WYREEMA",
+    "state": "QLD",
+    "latitude": -27.653071331999968,
+    "longitude": 151.8567301380001
+  },
+  {
+    "name": "YURBI",
+    "state": "QLD",
+    "latitude": -20.73958745999994,
+    "longitude": 140.65355332100012
+  },
+  {
+    "name": "BLACKWATER",
+    "state": "QLD",
+    "latitude": -23.586058031999983,
+    "longitude": 148.8835558820001
+  },
+  {
+    "name": "BOONDALL",
+    "state": "QLD",
+    "latitude": -27.34644544799994,
+    "longitude": 153.06774404500004
+  },
+  {
+    "name": "BOWEN HILLS",
+    "state": "QLD",
+    "latitude": -27.445136445999935,
+    "longitude": 153.03757953600007
+  },
+  {
+    "name": "BUNDABERG",
+    "state": "QLD",
+    "latitude": -24.86821485699994,
+    "longitude": 152.3452364200001
+  },
+  {
+    "name": "BURANDA",
+    "state": "QLD",
+    "latitude": -27.496520446999966,
+    "longitude": 153.04055502900007
+  },
+  {
+    "name": "CARDWELL",
+    "state": "QLD",
+    "latitude": -18.267931765999947,
+    "longitude": 146.02818508100006
+  },
+  {
+    "name": "CLONCURRY",
+    "state": "QLD",
+    "latitude": -20.71435095299995,
+    "longitude": 140.5173893340001
+  },
+  {
+    "name": "COOROY",
+    "state": "QLD",
+    "latitude": -26.417594924999946,
+    "longitude": 152.91117467700008
+  },
+  {
+    "name": "CROYDON",
+    "state": "QLD",
+    "latitude": -18.202565522999976,
+    "longitude": 142.23932834900006
+  },
+  {
+    "name": "DAKABIN",
+    "state": "QLD",
+    "latitude": -27.23040643799993,
+    "longitude": 152.97578507000003
+  },
+  {
+    "name": "DOMESTIC TERMINAL",
+    "state": "QLD",
+    "latitude": -27.385055953999938,
+    "longitude": 153.1189120350001
+  },
+  {
+    "name": "DUTTON PARK",
+    "state": "QLD",
+    "latitude": -27.49981044599997,
+    "longitude": 153.0291705300001
+  },
+  {
+    "name": "FORSAYTH",
+    "state": "QLD",
+    "latitude": -18.586898606999966,
+    "longitude": 143.6027592270001
+  },
+  {
+    "name": "GEEBUNG",
+    "state": "QLD",
+    "latitude": -27.368741445999945,
+    "longitude": 153.04724204500008
+  },
+  {
+    "name": "GLASS HOUSE MOUNTAINS",
+    "state": "QLD",
+    "latitude": -26.899368933999938,
+    "longitude": 152.95637511300004
+  },
+  {
+    "name": "OXFORD PARK",
+    "state": "QLD",
+    "latitude": -27.404437438999935,
+    "longitude": 152.9691595480001
+  },
+  {
+    "name": "PROSERPINE",
+    "state": "QLD",
+    "latitude": -20.40293897999993,
+    "longitude": 148.57857521200003
+  },
+  {
+    "name": "WALLOON",
+    "state": "QLD",
+    "latitude": -27.60734040999995,
+    "longitude": 152.66783805500006
+  },
+  {
+    "name": "WOOLOOWIN",
+    "state": "QLD",
+    "latitude": -27.41999294599998,
+    "longitude": 153.04336803900003
+  },
+  {
+    "name": "WYNNUM",
+    "state": "QLD",
+    "latitude": -27.43975045899998,
+    "longitude": 153.16604402300004
+  },
+  {
+    "name": "YANDINA",
+    "state": "QLD",
+    "latitude": -26.56096193099995,
+    "longitude": 152.9582216550001
+  },
+  {
+    "name": "CABOOLTURE",
+    "state": "QLD",
+    "latitude": -27.082779434999964,
+    "longitude": 152.95368909
+  },
+  {
+    "name": "CANNON HILL",
+    "state": "QLD",
+    "latitude": -27.465299450999964,
+    "longitude": 153.08888502800005
+  },
+  {
+    "name": "CARMILA",
+    "state": "QLD",
+    "latitude": -21.90993406299998,
+    "longitude": 149.415655
+  },
+  {
+    "name": "CHARLEVILLE",
+    "state": "QLD",
+    "latitude": -26.40634734799994,
+    "longitude": 146.24408887900006
+  },
+  {
+    "name": "CHELMER",
+    "state": "QLD",
+    "latitude": -27.511994439999967,
+    "longitude": 152.97278953500006
+  },
+  {
+    "name": "COOPERS PLAINS",
+    "state": "QLD",
+    "latitude": -27.56745544699993,
+    "longitude": 153.03597452100007
+  },
+  {
+    "name": "COORPAROO",
+    "state": "QLD",
+    "latitude": -27.48977894799998,
+    "longitude": 153.055263028
+  },
+  {
+    "name": "ORMISTON",
+    "state": "QLD",
+    "latitude": -27.514552468999966,
+    "longitude": 153.25580750400002
+  },
+  {
+    "name": "ORMEAU",
+    "state": "QLD",
+    "latitude": -27.799098973999946,
+    "longitude": 153.2823734650001
+  },
+  {
+    "name": "TOOWOOMBA",
+    "state": "QLD",
+    "latitude": -27.55716383999993,
+    "longitude": 151.9518761390001
+  },
+  {
+    "name": "WOOMBYE",
+    "state": "QLD",
+    "latitude": -26.660510431999967,
+    "longitude": 152.96278314200003
+  },
+  {
+    "name": "JULAGO CATTLE YARDS",
+    "state": "QLD",
+    "latitude": -19.343761336999933,
+    "longitude": 146.87292593300003
+  },
+  {
+    "name": "PARTINGTON",
+    "state": "QLD",
+    "latitude": -19.34715883499996,
+    "longitude": 146.84405293500004
+  },
+  {
+    "name": "ARCHER PARK",
+    "state": "QLD",
+    "latitude": -23.37560117199996,
+    "longitude": 150.50695775600002
+  },
+  {
+    "name": "AMAMOOR",
+    "state": "QLD",
+    "latitude": -26.343231900999967,
+    "longitude": 152.67412221100005
+  },
+  {
+    "name": "HOWARD",
+    "state": "QLD",
+    "latitude": -25.31858238199993,
+    "longitude": 152.56473684500008
+  },
+  {
+    "name": "SPRINGFIELD CENTRAL",
+    "state": "QLD",
+    "latitude": -27.674321933999977,
+    "longitude": 152.90282352200006
+  },
+  {
+    "name": "DINMORE",
+    "state": "QLD",
+    "latitude": -27.59620692699997,
+    "longitude": 152.8335530390001
+  },
+  {
+    "name": "EAST IPSWICH",
+    "state": "QLD",
+    "latitude": -27.60996542099997,
+    "longitude": 152.77500804400006
+  },
+  {
+    "name": "EDENS LANDING",
+    "state": "QLD",
+    "latitude": -27.698109460999945,
+    "longitude": 153.17091199000004
+  },
+  {
+    "name": "EMERALD",
+    "state": "QLD",
+    "latitude": -23.526720471999965,
+    "longitude": 148.15996595400009
+  },
+  {
+    "name": "GAILES",
+    "state": "QLD",
+    "latitude": -27.602227934999974,
+    "longitude": 152.91907002900007
+  },
+  {
+    "name": "GLADSTONE",
+    "state": "QLD",
+    "latitude": -23.846468244999983,
+    "longitude": 151.26312963700002
+  },
+  {
+    "name": "GORDONVALE",
+    "state": "QLD",
+    "latitude": -17.093175238999947,
+    "longitude": 145.78792918800002
+  },
+  {
+    "name": "GROVELY",
+    "state": "QLD",
+    "latitude": -27.404425937999974,
+    "longitude": 152.96259504900002
+  },
+  {
+    "name": "HEMMANT",
+    "state": "QLD",
+    "latitude": -27.44737045499994,
+    "longitude": 153.12744602600003
+  },
+  {
+    "name": "ILFRACOMBE",
+    "state": "QLD",
+    "latitude": -23.489042703999928,
+    "longitude": 144.507844298
+  },
+  {
+    "name": "FRESHWATER",
+    "state": "QLD",
+    "latitude": -16.880951230999926,
+    "longitude": 145.70985920900011
+  },
+  {
+    "name": "GERMAN CREEK",
+    "state": "QLD",
+    "latitude": -22.927003498999966,
+    "longitude": 148.554310976
+  },
+  {
+    "name": "GOONYELLA MINE",
+    "state": "QLD",
+    "latitude": -21.80521644199996,
+    "longitude": 147.95823863300006
+  },
+  {
+    "name": "GORDONSTONE",
+    "state": "QLD",
+    "latitude": -23.231922985999972,
+    "longitude": 148.3640144640001
+  },
+  {
+    "name": "HERBERTON",
+    "state": "QLD",
+    "latitude": -17.38550771299998,
+    "longitude": 145.38490119100004
+  },
+  {
+    "name": "PARKWOOD EAST",
+    "state": "QLD",
+    "latitude": -27.96300548299996,
+    "longitude": 153.36468743400007
+  },
+  {
+    "name": "CAVAL RIDGE",
+    "state": "QLD",
+    "latitude": -22.128456450999977,
+    "longitude": 148.04013859600002
+  },
+  {
+    "name": "CAMEBY DOWNS",
+    "state": "QLD",
+    "latitude": -26.653351182999984,
+    "longitude": 150.33557941800007
+  },
+  {
+    "name": "MACARTHUR",
+    "state": "QLD",
+    "latitude": -21.861470978999932,
+    "longitude": 148.40988758900005
+  },
+  {
+    "name": "BARALABA MINE",
+    "state": "QLD",
+    "latitude": -24.54978413599997,
+    "longitude": 150.0038051790001
+  },
+  {
+    "name": "ST CRISPINS CAFE STATION",
+    "state": "QLD",
+    "latitude": -16.515210210999953,
+    "longitude": 145.4624087520001
+  },
+  {
+    "name": "MIRAGE COUNTRY CLUB STATION",
+    "state": "QLD",
+    "latitude": -16.505054710999957,
+    "longitude": 145.46225175200004
+  },
+  {
+    "name": "MARINA STATION",
+    "state": "QLD",
+    "latitude": -16.484779210999932,
+    "longitude": 145.46121425400008
+  },
+  {
+    "name": "BUNDAMBA RACECOURSE",
+    "state": "QLD",
+    "latitude": -27.613629423999953,
+    "longitude": 152.80112004000011
+  },
+  {
+    "name": "TOOWONG",
+    "state": "QLD",
+    "latitude": -27.485257441999977,
+    "longitude": 152.99311403600007
+  },
+  {
+    "name": "TRINDER PARK",
+    "state": "QLD",
+    "latitude": -27.63175245399998,
+    "longitude": 153.09790150600008
+  },
+  {
+    "name": "VIRGINIA",
+    "state": "QLD",
+    "latitude": -27.382142447999968,
+    "longitude": 153.06241154100007
+  },
+  {
+    "name": "WELLINGTON POINT",
+    "state": "QLD",
+    "latitude": -27.494362466999974,
+    "longitude": 153.24201100800008
+  },
+  {
+    "name": "WULKURAKA",
+    "state": "QLD",
+    "latitude": -27.613587416999962,
+    "longitude": 152.732795548
+  },
+  {
+    "name": "WYNNUM NORTH",
+    "state": "QLD",
+    "latitude": -27.437262457999964,
+    "longitude": 153.15868552400002
+  },
+  {
+    "name": "YULEBA",
+    "state": "QLD",
+    "latitude": -26.613207098999965,
+    "longitude": 149.38408752300006
+  },
+  {
+    "name": "BEERWAH",
+    "state": "QLD",
+    "latitude": -26.85710443299996,
+    "longitude": 152.9584051180001
+  },
+  {
+    "name": "BLUFF",
+    "state": "QLD",
+    "latitude": -23.58286004799993,
+    "longitude": 149.06998886500003
+  },
+  {
+    "name": "BOOVAL",
+    "state": "QLD",
+    "latitude": -27.60934242299993,
+    "longitude": 152.78944904200011
+  },
+  {
+    "name": "FORTITUDE VALLEY",
+    "state": "QLD",
+    "latitude": -27.455809445999932,
+    "longitude": 153.03394553500004
+  },
+  {
+    "name": "MITCHELL",
+    "state": "QLD",
+    "latitude": -26.487155980999944,
+    "longitude": 147.96867818600003
+  },
+  {
+    "name": "MOOROOKA",
+    "state": "QLD",
+    "latitude": -27.535659443999975,
+    "longitude": 153.01392302700003
+  },
+  {
+    "name": "MORAYFIELD",
+    "state": "QLD",
+    "latitude": -27.110236934999932,
+    "longitude": 152.9526260870001
+  },
+  {
+    "name": "MACALISTER",
+    "state": "QLD",
+    "latitude": -27.04455175399994,
+    "longitude": 151.07929929400007
+  },
+  {
+    "name": "MACKAY HARBOUR",
+    "state": "QLD",
+    "latitude": -21.106317539999964,
+    "longitude": 149.2162860950001
+  },
+  {
+    "name": "MARYBOROUGH",
+    "state": "QLD",
+    "latitude": -25.538389396999946,
+    "longitude": 152.69986030600012
+  },
+  {
+    "name": "MAYNE DEPOT",
+    "state": "QLD",
+    "latitude": -27.441087945999982,
+    "longitude": 153.03667053700008
+  },
+  {
+    "name": "MCNAUGHTON",
+    "state": "QLD",
+    "latitude": -20.56020991899993,
+    "longitude": 147.80350725800008
+  },
+  {
+    "name": "MINERVA",
+    "state": "QLD",
+    "latitude": -23.924183470999935,
+    "longitude": 148.10605742100006
+  },
+  {
+    "name": "ROCKHAMPTON",
+    "state": "QLD",
+    "latitude": -23.390365671999973,
+    "longitude": 150.51215325400005
+  },
+  {
+    "name": "ROSEWOOD",
+    "state": "QLD",
+    "latitude": -27.64312690299994,
+    "longitude": 152.59264405900012
+  },
+  {
+    "name": "SHERWOOD",
+    "state": "QLD",
+    "latitude": -27.531000440999946,
+    "longitude": 152.97948803100007
+  },
+  {
+    "name": "SOUTH BRISBANE",
+    "state": "QLD",
+    "latitude": -27.475096443999973,
+    "longitude": 153.01857403400004
+  },
+  {
+    "name": "STRATHPINE",
+    "state": "QLD",
+    "latitude": -27.311004939999975,
+    "longitude": 152.98950705800007
+  },
+  {
+    "name": "SUNNYBANK",
+    "state": "QLD",
+    "latitude": -27.580805448999968,
+    "longitude": 153.05420001700008
+  },
+  {
+    "name": "NERANG",
+    "state": "QLD",
+    "latitude": -27.99410698199995,
+    "longitude": 153.3501139320001
+  },
+  {
+    "name": "NEWMARKET",
+    "state": "QLD",
+    "latitude": -27.432698442999936,
+    "longitude": 153.01060754000002
+  },
+  {
+    "name": "ELIMBAH",
+    "state": "QLD",
+    "latitude": -27.010973432999947,
+    "longitude": 152.94585910000012
+  },
+  {
+    "name": "EUMUNDI",
+    "state": "QLD",
+    "latitude": -26.480471929999965,
+    "longitude": 152.95508366500007
+  },
+  {
+    "name": "IPSWICH",
+    "state": "QLD",
+    "latitude": -27.61291241999993,
+    "longitude": 152.76068104500007
+  },
+  {
+    "name": "JERICHO",
+    "state": "QLD",
+    "latitude": -23.60173331699997,
+    "longitude": 146.12581313600003
+  },
+  {
+    "name": "KEPERRA",
+    "state": "QLD",
+    "latitude": -27.409117437999953,
+    "longitude": 152.95669604900002
+  },
+  {
+    "name": "LAWNTON",
+    "state": "QLD",
+    "latitude": -27.28151793899997,
+    "longitude": 152.98090956300007
+  },
+  {
+    "name": "BARNEY POINT",
+    "state": "QLD",
+    "latitude": -23.84551324599994,
+    "longitude": 151.2707801360001
+  },
+  {
+    "name": "BLACKBULL",
+    "state": "QLD",
+    "latitude": -17.940667993999966,
+    "longitude": 141.75555039800008
+  },
+  {
+    "name": "BLOOMSBURY",
+    "state": "QLD",
+    "latitude": -20.70593998399994,
+    "longitude": 148.59534918200006
+  },
+  {
+    "name": "CALLIDE MINE",
+    "state": "QLD",
+    "latitude": -24.32546818999998,
+    "longitude": 150.62312514400003
+  },
+  {
+    "name": "CLERMONT",
+    "state": "QLD",
+    "latitude": -22.82632392499994,
+    "longitude": 147.64096506700002
+  },
+  {
+    "name": "DALBY WEST",
+    "state": "QLD",
+    "latitude": -27.181209769999953,
+    "longitude": 151.24558976000003
+  },
+  {
+    "name": "MARYBOROUGH WEST",
+    "state": "QLD",
+    "latitude": -25.508035890999963,
+    "longitude": 152.63661731500008
+  },
+  {
+    "name": "MIRIAM VALE",
+    "state": "QLD",
+    "latitude": -24.32888727699998,
+    "longitude": 151.563412555
+  },
+  {
+    "name": "MOUNT ISA",
+    "state": "QLD",
+    "latitude": -20.72647290499998,
+    "longitude": 139.48471941900004
+  },
+  {
+    "name": "MURARRIE",
+    "state": "QLD",
+    "latitude": -27.46477145299997,
+    "longitude": 153.1055790260001
+  },
+  {
+    "name": "NORTHGATE",
+    "state": "QLD",
+    "latitude": -27.39283544899996,
+    "longitude": 153.0692350390001
+  },
+  {
+    "name": "NUDGEE",
+    "state": "QLD",
+    "latitude": -27.366087449999952,
+    "longitude": 153.08342504100005
+  },
+  {
+    "name": "OXLEY",
+    "state": "QLD",
+    "latitude": -27.55219393999994,
+    "longitude": 152.97374402900004
+  },
+  {
+    "name": "POMONA",
+    "state": "QLD",
+    "latitude": -26.36607941899996,
+    "longitude": 152.85670718900008
+  },
+  {
+    "name": "REDBANK",
+    "state": "QLD",
+    "latitude": -27.59945843099996,
+    "longitude": 152.87236703400004
+  },
+  {
+    "name": "RIVERVIEW",
+    "state": "QLD",
+    "latitude": -27.594906427999945,
+    "longitude": 152.85032403700006
+  },
+  {
+    "name": "ROCKLEA",
+    "state": "QLD",
+    "latitude": -27.544484443999977,
+    "longitude": 153.01381952600002
+  },
+  {
+    "name": "ROMA",
+    "state": "QLD",
+    "latitude": -26.57623904899998,
+    "longitude": 148.79224259000011
+  },
+  {
+    "name": "RUNCORN",
+    "state": "QLD",
+    "latitude": -27.59263244999994,
+    "longitude": 153.06881501400005
+  },
+  {
+    "name": "SANDGATE",
+    "state": "QLD",
+    "latitude": -27.322198447999938,
+    "longitude": 153.06916404800006
+  },
+  {
+    "name": "SOUTHBANK",
+    "state": "QLD",
+    "latitude": -27.481835444999945,
+    "longitude": 153.0230990330001
+  },
+  {
+    "name": "THAGOONA",
+    "state": "QLD",
+    "latitude": -27.62679790699997,
+    "longitude": 152.62981905700008
+  },
+  {
+    "name": "TOOMBUL",
+    "state": "QLD",
+    "latitude": -27.407690447999983,
+    "longitude": 153.05884503800007
+  },
+  {
+    "name": "DUCHESS",
+    "state": "QLD",
+    "latitude": -21.355713426999955,
+    "longitude": 139.8659828540001
+  },
+  {
+    "name": "ENSHAM",
+    "state": "QLD",
+    "latitude": -23.46643000199998,
+    "longitude": 148.52823892600009
+  },
+  {
+    "name": "EXHIBITION",
+    "state": "QLD",
+    "latitude": -27.45026444499996,
+    "longitude": 153.03093403600008
+  },
+  {
+    "name": "ISAAC PLAINS",
+    "state": "QLD",
+    "latitude": -21.95380595499995,
+    "longitude": 148.10601960600002
+  },
+  {
+    "name": "ACACIA RIDGE - AURIZON BULK FUEL",
+    "state": "QLD",
+    "latitude": -27.580191445999958,
+    "longitude": 153.03037352
+  },
+  {
+    "name": "STUART YARD",
+    "state": "QLD",
+    "latitude": -19.33164183399998,
+    "longitude": 146.83110743700001
+  },
+  {
+    "name": "TARA",
+    "state": "QLD",
+    "latitude": -27.277470698999934,
+    "longitude": 150.45665233500006
+  },
+  {
+    "name": "THE GUMS",
+    "state": "QLD",
+    "latitude": -27.328805174999957,
+    "longitude": 150.18542985800002
+  },
+  {
+    "name": "GOODNA",
+    "state": "QLD",
+    "latitude": -27.608741433999967,
+    "longitude": 152.90172503000008
+  },
+  {
+    "name": "GYMPIE NORTH",
+    "state": "QLD",
+    "latitude": -26.15910139999994,
+    "longitude": 152.68248273200004
+  },
+  {
+    "name": "INGHAM",
+    "state": "QLD",
+    "latitude": -18.64672627899995,
+    "longitude": 146.1648600410001
+  },
+  {
+    "name": "INTERNATIONAL TERMINAL",
+    "state": "QLD",
+    "latitude": -27.402719952999973,
+    "longitude": 153.10859953400006
+  },
+  {
+    "name": "JULIA CREEK",
+    "state": "QLD",
+    "latitude": -20.65898701599997,
+    "longitude": 141.7467447360001
+  },
+  {
+    "name": "KARRABIN",
+    "state": "QLD",
+    "latitude": -27.604380913999933,
+    "longitude": 152.7090675510001
+  },
+  {
+    "name": "LAIDLEY",
+    "state": "QLD",
+    "latitude": -27.62823038399995,
+    "longitude": 152.3931825830001
+  },
+  {
+    "name": "LINDUM",
+    "state": "QLD",
+    "latitude": -27.442015456999968,
+    "longitude": 153.144794025
+  },
+  {
+    "name": "MILES",
+    "state": "QLD",
+    "latitude": -26.66036616899993,
+    "longitude": 150.18484593300002
+  },
+  {
+    "name": "MILTON",
+    "state": "QLD",
+    "latitude": -27.468811942999935,
+    "longitude": 153.00520703600012
+  },
+  {
+    "name": "MITCHELTON",
+    "state": "QLD",
+    "latitude": -27.411630439999954,
+    "longitude": 152.9760820470001
+  },
+  {
+    "name": "MOOLOOLAH",
+    "state": "QLD",
+    "latitude": -26.766005432999975,
+    "longitude": 152.96327612900006
+  },
+  {
+    "name": "MORVEN",
+    "state": "QLD",
+    "latitude": -26.414590412999928,
+    "longitude": 147.1131617850001
+  },
+  {
+    "name": "NARANGBA",
+    "state": "QLD",
+    "latitude": -27.20227243599993,
+    "longitude": 152.9599810750001
+  },
+  {
+    "name": "NORMAN PARK",
+    "state": "QLD",
+    "latitude": -27.481652448999967,
+    "longitude": 153.06235602900006
+  },
+  {
+    "name": "NORTH BOONDALL",
+    "state": "QLD",
+    "latitude": -27.338669447999962,
+    "longitude": 153.06070904700005
+  },
+  {
+    "name": "TOOBEAH",
+    "state": "QLD",
+    "latitude": -28.417454154999973,
+    "longitude": 149.87105127200005
+  },
+  {
+    "name": "WALLANGARRA",
+    "state": "QLD",
+    "latitude": -28.923122348999982,
+    "longitude": 151.93191497400005
+  },
+  {
+    "name": "WALLUMBILLA",
+    "state": "QLD",
+    "latitude": -26.58721658199994,
+    "longitude": 149.187889046
+  },
+  {
+    "name": "WARWICK",
+    "state": "QLD",
+    "latitude": -28.21788035399993,
+    "longitude": 152.04084604900004
+  },
+  {
+    "name": "YUKAN",
+    "state": "QLD",
+    "latitude": -21.51740004499993,
+    "longitude": 149.23286205400007
+  },
+  {
+    "name": "SPRING BLUFF",
+    "state": "QLD",
+    "latitude": -27.46530734199996,
+    "longitude": 151.9761766480001
+  },
+  {
+    "name": "ACACIA RIDGE INTERMODAL TERMINAL",
+    "state": "QLD",
+    "latitude": -27.57774644699998,
+    "longitude": 153.03196102000004
+  },
+  {
+    "name": "GREENMOUNT",
+    "state": "QLD",
+    "latitude": -27.786448836999966,
+    "longitude": 151.9035631170001
+  },
+  {
+    "name": "NUNDAH",
+    "state": "QLD",
+    "latitude": -27.400729447999936,
+    "longitude": 153.06203503900008
+  },
+  {
+    "name": "CLIFTON",
+    "state": "QLD",
+    "latitude": -27.93083233899995,
+    "longitude": 151.90637959900005
+  },
+  {
+    "name": "ABBOT POINT",
+    "state": "QLD",
+    "latitude": -19.902739435999933,
+    "longitude": 148.082064295
+  },
+  {
+    "name": "ACACIA RIDGE YARD",
+    "state": "QLD",
+    "latitude": -27.577711945999965,
+    "longitude": 153.03077652000002
+  },
+  {
+    "name": "ARRIGA MILL",
+    "state": "QLD",
+    "latitude": -17.119143707999967,
+    "longitude": 145.3442307140001
+  },
+  {
+    "name": "HAIL CREEK",
+    "state": "QLD",
+    "latitude": -21.49848947199996,
+    "longitude": 148.367507627
+  },
+  {
+    "name": "MARLBOROUGH",
+    "state": "QLD",
+    "latitude": -22.81396411199995,
+    "longitude": 149.88926386900005
+  },
+  {
+    "name": "MORANBAH",
+    "state": "QLD",
+    "latitude": -22.045146946999978,
+    "longitude": 147.99693360700007
+  },
+  {
+    "name": "MANGO HILL EAST",
+    "state": "QLD",
+    "latitude": -27.23332394399995,
+    "longitude": 153.03609656300011
+  },
+  {
+    "name": "ROTHWELL",
+    "state": "QLD",
+    "latitude": -27.223872944999982,
+    "longitude": 153.04840506300002
+  },
+  {
+    "name": "KALLANGUR",
+    "state": "QLD",
+    "latitude": -27.25656244099997,
+    "longitude": 153.00029256400012
+  },
+  {
+    "name": "BABINDA",
+    "state": "QLD",
+    "latitude": -17.343189250999956,
+    "longitude": 145.9253356600001
+  },
+  {
+    "name": "BALD HILLS",
+    "state": "QLD",
+    "latitude": -27.32084144199996,
+    "longitude": 153.0109715540001
+  },
+  {
+    "name": "YEERONGPILLY",
+    "state": "QLD",
+    "latitude": -27.525090443999943,
+    "longitude": 153.01407902800008
+  },
+  {
+    "name": "ALDERLEY",
+    "state": "QLD",
+    "latitude": -27.423201941999935,
+    "longitude": 153.00084804300002
+  },
+  {
+    "name": "BANOON",
+    "state": "QLD",
+    "latitude": -27.57664344799997,
+    "longitude": 153.04670101800002
+  },
+  {
+    "name": "BARCALDINE",
+    "state": "QLD",
+    "latitude": -23.55210375699994,
+    "longitude": 145.28974771900005
+  },
+  {
+    "name": "BEENLEIGH",
+    "state": "QLD",
+    "latitude": -27.71755146499993,
+    "longitude": 153.20473998300008
+  },
+  {
+    "name": "BETHANIA",
+    "state": "QLD",
+    "latitude": -27.68838095999996,
+    "longitude": 153.15867849200004
+  },
+  {
+    "name": "BURPENGARY",
+    "state": "QLD",
+    "latitude": -27.162055435999946,
+    "longitude": 152.95726608000007
+  },
+  {
+    "name": "BURTON DOWNS",
+    "state": "QLD",
+    "latitude": -21.925219457999958,
+    "longitude": 148.14929910500007
+  },
+  {
+    "name": "CALLEMONDAH",
+    "state": "QLD",
+    "latitude": -23.865577241999972,
+    "longitude": 151.2265726380001
+  },
+  {
+    "name": "CAPELLA",
+    "state": "QLD",
+    "latitude": -23.084735457999955,
+    "longitude": 148.02212650900003
+  },
+  {
+    "name": "COBARRA BALLOON",
+    "state": "QLD",
+    "latitude": -19.202839815999937,
+    "longitude": 146.60476796500006
+  },
+  {
+    "name": "CUNNAMULLA",
+    "state": "QLD",
+    "latitude": -28.06280482099993,
+    "longitude": 145.69163979100006
+  },
+  {
+    "name": "DAGUN",
+    "state": "QLD",
+    "latitude": -26.321244400999944,
+    "longitude": 152.67632121300005
+  },
+  {
+    "name": "TORRENS CREEK",
+    "state": "QLD",
+    "latitude": -20.77045871599995,
+    "longitude": 145.01953596200008
+  },
+  {
+    "name": "WOODFORD",
+    "state": "QLD",
+    "latitude": -26.95734641699994,
+    "longitude": 152.78169862400011
+  },
+  {
+    "name": "BOORGOON",
+    "state": "QLD",
+    "latitude": -23.68279202499997,
+    "longitude": 148.78970188100004
+  },
+  {
+    "name": "BOX FLAT",
+    "state": "QLD",
+    "latitude": -27.64423142399994,
+    "longitude": 152.80401103600002
+  },
+  {
+    "name": "CARSELDINE",
+    "state": "QLD",
+    "latitude": -27.34722444399995,
+    "longitude": 153.028833049
+  },
+  {
+    "name": "CHARTERS TOWERS",
+    "state": "QLD",
+    "latitude": -20.07716329899995,
+    "longitude": 146.27087441800006
+  },
+  {
+    "name": "CHINCHILLA",
+    "state": "QLD",
+    "latitude": -26.737242209999977,
+    "longitude": 150.62496637800007
+  },
+  {
+    "name": "COORAN",
+    "state": "QLD",
+    "latitude": -26.33400041599998,
+    "longitude": 152.82267819700007
+  },
+  {
+    "name": "DALBY",
+    "state": "QLD",
+    "latitude": -27.17992227299993,
+    "longitude": 151.27149325800008
+  },
+  {
+    "name": "DUARINGA",
+    "state": "QLD",
+    "latitude": -23.71209160099994,
+    "longitude": 149.67647029600005
+  },
+  {
+    "name": "EAGLE JUNCTION",
+    "state": "QLD",
+    "latitude": -27.41537744699997,
+    "longitude": 153.04968703800012
+  },
+  {
+    "name": "BRAY PARK",
+    "state": "QLD",
+    "latitude": -27.299578439999948,
+    "longitude": 152.9861765600001
+  },
+  {
+    "name": "BUNDAMBA",
+    "state": "QLD",
+    "latitude": -27.607456423999963,
+    "longitude": 152.8048620410001
+  },
+  {
+    "name": "CAIRNS",
+    "state": "QLD",
+    "latitude": -16.925078735999932,
+    "longitude": 145.77072970200004
+  },
+  {
+    "name": "CENTRAL",
+    "state": "QLD",
+    "latitude": -27.465665944999955,
+    "longitude": 153.0259340350001
+  },
+  {
+    "name": "CLAYFIELD",
+    "state": "QLD",
+    "latitude": -27.41814244799997,
+    "longitude": 153.05769603700003
+  },
+  {
+    "name": "CORINDA",
+    "state": "QLD",
+    "latitude": -27.539007940999966,
+    "longitude": 152.98010853000005
+  },
+  {
+    "name": "DEAGON",
+    "state": "QLD",
+    "latitude": -27.327796447999958,
+    "longitude": 153.06324104800012
+  },
+  {
+    "name": "DOOMBEN",
+    "state": "QLD",
+    "latitude": -27.43135744999995,
+    "longitude": 153.07455853400006
+  },
+  {
+    "name": "EBBW VALE",
+    "state": "QLD",
+    "latitude": -27.60334742599997,
+    "longitude": 152.8220405390001
+  },
+  {
+    "name": "GLADSTONE POWER HOUSE",
+    "state": "QLD",
+    "latitude": -23.85368074099995,
+    "longitude": 151.22111814000004
+  },
+  {
+    "name": "HENDON",
+    "state": "QLD",
+    "latitude": -28.073842343999956,
+    "longitude": 151.94863457700012
+  },
+  {
+    "name": "INGLEWOOD",
+    "state": "QLD",
+    "latitude": -28.420434264999983,
+    "longitude": 151.08120413300003
+  },
+  {
+    "name": "THE WORKSHOPS RAIL MUSEUM",
+    "state": "QLD",
+    "latitude": -27.598658418999946,
+    "longitude": 152.75973904700004
+  },
+  {
+    "name": "JILALAN",
+    "state": "QLD",
+    "latitude": -21.44196504499996,
+    "longitude": 149.23979756100005
+  },
+  {
+    "name": "KINROLA",
+    "state": "QLD",
+    "latitude": -23.73430902599995,
+    "longitude": 148.7936588760001
+  },
+  {
+    "name": "MEANDARRA",
+    "state": "QLD",
+    "latitude": -27.322018147999984,
+    "longitude": 149.8861943920001
+  },
+  {
+    "name": "MOOLABIN YARD",
+    "state": "QLD",
+    "latitude": -27.527499442999954,
+    "longitude": 152.99945903000003
+  },
+  {
+    "name": "PRING",
+    "state": "QLD",
+    "latitude": -20.04031494299994,
+    "longitude": 148.15791027700004
+  },
+  {
+    "name": "RAVENSHOE",
+    "state": "QLD",
+    "latitude": -17.609304721999933,
+    "longitude": 145.482721168
+  },
+  {
+    "name": "RIVERSIDE",
+    "state": "QLD",
+    "latitude": -21.762335939999957,
+    "longitude": 147.94506163800008
+  },
+  {
+    "name": "SARAJI",
+    "state": "QLD",
+    "latitude": -22.416381472999944,
+    "longitude": 148.27622554900006
+  },
+  {
+    "name": "STANWELL POWER STATION",
+    "state": "QLD",
+    "latitude": -23.50571215499997,
+    "longitude": 150.31306026000004
+  },
+  {
+    "name": "SWANBANK",
+    "state": "QLD",
+    "latitude": -27.653846924999982,
+    "longitude": 152.8147245340001
+  },
+  {
+    "name": "ENOGGERA",
+    "state": "QLD",
+    "latitude": -27.420244440999966,
+    "longitude": 152.99244404400008
+  },
+  {
+    "name": "EUDLO",
+    "state": "QLD",
+    "latitude": -26.72581893199998,
+    "longitude": 152.95683863500005
+  },
+  {
+    "name": "FAIRFIELD",
+    "state": "QLD",
+    "latitude": -27.50975544599993,
+    "longitude": 153.02792902900012
+  },
+  {
+    "name": "FRUITGROVE",
+    "state": "QLD",
+    "latitude": -27.59821895099998,
+    "longitude": 153.07973951200006
+  },
+  {
+    "name": "GATTON",
+    "state": "QLD",
+    "latitude": -27.554467371999976,
+    "longitude": 152.27764610400004
+  },
+  {
+    "name": "GAYTHORNE",
+    "state": "QLD",
+    "latitude": -27.41923794099995,
+    "longitude": 152.98505054500004
+  },
+  {
+    "name": "GRACEVILLE",
+    "state": "QLD",
+    "latitude": -27.520532439999954,
+    "longitude": 152.9758700330001
+  },
+  {
+    "name": "HELENSVALE",
+    "state": "QLD",
+    "latitude": -27.925443479999956,
+    "longitude": 153.33908394200012
+  },
+  {
+    "name": "HOLMVIEW",
+    "state": "QLD",
+    "latitude": -27.709512462999953,
+    "longitude": 153.18759298600003
+  },
+  {
+    "name": "BOWEN",
+    "state": "QLD",
+    "latitude": -20.01344244699993,
+    "longitude": 148.20403177600008
+  },
+  {
+    "name": "BROMELTON",
+    "state": "QLD",
+    "latitude": -27.970536438999943,
+    "longitude": 152.92619448200003
+  },
+  {
+    "name": "CABANDA",
+    "state": "QLD",
+    "latitude": -27.611715901999958,
+    "longitude": 152.57903456500003
+  },
+  {
+    "name": "COPPABELLA",
+    "state": "QLD",
+    "latitude": -21.90244897599996,
+    "longitude": 148.3691790890001
+  },
+  {
+    "name": "DIMBULAH",
+    "state": "QLD",
+    "latitude": -17.14960869199996,
+    "longitude": 145.11120972700007
+  },
+  {
+    "name": "EBENEZER",
+    "state": "QLD",
+    "latitude": -27.665838409999935,
+    "longitude": 152.6546010500001
+  },
+  {
+    "name": "BOUNDARY HILL",
+    "state": "QLD",
+    "latitude": -24.20621217599995,
+    "longitude": 150.4781996700001
+  },
+  {
+    "name": "MOUNT SURPRISE",
+    "state": "QLD",
+    "latitude": -18.14681314799998,
+    "longitude": 144.31789270800004
+  },
+  {
+    "name": "MOURA MINE",
+    "state": "QLD",
+    "latitude": -24.526670641999942,
+    "longitude": 150.06648217500003
+  },
+  {
+    "name": "PHOSPHATE HILL",
+    "state": "QLD",
+    "latitude": -21.883218436999982,
+    "longitude": 139.97758331600005
+  },
+  {
+    "name": "QUILPIE",
+    "state": "QLD",
+    "latitude": -26.612734212999953,
+    "longitude": 144.2700410760001
+  },
+  {
+    "name": "SARINA",
+    "state": "QLD",
+    "latitude": -21.425986541999976,
+    "longitude": 149.21698956400007
+  },
+  {
+    "name": "STANTHORPE",
+    "state": "QLD",
+    "latitude": -28.65752634699993,
+    "longitude": 151.93752650600004
+  },
+  {
+    "name": "TARAGOOLA",
+    "state": "QLD",
+    "latitude": -24.100510742999973,
+    "longitude": 151.2192906130001
+  },
+  {
+    "name": "DARRA",
+    "state": "QLD",
+    "latitude": -27.565846937999936,
+    "longitude": 152.9523915300001
+  },
+  {
+    "name": "RICHLANDS",
+    "state": "QLD",
+    "latitude": -27.596211437999955,
+    "longitude": 152.94692252700008
+  },
+  {
+    "name": "SPRINGFIELD",
+    "state": "QLD",
+    "latitude": -27.65998243599995,
+    "longitude": 152.9221070210001
+  },
+  {
+    "name": "MURRUMBA DOWNS",
+    "state": "QLD",
+    "latitude": -27.252314441999943,
+    "longitude": 153.0118365630001
+  },
+  {
+    "name": "MANGO HILL",
+    "state": "QLD",
+    "latitude": -27.24639044299994,
+    "longitude": 153.0276395620001
+  },
+  {
+    "name": "FERNY GROVE",
+    "state": "QLD",
+    "latitude": -27.401501434999943,
+    "longitude": 152.93542305200003
+  },
+  {
+    "name": "HELIDON",
+    "state": "QLD",
+    "latitude": -27.547965356999953,
+    "longitude": 152.12319912200007
+  },
+  {
+    "name": "HENDRA",
+    "state": "QLD",
+    "latitude": -27.422068947999946,
+    "longitude": 153.06259503600006
+  },
+  {
+    "name": "HUGHENDEN",
+    "state": "QLD",
+    "latitude": -20.84787516299997,
+    "longitude": 144.19719452300012
+  },
+  {
+    "name": "MOORVALE",
+    "state": "QLD",
+    "latitude": -21.97073947599995,
+    "longitude": 148.36476408300007
+  },
+  {
+    "name": "MOUNT MCLAREN",
+    "state": "QLD",
+    "latitude": -22.34715492999993,
+    "longitude": 147.75580710000008
+  },
+  {
+    "name": "OLD GYMPIE",
+    "state": "QLD",
+    "latitude": -26.187462898999968,
+    "longitude": 152.6710922300001
+  },
+  {
+    "name": "QAL",
+    "state": "QLD",
+    "latitude": -23.86170324799997,
+    "longitude": 151.29146363300003
+  },
+  {
+    "name": "HELENSVALE",
+    "state": "QLD",
+    "latitude": -27.925542979999932,
+    "longitude": 153.3393844420001
+  },
+  {
+    "name": "PARKWOOD",
+    "state": "QLD",
+    "latitude": -27.95193348099997,
+    "longitude": 153.34719993800002
+  },
+  {
+    "name": "BYERWEN",
+    "state": "QLD",
+    "latitude": -21.33361192899997,
+    "longitude": 147.84075868500008
+  },
+  {
+    "name": "NEBO YARD",
+    "state": "QLD",
+    "latitude": -21.79281100399993,
+    "longitude": 148.7270170690001
+  },
+  {
+    "name": "OAKS RESORT STATION",
+    "state": "QLD",
+    "latitude": -16.509490710999955,
+    "longitude": 145.46302675200002
+  },
+  {
+    "name": "INDOOROOPILLY",
+    "state": "QLD",
+    "latitude": -27.502253439999947,
+    "longitude": 152.97622353500003
+  },
+  {
+    "name": "KIPPA-RING",
+    "state": "QLD",
+    "latitude": -27.22531794899993,
+    "longitude": 153.0825650590001
+  },
+  {
+    "name": "LOGANLEA",
+    "state": "QLD",
+    "latitude": -27.670728957999984,
+    "longitude": 153.13804299700007
+  },
+  {
+    "name": "LOTA",
+    "state": "QLD",
+    "latitude": -27.470098460999964,
+    "longitude": 153.18858701700003
+  },
+  {
+    "name": "MACKAY",
+    "state": "QLD",
+    "latitude": -21.17214103499998,
+    "longitude": 149.15972209300003
+  },
+  {
+    "name": "MANLY",
+    "state": "QLD",
+    "latitude": -27.456727459999968,
+    "longitude": 153.18024701900003
+  },
+  {
+    "name": "SEA WORLD RESORT & WATER PARK STATION",
+    "state": "QLD",
+    "latitude": -27.95378398899993,
+    "longitude": 153.4256254290001
+  },
+  {
+    "name": "MID STATION",
+    "state": "QLD",
+    "latitude": -27.95578748899993,
+    "longitude": 153.42497642900003
+  },
+  {
+    "name": "MAIN STATION",
+    "state": "QLD",
+    "latitude": -27.95986298899993,
+    "longitude": 153.42435992800006
+  },
+  {
+    "name": "VARSITY LAKES",
+    "state": "QLD",
+    "latitude": -28.09706998799993,
+    "longitude": 153.39928041300004
+  },
+  {
+    "name": "LANDSBOROUGH",
+    "state": "QLD",
+    "latitude": -26.80814693399998,
+    "longitude": 152.9663736230001
+  },
+  {
+    "name": "WHEATVALE",
+    "state": "QLD",
+    "latitude": -28.16691383899996,
+    "longitude": 151.88734207200002
+  },
+  {
+    "name": "WINTON",
+    "state": "QLD",
+    "latitude": -22.38383810299996,
+    "longitude": 143.0371725130001
+  },
+  {
+    "name": "CLAPHAM YARD",
+    "state": "QLD",
+    "latitude": -27.535783443999946,
+    "longitude": 153.01320402700003
+  },
+  {
+    "name": "SURFERS PARADISE NORTH",
+    "state": "QLD",
+    "latitude": -27.992589989999942,
+    "longitude": 153.42923942400012
+  },
+  {
+    "name": "NERANG STREET",
+    "state": "QLD",
+    "latitude": -27.97065398799998,
+    "longitude": 153.40847692900002
+  },
+  {
+    "name": "CYPRESS AVENUE",
+    "state": "QLD",
+    "latitude": -27.99648948999993,
+    "longitude": 153.42914992300007
+  },
+  {
+    "name": "CAVILL AVENUE",
+    "state": "QLD",
+    "latitude": -28.001574989999938,
+    "longitude": 153.4283679230001
+  },
+  {
+    "name": "FLORIDA GARDENS",
+    "state": "QLD",
+    "latitude": -28.017350489999956,
+    "longitude": 153.42924542000003
+  },
+  {
+    "name": "SURFERS PARADISE",
+    "state": "QLD",
+    "latitude": -28.006110989999968,
+    "longitude": 153.4290549220001
+  },
+  {
+    "name": "BROADBEACH SOUTH",
+    "state": "QLD",
+    "latitude": -28.035640489999935,
+    "longitude": 153.4310999180001
+  },
+  {
+    "name": "SOUTHPORT",
+    "state": "QLD",
+    "latitude": -27.967807987999947,
+    "longitude": 153.413567929
+  },
+  {
+    "name": "NORTHCLIFFE",
+    "state": "QLD",
+    "latitude": -28.01003498999995,
+    "longitude": 153.42951392100008
+  },
+  {
+    "name": "BROADBEACH NORTH",
+    "state": "QLD",
+    "latitude": -28.02820048999996,
+    "longitude": 153.42976391900004
+  },
+  {
+    "name": "BROADWATER PARKLANDS",
+    "state": "QLD",
+    "latitude": -27.97353148899998,
+    "longitude": 153.41878392700005
+  },
+  {
+    "name": "GOLD COAST UNIVERSITY HOSPITAL",
+    "state": "QLD",
+    "latitude": -27.960837484999956,
+    "longitude": 153.38085793300002
+  },
+  {
+    "name": "GRIFFITH UNIVERSITY",
+    "state": "QLD",
+    "latitude": -27.963309984999967,
+    "longitude": 153.38471193200007
+  },
+  {
+    "name": "SOUTHPORT SOUTH",
+    "state": "QLD",
+    "latitude": -27.97254348799993,
+    "longitude": 153.41551442800005
+  },
+  {
+    "name": "QUEEN STREET",
+    "state": "QLD",
+    "latitude": -27.97013398599995,
+    "longitude": 153.39442993000011
+  },
+  {
+    "name": "MAIN BEACH",
+    "state": "QLD",
+    "latitude": -27.98207648899995,
+    "longitude": 153.42345442600003
+  },
+  {
+    "name": "DALRYMPLE BAY",
+    "state": "QLD",
+    "latitude": -21.29649204599997,
+    "longitude": 149.27646907200005
+  },
+  {
+    "name": "AUCKLAND POINT",
+    "state": "QLD",
+    "latitude": -23.832704243999956,
+    "longitude": 151.2576366390001
+  },
+  {
+    "name": "BARRON FALLS",
+    "state": "QLD",
+    "latitude": -16.836333225999965,
+    "longitude": 145.6428607160001
+  },
+  {
+    "name": "BLAIR ATHOL MINE",
+    "state": "QLD",
+    "latitude": -22.678226913999936,
+    "longitude": 147.51531809100004
+  },
+  {
+    "name": "BOONAL",
+    "state": "QLD",
+    "latitude": -23.585004538999954,
+    "longitude": 148.9676218740001
+  },
+  {
+    "name": "WYANDRA",
+    "state": "QLD",
+    "latitude": -27.24795183499998,
+    "longitude": 145.98154983200004
+  },
+  {
+    "name": "CARBOROUGH DOWNS",
+    "state": "QLD",
+    "latitude": -21.94806246299993,
+    "longitude": 148.20852659800005
+  },
+  {
+    "name": "MALU",
+    "state": "QLD",
+    "latitude": -27.34859830099998,
+    "longitude": 151.56133220700008
+  },
+  {
+    "name": "WILLOWBURN",
+    "state": "QLD",
+    "latitude": -27.536812339999983,
+    "longitude": 151.9469951420001
+  },
+  {
+    "name": "CRAMSIE",
+    "state": "QLD",
+    "latitude": -23.390394684999933,
+    "longitude": 144.22721233100003
+  },
+  {
+    "name": "CURRAGH",
+    "state": "QLD",
+    "latitude": -23.49309102799998,
+    "longitude": 148.84114839500012
+  },
+  {
+    "name": "CLINTON",
+    "state": "QLD",
+    "latitude": -23.828518241999973,
+    "longitude": 151.23176164200004
+  },
+  {
+    "name": "GOONDIWINDI",
+    "state": "QLD",
+    "latitude": -28.538572194999972,
+    "longitude": 150.30685770800005
+  },
+  {
+    "name": "GREGORY",
+    "state": "QLD",
+    "latitude": -23.15074648799998,
+    "longitude": 148.39617496900007
+  },
+  {
+    "name": "BANYO",
+    "state": "QLD",
+    "latitude": -27.374595948999968,
+    "longitude": 153.07741754100005
+  },
+  {
+    "name": "BEERBURRUM",
+    "state": "QLD",
+    "latitude": -26.95981543399995,
+    "longitude": 152.95924210500004
+  },
+  {
+    "name": "BINDHA",
+    "state": "QLD",
+    "latitude": -27.38291444899994,
+    "longitude": 153.07267104000005
+  },
+  {
+    "name": "BIRKDALE",
+    "state": "QLD",
+    "latitude": -27.49402746499993,
+    "longitude": 153.21874201000003
+  },
+  {
+    "name": "INNISFAIL",
+    "state": "QLD",
+    "latitude": -17.526197258999957,
+    "longitude": 146.019023639
+  },
+  {
+    "name": "KURABY",
+    "state": "QLD",
+    "latitude": -27.604944952999972,
+    "longitude": 153.09148701000004
+  },
+  {
+    "name": "LONGREACH",
+    "state": "QLD",
+    "latitude": -23.440223686999957,
+    "longitude": 144.2522493250001
+  },
+  {
+    "name": "MORNINGSIDE",
+    "state": "QLD",
+    "latitude": -27.470877448999943,
+    "longitude": 153.0694990290001
+  },
+  {
+    "name": "MOUNT LARCOM",
+    "state": "QLD",
+    "latitude": -23.80777121799997,
+    "longitude": 150.97869116700008
+  },
+  {
+    "name": "NORMANTON",
+    "state": "QLD",
+    "latitude": -17.67276445599998,
+    "longitude": 141.07220396000002
+  },
+  {
+    "name": "PARK ROAD",
+    "state": "QLD",
+    "latitude": -27.493558445999952,
+    "longitude": 153.030800031
+  },
+  {
+    "name": "MAREEBA",
+    "state": "QLD",
+    "latitude": -16.992740211999944,
+    "longitude": 145.4211922190001
+  },
+  {
+    "name": "MERINDA",
+    "state": "QLD",
+    "latitude": -20.013714943999958,
+    "longitude": 148.16621627900008
+  },
+  {
+    "name": "MORANBAH NORTH",
+    "state": "QLD",
+    "latitude": -21.87064744299994,
+    "longitude": 147.9633151260001
+  },
+  {
+    "name": "NEWLANDS",
+    "state": "QLD",
+    "latitude": -21.19102493099996,
+    "longitude": 147.8865321940001
+  },
+  {
+    "name": "NORTH GOONYELLA",
+    "state": "QLD",
+    "latitude": -21.66942993999993,
+    "longitude": 147.95533114500006
+  },
+  {
+    "name": "NORWICH PARK",
+    "state": "QLD",
+    "latitude": -22.753766989999974,
+    "longitude": 148.460140001
+  },
+  {
+    "name": "OAKY CREEK",
+    "state": "QLD",
+    "latitude": -23.067758494999964,
+    "longitude": 148.48521846900007
+  },
+  {
+    "name": "TUMOULIN",
+    "state": "QLD",
+    "latitude": -17.564130218999935,
+    "longitude": 145.45258967400002
+  },
+  {
+    "name": "PARKHURST",
+    "state": "QLD",
+    "latitude": -23.307508170999938,
+    "longitude": 150.50926376300004
+  },
+  {
+    "name": "PEAK DOWNS",
+    "state": "QLD",
+    "latitude": -22.25346646299994,
+    "longitude": 148.17934607200004
+  },
+  {
+    "name": "PENTLAND",
+    "state": "QLD",
+    "latitude": -20.525234739999973,
+    "longitude": 145.3986094500001
+  },
+  {
+    "name": "PETRIE",
+    "state": "QLD",
+    "latitude": -27.26824943899993,
+    "longitude": 152.98194206400012
+  },
+  {
+    "name": "RICHMOND",
+    "state": "QLD",
+    "latitude": -20.73564659599998,
+    "longitude": 143.14150811700006
+  },
+  {
+    "name": "SALISBURY",
+    "state": "QLD",
+    "latitude": -27.553836444999945,
+    "longitude": 153.02269802400008
+  },
+  {
+    "name": "ST LAWRENCE",
+    "state": "QLD",
+    "latitude": -22.350610075999953,
+    "longitude": 149.52293494800006
+  },
+  {
+    "name": "SUNSHINE",
+    "state": "QLD",
+    "latitude": -27.37569994699993,
+    "longitude": 153.05629354300004
+  },
+  {
+    "name": "TARINGA",
+    "state": "QLD",
+    "latitude": -27.493149940999956,
+    "longitude": 152.98164703600003
+  },
+  {
+    "name": "THOMAS STREET",
+    "state": "QLD",
+    "latitude": -27.61474491799993,
+    "longitude": 152.74548254600006
+  },
+  {
+    "name": "TULLY",
+    "state": "QLD",
+    "latitude": -17.932329755999945,
+    "longitude": 145.93270761300005
+  },
+  {
+    "name": "WILSTON",
+    "state": "QLD",
+    "latitude": -27.43614744399997,
+    "longitude": 153.0192550390001
+  },
+  {
+    "name": "WINDSOR",
+    "state": "QLD",
+    "latitude": -27.435282944999983,
+    "longitude": 153.02902853800003
+  },
+  {
+    "name": "ALBION",
+    "state": "QLD",
+    "latitude": -27.42913744599997,
+    "longitude": 153.04030203800005
+  },
+  {
+    "name": "ALTANDI",
+    "state": "QLD",
+    "latitude": -27.582804949999968,
+    "longitude": 153.06375451600002
+  },
+  {
+    "name": "ANAKIE",
+    "state": "QLD",
+    "latitude": -23.552717938999933,
+    "longitude": 147.74685349000003
+  },
+  {
+    "name": "ROMA STREET",
+    "state": "QLD",
+    "latitude": -27.464814443999956,
+    "longitude": 153.01923803500006
+  },
+  {
+    "name": "OAKEY",
+    "state": "QLD",
+    "latitude": -27.431110816999933,
+    "longitude": 151.72033318
+  },
+  {
+    "name": "KINGSTON",
+    "state": "QLD",
+    "latitude": -27.65727545599998,
+    "longitude": 153.118356
+  },
+  {
+    "name": "NAMBOUR",
+    "state": "QLD",
+    "latitude": -26.625265431999935,
+    "longitude": 152.95820264700012
+  },
+  {
+    "name": "ROBINA",
+    "state": "QLD",
+    "latitude": -28.07127748499994,
+    "longitude": 153.37806491900005
+  },
+  {
+    "name": "SHORNCLIFFE",
+    "state": "QLD",
+    "latitude": -27.327080448999936,
+    "longitude": 153.08042804600007
+  },
+  {
+    "name": "THORNESIDE",
+    "state": "QLD",
+    "latitude": -27.486030461999974,
+    "longitude": 153.19276801400008
+  },
+  {
+    "name": "TRAVESTON",
+    "state": "QLD",
+    "latitude": -26.319844411999952,
+    "longitude": 152.7829537020001
+  },
+  {
+    "name": "PORTSMITH",
+    "state": "QLD",
+    "latitude": -16.946109735999983,
+    "longitude": 145.76415570000006
+  },
+  {
+    "name": "REDBANK WORKSHOPS",
+    "state": "QLD",
+    "latitude": -27.594439430999955,
+    "longitude": 152.87460303500006
+  },
+  {
+    "name": "THE SUMMIT",
+    "state": "QLD",
+    "latitude": -28.574802347999935,
+    "longitude": 151.94962101500005
+  },
+  {
+    "name": "FISHERMAN ISLANDS",
+    "state": "QLD",
+    "latitude": -27.37848645899993,
+    "longitude": 153.1729200300001
+  },
+  {
+    "name": "EINASLEIGH",
+    "state": "QLD",
+    "latitude": -18.51400163699998,
+    "longitude": 144.09165769800006
+  },
+  {
+    "name": "HATFIELD",
+    "state": "QLD",
+    "latitude": -21.64561903799995,
+    "longitude": 149.14730704900012
+  },
+  {
+    "name": "HAY POINT",
+    "state": "QLD",
+    "latitude": -21.28066754699995,
+    "longitude": 149.29017707200012
+  },
+  {
+    "name": "KOORILGAH",
+    "state": "QLD",
+    "latitude": -23.71343103399994,
+    "longitude": 148.8981578680001
+  },
+  {
+    "name": "KUNKALA",
+    "state": "QLD",
+    "latitude": -27.60896539999993,
+    "longitude": 152.5618230670001
+  },
+  {
+    "name": "KURANDA",
+    "state": "QLD",
+    "latitude": -16.818404725999926,
+    "longitude": 145.6389982180001
+  },
+  {
+    "name": "WACOL",
+    "state": "QLD",
+    "latitude": -27.589141435999977,
+    "longitude": 152.92434303000005
+  },
+  {
+    "name": "WYNNUM CENTRAL",
+    "state": "QLD",
+    "latitude": -27.44545045899997,
+    "longitude": 153.17031602200007
+  },
+  {
+    "name": "YERONGA",
+    "state": "QLD",
+    "latitude": -27.518068944999982,
+    "longitude": 153.0168190290001
+  },
+  {
+    "name": "ZILLMERE",
+    "state": "QLD",
+    "latitude": -27.358811444999958,
+    "longitude": 153.0367350470001
+  },
+  {
+    "name": "CLEVELAND",
+    "state": "QLD",
+    "latitude": -27.52419146999995,
+    "longitude": 153.2661190010001
+  },
+  {
+    "name": "COOMERA",
+    "state": "QLD",
+    "latitude": -27.852314476999936,
+    "longitude": 153.31711445400003
+  },
+  {
+    "name": "WOODRIDGE",
+    "state": "QLD",
+    "latitude": -27.63803745399997,
+    "longitude": 153.10372700400012
+  },
+  {
+    "name": "PALMWOODS",
+    "state": "QLD",
+    "latitude": -26.688661931999945,
+    "longitude": 152.96071613900006
+  },
+  {
+    "name": "TOWNSVILLE",
+    "state": "QLD",
+    "latitude": -19.26924283099993,
+    "longitude": 146.80803094400005
+  },
+  {
+    "name": "AYR",
+    "state": "QLD",
+    "latitude": -19.57438237899993,
+    "longitude": 147.39607087500008
+  },
+  {
+    "name": "GIRU",
+    "state": "QLD",
+    "latitude": -19.51166485599998,
+    "longitude": 147.1052009020001
+  },
+  {
+    "name": "HOME HILL",
+    "state": "QLD",
+    "latitude": -19.665580880999983,
+    "longitude": 147.4139728660001
+  },
+  {
+    "name": "ALPHA",
+    "state": "QLD",
+    "latitude": -23.64816035499996,
+    "longitude": 146.6426445840001
+  },
+  {
+    "name": "ASCOT",
+    "state": "QLD",
+    "latitude": -27.429535947999966,
+    "longitude": 153.063429035
+  },
+  {
+    "name": "AUCHENFLOWER",
+    "state": "QLD",
+    "latitude": -27.47595444199993,
+    "longitude": 152.9969055360001
+  }
+]
