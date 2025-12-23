@@ -1,11 +1,11 @@
 /**
  * Main App Component
  * 
- * Phase 4: Integrated with interactive map visualization
+ * Phase 5: Modern UI with Sidebar Components
  */
 
 import { useState, useEffect } from 'react';
-import type { SearchResponse, SelectedPOIs, POI, School, Station } from './types';
+import type { SearchResponse, SelectedPOIs, POI, School, Station, POICategory } from './types';
 import { useDataLoader } from './hooks/useDataLoader';
 import { useWalkingRoutes } from './hooks/useWalkingRoutes';
 import { useGeolocation } from './hooks/useGeolocation';
@@ -13,10 +13,11 @@ import { useOnlineStatus } from './hooks/useOnlineStatus';
 import { useSectorPreferences } from './hooks/useSectorPreferences';
 import { geocodeAddress, fetchSupermarkets } from './lib/api-client';
 import { haversineDistance } from './lib/haversine';
-import { estimateWalkingTime, formatDistance, formatDuration } from './utils/format';
+import { estimateWalkingTime } from './utils/format';
 import { Map } from './components/Map/Map';
 import { MapMarker } from './components/Map/MapMarker';
 import { MapPolyline } from './components/Map/MapPolyline';
+import { Sidebar } from './components/Sidebar/Sidebar';
 import { latLngBounds, type LatLngBounds } from 'leaflet';
 import './App.css';
 
@@ -26,10 +27,10 @@ const MAX_RESULTS_PER_CATEGORY = 10;
 function App() {
   // Hooks
   const { loadState, getSchools, getStations, isStateLoaded } = useDataLoader();
-  const { routeCache, fetchRoutesSequentially, getCachedRoute } = useWalkingRoutes();
+  const { fetchRoutesSequentially, getCachedRoute } = useWalkingRoutes();
   const { getCurrentLocation } = useGeolocation();
   const isOnline = useOnlineStatus();
-  const { sectors } = useSectorPreferences();
+  const { sectors, toggleSector } = useSectorPreferences();
 
   // State
   const [searchResults, setSearchResults] = useState<SearchResponse | null>(null);
@@ -40,12 +41,21 @@ function App() {
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [searchAddress, setSearchAddress] = useState('');
 
   // Map state
   const [mapCenter, setMapCenter] = useState<[number, number]>([-33.8688, 151.2093]); // Sydney default
   const [mapZoom, setMapZoom] = useState(13);
   const [mapBounds, setMapBounds] = useState<LatLngBounds | null>(null);
+
+  // Route loading states
+  const [routeLoadingStates, setRouteLoadingStates] = useState({
+    school: false,
+    station: false,
+    supermarket: false,
+  });
+
+  // Mobile view toggle (list vs map)
+  const [mobileView, setMobileView] = useState<'list' | 'map'>('list');
 
   // Check for shared address from PWA share target
   useEffect(() => {
@@ -63,10 +73,31 @@ function App() {
       console.log('Cleaned address (preview):', cleanedAddress);
       console.groupEnd();
 
-      // TODO Phase 5: Auto-populate and search
-      setSearchAddress(cleanedAddress);
+      // Auto-search shared address
+      handleSearch(cleanedAddress);
     }
   }, []);
+
+  /**
+   * Re-filter schools when sectors change
+   */
+  useEffect(() => {
+    if (searchResults) {
+      const { location } = searchResults;
+      const state = location.state;
+      const schools = getSchools(state);
+      
+      const filteredSchools = filterAndSortSchools(
+        schools,
+        location.lat,
+        location.lng,
+        sectors
+      );
+
+      setSearchResults(prev => prev ? { ...prev, schools: filteredSchools } : null);
+      setSelectedPOIs(prev => ({ ...prev, school: 0 }));
+    }
+  }, [sectors]);
 
   /**
    * Main search handler
@@ -131,8 +162,8 @@ function App() {
       const supermarkets = supermarketsResult.supermarkets || [];
 
       console.log('Search results:', {
-        schools: schools.length,
-        stations: stations.length,
+        schools: filteredSchools.length,
+        stations: filteredStations.length,
         supermarkets: supermarkets.length,
       });
 
@@ -179,10 +210,19 @@ function App() {
         ...(supermarkets.length > 0 ? [{ from: results.location, to: supermarkets[0] }] : []),
       ];
 
+      // Set loading states
+      if (filteredSchools.length > 0) setRouteLoadingStates(prev => ({ ...prev, school: true }));
+      if (filteredStations.length > 0) setRouteLoadingStates(prev => ({ ...prev, station: true }));
+      if (supermarkets.length > 0) setRouteLoadingStates(prev => ({ ...prev, supermarket: true }));
+
       // Don't await - let this happen in background
       if (topPOIs.length > 0) {
-        fetchRoutesSequentially(topPOIs).catch(err => {
+        fetchRoutesSequentially(topPOIs).then(() => {
+          // Clear loading states when done
+          setRouteLoadingStates({ school: false, station: false, supermarket: false });
+        }).catch(err => {
           console.error('Background route fetching failed:', err);
+          setRouteLoadingStates({ school: false, station: false, supermarket: false });
         });
       }
 
@@ -199,18 +239,27 @@ function App() {
    * Handle "Use my location"
    */
   const handleUseMyLocation = async (): Promise<void> => {
-    const coords = await getCurrentLocation();
-    if (coords) {
-      // Reverse geocode coordinates to address
-      const address = `${coords.latitude},${coords.longitude}`;
-      await handleSearch(address);
+    setLoading(true);
+    setError(null);
+    
+    try {
+      const coords = await getCurrentLocation();
+      if (coords) {
+        // Reverse geocode coordinates to address
+        const address = `${coords.latitude},${coords.longitude}`;
+        await handleSearch(address);
+      }
+    } catch (err) {
+      const errorMsg = err instanceof Error ? err.message : 'Failed to get location';
+      setError(errorMsg);
+      setLoading(false);
     }
   };
 
   /**
    * Handle selecting an alternative POI
    */
-  const handleSelectPOI = (category: 'school' | 'station' | 'supermarket', index: number): void => {
+  const handleSelectPOI = (category: POICategory, index: number): void => {
     setSelectedPOIs(prev => ({ ...prev, [category]: index }));
     
     // Fetch route if not cached
@@ -225,9 +274,15 @@ function App() {
       const route = getCachedRoute(searchResults.location, poi);
       
       if (!route) {
+        // Set loading state for this category
+        setRouteLoadingStates(prev => ({ ...prev, [category]: true }));
+        
         // Fetch route in background
-        fetchRoutesSequentially([{ from: searchResults.location, to: poi }]).catch(err => {
+        fetchRoutesSequentially([{ from: searchResults.location, to: poi }]).then(() => {
+          setRouteLoadingStates(prev => ({ ...prev, [category]: false }));
+        }).catch(err => {
           console.error('Failed to fetch route:', err);
+          setRouteLoadingStates(prev => ({ ...prev, [category]: false }));
         });
       }
     }
@@ -322,192 +377,37 @@ function App() {
     : null;
 
   return (
-    <div className="h-screen w-screen flex flex-col">
-      {/* Header */}
-      <header className="bg-blue-600 text-white p-4 shadow-md z-10">
-        <h1 className="text-2xl font-bold">Map Search</h1>
-        <p className="text-sm opacity-90">
-          {isOnline ? 'Online' : 'Offline'} • Phase 4: Map Components
-        </p>
-      </header>
-
-      {/* Main Content - Desktop: Sidebar (40%) + Map (60%), Mobile: Stacked */}
-      <div className="flex-1 flex flex-col md:flex-row overflow-hidden" style={{ flexDirection: window.innerWidth >= 768 ? 'row' : 'column' }}>
-        {/* Sidebar */}
-        <div className="w-full md:w-2/5 flex flex-col overflow-hidden bg-white" style={{ width: window.innerWidth >= 768 ? '40%' : '100%' }}>
-          {/* Search Form */}
-          <div className="p-4 border-b">
-            <div className="flex gap-2 mb-2">
-              <input
-                type="text"
-                value={searchAddress}
-                onChange={(e) => setSearchAddress(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && handleSearch(searchAddress)}
-                placeholder="Enter an address..."
-                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                disabled={loading}
-              />
-              <button
-                onClick={() => handleSearch(searchAddress)}
-                disabled={loading}
-                className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed"
-              >
-                {loading ? 'Searching...' : 'Search'}
-              </button>
-            </div>
-
-            <button
-              onClick={handleUseMyLocation}
-              disabled={loading}
-              className="w-full px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:bg-gray-400 disabled:cursor-not-allowed"
-            >
-              Use My Location
-            </button>
-
-            {error && (
-              <div className="mt-2 p-3 bg-red-100 text-red-700 rounded-lg text-sm">
-                {error}
-              </div>
-            )}
-          </div>
-
-          {/* Results List */}
-          <div className="flex-1 overflow-auto p-4">
-            {searchResults && (
-              <div>
-                <h2 className="text-lg font-bold mb-4 text-gray-700">
-                  Results for: {searchResults.location.displayName.split(',').slice(0, 2).join(',')}
-                </h2>
-
-                {/* Schools */}
-                <section className="mb-6">
-                  <h3 className="text-md font-semibold mb-2 text-gray-800">
-                    Schools ({searchResults.schools.length})
-                  </h3>
-                  {searchResults.schools.length === 0 ? (
-                    <p className="text-gray-500 text-sm">No schools found within walking distance</p>
-                  ) : (
-                    <ul className="space-y-2">
-                      {searchResults.schools.map((school, index) => {
-                        const route = getCachedRoute(searchResults.location, school);
-                        const isSelected = selectedPOIs.school === index;
-                        
-                        return (
-                          <li
-                            key={school.id}
-                            onClick={() => handleSelectPOI('school', index)}
-                            className={`p-3 border rounded-lg cursor-pointer transition-all ${
-                              isSelected
-                                ? 'border-blue-500 bg-blue-50 shadow-md'
-                                : 'border-gray-300 hover:border-gray-400 hover:shadow'
-                            }`}
-                          >
-                            <div className="font-semibold text-sm">{school.name}</div>
-                            <div className="text-xs text-gray-600 mt-1">{school.details}</div>
-                            <div className="text-xs text-gray-500 mt-1">
-                              {formatDistance(school.distance)} • {
-                                route 
-                                  ? `${formatDuration(route.duration)} (actual)`
-                                  : `~${school.estimatedWalkingTime} min (est)`
-                              }
-                            </div>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  )}
-                </section>
-
-                {/* Stations */}
-                <section className="mb-6">
-                  <h3 className="text-md font-semibold mb-2 text-gray-800">
-                    Train Stations ({searchResults.stations.length})
-                  </h3>
-                  {searchResults.stations.length === 0 ? (
-                    <p className="text-gray-500 text-sm">No stations found within walking distance</p>
-                  ) : (
-                    <ul className="space-y-2">
-                      {searchResults.stations.map((station, index) => {
-                        const route = getCachedRoute(searchResults.location, station);
-                        const isSelected = selectedPOIs.station === index;
-                        
-                        return (
-                          <li
-                            key={station.id}
-                            onClick={() => handleSelectPOI('station', index)}
-                            className={`p-3 border rounded-lg cursor-pointer transition-all ${
-                              isSelected
-                                ? 'border-blue-500 bg-blue-50 shadow-md'
-                                : 'border-gray-300 hover:border-gray-400 hover:shadow'
-                            }`}
-                          >
-                            <div className="font-semibold text-sm">{station.name}</div>
-                            <div className="text-xs text-gray-500 mt-1">
-                              {formatDistance(station.distance)} • {
-                                route 
-                                  ? `${formatDuration(route.duration)} (actual)`
-                                  : `~${station.estimatedWalkingTime} min (est)`
-                              }
-                            </div>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  )}
-                </section>
-
-                {/* Supermarkets */}
-                <section className="mb-6">
-                  <h3 className="text-md font-semibold mb-2 text-gray-800">
-                    Supermarkets ({searchResults.supermarkets.length})
-                  </h3>
-                  {searchResults.supermarkets.length === 0 ? (
-                    <p className="text-gray-500 text-sm">No supermarkets found within walking distance</p>
-                  ) : (
-                    <ul className="space-y-2">
-                      {searchResults.supermarkets.map((supermarket, index) => {
-                        const route = getCachedRoute(searchResults.location, supermarket);
-                        const isSelected = selectedPOIs.supermarket === index;
-                        
-                        return (
-                          <li
-                            key={supermarket.id}
-                            onClick={() => handleSelectPOI('supermarket', index)}
-                            className={`p-3 border rounded-lg cursor-pointer transition-all ${
-                              isSelected
-                                ? 'border-blue-500 bg-blue-50 shadow-md'
-                                : 'border-gray-300 hover:border-gray-400 hover:shadow'
-                            }`}
-                          >
-                            <div className="font-semibold text-sm">{supermarket.name}</div>
-                            <div className="text-xs text-gray-600 mt-1">{supermarket.details}</div>
-                            <div className="text-xs text-gray-500 mt-1">
-                              {formatDistance(supermarket.distance)} • {
-                                route 
-                                  ? `${formatDuration(route.duration)} (actual)`
-                                  : `~${supermarket.estimatedWalkingTime} min (est)`
-                              }
-                            </div>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  )}
-                </section>
-              </div>
-            )}
-
-            {!searchResults && !loading && (
-              <div className="text-center text-gray-500 mt-8">
-                <p className="text-lg mb-2">Search for an address to get started</p>
-                <p className="text-sm">Find nearby schools, train stations, and supermarkets</p>
-              </div>
-            )}
-          </div>
+    <div className="h-screen w-screen flex flex-col overflow-hidden bg-gray-100">
+      {/* Desktop: Side-by-side layout */}
+      <div className="hidden md:flex md:flex-row flex-1 overflow-hidden">
+        {/* Sidebar - Desktop: 40% fixed */}
+        <div className="w-2/5 lg:w-1/3 flex-shrink-0 h-full overflow-hidden">
+          <Sidebar
+            onSearch={handleSearch}
+            onUseLocation={handleUseMyLocation}
+            searchLoading={loading}
+            searchError={error}
+            schools={searchResults?.schools || []}
+            stations={searchResults?.stations || []}
+            supermarkets={searchResults?.supermarkets || []}
+            selectedSchoolIndex={selectedPOIs.school}
+            selectedStationIndex={selectedPOIs.station}
+            selectedSupermarketIndex={selectedPOIs.supermarket}
+            onSelectPOI={handleSelectPOI}
+            schoolRoute={schoolRoute}
+            stationRoute={stationRoute}
+            supermarketRoute={supermarketRoute}
+            schoolRouteLoading={routeLoadingStates.school}
+            stationRouteLoading={routeLoadingStates.station}
+            supermarketRouteLoading={routeLoadingStates.supermarket}
+            sectors={sectors}
+            onToggleSector={toggleSector}
+            isOnline={isOnline}
+          />
         </div>
 
-        {/* Map */}
-        <div className="w-full md:w-3/5 h-64 md:flex-1 bg-gray-100" style={{ width: window.innerWidth >= 768 ? '60%' : '100%', height: window.innerWidth >= 768 ? '100%' : '256px', flex: window.innerWidth >= 768 ? '1' : '0 1 auto' }}>
+        {/* Map - Desktop: 60% flex */}
+        <div className="flex-1 h-full">
           <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds}>
             {/* User location marker */}
             {searchResults && (
@@ -613,10 +513,178 @@ function App() {
         </div>
       </div>
 
-      {/* Debug Info */}
-      <footer className="bg-gray-100 p-2 text-xs text-gray-600 text-center">
-        Phase 4: Map Components Complete • {routeCache.size} routes cached • {isOnline ? '🟢' : '🔴'} {isOnline ? 'Online' : 'Offline'}
-      </footer>
+      {/* Mobile: Tabbed view with toggle */}
+      <div className="flex md:hidden flex-col h-full">
+        {/* Mobile view toggle tabs */}
+        <div className="flex border-b border-gray-200 bg-white">
+          <button
+            onClick={() => setMobileView('list')}
+            className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
+              mobileView === 'list'
+                ? 'text-blue-600 border-b-2 border-blue-600'
+                : 'text-gray-600 hover:text-gray-900'
+            }`}
+          >
+            <div className="flex items-center justify-center gap-2">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+              </svg>
+              List
+            </div>
+          </button>
+          <button
+            onClick={() => setMobileView('map')}
+            className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
+              mobileView === 'map'
+                ? 'text-blue-600 border-b-2 border-blue-600'
+                : 'text-gray-600 hover:text-gray-900'
+            }`}
+          >
+            <div className="flex items-center justify-center gap-2">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+              </svg>
+              Map
+            </div>
+          </button>
+        </div>
+
+        {/* Sidebar - Mobile: Full screen when in list view */}
+        {mobileView === 'list' && (
+          <div className="flex-1 overflow-hidden">
+            <Sidebar
+              onSearch={handleSearch}
+              onUseLocation={handleUseMyLocation}
+              searchLoading={loading}
+              searchError={error}
+              schools={searchResults?.schools || []}
+              stations={searchResults?.stations || []}
+              supermarkets={searchResults?.supermarkets || []}
+              selectedSchoolIndex={selectedPOIs.school}
+              selectedStationIndex={selectedPOIs.station}
+              selectedSupermarketIndex={selectedPOIs.supermarket}
+              onSelectPOI={handleSelectPOI}
+              schoolRoute={schoolRoute}
+              stationRoute={stationRoute}
+              supermarketRoute={supermarketRoute}
+              schoolRouteLoading={routeLoadingStates.school}
+              stationRouteLoading={routeLoadingStates.station}
+              supermarketRouteLoading={routeLoadingStates.supermarket}
+              sectors={sectors}
+              onToggleSector={toggleSector}
+              isOnline={isOnline}
+            />
+          </div>
+        )}
+
+        {/* Map - Mobile: Full screen when in map view */}
+        {mobileView === 'map' && (
+          <div className="flex-1 relative">
+            <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds}>
+              {/* User location marker */}
+              {searchResults && (
+                <MapMarker
+                  position={[searchResults.location.lat, searchResults.location.lng]}
+                  type="user"
+                />
+              )}
+
+              {/* Selected POI markers with pins */}
+              {selectedSchool && (
+                <MapMarker
+                  position={[selectedSchool.latitude, selectedSchool.longitude]}
+                  type="school"
+                  sector={selectedSchool.sector}
+                  selected={true}
+                  onClick={() => handleSelectPOI('school', selectedPOIs.school)}
+                />
+              )}
+
+              {selectedStation && (
+                <MapMarker
+                  position={[selectedStation.latitude, selectedStation.longitude]}
+                  type="station"
+                  selected={true}
+                  onClick={() => handleSelectPOI('station', selectedPOIs.station)}
+                />
+              )}
+
+              {selectedSupermarket && (
+                <MapMarker
+                  position={[selectedSupermarket.latitude, selectedSupermarket.longitude]}
+                  type="supermarket"
+                  selected={true}
+                  onClick={() => handleSelectPOI('supermarket', selectedPOIs.supermarket)}
+                />
+              )}
+
+              {/* Alternative POI markers (hollow dots) */}
+              {searchResults?.schools.map((school, index) => {
+                if (index === selectedPOIs.school) return null;
+                return (
+                  <MapMarker
+                    key={school.id}
+                    position={[school.latitude, school.longitude]}
+                    type="school"
+                    sector={school.sector}
+                    isAlternative={true}
+                    onClick={() => handleSelectPOI('school', index)}
+                  />
+                );
+              })}
+
+              {searchResults?.stations.map((station, index) => {
+                if (index === selectedPOIs.station) return null;
+                return (
+                  <MapMarker
+                    key={station.id}
+                    position={[station.latitude, station.longitude]}
+                    type="station"
+                    isAlternative={true}
+                    onClick={() => handleSelectPOI('station', index)}
+                  />
+                );
+              })}
+
+              {searchResults?.supermarkets.map((supermarket, index) => {
+                if (index === selectedPOIs.supermarket) return null;
+                return (
+                  <MapMarker
+                    key={supermarket.id}
+                    position={[supermarket.latitude, supermarket.longitude]}
+                    type="supermarket"
+                    isAlternative={true}
+                    onClick={() => handleSelectPOI('supermarket', index)}
+                  />
+                );
+              })}
+
+              {/* Walking route polylines for selected POIs */}
+              {schoolRoute && selectedSchool && (
+                <MapPolyline
+                  encodedPolyline={schoolRoute.polyline}
+                  category="school"
+                  sector={selectedSchool.sector}
+                />
+              )}
+
+              {stationRoute && (
+                <MapPolyline
+                  encodedPolyline={stationRoute.polyline}
+                  category="station"
+                />
+              )}
+
+              {supermarketRoute && (
+                <MapPolyline
+                  encodedPolyline={supermarketRoute.polyline}
+                  category="supermarket"
+                />
+              )}
+            </Map>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
