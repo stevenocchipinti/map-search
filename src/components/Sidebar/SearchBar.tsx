@@ -20,7 +20,7 @@ export function SearchBar({ onSearch, onUseLocation, loading, error }: SearchBar
   };
 
   return (
-    <div className="p-4 bg-white border-b border-gray-200">
+    <div className="p-5 bg-white border-b border-gray-100">
       <form onSubmit={handleSubmit} className="space-y-3">
         {/* Search Input */}
         <div className="relative">
@@ -29,7 +29,7 @@ export function SearchBar({ onSearch, onUseLocation, loading, error }: SearchBar
             value={address}
             onChange={(e) => setAddress(e.target.value)}
             placeholder="Enter an address..."
-            className="w-full px-4 py-3 pr-12 text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+            className="w-full px-4 py-3.5 pr-12 text-base border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder:text-gray-400"
             disabled={loading}
           />
           {loading && (
@@ -41,26 +41,27 @@ export function SearchBar({ onSearch, onUseLocation, loading, error }: SearchBar
 
         {/* Error Message */}
         {error && (
-          <div className="text-sm text-red-600 px-1">
+          <div className="text-sm text-red-600 px-1 font-medium">
             {error}
           </div>
         )}
 
         {/* Buttons */}
-        <div className="flex gap-2">
+        <div className="flex gap-3">
           <Button
             type="submit"
             variant="primary"
             size="md"
-            className="flex-1"
+            className="flex-1 h-12"
             disabled={!address.trim() || loading}
           >
-            Search
+            <span className="font-medium">Search</span>
           </Button>
           <Button
             type="button"
             variant="secondary"
             size="md"
+            className="h-12"
             onClick={onUseLocation}
             disabled={loading}
             icon={
@@ -70,7 +71,7 @@ export function SearchBar({ onSearch, onUseLocation, loading, error }: SearchBar
               </svg>
             }
           >
-            <span className="hidden sm:inline">Use Location</span>
+            <span className="hidden sm:inline font-medium">Use Location</span>
           </Button>
         </div>
       </form>

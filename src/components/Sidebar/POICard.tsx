@@ -64,11 +64,11 @@ export function POICard({
   const getCategoryColor = () => {
     switch (category) {
       case 'school':
-        return 'text-green-600';
+        return 'text-blue-700 bg-blue-50';
       case 'station':
-        return 'text-red-600';
+        return 'text-teal-700 bg-teal-50';
       case 'supermarket':
-        return 'text-teal-600';
+        return 'text-emerald-700 bg-emerald-50';
     }
   };
 
@@ -156,8 +156,8 @@ export function POICard({
 
           {/* Sector Checkboxes for Schools */}
           {category === 'school' && sectors && onToggleSector && (
-            <div className="pt-2 border-t border-gray-100">
-              <p className="text-xs text-gray-600 mb-1">Filter by sector:</p>
+            <div className="pt-3 border-t border-gray-100">
+              <p className="text-xs font-medium text-gray-700 mb-2">Filter by sector:</p>
               <SectorCheckboxes sectors={sectors} onToggle={onToggleSector} />
             </div>
           )}
@@ -170,9 +170,9 @@ export function POICard({
               onClick={() => setShowAlternatives(!showAlternatives)}
               className="w-full mt-2 text-blue-600 hover:text-blue-700 hover:bg-blue-50"
             >
-              {showAlternatives ? 'Hide' : `View ${items.length - 1} more option${items.length - 1 !== 1 ? 's' : ''}`}
+              {showAlternatives ? 'Hide alternatives' : `View ${items.length - 1} more option${items.length - 1 !== 1 ? 's' : ''}`}
               <svg
-                className={`w-4 h-4 transition-transform ${showAlternatives ? 'rotate-180' : ''}`}
+                className={`w-4 h-4 ml-1 transition-transform ${showAlternatives ? 'rotate-180' : ''}`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

@@ -381,19 +381,19 @@ function App() {
     : null;
 
   return (
-    <div className="h-screen w-screen flex flex-col overflow-hidden bg-gray-100">
+    <div className="h-screen w-screen flex flex-col overflow-hidden bg-gray-50">
       {/* Update Available Banner */}
       {updateAvailable && (
-        <div className="bg-blue-600 text-white px-4 py-3 flex items-center justify-between shadow-md z-50">
-          <div className="flex items-center gap-2">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="bg-blue-600 text-white px-5 py-3.5 flex items-center justify-between shadow-soft-md z-50">
+          <div className="flex items-center gap-3">
+            <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
             <span className="text-sm font-medium">Update available</span>
           </div>
           <button
             onClick={() => updateServiceWorker()}
-            className="px-3 py-1 bg-white text-blue-600 rounded text-sm font-medium hover:bg-blue-50 transition-colors"
+            className="px-4 py-2 bg-white text-blue-600 rounded-lg text-sm font-semibold hover:bg-blue-50 transition-all duration-200 shadow-soft min-h-[36px]"
           >
             Update Now
           </button>
@@ -402,16 +402,16 @@ function App() {
 
       {/* Install App Banner */}
       {installable && (
-        <div className="bg-green-600 text-white px-4 py-3 flex items-center justify-between shadow-md z-50">
-          <div className="flex items-center gap-2">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="bg-emerald-600 text-white px-5 py-3.5 flex items-center justify-between shadow-soft-md z-50">
+          <div className="flex items-center gap-3">
+            <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
             </svg>
             <span className="text-sm font-medium">Install app for offline access</span>
           </div>
           <button
             onClick={() => promptInstall()}
-            className="px-3 py-1 bg-white text-green-600 rounded text-sm font-medium hover:bg-green-50 transition-colors"
+            className="px-4 py-2 bg-white text-emerald-600 rounded-lg text-sm font-semibold hover:bg-emerald-50 transition-all duration-200 shadow-soft min-h-[36px]"
           >
             Install
           </button>
@@ -556,35 +556,35 @@ function App() {
       {/* Mobile: Tabbed view with toggle */}
       <div className="flex md:hidden flex-col h-full">
         {/* Mobile view toggle tabs */}
-        <div className="flex border-b border-gray-200 bg-white">
+        <div className="flex border-b border-gray-200 bg-white shadow-soft">
           <button
             onClick={() => setMobileView('list')}
-            className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
+            className={`flex-1 px-4 py-4 text-sm font-medium transition-all duration-200 ${
               mobileView === 'list'
-                ? 'text-blue-600 border-b-2 border-blue-600'
-                : 'text-gray-600 hover:text-gray-900'
+                ? 'text-blue-600 border-b-2 border-blue-600 bg-blue-50'
+                : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
             }`}
           >
             <div className="flex items-center justify-center gap-2">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
               </svg>
-              List
+              <span className="font-semibold">List</span>
             </div>
           </button>
           <button
             onClick={() => setMobileView('map')}
-            className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
+            className={`flex-1 px-4 py-4 text-sm font-medium transition-all duration-200 ${
               mobileView === 'map'
-                ? 'text-blue-600 border-b-2 border-blue-600'
-                : 'text-gray-600 hover:text-gray-900'
+                ? 'text-blue-600 border-b-2 border-blue-600 bg-blue-50'
+                : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
             }`}
           >
             <div className="flex items-center justify-center gap-2">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
               </svg>
-              Map
+              <span className="font-semibold">Map</span>
             </div>
           </button>
         </div>

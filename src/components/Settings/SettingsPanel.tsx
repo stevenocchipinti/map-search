@@ -46,38 +46,43 @@ export function SettingsPanel() {
   };
 
   return (
-    <div className="p-4 bg-white border-t border-gray-200">
-      <h3 className="font-semibold text-gray-900 mb-4">Settings</h3>
-      
-      <div className="space-y-4">
-        {/* Cache Info */}
-        <div className="flex items-center justify-between py-3 border-b border-gray-100">
-          <div>
-            <p className="text-sm font-medium text-gray-900">Storage Used</p>
-            <p className="text-xs text-gray-600 mt-0.5">Cached data and assets</p>
+    <div className="flex-1 overflow-y-auto p-5 bg-gray-50">
+      <div className="max-w-2xl">
+        <h3 className="text-xl font-semibold text-gray-900 mb-6">Settings</h3>
+        
+        <div className="space-y-4">
+          {/* Cache Info Card */}
+          <div className="bg-white border border-gray-200 rounded-xl shadow-soft p-5">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm font-semibold text-gray-900">Storage Used</p>
+                <p className="text-xs text-gray-600 mt-1">Cached data and assets</p>
+              </div>
+              <span className="text-2xl font-bold text-blue-600">{cacheSize} <span className="text-sm font-medium text-gray-600">MB</span></span>
+            </div>
           </div>
-          <span className="text-sm font-semibold text-gray-900">{cacheSize} MB</span>
-        </div>
 
-        {/* Clear Cache Button */}
-        <Button
-          variant="secondary"
-          size="md"
-          onClick={handleClearCache}
-          loading={clearing}
-          className="w-full"
-        >
-          Clear Cache
-        </Button>
+          {/* Clear Cache Button */}
+          <Button
+            variant="secondary"
+            size="lg"
+            onClick={handleClearCache}
+            loading={clearing}
+            className="w-full"
+          >
+            Clear Cache
+          </Button>
 
-        {/* About */}
-        <div className="pt-4 border-t border-gray-100">
-          <p className="text-xs text-gray-600">
-            Map Search v1.0.0
-          </p>
-          <p className="text-xs text-gray-500 mt-1">
-            Find schools, train stations, and supermarkets near any address in Australia.
-          </p>
+          {/* About */}
+          <div className="bg-white border border-gray-200 rounded-xl shadow-soft p-5">
+            <h4 className="text-sm font-semibold text-gray-900 mb-3">About</h4>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Find schools, train stations, and supermarkets near any address in Australia.
+            </p>
+            <p className="text-xs text-gray-500 mt-3">
+              Version 1.0.0
+            </p>
+          </div>
         </div>
       </div>
     </div>
