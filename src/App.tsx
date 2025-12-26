@@ -50,9 +50,24 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Map state
-  const [mapCenter, setMapCenter] = useState<[number, number]>([-33.8688, 151.2093]); // Sydney default
-  const [mapZoom, setMapZoom] = useState(13);
+  // Map state - Initialize with last search location or default to all of Australia
+  const getInitialMapState = () => {
+    const lastSearch = localStorage.getItem('lastSearchLocation');
+    if (lastSearch) {
+      try {
+        const { lat, lng } = JSON.parse(lastSearch);
+        return { center: [lat, lng] as [number, number], zoom: 13 };
+      } catch (e) {
+        console.error('Failed to parse last search location:', e);
+      }
+    }
+    // Default: Show all of Australia (centered, zoomed out)
+    return { center: [-25.2744, 133.7751] as [number, number], zoom: 5 };
+  };
+
+  const initialMapState = getInitialMapState();
+  const [mapCenter, setMapCenter] = useState<[number, number]>(initialMapState.center);
+  const [mapZoom, setMapZoom] = useState(initialMapState.zoom);
   const [mapBounds, setMapBounds] = useState<LatLngBounds | null>(null);
 
   // Route loading states
@@ -188,6 +203,15 @@ function App() {
 
       setSearchResults(results);
       setSelectedPOIs({ school: 0, station: 0, supermarket: 0 });
+
+      // Save last search location to localStorage
+      localStorage.setItem('lastSearchLocation', JSON.stringify({
+        lat,
+        lng,
+        state,
+        displayName,
+        timestamp: Date.now(),
+      }));
 
       // Calculate map bounds to fit all POIs
       const allPOIs = [

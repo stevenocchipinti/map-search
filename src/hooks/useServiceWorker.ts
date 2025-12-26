@@ -13,6 +13,7 @@ interface ServiceWorkerResult {
   update: () => Promise<void>;
   clearCache: () => Promise<void>;
   getCacheSize: () => Promise<number>;
+  getCachedStates: () => Promise<string[]>;
 }
 
 export function useServiceWorker(): ServiceWorkerResult {
@@ -224,6 +225,44 @@ export function useServiceWorker(): ServiceWorkerResult {
     }
   };
 
+  /**
+   * Get list of cached states
+   */
+  const getCachedStates = async (): Promise<string[]> => {
+    if (!('caches' in window)) {
+      console.warn('[SW Hook] Cache API not available');
+      return [];
+    }
+
+    try {
+      const cacheNames = await caches.keys();
+      const dataCache = cacheNames.find(name => name.includes('map-search-data'));
+      
+      if (!dataCache) {
+        return [];
+      }
+
+      const cache = await caches.open(dataCache);
+      const keys = await cache.keys();
+      
+      // Extract state codes from cached URLs
+      const statePattern = /\/data\/([a-z]+)\/(schools|stations)\.json$/;
+      const states = new Set<string>();
+      
+      keys.forEach(request => {
+        const match = request.url.match(statePattern);
+        if (match) {
+          states.add(match[1].toUpperCase());
+        }
+      });
+      
+      return Array.from(states).sort();
+    } catch (error) {
+      console.error('[SW Hook] Failed to get cached states:', error);
+      return [];
+    }
+  };
+
   return {
     registration,
     updateAvailable,
@@ -231,5 +270,6 @@ export function useServiceWorker(): ServiceWorkerResult {
     update,
     clearCache,
     getCacheSize,
+    getCachedStates,
   };
 }

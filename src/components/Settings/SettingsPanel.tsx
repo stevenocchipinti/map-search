@@ -1,15 +1,19 @@
 import { useState, useEffect } from 'react';
 import { Button } from '../UI/Button';
+import { useServiceWorker } from '../../hooks/useServiceWorker';
 
 export function SettingsPanel() {
   const [cacheSize, setCacheSize] = useState<number>(0);
+  const [cachedStates, setCachedStates] = useState<string[]>([]);
   const [clearing, setClearing] = useState(false);
+  const { getCacheSize, getCachedStates, clearCache: clearServiceWorkerCache } = useServiceWorker();
 
   useEffect(() => {
-    updateCacheSize();
+    updateCacheInfo();
   }, []);
 
-  const updateCacheSize = async () => {
+  const updateCacheInfo = async () => {
+    // Get cache size
     if ('storage' in navigator && 'estimate' in navigator.storage) {
       try {
         const estimate = await navigator.storage.estimate();
@@ -19,20 +23,26 @@ export function SettingsPanel() {
         console.error('Failed to estimate storage:', error);
       }
     }
+    
+    // Get cached states
+    try {
+      const states = await getCachedStates();
+      setCachedStates(states);
+    } catch (error) {
+      console.error('Failed to get cached states:', error);
+    }
   };
 
   const handleClearCache = async () => {
     setClearing(true);
     try {
-      if ('caches' in window) {
-        const cacheNames = await caches.keys();
-        await Promise.all(cacheNames.map(name => caches.delete(name)));
-      }
+      // Use the service worker hook to clear cache
+      await clearServiceWorkerCache();
       
       // Clear localStorage
       localStorage.clear();
       
-      await updateCacheSize();
+      await updateCacheInfo();
       
       // Show success message
       alert('Cache cleared successfully! The page will reload.');
@@ -53,13 +63,36 @@ export function SettingsPanel() {
         <div className="space-y-4">
           {/* Cache Info Card */}
           <div className="bg-white border border-gray-200 rounded-xl shadow-soft p-5">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mb-4">
               <div>
                 <p className="text-sm font-semibold text-gray-900">Storage Used</p>
                 <p className="text-xs text-gray-600 mt-1">Cached data and assets</p>
               </div>
               <span className="text-2xl font-bold text-blue-600">{cacheSize} <span className="text-sm font-medium text-gray-600">MB</span></span>
             </div>
+            
+            {/* Cached States */}
+            {cachedStates.length > 0 && (
+              <div className="pt-4 border-t border-gray-100">
+                <p className="text-xs font-semibold text-gray-700 mb-2">Cached States:</p>
+                <div className="flex flex-wrap gap-2">
+                  {cachedStates.map(state => (
+                    <span 
+                      key={state} 
+                      className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200"
+                    >
+                      {state}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+            
+            {cachedStates.length === 0 && (
+              <div className="pt-4 border-t border-gray-100">
+                <p className="text-xs text-gray-500">No state data cached yet. Search for an address to cache data for offline use.</p>
+              </div>
+            )}
           </div>
 
           {/* Clear Cache Button */}
