@@ -120,18 +120,18 @@ export function DrawerTabBar({
   const getInactiveStyle = (category: POICategory): string => {
     switch (category) {
       case 'school':
-        return 'bg-white text-gray-700 border border-gray-200';
+        return 'bg-white text-gray-700';
       case 'station':
-        return 'bg-white text-red-700 border border-gray-200';
+        return 'bg-white text-red-700';
       case 'supermarket':
-        return 'bg-white text-teal-700 border border-gray-200';
+        return 'bg-white text-teal-700';
     }
   };
   
   const categories: POICategory[] = ['school', 'station', 'supermarket'];
   
   return (
-    <div className="grid grid-cols-3 gap-2 p-3" role="tablist" aria-label="Category navigation">
+    <div className="grid grid-cols-3 gap-2 px-3 py-2" role="tablist" aria-label="Category navigation">
       {categories.map((category) => {
         const Icon = getIcon(category);
         const label = getLabel(category);
@@ -143,24 +143,25 @@ export function DrawerTabBar({
           <button
             key={category}
             onClick={() => onTabClick(category)}
-            disabled={!hasData}
             role="tab"
             aria-selected={isActive}
             aria-controls={`${category}-panel`}
             id={`${category}-tab`}
             className={`
-              flex flex-col items-center justify-center p-3 rounded-xl
-              transition-all duration-200 min-h-[72px]
+              flex items-center justify-center gap-1.5 p-2 rounded-xl
+              transition-all duration-200 h-12
               ${isActive ? getActiveStyle(category) : getInactiveStyle(category)}
-              ${!hasData ? 'opacity-50 cursor-not-allowed' : ''}
+              ${!hasData ? 'opacity-50' : ''}
             `}
-            aria-label={`${label}, ${hasData ? walkingTime : 'no results'}`}
+            aria-label={`${label}${hasData ? `, ${walkingTime}` : ', no results'}`}
           >
-            <Icon className="w-6 h-6 mb-1" />
+            <Icon className="w-5 h-5" />
             <span className="text-xs font-semibold">{label}</span>
-            <span className="text-xs mt-0.5">
-              {hasData ? walkingTime : 'No results'}
-            </span>
+            {hasData && walkingTime && (
+              <span className="text-[10px] px-1.5 py-0.5 bg-white/20 rounded-full">
+                {walkingTime}
+              </span>
+            )}
           </button>
         );
       })}

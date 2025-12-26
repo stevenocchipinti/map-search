@@ -33,7 +33,7 @@ export function FloatingSearchBar({
   };
   
   return (
-    <div className={`fixed left-4 right-4 bottom-24 z-[1001] ${className}`}>
+    <div className={`fixed left-4 right-4 bottom-[100px] z-[1002] ${className}`}>
       <div className="bg-white rounded-full shadow-soft-lg p-2 flex items-center gap-2">
         <input
           type="text"

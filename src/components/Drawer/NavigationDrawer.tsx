@@ -80,10 +80,11 @@ export function NavigationDrawer({
     }
   };
   
-  // Snap points for vaul drawer
-  // With a fixed height drawer (85vh), snap points control how much is visible
-  // 0.30 = ~200px visible (full tab bar with labels), 0.5 = half, 0.85 = almost full
-  const snapPoints: (string | number)[] = [0.30, 0.5, 0.85];
+  // Snap points: pixel-based for first two, fraction for last
+  // Snap 0: ~90px (drag handle 26px + tab bar 64px)
+  // Snap 1: ~300px (includes details section)
+  // Snap 2: 0.85 (85% of viewport - full alternatives list)
+  const snapPoints: (string | number)[] = ["90px", "300px", 0.85];
   const activeSnapPoint = snapPoints[snapIndex];
   
   // Keyboard navigation
@@ -158,65 +159,59 @@ export function NavigationDrawer({
       fadeFromIndex={1}
     >
       <Drawer.Overlay className="fixed inset-0 z-[1001] bg-black/20" />
-      <Drawer.Content 
-        className="fixed bottom-0 left-0 right-0 z-[1001] flex flex-col bg-white rounded-t-3xl shadow-soft-lg"
-        style={{ height: '85vh' }}
-      >
-          {/* Drag handle - always visible */}
-          <div 
-            role="separator"
-            aria-label="Drag to expand or collapse navigation"
-            aria-orientation="vertical"
-            className="pt-3 pb-2 flex justify-center"
-          >
-            <div className="w-12 h-1.5 bg-gray-300 rounded-full" />
-          </div>
-          
-          {/* Content based on snap point */}
-          {snapIndex === 0 && (
-            <DrawerTabBar
-              activeTab={activeTab}
-              onTabClick={handleTabClick}
-              schools={schools}
-              stations={stations}
-              supermarkets={supermarkets}
-              selectedPOIs={selectedPOIs}
-              schoolRoute={schoolRoute}
-              stationRoute={stationRoute}
-              supermarketRoute={supermarketRoute}
-            />
-          )}
-          
-          {snapIndex === 1 && (
-            <DrawerDetails
-              activeTab={activeTab}
-              onTabChange={(tab) => {
-                onActiveTabChange(tab);
-                // Stay at current snap point
-              }}
-              items={getCurrentItems()}
-              selectedIndex={selectedPOIs[activeTab]}
-              route={getCurrentRoute()}
-              routeLoading={routeLoading[activeTab]}
-              sectors={sectors}
-              onToggleSector={onToggleSector}
-              onShowAlternatives={() => onSnapIndexChange(2)}
-              hasAlternatives={getCurrentItems().length > 1}
-            />
-          )}
-          
-          {snapIndex === 2 && (
-            <DrawerAlternatives
-              activeTab={activeTab}
-              items={getCurrentItems()}
-              selectedIndex={selectedPOIs[activeTab]}
-              onSelectItem={(index) => {
-                onSelectPOI(activeTab, index);
-                onSnapIndexChange(1); // Auto-collapse to middle
-              }}
-            />
-          )}
+      <Drawer.Portal>
+        <Drawer.Content 
+          className="fixed inset-x-0 bottom-0 z-[1001] flex flex-col bg-white rounded-t-3xl shadow-soft-lg"
+          style={{ height: '100%' }}
+        >
+        {/* Drag handle - always visible */}
+        <div 
+          role="separator"
+          aria-label="Drag to expand or collapse navigation"
+          aria-orientation="vertical"
+          className="pt-3 pb-2 flex justify-center"
+        >
+          <div className="w-12 h-1.5 bg-gray-300 rounded-full" />
+        </div>
+        
+        {/* Tab bar - always visible */}
+        <DrawerTabBar
+          activeTab={activeTab}
+          onTabClick={handleTabClick}
+          schools={schools}
+          stations={stations}
+          supermarkets={supermarkets}
+          selectedPOIs={selectedPOIs}
+          schoolRoute={schoolRoute}
+          stationRoute={stationRoute}
+          supermarketRoute={supermarketRoute}
+        />
+        
+        {/* Details section - visible at snap 1+ */}
+        <DrawerDetails
+          activeTab={activeTab}
+          items={getCurrentItems()}
+          selectedIndex={selectedPOIs[activeTab]}
+          route={getCurrentRoute()}
+          routeLoading={routeLoading[activeTab]}
+          sectors={sectors}
+          onToggleSector={onToggleSector}
+          onShowAlternatives={() => onSnapIndexChange(2)}
+          hasAlternatives={getCurrentItems().length > 1}
+        />
+        
+        {/* Alternatives list - visible at snap 2 */}
+        <DrawerAlternatives
+          activeTab={activeTab}
+          items={getCurrentItems()}
+          selectedIndex={selectedPOIs[activeTab]}
+          onSelectItem={(index) => {
+            onSelectPOI(activeTab, index);
+            onSnapIndexChange(1); // Auto-collapse to middle
+          }}
+        />
         </Drawer.Content>
+      </Drawer.Portal>
     </Drawer.Root>
   );
 }
