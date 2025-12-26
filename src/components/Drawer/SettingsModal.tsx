@@ -38,7 +38,7 @@ export function SettingsModal({ open, onClose }: SettingsModalProps) {
   if (!open) return null;
   
   return (
-    <div className="fixed inset-0 z-[60] flex items-end md:hidden animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-[1002] flex items-end md:hidden animate-in fade-in duration-200">
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/40"

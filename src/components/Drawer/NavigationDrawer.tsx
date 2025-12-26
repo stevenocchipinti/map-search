@@ -80,8 +80,10 @@ export function NavigationDrawer({
     }
   };
   
-  // Convert snapIndex to snap point for vaul
-  const snapPoints = [80, 'fit-content' as const, '85vh'];
+  // Snap points for vaul drawer
+  // With a fixed height drawer (85vh), snap points control how much is visible
+  // 0.30 = ~200px visible (full tab bar with labels), 0.5 = half, 0.85 = almost full
+  const snapPoints: (string | number)[] = [0.30, 0.5, 0.85];
   const activeSnapPoint = snapPoints[snapIndex];
   
   // Keyboard navigation
@@ -155,9 +157,11 @@ export function NavigationDrawer({
       }}
       fadeFromIndex={1}
     >
-      <Drawer.Portal>
-        <Drawer.Overlay className="fixed inset-0 bg-black/20" />
-        <Drawer.Content className="fixed bottom-0 left-0 right-0 flex flex-col bg-white rounded-t-3xl shadow-soft-lg">
+      <Drawer.Overlay className="fixed inset-0 z-[1001] bg-black/20" />
+      <Drawer.Content 
+        className="fixed bottom-0 left-0 right-0 z-[1001] flex flex-col bg-white rounded-t-3xl shadow-soft-lg"
+        style={{ height: '85vh' }}
+      >
           {/* Drag handle - always visible */}
           <div 
             role="separator"
@@ -213,7 +217,6 @@ export function NavigationDrawer({
             />
           )}
         </Drawer.Content>
-      </Drawer.Portal>
     </Drawer.Root>
   );
 }
