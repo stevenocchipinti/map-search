@@ -15,8 +15,8 @@ export function POIAlternatives({ items, selectedIndex, onSelect }: POIAlternati
   }
 
   return (
-    <div className="border-t border-gray-100 bg-white">
-      <div className="max-h-72 overflow-y-auto">
+    <div className="bg-white">
+      <div className="overflow-y-auto">
         {alternatives.map((item) => {
           // Find original index
           const originalIndex = items.findIndex((i) => i === item);

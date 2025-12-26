@@ -22,7 +22,6 @@ import { MapPolyline } from './components/Map/MapPolyline';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { NavigationDrawer } from './components/Drawer/NavigationDrawer';
 import { FloatingSearchBar } from './components/Drawer/FloatingSearchBar';
-import { FloatingSettingsButton } from './components/Drawer/FloatingSettingsButton';
 import { SettingsModal } from './components/Drawer/SettingsModal';
 import { latLngBounds, type LatLngBounds } from 'leaflet';
 import './App.css';
@@ -769,17 +768,12 @@ function App() {
           </Map>
         </div>
         
-        {/* Floating settings button */}
-        <FloatingSettingsButton onClick={() => setShowSettingsMobile(true)} />
-        
-        {/* Floating search bar (fades when drawer expands) */}
+        {/* Floating search bar - always visible */}
         <FloatingSearchBar
           onSearch={handleSearch}
           onUseLocation={handleUseMyLocation}
+          onOpenSettings={() => setShowSettingsMobile(true)}
           loading={loading}
-          className={`transition-opacity duration-200 ${
-            drawerSnapIndex === 0 ? 'opacity-100' : 'opacity-0 pointer-events-none'
-          }`}
         />
         
         {/* Navigation drawer */}
@@ -793,8 +787,7 @@ function App() {
           stationRoute={stationRoute}
           supermarketRoute={supermarketRoute}
           routeLoading={routeLoadingStates}
-          sectors={sectors}
-          onToggleSector={toggleSector}
+          onOpenSettings={() => setShowSettingsMobile(true)}
           snapIndex={drawerSnapIndex}
           onSnapIndexChange={setDrawerSnapIndex}
           activeTab={activeDrawerTab}
@@ -805,6 +798,8 @@ function App() {
         <SettingsModal
           open={showSettingsMobile}
           onClose={() => setShowSettingsMobile(false)}
+          sectors={sectors}
+          onToggleSector={toggleSector}
         />
       </div>
     </div>

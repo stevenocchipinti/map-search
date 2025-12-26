@@ -5,25 +5,17 @@
  */
 
 import L from 'leaflet';
-import type { POICategory, SchoolSector } from '../types';
+import type { POICategory } from '../types';
 
 /**
  * Get color for a POI category
  */
-export function getCategoryColor(category: POICategory | 'user', sector?: SchoolSector): string {
+export function getCategoryColor(category: POICategory | 'user'): string {
   if (category === 'user') return '#ef4444'; // Red for user location
   
-  if (category === 'school' && sector) {
-    switch (sector) {
-      case 'Government': return '#22c55e'; // Green
-      case 'Catholic': return '#a855f7'; // Purple
-      case 'Independent': return '#f97316'; // Orange
-      default: return '#3b82f6'; // Blue fallback
-    }
-  }
-  
-  if (category === 'station') return '#dc2626'; // Red
-  if (category === 'supermarket') return '#14b8a6'; // Teal
+  if (category === 'school') return '#3b82f6'; // Blue for all schools
+  if (category === 'station') return '#dc2626'; // Red for stations
+  if (category === 'supermarket') return '#14b8a6'; // Teal for supermarkets
   
   return '#3b82f6'; // Blue fallback
 }
@@ -31,8 +23,8 @@ export function getCategoryColor(category: POICategory | 'user', sector?: School
 /**
  * Get polyline color (slightly transparent version of category color)
  */
-export function getPolylineColor(category: POICategory, sector?: SchoolSector): string {
-  return getCategoryColor(category, sector);
+export function getPolylineColor(category: POICategory): string {
+  return getCategoryColor(category);
 }
 
 /**
@@ -40,16 +32,14 @@ export function getPolylineColor(category: POICategory, sector?: SchoolSector): 
  * 
  * @param type - The type of marker (user, school, station, supermarket)
  * @param selected - Whether this marker is currently selected
- * @param sector - School sector (for schools only)
  * @param isAlternative - Whether this is an alternative (non-selected) POI
  */
 export function createMarkerIcon(
   type: POICategory | 'user',
   selected: boolean,
-  sector?: SchoolSector,
   isAlternative?: boolean
 ): L.DivIcon {
-  const color = getCategoryColor(type, sector);
+  const color = getCategoryColor(type);
   const size = selected ? 32 : 24;
   
   // User location: solid red dot

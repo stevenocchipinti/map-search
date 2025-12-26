@@ -6,18 +6,18 @@
 
 import { Polyline } from 'react-leaflet';
 import { decodePolyline } from '../../utils/polyline';
-import type { POICategory, SchoolSector } from '../../types';
+import type { POICategory } from '../../types';
 import { getPolylineColor } from '../../utils/map-helpers';
 
 interface MapPolylineProps {
   encodedPolyline: string;
   category: POICategory;
-  sector?: SchoolSector;
+  sector?: string; // Keep for compatibility but not used
 }
 
-export function MapPolyline({ encodedPolyline, category, sector }: MapPolylineProps) {
+export function MapPolyline({ encodedPolyline, category }: MapPolylineProps) {
   const positions = decodePolyline(encodedPolyline);
-  const color = getPolylineColor(category, sector);
+  const color = getPolylineColor(category);
   
   return (
     <Polyline

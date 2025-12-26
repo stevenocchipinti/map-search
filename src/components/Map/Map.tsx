@@ -43,7 +43,7 @@ export function Map({ center, zoom, bounds, children }: MapProps) {
       center={center}
       zoom={zoom}
       style={{ width: '100%', height: '100%' }}
-      zoomControl={true}
+      zoomControl={false}
       scrollWheelZoom={true}
     >
       <TileLayer

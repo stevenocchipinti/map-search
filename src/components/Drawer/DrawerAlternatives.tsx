@@ -14,7 +14,7 @@ export function DrawerAlternatives({
   onSelectItem,
 }: DrawerAlternativesProps) {
   return (
-    <div className="flex-1 overflow-y-auto pb-4 border-t border-gray-100">
+    <div className="flex-1 overflow-y-auto pb-4">
       <POIAlternatives
         items={items}
         selectedIndex={selectedIndex}

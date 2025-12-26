@@ -1,9 +1,7 @@
-import { Check, Loader2, ChevronUp } from 'lucide-react';
+import { Check, Loader2 } from 'lucide-react';
 import { Badge } from '../UI/Badge';
-import { Button } from '../UI/Button';
-import { SectorCheckboxes } from '../Sidebar/SectorCheckboxes';
 import { formatDistance, formatDuration } from '../../utils/format';
-import type { POI, POICategory, WalkingRoute, SchoolSector } from '../../types';
+import type { POI, POICategory, WalkingRoute } from '../../types';
 
 interface DrawerDetailsProps {
   activeTab: POICategory;
@@ -14,10 +12,8 @@ interface DrawerDetailsProps {
   route?: WalkingRoute | null;
   routeLoading?: boolean;
   
-  sectors?: Set<SchoolSector>;
-  onToggleSector?: (sector: SchoolSector) => void;
+  onOpenSettings?: () => void;
   
-  onShowAlternatives: () => void;
   hasAlternatives: boolean;
 }
 
@@ -27,9 +23,7 @@ export function DrawerDetails({
   selectedIndex,
   route,
   routeLoading,
-  sectors,
-  onToggleSector,
-  onShowAlternatives,
+  onOpenSettings,
   hasAlternatives,
 }: DrawerDetailsProps) {
   const selectedItem = items[selectedIndex];
@@ -96,25 +90,23 @@ export function DrawerDetails({
           )}
         </div>
         
-        {/* Sector filters (schools only) */}
-        {activeTab === 'school' && sectors && onToggleSector && (
-          <div className="pt-3 border-t border-gray-100">
-            <p className="text-xs font-medium text-gray-700 mb-2">Filter by sector:</p>
-            <SectorCheckboxes sectors={sectors} onToggle={onToggleSector} />
-          </div>
+        {/* Link to school settings (schools only) */}
+        {activeTab === 'school' && onOpenSettings && (
+          <button
+            onClick={onOpenSettings}
+            className="text-xs text-blue-600 hover:text-blue-700 font-medium"
+          >
+            Filter school sectors in settings →
+          </button>
         )}
         
-        {/* View alternatives button */}
+        {/* View alternatives heading */}
         {hasAlternatives && (
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={onShowAlternatives}
-            className="w-full text-blue-600 hover:text-blue-700 hover:bg-blue-50"
-          >
-            View {items.length - 1} more option{items.length - 1 !== 1 ? 's' : ''}
-            <ChevronUp className="w-4 h-4 ml-1" />
-          </Button>
+          <div className="pt-3">
+            <h4 className="text-sm font-medium text-gray-700">
+              {items.length - 1} more option{items.length - 1 !== 1 ? 's' : ''}
+            </h4>
+          </div>
         )}
       </div>
     </div>

@@ -1,12 +1,19 @@
 import { useState, useEffect } from 'react';
 import { Button } from '../UI/Button';
 import { useServiceWorker } from '../../hooks/useServiceWorker';
+import { SectorCheckboxes } from '../Sidebar/SectorCheckboxes';
+import type { SchoolSector } from '../../types';
 
-export function SettingsPanel() {
+interface SettingsPanelProps {
+  sectors?: Set<SchoolSector>;
+  onToggleSector?: (sector: SchoolSector) => void;
+}
+
+export function SettingsPanel({ sectors, onToggleSector }: SettingsPanelProps) {
   const [cacheSize, setCacheSize] = useState<number>(0);
   const [cachedStates, setCachedStates] = useState<string[]>([]);
   const [clearing, setClearing] = useState(false);
-  const { getCacheSize, getCachedStates, clearCache: clearServiceWorkerCache } = useServiceWorker();
+  const { getCachedStates, clearCache: clearServiceWorkerCache } = useServiceWorker();
 
   useEffect(() => {
     updateCacheInfo();
@@ -57,10 +64,19 @@ export function SettingsPanel() {
 
   return (
     <div className="flex-1 overflow-y-auto p-5 bg-gray-50">
-      <div className="max-w-2xl">
-        <h3 className="text-xl font-semibold text-gray-900 mb-6">Settings</h3>
-        
+      <div className="max-w-2xl">        
         <div className="space-y-4">
+          {/* School Sector Filters */}
+          {sectors && onToggleSector && (
+            <div className="bg-white border border-gray-200 rounded-xl shadow-soft p-5">
+              <div className="mb-4">
+                <p className="text-sm font-semibold text-gray-900">School Sectors</p>
+                <p className="text-xs text-gray-600 mt-1">Filter schools by sector type</p>
+              </div>
+              <SectorCheckboxes sectors={sectors} onToggle={onToggleSector} />
+            </div>
+          )}
+          
           {/* Cache Info Card */}
           <div className="bg-white border border-gray-200 rounded-xl shadow-soft p-5">
             <div className="flex items-center justify-between mb-4">

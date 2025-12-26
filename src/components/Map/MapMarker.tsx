@@ -5,14 +5,14 @@
  */
 
 import { Marker } from 'react-leaflet';
-import type { POICategory, SchoolSector } from '../../types';
+import type { POICategory } from '../../types';
 import { createMarkerIcon } from '../../utils/map-helpers';
 
 interface MapMarkerProps {
   position: [number, number];
   type: POICategory | 'user';
   selected?: boolean;
-  sector?: SchoolSector;
+  sector?: string; // Keep for compatibility but not used
   isAlternative?: boolean;
   onClick?: () => void;
 }
@@ -20,12 +20,11 @@ interface MapMarkerProps {
 export function MapMarker({ 
   position, 
   type, 
-  selected = false, 
-  sector, 
+  selected = false,
   isAlternative = false,
   onClick 
 }: MapMarkerProps) {
-  const icon = createMarkerIcon(type, selected, sector, isAlternative);
+  const icon = createMarkerIcon(type, selected, isAlternative);
   
   return (
     <Marker 

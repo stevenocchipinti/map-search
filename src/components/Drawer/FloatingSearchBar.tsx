@@ -1,56 +1,67 @@
-import { useState } from 'react';
-import { Search, MapPin, Loader2 } from 'lucide-react';
+import { useState } from "react"
+import { Search, MapPin, Loader2, Settings2 } from "lucide-react"
 
 interface FloatingSearchBarProps {
-  onSearch: (address: string) => void;
-  onUseLocation: () => void;
-  loading?: boolean;
-  className?: string;
+  onSearch: (address: string) => void
+  onUseLocation: () => void
+  onOpenSettings: () => void
+  loading?: boolean
+  className?: string
 }
 
 export function FloatingSearchBar({
   onSearch,
   onUseLocation,
+  onOpenSettings,
   loading,
-  className = '',
+  className = "",
 }: FloatingSearchBarProps) {
-  const [inputValue, setInputValue] = useState('');
-  
+  const [inputValue, setInputValue] = useState("")
+
   const handleSubmit = (e?: React.FormEvent) => {
-    e?.preventDefault();
-    
+    e?.preventDefault()
+
     if (inputValue.trim()) {
-      onSearch(inputValue);
+      onSearch(inputValue)
     } else {
-      onUseLocation();
+      onUseLocation()
     }
-  };
-  
+  }
+
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
-      handleSubmit();
+    if (e.key === "Enter") {
+      handleSubmit()
     }
-  };
-  
+  }
+
   return (
-    <div className={`fixed left-4 right-4 bottom-[100px] z-[1002] ${className}`}>
-      <div className="bg-white rounded-full shadow-soft-lg p-2 flex items-center gap-2">
+    <div className={`fixed left-4 right-4 top-4 z-[1000] ${className}`}>
+      <div className="bg-white rounded-full shadow-lg p-2 flex items-center gap-2">
         <input
           type="text"
           value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
+          onChange={e => setInputValue(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Search address..."
           className="flex-1 px-4 py-2 text-sm focus:outline-none bg-transparent"
           aria-label="Search address"
           disabled={loading}
         />
-        
+
+        <button
+          onClick={onOpenSettings}
+          disabled={loading}
+          className="flex-shrink-0 w-10 h-10 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 active:bg-gray-300 transition-colors duration-200 flex items-center justify-center disabled:opacity-50"
+          aria-label="Settings"
+        >
+          <Settings2 className="w-5 h-5" />
+        </button>
+
         <button
           onClick={() => handleSubmit()}
           disabled={loading}
-          className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 transition-colors duration-200 flex items-center justify-center disabled:opacity-50 shadow-soft"
-          aria-label={inputValue.trim() ? 'Search' : 'Use current location'}
+          className="flex-shrink-0 w-10 h-10 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 active:bg-gray-300 transition-colors duration-200 flex items-center justify-center disabled:opacity-50"
+          aria-label={inputValue.trim() ? "Search" : "Use current location"}
         >
           {loading ? (
             <Loader2 className="w-5 h-5 animate-spin" />
@@ -62,5 +73,5 @@ export function FloatingSearchBar({
         </button>
       </div>
     </div>
-  );
+  )
 }
