@@ -20,6 +20,10 @@ import { Map } from './components/Map/Map';
 import { MapMarker } from './components/Map/MapMarker';
 import { MapPolyline } from './components/Map/MapPolyline';
 import { Sidebar } from './components/Sidebar/Sidebar';
+import { NavigationDrawer } from './components/Drawer/NavigationDrawer';
+import { FloatingSearchBar } from './components/Drawer/FloatingSearchBar';
+import { FloatingSettingsButton } from './components/Drawer/FloatingSettingsButton';
+import { SettingsModal } from './components/Drawer/SettingsModal';
 import { latLngBounds, type LatLngBounds } from 'leaflet';
 import './App.css';
 
@@ -58,8 +62,11 @@ function App() {
     supermarket: false,
   });
 
-  // Mobile view toggle (list vs map)
-  const [mobileView, setMobileView] = useState<'list' | 'map'>('list');
+  // Mobile drawer state
+  const [drawerSnapIndex, setDrawerSnapIndex] = useState<number>(0);
+  const [activeDrawerTab, setActiveDrawerTab] = useState<POICategory>('school');
+  const [showSettingsMobile, setShowSettingsMobile] = useState(false);
+  const [offlineBannerDismissed, setOfflineBannerDismissed] = useState(false);
 
   // Check for shared address from PWA share target
   useEffect(() => {
@@ -289,6 +296,37 @@ function App() {
           setRouteLoadingStates(prev => ({ ...prev, [category]: false }));
         });
       }
+    }
+  };
+
+  /**
+   * Reset drawer when search completes
+   */
+  useEffect(() => {
+    if (searchResults) {
+      // Collapse to lowest snap
+      setDrawerSnapIndex(0);
+      
+      // Auto-select first category with results
+      const firstCategory = 
+        searchResults.schools.length > 0 ? 'school' :
+        searchResults.stations.length > 0 ? 'station' :
+        searchResults.supermarkets.length > 0 ? 'supermarket' : 'school';
+      
+      setActiveDrawerTab(firstCategory);
+    }
+  }, [searchResults]);
+
+  /**
+   * Sync drawer when map marker clicked
+   */
+  const handleMapMarkerClick = (category: POICategory, index: number) => {
+    handleSelectPOI(category, index);
+    setActiveDrawerTab(category);
+    
+    // Expand to middle if currently at lowest
+    if (drawerSnapIndex === 0) {
+      setDrawerSnapIndex(1);
     }
   };
 
@@ -553,177 +591,172 @@ function App() {
         </div>
       </div>
 
-      {/* Mobile: Tabbed view with toggle */}
-      <div className="flex md:hidden flex-col h-full">
-        {/* Mobile view toggle tabs */}
-        <div className="flex border-b border-gray-200 bg-white shadow-soft">
-          <button
-            onClick={() => setMobileView('list')}
-            className={`flex-1 px-4 py-4 text-sm font-medium transition-all duration-200 ${
-              mobileView === 'list'
-                ? 'text-blue-600 border-b-2 border-blue-600 bg-blue-50'
-                : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
-            }`}
-          >
-            <div className="flex items-center justify-center gap-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+      {/* Mobile: Drawer with floating elements */}
+      <div className="flex md:hidden flex-col h-full relative">
+        {/* Offline banner (skinny strip at top) */}
+        {!isOnline && !offlineBannerDismissed && (
+          <div className="absolute top-0 left-0 right-0 z-50 bg-amber-50 border-b border-amber-200 px-4 py-2 flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <svg className="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414" />
               </svg>
-              <span className="font-semibold">List</span>
+              <span className="text-xs font-medium text-amber-900">Offline mode</span>
             </div>
-          </button>
-          <button
-            onClick={() => setMobileView('map')}
-            className={`flex-1 px-4 py-4 text-sm font-medium transition-all duration-200 ${
-              mobileView === 'map'
-                ? 'text-blue-600 border-b-2 border-blue-600 bg-blue-50'
-                : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
-            }`}
-          >
-            <div className="flex items-center justify-center gap-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+            <button
+              onClick={() => setOfflineBannerDismissed(true)}
+              className="text-amber-600 hover:text-amber-800 transition-colors duration-200"
+              aria-label="Dismiss offline banner"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
-              <span className="font-semibold">Map</span>
-            </div>
-          </button>
-        </div>
-
-        {/* Sidebar - Mobile: Full screen when in list view */}
-        {mobileView === 'list' && (
-          <div className="flex-1 overflow-hidden">
-            <Sidebar
-              onSearch={handleSearch}
-              onUseLocation={handleUseMyLocation}
-              searchLoading={loading}
-              searchError={error}
-              schools={searchResults?.schools || []}
-              stations={searchResults?.stations || []}
-              supermarkets={searchResults?.supermarkets || []}
-              selectedSchoolIndex={selectedPOIs.school}
-              selectedStationIndex={selectedPOIs.station}
-              selectedSupermarketIndex={selectedPOIs.supermarket}
-              onSelectPOI={handleSelectPOI}
-              schoolRoute={schoolRoute}
-              stationRoute={stationRoute}
-              supermarketRoute={supermarketRoute}
-              schoolRouteLoading={routeLoadingStates.school}
-              stationRouteLoading={routeLoadingStates.station}
-              supermarketRouteLoading={routeLoadingStates.supermarket}
-              sectors={sectors}
-              onToggleSector={toggleSector}
-              isOnline={isOnline}
-            />
+            </button>
           </div>
         )}
+        
+        {/* Map (full screen) */}
+        <div className="absolute inset-0">
+          <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds}>
+            {/* User location marker */}
+            {searchResults && (
+              <MapMarker
+                position={[searchResults.location.lat, searchResults.location.lng]}
+                type="user"
+              />
+            )}
 
-        {/* Map - Mobile: Full screen when in map view */}
-        {mobileView === 'map' && (
-          <div className="flex-1 relative">
-            <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds}>
-              {/* User location marker */}
-              {searchResults && (
-                <MapMarker
-                  position={[searchResults.location.lat, searchResults.location.lng]}
-                  type="user"
-                />
-              )}
+            {/* Selected POI markers with pins */}
+            {selectedSchool && (
+              <MapMarker
+                position={[selectedSchool.latitude, selectedSchool.longitude]}
+                type="school"
+                sector={selectedSchool.sector}
+                selected={true}
+                onClick={() => handleMapMarkerClick('school', selectedPOIs.school)}
+              />
+            )}
 
-              {/* Selected POI markers with pins */}
-              {selectedSchool && (
+            {selectedStation && (
+              <MapMarker
+                position={[selectedStation.latitude, selectedStation.longitude]}
+                type="station"
+                selected={true}
+                onClick={() => handleMapMarkerClick('station', selectedPOIs.station)}
+              />
+            )}
+
+            {selectedSupermarket && (
+              <MapMarker
+                position={[selectedSupermarket.latitude, selectedSupermarket.longitude]}
+                type="supermarket"
+                selected={true}
+                onClick={() => handleMapMarkerClick('supermarket', selectedPOIs.supermarket)}
+              />
+            )}
+
+            {/* Alternative POI markers (hollow dots) */}
+            {searchResults?.schools.map((school, index) => {
+              if (index === selectedPOIs.school) return null;
+              return (
                 <MapMarker
-                  position={[selectedSchool.latitude, selectedSchool.longitude]}
+                  key={school.id}
+                  position={[school.latitude, school.longitude]}
                   type="school"
-                  sector={selectedSchool.sector}
-                  selected={true}
-                  onClick={() => handleSelectPOI('school', selectedPOIs.school)}
+                  sector={school.sector}
+                  isAlternative={true}
+                  onClick={() => handleMapMarkerClick('school', index)}
                 />
-              )}
+              );
+            })}
 
-              {selectedStation && (
+            {searchResults?.stations.map((station, index) => {
+              if (index === selectedPOIs.station) return null;
+              return (
                 <MapMarker
-                  position={[selectedStation.latitude, selectedStation.longitude]}
+                  key={station.id}
+                  position={[station.latitude, station.longitude]}
                   type="station"
-                  selected={true}
-                  onClick={() => handleSelectPOI('station', selectedPOIs.station)}
+                  isAlternative={true}
+                  onClick={() => handleMapMarkerClick('station', index)}
                 />
-              )}
+              );
+            })}
 
-              {selectedSupermarket && (
+            {searchResults?.supermarkets.map((supermarket, index) => {
+              if (index === selectedPOIs.supermarket) return null;
+              return (
                 <MapMarker
-                  position={[selectedSupermarket.latitude, selectedSupermarket.longitude]}
+                  key={supermarket.id}
+                  position={[supermarket.latitude, supermarket.longitude]}
                   type="supermarket"
-                  selected={true}
-                  onClick={() => handleSelectPOI('supermarket', selectedPOIs.supermarket)}
+                  isAlternative={true}
+                  onClick={() => handleMapMarkerClick('supermarket', index)}
                 />
-              )}
+              );
+            })}
 
-              {/* Alternative POI markers (hollow dots) */}
-              {searchResults?.schools.map((school, index) => {
-                if (index === selectedPOIs.school) return null;
-                return (
-                  <MapMarker
-                    key={school.id}
-                    position={[school.latitude, school.longitude]}
-                    type="school"
-                    sector={school.sector}
-                    isAlternative={true}
-                    onClick={() => handleSelectPOI('school', index)}
-                  />
-                );
-              })}
+            {/* Walking route polylines for selected POIs */}
+            {schoolRoute && selectedSchool && (
+              <MapPolyline
+                encodedPolyline={schoolRoute.polyline}
+                category="school"
+                sector={selectedSchool.sector}
+              />
+            )}
 
-              {searchResults?.stations.map((station, index) => {
-                if (index === selectedPOIs.station) return null;
-                return (
-                  <MapMarker
-                    key={station.id}
-                    position={[station.latitude, station.longitude]}
-                    type="station"
-                    isAlternative={true}
-                    onClick={() => handleSelectPOI('station', index)}
-                  />
-                );
-              })}
+            {stationRoute && (
+              <MapPolyline
+                encodedPolyline={stationRoute.polyline}
+                category="station"
+              />
+            )}
 
-              {searchResults?.supermarkets.map((supermarket, index) => {
-                if (index === selectedPOIs.supermarket) return null;
-                return (
-                  <MapMarker
-                    key={supermarket.id}
-                    position={[supermarket.latitude, supermarket.longitude]}
-                    type="supermarket"
-                    isAlternative={true}
-                    onClick={() => handleSelectPOI('supermarket', index)}
-                  />
-                );
-              })}
-
-              {/* Walking route polylines for selected POIs */}
-              {schoolRoute && selectedSchool && (
-                <MapPolyline
-                  encodedPolyline={schoolRoute.polyline}
-                  category="school"
-                  sector={selectedSchool.sector}
-                />
-              )}
-
-              {stationRoute && (
-                <MapPolyline
-                  encodedPolyline={stationRoute.polyline}
-                  category="station"
-                />
-              )}
-
-              {supermarketRoute && (
-                <MapPolyline
-                  encodedPolyline={supermarketRoute.polyline}
-                  category="supermarket"
-                />
-              )}
-            </Map>
-          </div>
-        )}
+            {supermarketRoute && (
+              <MapPolyline
+                encodedPolyline={supermarketRoute.polyline}
+                category="supermarket"
+              />
+            )}
+          </Map>
+        </div>
+        
+        {/* Floating settings button */}
+        <FloatingSettingsButton onClick={() => setShowSettingsMobile(true)} />
+        
+        {/* Floating search bar (fades when drawer expands) */}
+        <FloatingSearchBar
+          onSearch={handleSearch}
+          onUseLocation={handleUseMyLocation}
+          loading={loading}
+          className={`transition-opacity duration-200 ${
+            drawerSnapIndex === 0 ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          }`}
+        />
+        
+        {/* Navigation drawer */}
+        <NavigationDrawer
+          schools={searchResults?.schools || []}
+          stations={searchResults?.stations || []}
+          supermarkets={searchResults?.supermarkets || []}
+          selectedPOIs={selectedPOIs}
+          onSelectPOI={handleSelectPOI}
+          schoolRoute={schoolRoute}
+          stationRoute={stationRoute}
+          supermarketRoute={supermarketRoute}
+          routeLoading={routeLoadingStates}
+          sectors={sectors}
+          onToggleSector={toggleSector}
+          snapIndex={drawerSnapIndex}
+          onSnapIndexChange={setDrawerSnapIndex}
+          activeTab={activeDrawerTab}
+          onActiveTabChange={setActiveDrawerTab}
+        />
+        
+        {/* Settings modal */}
+        <SettingsModal
+          open={showSettingsMobile}
+          onClose={() => setShowSettingsMobile(false)}
+        />
       </div>
     </div>
   );
