@@ -213,19 +213,20 @@ function App() {
         timestamp: Date.now(),
       }));
 
-      // Calculate map bounds to fit all POIs
-      const allPOIs = [
-        ...filteredSchools,
-        ...filteredStations,
-        ...supermarkets,
+      // Calculate map bounds to fit user location and selected (top) POIs only
+      // This provides a much tighter, more zoomed-in view
+      const selectedPOIs = [
+        ...(filteredSchools.length > 0 ? [filteredSchools[0]] : []),
+        ...(filteredStations.length > 0 ? [filteredStations[0]] : []),
+        ...(supermarkets.length > 0 ? [supermarkets[0]] : []),
       ];
 
-      if (allPOIs.length > 0) {
-        // Create bounds that include user location and all POIs
+      if (selectedPOIs.length > 0) {
+        // Create bounds that include user location and only the closest POI from each category
         const bounds = latLngBounds([]);
         bounds.extend([lat, lng]); // User location
         
-        allPOIs.forEach(poi => {
+        selectedPOIs.forEach(poi => {
           bounds.extend([poi.latitude, poi.longitude]);
         });
         
@@ -340,6 +341,30 @@ function App() {
       setActiveDrawerTab(firstCategory);
     }
   }, [searchResults]);
+
+  /**
+   * Recalculate map bounds when selected POIs change
+   */
+  useEffect(() => {
+    if (!searchResults) return;
+
+    const selectedPOIsArray = [
+      ...(searchResults.schools[selectedPOIs.school] ? [searchResults.schools[selectedPOIs.school]] : []),
+      ...(searchResults.stations[selectedPOIs.station] ? [searchResults.stations[selectedPOIs.station]] : []),
+      ...(searchResults.supermarkets[selectedPOIs.supermarket] ? [searchResults.supermarkets[selectedPOIs.supermarket]] : []),
+    ];
+
+    if (selectedPOIsArray.length > 0) {
+      const bounds = latLngBounds([]);
+      bounds.extend([searchResults.location.lat, searchResults.location.lng]);
+      
+      selectedPOIsArray.forEach(poi => {
+        bounds.extend([poi.latitude, poi.longitude]);
+      });
+      
+      setMapBounds(bounds);
+    }
+  }, [selectedPOIs, searchResults]);
 
   /**
    * Sync drawer when map marker clicked

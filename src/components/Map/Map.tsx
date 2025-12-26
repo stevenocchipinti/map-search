@@ -26,7 +26,8 @@ function MapController({ center, zoom, bounds }: { center: [number, number]; zoo
   useEffect(() => {
     if (bounds) {
       // If bounds are provided, fit the map to show all POIs
-      map.fitBounds(bounds, { padding: [50, 50], maxZoom: 16 });
+      // Minimal padding and max zoom for testing
+      map.fitBounds(bounds, { padding: [10, 10], maxZoom: 19 });
     } else {
       // Otherwise, just set center and zoom
       map.setView(center, zoom);
