@@ -768,15 +768,7 @@ function App() {
           </Map>
         </div>
         
-        {/* Floating search bar - always visible */}
-        <FloatingSearchBar
-          onSearch={handleSearch}
-          onUseLocation={handleUseMyLocation}
-          onOpenSettings={() => setShowSettingsMobile(true)}
-          loading={loading}
-        />
-        
-        {/* Navigation drawer */}
+        {/* Navigation drawer with floating search bar inside */}
         <NavigationDrawer
           schools={searchResults?.schools || []}
           stations={searchResults?.stations || []}
@@ -792,7 +784,15 @@ function App() {
           onSnapIndexChange={setDrawerSnapIndex}
           activeTab={activeDrawerTab}
           onActiveTabChange={setActiveDrawerTab}
-        />
+        >
+          {/* Floating search bar rendered inside drawer's focus scope */}
+          <FloatingSearchBar
+            onSearch={handleSearch}
+            onUseLocation={handleUseMyLocation}
+            onOpenSettings={() => setShowSettingsMobile(true)}
+            loading={loading}
+          />
+        </NavigationDrawer>
         
         {/* Settings modal */}
         <SettingsModal

@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, type ReactNode } from "react"
 import { Drawer } from "vaul"
 import { DrawerTabBar } from "./DrawerTabBar"
 import { DrawerDetails } from "./DrawerDetails"
@@ -29,6 +29,10 @@ interface NavigationDrawerProps {
   onSnapIndexChange: (index: number) => void
   activeTab: POICategory
   onActiveTabChange: (tab: POICategory) => void
+
+  // Children rendered inside the drawer root (for elements like search bar
+  // that need to be within the focus scope but positioned outside the drawer content)
+  children?: ReactNode
 }
 
 export function NavigationDrawer({
@@ -46,6 +50,7 @@ export function NavigationDrawer({
   onSnapIndexChange,
   activeTab,
   onActiveTabChange,
+  children,
 }: NavigationDrawerProps) {
   // Tab click toggle behavior
   const handleTabClick = (category: POICategory) => {
@@ -147,6 +152,63 @@ export function NavigationDrawer({
     }
   }, [snapIndex])
 
+  // Workaround for vaul/Radix focus trapping bug
+  // When modal={false} is set on Drawer.Root, it should disable focus trapping,
+  // but vaul doesn't pass this prop to the underlying Radix Dialog.
+  // This effect intercepts focus events to allow focus outside the drawer.
+  useEffect(() => {
+    // Remove focus guards that Radix adds
+    const removeFocusGuards = () => {
+      document.querySelectorAll('[data-radix-focus-guard]').forEach(el => el.remove())
+    }
+    removeFocusGuards()
+
+    // Observe and remove any new focus guards
+    const observer = new MutationObserver(mutations => {
+      for (const mutation of mutations) {
+        for (const node of mutation.addedNodes) {
+          if (node instanceof HTMLElement && node.hasAttribute('data-radix-focus-guard')) {
+            node.remove()
+          }
+        }
+      }
+    })
+    observer.observe(document.body, { childList: true })
+
+    // Intercept focusin/focusout events before Radix's FocusScope can handle them
+    // This allows focus to move outside the drawer
+    const handleFocusIn = (e: FocusEvent) => {
+      const target = e.target as HTMLElement
+      const dialog = document.querySelector('[role="dialog"]')
+      
+      // If focus is going to an element outside the dialog, let it happen
+      // by stopping the event from reaching Radix's handler
+      if (dialog && !dialog.contains(target)) {
+        e.stopImmediatePropagation()
+      }
+    }
+
+    const handleFocusOut = (e: FocusEvent) => {
+      const relatedTarget = e.relatedTarget as HTMLElement | null
+      const dialog = document.querySelector('[role="dialog"]')
+      
+      // If focus is leaving the dialog, let it happen
+      if (dialog && relatedTarget && !dialog.contains(relatedTarget)) {
+        e.stopImmediatePropagation()
+      }
+    }
+
+    // Add our handlers with capture: true so they run before Radix's handlers
+    document.addEventListener('focusin', handleFocusIn, true)
+    document.addEventListener('focusout', handleFocusOut, true)
+
+    return () => {
+      observer.disconnect()
+      document.removeEventListener('focusin', handleFocusIn, true)
+      document.removeEventListener('focusout', handleFocusOut, true)
+    }
+  }, [])
+
   return (
     <Drawer.Root
       open={true}
@@ -164,58 +226,60 @@ export function NavigationDrawer({
       }}
       fadeFromIndex={1}
     >
-      <Drawer.Overlay className="fixed inset-0 z-[1002] bg-black/20" />
-      <Drawer.Portal>
-        <Drawer.Content
-          className="fixed drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] inset-x-0 bottom-0 z-[1003] flex flex-col bg-white rounded-t-3xl"
-          style={{ height: "100%" }}
+      {/* Children (like search bar) rendered inside drawer root but outside content
+          so they're part of the focus scope */}
+      {children}
+      {/* Note: No Portal or Overlay to prevent aria-hidden being set on root,
+          which would block focus to elements outside the drawer like the search bar */}
+      <Drawer.Content
+        className="fixed drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] inset-x-0 bottom-0 z-[1003] flex flex-col bg-white rounded-t-3xl"
+        style={{ height: "100%" }}
+      >
+        {/* Drag handle - always visible */}
+        <div
+          role="separator"
+          aria-label="Drag to expand or collapse navigation"
+          aria-orientation="vertical"
+          className="pt-2 flex justify-center"
         >
-          {/* Drag handle - always visible */}
-          <div
-            role="separator"
-            aria-label="Drag to expand or collapse navigation"
-            aria-orientation="vertical"
-            className="pt-2 flex justify-center"
-          >
-            <div className="w-12 h-1.5 bg-gray-300 rounded-full" />
-          </div>
+          <div className="w-12 h-1.5 bg-gray-300 rounded-full" />
+        </div>
 
-          {/* Tab bar - always visible */}
-          <DrawerTabBar
-            activeTab={activeTab}
-            onTabClick={handleTabClick}
-            schools={schools}
-            stations={stations}
-            supermarkets={supermarkets}
-            selectedPOIs={selectedPOIs}
-            schoolRoute={schoolRoute}
-            stationRoute={stationRoute}
-            supermarketRoute={supermarketRoute}
-          />
+        {/* Tab bar - always visible */}
+        <DrawerTabBar
+          activeTab={activeTab}
+          onTabClick={handleTabClick}
+          schools={schools}
+          stations={stations}
+          supermarkets={supermarkets}
+          selectedPOIs={selectedPOIs}
+          schoolRoute={schoolRoute}
+          stationRoute={stationRoute}
+          supermarketRoute={supermarketRoute}
+        />
 
-          {/* Details section - visible at snap 1+ */}
-          <DrawerDetails
-            activeTab={activeTab}
-            items={getCurrentItems()}
-            selectedIndex={selectedPOIs[activeTab]}
-            route={getCurrentRoute()}
-            routeLoading={routeLoading[activeTab]}
-            onOpenSettings={onOpenSettings}
-            hasAlternatives={getCurrentItems().length > 1}
-          />
+        {/* Details section - visible at snap 1+ */}
+        <DrawerDetails
+          activeTab={activeTab}
+          items={getCurrentItems()}
+          selectedIndex={selectedPOIs[activeTab]}
+          route={getCurrentRoute()}
+          routeLoading={routeLoading[activeTab]}
+          onOpenSettings={onOpenSettings}
+          hasAlternatives={getCurrentItems().length > 1}
+        />
 
-          {/* Alternatives list - visible at snap 2 */}
-          <DrawerAlternatives
-            activeTab={activeTab}
-            items={getCurrentItems()}
-            selectedIndex={selectedPOIs[activeTab]}
-            onSelectItem={index => {
-              onSelectPOI(activeTab, index)
-              onSnapIndexChange(1) // Auto-collapse to middle
-            }}
-          />
-        </Drawer.Content>
-      </Drawer.Portal>
+        {/* Alternatives list - visible at snap 2 */}
+        <DrawerAlternatives
+          activeTab={activeTab}
+          items={getCurrentItems()}
+          selectedIndex={selectedPOIs[activeTab]}
+          onSelectItem={index => {
+            onSelectPOI(activeTab, index)
+            onSnapIndexChange(1) // Auto-collapse to middle
+          }}
+        />
+      </Drawer.Content>
     </Drawer.Root>
   )
 }
