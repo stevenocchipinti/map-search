@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { Drawer } from "vaul"
+import { Drawer } from "../../lib/vaul"
 import { DrawerTabBar } from "./DrawerTabBar"
 import { DrawerDetails } from "./DrawerDetails"
 import { DrawerAlternatives } from "./DrawerAlternatives"

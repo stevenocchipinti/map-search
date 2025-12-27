@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { X } from 'lucide-react';
-import { Drawer } from 'vaul';
+import { Drawer } from '../../lib/vaul';
 import { SettingsPanel } from '../Settings/SettingsPanel';
 import type { SchoolSector } from '../../types';
 
