@@ -45,6 +45,7 @@ export function Map({ center, zoom, bounds, children }: MapProps) {
       style={{ width: '100%', height: '100%' }}
       zoomControl={false}
       scrollWheelZoom={true}
+      attributionControl={false}
     >
       <TileLayer
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"

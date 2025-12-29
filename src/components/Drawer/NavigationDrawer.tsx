@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { Drawer } from "../../lib/vaul"
 import { DrawerTabBar } from "./DrawerTabBar"
 import { DrawerDetails } from "./DrawerDetails"
@@ -29,6 +29,9 @@ interface NavigationDrawerProps {
   onSnapIndexChange: (index: number) => void
   activeTab: POICategory
   onActiveTabChange: (tab: POICategory) => void
+  
+  // Visibility control
+  hasSearched?: boolean
 }
 
 export function NavigationDrawer({
@@ -46,6 +49,7 @@ export function NavigationDrawer({
   onSnapIndexChange,
   activeTab,
   onActiveTabChange,
+  hasSearched = false,
 }: NavigationDrawerProps) {
   // Tab click toggle behavior
   const handleTabClick = (category: POICategory) => {
@@ -147,6 +151,24 @@ export function NavigationDrawer({
     }
   }, [snapIndex])
 
+  // Track drawer visibility animation
+  const [isVisible, setIsVisible] = useState(hasSearched)
+  
+  useEffect(() => {
+    if (hasSearched && !isVisible) {
+      // Small delay to allow search bar animation to start first
+      const timer = setTimeout(() => {
+        setIsVisible(true)
+      }, 200)
+      return () => clearTimeout(timer)
+    }
+  }, [hasSearched, isVisible])
+
+  // Don't render until search has been performed
+  if (!hasSearched && !isVisible) {
+    return null
+  }
+
   return (
     <Drawer.Root
       open={true}
@@ -167,7 +189,9 @@ export function NavigationDrawer({
       <Drawer.Overlay className="fixed inset-0 z-[1002] bg-black/20" />
       <Drawer.Portal>
         <Drawer.Content
-          className="fixed drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] inset-x-0 bottom-0 z-[1003] flex flex-col bg-white rounded-t-3xl"
+          className={`fixed drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] inset-x-0 bottom-0 z-[1003] flex flex-col bg-white rounded-t-3xl ${
+            isVisible ? 'animate-drawer-slide-up' : ''
+          }`}
           style={{ height: "100%" }}
         >
           <Drawer.Title className="sr-only">

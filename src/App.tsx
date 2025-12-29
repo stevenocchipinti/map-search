@@ -20,6 +20,7 @@ import { estimateWalkingTime } from './utils/format';
 import { Map } from './components/Map/Map';
 import { MapMarker } from './components/Map/MapMarker';
 import { MapPolyline } from './components/Map/MapPolyline';
+import { AttributionToggle } from './components/Map/AttributionToggle';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { NavigationDrawer } from './components/Drawer/NavigationDrawer';
 import { FloatingSearchBar } from './components/Drawer/FloatingSearchBar';
@@ -83,6 +84,7 @@ function App() {
   const [activeDrawerTab, setActiveDrawerTab] = useState<POICategory>('school');
   const [showSettingsMobile, setShowSettingsMobile] = useState(false);
   const [offlineBannerDismissed, setOfflineBannerDismissed] = useState(false);
+  const [hasSearched, setHasSearched] = useState(false);
 
   // Check for shared address from PWA share target
   useEffect(() => {
@@ -224,6 +226,7 @@ function App() {
 
       setSearchResults(results);
       setSelectedPOIs({ school: 0, station: 0, supermarket: 0 });
+      setHasSearched(true);
 
       // Save last search location to localStorage
       localStorage.setItem('lastSearchLocation', JSON.stringify({
@@ -802,7 +805,11 @@ function App() {
           onUseLocation={handleUseMyLocation}
           onOpenSettings={() => setShowSettingsMobile(true)}
           loading={loading}
+          hasSearched={hasSearched}
         />
+        
+        {/* Attribution toggle - always visible */}
+        <AttributionToggle hasSearched={hasSearched} />
         
         {/* Navigation drawer */}
         <NavigationDrawer
@@ -820,6 +827,7 @@ function App() {
           onSnapIndexChange={setDrawerSnapIndex}
           activeTab={activeDrawerTab}
           onActiveTabChange={setActiveDrawerTab}
+          hasSearched={hasSearched}
         />
         
         {/* Settings modal */}
