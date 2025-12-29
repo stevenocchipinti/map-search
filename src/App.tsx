@@ -11,6 +11,7 @@ import { useWalkingRoutes } from './hooks/useWalkingRoutes';
 import { useGeolocation } from './hooks/useGeolocation';
 import { useOnlineStatus } from './hooks/useOnlineStatus';
 import { useSectorPreferences } from './hooks/useSectorPreferences';
+import { useSchoolTypePreferences } from './hooks/useSchoolTypePreferences';
 import { useServiceWorker } from './hooks/useServiceWorker';
 import { useInstallPrompt } from './hooks/useInstallPrompt';
 import { geocodeAddress, fetchSupermarkets } from './lib/api-client';
@@ -36,6 +37,7 @@ function App() {
   const { getCurrentLocation } = useGeolocation();
   const isOnline = useOnlineStatus();
   const { sectors, toggleSector } = useSectorPreferences();
+  const { schoolTypes, toggleSchoolType } = useSchoolTypePreferences();
   const { updateAvailable, update: updateServiceWorker } = useServiceWorker();
   const { installable, promptInstall } = useInstallPrompt();
 
@@ -104,7 +106,7 @@ function App() {
   }, []);
 
   /**
-   * Re-filter schools when sectors change
+   * Re-filter schools when sectors or school types change
    */
   useEffect(() => {
     if (searchResults) {
@@ -116,13 +118,32 @@ function App() {
         schools,
         location.lat,
         location.lng,
-        sectors
+        sectors,
+        schoolTypes
       );
 
       setSearchResults(prev => prev ? { ...prev, schools: filteredSchools } : null);
       setSelectedPOIs(prev => ({ ...prev, school: 0 }));
+
+      // Fetch walking route for the new top school
+      if (filteredSchools.length > 0) {
+        const topSchool = filteredSchools[0];
+        const existingRoute = getCachedRoute(location, topSchool);
+        
+        if (!existingRoute) {
+          setRouteLoadingStates(prev => ({ ...prev, school: true }));
+          fetchRoutesSequentially([{ from: location, to: topSchool }])
+            .then(() => {
+              setRouteLoadingStates(prev => ({ ...prev, school: false }));
+            })
+            .catch(err => {
+              console.error('Failed to fetch school route after filter change:', err);
+              setRouteLoadingStates(prev => ({ ...prev, school: false }));
+            });
+        }
+      }
     }
-  }, [sectors]);
+  }, [sectors, schoolTypes]);
 
   /**
    * Main search handler
@@ -171,7 +192,8 @@ function App() {
         schools,
         lat,
         lng,
-        sectors
+        sectors,
+        schoolTypes
       );
 
       // Step 5: Filter and sort stations
@@ -379,13 +401,14 @@ function App() {
   };
 
   /**
-   * Filter and sort schools by distance and sector
+   * Filter and sort schools by distance, sector, and type
    */
   function filterAndSortSchools(
     schools: School[],
     lat: number,
     lng: number,
-    selectedSectors: Set<string>
+    selectedSectors: Set<string>,
+    selectedTypes: Set<string>
   ): POI[] {
     return schools
       .map(school => {
@@ -406,12 +429,15 @@ function App() {
           estimatedWalkingTime: estimateWalkingTime(distance),
           details: `${school.suburb}, ${school.sector}, ${school.type}`,
           sector: school.sector,
+          schoolType: school.type,
         };
       })
       .filter(poi => 
         poi.distance <= MAX_WALKING_DISTANCE_KM &&
         poi.sector &&
-        selectedSectors.has(poi.sector)
+        selectedSectors.has(poi.sector) &&
+        poi.schoolType &&
+        selectedTypes.has(poi.schoolType)
       )
       .sort((a, b) => a.distance - b.distance)
       .slice(0, MAX_RESULTS_PER_CATEGORY);
@@ -528,6 +554,8 @@ function App() {
             supermarketRouteLoading={routeLoadingStates.supermarket}
             sectors={sectors}
             onToggleSector={toggleSector}
+            schoolTypes={schoolTypes}
+            onToggleSchoolType={toggleSchoolType}
             isOnline={isOnline}
           />
         </div>
@@ -800,6 +828,8 @@ function App() {
           onClose={() => setShowSettingsMobile(false)}
           sectors={sectors}
           onToggleSector={toggleSector}
+          schoolTypes={schoolTypes}
+          onToggleSchoolType={toggleSchoolType}
         />
       </div>
     </div>

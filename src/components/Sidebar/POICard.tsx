@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import type { POI, POICategory, SchoolSector, WalkingRoute } from '../../types';
+import type { POI, POICategory, SchoolSector, SchoolType, WalkingRoute } from '../../types';
 import { Badge } from '../UI/Badge';
 import { Button } from '../UI/Button';
-import { SectorCheckboxes } from './SectorCheckboxes';
+import { SchoolFilters } from './SchoolFilters';
 import { POIAlternatives } from './POIAlternatives';
 import { formatDistance, formatDuration } from '../../utils/format';
 
@@ -15,6 +15,8 @@ interface POICardProps {
   routeLoading?: boolean;
   sectors?: Set<SchoolSector>;
   onToggleSector?: (sector: SchoolSector) => void;
+  schoolTypes?: Set<SchoolType>;
+  onToggleSchoolType?: (type: SchoolType) => void;
 }
 
 export function POICard({
@@ -26,6 +28,8 @@ export function POICard({
   routeLoading,
   sectors,
   onToggleSector,
+  schoolTypes,
+  onToggleSchoolType,
 }: POICardProps) {
   const [showAlternatives, setShowAlternatives] = useState(false);
 
@@ -154,11 +158,15 @@ export function POICard({
             )}
           </div>
 
-          {/* Sector Checkboxes for Schools */}
-          {category === 'school' && sectors && onToggleSector && (
+          {/* School Filters */}
+          {category === 'school' && sectors && onToggleSector && schoolTypes && onToggleSchoolType && (
             <div className="pt-3 border-t border-gray-100">
-              <p className="text-xs font-medium text-gray-700 mb-2">Filter by sector:</p>
-              <SectorCheckboxes sectors={sectors} onToggle={onToggleSector} />
+              <SchoolFilters
+                sectors={sectors}
+                onToggleSector={onToggleSector}
+                schoolTypes={schoolTypes}
+                onToggleSchoolType={onToggleSchoolType}
+              />
             </div>
           )}
 

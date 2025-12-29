@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { POI, POICategory, SchoolSector, WalkingRoute } from '../../types';
+import type { POI, POICategory, SchoolSector, SchoolType, WalkingRoute } from '../../types';
 import { SearchBar } from './SearchBar';
 import { POICard } from './POICard';
 import { OfflineBanner } from './OfflineBanner';
@@ -31,9 +31,11 @@ interface SidebarProps {
   stationRouteLoading?: boolean;
   supermarketRouteLoading?: boolean;
   
-  // School sectors
+  // School filters
   sectors: Set<SchoolSector>;
   onToggleSector: (sector: SchoolSector) => void;
+  schoolTypes: Set<SchoolType>;
+  onToggleSchoolType: (type: SchoolType) => void;
   
   // Offline status
   isOnline: boolean;
@@ -59,6 +61,8 @@ export function Sidebar({
   supermarketRouteLoading,
   sectors,
   onToggleSector,
+  schoolTypes,
+  onToggleSchoolType,
   isOnline,
 }: SidebarProps) {
   const [showSettings, setShowSettings] = useState(false);
@@ -123,6 +127,8 @@ export function Sidebar({
                     routeLoading={schoolRouteLoading}
                     sectors={sectors}
                     onToggleSector={onToggleSector}
+                    schoolTypes={schoolTypes}
+                    onToggleSchoolType={onToggleSchoolType}
                   />
                 )}
 

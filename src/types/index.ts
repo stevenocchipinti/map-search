@@ -45,6 +45,7 @@ export interface POI {
   estimatedWalkingTime: number; // Estimated minutes based on distance
   details?: string; // Suburb, sector, etc.
   sector?: SchoolSector; // For schools
+  schoolType?: SchoolType; // For schools (Primary, Secondary, Combined)
 }
 
 // Walking Route Types
