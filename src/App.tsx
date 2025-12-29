@@ -5,7 +5,7 @@
  */
 
 import { useState, useEffect } from 'react';
-import type { SearchResponse, SelectedPOIs, POI, School, Station, POICategory } from './types';
+import type { SearchResponse, SelectedPOIs, POI, School, Station, POICategory, AustralianState } from './types';
 import { useDataLoader } from './hooks/useDataLoader';
 import { useWalkingRoutes } from './hooks/useWalkingRoutes';
 import { useGeolocation } from './hooks/useGeolocation';
@@ -44,6 +44,7 @@ function App() {
 
   // State
   const [searchResults, setSearchResults] = useState<SearchResponse | null>(null);
+  const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [selectedPOIs, setSelectedPOIs] = useState<SelectedPOIs>({
     school: 0,
     station: 0,
@@ -148,29 +149,68 @@ function App() {
   }, [sectors, schoolTypes]);
 
   /**
-   * Main search handler
+   * Determine Australian state from coordinates using geographic boundaries
    */
-  const handleSearch = async (address: string): Promise<void> => {
-    if (!address.trim()) {
-      setError('Please enter an address');
-      return;
+  function determineStateFromCoordinates(lat: number, lng: number): AustralianState {
+    // Simple bounding box approach for Australian states
+    // NSW: roughly -37.5 to -28.15, 141 to 154
+    // VIC: roughly -39.2 to -33.98, 140.96 to 150
+    // QLD: roughly -29 to -10, 138 to 154
+    // SA: roughly -38 to -26, 129 to 141
+    // WA: roughly -35 to -13.5, 113 to 129
+    // TAS: roughly -43.6 to -39.2, 143.8 to 148.5
+    // NT: roughly -26 to -10.5, 129 to 138
+    // ACT: roughly -35.92 to -35.12, 148.76 to 149.4
+    
+    // Check ACT first (small, within NSW)
+    if (lat >= -35.92 && lat <= -35.12 && lng >= 148.76 && lng <= 149.4) {
+      return 'ACT';
     }
+    
+    // Tasmania
+    if (lat >= -43.6 && lat <= -39.2 && lng >= 143.8 && lng <= 148.5) {
+      return 'TAS';
+    }
+    
+    // Queensland
+    if (lat >= -29 && lat <= -10 && lng >= 138 && lng <= 154) {
+      return 'QLD';
+    }
+    
+    // Northern Territory
+    if (lat >= -26 && lat <= -10.5 && lng >= 129 && lng <= 138) {
+      return 'NT';
+    }
+    
+    // Western Australia
+    if (lat >= -35 && lat <= -13.5 && lng >= 113 && lng <= 129) {
+      return 'WA';
+    }
+    
+    // South Australia
+    if (lat >= -38 && lat <= -26 && lng >= 129 && lng <= 141) {
+      return 'SA';
+    }
+    
+    // Victoria
+    if (lat >= -39.2 && lat <= -33.98 && lng >= 140.96 && lng <= 150) {
+      return 'VIC';
+    }
+    
+    // NSW (default for anything else in Australia)
+    return 'NSW';
+  }
 
-    setLoading(true);
-    setError(null);
-
+  /**
+   * Shared search logic that works with coordinates directly
+   */
+  const handleSearchWithCoordinates = async (
+    lat: number,
+    lng: number,
+    state: AustralianState,
+    displayName: string
+  ): Promise<void> => {
     try {
-      // Step 1: Geocode the address
-      console.log('Step 1: Geocoding address:', address);
-      const geocodeResult = await geocodeAddress(address);
-
-      if (geocodeResult.error) {
-        throw new Error(geocodeResult.error);
-      }
-
-      const { lat, lng, state, displayName } = geocodeResult;
-      console.log('Geocoded:', { lat, lng, state });
-
       // Step 2: Load state data if not already loaded
       console.log('Step 2: Loading state data:', state);
       let schools: School[] = [];
@@ -296,6 +336,47 @@ function App() {
   };
 
   /**
+   * Main search handler (for address input)
+   */
+  const handleSearch = async (address: string): Promise<void> => {
+    if (!address.trim()) {
+      setError('Please enter an address');
+      return;
+    }
+
+    setLoading(true);
+    setError(null);
+
+    try {
+      // Step 1: Geocode the address
+      console.log('Step 1: Geocoding address:', address);
+      const geocodeResult = await geocodeAddress(address);
+
+      if (geocodeResult.error) {
+        throw new Error(geocodeResult.error);
+      }
+
+      const { lat, lng, state, displayName } = geocodeResult;
+      console.log('Geocoded:', { lat, lng, state });
+
+      // Immediately show user location on map
+      setUserLocation({ lat, lng });
+      setMapCenter([lat, lng]);
+      setMapZoom(14);
+      setMapBounds(null);
+
+      // Use shared search logic
+      await handleSearchWithCoordinates(lat, lng, state, displayName);
+
+    } catch (err) {
+      const errorMsg = err instanceof Error ? err.message : 'Search failed';
+      console.error('Search error:', err);
+      setError(errorMsg);
+      setLoading(false);
+    }
+  };
+
+  /**
    * Handle "Use my location"
    */
   const handleUseMyLocation = async (): Promise<void> => {
@@ -305,9 +386,18 @@ function App() {
     try {
       const coords = await getCurrentLocation();
       if (coords) {
-        // Reverse geocode coordinates to address
-        const address = `${coords.latitude},${coords.longitude}`;
-        await handleSearch(address);
+        // Immediately show user location on map
+        setUserLocation({ lat: coords.latitude, lng: coords.longitude });
+        setMapCenter([coords.latitude, coords.longitude]);
+        setMapZoom(14);
+        setMapBounds(null);
+
+        // We already have coordinates, just need to determine the state
+        // Use a simple lat/lng bounds check for Australian states
+        const state = determineStateFromCoordinates(coords.latitude, coords.longitude);
+        
+        // Proceed directly with the search logic without geocoding
+        await handleSearchWithCoordinates(coords.latitude, coords.longitude, state, 'Your Location');
       }
     } catch (err) {
       const errorMsg = err instanceof Error ? err.message : 'Failed to get location';
@@ -566,10 +656,10 @@ function App() {
         {/* Map - Desktop: 60% flex */}
         <div className="flex-1 h-full">
           <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds}>
-            {/* User location marker */}
-            {searchResults && (
+            {/* User location marker - show immediately when we have coordinates */}
+            {userLocation && (
               <MapMarker
-                position={[searchResults.location.lat, searchResults.location.lng]}
+                position={[userLocation.lat, userLocation.lng]}
                 type="user"
               />
             )}
@@ -696,10 +786,10 @@ function App() {
         {/* Map (full screen) */}
         <div className="absolute inset-0">
           <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds}>
-            {/* User location marker */}
-            {searchResults && (
+            {/* User location marker - show immediately when we have coordinates */}
+            {userLocation && (
               <MapMarker
-                position={[searchResults.location.lat, searchResults.location.lng]}
+                position={[userLocation.lat, userLocation.lng]}
                 type="user"
               />
             )}
@@ -809,7 +899,7 @@ function App() {
         />
         
         {/* Attribution toggle - always visible */}
-        <AttributionToggle hasSearched={hasSearched} />
+        <AttributionToggle hasSearched={hasSearched || !!userLocation} />
         
         {/* Navigation drawer */}
         <NavigationDrawer

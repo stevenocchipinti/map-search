@@ -128,7 +128,7 @@ export function DrawerTabBar({
 
   return (
     <div
-      className="grid grid-cols-3 gap-2 px-3 py-2 "
+      className="grid grid-cols-3 gap-2 px-3 py-2"
       role="tablist"
       aria-label="Category navigation"
     >
@@ -148,7 +148,7 @@ export function DrawerTabBar({
             aria-controls={`${category}-panel`}
             id={`${category}-tab`}
             className={`
-              flex flex-col items-center justify-center gap-1 py-3 px-2 rounded-xl
+              flex flex-col items-center justify-center gap-0.5 py-2 px-2 rounded-xl
               transition-all duration-200 h-auto
               ${isActive ? getActiveStyle() : getInactiveStyle()}
               ${!hasData ? "opacity-50" : ""}
@@ -156,13 +156,17 @@ export function DrawerTabBar({
             aria-label={`${label}${hasData ? `, ${walkingTime}` : ", no results"}`}
           >
             <div
-              className={`flex items-center gap-1.5 ${getTextColor(category)}`}
+              className={`flex items-center gap-1 ${getTextColor(category)}`}
             >
-              <Icon className="w-5 h-5" />
-              <span className="text-xs font-semibold">{label}</span>
+              <Icon className="w-4 h-4" />
+              <span className="text-xs font-semibold leading-none">
+                {label}
+              </span>
             </div>
             {hasData && walkingTime && (
-              <span className={`text-[10px] ${getTextColor(category)}`}>
+              <span
+                className={`text-[10px] leading-none ${getTextColor(category)}`}
+              >
                 {walkingTime}
               </span>
             )}

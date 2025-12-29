@@ -21,9 +21,7 @@ export function AttributionToggle({ hasSearched = false }: AttributionToggleProp
 
   return (
     <div 
-      className={`fixed right-4 z-[999] transition-all duration-300 ${
-        hasSearched ? 'bottom-[100px]' : 'bottom-[96px]'
-      }`}
+      className="fixed right-4 bottom-[96px] z-[999]"
     >
       <div className="flex items-center justify-end">
         {/* Combined container with unified background */}
