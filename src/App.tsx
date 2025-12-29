@@ -93,13 +93,17 @@ function App() {
     const sharedText = params.get('text');
 
     if (sharedText) {
-      console.group('🔗 Share Target Activated');
-      console.log('Raw shared text:', sharedText);
-      console.log('Contains URL:', /https?:\/\//.test(sharedText));
-
       const cleanedAddress = sharedText
         .replace(/https?:\/\/[^\s]+/g, '')
         .trim();
+      
+      // Show alert for mobile testing
+      alert(`🔗 Share Target Activated!\n\nRaw: ${sharedText}\n\nCleaned: ${cleanedAddress}\n\nContains URL: ${/https?:\/\//.test(sharedText)}`);
+      
+      // Also log for desktop debugging
+      console.group('🔗 Share Target Activated');
+      console.log('Raw shared text:', sharedText);
+      console.log('Contains URL:', /https?:\/\//.test(sharedText));
       console.log('Cleaned address (preview):', cleanedAddress);
       console.groupEnd();
 
