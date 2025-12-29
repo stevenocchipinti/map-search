@@ -42,7 +42,7 @@ export function SettingsModal({ open, onClose, sectors, onToggleSector }: Settin
         >
           {/* Header */}
           <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
-            <h2 className="text-xl font-semibold text-gray-900">Settings</h2>
+            <Drawer.Title className="text-xl font-semibold text-gray-900">Settings</Drawer.Title>
             <button
               onClick={onClose}
               className="p-2 text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-200"
@@ -51,6 +51,10 @@ export function SettingsModal({ open, onClose, sectors, onToggleSector }: Settin
               <X className="w-5 h-5" />
             </button>
           </div>
+          
+          <Drawer.Description className="sr-only">
+            Configure app settings including cache management and preferences
+          </Drawer.Description>
           
           {/* Content */}
           <div className="flex-1 overflow-y-auto">

@@ -170,6 +170,13 @@ export function NavigationDrawer({
           className="fixed drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] inset-x-0 bottom-0 z-[1003] flex flex-col bg-white rounded-t-3xl"
           style={{ height: "100%" }}
         >
+          <Drawer.Title className="sr-only">
+            Nearby {activeTab === 'school' ? 'Schools' : activeTab === 'station' ? 'Stations' : 'Supermarkets'}
+          </Drawer.Title>
+          <Drawer.Description className="sr-only">
+            Browse and navigate to nearby {activeTab === 'school' ? 'schools' : activeTab === 'station' ? 'train stations' : 'supermarkets'}. Drag to expand or collapse.
+          </Drawer.Description>
+
           {/* Drag handle - always visible */}
           <div
             role="separator"

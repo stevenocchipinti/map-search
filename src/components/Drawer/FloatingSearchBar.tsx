@@ -39,6 +39,9 @@ export function FloatingSearchBar({
       <div className="bg-white rounded-full shadow-lg p-2 flex items-center gap-2">
         <input
           type="text"
+          id="floating-address-search"
+          name="address"
+          autoComplete="street-address"
           value={inputValue}
           onChange={e => setInputValue(e.target.value)}
           onKeyDown={handleKeyDown}

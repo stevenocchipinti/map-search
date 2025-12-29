@@ -26,6 +26,9 @@ export function SearchBar({ onSearch, onUseLocation, loading, error }: SearchBar
         <div className="relative">
           <input
             type="text"
+            id="address-search"
+            name="address"
+            autoComplete="street-address"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
             placeholder="Enter an address..."

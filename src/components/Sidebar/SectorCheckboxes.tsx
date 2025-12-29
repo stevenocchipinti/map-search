@@ -24,10 +24,13 @@ export function SectorCheckboxes({ sectors, onToggle }: SectorCheckboxesProps) {
       {allSectors.map((sector) => (
         <label
           key={sector}
+          htmlFor={`sector-${sector.toLowerCase()}`}
           className="inline-flex items-center gap-2 cursor-pointer hover:opacity-75 transition-opacity"
         >
           <input
             type="checkbox"
+            id={`sector-${sector.toLowerCase()}`}
+            name={`sector-${sector.toLowerCase()}`}
             checked={sectors.has(sector)}
             onChange={() => onToggle(sector)}
             className="w-4 h-4 rounded border-gray-300 focus:ring-2 focus:ring-blue-500 focus:ring-offset-0"
