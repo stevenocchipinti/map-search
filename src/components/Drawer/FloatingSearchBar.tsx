@@ -6,7 +6,6 @@ interface FloatingSearchBarProps {
   onUseLocation: () => void
   onOpenSettings: () => void
   loading?: boolean
-  hasSearched?: boolean
   className?: string
 }
 
@@ -15,7 +14,6 @@ export function FloatingSearchBar({
   onUseLocation,
   onOpenSettings,
   loading,
-  hasSearched = false,
   className = "",
 }: FloatingSearchBarProps) {
   const [inputValue, setInputValue] = useState("")
@@ -38,8 +36,7 @@ export function FloatingSearchBar({
 
   return (
     <div 
-      data-searched={hasSearched}
-      className={`fixed left-4 right-4 z-[1000] search-bar-animated ${className}`}
+      className={`fixed left-4 right-4 z-[1000] floating-search-bar ${className}`}
     >
       <div className="bg-white rounded-full shadow-lg p-2 flex items-center gap-2">
         <input

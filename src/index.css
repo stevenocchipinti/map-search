@@ -65,43 +65,55 @@
   }
 }
 
-/* Search bar animation - CSS-only approach using data attributes */
-/* GPU-accelerated using transform and opacity only */
-.search-bar-animated {
-  /* Default: positioned at bottom */
-  bottom: 1.5rem;
-  top: auto;
-  opacity: 1;
+/* Floating search bar - positioned at top after search */
+.floating-search-bar {
+  top: 1rem;
+  view-transition-name: search-bar;
 }
 
-.search-bar-animated[data-searched="true"] {
-  /* After search: animate to top position */
-  animation: search-bar-move-to-top 0.6s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+/* Landing overlay - view transition names */
+.landing-overlay {
+  view-transition-name: landing-overlay;
 }
 
-@keyframes search-bar-move-to-top {
-  0% {
-    bottom: 1.5rem;
-    top: auto;
+.landing-logo {
+  view-transition-name: landing-logo;
+}
+
+.landing-search-bar {
+  view-transition-name: search-bar;
+}
+
+/* View Transition animations */
+/* Search bar uses default morph animation (position interpolation) */
+/* We just customize the duration and easing */
+::view-transition-group(search-bar) {
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* Overlay and logo fade out */
+::view-transition-old(landing-overlay) {
+  animation: fade-out 0.5s ease-out forwards;
+}
+
+::view-transition-old(landing-logo) {
+  animation: fade-out 0.4s ease-out forwards;
+}
+
+/* No new state for overlay/logo (they're removed) */
+::view-transition-new(landing-overlay),
+::view-transition-new(landing-logo) {
+  animation: none;
+  opacity: 0;
+}
+
+@keyframes fade-out {
+  from {
     opacity: 1;
   }
-  30% {
-    bottom: 1.5rem;
-    top: auto;
+  to {
     opacity: 0;
-  }
-  31% {
-    /* Swap from bottom to top positioning */
-    bottom: auto;
-    top: 1rem;
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    bottom: auto;
-    top: 1rem;
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 

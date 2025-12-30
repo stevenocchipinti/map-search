@@ -5,6 +5,7 @@
  */
 
 import { useState, useEffect } from 'react';
+import { flushSync } from 'react-dom';
 import type { SearchResponse, SelectedPOIs, POI, School, Station, POICategory, AustralianState } from './types';
 import { useDataLoader } from './hooks/useDataLoader';
 import { useWalkingRoutes } from './hooks/useWalkingRoutes';
@@ -25,6 +26,7 @@ import { Sidebar } from './components/Sidebar/Sidebar';
 import { NavigationDrawer } from './components/Drawer/NavigationDrawer';
 import { FloatingSearchBar } from './components/Drawer/FloatingSearchBar';
 import { SettingsModal } from './components/Drawer/SettingsModal';
+import { LandingOverlay } from './components/Drawer/LandingOverlay';
 import { latLngBounds, type LatLngBounds } from 'leaflet';
 import './App.css';
 
@@ -86,6 +88,45 @@ function App() {
   const [showSettingsMobile, setShowSettingsMobile] = useState(false);
   const [offlineBannerDismissed, setOfflineBannerDismissed] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
+  const [showLanding, setShowLanding] = useState(true);
+
+  /**
+   * Trigger a view transition if supported, otherwise just run the callback.
+   * Uses flushSync to ensure React updates the DOM synchronously within the
+   * view transition callback, which is required for the API to capture
+   * the before/after states correctly.
+   */
+  const withViewTransition = (callback: () => void) => {
+    if (document.startViewTransition) {
+      document.startViewTransition(() => {
+        flushSync(callback);
+      });
+    } else {
+      callback();
+    }
+  };
+
+  /**
+   * Handle search from landing overlay - triggers view transition
+   */
+  const handleLandingSearch = (address: string) => {
+    withViewTransition(() => {
+      setShowLanding(false);
+      setHasSearched(true); // Show drawer immediately with loading state
+    });
+    handleSearch(address);
+  };
+
+  /**
+   * Handle "use location" from landing overlay - triggers view transition
+   */
+  const handleLandingUseLocation = () => {
+    withViewTransition(() => {
+      setShowLanding(false);
+      setHasSearched(true); // Show drawer immediately with loading state
+    });
+    handleUseMyLocation();
+  };
 
   // Check for shared address from PWA share target
   useEffect(() => {
@@ -107,7 +148,11 @@ function App() {
       console.log('Cleaned address (preview):', cleanedAddress);
       console.groupEnd();
 
-      // Auto-search shared address
+      // Auto-search shared address (dismiss landing overlay)
+      withViewTransition(() => {
+        setShowLanding(false);
+        setHasSearched(true); // Show drawer immediately with loading state
+      });
       handleSearch(cleanedAddress);
     }
   }, []);
@@ -893,36 +938,50 @@ function App() {
           </Map>
         </div>
         
-        {/* Floating search bar - always visible */}
-        <FloatingSearchBar
-          onSearch={handleSearch}
-          onUseLocation={handleUseMyLocation}
-          onOpenSettings={() => setShowSettingsMobile(true)}
-          loading={loading}
-          hasSearched={hasSearched}
-        />
+        {/* Floating search bar - shown after landing dismissed */}
+        {!showLanding && (
+          <FloatingSearchBar
+            onSearch={handleSearch}
+            onUseLocation={handleUseMyLocation}
+            onOpenSettings={() => setShowSettingsMobile(true)}
+            loading={loading}
+          />
+        )}
         
-        {/* Attribution toggle - always visible */}
-        <AttributionToggle hasSearched={hasSearched || !!userLocation} />
+        {/* Landing overlay - shown on initial load */}
+        {showLanding && (
+          <LandingOverlay
+            onSearch={handleLandingSearch}
+            onUseLocation={handleLandingUseLocation}
+            loading={loading}
+          />
+        )}
         
-        {/* Navigation drawer */}
-        <NavigationDrawer
-          schools={searchResults?.schools || []}
-          stations={searchResults?.stations || []}
-          supermarkets={searchResults?.supermarkets || []}
-          selectedPOIs={selectedPOIs}
-          onSelectPOI={handleSelectPOI}
-          schoolRoute={schoolRoute}
-          stationRoute={stationRoute}
-          supermarketRoute={supermarketRoute}
-          routeLoading={routeLoadingStates}
-          onOpenSettings={() => setShowSettingsMobile(true)}
-          snapIndex={drawerSnapIndex}
-          onSnapIndexChange={setDrawerSnapIndex}
-          activeTab={activeDrawerTab}
-          onActiveTabChange={setActiveDrawerTab}
-          hasSearched={hasSearched}
-        />
+        {/* Attribution toggle - shown after landing dismissed */}
+        {!showLanding && (
+          <AttributionToggle hasSearched={hasSearched || !!userLocation} />
+        )}
+        
+        {/* Navigation drawer - shown after landing dismissed */}
+        {!showLanding && (
+          <NavigationDrawer
+            schools={searchResults?.schools || []}
+            stations={searchResults?.stations || []}
+            supermarkets={searchResults?.supermarkets || []}
+            selectedPOIs={selectedPOIs}
+            onSelectPOI={handleSelectPOI}
+            schoolRoute={schoolRoute}
+            stationRoute={stationRoute}
+            supermarketRoute={supermarketRoute}
+            routeLoading={routeLoadingStates}
+            onOpenSettings={() => setShowSettingsMobile(true)}
+            snapIndex={drawerSnapIndex}
+            onSnapIndexChange={setDrawerSnapIndex}
+            activeTab={activeDrawerTab}
+            onActiveTabChange={setActiveDrawerTab}
+            hasSearched={hasSearched}
+          />
+        )}
         
         {/* Settings modal */}
         <SettingsModal
