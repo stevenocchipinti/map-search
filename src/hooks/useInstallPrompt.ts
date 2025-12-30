@@ -33,8 +33,9 @@ export function useInstallPrompt(): InstallPromptResult {
 
     // Listen for beforeinstallprompt event
     const handleBeforeInstallPrompt = (e: Event) => {
-      // Prevent default browser install prompt
-      e.preventDefault();
+      // Store the event so we can trigger it later from settings
+      // Note: We're NOT calling e.preventDefault() so the browser can still
+      // show its native install prompt (mini-infobar on Chrome Android, etc.)
       
       console.log('[Install Prompt] beforeinstallprompt event fired');
       const event = e as BeforeInstallPromptEvent;

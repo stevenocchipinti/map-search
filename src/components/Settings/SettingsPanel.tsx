@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from '../UI/Button';
 import { Switch } from '../UI/Switch';
 import { useServiceWorker } from '../../hooks/useServiceWorker';
+import { useInstallPrompt } from '../../hooks/useInstallPrompt';
 import type { SchoolSector, SchoolType } from '../../types';
 
 interface SettingsPanelProps {
@@ -19,6 +20,7 @@ export function SettingsPanel({ sectors, onToggleSector, schoolTypes, onToggleSc
   const [cachedStates, setCachedStates] = useState<string[]>([]);
   const [clearing, setClearing] = useState(false);
   const { getCachedStates, clearCache: clearServiceWorkerCache } = useServiceWorker();
+  const { installable, installed, promptInstall } = useInstallPrompt();
 
   useEffect(() => {
     updateCacheInfo();
@@ -119,6 +121,39 @@ export function SettingsPanel({ sectors, onToggleSector, schoolTypes, onToggleSc
                     </label>
                   ))}
                 </div>
+              </div>
+            </div>
+          </div>
+        )}
+        
+        {/* App Section - only show if there's content to display */}
+        {installable && !installed && (
+          <div>
+            <h3 className="text-sm font-semibold text-gray-900 mb-3">App</h3>
+            <div className="space-y-3">
+              {/* Install App Card */}
+              <div className="bg-white border border-gray-200 rounded-xl shadow-soft p-4">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="flex-shrink-0 w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center">
+                    <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-semibold text-gray-900">Install App</p>
+                    <p className="mt-1 text-xs text-gray-600 leading-relaxed">
+                      Install this app for faster access and offline functionality
+                    </p>
+                  </div>
+                </div>
+                <Button
+                  variant="primary"
+                  size="md"
+                  onClick={() => promptInstall()}
+                  className="w-full"
+                >
+                  Install Now
+                </Button>
               </div>
             </div>
           </div>
