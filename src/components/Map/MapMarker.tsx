@@ -14,6 +14,7 @@ interface MapMarkerProps {
   selected?: boolean
   sector?: string // Keep for compatibility but not used
   isAlternative?: boolean
+  isLoading?: boolean
   onClick?: () => void
 }
 
@@ -22,9 +23,10 @@ export function MapMarker({
   type,
   selected = false,
   isAlternative = false,
+  isLoading = false,
   onClick,
 }: MapMarkerProps) {
-  const icon = createMarkerIcon(type, selected, isAlternative)
+  const icon = createMarkerIcon(type, selected, isAlternative, isLoading)
 
   return (
     <Marker

@@ -21,3 +21,17 @@
 .custom-marker-pin {
   cursor: pointer;
 }
+
+/* Loading spinner for map markers */
+@keyframes marker-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.marker-loading-spinner {
+  animation: marker-spin 1s linear infinite;
+}

@@ -604,43 +604,48 @@ function App() {
       console.log("Step 7: Fetching walking routes sequentially")
       const topPOIs = [
         ...(filteredSchools.length > 0
-          ? [{ from: results.location, to: filteredSchools[0] }]
+          ? [{ from: results.location, to: filteredSchools[0], category: "school" as const }]
           : []),
         ...(filteredStations.length > 0
-          ? [{ from: results.location, to: filteredStations[0] }]
+          ? [{ from: results.location, to: filteredStations[0], category: "station" as const }]
           : []),
         ...(supermarkets.length > 0
-          ? [{ from: results.location, to: supermarkets[0] }]
+          ? [{ from: results.location, to: supermarkets[0], category: "supermarket" as const }]
           : []),
       ]
 
-      // Set loading states
-      if (filteredSchools.length > 0)
-        setRouteLoadingStates(prev => ({ ...prev, school: true }))
-      if (filteredStations.length > 0)
-        setRouteLoadingStates(prev => ({ ...prev, station: true }))
-      if (supermarkets.length > 0)
-        setRouteLoadingStates(prev => ({ ...prev, supermarket: true }))
-
-      // Don't await - let this happen in background
+      // Fetch routes sequentially, managing loading state for each one individually
       if (topPOIs.length > 0) {
-        fetchRoutesSequentially(topPOIs)
-          .then(() => {
-            // Clear loading states when done
-            setRouteLoadingStates({
-              school: false,
-              station: false,
-              supermarket: false,
-            })
-          })
-          .catch(err => {
-            console.error("Background route fetching failed:", err)
-            setRouteLoadingStates({
-              school: false,
-              station: false,
-              supermarket: false,
-            })
-          })
+        (async () => {
+          for (let i = 0; i < topPOIs.length; i++) {
+            const { from, to, category } = topPOIs[i]
+            
+            // Check if route is already cached
+            const cachedRoute = getCachedRoute(from, to)
+            if (cachedRoute) {
+              console.log(`Route ${i + 1}/${topPOIs.length} cached: ${to.name}`)
+              continue
+            }
+
+            // Set loading state for this specific category
+            setRouteLoadingStates(prev => ({ ...prev, [category]: true }))
+            
+            console.log(`Fetching route ${i + 1}/${topPOIs.length}: ${to.name}`)
+            
+            try {
+              await fetchRoutesSequentially([{ from, to }])
+            } catch (err) {
+              console.error(`Failed to fetch route for ${to.name}:`, err)
+            }
+            
+            // Clear loading state for this specific category
+            setRouteLoadingStates(prev => ({ ...prev, [category]: false }))
+            
+            // No additional delay needed - the API call itself provides natural rate limiting
+          }
+          
+          console.log("Sequential route fetching complete")
+        })()
       }
     } catch (err) {
       const errorMsg = err instanceof Error ? err.message : "Search failed"
@@ -1042,6 +1047,7 @@ function App() {
                 type="school"
                 sector={selectedSchool.sector}
                 selected={true}
+                isLoading={routeLoadingStates.school}
                 onClick={() => handleSelectPOI("school", selectedPOIs.school)}
               />
             )}
@@ -1051,6 +1057,7 @@ function App() {
                 position={[selectedStation.latitude, selectedStation.longitude]}
                 type="station"
                 selected={true}
+                isLoading={routeLoadingStates.station}
                 onClick={() => handleSelectPOI("station", selectedPOIs.station)}
               />
             )}
@@ -1063,6 +1070,7 @@ function App() {
                 ]}
                 type="supermarket"
                 selected={true}
+                isLoading={routeLoadingStates.supermarket}
                 onClick={() =>
                   handleSelectPOI("supermarket", selectedPOIs.supermarket)
                 }
@@ -1193,6 +1201,7 @@ function App() {
                 type="school"
                 sector={selectedSchool.sector}
                 selected={true}
+                isLoading={routeLoadingStates.school}
                 onClick={() =>
                   handleMapMarkerClick("school", selectedPOIs.school)
                 }
@@ -1204,6 +1213,7 @@ function App() {
                 position={[selectedStation.latitude, selectedStation.longitude]}
                 type="station"
                 selected={true}
+                isLoading={routeLoadingStates.station}
                 onClick={() =>
                   handleMapMarkerClick("station", selectedPOIs.station)
                 }
@@ -1218,6 +1228,7 @@ function App() {
                 ]}
                 type="supermarket"
                 selected={true}
+                isLoading={routeLoadingStates.supermarket}
                 onClick={() =>
                   handleMapMarkerClick("supermarket", selectedPOIs.supermarket)
                 }

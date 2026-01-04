@@ -33,11 +33,13 @@ export function getPolylineColor(category: POICategory): string {
  * @param type - The type of marker (user, school, station, supermarket)
  * @param selected - Whether this marker is currently selected
  * @param isAlternative - Whether this is an alternative (non-selected) POI
+ * @param isLoading - Whether the route for this marker is currently being fetched
  */
 export function createMarkerIcon(
   type: POICategory | "user",
   selected: boolean,
-  isAlternative?: boolean
+  isAlternative?: boolean,
+  isLoading?: boolean
 ): L.DivIcon {
   const color = getCategoryColor(type)
   const size = selected ? 32 : 24
@@ -83,6 +85,23 @@ export function createMarkerIcon(
 
   // Selected POI: pin with icon
   const icon = getIconForCategory(type)
+  
+  // Create loading spinner border if loading
+  const loadingSpinner = isLoading ? `
+    <!-- Loading spinner border -->
+    <div class="marker-loading-spinner" style="
+      position: absolute;
+      width: ${size + 6}px;
+      height: ${size + 6}px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: ${color};
+      border-right-color: ${color};
+      top: -3px;
+      left: -3px;
+      z-index: 1;
+    "></div>
+  ` : ''
 
   return L.divIcon({
     html: `
@@ -92,22 +111,25 @@ export function createMarkerIcon(
         align-items: center;
         filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
       ">
-        <!-- Pin head -->
-        <div style="
-          width: ${size}px;
-          height: ${size}px;
-          background-color: ${color};
-          border: 3px solid white;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: relative;
-          z-index: 2;
-        ">
-          <svg width="${size * 0.5}" height="${size * 0.5}" viewBox="0 0 24 24" fill="white">
-            ${icon}
-          </svg>
+        <!-- Pin head with optional loading spinner -->
+        <div style="position: relative;">
+          ${loadingSpinner}
+          <div style="
+            width: ${size}px;
+            height: ${size}px;
+            background-color: ${color};
+            border: 3px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+          ">
+            <svg width="${size * 0.5}" height="${size * 0.5}" viewBox="0 0 24 24" fill="white">
+              ${icon}
+            </svg>
+          </div>
         </div>
         <!-- Pin tail -->
         <div style="
