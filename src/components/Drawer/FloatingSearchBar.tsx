@@ -66,7 +66,7 @@ export function FloatingSearchBar({
           onChange={e => onChange(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Search address..."
-          className="flex-1 px-4 py-2 text-sm focus:outline-none bg-transparent"
+          className="flex-1 min-w-0 px-4 py-2 text-sm focus:outline-none bg-transparent"
           aria-label="Search address"
           disabled={loading}
         />
