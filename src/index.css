@@ -84,10 +84,25 @@
   view-transition-name: search-bar;
 }
 
+/* Attribution - view transition names */
+.landing-attribution {
+  view-transition-name: attribution;
+}
+
+.floating-attribution {
+  view-transition-name: attribution;
+}
+
 /* View Transition animations */
 /* Search bar uses default morph animation (position interpolation) */
 /* We just customize the duration and easing */
 ::view-transition-group(search-bar) {
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* Attribution uses same animation style as search bar */
+::view-transition-group(attribution) {
   animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
 }

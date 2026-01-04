@@ -19,22 +19,24 @@ export function LandingOverlay({
   loading = false,
 }: LandingOverlayProps) {
   return (
-    <div 
-      className="landing-overlay fixed inset-0 z-[2000] flex flex-col items-center justify-center bg-black/70 px-6"
-    >
+    <div className="landing-overlay fixed inset-0 z-[2000] flex flex-col items-center justify-center bg-black/70 px-6">
       {/* Branding section */}
       <div className="landing-logo flex flex-col items-center mb-10">
         {/* Logo - white, larger */}
-        <Logo size={96} color="white" className="mb-6" />
-        
+        <Logo
+          size={96}
+          color="white"
+          className="mb-6 drop-shadow-[0_0_24px_rgba(0,0,0,1)]"
+        />
+
         {/* Title */}
-        <h1 className="text-white text-2xl font-semibold tracking-tight mb-2">
+        <h1 className="text-white text-3xl font-semibold tracking-tight mb-2">
           Local Search
         </h1>
-        
+
         {/* Subtitle */}
         <p className="text-white/70 text-sm font-normal">
-          Find the important stuff in your area
+          Find the important stuff nearby
         </p>
       </div>
 

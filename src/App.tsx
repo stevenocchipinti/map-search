@@ -1206,9 +1206,17 @@ function App() {
           />
         )}
         
-        {/* Attribution toggle - shown after landing dismissed */}
-        {!showLanding && (
-          <AttributionToggle hasSearched={hasSearched || !!userLocation} />
+        {/* Attribution toggle - shown on both landing and post-search */}
+        {showLanding ? (
+          <AttributionToggle 
+            hasSearched={false} 
+            isLanding={true}
+          />
+        ) : (
+          <AttributionToggle 
+            hasSearched={hasSearched || !!userLocation}
+            isLanding={false}
+          />
         )}
         
         {/* Navigation drawer - shown after landing dismissed */}
