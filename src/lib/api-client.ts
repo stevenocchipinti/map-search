@@ -18,14 +18,19 @@ const API_BASE_URL = import.meta.env.DEV ? 'http://localhost:3001' : '';
  * Geocode an address to get coordinates and Australian state
  * 
  * @param address - Full address string (e.g., "123 Main St, Sydney NSW")
+ * @param options - Optional configuration including abort signal
  * @returns Coordinates, state, and display name
  */
-export async function geocodeAddress(address: string): Promise<GeocodeResponse> {
+export async function geocodeAddress(
+  address: string,
+  options?: { signal?: AbortSignal }
+): Promise<GeocodeResponse> {
   try {
     const response = await fetch(`${API_BASE_URL}/api/geocode`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ address }),
+      signal: options?.signal, // Pass abort signal
     });
 
     if (!response.ok) {
@@ -36,6 +41,11 @@ export async function geocodeAddress(address: string): Promise<GeocodeResponse> 
     const data = await response.json();
     return data;
   } catch (error) {
+    // Re-throw abort errors so they can be handled separately
+    if (error instanceof Error && error.name === 'AbortError') {
+      throw error;
+    }
+    
     console.error('Geocode API error:', error);
     throw error;
   }

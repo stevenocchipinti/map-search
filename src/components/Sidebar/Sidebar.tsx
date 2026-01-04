@@ -7,6 +7,8 @@ import { SettingsPanel } from '../Settings/SettingsPanel';
 
 interface SidebarProps {
   // Search
+  searchValue: string;
+  onSearchChange: (value: string) => void;
   onSearch: (address: string) => void;
   onUseLocation: () => void;
   searchLoading?: boolean;
@@ -42,6 +44,8 @@ interface SidebarProps {
 }
 
 export function Sidebar({
+  searchValue,
+  onSearchChange,
   onSearch,
   onUseLocation,
   searchLoading,
@@ -96,6 +100,8 @@ export function Sidebar({
 
       {/* Search Bar */}
       <SearchBar
+        value={searchValue}
+        onChange={onSearchChange}
         onSearch={onSearch}
         onUseLocation={onUseLocation}
         loading={searchLoading}

@@ -29,7 +29,7 @@
     "method": "GET",
     "enctype": "application/x-www-form-urlencoded",
     "params": {
-      "text": "address"
+      "text": "q"
     }
   }
 }

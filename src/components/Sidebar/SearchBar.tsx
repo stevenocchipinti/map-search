@@ -1,21 +1,27 @@
-import { useState } from 'react';
 import { Button } from '../UI/Button';
 import { LoadingSpinner } from '../UI/LoadingSpinner';
 
 interface SearchBarProps {
+  value: string;
+  onChange: (value: string) => void;
   onSearch: (address: string) => void;
   onUseLocation: () => void;
   loading?: boolean;
   error?: string | null;
 }
 
-export function SearchBar({ onSearch, onUseLocation, loading, error }: SearchBarProps) {
-  const [address, setAddress] = useState('');
-
+export function SearchBar({ 
+  value,
+  onChange,
+  onSearch, 
+  onUseLocation, 
+  loading, 
+  error 
+}: SearchBarProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (address.trim()) {
-      onSearch(address.trim());
+    if (value.trim()) {
+      onSearch(value.trim());
     }
   };
 
@@ -29,8 +35,8 @@ export function SearchBar({ onSearch, onUseLocation, loading, error }: SearchBar
             id="address-search"
             name="address"
             autoComplete="street-address"
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
             placeholder="Enter an address..."
             className="w-full px-4 py-3.5 pr-12 text-base border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder:text-gray-400"
             disabled={loading}
@@ -56,7 +62,7 @@ export function SearchBar({ onSearch, onUseLocation, loading, error }: SearchBar
             variant="primary"
             size="md"
             className="flex-1 h-12"
-            disabled={!address.trim() || loading}
+            disabled={!value.trim() || loading}
           >
             <span className="font-medium">Search</span>
           </Button>

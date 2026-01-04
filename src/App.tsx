@@ -4,7 +4,7 @@
  * Phase 6: PWA with Service Worker
  */
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { flushSync } from 'react-dom';
 import type { SearchResponse, SelectedPOIs, POI, School, Station, POICategory, AustralianState } from './types';
 import { useDataLoader } from './hooks/useDataLoader';
@@ -88,6 +88,133 @@ function App() {
   const [hasSearched, setHasSearched] = useState(false);
   const [showLanding, setShowLanding] = useState(true);
 
+  // Search input state (controlled by URL)
+  const [searchInput, setSearchInput] = useState<string>('');
+
+  // AbortController for canceling in-flight search requests
+  const searchAbortController = useRef<AbortController | null>(null);
+
+  /**
+   * URL Validation and Sanitization Functions
+   */
+  function validateAndSanitizeQuery(raw: string | null): string | null {
+    if (!raw) return null;
+    
+    // Strip URLs first (handles share target and direct URLs with embedded URLs)
+    let cleaned = raw.replace(/https?:\/\/[^\s]+/g, '').trim();
+    
+    // Validate length (prevent DoS)
+    if (cleaned.length === 0) return null;
+    if (cleaned.length > 200) {
+      console.warn('Query too long, truncating');
+      cleaned = cleaned.substring(0, 200);
+    }
+    
+    // Strip HTML-like characters (< and >)
+    cleaned = cleaned.replace(/[<>]/g, '');
+    
+    // Minimum length check (at least 3 chars for meaningful search)
+    if (cleaned.length < 3) {
+      console.warn('Query too short, ignoring');
+      return null;
+    }
+    
+    return cleaned;
+  }
+
+  function validateCoords(
+    latStr: string | null, 
+    lngStr: string | null
+  ): { lat: number; lng: number } | null {
+    
+    if (!latStr || !lngStr) return null;
+    
+    // Parse as numbers
+    const lat = parseFloat(latStr);
+    const lng = parseFloat(lngStr);
+    
+    // Check if valid numbers
+    if (isNaN(lat) || isNaN(lng)) {
+      console.warn('Invalid coordinates: not numeric');
+      return null;
+    }
+    
+    // Validate within Australia bounds
+    // Australia roughly: lat -45 to -10, lng 110 to 155
+    if (lat < -45 || lat > -10) {
+      console.warn('Latitude out of Australia bounds:', lat);
+      return null;
+    }
+    
+    if (lng < 110 || lng > 155) {
+      console.warn('Longitude out of Australia bounds:', lng);
+      return null;
+    }
+    
+    return { lat, lng };
+  }
+
+  /**
+   * URL Helper Functions
+   */
+  const parseSearchParams = (): {
+    query: string | null;
+    coords: { lat: number; lng: number } | null;
+  } => {
+    const params = new URLSearchParams(window.location.search);
+    
+    const query = validateAndSanitizeQuery(params.get('q'));
+    const coords = validateCoords(params.get('lat'), params.get('lng'));
+    
+    return { query, coords };
+  };
+
+  const updateURLWithQuery = (query: string, replace = false) => {
+    const url = new URL(window.location.href);
+    url.search = ''; // Clear all params
+    url.searchParams.set('q', query);
+    
+    if (replace) {
+      window.history.replaceState({}, '', url.toString());
+    } else {
+      window.history.pushState({}, '', url.toString());
+    }
+  };
+
+  const updateURLWithCoords = (lat: number, lng: number, replace = false) => {
+    const url = new URL(window.location.href);
+    url.search = ''; // Clear all params
+    url.searchParams.set('lat', lat.toFixed(6)); // 6 decimal places (~0.1m precision)
+    url.searchParams.set('lng', lng.toFixed(6));
+    
+    if (replace) {
+      window.history.replaceState({}, '', url.toString());
+    } else {
+      window.history.pushState({}, '', url.toString());
+    }
+  };
+
+  const updateURLWithBoth = (query: string, lat: number, lng: number) => {
+    const url = new URL(window.location.href);
+    url.search = ''; // Clear all params
+    url.searchParams.set('q', query);
+    url.searchParams.set('lat', lat.toFixed(6));
+    url.searchParams.set('lng', lng.toFixed(6));
+    
+    // Always use replaceState for enrichment (don't create new history entry)
+    window.history.replaceState({}, '', url.toString());
+  };
+
+  /**
+   * Cancel any in-flight search request
+   */
+  const cancelPendingSearch = () => {
+    if (searchAbortController.current) {
+      searchAbortController.current.abort();
+      searchAbortController.current = null;
+    }
+  };
+
   /**
    * Trigger a view transition if supported, otherwise just run the callback.
    * Uses flushSync to ensure React updates the DOM synchronously within the
@@ -126,34 +253,129 @@ function App() {
     handleUseMyLocation();
   };
 
-  // Check for shared address from PWA share target
+  // Initial URL detection (page load, share target, direct links)
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const sharedText = params.get('text');
-
-    if (sharedText) {
-      const cleanedAddress = sharedText
-        .replace(/https?:\/\/[^\s]+/g, '')
-        .trim();
-      
-      // Show alert for mobile testing
-      alert(`🔗 Share Target Activated!\n\nRaw: ${sharedText}\n\nCleaned: ${cleanedAddress}\n\nContains URL: ${/https?:\/\//.test(sharedText)}`);
-      
-      // Also log for desktop debugging
-      console.group('🔗 Share Target Activated');
-      console.log('Raw shared text:', sharedText);
-      console.log('Contains URL:', /https?:\/\//.test(sharedText));
-      console.log('Cleaned address (preview):', cleanedAddress);
+    // Parse URL parameters (handles all cases including share target)
+    const { query, coords } = parseSearchParams();
+    
+    if (coords && query) {
+      // Case 1: Both present - optimal path
+      console.group('🔗 URL Case 1: Query + Coords');
+      console.log('Query:', query);
+      console.log('Coords:', coords);
       console.groupEnd();
-
-      // Auto-search shared address (dismiss landing overlay)
+      
+      // Populate search input
+      setSearchInput(query);
+      
+      // Dismiss landing, show results immediately
       withViewTransition(() => {
         setShowLanding(false);
-        setHasSearched(true); // Show drawer immediately with loading state
+        setHasSearched(true);
       });
-      handleSearch(cleanedAddress);
+      
+      // Use coords directly (no geocoding needed)
+      setUserLocation(coords);
+      setMapCenter([coords.lat, coords.lng]);
+      setMapZoom(14);
+      setMapBounds(null);
+      
+      const state = determineStateFromCoordinates(coords.lat, coords.lng);
+      handleSearchWithCoordinates(coords.lat, coords.lng, state, query);
+      
+    } else if (coords && !query) {
+      // Case 2: Coords only - from "Use My Location"
+      console.group('🔗 URL Case 2: Coords Only');
+      console.log('Coords:', coords);
+      console.groupEnd();
+      
+      // Leave search input blank
+      setSearchInput('');
+      
+      // Dismiss landing
+      withViewTransition(() => {
+        setShowLanding(false);
+        setHasSearched(true);
+      });
+      
+      // Use coords directly
+      setUserLocation(coords);
+      setMapCenter([coords.lat, coords.lng]);
+      setMapZoom(14);
+      setMapBounds(null);
+      
+      const state = determineStateFromCoordinates(coords.lat, coords.lng);
+      handleSearchWithCoordinates(coords.lat, coords.lng, state, 'Current Location');
+      
+    } else if (query && !coords) {
+      // Case 3: Query only - needs geocoding
+      console.group('🔗 URL Case 3: Query Only');
+      console.log('Query:', query);
+      console.groupEnd();
+      
+      // Populate search input
+      setSearchInput(query);
+      
+      // Dismiss landing
+      withViewTransition(() => {
+        setShowLanding(false);
+        setHasSearched(true);
+      });
+      
+      // Trigger search (will geocode and enrich URL with coords)
+      handleSearch(query);
     }
-  }, []);
+    // else: No params, show landing overlay (default state)
+  }, []); // Only run on mount
+
+  // Handle browser back/forward navigation
+  useEffect(() => {
+    const handlePopState = () => {
+      // Cancel any pending search
+      cancelPendingSearch();
+      
+      const { query, coords } = parseSearchParams();
+      
+      if (!query && !coords) {
+        // No params - return to landing
+        setSearchInput('');
+        setSearchResults(null);
+        withViewTransition(() => {
+          setShowLanding(true);
+          setHasSearched(false);
+        });
+        return;
+      }
+      
+      // Handle the three cases (same logic as initial mount)
+      if (coords && query) {
+        // Case 1: Both present
+        setSearchInput(query);
+        setUserLocation(coords);
+        setMapCenter([coords.lat, coords.lng]);
+        setMapZoom(14);
+        const state = determineStateFromCoordinates(coords.lat, coords.lng);
+        handleSearchWithCoordinates(coords.lat, coords.lng, state, query);
+        
+      } else if (coords && !query) {
+        // Case 2: Coords only
+        setSearchInput('');
+        setUserLocation(coords);
+        setMapCenter([coords.lat, coords.lng]);
+        setMapZoom(14);
+        const state = determineStateFromCoordinates(coords.lat, coords.lng);
+        handleSearchWithCoordinates(coords.lat, coords.lng, state, 'Current Location');
+        
+      } else if (query && !coords) {
+        // Case 3: Query only
+        setSearchInput(query);
+        handleSearch(query);
+      }
+    };
+    
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []); // Empty deps - handler uses current state via closures
 
   /**
    * Re-filter schools when sectors or school types change
@@ -391,13 +613,29 @@ function App() {
       return;
     }
 
+    // Cancel any previous search
+    cancelPendingSearch();
+    
+    // Create new abort controller for this search
+    searchAbortController.current = new AbortController();
+    const signal = searchAbortController.current.signal;
+
+    // Update URL with query only (coords will be added after geocoding)
+    updateURLWithQuery(address.trim(), false); // pushState (new history entry)
+    
+    // Update input state
+    setSearchInput(address.trim());
+
     setLoading(true);
     setError(null);
 
     try {
-      // Step 1: Geocode the address
+      // Step 1: Geocode the address with abort signal
       console.log('Step 1: Geocoding address:', address);
-      const geocodeResult = await geocodeAddress(address);
+      const geocodeResult = await geocodeAddress(address, { signal });
+
+      // Check if aborted
+      if (signal.aborted) return;
 
       if (geocodeResult.error) {
         throw new Error(geocodeResult.error);
@@ -405,6 +643,9 @@ function App() {
 
       const { lat, lng, state, displayName } = geocodeResult;
       console.log('Geocoded:', { lat, lng, state });
+
+      // Enrich URL with coordinates (replaceState - same history entry)
+      updateURLWithBoth(address.trim(), lat, lng);
 
       // Immediately show user location on map
       setUserLocation({ lat, lng });
@@ -416,10 +657,18 @@ function App() {
       await handleSearchWithCoordinates(lat, lng, state, displayName);
 
     } catch (err) {
+      // Ignore abort errors (user cancelled)
+      if (err instanceof Error && err.name === 'AbortError') {
+        console.log('Search cancelled');
+        return;
+      }
+      
       const errorMsg = err instanceof Error ? err.message : 'Search failed';
       console.error('Search error:', err);
       setError(errorMsg);
       setLoading(false);
+    } finally {
+      searchAbortController.current = null;
     }
   };
 
@@ -427,24 +676,37 @@ function App() {
    * Handle "Use my location"
    */
   const handleUseMyLocation = async (): Promise<void> => {
+    // Cancel any pending search
+    cancelPendingSearch();
+    
     setLoading(true);
     setError(null);
     
     try {
       const coords = await getCurrentLocation();
       if (coords) {
+        // Update URL with coords only (clear any query)
+        updateURLWithCoords(coords.latitude, coords.longitude, false); // pushState
+        
+        // Clear search input
+        setSearchInput('');
+        
         // Immediately show user location on map
         setUserLocation({ lat: coords.latitude, lng: coords.longitude });
         setMapCenter([coords.latitude, coords.longitude]);
         setMapZoom(14);
         setMapBounds(null);
 
-        // We already have coordinates, just need to determine the state
-        // Use a simple lat/lng bounds check for Australian states
+        // Determine state from coordinates
         const state = determineStateFromCoordinates(coords.latitude, coords.longitude);
         
-        // Proceed directly with the search logic without geocoding
-        await handleSearchWithCoordinates(coords.latitude, coords.longitude, state, 'Your Location');
+        // Proceed with search logic
+        await handleSearchWithCoordinates(
+          coords.latitude, 
+          coords.longitude, 
+          state, 
+          'Current Location'
+        );
       }
     } catch (err) {
       const errorMsg = err instanceof Error ? err.message : 'Failed to get location';
@@ -657,6 +919,8 @@ function App() {
         {/* Sidebar - Desktop: 40% fixed */}
         <div className="w-2/5 lg:w-1/3 flex-shrink-0 h-full overflow-hidden">
           <Sidebar
+            searchValue={searchInput}
+            onSearchChange={setSearchInput}
             onSearch={handleSearch}
             onUseLocation={handleUseMyLocation}
             searchLoading={loading}
@@ -921,6 +1185,8 @@ function App() {
         {/* Floating search bar - shown after landing dismissed */}
         {!showLanding && (
           <FloatingSearchBar
+            value={searchInput}
+            onChange={setSearchInput}
             onSearch={handleSearch}
             onUseLocation={handleUseMyLocation}
             onOpenSettings={() => setShowSettingsMobile(true)}
@@ -931,6 +1197,8 @@ function App() {
         {/* Landing overlay - shown on initial load */}
         {showLanding && (
           <LandingOverlay
+            value={searchInput}
+            onChange={setSearchInput}
             onSearch={handleLandingSearch}
             onUseLocation={handleLandingUseLocation}
             loading={loading}

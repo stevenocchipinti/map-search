@@ -1,19 +1,22 @@
-import { useState, useEffect, useRef } from "react"
+import { useEffect, useRef } from "react"
 import { Search, MapPin, Loader2 } from "lucide-react"
 import { Logo } from "../UI/Logo"
 
 interface LandingOverlayProps {
+  value: string
+  onChange: (value: string) => void
   onSearch: (address: string) => void
   onUseLocation: () => void
   loading?: boolean
 }
 
 export function LandingOverlay({
+  value,
+  onChange,
   onSearch,
   onUseLocation,
   loading = false,
 }: LandingOverlayProps) {
-  const [inputValue, setInputValue] = useState("")
   const inputRef = useRef<HTMLInputElement>(null)
 
   // Focus input on mount
@@ -28,8 +31,8 @@ export function LandingOverlay({
   const handleSubmit = (e?: React.FormEvent) => {
     e?.preventDefault()
 
-    if (inputValue.trim()) {
-      onSearch(inputValue)
+    if (value.trim()) {
+      onSearch(value)
     } else {
       onUseLocation()
     }
@@ -70,8 +73,8 @@ export function LandingOverlay({
             id="landing-address-search"
             name="address"
             autoComplete="street-address"
-            value={inputValue}
-            onChange={e => setInputValue(e.target.value)}
+            value={value}
+            onChange={e => onChange(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Search address..."
             className="flex-1 px-4 py-2 text-sm focus:outline-none bg-transparent"
@@ -83,11 +86,11 @@ export function LandingOverlay({
             onClick={() => handleSubmit()}
             disabled={loading}
             className="flex-shrink-0 w-10 h-10 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 active:bg-gray-300 transition-colors duration-200 flex items-center justify-center disabled:opacity-50"
-            aria-label={inputValue.trim() ? "Search" : "Use current location"}
+            aria-label={value.trim() ? "Search" : "Use current location"}
           >
             {loading ? (
               <Loader2 className="w-5 h-5 animate-spin" />
-            ) : inputValue.trim() ? (
+            ) : value.trim() ? (
               <Search className="w-5 h-5" />
             ) : (
               <MapPin className="w-5 h-5" />
