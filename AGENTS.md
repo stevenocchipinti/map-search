@@ -1,8 +1,8 @@
-# AGENTS.md - Map Search Codebase Guide for AI Assistants
+# AGENTS.md - Local Search Codebase Guide for AI Assistants
 
 ## Project Overview
 
-**Map Search** is a Progressive Web App (PWA) that helps users find the nearest schools, train stations, and supermarkets to any address in Australia. It features interactive maps with walking routes, offline support, and state-based data loading for optimal performance.
+**Local Search** is a Progressive Web App (PWA) that helps users find the nearest schools, train stations, and supermarkets to any address in Australia. It features interactive maps with walking routes, offline support, and state-based data loading for optimal performance.
 
 **Tech Stack:**
 
@@ -27,7 +27,7 @@
 ## Project Structure
 
 ```
-map-search/
+local-search/
 ├── api/                      # Vercel serverless functions
 │   ├── geocode.ts           # Address → coordinates + state
 │   ├── supermarkets.ts      # Overpass API wrapper

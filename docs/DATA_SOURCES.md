@@ -1,6 +1,6 @@
 # Data Sources
 
-This document describes the data sources used in the Map Search app and how to update them.
+This document describes the data sources used in the Local Search app and how to update them.
 
 ## Overview
 

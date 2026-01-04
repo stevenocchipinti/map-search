@@ -1,4 +1,4 @@
-# Map Search
+# Local Search
 
 A mobile-first Progressive Web App for finding the nearest schools, train stations, and supermarkets to any address in Australia.
 

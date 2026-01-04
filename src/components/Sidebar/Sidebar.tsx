@@ -102,7 +102,7 @@ export function Sidebar({
             </svg>
           </div>
           <h1 className="text-xl font-semibold text-gray-900 tracking-tight">
-            Map Search
+            Local Search
           </h1>
         </div>
         <button

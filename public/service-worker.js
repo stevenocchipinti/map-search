@@ -1,5 +1,5 @@
 /**
- * Service Worker for Map Search PWA
+ * Service Worker for Local Search PWA
  *
  * Cache Strategy:
  * - App Shell: Cache-first (HTML, CSS, JS, icons)

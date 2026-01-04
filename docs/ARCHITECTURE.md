@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This document describes the technical architecture and design decisions for the Map Search application.
+This document describes the technical architecture and design decisions for the Local Search application.
 
 ## High-Level Architecture
 

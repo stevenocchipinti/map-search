@@ -8,7 +8,7 @@ This document provides a complete, step-by-step implementation plan for adding a
 
 ## Project Context
 
-**Project**: Map Search - A PWA that finds nearest schools, train stations, and supermarkets
+**Project**: Local Search - A PWA that finds nearest schools, train stations, and supermarkets
 **Tech Stack**: React 19 + TypeScript, Vite, Tailwind CSS, Leaflet maps, Vercel serverless
 **Current State**: Desktop has sidebar, mobile has list/map toggle tabs
 **Goal**: Replace mobile toggle with persistent bottom drawer using vaul (shadcn/ui Drawer)

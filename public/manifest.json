@@ -1,6 +1,6 @@
 {
-  "name": "Map Search",
-  "short_name": "MapSearch",
+  "name": "Local Search",
+  "short_name": "LocalSearch",
   "description": "Find nearest schools, train stations, and supermarkets",
   "start_url": "/",
   "display": "standalone",
