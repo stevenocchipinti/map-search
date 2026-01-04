@@ -1,10 +1,12 @@
-import { Settings } from 'lucide-react';
+import { Settings } from "lucide-react"
 
 interface FloatingSettingsButtonProps {
-  onClick: () => void;
+  onClick: () => void
 }
 
-export function FloatingSettingsButton({ onClick }: FloatingSettingsButtonProps) {
+export function FloatingSettingsButton({
+  onClick,
+}: FloatingSettingsButtonProps) {
   return (
     <button
       onClick={onClick}
@@ -13,5 +15,5 @@ export function FloatingSettingsButton({ onClick }: FloatingSettingsButtonProps)
     >
       <Settings className="w-6 h-6" />
     </button>
-  );
+  )
 }

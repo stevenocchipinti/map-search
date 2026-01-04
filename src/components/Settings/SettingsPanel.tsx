@@ -1,73 +1,79 @@
-import { useState, useEffect } from 'react';
-import { Button } from '../UI/Button';
-import { Switch } from '../UI/Switch';
-import { useServiceWorker } from '../../hooks/useServiceWorker';
-import { useInstallPrompt } from '../../hooks/useInstallPrompt';
-import type { SchoolSector, SchoolType } from '../../types';
+import { useState, useEffect } from "react"
+import { Button } from "../UI/Button"
+import { Switch } from "../UI/Switch"
+import { useServiceWorker } from "../../hooks/useServiceWorker"
+import { useInstallPrompt } from "../../hooks/useInstallPrompt"
+import type { SchoolSector, SchoolType } from "../../types"
 
 interface SettingsPanelProps {
-  sectors?: Set<SchoolSector>;
-  onToggleSector?: (sector: SchoolSector) => void;
-  schoolTypes?: Set<SchoolType>;
-  onToggleSchoolType?: (type: SchoolType) => void;
+  sectors?: Set<SchoolSector>
+  onToggleSector?: (sector: SchoolSector) => void
+  schoolTypes?: Set<SchoolType>
+  onToggleSchoolType?: (type: SchoolType) => void
 }
 
-const ALL_SECTORS: SchoolSector[] = ['Government', 'Catholic', 'Independent'];
-const ALL_TYPES: SchoolType[] = ['Primary', 'Secondary', 'Combined'];
+const ALL_SECTORS: SchoolSector[] = ["Government", "Catholic", "Independent"]
+const ALL_TYPES: SchoolType[] = ["Primary", "Secondary", "Combined"]
 
-export function SettingsPanel({ sectors, onToggleSector, schoolTypes, onToggleSchoolType }: SettingsPanelProps) {
-  const [cacheSize, setCacheSize] = useState<number>(0);
-  const [cachedStates, setCachedStates] = useState<string[]>([]);
-  const [clearing, setClearing] = useState(false);
-  const { getCachedStates, clearCache: clearServiceWorkerCache } = useServiceWorker();
-  const { installable, installed, promptInstall } = useInstallPrompt();
+export function SettingsPanel({
+  sectors,
+  onToggleSector,
+  schoolTypes,
+  onToggleSchoolType,
+}: SettingsPanelProps) {
+  const [cacheSize, setCacheSize] = useState<number>(0)
+  const [cachedStates, setCachedStates] = useState<string[]>([])
+  const [clearing, setClearing] = useState(false)
+  const { getCachedStates, clearCache: clearServiceWorkerCache } =
+    useServiceWorker()
+  const { installable, installed, promptInstall } = useInstallPrompt()
 
   useEffect(() => {
-    updateCacheInfo();
-  }, []);
+    updateCacheInfo()
+  }, [])
 
   const updateCacheInfo = async () => {
     // Get cache size
-    if ('storage' in navigator && 'estimate' in navigator.storage) {
+    if ("storage" in navigator && "estimate" in navigator.storage) {
       try {
-        const estimate = await navigator.storage.estimate();
-        const used = estimate.usage || 0;
-        setCacheSize(Math.round(used / 1024 / 1024 * 10) / 10); // MB with 1 decimal
+        const estimate = await navigator.storage.estimate()
+        const used = estimate.usage || 0
+        setCacheSize(Math.round((used / 1024 / 1024) * 10) / 10) // MB with 1 decimal
       } catch (error) {
-        console.error('Failed to estimate storage:', error);
+        console.error("Failed to estimate storage:", error)
       }
     }
-    
+
     // Get cached states
     try {
-      const states = await getCachedStates();
-      setCachedStates(states);
+      const states = await getCachedStates()
+      setCachedStates(states)
     } catch (error) {
-      console.error('Failed to get cached states:', error);
+      console.error("Failed to get cached states:", error)
     }
-  };
+  }
 
   const handleClearCache = async () => {
-    setClearing(true);
+    setClearing(true)
     try {
       // Use the service worker hook to clear cache
-      await clearServiceWorkerCache();
-      
+      await clearServiceWorkerCache()
+
       // Clear localStorage
-      localStorage.clear();
-      
-      await updateCacheInfo();
-      
+      localStorage.clear()
+
+      await updateCacheInfo()
+
       // Show success message
-      alert('Cache cleared successfully! The page will reload.');
-      window.location.reload();
+      alert("Cache cleared successfully! The page will reload.")
+      window.location.reload()
     } catch (error) {
-      console.error('Failed to clear cache:', error);
-      alert('Failed to clear cache. Please try again.');
+      console.error("Failed to clear cache:", error)
+      alert("Failed to clear cache. Please try again.")
     } finally {
-      setClearing(false);
+      setClearing(false)
     }
-  };
+  }
 
   return (
     <div className="flex-1 overflow-y-auto bg-gray-50">
@@ -75,13 +81,15 @@ export function SettingsPanel({ sectors, onToggleSector, schoolTypes, onToggleSc
         {/* School Filters Section */}
         {sectors && onToggleSector && schoolTypes && onToggleSchoolType && (
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 mb-3">School Filters</h3>
+            <h3 className="text-sm font-semibold text-gray-900 mb-3">
+              School Filters
+            </h3>
             <div className="space-y-3">
               {/* Sector Card */}
               <div className="bg-white border border-gray-200 rounded-xl shadow-soft p-4">
                 <p className="text-xs font-medium text-gray-500 mb-3">Sector</p>
                 <div className="space-y-2">
-                  {ALL_SECTORS.map((sector) => (
+                  {ALL_SECTORS.map(sector => (
                     <label
                       key={sector}
                       htmlFor={`sector-${sector.toLowerCase()}`}
@@ -104,7 +112,7 @@ export function SettingsPanel({ sectors, onToggleSector, schoolTypes, onToggleSc
               <div className="bg-white border border-gray-200 rounded-xl shadow-soft p-4">
                 <p className="text-xs font-medium text-gray-500 mb-3">Level</p>
                 <div className="space-y-2">
-                  {ALL_TYPES.map((type) => (
+                  {ALL_TYPES.map(type => (
                     <label
                       key={type}
                       htmlFor={`type-${type.toLowerCase()}`}
@@ -125,7 +133,7 @@ export function SettingsPanel({ sectors, onToggleSector, schoolTypes, onToggleSc
             </div>
           </div>
         )}
-        
+
         {/* App Section - only show if there's content to display */}
         {installable && !installed && (
           <div>
@@ -135,14 +143,27 @@ export function SettingsPanel({ sectors, onToggleSector, schoolTypes, onToggleSc
               <div className="bg-white border border-gray-200 rounded-xl shadow-soft p-4">
                 <div className="flex items-start gap-3 mb-3">
                   <div className="flex-shrink-0 w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    <svg
+                      className="w-5 h-5 text-emerald-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                      />
                     </svg>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-semibold text-gray-900">Install App</p>
+                    <p className="text-sm font-semibold text-gray-900">
+                      Install App
+                    </p>
                     <p className="mt-1 text-xs text-gray-600 leading-relaxed">
-                      Install this app for faster access and offline functionality
+                      Install this app for faster access and offline
+                      functionality
                     </p>
                   </div>
                 </div>
@@ -158,7 +179,7 @@ export function SettingsPanel({ sectors, onToggleSector, schoolTypes, onToggleSc
             </div>
           </div>
         )}
-        
+
         {/* Storage Section */}
         <div>
           <h3 className="text-sm font-semibold text-gray-900 mb-3">Storage</h3>
@@ -167,17 +188,22 @@ export function SettingsPanel({ sectors, onToggleSector, schoolTypes, onToggleSc
               <div>
                 <p className="text-sm font-medium text-gray-700">Used</p>
               </div>
-              <span className="text-2xl font-bold text-blue-600">{cacheSize} <span className="text-sm font-medium text-gray-600">MB</span></span>
+              <span className="text-2xl font-bold text-blue-600">
+                {cacheSize}{" "}
+                <span className="text-sm font-medium text-gray-600">MB</span>
+              </span>
             </div>
-            
+
             {/* Cached States */}
             {cachedStates.length > 0 && (
               <div className="pt-4 border-t border-gray-100">
-                <p className="text-xs font-medium text-gray-500 mb-2">Cached States</p>
+                <p className="text-xs font-medium text-gray-500 mb-2">
+                  Cached States
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {cachedStates.map(state => (
-                    <span 
-                      key={state} 
+                    <span
+                      key={state}
                       className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200"
                     >
                       {state}
@@ -186,10 +212,13 @@ export function SettingsPanel({ sectors, onToggleSector, schoolTypes, onToggleSc
                 </div>
               </div>
             )}
-            
+
             {cachedStates.length === 0 && (
               <div className="pt-4 border-t border-gray-100">
-                <p className="text-xs text-gray-500">No state data cached yet. Search for an address to cache data for offline use.</p>
+                <p className="text-xs text-gray-500">
+                  No state data cached yet. Search for an address to cache data
+                  for offline use.
+                </p>
               </div>
             )}
 
@@ -209,5 +238,5 @@ export function SettingsPanel({ sectors, onToggleSector, schoolTypes, onToggleSc
         </div>
       </div>
     </div>
-  );
+  )
 }

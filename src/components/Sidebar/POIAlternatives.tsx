@@ -1,26 +1,30 @@
-import type { POI } from '../../types';
-import { formatDistance } from '../../utils/format';
+import type { POI } from "../../types"
+import { formatDistance } from "../../utils/format"
 
 interface POIAlternativesProps {
-  items: POI[];
-  selectedIndex: number;
-  onSelect: (index: number) => void;
+  items: POI[]
+  selectedIndex: number
+  onSelect: (index: number) => void
 }
 
-export function POIAlternatives({ items, selectedIndex, onSelect }: POIAlternativesProps) {
-  const alternatives = items.filter((_, index) => index !== selectedIndex);
+export function POIAlternatives({
+  items,
+  selectedIndex,
+  onSelect,
+}: POIAlternativesProps) {
+  const alternatives = items.filter((_, index) => index !== selectedIndex)
 
   if (alternatives.length === 0) {
-    return null;
+    return null
   }
 
   return (
     <div className="bg-white">
       <div className="overflow-y-auto">
-        {alternatives.map((item) => {
+        {alternatives.map(item => {
           // Find original index
-          const originalIndex = items.findIndex((i) => i === item);
-          
+          const originalIndex = items.findIndex(i => i === item)
+
           return (
             <button
               key={originalIndex}
@@ -42,15 +46,25 @@ export function POIAlternatives({ items, selectedIndex, onSelect }: POIAlternati
                   <span className="flex-shrink-0 text-xs text-gray-600 font-medium bg-gray-100 px-2 py-1 rounded-lg">
                     {formatDistance(item.distance)}
                   </span>
-                  <svg className="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <svg
+                    className="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </div>
               </div>
             </button>
-          );
+          )
         })}
       </div>
     </div>
-  );
+  )
 }

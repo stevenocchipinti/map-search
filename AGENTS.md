@@ -5,6 +5,7 @@
 **Map Search** is a Progressive Web App (PWA) that helps users find the nearest schools, train stations, and supermarkets to any address in Australia. It features interactive maps with walking routes, offline support, and state-based data loading for optimal performance.
 
 **Tech Stack:**
+
 - **Frontend**: React 19 + TypeScript, Vite build tool
 - **Compiler**: React Compiler (experimental) - handles memoization automatically
 - **Styling**: Tailwind CSS with custom configuration
@@ -14,6 +15,7 @@
 - **PWA**: Service Worker with smart caching strategies
 
 **Key Characteristics:**
+
 - Mobile-first responsive design
 - Progressive enhancement (estimates → accurate times)
 - Client-side data processing with state-based loading
@@ -110,6 +112,7 @@ map-search/
 ### 1. State Management (No Redux/Zustand)
 
 **Pattern**: Custom hooks + React state
+
 - Each concern has its own hook (data loading, routes, preferences, etc.)
 - `App.tsx` uses React state for search results and selections
 - React Compiler automatically optimizes (no manual `useMemo`/`useCallback` needed)
@@ -119,12 +122,14 @@ map-search/
 ### 2. Data Loading Strategy
 
 **Client-side, state-based loading:**
+
 1. User searches address → geocode to get state (NSW, VIC, etc.)
 2. Load only that state's schools + stations (~100-300ms)
 3. Fetch supermarkets from Overpass API (~1-3s)
 4. Filter by Haversine distance client-side (~10ms for 10k records)
 
 **Benefits:**
+
 - Only loads data for searched area (~0.5-1.5MB vs ~5.5MB for all Australia)
 - Fast filtering (client-side Haversine)
 - Enables offline functionality
@@ -135,6 +140,7 @@ map-search/
 **Pattern**: Show estimates immediately, fetch actuals in background
 
 **Search Flow:**
+
 ```
 1. Display results instantly (0-100ms)
    - Haversine distances
@@ -154,6 +160,7 @@ map-search/
 ```
 
 **Walking Time Formula:**
+
 ```javascript
 estimatedMinutes = (distanceKm / 5) * 60 * 1.4
 // 5 km/h walking speed, 40% adjustment for real-world factors
@@ -162,35 +169,41 @@ estimatedMinutes = (distanceKm / 5) * 60 * 1.4
 ### 4. API Rate Limiting
 
 **Challenge**: Respect third-party API limits
+
 - Nominatim: 1 req/sec
 - Overpass: 1 req/sec
 - OpenRouteService: 40 req/min (free tier)
 
 **Solution**: Sequential fetching with 1-second delays
+
 ```typescript
 for (const route of routes) {
-  await fetchRoute(route);
-  await delay(1000); // Respect rate limits
+  await fetchRoute(route)
+  await delay(1000) // Respect rate limits
 }
 ```
 
 ### 5. Caching Strategy (Service Worker)
 
 **App Shell** (Cache-first):
+
 - HTML, CSS, JS, icons, manifest
 - Always serve from cache, update in background
 
 **Data Files** (Cache-first):
+
 - `schools.json`, `stations.json` by state
 - User manually triggers updates (settings)
 
 **API Responses** (Network-first with cache fallback):
+
 - Geocode: 30-day TTL
 - Supermarkets: 7-day TTL
 - Walking routes: 30-day TTL
 - Falls back to stale cache if offline
 
 **Map Tiles** (Cache-first with LRU):
+
 - Cache first 100 tiles
 - Evict oldest when limit reached
 
@@ -203,6 +216,7 @@ for (const route of routes) {
 **Location**: `src/components/{Category}/{ComponentName}.tsx`
 
 **Template:**
+
 ```typescript
 import { ComponentProps } from './types'; // or from src/types
 
@@ -212,7 +226,7 @@ interface MyComponentProps {
 
 export function MyComponent({ prop1, prop2 }: MyComponentProps) {
   // Component logic
-  
+
   return (
     <div className="...">
       {/* JSX */}
@@ -222,6 +236,7 @@ export function MyComponent({ prop1, prop2 }: MyComponentProps) {
 ```
 
 **Styling**: Use Tailwind utility classes
+
 - Mobile-first: Base styles for mobile
 - Desktop: `md:` prefix for >= 768px
 - Avoid custom CSS unless necessary
@@ -229,6 +244,7 @@ export function MyComponent({ prop1, prop2 }: MyComponentProps) {
 ### Adding a New API Endpoint
 
 **Steps:**
+
 1. Create `api/{endpoint-name}.ts`
 2. Export default async function handler
 3. Use TypeScript for request/response types
@@ -236,9 +252,10 @@ export function MyComponent({ prop1, prop2 }: MyComponentProps) {
 5. Test with `vercel dev`
 
 **Template:**
+
 ```typescript
 // api/my-endpoint.ts
-import type { VercelRequest, VercelResponse } from '@vercel/node';
+import type { VercelRequest, VercelResponse } from "@vercel/node"
 
 interface RequestBody {
   // Define request shape
@@ -248,50 +265,48 @@ interface ResponseData {
   // Define response shape
 }
 
-export default async function handler(
-  req: VercelRequest,
-  res: VercelResponse
-) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+export default async function handler(req: VercelRequest, res: VercelResponse) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" })
   }
 
   try {
-    const { param } = req.body as RequestBody;
-    
+    const { param } = req.body as RequestBody
+
     // Validation
     if (!param) {
-      return res.status(400).json({ error: 'Missing parameter' });
+      return res.status(400).json({ error: "Missing parameter" })
     }
 
     // Logic here
-    const result = await doSomething(param);
-    
-    return res.status(200).json({ result } as ResponseData);
+    const result = await doSomething(param)
+
+    return res.status(200).json({ result } as ResponseData)
   } catch (error) {
-    console.error('Error:', error);
-    return res.status(500).json({ 
-      error: error instanceof Error ? error.message : 'Internal server error' 
-    });
+    console.error("Error:", error)
+    return res.status(500).json({
+      error: error instanceof Error ? error.message : "Internal server error",
+    })
   }
 }
 ```
 
 **Wrapper in api-client.ts:**
+
 ```typescript
 export async function myApiCall(param: string): Promise<ResponseData> {
-  const baseUrl = import.meta.env.DEV ? 'http://localhost:3001' : '';
+  const baseUrl = import.meta.env.DEV ? "http://localhost:3001" : ""
   const response = await fetch(`${baseUrl}/api/my-endpoint`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ param }),
-  });
-  
+  })
+
   if (!response.ok) {
-    throw new Error(`API error: ${response.status}`);
+    throw new Error(`API error: ${response.status}`)
   }
-  
-  return response.json();
+
+  return response.json()
 }
 ```
 
@@ -300,50 +315,53 @@ export async function myApiCall(param: string): Promise<ResponseData> {
 **Location**: `src/hooks/use{HookName}.ts`
 
 **Template:**
+
 ```typescript
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react"
 
 export function useMyHook(param: string) {
-  const [state, setState] = useState<Type>(initialValue);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [state, setState] = useState<Type>(initialValue)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     // Effect logic
-  }, [param]);
+  }, [param])
 
   const doSomething = async () => {
-    setLoading(true);
-    setError(null);
+    setLoading(true)
+    setError(null)
     try {
       // Logic
-      setState(newValue);
+      setState(newValue)
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Unknown error');
+      setError(err instanceof Error ? err.message : "Unknown error")
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  };
+  }
 
-  return { state, loading, error, doSomething };
+  return { state, loading, error, doSomething }
 }
 ```
 
 **State Persistence (localStorage):**
+
 ```typescript
 const [state, setState] = useState(() => {
-  const stored = localStorage.getItem('key');
-  return stored ? JSON.parse(stored) : defaultValue;
-});
+  const stored = localStorage.getItem("key")
+  return stored ? JSON.parse(stored) : defaultValue
+})
 
 useEffect(() => {
-  localStorage.setItem('key', JSON.stringify(state));
-}, [state]);
+  localStorage.setItem("key", JSON.stringify(state))
+}, [state])
 ```
 
 ### Updating Data Files
 
 **Process:**
+
 1. Place source files in `data-sources/`:
    - `schools.json` (or `School Location 2024.xlsx`)
    - `stations.geojson`
@@ -359,26 +377,28 @@ useEffect(() => {
 **Data Schema:**
 
 Schools:
+
 ```typescript
 {
-  name: string;
-  suburb: string;
-  state: AustralianState;
-  postcode: string;
-  sector: 'Government' | 'Catholic' | 'Independent';
-  type: 'Primary' | 'Secondary' | 'Combined';
-  latitude: number;
-  longitude: number;
+  name: string
+  suburb: string
+  state: AustralianState
+  postcode: string
+  sector: "Government" | "Catholic" | "Independent"
+  type: "Primary" | "Secondary" | "Combined"
+  latitude: number
+  longitude: number
 }
 ```
 
 Stations:
+
 ```typescript
 {
-  name: string;
-  state: AustralianState;
-  latitude: number;
-  longitude: number;
+  name: string
+  state: AustralianState
+  latitude: number
+  longitude: number
 }
 ```
 
@@ -387,6 +407,7 @@ Stations:
 **Approach**: Tailwind utility classes first, custom CSS only when necessary
 
 **Tailwind Config** (`tailwind.config.ts`):
+
 ```typescript
 theme: {
   extend: {
@@ -403,6 +424,7 @@ theme: {
 ```
 
 **Color System:**
+
 - Primary: `blue-600`, `blue-700`, `blue-500`
 - Government schools: `blue-600`
 - Catholic schools: `red-600`
@@ -411,6 +433,7 @@ theme: {
 - Supermarkets: `emerald-600`
 
 **Responsive Breakpoints:**
+
 ```css
 /* Mobile (default) */
 .my-class { ... }
@@ -427,23 +450,26 @@ theme: {
 **Production**: Automatically registers after build
 
 **Trigger SW update from app:**
+
 ```typescript
-const { updateAvailable, update } = useServiceWorker();
+const { updateAvailable, update } = useServiceWorker()
 
 if (updateAvailable) {
-  await update(); // Reloads page after update
+  await update() // Reloads page after update
 }
 ```
 
 **Clear cache:**
-```typescript
-const { clearCache, getCacheSize } = useServiceWorker();
 
-const size = await getCacheSize();
-await clearCache();
+```typescript
+const { clearCache, getCacheSize } = useServiceWorker()
+
+const size = await getCacheSize()
+await clearCache()
 ```
 
 **Testing SW locally:**
+
 ```bash
 npm run build
 npm run preview  # Serves production build
@@ -460,14 +486,16 @@ npm run preview  # Serves production build
 **Issue**: Vercel serverless functions require explicit `.js` extensions for ESM imports
 
 **Correct:**
+
 ```typescript
-import { haversineDistance } from './haversine.js';
-import { findNearbySupermarkets } from '../src/lib/overpass.js';
+import { haversineDistance } from "./haversine.js"
+import { findNearbySupermarkets } from "../src/lib/overpass.js"
 ```
 
 **Incorrect:**
+
 ```typescript
-import { haversineDistance } from './haversine';
+import { haversineDistance } from "./haversine"
 ```
 
 ### 2. React Compiler
@@ -476,6 +504,7 @@ import { haversineDistance } from './haversine';
 **What you don't need**: Manual `useMemo`, `useCallback`, `React.memo` in most cases
 
 **When to use manual optimization:**
+
 - Very expensive calculations (rare)
 - When profiling shows specific bottleneck
 - The compiler doesn't catch everything yet
@@ -483,17 +512,26 @@ import { haversineDistance } from './haversine';
 ### 3. Mobile-First Design
 
 **Always design for mobile first, then enhance for desktop:**
+
 ```css
 /* ✅ Correct */
-.sidebar { width: 100%; }
+.sidebar {
+  width: 100%;
+}
 @media (min-width: 768px) {
-  .sidebar { width: 384px; }
+  .sidebar {
+    width: 384px;
+  }
 }
 
 /* ❌ Incorrect */
-.sidebar { width: 384px; }
+.sidebar {
+  width: 384px;
+}
 @media (max-width: 767px) {
-  .sidebar { width: 100%; }
+  .sidebar {
+    width: 100%;
+  }
 }
 ```
 
@@ -503,11 +541,11 @@ import { haversineDistance } from './haversine';
 
 ```typescript
 // ✅ Correct
-const state = geocodeResult.state; // 'NSW'
-await loadState(state); // Only loads NSW data
+const state = geocodeResult.state // 'NSW'
+await loadState(state) // Only loads NSW data
 
 // ❌ Incorrect
-await Promise.all(states.map(loadState)); // Loads 5.5MB
+await Promise.all(states.map(loadState)) // Loads 5.5MB
 ```
 
 ### 5. API Rate Limiting
@@ -517,17 +555,18 @@ await Promise.all(states.map(loadState)); // Loads 5.5MB
 ```typescript
 // ✅ Correct - Sequential with delays
 for (const route of routes) {
-  await fetchRoute(route);
-  await new Promise(resolve => setTimeout(resolve, 1000));
+  await fetchRoute(route)
+  await new Promise(resolve => setTimeout(resolve, 1000))
 }
 
 // ❌ Incorrect - Parallel requests
-await Promise.all(routes.map(fetchRoute)); // Will hit rate limits
+await Promise.all(routes.map(fetchRoute)) // Will hit rate limits
 ```
 
 ### 6. TypeScript in Serverless Functions
 
 **API folder needs its own tsconfig.json:**
+
 ```json
 {
   "extends": "../tsconfig.json",
@@ -541,6 +580,7 @@ await Promise.all(routes.map(fetchRoute)); // Will hit rate limits
 ### 7. Service Worker Scope
 
 **Service worker only works on HTTPS (or localhost)**
+
 - Dev: `http://localhost` works
 - Prod: Requires HTTPS
 - Preview: `vercel dev` or `npm run preview` works
@@ -548,6 +588,7 @@ await Promise.all(routes.map(fetchRoute)); // Will hit rate limits
 ### 8. Haversine Distance
 
 **Use for initial filtering only, not for walking routes:**
+
 - Haversine: Straight-line distance ("as the crow flies")
 - Walking route: Actual path following roads
 - Haversine is ~20-40% shorter than walking distance
@@ -593,6 +634,7 @@ vercel login
 ### Daily Development
 
 **Full-stack development** (recommended):
+
 ```bash
 vercel dev
 # Visit http://localhost:3001
@@ -600,6 +642,7 @@ vercel dev
 ```
 
 **Frontend-only** (faster, no API):
+
 ```bash
 npm run dev
 # Visit http://localhost:5173
@@ -609,12 +652,14 @@ npm run dev
 ### Testing
 
 **Manual testing:**
+
 ```bash
 vercel dev
 # Test in browser
 ```
 
 **Build and preview:**
+
 ```bash
 npm run build
 npm run preview
@@ -623,11 +668,13 @@ npm run preview
 ```
 
 **Type checking:**
+
 ```bash
 npx tsc --noEmit
 ```
 
 **Linting:**
+
 ```bash
 npm run lint
 ```
@@ -635,17 +682,20 @@ npm run lint
 ### Deployment
 
 **Vercel (automatic):**
+
 ```bash
 git push origin main
 # Vercel auto-deploys
 ```
 
 **Manual deploy:**
+
 ```bash
 vercel --prod
 ```
 
 **Environment variables:**
+
 - Set `ORS_API_KEY` in Vercel dashboard
 - Project Settings → Environment Variables
 
@@ -709,50 +759,53 @@ vercel --prod
 **Implementation**: Leaflet DivIcon with inline SVG
 
 **Marker Types:**
+
 1. **User Location** - Red dot with white border
 2. **Selected POI** - Pin with icon and colored background
 3. **Alternative POI** - Hollow dot with colored border
 
 **Color Mapping:**
+
 ```typescript
 function getCategoryColor(category, sector?) {
-  if (category === 'school') {
+  if (category === "school") {
     return {
-      Government: '#2563eb',    // blue-600
-      Catholic: '#dc2626',      // red-600
-      Independent: '#7c3aed',   // violet-600
-    }[sector];
+      Government: "#2563eb", // blue-600
+      Catholic: "#dc2626", // red-600
+      Independent: "#7c3aed", // violet-600
+    }[sector]
   }
-  if (category === 'station') return '#0891b2';   // cyan-600
-  if (category === 'supermarket') return '#059669'; // emerald-600
-  return '#ef4444'; // red-500 for user
+  if (category === "station") return "#0891b2" // cyan-600
+  if (category === "supermarket") return "#059669" // emerald-600
+  return "#ef4444" // red-500 for user
 }
 ```
 
 **Icon Generation:**
+
 ```typescript
 function createMarkerIcon(type, selected, sector?) {
-  if (type === 'user') {
+  if (type === "user") {
     return L.divIcon({
       html: `<div class="marker-user"></div>`,
-      className: 'custom-marker',
+      className: "custom-marker",
       iconSize: [16, 16],
-    });
+    })
   }
-  
+
   if (selected) {
     return L.divIcon({
       html: `<div class="marker-pin">${iconSvg}</div>`,
-      className: 'custom-marker',
+      className: "custom-marker",
       iconSize: [32, 40],
-    });
+    })
   }
-  
+
   return L.divIcon({
     html: `<div class="marker-dot"></div>`,
-    className: 'custom-marker',
+    className: "custom-marker",
     iconSize: [12, 12],
-  });
+  })
 }
 ```
 
@@ -763,30 +816,31 @@ function createMarkerIcon(type, selected, sector?) {
 
 ```typescript
 function decodePolyline(encoded: string): [number, number][] {
-  const points: [number, number][] = [];
-  let index = 0;
-  let lat = 0;
-  let lng = 0;
-  
+  const points: [number, number][] = []
+  let index = 0
+  let lat = 0
+  let lng = 0
+
   while (index < encoded.length) {
     // Decode latitude delta
-    const latDelta = decodeValue(encoded, index);
-    index = latDelta.index;
-    lat += latDelta.value;
-    
+    const latDelta = decodeValue(encoded, index)
+    index = latDelta.index
+    lat += latDelta.value
+
     // Decode longitude delta
-    const lngDelta = decodeValue(encoded, index);
-    index = lngDelta.index;
-    lng += lngDelta.value;
-    
-    points.push([lat / 1e5, lng / 1e5]);
+    const lngDelta = decodeValue(encoded, index)
+    index = lngDelta.index
+    lng += lngDelta.value
+
+    points.push([lat / 1e5, lng / 1e5])
   }
-  
-  return points;
+
+  return points
 }
 ```
 
 **Usage:**
+
 ```typescript
 <Polyline
   positions={decodePolyline(route.encodedPolyline)}
@@ -804,55 +858,63 @@ function decodePolyline(encoded: string): [number, number][] {
 
 ```typescript
 // Australian states
-type AustralianState = 'NSW' | 'VIC' | 'QLD' | 'WA' | 'SA' | 'TAS' | 'ACT' | 'NT';
+type AustralianState =
+  | "NSW"
+  | "VIC"
+  | "QLD"
+  | "WA"
+  | "SA"
+  | "TAS"
+  | "ACT"
+  | "NT"
 
 // School sectors
-type SchoolSector = 'Government' | 'Catholic' | 'Independent';
+type SchoolSector = "Government" | "Catholic" | "Independent"
 
 // POI categories
-type POICategory = 'school' | 'station' | 'supermarket';
+type POICategory = "school" | "station" | "supermarket"
 
 // POI interface
 interface POI {
-  id: string;
-  name: string;
-  category: POICategory;
-  latitude: number;
-  longitude: number;
-  distance: number;           // Haversine km
-  estimatedWalkingTime: number; // Minutes
-  details?: string;
-  sector?: SchoolSector;      // For schools only
+  id: string
+  name: string
+  category: POICategory
+  latitude: number
+  longitude: number
+  distance: number // Haversine km
+  estimatedWalkingTime: number // Minutes
+  details?: string
+  sector?: SchoolSector // For schools only
 }
 
 // Search results
 interface SearchResponse {
   location: {
-    address: string;
-    latitude: number;
-    longitude: number;
-    state: AustralianState;
-  };
-  schools: POI[];
-  stations: POI[];
-  supermarkets: POI[];
+    address: string
+    latitude: number
+    longitude: number
+    state: AustralianState
+  }
+  schools: POI[]
+  stations: POI[]
+  supermarkets: POI[]
 }
 
 // Walking route
 interface WalkingRoute {
-  durationMinutes: number;    // Accurate from API
-  distanceMeters: number;
-  encodedPolyline: string;    // For map rendering
+  durationMinutes: number // Accurate from API
+  distanceMeters: number
+  encodedPolyline: string // For map rendering
 }
 
 // Route request
 interface RouteRequest {
-  fromLat: number;
-  fromLng: number;
-  toLat: number;
-  toLng: number;
-  category: POICategory;
-  itemId: string;
+  fromLat: number
+  fromLng: number
+  toLat: number
+  toLng: number
+  category: POICategory
+  itemId: string
 }
 ```
 
@@ -861,22 +923,26 @@ interface RouteRequest {
 ## Performance Characteristics
 
 ### Bundle Sizes
+
 - HTML: 0.65 kB
 - CSS: 16.38 kB (gzip: 4.05 kB)
 - JS: 364.91 kB (gzip: 111.41 kB)
 - **Total gzipped**: ~115 kB
 
 ### API Response Times
+
 - Geocode: ~200-500ms (Nominatim)
 - Supermarkets: ~1-3 seconds (Overpass)
 - Walking routes: ~500ms each (OpenRouteService)
 
 ### Data Loading
+
 - State data: ~100-300ms per state (first load)
 - Haversine filtering: ~10ms for 10k records
 - Route decoding: <1ms per route
 
 ### Memory Usage
+
 - NSW data: ~5MB in memory (largest state)
 - Route cache: ~1KB per route
 - Total typical session: <10MB
@@ -890,8 +956,9 @@ interface RouteRequest {
 **Cause**: Missing `.js` extension in ESM imports
 
 **Fix**: Add `.js` to all relative imports in `api/` and `src/lib/`:
+
 ```typescript
-import { haversineDistance } from './haversine.js';
+import { haversineDistance } from "./haversine.js"
 ```
 
 ### Service Worker not updating
@@ -899,6 +966,7 @@ import { haversineDistance } from './haversine.js';
 **Cause**: Browser aggressively caches service worker
 
 **Fix:**
+
 1. Hard refresh: `Cmd+Shift+R` (Mac) or `Ctrl+Shift+F5` (Windows)
 2. DevTools → Application → Service Workers → Unregister
 3. Clear site data
@@ -908,13 +976,10 @@ import { haversineDistance } from './haversine.js';
 **Cause**: JIT compiler can't generate dynamic classes
 
 **Fix:** Use explicit class names or add to safelist:
+
 ```javascript
 // tailwind.config.ts
-safelist: [
-  'bg-blue-600',
-  'bg-red-600',
-  'bg-violet-600',
-]
+safelist: ["bg-blue-600", "bg-red-600", "bg-violet-600"]
 ```
 
 ### Map tiles not loading
@@ -922,6 +987,7 @@ safelist: [
 **Cause**: CORS or missing Leaflet CSS
 
 **Fix:**
+
 1. Check `index.css` has: `@import 'leaflet/dist/leaflet.css';`
 2. Verify network tab shows tile requests
 3. Check Carto CDN status
@@ -931,8 +997,9 @@ safelist: [
 **Cause**: OpenRouteService rate limit exceeded
 
 **Fix:** Increase delay between requests:
+
 ```typescript
-await new Promise(resolve => setTimeout(resolve, 2000)); // 2 seconds
+await new Promise(resolve => setTimeout(resolve, 2000)) // 2 seconds
 ```
 
 ### Data files not found (404)
@@ -940,6 +1007,7 @@ await new Promise(resolve => setTimeout(resolve, 2000)); // 2 seconds
 **Cause**: Data not processed or wrong path
 
 **Fix:**
+
 ```bash
 npm run data:all
 # Verify files exist:
@@ -951,18 +1019,21 @@ ls -la public/data/nsw/
 ## Best Practices
 
 ### Component Design
+
 - ✅ Small, focused components with single responsibility
 - ✅ Props for data, callbacks for actions
 - ✅ No business logic in presentational components
 - ✅ Use custom hooks for complex state logic
 
 ### Error Handling
+
 - ✅ Console for developers (`console.error`)
 - ✅ User-friendly UI messages for users
 - ✅ Graceful degradation (fallbacks)
 - ✅ Try-catch in async functions
 
 ### Accessibility
+
 - ✅ Semantic HTML (`<button>`, `<nav>`, etc.)
 - ✅ ARIA labels where needed
 - ✅ Keyboard navigation support
@@ -971,6 +1042,7 @@ ls -la public/data/nsw/
 - ✅ Touch targets >= 44px on mobile
 
 ### Performance
+
 - ✅ Lazy loading (code splitting for map)
 - ✅ Progressive enhancement
 - ✅ Caching strategies
@@ -978,6 +1050,7 @@ ls -la public/data/nsw/
 - ✅ Efficient data structures (Map for caching)
 
 ### Mobile-First
+
 - ✅ Design for mobile first
 - ✅ Touch-friendly UI (48px buttons)
 - ✅ Responsive images
@@ -1018,6 +1091,7 @@ vercel env pull         # Pull env vars
 ## Getting Help
 
 ### Documentation
+
 - `README.md` - Project overview and setup
 - `DATA_SOURCES.md` - Data sources and processing
 - `docs/ARCHITECTURE.md` - Technical architecture details
@@ -1025,6 +1099,7 @@ vercel env pull         # Pull env vars
 - `docs/QUICK_REFERENCE.md` - Commands, types, patterns
 
 ### External Resources
+
 - [React 19 Docs](https://react.dev/)
 - [Vite Docs](https://vitejs.dev/)
 - [Tailwind CSS Docs](https://tailwindcss.com/)
@@ -1033,6 +1108,7 @@ vercel env pull         # Pull env vars
 - [OpenRouteService API](https://openrouteservice.org/dev/#/api-docs)
 
 ### Common Issues
+
 - Module resolution → Check `.js` extensions
 - Service Worker → Hard refresh or unregister
 - Tailwind classes → Use explicit class names
@@ -1046,6 +1122,7 @@ vercel env pull         # Pull env vars
 **Current Version**: 1.0.0
 **Status**: Production-ready
 **All 7 Phases Complete**:
+
 1. ✅ Foundation & core setup
 2. ✅ Backend APIs (geocoding, supermarkets, walking routes)
 3. ✅ Core hooks & data loading

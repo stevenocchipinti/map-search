@@ -54,6 +54,7 @@ Schools and train stations are loaded **client-side** and split by Australian st
 ### Why Client-Side?
 
 **Advantages:**
+
 - ✅ No server processing needed (saves serverless execution time/cost)
 - ✅ Faster responses (no network roundtrip for data)
 - ✅ Better scalability (server only handles API proxying)
@@ -61,6 +62,7 @@ Schools and train stations are loaded **client-side** and split by Australian st
 - ✅ Haversine calculations are fast in JavaScript
 
 **Trade-offs:**
+
 - ⚠️ Initial load size: 0.5-1.5MB per state (vs 5.5MB for all Australia)
 - ⚠️ Parsing time: ~50-100ms per state
 - ✅ Mitigated by state-based splitting and caching
@@ -92,7 +94,7 @@ Schools and train stations are loaded **client-side** and split by Australian st
 ### State File Sizes
 
 | State | Schools | Stations | Total Size |
-|-------|---------|----------|------------|
+| ----- | ------- | -------- | ---------- |
 | NSW   | 3,429   | 436      | ~832KB     |
 | VIC   | 2,842   | 413      | ~699KB     |
 | QLD   | 2,003   | 377      | ~496KB     |
@@ -109,6 +111,7 @@ Schools and train stations are loaded **client-side** and split by Australian st
 The app follows a progressive enhancement strategy for optimal UX:
 
 ### Phase 1: Immediate Display (0-100ms)
+
 ```
 User searches → Show results with:
   • Haversine distance (km)
@@ -118,6 +121,7 @@ User searches → Show results with:
 ```
 
 ### Phase 2: Accurate Times (1-4 seconds)
+
 ```
 Background sequential fetching:
   • Fetch walking route for school (1s delay)
@@ -133,6 +137,7 @@ Background sequential fetching:
 ```
 
 ### Phase 3: On-Demand Alternatives
+
 ```
 User clicks alternative POI:
   • Check cache
@@ -153,40 +158,47 @@ User clicks alternative POI:
 ### Cache Types and Strategies
 
 #### 1. Static Assets (HTML, CSS, JS)
+
 **Strategy**: Stale-While-Revalidate
 
 ```javascript
 // Return cached immediately, update in background
 cache.match(request).then(cached => {
   const fetchPromise = fetch(request).then(response => {
-    cache.put(request, response.clone());
-    return response;
-  });
-  return cached || fetchPromise;
-});
+    cache.put(request, response.clone())
+    return response
+  })
+  return cached || fetchPromise
+})
 ```
 
 **Benefits**:
+
 - ⚡ Instant load (cache-first speed)
 - 🆕 Auto-updates on next visit (network validation)
 - 📶 Offline-ready (cached fallback)
 
 #### 2. Data Files (schools.json, stations.json)
+
 **Strategy**: Cache-First
 
 ```javascript
 // Use cache, fallback to network
 cache.match(request).then(cached => {
-  return cached || fetch(request).then(response => {
-    cache.put(request, response.clone());
-    return response;
-  });
-});
+  return (
+    cached ||
+    fetch(request).then(response => {
+      cache.put(request, response.clone())
+      return response
+    })
+  )
+})
 ```
 
 **Rationale**: Data files rarely change (quarterly updates), cache indefinitely
 
 #### 3. API Responses
+
 **Strategy**: Network-First with Smart Caching
 
 ```javascript
@@ -195,43 +207,46 @@ cache.match(request).then(cached => {
 // - Network fails
 // - Request already in-flight (dedupe)
 
-const cached = await cache.match(request);
-const cachedTime = await getCachedTimestamp(key);
-const ttl = getTTLForEndpoint(request.url);
+const cached = await cache.match(request)
+const cachedTime = await getCachedTimestamp(key)
+const ttl = getTTLForEndpoint(request.url)
 
-if (cached && (Date.now() - cachedTime < ttl)) {
-  return cached; // Fresh cache, no network call
+if (cached && Date.now() - cachedTime < ttl) {
+  return cached // Fresh cache, no network call
 }
 
 // Check if already fetching (deduplication)
 if (pendingRequests.has(key)) {
-  return await pendingRequests.get(key);
+  return await pendingRequests.get(key)
 }
 
 // Fetch from network
 try {
-  const response = await fetch(request);
-  cache.put(request, response.clone());
-  setCachedTimestamp(key, Date.now());
-  return response;
+  const response = await fetch(request)
+  cache.put(request, response.clone())
+  setCachedTimestamp(key, Date.now())
+  return response
 } catch (error) {
   // Network failed, return stale cache if available
-  return cached || Promise.reject(error);
+  return cached || Promise.reject(error)
 }
 ```
 
 **TTL Values**:
+
 - Geocode: 30 days (addresses don't move)
 - Supermarkets: 7 days (stores change occasionally)
 - Walking routes: 30 days (routes rarely change)
 
 **Request Deduplication**:
+
 - If same request is already in-flight, wait for it instead of duplicating
 - Prevents multiple tabs/components from making duplicate API calls
 
 ### Cache Priority (Eviction Order)
 
 When storage is full, evict in this order:
+
 1. Walking routes (oldest first)
 2. Supermarket searches (oldest first)
 3. Geocoding (oldest first)
@@ -243,6 +258,7 @@ When storage is full, evict in this order:
 ### The Problem
 
 OpenRouteService API has strict rate limits:
+
 - Free tier: 40 requests/minute
 - 429 errors if exceeded
 
@@ -252,30 +268,30 @@ OpenRouteService API has strict rate limits:
 
 ```typescript
 async function fetchWalkingRoutesSequentially(routes: RouteRequest[]) {
-  const results = [];
-  
+  const results = []
+
   for (const route of routes) {
     // Check cache first
-    const cacheKey = `${route.fromLat},${route.fromLng}-${route.toLat},${route.toLng}`;
+    const cacheKey = `${route.fromLat},${route.fromLng}-${route.toLat},${route.toLng}`
     if (routeCache.has(cacheKey)) {
-      results.push(routeCache.get(cacheKey));
-      continue;
+      results.push(routeCache.get(cacheKey))
+      continue
     }
-    
+
     // Fetch from API
-    const result = await fetch('/api/walking-routes', {
-      method: 'POST',
-      body: JSON.stringify([route])
-    });
-    
-    results.push(result);
-    routeCache.set(cacheKey, result);
-    
+    const result = await fetch("/api/walking-routes", {
+      method: "POST",
+      body: JSON.stringify([route]),
+    })
+
+    results.push(result)
+    routeCache.set(cacheKey, result)
+
     // Wait 1 second before next request
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 1000))
   }
-  
-  return results;
+
+  return results
 }
 ```
 
@@ -283,40 +299,40 @@ async function fetchWalkingRoutesSequentially(routes: RouteRequest[]) {
 
 ```typescript
 useEffect(() => {
-  if (!searchResults) return;
-  
+  if (!searchResults) return
+
   // Auto-fetch top 3 POIs sequentially
   const toFetch = [
-    { category: 'school', item: searchResults.schools[0] },
-    { category: 'station', item: searchResults.stations[0] },
-    { category: 'supermarket', item: searchResults.supermarkets[0] },
-  ];
-  
-  fetchWalkingRoutesSequentially(toFetch);
-}, [searchResults]);
+    { category: "school", item: searchResults.schools[0] },
+    { category: "station", item: searchResults.stations[0] },
+    { category: "supermarket", item: searchResults.supermarkets[0] },
+  ]
+
+  fetchWalkingRoutesSequentially(toFetch)
+}, [searchResults])
 ```
 
 ### On-Demand Fetch (User Clicks Alternative)
 
 ```typescript
 async function handleSelectAlternative(category: POICategory, index: number) {
-  setSelectedIndices(prev => ({ ...prev, [category]: index }));
-  
-  const poi = searchResults[category][index];
-  const cacheKey = getCacheKey(searchLocation, poi);
-  
+  setSelectedIndices(prev => ({ ...prev, [category]: index }))
+
+  const poi = searchResults[category][index]
+  const cacheKey = getCacheKey(searchLocation, poi)
+
   // Check cache
   if (routeCache.has(cacheKey)) {
-    updateMap(routeCache.get(cacheKey));
-    return;
+    updateMap(routeCache.get(cacheKey))
+    return
   }
-  
+
   // Fetch and cache
-  setLoading(category, true);
-  const route = await fetchWalkingRoute(searchLocation, poi);
-  routeCache.set(cacheKey, route);
-  updateMap(route);
-  setLoading(category, false);
+  setLoading(category, true)
+  const route = await fetchWalkingRoute(searchLocation, poi)
+  routeCache.set(cacheKey, route)
+  updateMap(route)
+  setLoading(category, false)
 }
 ```
 
@@ -327,15 +343,17 @@ The server only handles what **must** be server-side:
 ### API Endpoint Responsibilities
 
 #### `/api/geocode`
+
 - **Why server-side**: Nominatim requires User-Agent header, rate limiting per IP
 - **Input**: Address string
-- **Processing**: 
+- **Processing**:
   - Call Nominatim API with proper headers
   - Extract state from address components
   - Rate limit: 1 req/sec (1000ms delay)
 - **Output**: `{ lat, lng, state, displayName }`
 
 #### `/api/supermarkets`
+
 - **Why server-side**: Overpass API has complex queries, rate limiting
 - **Input**: `{ lat, lng, radius }`
 - **Processing**:
@@ -345,6 +363,7 @@ The server only handles what **must** be server-side:
 - **Output**: `{ supermarkets: POI[] }`
 
 #### `/api/walking-routes`
+
 - **Why server-side**: OpenRouteService requires API key (secret)
 - **Input**: `{ routes: RouteRequest[] }`
 - **Processing**:
@@ -423,12 +442,12 @@ The server only handles what **must** be server-side:
 ### Detection
 
 ```typescript
-const [isOnline, setIsOnline] = useState(navigator.onLine);
+const [isOnline, setIsOnline] = useState(navigator.onLine)
 
 useEffect(() => {
-  window.addEventListener('online', () => setIsOnline(true));
-  window.addEventListener('offline', () => setIsOnline(false));
-}, []);
+  window.addEventListener("online", () => setIsOnline(true))
+  window.addEventListener("offline", () => setIsOnline(false))
+}, [])
 ```
 
 ### Offline UX
@@ -436,6 +455,7 @@ useEffect(() => {
 **When Online**: Normal functionality
 
 **When Offline**:
+
 1. Show banner: "You're offline. Search from recent locations or use current location."
 2. Replace text input with `<select>` dropdown of cached addresses
 3. "Use my location" button still works (geolocation is offline-capable)
@@ -478,29 +498,28 @@ useEffect(() => {
 ```typescript
 // In App.tsx
 useEffect(() => {
-  const params = new URLSearchParams(window.location.search);
-  const sharedText = params.get('text');
-  
+  const params = new URLSearchParams(window.location.search)
+  const sharedText = params.get("text")
+
   if (sharedText) {
-    console.group('🔗 Share Target Activated');
-    console.log('Raw shared text:', sharedText);
-    console.log('Contains URL:', /https?:\/\//.test(sharedText));
-    
-    const cleanedAddress = sharedText
-      .replace(/https?:\/\/[^\s]+/g, '')
-      .trim();
-    console.log('Cleaned address (preview):', cleanedAddress);
-    console.groupEnd();
-    
+    console.group("🔗 Share Target Activated")
+    console.log("Raw shared text:", sharedText)
+    console.log("Contains URL:", /https?:\/\//.test(sharedText))
+
+    const cleanedAddress = sharedText.replace(/https?:\/\/[^\s]+/g, "").trim()
+    console.log("Cleaned address (preview):", cleanedAddress)
+    console.groupEnd()
+
     // TODO: Implement auto-search when ready
     // handleSearch(cleanedAddress);
   }
-}, []);
+}, [])
 ```
 
 ### Future Implementation
 
 When ready to activate:
+
 1. Parse shared text (strip URLs from realestate.com.au, etc.)
 2. Auto-populate search input
 3. Auto-trigger search
@@ -554,11 +573,13 @@ When ready to activate:
 ### Current Architecture (MVP)
 
 **Suitable for**:
+
 - ~1,000 users/day
 - ~10,000 searches/month
 - Free tier APIs
 
 **Bottlenecks**:
+
 - OpenRouteService API (40 req/min per user)
 - Nominatim rate limiting (1 req/sec)
 - Vercel serverless execution time

@@ -12,9 +12,5 @@
     "noEmit": false,
     "outDir": ".vercel/output"
   },
-  "include": [
-    "**/*.ts",
-    "../src/lib/**/*.ts",
-    "../src/types/**/*.ts"
-  ]
+  "include": ["**/*.ts", "../src/lib/**/*.ts", "../src/types/**/*.ts"]
 }

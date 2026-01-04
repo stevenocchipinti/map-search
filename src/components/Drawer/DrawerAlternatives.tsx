@@ -1,11 +1,11 @@
-import { POIAlternatives } from '../Sidebar/POIAlternatives';
-import type { POI, POICategory } from '../../types';
+import { POIAlternatives } from "../Sidebar/POIAlternatives"
+import type { POI, POICategory } from "../../types"
 
 interface DrawerAlternativesProps {
-  activeTab: POICategory;
-  items: POI[];
-  selectedIndex: number;
-  onSelectItem: (index: number) => void;
+  activeTab: POICategory
+  items: POI[]
+  selectedIndex: number
+  onSelectItem: (index: number) => void
 }
 
 export function DrawerAlternatives({
@@ -21,5 +21,5 @@ export function DrawerAlternatives({
         onSelect={onSelectItem}
       />
     </div>
-  );
+  )
 }

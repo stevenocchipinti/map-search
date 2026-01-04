@@ -1,7 +1,7 @@
-import { WifiOff, X } from 'lucide-react';
+import { WifiOff, X } from "lucide-react"
 
 interface OfflineBannerProps {
-  onDismiss?: () => void;
+  onDismiss?: () => void
 }
 
 export function OfflineBanner({ onDismiss }: OfflineBannerProps) {
@@ -14,7 +14,8 @@ export function OfflineBanner({ onDismiss }: OfflineBannerProps) {
         <div className="flex-1 min-w-0">
           <p className="text-sm font-semibold text-amber-900">You're offline</p>
           <p className="mt-1 text-sm text-amber-800 leading-relaxed">
-            You can still use your location or search from recently viewed areas. Some features may be limited.
+            You can still use your location or search from recently viewed
+            areas. Some features may be limited.
           </p>
         </div>
         {onDismiss && (
@@ -28,5 +29,5 @@ export function OfflineBanner({ onDismiss }: OfflineBannerProps) {
         )}
       </div>
     </div>
-  );
+  )
 }

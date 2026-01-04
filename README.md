@@ -33,22 +33,26 @@ A mobile-first Progressive Web App for finding the nearest schools, train statio
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd map-search2
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Install Vercel CLI globally (if not already installed):
+
 ```bash
 npm install -g vercel
 ```
 
 4. Set up environment variables:
+
 ```bash
 cp .env.example .env
 # Edit .env and add your OpenRouteService API key:
@@ -58,6 +62,7 @@ cp .env.example .env
 Get a free API key at: https://openrouteservice.org/dev/#/signup
 
 5. Process data files (first time only):
+
 ```bash
 npm run data:all
 ```
@@ -65,6 +70,7 @@ npm run data:all
 This will split the source data files by state and generate optimized files in `public/data/{state}/`.
 
 6. Authenticate with Vercel (first time only):
+
 ```bash
 vercel login
 ```
@@ -72,6 +78,7 @@ vercel login
 Follow the prompts to authenticate.
 
 7. Start the development server:
+
 ```bash
 vercel dev
 ```
@@ -93,6 +100,7 @@ The app will be available at `http://localhost:3000` (or the next available port
 ### Development Workflow
 
 **For full-stack development** (recommended):
+
 ```bash
 vercel dev
 # Access at http://localhost:3000
@@ -100,6 +108,7 @@ vercel dev
 ```
 
 **For frontend-only development** (faster, but no API):
+
 ```bash
 npm run dev
 # Access at http://localhost:5173
@@ -115,6 +124,7 @@ The app uses pre-processed data for schools and train stations. To update this d
    - `stations.geojson` - Train station locations
 
 2. Run the processing script:
+
 ```bash
 npm run data:all
 ```
@@ -169,12 +179,14 @@ Minimal server-side processing:
 3. Deploy!
 
 The app will be deployed as:
+
 - Static SPA (HTML, CSS, JS, data files)
 - Serverless functions for API endpoints
 
 ### Other Platforms
 
 The app can be deployed to any platform that supports:
+
 - Static file hosting
 - Serverless functions (for API endpoints)
 
@@ -194,6 +206,7 @@ The app is a Progressive Web App with:
 This happens if you try to run `npm run dev` when `vercel dev` is already configured to use it.
 
 **Solution:** Run `vercel dev` directly from the command line, not through npm scripts:
+
 ```bash
 vercel dev
 ```
@@ -201,22 +214,25 @@ vercel dev
 ### "Cannot find module" errors in API functions
 
 If you see errors like:
+
 ```
 Error: Cannot find module '/Users/.../src/lib/overpass' imported from .../api/supermarkets.ts
 ```
 
 **Solution:** Make sure all imports in the `src/lib/` folder use `.js` extensions for ESM compatibility:
+
 ```typescript
 // Correct
-import { haversineDistance } from './haversine.js';
+import { haversineDistance } from "./haversine.js"
 
 // Incorrect
-import { haversineDistance } from './haversine';
+import { haversineDistance } from "./haversine"
 ```
 
 ### "No existing credentials found" error from Vercel CLI
 
 **Solution:** Authenticate with Vercel:
+
 ```bash
 vercel login
 ```
@@ -228,6 +244,7 @@ If port 3000 is already in use, Vercel will automatically use the next available
 ### API key not working
 
 Make sure your `.env` file has the correct format:
+
 ```bash
 ORS_API_KEY=your_actual_key_here
 ```

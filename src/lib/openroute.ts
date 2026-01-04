@@ -2,17 +2,18 @@
  * OpenRouteService API client for walking routes
  */
 
-const ORS_API_URL = 'https://api.openrouteservice.org/v2/directions/foot-walking';
+const ORS_API_URL =
+  "https://api.openrouteservice.org/v2/directions/foot-walking"
 
 export interface WalkingRoute {
-  durationMinutes: number;
-  distanceMeters: number;
-  encodedPolyline: string | null;
+  durationMinutes: number
+  distanceMeters: number
+  encodedPolyline: string | null
 }
 
 export interface Coordinates {
-  lat: number;
-  lng: number;
+  lat: number
+  lng: number
 }
 
 /**
@@ -32,42 +33,42 @@ export async function getWalkingRoute(
       [from.lng, from.lat], // ORS uses [lng, lat] order
       [to.lng, to.lat],
     ],
-    format: 'geojson',
-    units: 'm',
+    format: "geojson",
+    units: "m",
     geometry: true,
     instructions: false,
-  };
+  }
 
   const response = await fetch(ORS_API_URL, {
-    method: 'POST',
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
-      'Authorization': apiKey,
+      "Content-Type": "application/json",
+      Authorization: apiKey,
     },
     body: JSON.stringify(requestBody),
-  });
+  })
 
   if (!response.ok) {
     if (response.status === 429) {
-      throw new Error('RATE_LIMIT');
+      throw new Error("RATE_LIMIT")
     }
-    throw new Error(`ORS API error: ${response.status}`);
+    throw new Error(`ORS API error: ${response.status}`)
   }
 
-  const data = await response.json();
+  const data = await response.json()
 
   if (!data.routes || data.routes.length === 0) {
-    throw new Error('No route found');
+    throw new Error("No route found")
   }
 
-  const route = data.routes[0];
-  const summary = route.summary;
+  const route = data.routes[0]
+  const summary = route.summary
 
   return {
     durationMinutes: Math.round((summary?.duration || 0) / 60),
     distanceMeters: Math.round(summary?.distance || 0),
     encodedPolyline: route.geometry || null, // ORS returns encoded polyline
-  };
+  }
 }
 
 /**
@@ -78,14 +79,16 @@ export async function getWalkingRoute(
  * @param destinations Array of destination coordinates with metadata
  * @returns Array of results with route data or null if failed
  */
-export async function getWalkingRoutesBatch<T extends { lat: number; lng: number }>(
+export async function getWalkingRoutesBatch<
+  T extends { lat: number; lng: number },
+>(
   apiKey: string,
   from: Coordinates,
   destinations: T[]
 ): Promise<(T & { route: WalkingRoute | null; error?: string })[]> {
-  const results: (T & { route: WalkingRoute | null; error?: string })[] = [];
-  
-  let rateLimitHit = false;
+  const results: (T & { route: WalkingRoute | null; error?: string })[] = []
+
+  let rateLimitHit = false
 
   for (const dest of destinations) {
     if (rateLimitHit) {
@@ -93,31 +96,34 @@ export async function getWalkingRoutesBatch<T extends { lat: number; lng: number
       results.push({
         ...dest,
         route: null,
-        error: 'Rate limit exceeded',
-      });
-      continue;
+        error: "Rate limit exceeded",
+      })
+      continue
     }
 
     try {
-      const route = await getWalkingRoute(apiKey, from, { lat: dest.lat, lng: dest.lng });
+      const route = await getWalkingRoute(apiKey, from, {
+        lat: dest.lat,
+        lng: dest.lng,
+      })
       results.push({
         ...dest,
         route,
-      });
+      })
     } catch (error) {
-      if (error instanceof Error && error.message === 'RATE_LIMIT') {
-        rateLimitHit = true;
+      if (error instanceof Error && error.message === "RATE_LIMIT") {
+        rateLimitHit = true
       }
       results.push({
         ...dest,
         route: null,
-        error: error instanceof Error ? error.message : 'Unknown error',
-      });
+        error: error instanceof Error ? error.message : "Unknown error",
+      })
     }
 
     // Delay between requests to avoid rate limiting (ORS free tier)
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    await new Promise(resolve => setTimeout(resolve, 500))
   }
 
-  return results;
+  return results
 }

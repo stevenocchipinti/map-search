@@ -9,6 +9,7 @@ This document captures all major decisions made during planning and implementati
 **Decision**: Load school and station data on the client-side, split by state.
 
 **Rationale**:
+
 - Saves serverless function execution time and cost
 - Faster response times (no server roundtrip)
 - Better offline support (data cached locally)
@@ -26,6 +27,7 @@ This document captures all major decisions made during planning and implementati
 **Decision**: Split schools.json and stations.json into 8 separate files (one per Australian state).
 
 **Rationale**:
+
 - Reduces initial load size by 70-85% (only load needed state)
 - Better mobile experience on slow connections
 - Faster parsing (smaller JSON files)
@@ -33,6 +35,7 @@ This document captures all major decisions made during planning and implementati
 - Prepares for future state-specific features
 
 **Data**:
+
 - NSW: 832KB (largest)
 - TAS: 65KB (smallest)
 - Average: ~340KB per state
@@ -46,6 +49,7 @@ This document captures all major decisions made during planning and implementati
 **Decision**: Move school sector checkboxes (Government/Catholic/Independent) from the search bar into the Schools POI card.
 
 **Rationale**:
+
 - Cleaner search bar UI (less visual clutter)
 - Contextual filtering (filters near the results they affect)
 - Stations and supermarkets don't need filters (consistent UX)
@@ -61,6 +65,7 @@ This document captures all major decisions made during planning and implementati
 **Decision**: No automatic version checking or prompts to update data files. Users manually refresh via settings panel.
 
 **Rationale**:
+
 - Simpler implementation (no version metadata system)
 - Respects user bandwidth (no surprise downloads)
 - Data changes infrequently (schools/stations updated quarterly at most)
@@ -78,6 +83,7 @@ This document captures all major decisions made during planning and implementati
 **Decision**: Use stale-while-revalidate caching strategy for HTML/CSS/JS files.
 
 **Rationale**:
+
 - Best of both worlds: instant load + auto-updates
 - Users always see latest version after one visit
 - No manual cache clearing needed
@@ -85,11 +91,13 @@ This document captures all major decisions made during planning and implementati
 - Works perfectly offline (cached fallback)
 
 **How it works**:
+
 1. First visit: Network fetch (slow), cache for later
 2. Return visits: Instant cached version, silent background update
 3. Next visit: New version already cached from background fetch
 
-**Alternative Rejected**: 
+**Alternative Rejected**:
+
 - Cache-first (stale code after deployments)
 - Network-first (slow, doesn't work offline)
 
@@ -100,6 +108,7 @@ This document captures all major decisions made during planning and implementati
 **Decision**: Use network-first strategy for API endpoints, but with intelligent caching (TTL-based, deduplication).
 
 **Rationale**:
+
 - Balances freshness with performance
 - Respects external API rate limits
 - Instant responses for fresh cached data (no network call)
@@ -107,16 +116,19 @@ This document captures all major decisions made during planning and implementati
 - Request deduplication prevents duplicate API calls
 
 **TTL Values**:
+
 - Geocoding: 30 days (addresses don't change)
 - Supermarkets: 7 days (stores change occasionally)
 - Walking routes: 30 days (routes rarely change)
 
 **Smart Behaviors**:
+
 - If cached data is fresh (within TTL), return immediately (no API call)
 - If request already in-flight, wait for it (no duplicate call)
 - If network fails, return stale cache (graceful degradation)
 
-**Alternative Rejected**: 
+**Alternative Rejected**:
+
 - Always network-first (too many API calls, rate limit issues)
 - Cache-first (stale data, doesn't respect updates)
 
@@ -127,6 +139,7 @@ This document captures all major decisions made during planning and implementati
 **Decision**: Use cache-first strategy for state-based data files.
 
 **Rationale**:
+
 - Data files change very infrequently (quarterly updates)
 - Large file sizes (500KB-1MB per state)
 - User controls updates manually (no surprise downloads)
@@ -142,6 +155,7 @@ This document captures all major decisions made during planning and implementati
 **Decision**: Implement basic offline support (cached searches only), not full offline functionality.
 
 **Rationale**:
+
 - Supermarkets API requires internet (live data)
 - Walking routes API requires internet (OpenRouteService)
 - Geocoding new addresses requires internet
@@ -149,12 +163,14 @@ This document captures all major decisions made during planning and implementati
 - Light mode provides value without over-engineering
 
 **What Works Offline**:
+
 - Previously searched addresses (select dropdown)
 - "Use my location" + local data (schools/stations)
 - Cached walking routes
 - Map tiles (if previously cached)
 
 **What Doesn't Work Offline**:
+
 - New address searches
 - Supermarket data
 - New walking routes
@@ -170,6 +186,7 @@ This document captures all major decisions made during planning and implementati
 **Decision**: Add share target to PWA manifest, but only log shared text (not auto-search yet).
 
 **Rationale**:
+
 - Need to experiment with different address formats from various apps
 - realestate.com.au includes URLs that need filtering
 - Different apps may format addresses differently
@@ -177,11 +194,12 @@ This document captures all major decisions made during planning and implementati
 - Easy to implement full feature later
 
 **Current Implementation**:
+
 ```typescript
-console.group('🔗 Share Target Activated');
-console.log('Raw shared text:', sharedText);
-console.log('Cleaned address (preview):', cleanedAddress);
-console.groupEnd();
+console.group("🔗 Share Target Activated")
+console.log("Raw shared text:", sharedText)
+console.log("Cleaned address (preview):", cleanedAddress)
+console.groupEnd()
 // TODO: handleSearch(cleanedAddress);
 ```
 
@@ -196,6 +214,7 @@ console.groupEnd();
 **Decision**: Do NOT automatically load neighboring states when near state borders.
 
 **Rationale**:
+
 - Edge case (most searches are not near borders)
 - Adds complexity (bounding box checks, distance calculations)
 - Doubles data loading (e.g., NSW + VIC near border)
@@ -213,6 +232,7 @@ console.groupEnd();
 **Decision**: Do NOT pre-cache common areas or pre-warm the cache.
 
 **Rationale**:
+
 - Wastes bandwidth for users who never search those areas
 - Mobile users on metered connections
 - Cache will build naturally as users search
@@ -230,6 +250,7 @@ console.groupEnd();
 **Decision**: Keep supermarkets as live API calls to Overpass, don't pre-process into static files.
 
 **Rationale**:
+
 - Supermarket data changes frequently (stores open/close regularly)
 - Overpass API is fast enough (~200-500ms)
 - Static files would go stale quickly
@@ -249,6 +270,7 @@ console.groupEnd();
 **Decision**: Use React 19 with TypeScript strict mode.
 
 **Rationale**:
+
 - Modern React features (Compiler, concurrent rendering)
 - Type safety prevents bugs
 - Better IDE support
@@ -263,6 +285,7 @@ console.groupEnd();
 **Decision**: Enable React Compiler (babel-plugin-react-compiler).
 
 **Rationale**:
+
 - Automatic memoization (no manual useMemo/useCallback)
 - Better performance out of the box
 - Becoming React standard
@@ -279,6 +302,7 @@ console.groupEnd();
 **Decision**: Use Vite with rolldown-vite (modern bundler).
 
 **Rationale**:
+
 - Faster builds than Webpack
 - Modern ESM-based dev server
 - Great DX (instant HMR)
@@ -293,6 +317,7 @@ console.groupEnd();
 **Decision**: Use Tailwind CSS for styling.
 
 **Rationale**:
+
 - Rapid development (utility-first)
 - Consistent design system
 - Small production bundle (only used classes)
@@ -308,6 +333,7 @@ console.groupEnd();
 **Decision**: Use Leaflet for maps, not Mapbox or Google Maps.
 
 **Rationale**:
+
 - Free and open source
 - No API key required
 - Works offline with cached tiles
@@ -325,6 +351,7 @@ console.groupEnd();
 **Decision**: Host on Vercel with serverless functions.
 
 **Rationale**:
+
 - Zero-config deployment
 - Automatic HTTPS
 - Edge network (fast globally)
@@ -341,6 +368,7 @@ console.groupEnd();
 **Decision**: Use React state + custom hooks only, no Redux/Zustand.
 
 **Rationale**:
+
 - App state is simple enough
 - Custom hooks provide good encapsulation
 - Less boilerplate
@@ -356,6 +384,7 @@ console.groupEnd();
 **Decision**: Use lucide-react for icons.
 
 **Rationale**:
+
 - Modern, clean icons
 - Tree-shakeable (only import what you use)
 - Consistent style
@@ -373,6 +402,7 @@ console.groupEnd();
 **Decision**: Show estimated walking times immediately, fetch accurate times in background.
 
 **Rationale**:
+
 - Users see results instantly (perceived performance)
 - No blocking on slow API calls
 - Respects API rate limits (sequential fetching)
@@ -388,6 +418,7 @@ console.groupEnd();
 **Decision**: Fetch walking routes one at a time with 1 second delays, not in parallel.
 
 **Rationale**:
+
 - Respects OpenRouteService rate limits (40 req/min)
 - Prevents 429 errors
 - Provides progressive updates (cards update one by one)
@@ -402,6 +433,7 @@ console.groupEnd();
 **Decision**: Design for mobile first, enhance for desktop.
 
 **Rationale**:
+
 - Most real estate searches happen on mobile
 - Harder to shrink desktop design than expand mobile design
 - Tailwind is mobile-first by default
@@ -416,6 +448,7 @@ console.groupEnd();
 **Decision**: Sidebar slides in as overlay on mobile, fixed panel on desktop.
 
 **Rationale**:
+
 - Maximizes map visibility on mobile
 - Common mobile pattern (Google Maps, etc.)
 - Easy to toggle with button
@@ -430,6 +463,7 @@ console.groupEnd();
 **Decision**: POI alternatives start collapsed, expand on click.
 
 **Rationale**:
+
 - Less visual clutter
 - Top result is usually what user wants
 - Easy to expand if needed
@@ -444,6 +478,7 @@ console.groupEnd();
 **Decision**: Automatically fetch walking routes for top school, station, and supermarket after search.
 
 **Rationale**:
+
 - Users almost always want the top results
 - Provides value without user action
 - Background fetching doesn't block UI
@@ -458,6 +493,7 @@ console.groupEnd();
 **Decision**: Use different colored badges to distinguish estimates from accurate times.
 
 **Rationale**:
+
 - Clear visual feedback
 - Users know when accurate time is available
 - Smooth transition (gray → blue) shows progress
@@ -550,6 +586,7 @@ For future decisions, use this format:
 **Decision**: Clear statement of what was decided
 
 **Rationale**:
+
 - Reason 1
 - Reason 2
 - Data/evidence supporting decision

@@ -29,7 +29,7 @@ interface NavigationDrawerProps {
   onSnapIndexChange: (index: number) => void
   activeTab: POICategory
   onActiveTabChange: (tab: POICategory) => void
-  
+
   // Visibility control
   hasSearched?: boolean
 }
@@ -180,10 +180,21 @@ export function NavigationDrawer({
           style={{ height: "100%" }}
         >
           <Drawer.Title className="sr-only">
-            Nearby {activeTab === 'school' ? 'Schools' : activeTab === 'station' ? 'Stations' : 'Supermarkets'}
+            Nearby{" "}
+            {activeTab === "school"
+              ? "Schools"
+              : activeTab === "station"
+                ? "Stations"
+                : "Supermarkets"}
           </Drawer.Title>
           <Drawer.Description className="sr-only">
-            Browse and navigate to nearby {activeTab === 'school' ? 'schools' : activeTab === 'station' ? 'train stations' : 'supermarkets'}. Drag to expand or collapse.
+            Browse and navigate to nearby{" "}
+            {activeTab === "school"
+              ? "schools"
+              : activeTab === "station"
+                ? "train stations"
+                : "supermarkets"}
+            . Drag to expand or collapse.
           </Drawer.Description>
 
           {/* Drag handle - always visible */}

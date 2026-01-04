@@ -1,6 +1,7 @@
 # Persistent Navigation Drawer Implementation Plan
 
 ## Document Purpose
+
 This document provides a complete, step-by-step implementation plan for adding a persistent bottom navigation drawer with snap points to the map-search mobile interface. This plan is designed to be executed by any LLM agent without prior context, using only the existing codebase as reference.
 
 ---
@@ -21,7 +22,8 @@ The application uses a specific color system across ALL components (drawer, desk
 ### Category Colors
 
 #### Schools (varies by sector)
-- **Government Schools**: 
+
+- **Government Schools**:
   - Hex: `#22c55e` (green-500)
   - Tailwind: `bg-green-500`, `text-green-500`, `border-green-500`
 - **Catholic Schools**:
@@ -32,12 +34,14 @@ The application uses a specific color system across ALL components (drawer, desk
   - Tailwind: `bg-orange-500`, `text-orange-500`, `border-orange-500`
 
 #### Train Stations
+
 - Hex: `#dc2626` (red-600)
 - Tailwind: `bg-red-600`, `text-red-600`, `border-red-600`
 - Desktop sidebar currently uses: `text-teal-700 bg-teal-50` (header only)
 - **ACTION REQUIRED**: Drawer must use red-600 to match map markers
 
 #### Supermarkets
+
 - Hex: `#14b8a6` (teal-500)
 - Tailwind: `bg-teal-500`, `text-teal-500`, `border-teal-500`
 - Desktop sidebar currently uses: `text-emerald-700 bg-emerald-50` (header only)
@@ -46,6 +50,7 @@ The application uses a specific color system across ALL components (drawer, desk
 ### UI Element Colors
 
 **Active Tab States**:
+
 - School (Government): `bg-green-500 text-white border-b-4 border-green-700`
 - School (Catholic): `bg-purple-500 text-white border-b-4 border-purple-700`
 - School (Independent): `bg-orange-500 text-white border-b-4 border-orange-700`
@@ -53,11 +58,13 @@ The application uses a specific color system across ALL components (drawer, desk
 - Supermarket: `bg-teal-500 text-white border-b-4 border-teal-700`
 
 **Inactive Tab States**:
+
 - School: `bg-white text-gray-700 border border-gray-200`
 - Station: `bg-white text-red-700 border border-gray-200`
 - Supermarket: `bg-white text-teal-700 border border-gray-200`
 
 **Dot Indicators** (middle snap):
+
 - School (varies by selected school's sector):
   - Government: `bg-green-500`
   - Catholic: `bg-purple-500`
@@ -65,7 +72,8 @@ The application uses a specific color system across ALL components (drawer, desk
 - Station: `bg-red-600`
 - Supermarket: `bg-teal-500`
 
-**User Location Marker**: 
+**User Location Marker**:
+
 - Hex: `#ef4444` (red-500)
 - Solid red dot with white border
 
@@ -136,7 +144,14 @@ npm install vaul
 Already installed (v0.562.0). Import icons like:
 
 ```typescript
-import { Search, MapPin, Settings, GraduationCap, Train, ShoppingCart } from 'lucide-react';
+import {
+  Search,
+  MapPin,
+  Settings,
+  GraduationCap,
+  Train,
+  ShoppingCart,
+} from "lucide-react"
 ```
 
 ---
@@ -146,12 +161,14 @@ import { Search, MapPin, Settings, GraduationCap, Train, ShoppingCart } from 'lu
 ### Phase 1: Setup & Install (15 min)
 
 **Tasks**:
+
 1. Install vaul: `npm install vaul`
 2. Create directory: `src/components/Drawer/`
 3. Create 7 empty component files (listed above)
 4. Test imports work: `import { Drawer } from 'vaul'`
 
 **Verification**:
+
 - [ ] `node_modules/vaul` exists
 - [ ] All 7 new files created
 - [ ] No import errors
@@ -165,6 +182,7 @@ import { Search, MapPin, Settings, GraduationCap, Train, ShoppingCart } from 'lu
 **Purpose**: Display 3 color-coded tabs at lowest snap point
 
 **Requirements**:
+
 1. Import lucide icons: `GraduationCap`, `Train`, `ShoppingCart`
 2. Use exact colors from "Color System Reference" section
 3. Show walking time (from route if available, estimate otherwise)
@@ -173,52 +191,55 @@ import { Search, MapPin, Settings, GraduationCap, Train, ShoppingCart } from 'lu
 6. Grid layout: 3 equal columns
 
 **Props Interface**:
+
 ```typescript
 interface DrawerTabBarProps {
-  activeTab: POICategory;
-  onTabClick: (category: POICategory) => void;
-  
+  activeTab: POICategory
+  onTabClick: (category: POICategory) => void
+
   // POI data
-  schools: POI[];
-  stations: POI[];
-  supermarkets: POI[];
-  
+  schools: POI[]
+  stations: POI[]
+  supermarkets: POI[]
+
   // Selected indices
-  selectedPOIs: SelectedPOIs;
-  
+  selectedPOIs: SelectedPOIs
+
   // Routes (for walking time)
-  schoolRoute?: WalkingRoute | null;
-  stationRoute?: WalkingRoute | null;
-  supermarketRoute?: WalkingRoute | null;
+  schoolRoute?: WalkingRoute | null
+  stationRoute?: WalkingRoute | null
+  supermarketRoute?: WalkingRoute | null
 }
 ```
 
 **Key Logic**:
+
 ```typescript
 // Get walking time for a category
 const getWalkingTime = (category: POICategory): string => {
-  const route = getRouteForCategory(category);
+  const route = getRouteForCategory(category)
   if (route) {
-    return formatDuration(route.duration); // e.g., "12 min"
+    return formatDuration(route.duration) // e.g., "12 min"
   }
-  
-  const items = getItemsForCategory(category);
-  if (items.length === 0) return '';
-  
-  const selectedItem = items[selectedPOIs[category]];
-  return `~${formatDuration(selectedItem.estimatedWalkingTime)}`;
-};
+
+  const items = getItemsForCategory(category)
+  if (items.length === 0) return ""
+
+  const selectedItem = items[selectedPOIs[category]]
+  return `~${formatDuration(selectedItem.estimatedWalkingTime)}`
+}
 
 // Check if category has results
 const hasResults = (category: POICategory): boolean => {
-  return getItemsForCategory(category).length > 0;
-};
+  return getItemsForCategory(category).length > 0
+}
 ```
 
 **Layout Example**:
+
 ```tsx
 <div className="grid grid-cols-3 gap-2 p-3">
-  {(['school', 'station', 'supermarket'] as POICategory[]).map(category => (
+  {(["school", "station", "supermarket"] as POICategory[]).map(category => (
     <button
       key={category}
       onClick={() => onTabClick(category)}
@@ -227,13 +248,13 @@ const hasResults = (category: POICategory): boolean => {
         flex flex-col items-center justify-center p-3 rounded-xl
         transition-all duration-200 min-h-[72px]
         ${activeTab === category ? getActiveStyle(category) : getInactiveStyle(category)}
-        ${!hasResults(category) ? 'opacity-50 cursor-not-allowed' : ''}
+        ${!hasResults(category) ? "opacity-50 cursor-not-allowed" : ""}
       `}
     >
       <Icon className="w-6 h-6 mb-1" />
       <span className="text-xs font-semibold">{getLabel(category)}</span>
       <span className="text-xs mt-0.5">
-        {hasResults(category) ? getWalkingTime(category) : 'No results'}
+        {hasResults(category) ? getWalkingTime(category) : "No results"}
       </span>
     </button>
   ))}
@@ -241,42 +262,48 @@ const hasResults = (category: POICategory): boolean => {
 ```
 
 **Color Functions** (use exact colors from reference):
+
 ```typescript
 const getActiveStyle = (category: POICategory): string => {
   switch (category) {
-    case 'school':
-      return 'bg-blue-600 text-white border-b-4 border-blue-800';
-    case 'station':
-      return 'bg-red-600 text-white border-b-4 border-red-800';
-    case 'supermarket':
-      return 'bg-teal-500 text-white border-b-4 border-teal-700';
+    case "school":
+      return "bg-blue-600 text-white border-b-4 border-blue-800"
+    case "station":
+      return "bg-red-600 text-white border-b-4 border-red-800"
+    case "supermarket":
+      return "bg-teal-500 text-white border-b-4 border-teal-700"
   }
-};
+}
 
 const getInactiveStyle = (category: POICategory): string => {
   switch (category) {
-    case 'school':
-      return 'bg-white text-gray-700 border border-gray-200';
-    case 'station':
-      return 'bg-white text-red-700 border border-gray-200';
-    case 'supermarket':
-      return 'bg-white text-teal-700 border border-gray-200';
+    case "school":
+      return "bg-white text-gray-700 border border-gray-200"
+    case "station":
+      return "bg-white text-red-700 border border-gray-200"
+    case "supermarket":
+      return "bg-white text-teal-700 border border-gray-200"
   }
-};
+}
 ```
 
 **Icon Mapping**:
+
 ```typescript
 const getIcon = (category: POICategory) => {
   switch (category) {
-    case 'school': return GraduationCap;
-    case 'station': return Train;
-    case 'supermarket': return ShoppingCart;
+    case "school":
+      return GraduationCap
+    case "station":
+      return Train
+    case "supermarket":
+      return ShoppingCart
   }
-};
+}
 ```
 
 **Testing**:
+
 - [ ] All 3 tabs render
 - [ ] Active tab has correct colors
 - [ ] Icons display correctly
@@ -293,6 +320,7 @@ const getIcon = (category: POICategory) => {
 **Purpose**: Main drawer wrapper managing snap points and state
 
 **Requirements**:
+
 1. Use vaul's Drawer component
 2. Configure 3 snap points: `[80, 'fit-content', '85vh']`
 3. Non-dismissible: `dismissible={false}`
@@ -302,36 +330,38 @@ const getIcon = (category: POICategory) => {
 7. Render appropriate content per snap point
 
 **Props Interface**:
+
 ```typescript
 interface NavigationDrawerProps {
   // POI data
-  schools: POI[];
-  stations: POI[];
-  supermarkets: POI[];
-  
+  schools: POI[]
+  stations: POI[]
+  supermarkets: POI[]
+
   // Selection
-  selectedPOIs: SelectedPOIs;
-  onSelectPOI: (category: POICategory, index: number) => void;
-  
+  selectedPOIs: SelectedPOIs
+  onSelectPOI: (category: POICategory, index: number) => void
+
   // Routes
-  schoolRoute?: WalkingRoute | null;
-  stationRoute?: WalkingRoute | null;
-  supermarketRoute?: WalkingRoute | null;
-  routeLoading: { school: boolean; station: boolean; supermarket: boolean };
-  
+  schoolRoute?: WalkingRoute | null
+  stationRoute?: WalkingRoute | null
+  supermarketRoute?: WalkingRoute | null
+  routeLoading: { school: boolean; station: boolean; supermarket: boolean }
+
   // School filters
-  sectors: Set<SchoolSector>;
-  onToggleSector: (sector: SchoolSector) => void;
-  
+  sectors: Set<SchoolSector>
+  onToggleSector: (sector: SchoolSector) => void
+
   // State control (passed from App.tsx)
-  snapIndex: number;
-  onSnapIndexChange: (index: number) => void;
-  activeTab: POICategory;
-  onActiveTabChange: (tab: POICategory) => void;
+  snapIndex: number
+  onSnapIndexChange: (index: number) => void
+  activeTab: POICategory
+  onActiveTabChange: (tab: POICategory) => void
 }
 ```
 
 **State & Logic**:
+
 ```typescript
 export function NavigationDrawer({
   schools, stations, supermarkets,
@@ -341,7 +371,7 @@ export function NavigationDrawer({
   snapIndex, onSnapIndexChange,
   activeTab, onActiveTabChange,
 }: NavigationDrawerProps) {
-  
+
   // Tab click toggle behavior
   const handleTabClick = (category: POICategory) => {
     if (activeTab === category && snapIndex === 1) {
@@ -353,7 +383,7 @@ export function NavigationDrawer({
       onSnapIndexChange(1);
     }
   };
-  
+
   // Helper to get current category items
   const getCurrentItems = (): POI[] => {
     switch (activeTab) {
@@ -362,7 +392,7 @@ export function NavigationDrawer({
       case 'supermarket': return supermarkets;
     }
   };
-  
+
   // Helper to get current route
   const getCurrentRoute = (): WalkingRoute | null | undefined => {
     switch (activeTab) {
@@ -371,7 +401,7 @@ export function NavigationDrawer({
       case 'supermarket': return supermarketRoute;
     }
   };
-  
+
   return (
     <Drawer.Root
       open={true}
@@ -389,7 +419,7 @@ export function NavigationDrawer({
           <div className="pt-3 pb-2 flex justify-center">
             <div className="w-12 h-1.5 bg-gray-300 rounded-full" />
           </div>
-          
+
           {/* Content based on snap point */}
           {snapIndex === 0 && (
             <DrawerTabBar
@@ -404,7 +434,7 @@ export function NavigationDrawer({
               supermarketRoute={supermarketRoute}
             />
           )}
-          
+
           {snapIndex === 1 && (
             <DrawerDetails
               activeTab={activeTab}
@@ -422,7 +452,7 @@ export function NavigationDrawer({
               hasAlternatives={getCurrentItems().length > 1}
             />
           )}
-          
+
           {snapIndex === 2 && (
             <DrawerAlternatives
               activeTab={activeTab}
@@ -442,12 +472,14 @@ export function NavigationDrawer({
 ```
 
 **Key Points**:
+
 - Snap points: `[80, 'fit-content', '85vh']`
 - Transition duration: 200ms (vaul default, or set with `transitionDuration={200}`)
 - State is controlled from parent (App.tsx)
 - Toggle logic: active tab at middle → collapse
 
 **Testing**:
+
 - [ ] Drawer renders at bottom
 - [ ] Starts at lowest snap (80px)
 - [ ] Drag handle visible
@@ -465,6 +497,7 @@ export function NavigationDrawer({
 **Purpose**: Show selected POI details at middle snap point
 
 **Requirements**:
+
 1. Tab switcher (3 dots) at top
 2. Selected item name and details
 3. Badges: walking time, distance, sector (schools)
@@ -473,26 +506,28 @@ export function NavigationDrawer({
 6. "No results" placeholder
 
 **Props Interface**:
+
 ```typescript
 interface DrawerDetailsProps {
-  activeTab: POICategory;
-  onTabChange: (tab: POICategory) => void;
-  
-  items: POI[];
-  selectedIndex: number;
-  
-  route?: WalkingRoute | null;
-  routeLoading?: boolean;
-  
-  sectors?: Set<SchoolSector>;
-  onToggleSector?: (sector: SchoolSector) => void;
-  
-  onShowAlternatives: () => void;
-  hasAlternatives: boolean;
+  activeTab: POICategory
+  onTabChange: (tab: POICategory) => void
+
+  items: POI[]
+  selectedIndex: number
+
+  route?: WalkingRoute | null
+  routeLoading?: boolean
+
+  sectors?: Set<SchoolSector>
+  onToggleSector?: (sector: SchoolSector) => void
+
+  onShowAlternatives: () => void
+  hasAlternatives: boolean
 }
 ```
 
 **Layout**:
+
 ```tsx
 export function DrawerDetails({
   activeTab,
@@ -506,40 +541,46 @@ export function DrawerDetails({
   onShowAlternatives,
   hasAlternatives,
 }: DrawerDetailsProps) {
-  const selectedItem = items[selectedIndex];
-  
+  const selectedItem = items[selectedIndex]
+
   // No results case
   if (!selectedItem) {
     return (
       <div className="p-6 text-center">
         <p className="text-gray-500 text-sm">
-          No {activeTab === 'school' ? 'schools' : activeTab === 'station' ? 'train stations' : 'supermarkets'} found nearby
+          No{" "}
+          {activeTab === "school"
+            ? "schools"
+            : activeTab === "station"
+              ? "train stations"
+              : "supermarkets"}{" "}
+          found nearby
         </p>
         <p className="text-gray-400 text-xs mt-2">
           Try searching a different address or adjusting filters
         </p>
       </div>
-    );
+    )
   }
-  
+
   return (
     <div className="flex flex-col">
       {/* Tab switcher dots */}
       <div className="flex items-center justify-center gap-2 py-3 border-b border-gray-100">
-        {(['school', 'station', 'supermarket'] as POICategory[]).map((cat) => (
+        {(["school", "station", "supermarket"] as POICategory[]).map(cat => (
           <button
             key={cat}
             onClick={() => onTabChange(cat)}
             className={`w-2.5 h-2.5 rounded-full transition-all duration-200 ${
               activeTab === cat
-                ? getCategoryDotColor(cat, selectedItem) + ' scale-110'
-                : 'bg-gray-300'
+                ? getCategoryDotColor(cat, selectedItem) + " scale-110"
+                : "bg-gray-300"
             }`}
             aria-label={`Switch to ${cat}`}
           />
         ))}
       </div>
-      
+
       {/* Selected item details */}
       <div className="p-4 space-y-3">
         {/* Name */}
@@ -551,12 +592,15 @@ export function DrawerDetails({
             <p className="text-sm text-gray-600 mt-1">{selectedItem.details}</p>
           )}
         </div>
-        
+
         {/* Badges */}
         <div className="flex flex-wrap gap-2">
           {/* Walking time */}
           {routeLoading ? (
-            <Badge variant="loading" icon={<Loader2 className="w-3 h-3 animate-spin" />}>
+            <Badge
+              variant="loading"
+              icon={<Loader2 className="w-3 h-3 animate-spin" />}
+            >
               Loading...
             </Badge>
           ) : route ? (
@@ -568,26 +612,28 @@ export function DrawerDetails({
               ~{formatDuration(selectedItem.estimatedWalkingTime)}
             </Badge>
           )}
-          
+
           {/* Distance */}
           <Badge variant="default">
             {formatDistance(selectedItem.distance)}
           </Badge>
-          
+
           {/* Sector (schools only) */}
-          {activeTab === 'school' && selectedItem.sector && (
+          {activeTab === "school" && selectedItem.sector && (
             <Badge variant="default">{selectedItem.sector}</Badge>
           )}
         </div>
-        
+
         {/* Sector filters (schools only) */}
-        {activeTab === 'school' && sectors && onToggleSector && (
+        {activeTab === "school" && sectors && onToggleSector && (
           <div className="pt-3 border-t border-gray-100">
-            <p className="text-xs font-medium text-gray-700 mb-2">Filter by sector:</p>
+            <p className="text-xs font-medium text-gray-700 mb-2">
+              Filter by sector:
+            </p>
             <SectorCheckboxes sectors={sectors} onToggle={onToggleSector} />
           </div>
         )}
-        
+
         {/* View alternatives button */}
         {hasAlternatives && (
           <Button
@@ -596,43 +642,52 @@ export function DrawerDetails({
             onClick={onShowAlternatives}
             className="w-full text-blue-600 hover:text-blue-700 hover:bg-blue-50"
           >
-            View {items.length - 1} more option{items.length - 1 !== 1 ? 's' : ''}
+            View {items.length - 1} more option
+            {items.length - 1 !== 1 ? "s" : ""}
             <ChevronUp className="w-4 h-4 ml-1" />
           </Button>
         )}
       </div>
     </div>
-  );
+  )
 }
 
 // Dot color helper (use exact colors from reference)
 function getCategoryDotColor(category: POICategory, selectedItem: POI): string {
-  if (category === 'school' && selectedItem.sector) {
+  if (category === "school" && selectedItem.sector) {
     switch (selectedItem.sector) {
-      case 'Government': return 'bg-green-500';
-      case 'Catholic': return 'bg-purple-500';
-      case 'Independent': return 'bg-orange-500';
+      case "Government":
+        return "bg-green-500"
+      case "Catholic":
+        return "bg-purple-500"
+      case "Independent":
+        return "bg-orange-500"
     }
   }
-  
+
   switch (category) {
-    case 'school': return 'bg-blue-600'; // Fallback if no sector
-    case 'station': return 'bg-red-600';
-    case 'supermarket': return 'bg-teal-500';
+    case "school":
+      return "bg-blue-600" // Fallback if no sector
+    case "station":
+      return "bg-red-600"
+    case "supermarket":
+      return "bg-teal-500"
   }
 }
 ```
 
 **Imports Needed**:
+
 ```typescript
-import { Check, Loader2, ChevronUp } from 'lucide-react';
-import { Badge } from '../UI/Badge';
-import { Button } from '../UI/Button';
-import { SectorCheckboxes } from '../Sidebar/SectorCheckboxes';
-import { formatDistance, formatDuration } from '../../utils/format';
+import { Check, Loader2, ChevronUp } from "lucide-react"
+import { Badge } from "../UI/Badge"
+import { Button } from "../UI/Button"
+import { SectorCheckboxes } from "../Sidebar/SectorCheckboxes"
+import { formatDistance, formatDuration } from "../../utils/format"
 ```
 
 **Testing**:
+
 - [ ] Dot switcher renders
 - [ ] Dots have correct colors
 - [ ] Clicking dot switches content
@@ -651,24 +706,27 @@ import { formatDistance, formatDuration } from '../../utils/format';
 **Purpose**: Show full list of alternatives at highest snap point
 
 **Requirements**:
+
 1. Reuse existing `POIAlternatives` component logic
 2. Scrollable list
 3. Click alternative → collapse to middle
 4. Show all items except selected
 
 **Props Interface**:
+
 ```typescript
 interface DrawerAlternativesProps {
-  activeTab: POICategory;
-  items: POI[];
-  selectedIndex: number;
-  onSelectItem: (index: number) => void;
+  activeTab: POICategory
+  items: POI[]
+  selectedIndex: number
+  onSelectItem: (index: number) => void
 }
 ```
 
 **Implementation**:
+
 ```tsx
-import { POIAlternatives } from '../Sidebar/POIAlternatives';
+import { POIAlternatives } from "../Sidebar/POIAlternatives"
 
 export function DrawerAlternatives({
   activeTab,
@@ -676,23 +734,23 @@ export function DrawerAlternatives({
   selectedIndex,
   onSelectItem,
 }: DrawerAlternativesProps) {
-  const categoryLabel = 
-    activeTab === 'school' ? 'Schools' :
-    activeTab === 'station' ? 'Train Stations' :
-    'Supermarkets';
-  
+  const categoryLabel =
+    activeTab === "school"
+      ? "Schools"
+      : activeTab === "station"
+        ? "Train Stations"
+        : "Supermarkets"
+
   return (
     <div className="flex flex-col h-full max-h-[85vh]">
       {/* Header */}
       <div className="px-4 py-3 border-b border-gray-100">
-        <h3 className="font-semibold text-gray-900 text-lg">
-          {categoryLabel}
-        </h3>
+        <h3 className="font-semibold text-gray-900 text-lg">{categoryLabel}</h3>
         <p className="text-xs text-gray-600 mt-1">
-          {items.length} option{items.length !== 1 ? 's' : ''} found
+          {items.length} option{items.length !== 1 ? "s" : ""} found
         </p>
       </div>
-      
+
       {/* Scrollable list */}
       <div className="flex-1 overflow-y-auto">
         <POIAlternatives
@@ -702,11 +760,12 @@ export function DrawerAlternatives({
         />
       </div>
     </div>
-  );
+  )
 }
 ```
 
 **Testing**:
+
 - [ ] List scrolls
 - [ ] All alternatives show
 - [ ] Selected item highlighted
@@ -722,6 +781,7 @@ export function DrawerAlternatives({
 **Purpose**: Floating search bar with smart button (search vs location)
 
 **Requirements**:
+
 1. Rounded pill shape
 2. Input field + embedded button
 3. Button changes based on input:
@@ -733,63 +793,65 @@ export function DrawerAlternatives({
 7. Fade out when drawer expands
 
 **Props Interface**:
+
 ```typescript
 interface FloatingSearchBarProps {
-  onSearch: (address: string) => void;
-  onUseLocation: () => void;
-  loading?: boolean;
-  className?: string;
+  onSearch: (address: string) => void
+  onUseLocation: () => void
+  loading?: boolean
+  className?: string
 }
 ```
 
 **Implementation**:
+
 ```tsx
-import { useState } from 'react';
-import { Search, MapPin, Loader2 } from 'lucide-react';
+import { useState } from "react"
+import { Search, MapPin, Loader2 } from "lucide-react"
 
 export function FloatingSearchBar({
   onSearch,
   onUseLocation,
   loading,
-  className = '',
+  className = "",
 }: FloatingSearchBarProps) {
-  const [inputValue, setInputValue] = useState('');
-  
+  const [inputValue, setInputValue] = useState("")
+
   const handleSubmit = (e?: React.FormEvent) => {
-    e?.preventDefault();
-    
+    e?.preventDefault()
+
     if (inputValue.trim()) {
-      onSearch(inputValue);
+      onSearch(inputValue)
     } else {
-      onUseLocation();
+      onUseLocation()
     }
-  };
-  
+  }
+
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
-      handleSubmit();
+    if (e.key === "Enter") {
+      handleSubmit()
     }
-  };
-  
+  }
+
   return (
     <div className={`fixed left-4 right-4 bottom-24 z-40 ${className}`}>
       <div className="bg-white rounded-full shadow-soft-lg p-2 flex items-center gap-2">
         <input
           type="text"
           value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
+          onChange={e => setInputValue(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Search address..."
           className="flex-1 px-4 py-2 text-sm focus:outline-none bg-transparent"
           aria-label="Search address"
           disabled={loading}
         />
-        
+
         <button
           onClick={() => handleSubmit()}
           disabled={loading}
           className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 transition-colors duration-200 flex items-center justify-center disabled:opacity-50 shadow-soft"
-          aria-label={inputValue.trim() ? 'Search' : 'Use current location'}
+          aria-label={inputValue.trim() ? "Search" : "Use current location"}
         >
           {loading ? (
             <Loader2 className="w-5 h-5 animate-spin" />
@@ -801,25 +863,27 @@ export function FloatingSearchBar({
         </button>
       </div>
     </div>
-  );
+  )
 }
 ```
 
 **Note**: Error display is handled in the drawer middle snap point (DrawerDetails component), not in the search bar.
 
 **Usage in App.tsx**:
+
 ```tsx
 <FloatingSearchBar
   onSearch={handleSearch}
   onUseLocation={handleUseMyLocation}
   loading={loading}
   className={`transition-opacity duration-200 ${
-    drawerSnapIndex === 0 ? 'opacity-100' : 'opacity-0 pointer-events-none'
+    drawerSnapIndex === 0 ? "opacity-100" : "opacity-0 pointer-events-none"
   }`}
 />
 ```
 
 **Testing**:
+
 - [ ] Renders at correct position
 - [ ] Input works
 - [ ] Button shows MapPin when empty
@@ -837,6 +901,7 @@ export function FloatingSearchBar({
 **Purpose**: Floating action button for settings (top-right)
 
 **Requirements**:
+
 1. Circular button
 2. Settings icon from lucide
 3. Position: `top-4 right-4`
@@ -844,14 +909,17 @@ export function FloatingSearchBar({
 5. Z-index: `z-50`
 
 **Implementation**:
+
 ```tsx
-import { Settings } from 'lucide-react';
+import { Settings } from "lucide-react"
 
 interface FloatingSettingsButtonProps {
-  onClick: () => void;
+  onClick: () => void
 }
 
-export function FloatingSettingsButton({ onClick }: FloatingSettingsButtonProps) {
+export function FloatingSettingsButton({
+  onClick,
+}: FloatingSettingsButtonProps) {
   return (
     <button
       onClick={onClick}
@@ -860,11 +928,12 @@ export function FloatingSettingsButton({ onClick }: FloatingSettingsButtonProps)
     >
       <Settings className="w-6 h-6" />
     </button>
-  );
+  )
 }
 ```
 
 **Testing**:
+
 - [ ] Renders top-right
 - [ ] Circular shape
 - [ ] Settings icon shows
@@ -881,6 +950,7 @@ export function FloatingSettingsButton({ onClick }: FloatingSettingsButtonProps)
 **Purpose**: Simple modal overlay for settings (NOT using vaul to avoid confusion)
 
 **Requirements**:
+
 1. Slides up from bottom
 2. Backdrop darkens screen
 3. Click backdrop → close
@@ -889,46 +959,47 @@ export function FloatingSettingsButton({ onClick }: FloatingSettingsButtonProps)
 6. Reuse existing `SettingsPanel` component
 
 **Implementation**:
+
 ```tsx
-import { useEffect } from 'react';
-import { X } from 'lucide-react';
-import { SettingsPanel } from '../Settings/SettingsPanel';
+import { useEffect } from "react"
+import { X } from "lucide-react"
+import { SettingsPanel } from "../Settings/SettingsPanel"
 
 interface SettingsModalProps {
-  open: boolean;
-  onClose: () => void;
+  open: boolean
+  onClose: () => void
 }
 
 export function SettingsModal({ open, onClose }: SettingsModalProps) {
   // Escape key handler
   useEffect(() => {
-    if (!open) return;
-    
+    if (!open) return
+
     const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose();
+      if (e.key === "Escape") {
+        onClose()
       }
-    };
-    
-    window.addEventListener('keydown', handleEscape);
-    return () => window.removeEventListener('keydown', handleEscape);
-  }, [open, onClose]);
-  
+    }
+
+    window.addEventListener("keydown", handleEscape)
+    return () => window.removeEventListener("keydown", handleEscape)
+  }, [open, onClose])
+
   // Prevent body scroll when open
   useEffect(() => {
     if (open) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden"
     } else {
-      document.body.style.overflow = '';
+      document.body.style.overflow = ""
     }
-    
+
     return () => {
-      document.body.style.overflow = '';
-    };
-  }, [open]);
-  
-  if (!open) return null;
-  
+      document.body.style.overflow = ""
+    }
+  }, [open])
+
+  if (!open) return null
+
   return (
     <div className="fixed inset-0 z-[60] flex items-end md:hidden animate-in fade-in duration-200">
       {/* Backdrop */}
@@ -937,7 +1008,7 @@ export function SettingsModal({ open, onClose }: SettingsModalProps) {
         onClick={onClose}
         aria-hidden="true"
       />
-      
+
       {/* Modal content */}
       <div className="relative bg-white rounded-t-3xl w-full max-h-[80vh] overflow-hidden flex flex-col animate-in slide-in-from-bottom duration-200">
         {/* Header */}
@@ -951,18 +1022,19 @@ export function SettingsModal({ open, onClose }: SettingsModalProps) {
             <X className="w-5 h-5" />
           </button>
         </div>
-        
+
         {/* Content */}
         <div className="flex-1 overflow-y-auto">
           <SettingsPanel />
         </div>
       </div>
     </div>
-  );
+  )
 }
 ```
 
 **Testing**:
+
 - [ ] Modal slides up from bottom
 - [ ] Backdrop darkens screen
 - [ ] Click backdrop closes
@@ -980,11 +1052,12 @@ export function SettingsModal({ open, onClose }: SettingsModalProps) {
 **Purpose**: Replace SVG icons with lucide icons
 
 **Changes**:
+
 ```tsx
-import { WifiOff, X } from 'lucide-react';
+import { WifiOff, X } from "lucide-react"
 
 interface OfflineBannerProps {
-  onDismiss: () => void;
+  onDismiss: () => void
 }
 
 export function OfflineBanner({ onDismiss }: OfflineBannerProps) {
@@ -1002,11 +1075,12 @@ export function OfflineBanner({ onDismiss }: OfflineBannerProps) {
         <X className="w-4 h-4" />
       </button>
     </div>
-  );
+  )
 }
 ```
 
 **Testing**:
+
 - [ ] Icons render correctly
 - [ ] Styling unchanged
 - [ ] Dismiss button works
@@ -1020,24 +1094,27 @@ export function OfflineBanner({ onDismiss }: OfflineBannerProps) {
 **Purpose**: Replace mobile tab view with drawer + floating elements
 
 **New State Variables**:
+
 ```typescript
 // Add near other state declarations (around line 40-62)
-const [drawerSnapIndex, setDrawerSnapIndex] = useState<number>(0);
-const [activeDrawerTab, setActiveDrawerTab] = useState<POICategory>('school');
-const [showSettingsMobile, setShowSettingsMobile] = useState(false);
-const [offlineBannerDismissed, setOfflineBannerDismissed] = useState(false);
+const [drawerSnapIndex, setDrawerSnapIndex] = useState<number>(0)
+const [activeDrawerTab, setActiveDrawerTab] = useState<POICategory>("school")
+const [showSettingsMobile, setShowSettingsMobile] = useState(false)
+const [offlineBannerDismissed, setOfflineBannerDismissed] = useState(false)
 ```
 
 **Imports**:
+
 ```typescript
 // Add to existing imports (around line 1-24)
-import { NavigationDrawer } from './components/Drawer/NavigationDrawer';
-import { FloatingSearchBar } from './components/Drawer/FloatingSearchBar';
-import { FloatingSettingsButton } from './components/Drawer/FloatingSettingsButton';
-import { SettingsModal } from './components/Drawer/SettingsModal';
+import { NavigationDrawer } from "./components/Drawer/NavigationDrawer"
+import { FloatingSearchBar } from "./components/Drawer/FloatingSearchBar"
+import { FloatingSettingsButton } from "./components/Drawer/FloatingSettingsButton"
+import { SettingsModal } from "./components/Drawer/SettingsModal"
 ```
 
 **State Sync Logic** (add after handleSelectPOI function):
+
 ```typescript
 /**
  * Reset drawer when search completes
@@ -1045,35 +1122,40 @@ import { SettingsModal } from './components/Drawer/SettingsModal';
 useEffect(() => {
   if (searchResults) {
     // Collapse to lowest snap
-    setDrawerSnapIndex(0);
-    
+    setDrawerSnapIndex(0)
+
     // Auto-select first category with results
-    const firstCategory = 
-      searchResults.schools.length > 0 ? 'school' :
-      searchResults.stations.length > 0 ? 'station' :
-      searchResults.supermarkets.length > 0 ? 'supermarket' : 'school';
-    
-    setActiveDrawerTab(firstCategory);
+    const firstCategory =
+      searchResults.schools.length > 0
+        ? "school"
+        : searchResults.stations.length > 0
+          ? "station"
+          : searchResults.supermarkets.length > 0
+            ? "supermarket"
+            : "school"
+
+    setActiveDrawerTab(firstCategory)
   }
-}, [searchResults]);
+}, [searchResults])
 
 /**
  * Sync drawer when map marker clicked
  */
 const handleMapMarkerClick = (category: POICategory, index: number) => {
-  handleSelectPOI(category, index);
-  setActiveDrawerTab(category);
-  
+  handleSelectPOI(category, index)
+  setActiveDrawerTab(category)
+
   // Expand to middle if currently at lowest
   if (drawerSnapIndex === 0) {
-    setDrawerSnapIndex(1);
+    setDrawerSnapIndex(1)
   }
-};
+}
 ```
 
 **Replace Mobile Section** (around line 556-727):
 
 **BEFORE** (remove this):
+
 ```typescript
 {/* Mobile: Tabbed view with toggle */}
 <div className="flex md:hidden flex-col h-full">
@@ -1081,13 +1163,14 @@ const handleMapMarkerClick = (category: POICategory, index: number) => {
   <div className="flex border-b border-gray-200 bg-white shadow-soft">
     {/* ... tab buttons ... */}
   </div>
-  
+
   {mobileView === 'list' && <Sidebar />}
   {mobileView === 'map' && <Map />}
 </div>
 ```
 
 **AFTER** (new code):
+
 ```typescript
 {/* Mobile: Drawer with floating elements */}
 <div className="flex md:hidden flex-col h-full relative">
@@ -1097,7 +1180,7 @@ const handleMapMarkerClick = (category: POICategory, index: number) => {
       <OfflineBanner onDismiss={() => setOfflineBannerDismissed(true)} />
     </div>
   )}
-  
+
   {/* Map (full screen) */}
   <div className="absolute inset-0">
     <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds}>
@@ -1203,10 +1286,10 @@ const handleMapMarkerClick = (category: POICategory, index: number) => {
       )}
     </Map>
   </div>
-  
+
   {/* Floating settings button */}
   <FloatingSettingsButton onClick={() => setShowSettingsMobile(true)} />
-  
+
   {/* Floating search bar (fades when drawer expands) */}
   <FloatingSearchBar
     onSearch={handleSearch}
@@ -1216,7 +1299,7 @@ const handleMapMarkerClick = (category: POICategory, index: number) => {
       drawerSnapIndex === 0 ? 'opacity-100' : 'opacity-0 pointer-events-none'
     }`}
   />
-  
+
   {/* Navigation drawer */}
   <NavigationDrawer
     schools={searchResults?.schools || []}
@@ -1235,7 +1318,7 @@ const handleMapMarkerClick = (category: POICategory, index: number) => {
     activeTab={activeDrawerTab}
     onActiveTabChange={setActiveDrawerTab}
   />
-  
+
   {/* Settings modal */}
   <SettingsModal
     open={showSettingsMobile}
@@ -1245,12 +1328,14 @@ const handleMapMarkerClick = (category: POICategory, index: number) => {
 ```
 
 **Remove Old State** (around line 62):
+
 ```typescript
 // DELETE THIS LINE:
-const [mobileView, setMobileView] = useState<'list' | 'map'>('list');
+const [mobileView, setMobileView] = useState<"list" | "map">("list")
 ```
 
 **Desktop Section** (keep unchanged, around line 421-554):
+
 ```typescript
 {/* Desktop: Side-by-side layout */}
 <div className="hidden md:flex md:flex-row flex-1 overflow-hidden">
@@ -1262,16 +1347,19 @@ const [mobileView, setMobileView] = useState<'list' | 'map'>('list');
 In `DrawerDetails.tsx`, add error display at the top of the component when `error` prop is passed:
 
 ```tsx
-{error && (
-  <div className="px-4 pt-4">
-    <div className="px-4 py-2 bg-red-50 text-red-700 text-sm rounded-lg border border-red-200">
-      {error}
+{
+  error && (
+    <div className="px-4 pt-4">
+      <div className="px-4 py-2 bg-red-50 text-red-700 text-sm rounded-lg border border-red-200">
+        {error}
+      </div>
     </div>
-  </div>
-)}
+  )
+}
 ```
 
 **Testing**:
+
 - [ ] Mobile shows drawer + map
 - [ ] Desktop unchanged (sidebar visible)
 - [ ] Floating search bar visible at lowest snap
@@ -1294,60 +1382,64 @@ In `DrawerDetails.tsx`, add error display at the top of the component when `erro
 useEffect(() => {
   const handleKeyDown = (e: KeyboardEvent) => {
     // Don't interfere with input fields
-    if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
-      return;
+    if (
+      e.target instanceof HTMLInputElement ||
+      e.target instanceof HTMLTextAreaElement
+    ) {
+      return
     }
-    
+
     // Arrow Left/Right: Switch tabs
-    if (e.key === 'ArrowLeft') {
-      const tabs: POICategory[] = ['school', 'station', 'supermarket'];
-      const idx = tabs.indexOf(activeTab);
-      onActiveTabChange(tabs[idx > 0 ? idx - 1 : 2]);
+    if (e.key === "ArrowLeft") {
+      const tabs: POICategory[] = ["school", "station", "supermarket"]
+      const idx = tabs.indexOf(activeTab)
+      onActiveTabChange(tabs[idx > 0 ? idx - 1 : 2])
     }
-    
-    if (e.key === 'ArrowRight') {
-      const tabs: POICategory[] = ['school', 'station', 'supermarket'];
-      const idx = tabs.indexOf(activeTab);
-      onActiveTabChange(tabs[idx < 2 ? idx + 1 : 0]);
+
+    if (e.key === "ArrowRight") {
+      const tabs: POICategory[] = ["school", "station", "supermarket"]
+      const idx = tabs.indexOf(activeTab)
+      onActiveTabChange(tabs[idx < 2 ? idx + 1 : 0])
     }
-    
+
     // Arrow Up: Expand drawer
-    if (e.key === 'ArrowUp' && snapIndex < 2) {
-      e.preventDefault();
-      onSnapIndexChange(snapIndex + 1);
+    if (e.key === "ArrowUp" && snapIndex < 2) {
+      e.preventDefault()
+      onSnapIndexChange(snapIndex + 1)
     }
-    
+
     // Arrow Down: Collapse drawer
-    if (e.key === 'ArrowDown' && snapIndex > 0) {
-      e.preventDefault();
-      onSnapIndexChange(snapIndex - 1);
+    if (e.key === "ArrowDown" && snapIndex > 0) {
+      e.preventDefault()
+      onSnapIndexChange(snapIndex - 1)
     }
-    
+
     // Escape: Collapse to lowest
-    if (e.key === 'Escape' && snapIndex > 0) {
-      onSnapIndexChange(0);
+    if (e.key === "Escape" && snapIndex > 0) {
+      onSnapIndexChange(0)
     }
-  };
-  
-  window.addEventListener('keydown', handleKeyDown);
-  return () => window.removeEventListener('keydown', handleKeyDown);
-}, [activeTab, snapIndex, onActiveTabChange, onSnapIndexChange]);
+  }
+
+  window.addEventListener("keydown", handleKeyDown)
+  return () => window.removeEventListener("keydown", handleKeyDown)
+}, [activeTab, snapIndex, onActiveTabChange, onSnapIndexChange])
 
 // Focus management
 useEffect(() => {
   if (snapIndex === 1) {
     // Focus on details when expanded to middle
-    const detailsPanel = document.querySelector('[role="tabpanel"]');
+    const detailsPanel = document.querySelector('[role="tabpanel"]')
     if (detailsPanel instanceof HTMLElement) {
-      detailsPanel.focus();
+      detailsPanel.focus()
     }
   }
-}, [snapIndex]);
+}, [snapIndex])
 ```
 
 **ARIA Labels** (add to components):
 
 **DrawerTabBar.tsx**:
+
 ```typescript
 <div role="tablist" aria-label="Category navigation">
   <button
@@ -1360,6 +1452,7 @@ useEffect(() => {
 ```
 
 **DrawerDetails.tsx**:
+
 ```typescript
 <div
   role="tabpanel"
@@ -1370,6 +1463,7 @@ useEffect(() => {
 ```
 
 **Drag Handle**:
+
 ```typescript
 <div
   role="separator"
@@ -1380,6 +1474,7 @@ useEffect(() => {
 ```
 
 **Testing**:
+
 - [ ] Tab key navigates through elements
 - [ ] Arrow keys switch tabs
 - [ ] Arrow up/down change snap points
@@ -1393,6 +1488,7 @@ useEffect(() => {
 ### Phase 12: Final Testing & Validation (60 min)
 
 **Functional Tests**:
+
 - [ ] Install vaul completes without errors
 - [ ] All 7 new components compile
 - [ ] App runs without console errors
@@ -1414,6 +1510,7 @@ useEffect(() => {
 - [ ] Clicking marker syncs drawer
 
 **Color Validation** (use browser DevTools):
+
 - [ ] School tab active (Government): `#22c55e` (green-500)
 - [ ] School tab active (Catholic): `#a855f7` (purple-500)
 - [ ] School tab active (Independent): `#f97316` (orange-500)
@@ -1425,6 +1522,7 @@ useEffect(() => {
 - [ ] Map markers match tab colors
 
 **Visual Tests**:
+
 - [ ] Drawer rounded corners at top
 - [ ] Shadow visible
 - [ ] Transitions smooth (200ms)
@@ -1435,6 +1533,7 @@ useEffect(() => {
 - [ ] Backdrop dims screen
 
 **Device Tests**:
+
 - [ ] iOS Safari (test viewport height)
 - [ ] Android Chrome
 - [ ] Landscape orientation
@@ -1442,6 +1541,7 @@ useEffect(() => {
 - [ ] Large screen (iPad mini)
 
 **Accessibility Tests**:
+
 - [ ] Keyboard navigation works
 - [ ] Tab key moves focus
 - [ ] Arrow keys change content
@@ -1450,6 +1550,7 @@ useEffect(() => {
 - [ ] Color contrast sufficient (WCAG AA)
 
 **Desktop Tests**:
+
 - [ ] Desktop layout unchanged
 - [ ] Sidebar still visible
 - [ ] No drawer on desktop
@@ -1491,24 +1592,31 @@ transition: colors 200ms ease-in-out;
 ## Troubleshooting
 
 ### Issue: Drawer not expanding/collapsing
+
 **Solution**: Check vaul props, ensure `dismissible={false}` and `modal={false}`
 
 ### Issue: Search bar not fading
+
 **Solution**: Verify `pointer-events-none` is applied when opacity is 0
 
 ### Issue: Colors don't match
+
 **Solution**: Use exact hex values from "Color System Reference" section
 
 ### Issue: iOS Safari viewport clipping
+
 **Solution**: Use `100dvh` instead of `100vh`, add `env(safe-area-inset-bottom)`
 
 ### Issue: Drawer blocks map touches
+
 **Solution**: Ensure map has `pointer-events-auto`, drawer overlay is transparent
 
 ### Issue: State not syncing
+
 **Solution**: Check that all state updates use proper setters, not direct mutation
 
 ### Issue: TypeScript errors
+
 **Solution**: Ensure all imports match existing types from `src/types/index.ts`
 
 ---

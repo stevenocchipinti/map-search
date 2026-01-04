@@ -20,6 +20,7 @@ In the original vaul source, `DialogPrimitive.Root` is instantiated without pass
 ```
 
 This means even when you set `modal={false}` on `Drawer.Root`, Radix Dialog still runs in modal mode, which:
+
 1. Sets `aria-hidden="true"` on the app root
 2. Adds focus guard elements
 3. Traps focus within the dialog
@@ -62,10 +63,10 @@ Import from this vendored copy instead of the `vaul` package:
 
 ```tsx
 // Before:
-import { Drawer } from 'vaul';
+import { Drawer } from "vaul"
 
 // After:
-import { Drawer } from '@/lib/vaul';
+import { Drawer } from "@/lib/vaul"
 ```
 
 ## Maintenance

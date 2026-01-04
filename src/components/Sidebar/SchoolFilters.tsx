@@ -1,21 +1,21 @@
-import type { SchoolSector, SchoolType } from '../../types';
-import { Switch } from '../UI/Switch';
+import type { SchoolSector, SchoolType } from "../../types"
+import { Switch } from "../UI/Switch"
 
 interface SchoolFiltersProps {
-  sectors: Set<SchoolSector>;
-  onToggleSector: (sector: SchoolSector) => void;
-  schoolTypes: Set<SchoolType>;
-  onToggleSchoolType: (type: SchoolType) => void;
+  sectors: Set<SchoolSector>
+  onToggleSector: (sector: SchoolSector) => void
+  schoolTypes: Set<SchoolType>
+  onToggleSchoolType: (type: SchoolType) => void
 }
 
-export function SchoolFilters({ 
-  sectors, 
+export function SchoolFilters({
+  sectors,
   onToggleSector,
   schoolTypes,
   onToggleSchoolType,
 }: SchoolFiltersProps) {
-  const allSectors: SchoolSector[] = ['Government', 'Catholic', 'Independent'];
-  const allTypes: SchoolType[] = ['Primary', 'Secondary', 'Combined'];
+  const allSectors: SchoolSector[] = ["Government", "Catholic", "Independent"]
+  const allTypes: SchoolType[] = ["Primary", "Secondary", "Combined"]
 
   return (
     <div className="space-y-4">
@@ -23,7 +23,7 @@ export function SchoolFilters({
       <div>
         <p className="text-xs font-medium text-gray-500 mb-3">Sector</p>
         <div className="space-y-2">
-          {allSectors.map((sector) => (
+          {allSectors.map(sector => (
             <label
               key={sector}
               htmlFor={`sector-${sector.toLowerCase()}`}
@@ -46,15 +46,13 @@ export function SchoolFilters({
       <div>
         <p className="text-xs font-medium text-gray-500 mb-3">Level</p>
         <div className="space-y-2">
-          {allTypes.map((type) => (
+          {allTypes.map(type => (
             <label
               key={type}
               htmlFor={`type-${type.toLowerCase()}`}
               className="flex items-center justify-between cursor-pointer py-1"
             >
-              <span className="text-sm font-medium text-gray-700">
-                {type}
-              </span>
+              <span className="text-sm font-medium text-gray-700">{type}</span>
               <Switch
                 id={`type-${type.toLowerCase()}`}
                 checked={schoolTypes.has(type)}
@@ -65,5 +63,5 @@ export function SchoolFilters({
         </div>
       </div>
     </div>
-  );
+  )
 }
