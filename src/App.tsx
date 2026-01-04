@@ -1144,7 +1144,7 @@ function App() {
         </div>
       </div>
 
-      {/* Mobile: Drawer with floating elements */}
+      {/* Mobile: Drawer with floating elements - hidden on desktop (md:hidden) */}
       <div className="flex md:hidden flex-col h-full relative">
         {/* Offline banner (skinny strip at top) */}
         {!isOnline && !offlineBannerDismissed && (

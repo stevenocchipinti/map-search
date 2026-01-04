@@ -10,6 +10,7 @@ import { SearchBar } from "./SearchBar"
 import { POICard } from "./POICard"
 import { OfflineBanner } from "./OfflineBanner"
 import { SettingsPanel } from "../Settings/SettingsPanel"
+import { Logo } from "../UI/Logo"
 
 interface SidebarProps {
   // Search
@@ -86,21 +87,7 @@ export function Sidebar({
       {/* Header with Logo/Title */}
       <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100 bg-white">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-            <svg
-              className="w-5 h-5 text-white"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
-              />
-            </svg>
-          </div>
+          <Logo size={32} color="gradient" />
           <h1 className="text-xl font-semibold text-gray-900 tracking-tight">
             Local Search
           </h1>
@@ -149,7 +136,14 @@ export function Sidebar({
 
       {/* Settings Panel (Conditional) */}
       {showSettings ? (
-        <SettingsPanel />
+        <SettingsPanel
+          sectors={sectors}
+          onToggleSector={onToggleSector}
+          schoolTypes={schoolTypes}
+          onToggleSchoolType={onToggleSchoolType}
+          showHeader={true}
+          onClose={() => setShowSettings(false)}
+        />
       ) : (
         <>
           {/* Results or Empty State */}
@@ -165,10 +159,7 @@ export function Sidebar({
                     onSelect={index => onSelectPOI("school", index)}
                     route={schoolRoute}
                     routeLoading={schoolRouteLoading}
-                    sectors={sectors}
-                    onToggleSector={onToggleSector}
-                    schoolTypes={schoolTypes}
-                    onToggleSchoolType={onToggleSchoolType}
+                    onOpenSettings={() => setShowSettings(true)}
                   />
                 )}
 

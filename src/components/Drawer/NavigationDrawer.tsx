@@ -173,10 +173,10 @@ export function NavigationDrawer({
       }}
       fadeFromIndex={1}
     >
-      <Drawer.Overlay className="fixed inset-0 z-[1002] bg-black/20" />
+      <Drawer.Overlay className="fixed inset-0 z-[1002] bg-black/20 md:hidden" />
       <Drawer.Portal>
         <Drawer.Content
-          className="fixed drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] inset-x-0 bottom-0 z-[1003] flex flex-col bg-white rounded-t-3xl animate-drawer-slide-up"
+          className="fixed drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] inset-x-0 bottom-0 z-[1003] flex flex-col bg-white rounded-t-3xl animate-drawer-slide-up md:hidden"
           style={{ height: "100%" }}
         >
           <Drawer.Title className="sr-only">

@@ -10,6 +10,8 @@ interface SettingsPanelProps {
   onToggleSector?: (sector: SchoolSector) => void
   schoolTypes?: Set<SchoolType>
   onToggleSchoolType?: (type: SchoolType) => void
+  showHeader?: boolean
+  onClose?: () => void
 }
 
 const ALL_SECTORS: SchoolSector[] = ["Government", "Catholic", "Independent"]
@@ -20,6 +22,8 @@ export function SettingsPanel({
   onToggleSector,
   schoolTypes,
   onToggleSchoolType,
+  showHeader = false,
+  onClose,
 }: SettingsPanelProps) {
   const [cacheSize, setCacheSize] = useState<number>(0)
   const [cachedStates, setCachedStates] = useState<string[]>([])
@@ -78,6 +82,13 @@ export function SettingsPanel({
   return (
     <div className="flex-1 overflow-y-auto bg-gray-50">
       <div className="max-w-2xl space-y-6 p-5 min-h-full">
+        {/* Header - only shown on desktop sidebar */}
+        {showHeader && (
+          <div className="flex items-center justify-between mb-2">
+            <h2 className="text-xl font-semibold text-gray-900">Settings</h2>
+          </div>
+        )}
+
         {/* School Filters Section */}
         {sectors && onToggleSector && schoolTypes && onToggleSchoolType && (
           <div>
@@ -236,6 +247,20 @@ export function SettingsPanel({
             </div>
           </div>
         </div>
+
+        {/* Close button - only shown on desktop sidebar */}
+        {showHeader && onClose && (
+          <div className="pt-4 border-t border-gray-100">
+            <Button
+              variant="secondary"
+              size="md"
+              onClick={onClose}
+              className="w-full"
+            >
+              ← Back to Results
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   )

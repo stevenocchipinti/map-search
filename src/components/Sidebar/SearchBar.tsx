@@ -54,12 +54,12 @@ export function SearchBar({
         )}
 
         {/* Buttons */}
-        <div className="flex gap-3">
+        <div className="grid grid-cols-2 gap-3">
           <Button
             type="submit"
             variant="primary"
             size="md"
-            className="flex-1 h-12"
+            className="h-12"
             disabled={!value.trim() || loading}
           >
             <span className="font-medium">Search</span>
