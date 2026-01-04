@@ -149,7 +149,7 @@ export function DrawerTabBar({
             id={`${category}-tab`}
             className={`
               flex flex-col items-center justify-center gap-0.5 py-2 px-2 rounded-xl
-              transition-all duration-200 h-auto
+              transition-all duration-200 min-h-[44px]
               ${isActive ? getActiveStyle() : getInactiveStyle()}
               ${!hasData ? "opacity-50" : ""}
             `}

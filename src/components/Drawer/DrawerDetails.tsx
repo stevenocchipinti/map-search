@@ -50,7 +50,7 @@ export function DrawerDetails({
 
   return (
     <div
-      className="flex flex-col border-t border-gray-100"
+      className="flex flex-col"
       role="tabpanel"
       id={`${activeTab}-panel`}
       aria-labelledby={`${activeTab}-tab`}
