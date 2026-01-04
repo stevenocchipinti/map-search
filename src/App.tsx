@@ -27,7 +27,9 @@ import { FloatingSearchBar } from './components/Drawer/FloatingSearchBar';
 import { SettingsModal } from './components/Drawer/SettingsModal';
 import { LandingOverlay } from './components/Drawer/LandingOverlay';
 import { latLngBounds, type LatLngBounds } from 'leaflet';
+
 import './App.css';
+import '@fontsource/zain';
 
 const MAX_WALKING_DISTANCE_KM = 2.5;
 const MAX_RESULTS_PER_CATEGORY = 10;

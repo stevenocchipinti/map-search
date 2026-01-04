@@ -13,6 +13,7 @@
     "data:all": "tsx scripts/process-all.ts"
   },
   "dependencies": {
+    "@fontsource/zain": "^5.2.8",
     "@radix-ui/react-dialog": "^1.1.1",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.562.0",

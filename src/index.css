@@ -1,10 +1,14 @@
 @import "tailwindcss";
 
+h1 {
+  font-family: "Zain", sans-serif;
+}
+
 @layer base {
   * {
     box-sizing: border-box;
   }
-  
+
   html,
   body {
     margin: 0;
@@ -15,8 +19,9 @@
   }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -50,7 +55,7 @@
   .scrollbar-thin::-webkit-scrollbar-thumb:hover {
     background-color: rgb(156 163 175);
   }
-  
+
   /* Screen reader only - accessible but visually hidden */
   .sr-only {
     position: absolute;
@@ -178,4 +183,3 @@
 .animate-attribution-collapse {
   animation: attribution-collapse 0.3s cubic-bezier(0.32, 0.72, 0, 1) forwards;
 }
-
