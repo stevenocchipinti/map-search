@@ -1201,6 +1201,7 @@ function App() {
             onChange={setSearchInput}
             onSearch={handleLandingSearch}
             onUseLocation={handleLandingUseLocation}
+            onOpenSettings={() => setShowSettingsMobile(true)}
             loading={loading}
           />
         )}

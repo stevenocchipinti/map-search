@@ -1,12 +1,12 @@
-import { useEffect, useRef } from "react"
-import { Search, MapPin, Loader2 } from "lucide-react"
 import { Logo } from "../UI/Logo"
+import { FloatingSearchBar } from "./FloatingSearchBar"
 
 interface LandingOverlayProps {
   value: string
   onChange: (value: string) => void
   onSearch: (address: string) => void
   onUseLocation: () => void
+  onOpenSettings: () => void
   loading?: boolean
 }
 
@@ -15,35 +15,9 @@ export function LandingOverlay({
   onChange,
   onSearch,
   onUseLocation,
+  onOpenSettings,
   loading = false,
 }: LandingOverlayProps) {
-  const inputRef = useRef<HTMLInputElement>(null)
-
-  // Focus input on mount
-  useEffect(() => {
-    // Small delay to ensure the element is fully rendered
-    const timer = setTimeout(() => {
-      inputRef.current?.focus()
-    }, 100)
-    return () => clearTimeout(timer)
-  }, [])
-
-  const handleSubmit = (e?: React.FormEvent) => {
-    e?.preventDefault()
-
-    if (value.trim()) {
-      onSearch(value)
-    } else {
-      onUseLocation()
-    }
-  }
-
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter") {
-      handleSubmit()
-    }
-  }
-
   return (
     <div 
       className="landing-overlay fixed inset-0 z-[2000] flex flex-col items-center justify-center bg-black/70 px-6"
@@ -64,40 +38,17 @@ export function LandingOverlay({
         </p>
       </div>
 
-      {/* Search bar - centered, matches FloatingSearchBar width */}
-      <div className="landing-search-bar w-[calc(100%-2rem)] max-w-[calc(100%-2rem)]">
-        <div className="bg-white rounded-full shadow-lg p-2 flex items-center gap-2">
-          <input
-            ref={inputRef}
-            type="text"
-            id="landing-address-search"
-            name="address"
-            autoComplete="street-address"
-            value={value}
-            onChange={e => onChange(e.target.value)}
-            onKeyDown={handleKeyDown}
-            placeholder="Search address..."
-            className="flex-1 px-4 py-2 text-sm focus:outline-none bg-transparent"
-            aria-label="Search address"
-            disabled={loading}
-          />
-
-          <button
-            onClick={() => handleSubmit()}
-            disabled={loading}
-            className="flex-shrink-0 w-10 h-10 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 active:bg-gray-300 transition-colors duration-200 flex items-center justify-center disabled:opacity-50"
-            aria-label={value.trim() ? "Search" : "Use current location"}
-          >
-            {loading ? (
-              <Loader2 className="w-5 h-5 animate-spin" />
-            ) : value.trim() ? (
-              <Search className="w-5 h-5" />
-            ) : (
-              <MapPin className="w-5 h-5" />
-            )}
-          </button>
-        </div>
-      </div>
+      {/* Search bar using FloatingSearchBar component */}
+      <FloatingSearchBar
+        value={value}
+        onChange={onChange}
+        onSearch={onSearch}
+        onUseLocation={onUseLocation}
+        onOpenSettings={onOpenSettings}
+        loading={loading}
+        autoFocus={true}
+        className="landing-search-bar !relative !left-0 !right-0 w-full max-w-full"
+      />
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import { Search, MapPin, Loader2, Settings2 } from "lucide-react"
+import { useEffect, useRef } from "react"
 
 interface FloatingSearchBarProps {
   value: string
@@ -8,6 +9,7 @@ interface FloatingSearchBarProps {
   onOpenSettings: () => void
   loading?: boolean
   className?: string
+  autoFocus?: boolean
 }
 
 export function FloatingSearchBar({
@@ -18,7 +20,21 @@ export function FloatingSearchBar({
   onOpenSettings,
   loading,
   className = "",
+  autoFocus = false,
 }: FloatingSearchBarProps) {
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  // Focus input on mount if autoFocus is true
+  useEffect(() => {
+    if (autoFocus) {
+      // Small delay to ensure the element is fully rendered
+      const timer = setTimeout(() => {
+        inputRef.current?.focus()
+      }, 100)
+      return () => clearTimeout(timer)
+    }
+  }, [autoFocus])
+
   const handleSubmit = (e?: React.FormEvent) => {
     e?.preventDefault()
 
@@ -41,6 +57,7 @@ export function FloatingSearchBar({
     >
       <div className="bg-white rounded-full shadow-lg p-2 flex items-center gap-2">
         <input
+          ref={inputRef}
           type="text"
           id="floating-address-search"
           name="address"
