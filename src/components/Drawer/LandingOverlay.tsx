@@ -19,7 +19,7 @@ export function LandingOverlay({
   loading = false,
 }: LandingOverlayProps) {
   return (
-    <div className="landing-overlay fixed inset-0 z-[2000] flex flex-col items-center justify-center bg-black/70 px-6">
+    <div className="landing-overlay fixed inset-0 z-[900] flex flex-col items-center justify-center bg-black/70 px-6">
       {/* Branding section */}
       <div className="landing-logo flex flex-col items-center mb-10">
         {/* Logo - white, larger */}

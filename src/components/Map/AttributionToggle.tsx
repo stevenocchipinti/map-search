@@ -25,7 +25,7 @@ export function AttributionToggle({
 
   return (
     <div
-      className={`fixed bottom-[96px] z-[2001] ${
+      className={`fixed bottom-[96px] z-[950] ${
         isLanding
           ? "left-1/2 -translate-x-1/2 landing-attribution"
           : "right-4 floating-attribution"
