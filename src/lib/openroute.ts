@@ -3,7 +3,7 @@
  */
 
 const ORS_API_URL =
-  "https://api.openrouteservice.org/v2/directions/foot-walking"
+  "https://api.openrouteservice.org/v2/directions/foot-hiking"
 
 export interface WalkingRoute {
   durationMinutes: number
