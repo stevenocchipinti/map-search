@@ -3,6 +3,7 @@ import { Button } from "../UI/Button"
 import { Switch } from "../UI/Switch"
 import { useServiceWorker } from "../../hooks/useServiceWorker"
 import { useInstallPrompt } from "../../hooks/useInstallPrompt"
+import { getApiCacheStats, type ApiCacheStats } from "../../lib/api-cache"
 import type { SchoolSector, SchoolType } from "../../types"
 
 interface SettingsPanelProps {
@@ -25,30 +26,16 @@ export function SettingsPanel({
   showHeader = false,
   onClose,
 }: SettingsPanelProps) {
-  const [cacheSize, setCacheSize] = useState<number>(0)
+  const [cacheStats, setCacheStats] = useState<ApiCacheStats | null>(null)
   const [cachedStates, setCachedStates] = useState<string[]>([])
   const [clearing, setClearing] = useState(false)
   const { getCachedStates, clearCache: clearServiceWorkerCache } =
     useServiceWorker()
   const { installable, installed, promptInstall } = useInstallPrompt()
 
-  useEffect(() => {
-    updateCacheInfo()
-  }, [])
-
   const updateCacheInfo = async () => {
-    // Get cache size
-    if ("storage" in navigator && "estimate" in navigator.storage) {
-      try {
-        const estimate = await navigator.storage.estimate()
-        const used = estimate.usage || 0
-        setCacheSize(Math.round((used / 1024 / 1024) * 10) / 10) // MB with 1 decimal
-      } catch (error) {
-        console.error("Failed to estimate storage:", error)
-      }
-    }
+    setCacheStats(getApiCacheStats())
 
-    // Get cached states
     try {
       const states = await getCachedStates()
       setCachedStates(states)
@@ -57,18 +44,17 @@ export function SettingsPanel({
     }
   }
 
+  useEffect(() => {
+    updateCacheInfo()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   const handleClearCache = async () => {
     setClearing(true)
     try {
-      // Use the service worker hook to clear cache
       await clearServiceWorkerCache()
-
-      // Clear localStorage
       localStorage.clear()
-
-      await updateCacheInfo()
-
-      // Show success message
+      updateCacheInfo()
       alert("Cache cleared successfully! The page will reload.")
       window.location.reload()
     } catch (error) {
@@ -194,22 +180,37 @@ export function SettingsPanel({
         {/* Storage Section */}
         <div>
           <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3">Storage</h3>
-          <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-soft p-4">
-            <div className="flex items-center justify-between mb-4">
-              <div>
-                <p className="text-sm font-medium text-gray-700 dark:text-gray-300">Used</p>
-              </div>
-              <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                {cacheSize}{" "}
-                <span className="text-sm font-medium text-gray-600 dark:text-gray-400">MB</span>
-              </span>
-            </div>
+          <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-soft p-4 space-y-4">
 
-            {/* Cached States */}
+            {/* API cache stats */}
+            {cacheStats && (
+              <div className="space-y-2">
+                <CacheStatRow
+                  label="Addresses"
+                  count={cacheStats.geocode.count}
+                  max={cacheStats.geocode.max}
+                  ttlLabel="30 days"
+                />
+                <CacheStatRow
+                  label="Supermarket searches"
+                  count={cacheStats.supermarkets.count}
+                  max={cacheStats.supermarkets.max}
+                  ttlLabel="7 days"
+                />
+                <CacheStatRow
+                  label="Walking routes"
+                  count={cacheStats.walkingRoutes.count}
+                  max={cacheStats.walkingRoutes.max}
+                  ttlLabel="30 days"
+                />
+              </div>
+            )}
+
+            {/* Cached state data files */}
             {cachedStates.length > 0 && (
-              <div className="pt-4 border-t border-gray-100 dark:border-gray-800">
+              <div className="pt-3 border-t border-gray-100 dark:border-gray-800">
                 <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-2">
-                  Cached States
+                  State data files
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {cachedStates.map(state => (
@@ -224,17 +225,19 @@ export function SettingsPanel({
               </div>
             )}
 
-            {cachedStates.length === 0 && (
-              <div className="pt-4 border-t border-gray-100 dark:border-gray-800">
+            {cacheStats &&
+              cacheStats.geocode.count === 0 &&
+              cacheStats.supermarkets.count === 0 &&
+              cacheStats.walkingRoutes.count === 0 &&
+              cachedStates.length === 0 && (
                 <p className="text-xs text-gray-500 dark:text-gray-400">
-                  No state data cached yet. Search for an address to cache data
-                  for offline use.
+                  No data cached yet. Search for an address to save results for
+                  faster repeat searches.
                 </p>
-              </div>
-            )}
+              )}
 
             {/* Clear Cache Button */}
-            <div className="pt-4 mt-4 border-t border-gray-100 dark:border-gray-800">
+            <div className="pt-1 border-t border-gray-100 dark:border-gray-800">
               <Button
                 variant="secondary"
                 size="md"
@@ -262,6 +265,40 @@ export function SettingsPanel({
           </div>
         )}
       </div>
+    </div>
+  )
+}
+
+interface CacheStatRowProps {
+  label: string
+  count: number
+  max: number
+  ttlLabel: string
+}
+
+function CacheStatRow({ label, count, max, ttlLabel }: CacheStatRowProps) {
+  return (
+    <div className="flex items-center justify-between">
+      <div className="flex items-center gap-2 min-w-0">
+        <span className="text-sm text-gray-700 dark:text-gray-300 truncate">
+          {label}
+        </span>
+        <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0">
+          · {ttlLabel}
+        </span>
+      </div>
+      <span
+        className={`text-sm font-medium tabular-nums shrink-0 ml-3 ${
+          count > 0
+            ? "text-blue-600 dark:text-blue-400"
+            : "text-gray-400 dark:text-gray-500"
+        }`}
+      >
+        {count}
+        <span className="text-xs font-normal text-gray-400 dark:text-gray-600">
+          /{max}
+        </span>
+      </span>
     </div>
   )
 }

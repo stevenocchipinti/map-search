@@ -8,10 +8,11 @@
  * - Automatic retry on failure
  */
 
-import { useState, useCallback } from "react"
+import { useState, useCallback, useEffect } from "react"
 import type { WalkingRoute, RouteRequest, POI, SearchLocation } from "../types"
 import { fetchWalkingRoutes } from "../lib/api-client"
 import { getCacheKey } from "../utils/format"
+import { getAllCachedWalkingRoutes } from "../lib/api-cache"
 
 interface WalkingRoutesResult {
   routeCache: Map<string, WalkingRoute>
@@ -34,6 +35,25 @@ export function useWalkingRoutes(): WalkingRoutesResult {
   )
   const [loading, setLoading] = useState<Map<string, boolean>>(new Map())
   const [errors, setErrors] = useState<Map<string, string>>(new Map())
+
+  // Hydrate in-memory cache from localStorage on mount
+  useEffect(() => {
+    const persisted = getAllCachedWalkingRoutes<WalkingRoute>()
+    if (persisted.size > 0) {
+      setRouteCache(prev => {
+        const merged = new Map(prev)
+        for (const [key, route] of persisted) {
+          if (!merged.has(key)) {
+            merged.set(key, route)
+          }
+        }
+        return merged
+      })
+      console.log(
+        `[Walking Routes] Hydrated ${persisted.size} routes from cache`
+      )
+    }
+  }, [])
 
   const setRouteLoading = useCallback((key: string, isLoading: boolean) => {
     setLoading(prev => {

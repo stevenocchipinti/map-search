@@ -157,26 +157,29 @@ User clicks alternative POI:
 
 ### Cache Types and Strategies
 
+The service worker handles caching for **GET requests only**. API endpoints use
+POST requests which the Cache API cannot store — those are cached client-side
+in localStorage instead (see "API Response Caching" below).
+
 #### 1. Static Assets (HTML, CSS, JS)
 
-**Strategy**: Stale-While-Revalidate
+**Strategy**: Cache-First
 
 ```javascript
-// Return cached immediately, update in background
+// Return cached immediately, fallback to network
 cache.match(request).then(cached => {
-  const fetchPromise = fetch(request).then(response => {
+  return cached || fetch(request).then(response => {
     cache.put(request, response.clone())
     return response
   })
-  return cached || fetchPromise
 })
 ```
 
 **Benefits**:
 
-- ⚡ Instant load (cache-first speed)
-- 🆕 Auto-updates on next visit (network validation)
-- 📶 Offline-ready (cached fallback)
+- Instant load (cache-first speed)
+- Offline-ready (cached fallback)
+- Updated when service worker version changes
 
 #### 2. Data Files (schools.json, stations.json)
 
@@ -197,39 +200,25 @@ cache.match(request).then(cached => {
 
 **Rationale**: Data files rarely change (quarterly updates), cache indefinitely
 
-#### 3. API Responses
+#### 3. Map Tiles
 
-**Strategy**: Network-First with Smart Caching
+**Strategy**: Cache-First with LRU eviction (max 100 tiles)
 
-```javascript
-// Network first, but use cache if:
-// - Response is fresh (within TTL)
-// - Network fails
-// - Request already in-flight (dedupe)
+### API Response Caching (localStorage)
 
-const cached = await cache.match(request)
-const cachedTime = await getCachedTimestamp(key)
-const ttl = getTTLForEndpoint(request.url)
+API endpoints (`/api/geocode`, `/api/supermarkets`, `/api/walking-routes`) all
+use POST requests, which the Cache API cannot store. Instead, responses are
+cached client-side in localStorage with TTL-based expiration.
 
-if (cached && Date.now() - cachedTime < ttl) {
-  return cached // Fresh cache, no network call
-}
+**Implementation**: `src/lib/api-cache.ts`
 
-// Check if already fetching (deduplication)
-if (pendingRequests.has(key)) {
-  return await pendingRequests.get(key)
-}
+```typescript
+// Cache check happens in api-client.ts before any network call
+const cached = getCached<GeocodeResponse>("geocode", cacheKey)
+if (cached) return cached  // No network request made
 
-// Fetch from network
-try {
-  const response = await fetch(request)
-  cache.put(request, response.clone())
-  setCachedTimestamp(key, Date.now())
-  return response
-} catch (error) {
-  // Network failed, return stale cache if available
-  return cached || Promise.reject(error)
-}
+// On successful response, cache for future use
+setCached("geocode", cacheKey, data)
 ```
 
 **TTL Values**:
@@ -238,20 +227,26 @@ try {
 - Supermarkets: 7 days (stores change occasionally)
 - Walking routes: 30 days (routes rarely change)
 
-**Request Deduplication**:
+**Max Entries** (FIFO eviction when exceeded):
 
-- If same request is already in-flight, wait for it instead of duplicating
-- Prevents multiple tabs/components from making duplicate API calls
+- Geocode: 50 entries
+- Supermarkets: 30 entries
+- Walking routes: 100 entries
 
-### Cache Priority (Eviction Order)
+**Cache Persistence**:
 
-When storage is full, evict in this order:
+- Survives page refreshes and browser restarts
+- Cleared by Settings > Clear Cache (`localStorage.clear()`)
+- Walking routes are also hydrated into the in-memory `useWalkingRoutes`
+  cache on mount, so route data is available immediately without re-parsing
 
-1. Walking routes (oldest first)
-2. Supermarket searches (oldest first)
-3. Geocoding (oldest first)
-4. Data files (keep longest)
-5. Static assets (keep always)
+**Behavior on refresh**:
+
+1. URL params preserve search coordinates
+2. State data files served from service worker cache (GET, cache-first)
+3. Geocode/supermarket/route responses served from localStorage cache
+4. Walking routes hydrated into React state from localStorage
+5. No network requests needed if all data is within TTL
 
 ## Sequential API Fetching Strategy
 

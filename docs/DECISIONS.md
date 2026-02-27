@@ -103,17 +103,17 @@ This document captures all major decisions made during planning and implementati
 
 ---
 
-### ✅ Network-First with Smart Caching for APIs
+### ✅ TTL-Based localStorage Caching for API Responses
 
-**Decision**: Use network-first strategy for API endpoints, but with intelligent caching (TTL-based, deduplication).
+**Decision**: Cache API responses in localStorage with TTL-based expiration, not in the service worker.
 
 **Rationale**:
 
-- Balances freshness with performance
-- Respects external API rate limits
-- Instant responses for fresh cached data (no network call)
-- Graceful degradation when network fails
-- Request deduplication prevents duplicate API calls
+- All API endpoints use POST requests, which the Cache API cannot store
+- localStorage persists across page refreshes and browser restarts
+- TTL expiration ensures data freshness without manual intervention
+- Deterministic cache keys from request parameters enable efficient lookups
+- FIFO eviction prevents unbounded storage growth
 
 **TTL Values**:
 
@@ -124,13 +124,15 @@ This document captures all major decisions made during planning and implementati
 **Smart Behaviors**:
 
 - If cached data is fresh (within TTL), return immediately (no API call)
-- If request already in-flight, wait for it (no duplicate call)
-- If network fails, return stale cache (graceful degradation)
+- Walking routes hydrated into in-memory cache on mount for instant access
+- Duplicate in-flight requests prevented by useWalkingRoutes loading state
+- If network fails and no cache exists, error propagates normally
+- Settings > Clear Cache wipes everything via `localStorage.clear()`
 
 **Alternative Rejected**:
 
-- Always network-first (too many API calls, rate limit issues)
-- Cache-first (stale data, doesn't respect updates)
+- Service worker Cache API (doesn't support POST requests)
+- IndexedDB (more complex, localStorage is sufficient for this data volume)
 
 ---
 

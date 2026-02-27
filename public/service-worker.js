@@ -1,17 +1,20 @@
 /**
  * Service Worker for Local Search PWA
  *
- * Cache Strategy:
+ * Handles caching for GET requests only:
  * - App Shell: Cache-first (HTML, CSS, JS, icons)
  * - Data Files: Cache-first with network fallback (schools.json, stations.json)
- * - API Calls: Network-first with cache fallback
- * - Map Tiles: Cache-first with expiration
+ * - Map Tiles: Cache-first with LRU eviction
+ *
+ * NOTE: API endpoints (geocode, supermarkets, walking-routes) all use POST
+ * requests, which the Cache API cannot store. Those responses are cached
+ * client-side in localStorage via src/lib/api-cache.ts with TTL-based
+ * expiration instead.
  */
 
 const CACHE_VERSION = "v1"
 const CACHE_NAME = `map-search-${CACHE_VERSION}`
 const DATA_CACHE_NAME = `map-search-data-${CACHE_VERSION}`
-const API_CACHE_NAME = `map-search-api-${CACHE_VERSION}`
 const TILES_CACHE_NAME = `map-search-tiles-${CACHE_VERSION}`
 
 // App shell files to cache on install
@@ -20,14 +23,10 @@ const APP_SHELL = ["/", "/index.html", "/manifest.json", "/icon.svg"]
 // Data files (will be cached on demand by state)
 const DATA_FILES_PATTERN = /\/data\/[a-z]+\/(schools|stations)\.json$/
 
-// API endpoints
-const API_PATTERN = /\/api\/(geocode|supermarkets|walking-routes)/
-
 // Map tiles from Carto
 const TILES_PATTERN = /https:\/\/.*\.basemaps\.cartocdn\.com/
 
 // Maximum cache sizes
-const MAX_API_CACHE_SIZE = 50
 const MAX_TILES_CACHE_SIZE = 100
 
 /**
@@ -59,12 +58,12 @@ self.addEventListener("activate", event => {
       .then(cacheNames => {
         return Promise.all(
           cacheNames.map(cacheName => {
-            // Delete old versions of our caches
+            // Delete old versions of our caches, including the
+            // now-unused API cache (POST responses can't be cached here)
             if (
               cacheName.startsWith("map-search-") &&
               cacheName !== CACHE_NAME &&
               cacheName !== DATA_CACHE_NAME &&
-              cacheName !== API_CACHE_NAME &&
               cacheName !== TILES_CACHE_NAME
             ) {
               console.log("[SW] Deleting old cache:", cacheName)
@@ -98,13 +97,8 @@ self.addEventListener("fetch", event => {
   if (DATA_FILES_PATTERN.test(url.pathname)) {
     // Data files: Cache-first (they rarely change)
     event.respondWith(cacheFirstStrategy(request, DATA_CACHE_NAME))
-  } else if (API_PATTERN.test(url.pathname)) {
-    // API calls: Network-first with cache fallback
-    event.respondWith(
-      networkFirstStrategy(request, API_CACHE_NAME, MAX_API_CACHE_SIZE)
-    )
   } else if (TILES_PATTERN.test(url.href)) {
-    // Map tiles: Cache-first with expiration
+    // Map tiles: Cache-first with LRU eviction
     event.respondWith(
       cacheFirstStrategy(request, TILES_CACHE_NAME, MAX_TILES_CACHE_SIZE)
     )
@@ -112,7 +106,7 @@ self.addEventListener("fetch", event => {
     // App shell: Cache-first
     event.respondWith(cacheFirstStrategy(request, CACHE_NAME))
   }
-  // All other requests (external resources) go directly to network
+  // All other requests (external resources, API POSTs) go directly to network
 })
 
 /**
@@ -154,43 +148,6 @@ async function cacheFirstStrategy(request, cacheName, maxSize = null) {
       if (cachedPage) return cachedPage
     }
 
-    throw error
-  }
-}
-
-/**
- * Network-first strategy: Try network first, fallback to cache
- */
-async function networkFirstStrategy(request, cacheName, maxSize = null) {
-  try {
-    console.log("[SW] Network-first, fetching:", request.url)
-    const response = await fetch(request)
-
-    // Cache successful responses
-    if (response && response.status === 200) {
-      const cache = await caches.open(cacheName)
-      const responseToCache = response.clone()
-
-      // Manage cache size if specified
-      if (maxSize) {
-        await manageCacheSize(cacheName, maxSize)
-      }
-
-      cache.put(request, responseToCache)
-    }
-
-    return response
-  } catch (error) {
-    console.log("[SW] Network failed, checking cache:", request.url)
-    const cache = await caches.open(cacheName)
-    const cached = await cache.match(request)
-
-    if (cached) {
-      console.log("[SW] Serving from cache:", request.url)
-      return cached
-    }
-
-    console.error("[SW] Network-first strategy failed:", error)
     throw error
   }
 }
