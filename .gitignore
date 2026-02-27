@@ -31,3 +31,4 @@ data-sources/
 *.sln
 *.sw?
 .vercel
+.env*.local

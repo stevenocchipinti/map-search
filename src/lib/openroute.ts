@@ -33,10 +33,6 @@ export async function getWalkingRoute(
       [from.lng, from.lat], // ORS uses [lng, lat] order
       [to.lng, to.lat],
     ],
-    format: "geojson",
-    units: "m",
-    geometry: true,
-    instructions: false,
   }
 
   const response = await fetch(ORS_API_URL, {
@@ -52,7 +48,19 @@ export async function getWalkingRoute(
     if (response.status === 429) {
       throw new Error("RATE_LIMIT")
     }
-    throw new Error(`ORS API error: ${response.status}`)
+    
+    // Try to parse error response for more details
+    let errorDetails = `ORS API error: ${response.status}`
+    try {
+      const errorData = await response.json()
+      if (errorData.error?.message) {
+        errorDetails = `ORS API error: ${errorData.error.message} (${response.status})`
+      }
+    } catch {
+      // Ignore parse errors, use status code
+    }
+    
+    throw new Error(errorDetails)
   }
 
   const data = await response.json()

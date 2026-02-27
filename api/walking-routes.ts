@@ -84,8 +84,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const results = await getWalkingRoutesBatch(apiKey, from, destinations)
 
     // Convert to response format
-    const routeResponses: (RouteResponse | null)[] = results.map(result => {
+    const routeResponses: (RouteResponse | null)[] = results.map((result, index) => {
       if (!result.route) {
+        // Log error details for debugging
+        console.error(`Route ${index + 1} failed:`, {
+          error: result.error,
+          destination: `${result.lat}, ${result.lng}`,
+        })
         return null // Route failed or rate limited
       }
 
@@ -95,6 +100,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         polyline: result.route.encodedPolyline || "",
       }
     })
+
+    // Log summary if any routes failed
+    const failedCount = routeResponses.filter(r => r === null).length
+    if (failedCount > 0) {
+      console.warn(`Walking routes: ${failedCount}/${routeResponses.length} routes failed`)
+    }
 
     return res.status(200).json({ routes: routeResponses })
   } catch (error) {
