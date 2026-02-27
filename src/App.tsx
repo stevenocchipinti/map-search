@@ -968,10 +968,10 @@ function App() {
       : null
 
   return (
-    <div className="h-screen w-screen flex flex-col overflow-hidden bg-gray-50">
+    <div className="h-screen w-screen flex flex-col overflow-hidden bg-gray-50 dark:bg-gray-950">
       {/* Update Available Banner */}
       {updateAvailable && (
-        <div className="bg-blue-600 text-white px-5 py-3.5 flex items-center justify-between shadow-soft-md z-50">
+        <div className="bg-blue-600 text-white px-5 py-3.5 flex items-center justify-between shadow-soft-md z-50 dark:bg-blue-700">
           <div className="flex items-center gap-3">
             <svg
               className="w-5 h-5 flex-shrink-0"
@@ -990,7 +990,7 @@ function App() {
           </div>
           <button
             onClick={() => updateServiceWorker()}
-            className="px-4 py-2 bg-white text-blue-600 rounded-lg text-sm font-semibold hover:bg-blue-50 transition-all duration-200 shadow-soft min-h-[36px]"
+            className="px-4 py-2 bg-white text-blue-600 rounded-lg text-sm font-semibold hover:bg-blue-50 transition-all duration-200 shadow-soft min-h-[36px] dark:bg-gray-900 dark:text-blue-400 dark:hover:bg-gray-800"
           >
             Update Now
           </button>
@@ -1148,10 +1148,10 @@ function App() {
       <div className="flex md:hidden flex-col h-full relative">
         {/* Offline banner (skinny strip at top) */}
         {!isOnline && !offlineBannerDismissed && (
-          <div className="absolute top-0 left-0 right-0 z-[1001] bg-amber-50 border-b border-amber-200 px-4 py-2 flex items-center justify-between">
+          <div className="absolute top-0 left-0 right-0 z-[1001] bg-amber-50 border-b border-amber-200 px-4 py-2 flex items-center justify-between dark:bg-amber-950 dark:border-amber-800">
             <div className="flex items-center gap-2">
               <svg
-                className="w-4 h-4 text-amber-600"
+                className="w-4 h-4 text-amber-600 dark:text-amber-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -1163,13 +1163,13 @@ function App() {
                   d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414"
                 />
               </svg>
-              <span className="text-xs font-medium text-amber-900">
+              <span className="text-xs font-medium text-amber-900 dark:text-amber-200">
                 Offline mode
               </span>
             </div>
             <button
               onClick={() => setOfflineBannerDismissed(true)}
-              className="text-amber-600 hover:text-amber-800 transition-colors duration-200"
+              className="text-amber-600 hover:text-amber-800 transition-colors duration-200 dark:text-amber-400 dark:hover:text-amber-200"
               aria-label="Dismiss offline banner"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

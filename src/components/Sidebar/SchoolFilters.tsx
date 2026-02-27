@@ -21,7 +21,7 @@ export function SchoolFilters({
     <div className="space-y-4">
       {/* Sector filters */}
       <div>
-        <p className="text-xs font-medium text-gray-500 mb-3">Sector</p>
+        <p className="text-xs font-medium text-gray-500 mb-3 dark:text-gray-400">Sector</p>
         <div className="space-y-2">
           {allSectors.map(sector => (
             <label
@@ -29,7 +29,7 @@ export function SchoolFilters({
               htmlFor={`sector-${sector.toLowerCase()}`}
               className="flex items-center justify-between cursor-pointer py-1"
             >
-              <span className="text-sm font-medium text-gray-700">
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                 {sector}
               </span>
               <Switch
@@ -44,7 +44,7 @@ export function SchoolFilters({
 
       {/* Type filters */}
       <div>
-        <p className="text-xs font-medium text-gray-500 mb-3">Level</p>
+        <p className="text-xs font-medium text-gray-500 mb-3 dark:text-gray-400">Level</p>
         <div className="space-y-2">
           {allTypes.map(type => (
             <label
@@ -52,7 +52,7 @@ export function SchoolFilters({
               htmlFor={`type-${type.toLowerCase()}`}
               className="flex items-center justify-between cursor-pointer py-1"
             >
-              <span className="text-sm font-medium text-gray-700">{type}</span>
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{type}</span>
               <Switch
                 id={`type-${type.toLowerCase()}`}
                 checked={schoolTypes.has(type)}

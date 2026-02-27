@@ -33,7 +33,7 @@ export function SectorCheckboxes({ sectors, onToggle }: SectorCheckboxesProps) {
             name={`sector-${sector.toLowerCase()}`}
             checked={sectors.has(sector)}
             onChange={() => onToggle(sector)}
-            className="w-4 h-4 rounded border-gray-300 focus:ring-2 focus:ring-blue-500 focus:ring-offset-0"
+            className="w-4 h-4 rounded border-gray-300 focus:ring-2 focus:ring-blue-500 focus:ring-offset-0 dark:border-gray-600 dark:bg-gray-800"
           />
           <span className={`text-sm font-medium ${getSectorColor(sector)}`}>
             {sector}

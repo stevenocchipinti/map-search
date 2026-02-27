@@ -55,7 +55,7 @@ export function FloatingSearchBar({
     <div
       className={`fixed left-4 right-4 z-[1000] floating-search-bar ${className}`}
     >
-      <div className="bg-white rounded-full shadow-lg p-2 flex items-center gap-2">
+      <div className="bg-white dark:bg-gray-900 rounded-full shadow-lg p-2 flex items-center gap-2">
         <input
           ref={inputRef}
           type="text"
@@ -66,7 +66,7 @@ export function FloatingSearchBar({
           onChange={e => onChange(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Search address..."
-          className="flex-1 min-w-0 px-4 py-2 text-sm focus:outline-none bg-transparent"
+          className="flex-1 min-w-0 px-4 py-2 text-sm focus:outline-none bg-transparent text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500"
           aria-label="Search address"
           disabled={loading}
         />
@@ -74,7 +74,7 @@ export function FloatingSearchBar({
         <button
           onClick={onOpenSettings}
           disabled={loading}
-          className="flex-shrink-0 w-10 h-10 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 active:bg-gray-300 transition-colors duration-200 flex items-center justify-center disabled:opacity-50"
+          className="flex-shrink-0 w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 active:bg-gray-300 dark:active:bg-gray-600 transition-colors duration-200 flex items-center justify-center disabled:opacity-50"
           aria-label="Settings"
         >
           <Settings2 className="w-5 h-5" />
@@ -83,7 +83,7 @@ export function FloatingSearchBar({
         <button
           onClick={() => handleSubmit()}
           disabled={loading}
-          className="flex-shrink-0 w-10 h-10 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 active:bg-gray-300 transition-colors duration-200 flex items-center justify-center disabled:opacity-50"
+          className="flex-shrink-0 w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 active:bg-gray-300 dark:active:bg-gray-600 transition-colors duration-200 flex items-center justify-center disabled:opacity-50"
           aria-label={value.trim() ? "Search" : "Use current location"}
         >
           {loading ? (

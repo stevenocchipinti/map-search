@@ -83,18 +83,18 @@ export function Sidebar({
     schools.length > 0 || stations.length > 0 || supermarkets.length > 0
 
   return (
-    <div className="flex flex-col h-full bg-white">
+    <div className="flex flex-col h-full bg-white dark:bg-gray-900">
       {/* Header with Logo/Title */}
-      <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100 bg-white">
+      <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100 bg-white dark:border-gray-800 dark:bg-gray-900">
         <div className="flex items-center gap-3">
           <Logo size={32} color="gradient" />
-          <h1 className="text-xl font-semibold text-gray-900 tracking-tight">
+          <h1 className="text-xl font-semibold text-gray-900 tracking-tight dark:text-gray-100">
             Local Search
           </h1>
         </div>
         <button
           onClick={() => setShowSettings(!showSettings)}
-          className="p-2.5 text-gray-500 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-all duration-200"
+          className="p-2.5 text-gray-500 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-all duration-200 dark:text-gray-400 dark:hover:text-gray-100 dark:hover:bg-gray-800"
           aria-label="Settings"
         >
           <svg
@@ -148,7 +148,7 @@ export function Sidebar({
         <>
           {/* Results or Empty State */}
           {hasResults ? (
-            <div className="flex-1 overflow-y-auto bg-gray-50">
+            <div className="flex-1 overflow-y-auto bg-gray-50 dark:bg-gray-950">
               <div className="p-5 space-y-4">
                 {/* School Card */}
                 {schools.length > 0 && (
@@ -190,11 +190,11 @@ export function Sidebar({
             </div>
           ) : (
             /* Empty State */
-            <div className="flex-1 flex items-center justify-center p-8 bg-gray-50">
+            <div className="flex-1 flex items-center justify-center p-8 bg-gray-50 dark:bg-gray-950">
               <div className="text-center max-w-sm">
-                <div className="w-20 h-20 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                <div className="w-20 h-20 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-5 dark:bg-gray-800">
                   <svg
-                    className="w-10 h-10 text-gray-400"
+                    className="w-10 h-10 text-gray-400 dark:text-gray-500"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -207,10 +207,10 @@ export function Sidebar({
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2 dark:text-gray-100">
                   Find nearby amenities
                 </h3>
-                <p className="text-base text-gray-600 leading-relaxed">
+                <p className="text-base text-gray-600 leading-relaxed dark:text-gray-400">
                   Search for an address to discover schools, train stations, and
                   supermarkets in the area.
                 </p>

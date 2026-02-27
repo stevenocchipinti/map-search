@@ -118,12 +118,12 @@ export function DrawerTabBar({
 
   // Get active tab styling — only show when drawer is expanded
   const getActiveStyle = (): string => {
-    return snapIndex > 0 ? "bg-gray-100" : "bg-white"
+    return snapIndex > 0 ? "bg-gray-100 dark:bg-gray-800" : "bg-white dark:bg-gray-900"
   }
 
   // Get inactive tab styling
   const getInactiveStyle = (): string => {
-    return "bg-white"
+    return "bg-white dark:bg-gray-900"
   }
 
   const categories: POICategory[] = ["school", "station", "supermarket"]

@@ -46,15 +46,15 @@ export function SettingsModal({
     >
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0 z-[1100] bg-black/40 md:hidden" />
-        <Drawer.Content className="fixed top-0 right-0 bottom-0 z-[1101] flex flex-col bg-white w-[85vw] max-w-md shadow-2xl md:hidden">
+        <Drawer.Content className="fixed top-0 right-0 bottom-0 z-[1101] flex flex-col bg-white dark:bg-gray-900 w-[85vw] max-w-md shadow-2xl md:hidden">
           {/* Header */}
-          <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
-            <Drawer.Title className="text-xl font-semibold text-gray-900">
+          <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100 dark:border-gray-800">
+            <Drawer.Title className="text-xl font-semibold text-gray-900 dark:text-gray-100">
               Settings
             </Drawer.Title>
             <button
               onClick={onClose}
-              className="p-2 text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-200"
+              className="p-2 text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors duration-200"
               aria-label="Close settings"
             >
               <X className="w-5 h-5" />

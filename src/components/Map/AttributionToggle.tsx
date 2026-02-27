@@ -35,7 +35,7 @@ export function AttributionToggle({
         {/* Combined container with conditional background */}
         <div
           className={`flex items-center backdrop-blur-sm rounded-full shadow-lg h-8 overflow-hidden ${
-            isLanding ? "bg-stone-800/40" : "bg-white/95"
+            isLanding ? "bg-stone-800/40" : "bg-white/95 dark:bg-gray-900/95"
           }`}
         >
           {/* Text container - slides in/out */}
@@ -48,7 +48,7 @@ export function AttributionToggle({
           >
             <div
               className={`text-xs whitespace-nowrap ${
-                isLanding ? "text-stone-100" : "text-gray-700"
+                isLanding ? "text-stone-100" : "text-gray-700 dark:text-gray-300"
               }`}
             >
               {isLanding ? (
@@ -88,25 +88,25 @@ export function AttributionToggle({
                     href="https://leafletjs.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-gray-900 font-semibold transition-colors"
+                    className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 font-semibold transition-colors"
                   >
                     Leaflet
                   </a>{" "}
-                  <span className="text-gray-400">|</span> ©{" "}
+                  <span className="text-gray-400 dark:text-gray-500">|</span> ©{" "}
                   <a
                     href="https://www.openstreetmap.org/copyright"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-gray-900 font-semibold transition-colors"
+                    className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 font-semibold transition-colors"
                   >
                     OpenStreetMap
                   </a>{" "}
-                  contributors <span className="text-gray-400">|</span> ©{" "}
+                  contributors <span className="text-gray-400 dark:text-gray-500">|</span> ©{" "}
                   <a
                     href="https://carto.com/attributions"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-gray-900 font-semibold transition-colors"
+                    className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 font-semibold transition-colors"
                   >
                     CARTO
                   </a>
@@ -121,14 +121,14 @@ export function AttributionToggle({
             className={`flex-shrink-0 w-8 h-8 transition-colors duration-200 flex items-center justify-center rounded-full ${
               isLanding
                 ? "hover:bg-stone-700/50 active:bg-stone-600/50"
-                : "hover:bg-gray-50 active:bg-gray-100"
+                : "hover:bg-gray-50 dark:hover:bg-gray-800 active:bg-gray-100 dark:active:bg-gray-700"
             }`}
             aria-label={
               isExpanded ? "Collapse attribution" : "Show map attribution"
             }
           >
             <Info
-              className={`w-5 h-5 ${isLanding ? "text-stone-300" : "text-gray-600"}`}
+              className={`w-5 h-5 ${isLanding ? "text-stone-300" : "text-gray-600 dark:text-gray-400"}`}
             />
           </button>
         </div>

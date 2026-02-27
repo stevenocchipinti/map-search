@@ -80,11 +80,11 @@ export function POICard({
   const getCategoryColor = () => {
     switch (category) {
       case "school":
-        return "text-blue-600 bg-blue-50"
+        return "text-blue-600 bg-blue-50 dark:text-blue-400 dark:bg-blue-950"
       case "station":
-        return "text-violet-600 bg-violet-50"
+        return "text-violet-600 bg-violet-50 dark:text-violet-400 dark:bg-violet-950"
       case "supermarket":
-        return "text-teal-600 bg-teal-50"
+        return "text-teal-600 bg-teal-50 dark:text-teal-400 dark:bg-teal-950"
     }
   }
 
@@ -109,12 +109,12 @@ export function POICard({
   const estimatedTime = Math.round((selectedItem.distance * 1.4 * 60) / 5)
 
   return (
-    <div className="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+    <div className="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden dark:bg-gray-900 dark:border-gray-700">
       {/* Header */}
-      <div className="px-4 py-3 bg-gray-50 border-b border-gray-200">
+      <div className="px-4 py-3 bg-gray-50 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
         <div className="flex items-center gap-2">
           <span className={getCategoryColor()}>{getCategoryIcon()}</span>
-          <h3 className="font-semibold text-gray-900">{getCategoryTitle()}</h3>
+          <h3 className="font-semibold text-gray-900 dark:text-gray-100">{getCategoryTitle()}</h3>
         </div>
       </div>
 
@@ -123,11 +123,11 @@ export function POICard({
         <div className="space-y-2">
           {/* Name and Details */}
           <div>
-            <h4 className="font-medium text-gray-900 text-base leading-snug">
+            <h4 className="font-medium text-gray-900 text-base leading-snug dark:text-gray-100">
               {selectedItem.name}
             </h4>
             {selectedItem.details && (
-              <p className="text-sm text-gray-600 mt-1">
+              <p className="text-sm text-gray-600 mt-1 dark:text-gray-400">
                 {selectedItem.details}
               </p>
             )}
@@ -197,7 +197,7 @@ export function POICard({
           {category === "school" && onOpenSettings && (
             <button
               onClick={onOpenSettings}
-              className="text-xs text-blue-600 hover:text-blue-700 font-medium"
+              className="text-xs text-blue-600 hover:text-blue-700 font-medium dark:text-blue-400 dark:hover:text-blue-300"
             >
               Filter school sectors in settings →
             </button>
@@ -209,7 +209,7 @@ export function POICard({
               variant="ghost"
               size="sm"
               onClick={() => setShowAlternatives(!showAlternatives)}
-              className="w-full mt-2 text-blue-600 hover:text-blue-700 hover:bg-blue-50"
+              className="w-full mt-2 text-blue-600 hover:text-blue-700 hover:bg-blue-50 dark:text-blue-400 dark:hover:text-blue-300 dark:hover:bg-blue-950"
             >
               {showAlternatives
                 ? "Hide alternatives"

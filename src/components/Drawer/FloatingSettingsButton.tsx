@@ -10,7 +10,7 @@ export function FloatingSettingsButton({
   return (
     <button
       onClick={onClick}
-      className="fixed top-20 right-4 z-[1001] w-12 h-12 bg-white rounded-full shadow-soft-lg text-gray-700 hover:text-gray-900 hover:shadow-soft-xl transition-all duration-200 flex items-center justify-center md:hidden"
+      className="fixed top-20 right-4 z-[1001] w-12 h-12 bg-white dark:bg-gray-900 rounded-full shadow-soft-lg text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 hover:shadow-soft-xl transition-all duration-200 flex items-center justify-center md:hidden"
       aria-label="Settings"
     >
       <Settings className="w-6 h-6" />

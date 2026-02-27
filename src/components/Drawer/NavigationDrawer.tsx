@@ -175,7 +175,7 @@ export function NavigationDrawer({
       <Drawer.Overlay className="fixed inset-0 z-[1000] bg-black/20 md:hidden" />
       <Drawer.Portal>
         <Drawer.Content
-          className="fixed drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] inset-x-0 bottom-0 z-[1001] flex flex-col bg-white rounded-t-3xl animate-drawer-slide-up md:hidden"
+          className="fixed drop-shadow-[0_0_8px_rgba(0,0,0,0.2)] inset-x-0 bottom-0 z-[1001] flex flex-col bg-white dark:bg-gray-900 rounded-t-3xl animate-drawer-slide-up md:hidden"
           style={{ height: "100%" }}
         >
           <Drawer.Title className="sr-only">
@@ -203,7 +203,7 @@ export function NavigationDrawer({
             aria-orientation="vertical"
             className="pt-2 flex justify-center"
           >
-            <div className="w-12 h-1.5 bg-gray-300 rounded-full" />
+            <div className="w-12 h-1.5 bg-gray-300 dark:bg-gray-600 rounded-full" />
           </div>
 
           {/* Tab bar - always visible */}

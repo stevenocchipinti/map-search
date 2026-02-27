@@ -80,25 +80,25 @@ export function SettingsPanel({
   }
 
   return (
-    <div className="flex-1 overflow-y-auto bg-gray-50">
+    <div className="flex-1 overflow-y-auto bg-gray-50 dark:bg-gray-950">
       <div className="max-w-2xl space-y-6 p-5 min-h-full">
         {/* Header - only shown on desktop sidebar */}
         {showHeader && (
           <div className="flex items-center justify-between mb-2">
-            <h2 className="text-xl font-semibold text-gray-900">Settings</h2>
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">Settings</h2>
           </div>
         )}
 
         {/* School Filters Section */}
         {sectors && onToggleSector && schoolTypes && onToggleSchoolType && (
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 mb-3">
+            <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3">
               School Filters
             </h3>
             <div className="space-y-3">
               {/* Sector Card */}
-              <div className="bg-white border border-gray-200 rounded-xl shadow-soft p-4">
-                <p className="text-xs font-medium text-gray-500 mb-3">Sector</p>
+              <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-soft p-4">
+                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-3">Sector</p>
                 <div className="space-y-2">
                   {ALL_SECTORS.map(sector => (
                     <label
@@ -106,7 +106,7 @@ export function SettingsPanel({
                       htmlFor={`sector-${sector.toLowerCase()}`}
                       className="flex items-center justify-between cursor-pointer py-1"
                     >
-                      <span className="text-sm font-medium text-gray-700">
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                         {sector}
                       </span>
                       <Switch
@@ -120,8 +120,8 @@ export function SettingsPanel({
               </div>
 
               {/* Level Card */}
-              <div className="bg-white border border-gray-200 rounded-xl shadow-soft p-4">
-                <p className="text-xs font-medium text-gray-500 mb-3">Level</p>
+              <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-soft p-4">
+                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-3">Level</p>
                 <div className="space-y-2">
                   {ALL_TYPES.map(type => (
                     <label
@@ -129,7 +129,7 @@ export function SettingsPanel({
                       htmlFor={`type-${type.toLowerCase()}`}
                       className="flex items-center justify-between cursor-pointer py-1"
                     >
-                      <span className="text-sm font-medium text-gray-700">
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                         {type}
                       </span>
                       <Switch
@@ -148,14 +148,14 @@ export function SettingsPanel({
         {/* App Section - only show if there's content to display */}
         {installable && !installed && (
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 mb-3">App</h3>
+            <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3">App</h3>
             <div className="space-y-3">
               {/* Install App Card */}
-              <div className="bg-white border border-gray-200 rounded-xl shadow-soft p-4">
+              <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-soft p-4">
                 <div className="flex items-start gap-3 mb-3">
-                  <div className="flex-shrink-0 w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-10 h-10 bg-emerald-50 dark:bg-emerald-950 rounded-lg flex items-center justify-center">
                     <svg
-                      className="w-5 h-5 text-emerald-600"
+                      className="w-5 h-5 text-emerald-600 dark:text-emerald-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -169,10 +169,10 @@ export function SettingsPanel({
                     </svg>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-semibold text-gray-900">
+                    <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">
                       Install App
                     </p>
-                    <p className="mt-1 text-xs text-gray-600 leading-relaxed">
+                    <p className="mt-1 text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
                       Install this app for faster access and offline
                       functionality
                     </p>
@@ -193,29 +193,29 @@ export function SettingsPanel({
 
         {/* Storage Section */}
         <div>
-          <h3 className="text-sm font-semibold text-gray-900 mb-3">Storage</h3>
-          <div className="bg-white border border-gray-200 rounded-xl shadow-soft p-4">
+          <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3">Storage</h3>
+          <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-soft p-4">
             <div className="flex items-center justify-between mb-4">
               <div>
-                <p className="text-sm font-medium text-gray-700">Used</p>
+                <p className="text-sm font-medium text-gray-700 dark:text-gray-300">Used</p>
               </div>
-              <span className="text-2xl font-bold text-blue-600">
+              <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">
                 {cacheSize}{" "}
-                <span className="text-sm font-medium text-gray-600">MB</span>
+                <span className="text-sm font-medium text-gray-600 dark:text-gray-400">MB</span>
               </span>
             </div>
 
             {/* Cached States */}
             {cachedStates.length > 0 && (
-              <div className="pt-4 border-t border-gray-100">
-                <p className="text-xs font-medium text-gray-500 mb-2">
+              <div className="pt-4 border-t border-gray-100 dark:border-gray-800">
+                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-2">
                   Cached States
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {cachedStates.map(state => (
                     <span
                       key={state}
-                      className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200"
+                      className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800"
                     >
                       {state}
                     </span>
@@ -225,8 +225,8 @@ export function SettingsPanel({
             )}
 
             {cachedStates.length === 0 && (
-              <div className="pt-4 border-t border-gray-100">
-                <p className="text-xs text-gray-500">
+              <div className="pt-4 border-t border-gray-100 dark:border-gray-800">
+                <p className="text-xs text-gray-500 dark:text-gray-400">
                   No state data cached yet. Search for an address to cache data
                   for offline use.
                 </p>
@@ -234,7 +234,7 @@ export function SettingsPanel({
             )}
 
             {/* Clear Cache Button */}
-            <div className="pt-4 mt-4 border-t border-gray-100">
+            <div className="pt-4 mt-4 border-t border-gray-100 dark:border-gray-800">
               <Button
                 variant="secondary"
                 size="md"
@@ -250,7 +250,7 @@ export function SettingsPanel({
 
         {/* Close button - only shown on desktop sidebar */}
         {showHeader && onClose && (
-          <div className="pt-4 border-t border-gray-100">
+          <div className="pt-4 border-t border-gray-100 dark:border-gray-800">
             <Button
               variant="secondary"
               size="md"

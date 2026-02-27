@@ -26,7 +26,7 @@ export function SearchBar({
   }
 
   return (
-    <div className="p-5 bg-white border-b border-gray-100">
+    <div className="p-5 bg-white border-b border-gray-100 dark:bg-gray-900 dark:border-gray-800">
       <form onSubmit={handleSubmit} className="space-y-3">
         {/* Search Input */}
         <div className="relative">
@@ -38,7 +38,7 @@ export function SearchBar({
             value={value}
             onChange={e => onChange(e.target.value)}
             placeholder="Enter an address..."
-            className="w-full px-4 py-3.5 pr-12 text-base border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder:text-gray-400"
+            className="w-full px-4 py-3.5 pr-12 text-base border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100 dark:placeholder:text-gray-500 dark:focus:ring-blue-400"
             disabled={loading}
           />
           {loading && (
@@ -50,7 +50,7 @@ export function SearchBar({
 
         {/* Error Message */}
         {error && (
-          <div className="text-sm text-red-600 px-1 font-medium">{error}</div>
+          <div className="text-sm text-red-600 px-1 font-medium dark:text-red-400">{error}</div>
         )}
 
         {/* Buttons */}
