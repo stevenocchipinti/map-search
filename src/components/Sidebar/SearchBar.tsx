@@ -50,7 +50,7 @@ export function SearchBar({
 
         {/* Error Message */}
         {error && (
-          <div className="text-sm text-red-600 px-1 font-medium dark:text-red-400">{error}</div>
+          <div className="text-sm text-red-600 px-1 font-medium dark:text-red-300">{error}</div>
         )}
 
         {/* Buttons */}

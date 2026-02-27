@@ -108,17 +108,19 @@ export function DrawerTabBar({
   const getTextColor = (category: POICategory): string => {
     switch (category) {
       case "school":
-        return "text-blue-600"
+        return "text-blue-400"
       case "station":
-        return "text-violet-600"
+        return "text-violet-400"
       case "supermarket":
-        return "text-teal-600"
+        return "text-teal-400"
     }
   }
 
   // Get active tab styling — only show when drawer is expanded
   const getActiveStyle = (): string => {
-    return snapIndex > 0 ? "bg-gray-100 dark:bg-gray-800" : "bg-white dark:bg-gray-900"
+    return snapIndex > 0
+      ? "bg-gray-100 dark:bg-gray-800"
+      : "bg-white dark:bg-gray-900"
   }
 
   // Get inactive tab styling

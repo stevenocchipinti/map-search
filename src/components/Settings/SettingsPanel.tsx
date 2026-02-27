@@ -141,7 +141,7 @@ export function SettingsPanel({
                 <div className="flex items-start gap-3 mb-3">
                   <div className="flex-shrink-0 w-10 h-10 bg-emerald-50 dark:bg-emerald-950 rounded-lg flex items-center justify-center">
                     <svg
-                      className="w-5 h-5 text-emerald-600 dark:text-emerald-400"
+                      className="w-5 h-5 text-emerald-600 dark:text-emerald-300"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -290,7 +290,7 @@ function CacheStatRow({ label, count, max, ttlLabel }: CacheStatRowProps) {
       <span
         className={`text-sm font-medium tabular-nums shrink-0 ml-3 ${
           count > 0
-            ? "text-blue-600 dark:text-blue-400"
+            ? "text-blue-600 dark:text-blue-300"
             : "text-gray-400 dark:text-gray-500"
         }`}
       >
