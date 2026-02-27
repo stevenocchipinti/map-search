@@ -14,7 +14,7 @@ export function getCategoryColor(category: POICategory | "user"): string {
   if (category === "user") return "#ef4444" // Red for user location
 
   if (category === "school") return "#3b82f6" // Blue for all schools
-  if (category === "station") return "#dc2626" // Red for stations
+  if (category === "station") return "#7c3aed" // Purple for stations
   if (category === "supermarket") return "#14b8a6" // Teal for supermarkets
 
   return "#3b82f6" // Blue fallback

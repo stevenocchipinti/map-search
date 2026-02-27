@@ -1,5 +1,4 @@
-import { Check, Loader2 } from "lucide-react"
-import { Badge } from "../UI/Badge"
+import { Footprints, Loader2 } from "lucide-react"
 import { formatDistance, formatDuration } from "../../utils/format"
 import type { POI, POICategory, WalkingRoute } from "../../types"
 
@@ -11,10 +10,6 @@ interface DrawerDetailsProps {
 
   route?: WalkingRoute | null
   routeLoading?: boolean
-
-  onOpenSettings?: () => void
-
-  hasAlternatives: boolean
 }
 
 export function DrawerDetails({
@@ -23,8 +18,6 @@ export function DrawerDetails({
   selectedIndex,
   route,
   routeLoading,
-  onOpenSettings,
-  hasAlternatives,
 }: DrawerDetailsProps) {
   const selectedItem = items[selectedIndex]
 
@@ -50,7 +43,7 @@ export function DrawerDetails({
 
   return (
     <div
-      className="flex flex-col"
+      className="flex flex-col outline-none pb-6"
       role="tabpanel"
       id={`${activeTab}-panel`}
       aria-labelledby={`${activeTab}-tab`}
@@ -58,65 +51,40 @@ export function DrawerDetails({
     >
       {/* Selected item details */}
       <div className="p-4 space-y-3">
-        {/* Name */}
-        <div>
-          <h3 className="font-semibold text-gray-900 text-lg">
-            {selectedItem.name}
-          </h3>
-          {selectedItem.details && (
-            <p className="text-sm text-gray-600 mt-1">{selectedItem.details}</p>
-          )}
-        </div>
-
-        {/* Badges */}
-        <div className="flex flex-wrap gap-2">
-          {/* Walking time */}
-          {routeLoading ? (
-            <Badge
-              variant="loading"
-              icon={<Loader2 className="w-3 h-3 animate-spin" />}
-            >
-              Loading...
-            </Badge>
-          ) : route ? (
-            <Badge variant="actual" icon={<Check className="w-3 h-3" />}>
-              {formatDuration(route.duration)}
-            </Badge>
-          ) : (
-            <Badge variant="estimate">
-              ~{formatDuration(selectedItem.estimatedWalkingTime)}
-            </Badge>
-          )}
-
-          {/* Distance */}
-          <Badge variant="default">
-            {formatDistance(selectedItem.distance)}
-          </Badge>
-
-          {/* Sector (schools only) */}
-          {activeTab === "school" && selectedItem.sector && (
-            <Badge variant="default">{selectedItem.sector}</Badge>
-          )}
-        </div>
-
-        {/* Link to school settings (schools only) */}
-        {activeTab === "school" && onOpenSettings && (
-          <button
-            onClick={onOpenSettings}
-            className="text-xs text-blue-600 hover:text-blue-700 font-medium"
-          >
-            Filter school sectors in settings →
-          </button>
-        )}
-
-        {/* View alternatives heading */}
-        {hasAlternatives && (
-          <div className="pt-3">
-            <h4 className="text-sm font-medium text-gray-700">
-              {items.length - 1} more option{items.length - 1 !== 1 ? "s" : ""}
-            </h4>
+        {/* Name + distance pill */}
+        <div className="flex items-start justify-between gap-3">
+          <div className="flex-1 min-w-0">
+            <h3 className="font-semibold text-gray-900 text-lg leading-snug">
+              {selectedItem.name}
+            </h3>
+            {selectedItem.details && (
+              <p className="text-sm text-gray-600 mt-1">{selectedItem.details}</p>
+            )}
           </div>
-        )}
+          <span className="flex-shrink-0 text-sm text-gray-600 font-medium bg-gray-100 px-3 py-1.5 rounded-lg mt-0.5">
+            {formatDistance(selectedItem.distance)}
+          </span>
+        </div>
+
+        {/* Walking time — single inline row */}
+        <div className="flex items-center gap-1.5 text-sm font-medium text-gray-700">
+          {routeLoading ? (
+            <>
+              <Loader2 className="w-3.5 h-3.5 animate-spin flex-shrink-0" />
+              <span>Getting walking time…</span>
+            </>
+          ) : (
+            <>
+              <Footprints className="w-3.5 h-3.5 flex-shrink-0" />
+              <span>
+                {route
+                  ? formatDuration(route.duration)
+                  : `~${formatDuration(selectedItem.estimatedWalkingTime)}`}
+                {" walk"}
+              </span>
+            </>
+          )}
+        </div>
       </div>
     </div>
   )

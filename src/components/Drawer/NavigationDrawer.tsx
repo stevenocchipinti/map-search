@@ -44,7 +44,6 @@ export function NavigationDrawer({
   stationRoute,
   supermarketRoute,
   routeLoading,
-  onOpenSettings,
   snapIndex,
   onSnapIndexChange,
   activeTab,
@@ -185,7 +184,7 @@ export function NavigationDrawer({
               ? "Schools"
               : activeTab === "station"
                 ? "Stations"
-                : "Supermarkets"}
+                : "Groceries"}
           </Drawer.Title>
           <Drawer.Description className="sr-only">
             Browse and navigate to nearby{" "}
@@ -193,7 +192,7 @@ export function NavigationDrawer({
               ? "schools"
               : activeTab === "station"
                 ? "train stations"
-                : "supermarkets"}
+                : "grocery stores"}
             . Drag to expand or collapse.
           </Drawer.Description>
 
@@ -211,6 +210,7 @@ export function NavigationDrawer({
           <DrawerTabBar
             activeTab={activeTab}
             onTabClick={handleTabClick}
+            snapIndex={snapIndex}
             schools={schools}
             stations={stations}
             supermarkets={supermarkets}
@@ -227,8 +227,6 @@ export function NavigationDrawer({
             selectedIndex={selectedPOIs[activeTab]}
             route={getCurrentRoute()}
             routeLoading={routeLoading[activeTab]}
-            onOpenSettings={onOpenSettings}
-            hasAlternatives={getCurrentItems().length > 1}
           />
 
           {/* Alternatives list - visible at snap 2 */}

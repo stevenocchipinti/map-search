@@ -5,6 +5,7 @@ import { formatDuration } from "../../utils/format"
 interface DrawerTabBarProps {
   activeTab: POICategory
   onTabClick: (category: POICategory) => void
+  snapIndex: number
 
   // POI data
   schools: POI[]
@@ -23,6 +24,7 @@ interface DrawerTabBarProps {
 export function DrawerTabBar({
   activeTab,
   onTabClick,
+  snapIndex,
   schools,
   stations,
   supermarkets,
@@ -98,7 +100,7 @@ export function DrawerTabBar({
       case "station":
         return "Station"
       case "supermarket":
-        return "Market"
+        return "Grocer"
     }
   }
 
@@ -108,15 +110,15 @@ export function DrawerTabBar({
       case "school":
         return "text-blue-600"
       case "station":
-        return "text-red-600"
+        return "text-violet-600"
       case "supermarket":
         return "text-teal-600"
     }
   }
 
-  // Get active tab styling
+  // Get active tab styling — only show when drawer is expanded
   const getActiveStyle = (): string => {
-    return "bg-gray-100"
+    return snapIndex > 0 ? "bg-gray-100" : "bg-white"
   }
 
   // Get inactive tab styling

@@ -82,7 +82,7 @@ export function POICard({
       case "school":
         return "text-blue-600 bg-blue-50"
       case "station":
-        return "text-red-600 bg-red-50"
+        return "text-violet-600 bg-violet-50"
       case "supermarket":
         return "text-teal-600 bg-teal-50"
     }
