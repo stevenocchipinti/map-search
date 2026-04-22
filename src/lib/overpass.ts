@@ -135,8 +135,8 @@ export async function findNearbySupermarkets(
   const query = `
     [out:json][timeout:${OVERPASS_TIMEOUT_SECONDS}][maxsize:${OVERPASS_MAX_SIZE_BYTES}];
     (
-      node(around:${radiusMeters},${lat},${lng})["shop"="supermarket"];
-      way(around:${radiusMeters},${lat},${lng})["shop"="supermarket"];
+      node["shop"="supermarket"](around:${radiusMeters},${lat},${lng});
+      way["shop"="supermarket"](around:${radiusMeters},${lat},${lng});
     );
     out tags center;
   `
