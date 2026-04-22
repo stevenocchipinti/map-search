@@ -48,6 +48,8 @@ async function queryOverpass(query: string): Promise<any> {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
+      Accept: "application/json,text/plain,*/*",
+      "User-Agent": "local-search/1.0 (+https://local-search-map.vercel.app)",
     },
     body: `data=${encodeURIComponent(query)}`,
   })
