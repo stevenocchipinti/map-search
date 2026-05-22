@@ -4,8 +4,8 @@
   "description": "Find nearest schools, train stations, and supermarkets",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#3b82f6",
-  "background_color": "#ffffff",
+  "theme_color": "#165C87",
+  "background_color": "#101828",
   "icons": [
     {
       "src": "/icon-192.png",
