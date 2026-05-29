@@ -1338,6 +1338,7 @@ function App() {
         {/* Navigation drawer - shown after landing dismissed */}
         {!showLanding && (
           <NavigationDrawer
+            key={searchResults ? `${searchResults.location.lat}-${searchResults.location.lng}` : 'empty'}
             schools={searchResults?.schools || []}
             stations={searchResults?.stations || []}
             supermarkets={searchResults?.supermarkets || []}
