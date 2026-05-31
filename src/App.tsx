@@ -97,6 +97,11 @@ function App() {
     supermarket: false,
   })
 
+  // Deferred fetch state: when map is clicked, we show estimates first
+  // and defer supermarket + walking route fetches until drawer is opened
+  const [pendingRoutesFetch, setPendingRoutesFetch] = useState(false)
+  const [deferredLoading, setDeferredLoading] = useState(false)
+
   // Mobile drawer state
   const [drawerSnapIndex, setDrawerSnapIndex] = useState<number>(0)
   const [activeDrawerTab, setActiveDrawerTab] = useState<POICategory>("school")
@@ -110,6 +115,7 @@ function App() {
 
   // AbortController for canceling in-flight search requests
   const searchAbortController = useRef<AbortController | null>(null)
+  const deferredAbortController = useRef<AbortController | null>(null)
 
   /**
    * URL Validation and Sanitization Functions
@@ -229,6 +235,12 @@ function App() {
       searchAbortController.current.abort()
       searchAbortController.current = null
     }
+    if (deferredAbortController.current) {
+      deferredAbortController.current.abort()
+      deferredAbortController.current = null
+    }
+    setPendingRoutesFetch(false)
+    setDeferredLoading(false)
   }
 
   /**
@@ -443,6 +455,81 @@ function App() {
       }
     }
   }, [sectors, schoolTypes])
+
+  /**
+   * Deferred fetch: when drawer opens after a map click, fetch supermarkets + routes.
+   * On desktop (no drawer), trigger immediately when pendingRoutesFetch is set.
+   */
+  useEffect(() => {
+    if (!pendingRoutesFetch || !searchResults) return
+
+    // On desktop, there's no drawer - trigger immediately
+    // On mobile, wait for drawer to open (snapIndex > 0)
+    const isDesktop = window.matchMedia("(min-width: 768px)").matches
+    if (!isDesktop && drawerSnapIndex === 0) return
+
+    // Clear the pending flag immediately to avoid re-triggering
+    setPendingRoutesFetch(false)
+    setDeferredLoading(true)
+
+    // Create abort controller for this deferred fetch
+    const abortController = new AbortController()
+    deferredAbortController.current = abortController
+
+    const { lat, lng } = searchResults.location
+
+    // Fetch supermarkets and then walking routes
+    ;(async () => {
+      try {
+        if (abortController.signal.aborted) return
+        const supermarketsResult = await fetchSupermarkets(lat, lng)
+        if (abortController.signal.aborted) return
+        const supermarkets = supermarketsResult.supermarkets || []
+
+        setSearchResults(prev => {
+          if (!prev) return null
+          return { ...prev, supermarkets }
+        })
+
+        // Now fetch walking routes sequentially
+        const currentResults = searchResults
+        const topRoutes = [
+          ...(currentResults.schools.length > 0
+            ? [{ from: currentResults.location, to: currentResults.schools[0], category: "school" as const }]
+            : []),
+          ...(currentResults.stations.length > 0
+            ? [{ from: currentResults.location, to: currentResults.stations[0], category: "station" as const }]
+            : []),
+          ...(supermarkets.length > 0
+            ? [{ from: currentResults.location, to: supermarkets[0], category: "supermarket" as const }]
+            : []),
+        ]
+
+        for (const { from, to, category } of topRoutes) {
+          if (abortController.signal.aborted) return
+          const cachedRoute = getCachedRoute(from, to)
+          if (cachedRoute) continue
+
+          setRouteLoadingStates(prev => ({ ...prev, [category]: true }))
+          try {
+            await fetchRoutesSequentially([{ from, to }])
+          } catch (err) {
+            console.error(`Failed to fetch route for ${to.name}:`, err)
+          }
+          setRouteLoadingStates(prev => ({ ...prev, [category]: false }))
+        }
+      } catch (err) {
+        if (!abortController.signal.aborted) {
+          console.error("Deferred fetch error:", err)
+        }
+      } finally {
+        if (!abortController.signal.aborted) {
+          setDeferredLoading(false)
+        }
+        deferredAbortController.current = null
+      }
+    })()
+  }, [pendingRoutesFetch, drawerSnapIndex])
 
   /**
    * Determine Australian state from coordinates using geographic boundaries
@@ -771,6 +858,90 @@ function App() {
   }
 
   /**
+   * Handle map click - drop pin, show estimates, defer API calls
+   */
+  const handleMapClick = async (lat: number, lng: number): Promise<void> => {
+    // Cancel any pending search and deferred fetch
+    cancelPendingSearch()
+    if (deferredAbortController.current) {
+      deferredAbortController.current.abort()
+      deferredAbortController.current = null
+    }
+    setDeferredLoading(false)
+
+    // Clear search input
+    setSearchInput("")
+
+    // Clear error
+    setError(null)
+
+    // Dismiss landing if showing
+    if (showLanding) {
+      withViewTransition(() => {
+        setShowLanding(false)
+        setHasSearched(true)
+      })
+    } else {
+      setHasSearched(true)
+    }
+
+    // Drop pin immediately (don't change map view - user tapped where they're looking)
+    setUserLocation({ lat, lng })
+
+    // Update URL with coords
+    updateURLWithCoords(lat, lng, false)
+
+    // Collapse drawer on mobile
+    setDrawerSnapIndex(0)
+
+    // Determine state from coordinates
+    const state = determineStateFromCoordinates(lat, lng)
+
+    // Load state data (client-side, fast)
+    let schools: School[] = []
+    let stations: Station[] = []
+
+    if (!isStateLoaded(state)) {
+      const data = await loadState(state)
+      schools = data.schools
+      stations = data.stations
+    } else {
+      schools = getSchools(state)
+      stations = getStations(state)
+    }
+
+    // Filter and sort (client-side, instant)
+    const filteredSchools = filterAndSortSchools(
+      schools,
+      lat,
+      lng,
+      sectors,
+      schoolTypes
+    )
+    const filteredStations = filterAndSortStations(stations, lat, lng)
+
+    // Set results with empty supermarkets (will be fetched when drawer opens)
+    const results: SearchResponse = {
+      location: { lat, lng, state, displayName: "Pinned Location" },
+      schools: filteredSchools,
+      stations: filteredStations,
+      supermarkets: [],
+    }
+
+    setSearchResults(results)
+    setSelectedPOIs({ school: 0, station: 0, supermarket: 0 })
+
+    // Save last search location
+    localStorage.setItem(
+      "lastSearchLocation",
+      JSON.stringify({ lat, lng, state, displayName: "Pinned Location", timestamp: Date.now() })
+    )
+
+    // Mark that we need to fetch supermarkets + routes when drawer opens
+    setPendingRoutesFetch(true)
+  }
+
+  /**
    * Handle selecting an alternative POI
    */
   const handleSelectPOI = (category: POICategory, index: number): void => {
@@ -1031,7 +1202,7 @@ function App() {
 
         {/* Map - Desktop: 60% flex */}
         <div className="flex-1 h-full">
-          <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds}>
+          <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds} onMapClick={handleMapClick}>
             {/* User location marker - show immediately when we have coordinates */}
             {userLocation && (
               <MapMarker
@@ -1185,7 +1356,7 @@ function App() {
 
         {/* Map (full screen) */}
         <div className="absolute inset-0">
-          <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds}>
+          <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds} onMapClick={handleMapClick}>
             {/* User location marker - show immediately when we have coordinates */}
             {userLocation && (
               <MapMarker
@@ -1321,6 +1492,12 @@ function App() {
             onSearch={handleLandingSearch}
             onUseLocation={handleLandingUseLocation}
             onOpenSettings={() => setShowSettingsMobile(true)}
+            onDismiss={() => {
+              withViewTransition(() => {
+                setShowLanding(false)
+                setHasSearched(true)
+              })
+            }}
             loading={loading}
           />
         )}
@@ -1354,6 +1531,7 @@ function App() {
             activeTab={activeDrawerTab}
             onActiveTabChange={setActiveDrawerTab}
             hasSearched={hasSearched}
+            deferredLoading={deferredLoading}
           />
         )}
 

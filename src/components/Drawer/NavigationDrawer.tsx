@@ -32,6 +32,9 @@ interface NavigationDrawerProps {
 
   // Visibility control
   hasSearched?: boolean
+
+  // Deferred loading state (map click → drawer open triggers fetch)
+  deferredLoading?: boolean
 }
 
 export function NavigationDrawer({
@@ -49,6 +52,7 @@ export function NavigationDrawer({
   activeTab,
   onActiveTabChange,
   hasSearched = false,
+  deferredLoading = false,
 }: NavigationDrawerProps) {
   // Tab click toggle behavior
   const handleTabClick = (category: POICategory) => {
@@ -196,14 +200,24 @@ export function NavigationDrawer({
             . Drag to expand or collapse.
           </Drawer.Description>
 
-          {/* Drag handle - always visible */}
+          {/* Drag handle - animated loading indicator */}
           <div
             role="separator"
             aria-label="Drag to expand or collapse navigation"
             aria-orientation="vertical"
             className="pt-2 flex justify-center"
           >
-            <div className="w-12 h-1.5 bg-gray-300 dark:bg-gray-600 rounded-full" />
+            <div
+              className={`h-1.5 rounded-full transition-all duration-500 ease-in-out overflow-hidden ${
+                deferredLoading
+                  ? "w-1/2 bg-gray-200 dark:bg-gray-700"
+                  : "w-12 bg-gray-300 dark:bg-gray-600"
+              }`}
+            >
+              {deferredLoading && (
+                <div className="w-full h-full barber-pole" />
+              )}
+            </div>
           </div>
 
           {/* Tab bar - always visible */}
@@ -227,6 +241,7 @@ export function NavigationDrawer({
             selectedIndex={selectedPOIs[activeTab]}
             route={getCurrentRoute()}
             routeLoading={routeLoading[activeTab]}
+            deferredLoading={deferredLoading && getCurrentItems().length === 0}
           />
 
           {/* Alternatives list - visible at snap 2 */}
