@@ -952,21 +952,6 @@ function App() {
       JSON.stringify({ lat, lng, state, displayName: "Pinned Location", timestamp: Date.now() })
     )
 
-    // Calculate map bounds to fit user location and closest POIs
-    const closestPOIs = [
-      ...(filteredSchools.length > 0 ? [filteredSchools[0]] : []),
-      ...(filteredStations.length > 0 ? [filteredStations[0]] : []),
-    ]
-
-    if (closestPOIs.length > 0) {
-      const bounds = latLngBounds([])
-      bounds.extend([lat, lng])
-      closestPOIs.forEach(poi => {
-        bounds.extend([poi.latitude, poi.longitude])
-      })
-      setMapBounds(bounds)
-    }
-
     // Mark that we need to fetch supermarkets + routes when drawer opens
     setPendingRoutesFetch(true)
   }
@@ -1525,7 +1510,7 @@ function App() {
             onDismiss={() => {
               withViewTransition(() => {
                 setShowLanding(false)
-                setHasSearched(false)
+                setHasSearched(true)
               })
             }}
             loading={loading}

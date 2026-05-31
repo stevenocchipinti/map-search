@@ -45,15 +45,6 @@ export default {
         "soft-lg":
           "0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04)",
       },
-      keyframes: {
-        "barber-pole": {
-          "0%": { backgroundPosition: "0 0" },
-          "100%": { backgroundPosition: "20px 0" },
-        },
-      },
-      animation: {
-        "barber-pole": "barber-pole 0.6s linear infinite",
-      },
     },
   },
   plugins: [],

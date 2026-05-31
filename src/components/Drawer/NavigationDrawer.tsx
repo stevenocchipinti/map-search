@@ -215,7 +215,7 @@ export function NavigationDrawer({
               }`}
             >
               {deferredLoading && (
-                <div className="w-full h-full animate-barber-pole bg-[length:20px_20px] bg-[linear-gradient(45deg,_rgba(99,102,241,0.4)_25%,_transparent_25%,_transparent_50%,_rgba(99,102,241,0.4)_50%,_rgba(99,102,241,0.4)_75%,_transparent_75%)]" />
+                <div className="w-full h-full barber-pole" />
               )}
             </div>
           </div>
