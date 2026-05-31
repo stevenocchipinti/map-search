@@ -279,17 +279,6 @@ function App() {
   }
 
   /**
-   * Handle recent search selection from landing overlay - triggers view transition
-   */
-  const handleLandingRecentSelect = (recent: RecentSearch) => {
-    withViewTransition(() => {
-      setShowLanding(false)
-      setHasSearched(true)
-    })
-    handleRecentSelect(recent)
-  }
-
-  /**
    * Handle "use location" from landing overlay - triggers view transition
    */
   const handleLandingUseLocation = () => {
