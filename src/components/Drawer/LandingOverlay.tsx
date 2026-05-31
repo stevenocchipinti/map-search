@@ -7,6 +7,7 @@ interface LandingOverlayProps {
   onSearch: (address: string) => void
   onUseLocation: () => void
   onOpenSettings: () => void
+  onDismiss?: () => void
   loading?: boolean
 }
 
@@ -16,10 +17,21 @@ export function LandingOverlay({
   onSearch,
   onUseLocation,
   onOpenSettings,
+  onDismiss,
   loading = false,
 }: LandingOverlayProps) {
+  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    // Only dismiss if clicking the backdrop itself, not children
+    if (e.target === e.currentTarget && onDismiss) {
+      onDismiss()
+    }
+  }
+
   return (
-    <div className="landing-overlay fixed inset-0 z-[900] flex flex-col items-center justify-center bg-black/70 px-6">
+    <div
+      className="landing-overlay fixed inset-0 z-[900] flex flex-col items-center justify-center bg-black/70 px-6"
+      onClick={handleBackdropClick}
+    >
       {/* Branding section */}
       <div className="landing-logo flex flex-col items-center mb-10">
         {/* Logo - white, larger */}

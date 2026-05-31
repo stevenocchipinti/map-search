@@ -100,6 +100,7 @@ function App() {
   // Deferred fetch state: when map is clicked, we show estimates first
   // and defer supermarket + walking route fetches until drawer is opened
   const [pendingRoutesFetch, setPendingRoutesFetch] = useState(false)
+  const [deferredLoading, setDeferredLoading] = useState(false)
 
   // Mobile drawer state
   const [drawerSnapIndex, setDrawerSnapIndex] = useState<number>(0)
@@ -114,6 +115,7 @@ function App() {
 
   // AbortController for canceling in-flight search requests
   const searchAbortController = useRef<AbortController | null>(null)
+  const deferredAbortController = useRef<AbortController | null>(null)
 
   /**
    * URL Validation and Sanitization Functions
@@ -233,6 +235,12 @@ function App() {
       searchAbortController.current.abort()
       searchAbortController.current = null
     }
+    if (deferredAbortController.current) {
+      deferredAbortController.current.abort()
+      deferredAbortController.current = null
+    }
+    setPendingRoutesFetch(false)
+    setDeferredLoading(false)
   }
 
   /**
@@ -462,14 +470,20 @@ function App() {
 
     // Clear the pending flag immediately to avoid re-triggering
     setPendingRoutesFetch(false)
+    setDeferredLoading(true)
+
+    // Create abort controller for this deferred fetch
+    const abortController = new AbortController()
+    deferredAbortController.current = abortController
 
     const { lat, lng } = searchResults.location
 
     // Fetch supermarkets and then walking routes
     ;(async () => {
       try {
-        setLoading(true)
+        if (abortController.signal.aborted) return
         const supermarketsResult = await fetchSupermarkets(lat, lng)
+        if (abortController.signal.aborted) return
         const supermarkets = supermarketsResult.supermarkets || []
 
         setSearchResults(prev => {
@@ -506,6 +520,7 @@ function App() {
         ]
 
         for (const { from, to, category } of topRoutes) {
+          if (abortController.signal.aborted) return
           const cachedRoute = getCachedRoute(from, to)
           if (cachedRoute) continue
 
@@ -518,9 +533,14 @@ function App() {
           setRouteLoadingStates(prev => ({ ...prev, [category]: false }))
         }
       } catch (err) {
-        console.error("Deferred fetch error:", err)
+        if (!abortController.signal.aborted) {
+          console.error("Deferred fetch error:", err)
+        }
       } finally {
-        setLoading(false)
+        if (!abortController.signal.aborted) {
+          setDeferredLoading(false)
+        }
+        deferredAbortController.current = null
       }
     })()
   }, [pendingRoutesFetch, drawerSnapIndex])
@@ -855,8 +875,13 @@ function App() {
    * Handle map click - drop pin, show estimates, defer API calls
    */
   const handleMapClick = async (lat: number, lng: number): Promise<void> => {
-    // Cancel any pending search
+    // Cancel any pending search and deferred fetch
     cancelPendingSearch()
+    if (deferredAbortController.current) {
+      deferredAbortController.current.abort()
+      deferredAbortController.current = null
+    }
+    setDeferredLoading(false)
 
     // Clear search input
     setSearchInput("")
@@ -1497,6 +1522,12 @@ function App() {
             onSearch={handleLandingSearch}
             onUseLocation={handleLandingUseLocation}
             onOpenSettings={() => setShowSettingsMobile(true)}
+            onDismiss={() => {
+              withViewTransition(() => {
+                setShowLanding(false)
+                setHasSearched(false)
+              })
+            }}
             loading={loading}
           />
         )}
@@ -1530,6 +1561,7 @@ function App() {
             activeTab={activeDrawerTab}
             onActiveTabChange={setActiveDrawerTab}
             hasSearched={hasSearched}
+            deferredLoading={deferredLoading}
           />
         )}
 

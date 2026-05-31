@@ -10,6 +10,9 @@ interface DrawerDetailsProps {
 
   route?: WalkingRoute | null
   routeLoading?: boolean
+
+  // When true, show skeleton loader (data is being fetched)
+  deferredLoading?: boolean
 }
 
 export function DrawerDetails({
@@ -18,8 +21,36 @@ export function DrawerDetails({
   selectedIndex,
   route,
   routeLoading,
+  deferredLoading,
 }: DrawerDetailsProps) {
   const selectedItem = items[selectedIndex]
+
+  // Show skeleton when deferred loading is active and no data yet
+  if (deferredLoading && !selectedItem) {
+    return (
+      <div
+        className="flex flex-col outline-none pb-6"
+        role="tabpanel"
+        id={`${activeTab}-panel`}
+        aria-labelledby={`${activeTab}-tab`}
+        tabIndex={-1}
+      >
+        <div className="p-4 space-y-3 animate-pulse">
+          <div className="flex items-start justify-between gap-3">
+            <div className="flex-1 min-w-0 space-y-2">
+              <div className="h-5 bg-gray-200 dark:bg-gray-700 rounded w-3/4" />
+              <div className="h-4 bg-gray-100 dark:bg-gray-800 rounded w-1/2" />
+            </div>
+            <div className="h-8 w-16 bg-gray-100 dark:bg-gray-800 rounded-lg" />
+          </div>
+          <div className="flex items-center gap-1.5">
+            <div className="h-4 w-4 bg-gray-200 dark:bg-gray-700 rounded" />
+            <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-24" />
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   // No results case
   if (!selectedItem) {
