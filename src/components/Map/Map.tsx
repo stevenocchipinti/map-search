@@ -4,7 +4,7 @@
  * Leaflet map container with Carto tiles for visualizing search results and walking routes.
  */
 
-import { MapContainer, TileLayer, useMap } from "react-leaflet"
+import { MapContainer, TileLayer, useMap, useMapEvents } from "react-leaflet"
 import type { ReactNode } from "react"
 import { useEffect } from "react"
 import type { LatLngBounds } from "leaflet"
@@ -20,6 +20,19 @@ interface MapProps {
   zoom: number
   bounds?: LatLngBounds | null
   children?: ReactNode
+  onMapClick?: (lat: number, lng: number) => void
+}
+
+/**
+ * MapClickHandler - Listens for click events on the map
+ */
+function MapClickHandler({ onMapClick }: { onMapClick: (lat: number, lng: number) => void }) {
+  useMapEvents({
+    click(e) {
+      onMapClick(e.latlng.lat, e.latlng.lng)
+    },
+  })
+  return null
 }
 
 /**
@@ -51,7 +64,7 @@ function MapController({
   return null
 }
 
-export function Map({ center, zoom, bounds, children }: MapProps) {
+export function Map({ center, zoom, bounds, children, onMapClick }: MapProps) {
   const isDark = useDarkMode()
 
   return (
@@ -70,6 +83,7 @@ export function Map({ center, zoom, bounds, children }: MapProps) {
         maxZoom={19}
       />
       <MapController center={center} zoom={zoom} bounds={bounds} />
+      {onMapClick && <MapClickHandler onMapClick={onMapClick} />}
       {children}
     </MapContainer>
   )

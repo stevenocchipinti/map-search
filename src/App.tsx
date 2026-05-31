@@ -97,6 +97,10 @@ function App() {
     supermarket: false,
   })
 
+  // Deferred fetch state: when map is clicked, we show estimates first
+  // and defer supermarket + walking route fetches until drawer is opened
+  const [pendingRoutesFetch, setPendingRoutesFetch] = useState(false)
+
   // Mobile drawer state
   const [drawerSnapIndex, setDrawerSnapIndex] = useState<number>(0)
   const [activeDrawerTab, setActiveDrawerTab] = useState<POICategory>("school")
@@ -445,6 +449,83 @@ function App() {
   }, [sectors, schoolTypes])
 
   /**
+   * Deferred fetch: when drawer opens after a map click, fetch supermarkets + routes.
+   * On desktop (no drawer), trigger immediately when pendingRoutesFetch is set.
+   */
+  useEffect(() => {
+    if (!pendingRoutesFetch || !searchResults) return
+
+    // On desktop, there's no drawer - trigger immediately
+    // On mobile, wait for drawer to open (snapIndex > 0)
+    const isDesktop = window.matchMedia("(min-width: 768px)").matches
+    if (!isDesktop && drawerSnapIndex === 0) return
+
+    // Clear the pending flag immediately to avoid re-triggering
+    setPendingRoutesFetch(false)
+
+    const { lat, lng } = searchResults.location
+
+    // Fetch supermarkets and then walking routes
+    ;(async () => {
+      try {
+        setLoading(true)
+        const supermarketsResult = await fetchSupermarkets(lat, lng)
+        const supermarkets = supermarketsResult.supermarkets || []
+
+        setSearchResults(prev => {
+          if (!prev) return null
+          return { ...prev, supermarkets }
+        })
+
+        // Update map bounds to include supermarkets
+        if (supermarkets.length > 0) {
+          const bounds = latLngBounds([])
+          bounds.extend([lat, lng])
+
+          const topPOIs = [
+            ...(searchResults.schools.length > 0 ? [searchResults.schools[0]] : []),
+            ...(searchResults.stations.length > 0 ? [searchResults.stations[0]] : []),
+            supermarkets[0],
+          ]
+          topPOIs.forEach(poi => bounds.extend([poi.latitude, poi.longitude]))
+          setMapBounds(bounds)
+        }
+
+        // Now fetch walking routes sequentially
+        const currentResults = searchResults
+        const topRoutes = [
+          ...(currentResults.schools.length > 0
+            ? [{ from: currentResults.location, to: currentResults.schools[0], category: "school" as const }]
+            : []),
+          ...(currentResults.stations.length > 0
+            ? [{ from: currentResults.location, to: currentResults.stations[0], category: "station" as const }]
+            : []),
+          ...(supermarkets.length > 0
+            ? [{ from: currentResults.location, to: supermarkets[0], category: "supermarket" as const }]
+            : []),
+        ]
+
+        for (const { from, to, category } of topRoutes) {
+          const cachedRoute = getCachedRoute(from, to)
+          if (cachedRoute) continue
+
+          setRouteLoadingStates(prev => ({ ...prev, [category]: true }))
+          try {
+            await fetchRoutesSequentially([{ from, to }])
+          } catch (err) {
+            console.error(`Failed to fetch route for ${to.name}:`, err)
+          }
+          setRouteLoadingStates(prev => ({ ...prev, [category]: false }))
+        }
+      } catch (err) {
+        console.error("Deferred fetch error:", err)
+      } finally {
+        setLoading(false)
+      }
+    })()
+  }, [pendingRoutesFetch, drawerSnapIndex])
+
+  /**
    * Determine Australian state from coordinates using geographic boundaries
    */
   function determineStateFromCoordinates(
@@ -771,6 +852,101 @@ function App() {
   }
 
   /**
+   * Handle map click - drop pin, show estimates, defer API calls
+   */
+  const handleMapClick = async (lat: number, lng: number): Promise<void> => {
+    // Cancel any pending search
+    cancelPendingSearch()
+
+    // Clear search input
+    setSearchInput("")
+
+    // Clear error
+    setError(null)
+
+    // Dismiss landing if showing
+    if (showLanding) {
+      withViewTransition(() => {
+        setShowLanding(false)
+        setHasSearched(true)
+      })
+    } else {
+      setHasSearched(true)
+    }
+
+    // Drop pin immediately
+    setUserLocation({ lat, lng })
+    setMapBounds(null)
+
+    // Update URL with coords
+    updateURLWithCoords(lat, lng, false)
+
+    // Collapse drawer on mobile
+    setDrawerSnapIndex(0)
+
+    // Determine state from coordinates
+    const state = determineStateFromCoordinates(lat, lng)
+
+    // Load state data (client-side, fast)
+    let schools: School[] = []
+    let stations: Station[] = []
+
+    if (!isStateLoaded(state)) {
+      const data = await loadState(state)
+      schools = data.schools
+      stations = data.stations
+    } else {
+      schools = getSchools(state)
+      stations = getStations(state)
+    }
+
+    // Filter and sort (client-side, instant)
+    const filteredSchools = filterAndSortSchools(
+      schools,
+      lat,
+      lng,
+      sectors,
+      schoolTypes
+    )
+    const filteredStations = filterAndSortStations(stations, lat, lng)
+
+    // Set results with empty supermarkets (will be fetched when drawer opens)
+    const results: SearchResponse = {
+      location: { lat, lng, state, displayName: "Pinned Location" },
+      schools: filteredSchools,
+      stations: filteredStations,
+      supermarkets: [],
+    }
+
+    setSearchResults(results)
+    setSelectedPOIs({ school: 0, station: 0, supermarket: 0 })
+
+    // Save last search location
+    localStorage.setItem(
+      "lastSearchLocation",
+      JSON.stringify({ lat, lng, state, displayName: "Pinned Location", timestamp: Date.now() })
+    )
+
+    // Calculate map bounds to fit user location and closest POIs
+    const closestPOIs = [
+      ...(filteredSchools.length > 0 ? [filteredSchools[0]] : []),
+      ...(filteredStations.length > 0 ? [filteredStations[0]] : []),
+    ]
+
+    if (closestPOIs.length > 0) {
+      const bounds = latLngBounds([])
+      bounds.extend([lat, lng])
+      closestPOIs.forEach(poi => {
+        bounds.extend([poi.latitude, poi.longitude])
+      })
+      setMapBounds(bounds)
+    }
+
+    // Mark that we need to fetch supermarkets + routes when drawer opens
+    setPendingRoutesFetch(true)
+  }
+
+  /**
    * Handle selecting an alternative POI
    */
   const handleSelectPOI = (category: POICategory, index: number): void => {
@@ -1031,7 +1207,7 @@ function App() {
 
         {/* Map - Desktop: 60% flex */}
         <div className="flex-1 h-full">
-          <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds}>
+          <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds} onMapClick={handleMapClick}>
             {/* User location marker - show immediately when we have coordinates */}
             {userLocation && (
               <MapMarker
@@ -1185,7 +1361,7 @@ function App() {
 
         {/* Map (full screen) */}
         <div className="absolute inset-0">
-          <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds}>
+          <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds} onMapClick={handleMapClick}>
             {/* User location marker - show immediately when we have coordinates */}
             {userLocation && (
               <MapMarker
