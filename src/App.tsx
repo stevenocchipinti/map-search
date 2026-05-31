@@ -491,20 +491,6 @@ function App() {
           return { ...prev, supermarkets }
         })
 
-        // Update map bounds to include supermarkets
-        if (supermarkets.length > 0) {
-          const bounds = latLngBounds([])
-          bounds.extend([lat, lng])
-
-          const topPOIs = [
-            ...(searchResults.schools.length > 0 ? [searchResults.schools[0]] : []),
-            ...(searchResults.stations.length > 0 ? [searchResults.stations[0]] : []),
-            supermarkets[0],
-          ]
-          topPOIs.forEach(poi => bounds.extend([poi.latitude, poi.longitude]))
-          setMapBounds(bounds)
-        }
-
         // Now fetch walking routes sequentially
         const currentResults = searchResults
         const topRoutes = [
@@ -899,9 +885,8 @@ function App() {
       setHasSearched(true)
     }
 
-    // Drop pin immediately
+    // Drop pin immediately (don't change map view - user tapped where they're looking)
     setUserLocation({ lat, lng })
-    setMapBounds(null)
 
     // Update URL with coords
     updateURLWithCoords(lat, lng, false)
