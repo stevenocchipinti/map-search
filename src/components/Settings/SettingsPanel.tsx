@@ -71,7 +71,9 @@ export function SettingsPanel({
         {/* Header - only shown on desktop sidebar */}
         {showHeader && (
           <div className="flex items-center justify-between mb-2">
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">Settings</h2>
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+              Settings
+            </h2>
           </div>
         )}
 
@@ -84,7 +86,9 @@ export function SettingsPanel({
             <div className="space-y-3">
               {/* Sector Card */}
               <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-soft p-4">
-                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-3">Sector</p>
+                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-3">
+                  Sector
+                </p>
                 <div className="space-y-2">
                   {ALL_SECTORS.map(sector => (
                     <label
@@ -107,7 +111,9 @@ export function SettingsPanel({
 
               {/* Level Card */}
               <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-soft p-4">
-                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-3">Level</p>
+                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-3">
+                  Level
+                </p>
                 <div className="space-y-2">
                   {ALL_TYPES.map(type => (
                     <label
@@ -134,7 +140,9 @@ export function SettingsPanel({
         {/* App Section - only show if there's content to display */}
         {installable && !installed && (
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3">App</h3>
+            <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3">
+              App
+            </h3>
             <div className="space-y-3">
               {/* Install App Card */}
               <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-soft p-4">
@@ -179,9 +187,10 @@ export function SettingsPanel({
 
         {/* Storage Section */}
         <div>
-          <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3">Storage</h3>
+          <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3">
+            Storage
+          </h3>
           <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-soft p-4 space-y-4">
-
             {/* API cache stats */}
             {cacheStats && (
               <div className="space-y-2">
@@ -237,7 +246,7 @@ export function SettingsPanel({
               )}
 
             {/* Clear Cache Button */}
-            <div className="pt-1 border-t border-gray-100 dark:border-gray-800">
+            <div className="pt-1">
               <Button
                 variant="secondary"
                 size="md"
