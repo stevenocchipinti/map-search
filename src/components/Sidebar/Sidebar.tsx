@@ -7,6 +7,8 @@ import type {
   WalkingRoute,
 } from "../../types"
 import { SearchBar } from "./SearchBar"
+import { RecentSearches } from "./RecentSearches"
+import type { RecentSearch } from "../../hooks/useRecentSearches"
 import { POICard } from "./POICard"
 import { OfflineBanner } from "./OfflineBanner"
 import { SettingsPanel } from "../Settings/SettingsPanel"
@@ -48,6 +50,13 @@ interface SidebarProps {
 
   // Offline status
   isOnline: boolean
+
+  // Recent searches
+  recents: RecentSearch[]
+  recentsExpanded: boolean
+  onRecentsToggle: () => void
+  onRecentSelect: (recent: RecentSearch) => void
+  onRecentRemove: (displayName: string) => void
 }
 
 export function Sidebar({
@@ -75,6 +84,11 @@ export function Sidebar({
   schoolTypes,
   onToggleSchoolType,
   isOnline,
+  recents,
+  recentsExpanded,
+  onRecentsToggle,
+  onRecentSelect,
+  onRecentRemove,
 }: SidebarProps) {
   const [showSettings, setShowSettings] = useState(false)
   const [offlineBannerDismissed, setOfflineBannerDismissed] = useState(false)
@@ -128,6 +142,19 @@ export function Sidebar({
         loading={searchLoading}
         error={searchError}
       />
+
+      {/* Recent Searches */}
+      <div className="px-5 pt-2">
+        <RecentSearches
+          recents={recents}
+          expanded={recentsExpanded}
+          onToggle={onRecentsToggle}
+          onSelect={onRecentSelect}
+          onRemove={onRecentRemove}
+          searchValue={searchValue}
+          onClearSearch={() => onSearchChange("")}
+        />
+      </div>
 
       {/* Offline Banner */}
       {!isOnline && !offlineBannerDismissed && (

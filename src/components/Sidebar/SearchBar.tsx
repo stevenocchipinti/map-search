@@ -34,7 +34,7 @@ export function SearchBar({
             type="text"
             id="address-search"
             name="address"
-            autoComplete="street-address"
+            autoComplete="off"
             value={value}
             onChange={e => onChange(e.target.value)}
             placeholder="Enter an address..."

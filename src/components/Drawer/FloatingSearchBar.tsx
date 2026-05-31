@@ -61,7 +61,7 @@ export function FloatingSearchBar({
           type="text"
           id="floating-address-search"
           name="address"
-          autoComplete="street-address"
+          autoComplete="off"
           value={value}
           onChange={e => onChange(e.target.value)}
           onKeyDown={handleKeyDown}
