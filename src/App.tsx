@@ -22,6 +22,8 @@ import { useOnlineStatus } from "./hooks/useOnlineStatus"
 import { useSectorPreferences } from "./hooks/useSectorPreferences"
 import { useSchoolTypePreferences } from "./hooks/useSchoolTypePreferences"
 import { useServiceWorker } from "./hooks/useServiceWorker"
+import { useRecentSearches } from "./hooks/useRecentSearches"
+import type { RecentSearch } from "./hooks/useRecentSearches"
 import { geocodeAddress, fetchSupermarkets } from "./lib/api-client"
 import { haversineDistance } from "./lib/haversine"
 import { estimateWalkingTime } from "./utils/format"
@@ -32,6 +34,7 @@ import { AttributionToggle } from "./components/Map/AttributionToggle"
 import { Sidebar } from "./components/Sidebar/Sidebar"
 import { NavigationDrawer } from "./components/Drawer/NavigationDrawer"
 import { FloatingSearchBar } from "./components/Drawer/FloatingSearchBar"
+import { RecentSearches } from "./components/Sidebar/RecentSearches"
 import { SettingsModal } from "./components/Drawer/SettingsModal"
 import { LandingOverlay } from "./components/Drawer/LandingOverlay"
 import { latLngBounds, type LatLngBounds } from "leaflet"
@@ -51,6 +54,8 @@ function App() {
   const { sectors, toggleSector } = useSectorPreferences()
   const { schoolTypes, toggleSchoolType } = useSchoolTypePreferences()
   const { updateAvailable, update: updateServiceWorker } = useServiceWorker()
+  const { recents, addRecent, removeRecent } = useRecentSearches()
+  const [recentsExpanded, setRecentsExpanded] = useState(false)
 
   // State
   const [searchResults, setSearchResults] = useState<SearchResponse | null>(
@@ -100,7 +105,11 @@ function App() {
   // Deferred fetch state: when map is clicked, we show estimates first
   // and defer supermarket + walking route fetches until drawer is opened
   const [pendingRoutesFetch, setPendingRoutesFetch] = useState(false)
-  const [deferredLoading, setDeferredLoading] = useState(false)
+  const deferredLoading =
+    loading ||
+    routeLoadingStates.school ||
+    routeLoadingStates.station ||
+    routeLoadingStates.supermarket
 
   // Mobile drawer state
   const [drawerSnapIndex, setDrawerSnapIndex] = useState<number>(0)
@@ -240,7 +249,6 @@ function App() {
       deferredAbortController.current = null
     }
     setPendingRoutesFetch(false)
-    setDeferredLoading(false)
   }
 
   /**
@@ -268,6 +276,17 @@ function App() {
       setHasSearched(true) // Show drawer immediately with loading state
     })
     handleSearch(address)
+  }
+
+  /**
+   * Handle recent search selection from landing overlay - triggers view transition
+   */
+  const handleLandingRecentSelect = (recent: RecentSearch) => {
+    withViewTransition(() => {
+      setShowLanding(false)
+      setHasSearched(true)
+    })
+    handleRecentSelect(recent)
   }
 
   /**
@@ -470,7 +489,6 @@ function App() {
 
     // Clear the pending flag immediately to avoid re-triggering
     setPendingRoutesFetch(false)
-    setDeferredLoading(true)
 
     // Create abort controller for this deferred fetch
     const abortController = new AbortController()
@@ -495,13 +513,31 @@ function App() {
         const currentResults = searchResults
         const topRoutes = [
           ...(currentResults.schools.length > 0
-            ? [{ from: currentResults.location, to: currentResults.schools[0], category: "school" as const }]
+            ? [
+                {
+                  from: currentResults.location,
+                  to: currentResults.schools[0],
+                  category: "school" as const,
+                },
+              ]
             : []),
           ...(currentResults.stations.length > 0
-            ? [{ from: currentResults.location, to: currentResults.stations[0], category: "station" as const }]
+            ? [
+                {
+                  from: currentResults.location,
+                  to: currentResults.stations[0],
+                  category: "station" as const,
+                },
+              ]
             : []),
           ...(supermarkets.length > 0
-            ? [{ from: currentResults.location, to: supermarkets[0], category: "supermarket" as const }]
+            ? [
+                {
+                  from: currentResults.location,
+                  to: supermarkets[0],
+                  category: "supermarket" as const,
+                },
+              ]
             : []),
         ]
 
@@ -523,9 +559,6 @@ function App() {
           console.error("Deferred fetch error:", err)
         }
       } finally {
-        if (!abortController.signal.aborted) {
-          setDeferredLoading(false)
-        }
         deferredAbortController.current = null
       }
     })()
@@ -662,6 +695,11 @@ function App() {
         })
       )
 
+      // Add to recent searches (exclude geolocation searches)
+      if (displayName !== "Current Location") {
+        addRecent({ displayName, lat, lng, state })
+      }
+
       // Calculate map bounds to fit user location and selected (top) POIs only
       // This provides a much tighter, more zoomed-in view
       const selectedPOIs = [
@@ -691,22 +729,40 @@ function App() {
       console.log("Step 7: Fetching walking routes sequentially")
       const topPOIs = [
         ...(filteredSchools.length > 0
-          ? [{ from: results.location, to: filteredSchools[0], category: "school" as const }]
+          ? [
+              {
+                from: results.location,
+                to: filteredSchools[0],
+                category: "school" as const,
+              },
+            ]
           : []),
         ...(filteredStations.length > 0
-          ? [{ from: results.location, to: filteredStations[0], category: "station" as const }]
+          ? [
+              {
+                from: results.location,
+                to: filteredStations[0],
+                category: "station" as const,
+              },
+            ]
           : []),
         ...(supermarkets.length > 0
-          ? [{ from: results.location, to: supermarkets[0], category: "supermarket" as const }]
+          ? [
+              {
+                from: results.location,
+                to: supermarkets[0],
+                category: "supermarket" as const,
+              },
+            ]
           : []),
       ]
 
       // Fetch routes sequentially, managing loading state for each one individually
       if (topPOIs.length > 0) {
-        (async () => {
+        ;(async () => {
           for (let i = 0; i < topPOIs.length; i++) {
             const { from, to, category } = topPOIs[i]
-            
+
             // Check if route is already cached
             const cachedRoute = getCachedRoute(from, to)
             if (cachedRoute) {
@@ -716,21 +772,21 @@ function App() {
 
             // Set loading state for this specific category
             setRouteLoadingStates(prev => ({ ...prev, [category]: true }))
-            
+
             console.log(`Fetching route ${i + 1}/${topPOIs.length}: ${to.name}`)
-            
+
             try {
               await fetchRoutesSequentially([{ from, to }])
             } catch (err) {
               console.error(`Failed to fetch route for ${to.name}:`, err)
             }
-            
+
             // Clear loading state for this specific category
             setRouteLoadingStates(prev => ({ ...prev, [category]: false }))
-            
+
             // No additional delay needed - the API call itself provides natural rate limiting
           }
-          
+
           console.log("Sequential route fetching complete")
         })()
       }
@@ -811,6 +867,37 @@ function App() {
   }
 
   /**
+   * Handle selecting a recent search - uses cached coordinates directly
+   */
+  const handleRecentSelect = async (recent: RecentSearch): Promise<void> => {
+    setRecentsExpanded(false)
+    setSearchInput(recent.displayName)
+
+    // Cancel any pending search
+    cancelPendingSearch()
+
+    setLoading(true)
+    setError(null)
+
+    // Set user location on map immediately
+    setUserLocation({ lat: recent.lat, lng: recent.lng })
+    setMapCenter([recent.lat, recent.lng])
+    setMapZoom(14)
+    setMapBounds(null)
+
+    // Update URL
+    updateURLWithBoth(recent.displayName, recent.lat, recent.lng)
+
+    // Use shared search logic with cached coordinates
+    await handleSearchWithCoordinates(
+      recent.lat,
+      recent.lng,
+      recent.state,
+      recent.displayName
+    )
+  }
+
+  /**
    * Handle "Use my location"
    */
   const handleUseMyLocation = async (): Promise<void> => {
@@ -867,7 +954,6 @@ function App() {
       deferredAbortController.current.abort()
       deferredAbortController.current = null
     }
-    setDeferredLoading(false)
 
     // Clear search input
     setSearchInput("")
@@ -934,7 +1020,13 @@ function App() {
     // Save last search location
     localStorage.setItem(
       "lastSearchLocation",
-      JSON.stringify({ lat, lng, state, displayName: "Pinned Location", timestamp: Date.now() })
+      JSON.stringify({
+        lat,
+        lng,
+        state,
+        displayName: "Pinned Location",
+        timestamp: Date.now(),
+      })
     )
 
     // Mark that we need to fetch supermarkets + routes when drawer opens
@@ -1197,12 +1289,22 @@ function App() {
             schoolTypes={schoolTypes}
             onToggleSchoolType={toggleSchoolType}
             isOnline={isOnline}
+            recents={recents}
+            recentsExpanded={recentsExpanded}
+            onRecentsToggle={() => setRecentsExpanded(!recentsExpanded)}
+            onRecentSelect={handleRecentSelect}
+            onRecentRemove={removeRecent}
           />
         </div>
 
         {/* Map - Desktop: 60% flex */}
         <div className="flex-1 h-full">
-          <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds} onMapClick={handleMapClick}>
+          <Map
+            center={mapCenter}
+            zoom={mapZoom}
+            bounds={mapBounds}
+            onMapClick={handleMapClick}
+          >
             {/* User location marker - show immediately when we have coordinates */}
             {userLocation && (
               <MapMarker
@@ -1356,7 +1458,12 @@ function App() {
 
         {/* Map (full screen) */}
         <div className="absolute inset-0">
-          <Map center={mapCenter} zoom={mapZoom} bounds={mapBounds} onMapClick={handleMapClick}>
+          <Map
+            center={mapCenter}
+            zoom={mapZoom}
+            bounds={mapBounds}
+            onMapClick={handleMapClick}
+          >
             {/* User location marker - show immediately when we have coordinates */}
             {userLocation && (
               <MapMarker
@@ -1474,14 +1581,31 @@ function App() {
 
         {/* Floating search bar - shown after landing dismissed */}
         {!showLanding && (
-          <FloatingSearchBar
-            value={searchInput}
-            onChange={setSearchInput}
-            onSearch={handleSearch}
-            onUseLocation={handleUseMyLocation}
-            onOpenSettings={() => setShowSettingsMobile(true)}
-            loading={loading}
-          />
+          <>
+            <FloatingSearchBar
+              value={searchInput}
+              onChange={setSearchInput}
+              onSearch={handleSearch}
+              onUseLocation={handleUseMyLocation}
+              onOpenSettings={() => setShowSettingsMobile(true)}
+              loading={loading}
+            />
+            {/* Recent searches - positioned below floating search bar */}
+            <div
+              className="fixed left-8 right-8 z-[999]"
+              style={{ top: "calc(1rem + 64px)" }}
+            >
+              <RecentSearches
+                recents={recents}
+                expanded={recentsExpanded}
+                onToggle={() => setRecentsExpanded(!recentsExpanded)}
+                onSelect={handleRecentSelect}
+                onRemove={removeRecent}
+                searchValue={searchInput}
+                onClearSearch={() => setSearchInput("")}
+              />
+            </div>
+          </>
         )}
 
         {/* Landing overlay - shown on initial load */}
@@ -1499,6 +1623,14 @@ function App() {
               })
             }}
             loading={loading}
+            recents={recents}
+            onShowRecents={() => {
+              withViewTransition(() => {
+                setShowLanding(false)
+                setHasSearched(true)
+                setRecentsExpanded(true)
+              })
+            }}
           />
         )}
 
@@ -1515,7 +1647,11 @@ function App() {
         {/* Navigation drawer - shown after landing dismissed */}
         {!showLanding && (
           <NavigationDrawer
-            key={searchResults ? `${searchResults.location.lat}-${searchResults.location.lng}` : 'empty'}
+            key={
+              searchResults
+                ? `${searchResults.location.lat}-${searchResults.location.lng}`
+                : "empty"
+            }
             schools={searchResults?.schools || []}
             stations={searchResults?.stations || []}
             supermarkets={searchResults?.supermarkets || []}

@@ -215,7 +215,15 @@ export function NavigationDrawer({
               }`}
             >
               {deferredLoading && (
-                <div className="w-full h-full barber-pole" />
+                <div className={`w-full h-full barber-pole ${
+                  routeLoading.school
+                    ? "barber-pole--school"
+                    : routeLoading.station
+                      ? "barber-pole--station"
+                      : routeLoading.supermarket
+                        ? "barber-pole--supermarket"
+                        : "barber-pole--default"
+                }`} />
               )}
             </div>
           </div>
