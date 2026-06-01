@@ -92,6 +92,7 @@ export function Sidebar({
 }: SidebarProps) {
   const [showSettings, setShowSettings] = useState(false)
   const [offlineBannerDismissed, setOfflineBannerDismissed] = useState(false)
+  const [searchFocused, setSearchFocused] = useState(false)
 
   const hasResults =
     schools.length > 0 || stations.length > 0 || supermarkets.length > 0
@@ -141,6 +142,8 @@ export function Sidebar({
         onUseLocation={onUseLocation}
         loading={searchLoading}
         error={searchError}
+        onFocus={() => setSearchFocused(true)}
+        onBlur={() => setSearchFocused(false)}
       />
 
       {/* Recent Searches */}
@@ -153,6 +156,7 @@ export function Sidebar({
           onRemove={onRecentRemove}
           searchValue={searchValue}
           onClearSearch={() => onSearchChange("")}
+          searchFocused={searchFocused}
         />
       </div>
 

@@ -19,6 +19,7 @@ export function AttributionToggle({
   useEffect(() => {
     if (hasSearched && isExpanded && !hasAutoCollapsedRef.current) {
       hasAutoCollapsedRef.current = true
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsExpanded(false)
     }
   }, [hasSearched, isExpanded])

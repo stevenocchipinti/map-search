@@ -8,6 +8,8 @@ interface SearchBarProps {
   onUseLocation: () => void
   loading?: boolean
   error?: string | null
+  onFocus?: () => void
+  onBlur?: () => void
 }
 
 export function SearchBar({
@@ -17,6 +19,8 @@ export function SearchBar({
   onUseLocation,
   loading,
   error,
+  onFocus,
+  onBlur,
 }: SearchBarProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -37,6 +41,8 @@ export function SearchBar({
             autoComplete="off"
             value={value}
             onChange={e => onChange(e.target.value)}
+            onFocus={onFocus}
+            onBlur={onBlur}
             placeholder="Enter an address..."
             className="w-full px-4 py-3.5 pr-12 text-base border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100 dark:placeholder:text-gray-500 dark:focus:ring-blue-400"
             disabled={loading}

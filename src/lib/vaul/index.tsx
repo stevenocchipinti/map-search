@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps, react-refresh/only-export-components */
 "use client"
 
 import * as DialogPrimitive from "@radix-ui/react-dialog"
@@ -228,7 +229,6 @@ export function Root({
       // Change openTime ref when we reach the last snap point to prevent dragging for 500ms incase it's scrollable.
       if (snapPoints && activeSnapPointIndex === snapPointsOffset.length - 1)
         openTime.current = new Date()
-      // eslint-disable-next-line react-hooks/exhaustive-deps
     },
     []
   )

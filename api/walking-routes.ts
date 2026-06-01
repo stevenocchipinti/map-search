@@ -5,17 +5,6 @@
 
 import type { VercelRequest, VercelResponse } from "@vercel/node"
 import { getWalkingRoutesBatch } from "../src/lib/openroute.js"
-import type { POICategory } from "../src/types/index.js"
-
-interface RouteRequest {
-  fromLat: number
-  fromLng: number
-  toLat: number
-  toLng: number
-  category: POICategory
-  itemId: string
-}
-
 interface RouteResponse {
   duration: number // Minutes
   distance: number // Meters

@@ -134,17 +134,17 @@ h1 {
 }
 
 ::view-transition-group(recent-searches) {
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 ::view-transition-group(recent-searches-icon) {
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 ::view-transition-group(recent-searches-label) {
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
 }
 

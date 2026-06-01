@@ -25,6 +25,30 @@ export interface Supermarket {
   postcode?: string
 }
 
+interface OverpassTags {
+  name?: string
+  full_name?: string
+  branch?: string
+  "addr:suburb"?: string
+  "addr:street"?: string
+  "addr:postcode"?: string
+}
+
+interface OverpassElement {
+  id: number | string
+  lat?: number
+  lon?: number
+  center?: {
+    lat?: number
+    lon?: number
+  }
+  tags?: OverpassTags
+}
+
+interface OverpassResponse {
+  elements: OverpassElement[]
+}
+
 async function sleep(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
@@ -41,7 +65,7 @@ async function enforceRateLimit(): Promise<void> {
 /**
  * Execute an Overpass query
  */
-async function queryOverpass(query: string): Promise<any> {
+async function queryOverpass(query: string): Promise<OverpassResponse> {
   await enforceRateLimit()
 
   const response = await fetch(OVERPASS_API_URL, {
@@ -58,7 +82,7 @@ async function queryOverpass(query: string): Promise<any> {
     throw new Error(`Overpass API error: ${response.status}`)
   }
 
-  return response.json()
+  return response.json() as Promise<OverpassResponse>
 }
 
 /**
@@ -66,7 +90,7 @@ async function queryOverpass(query: string): Promise<any> {
  * Priority: Name - Suburb > Name - Street > Name - Branch > Name - Postcode > Name (distance)
  */
 function formatSupermarketName(
-  element: any,
+  element: OverpassElement,
   userLat: number,
   userLng: number
 ): string {
@@ -122,8 +146,20 @@ function formatSupermarketName(
   // Fallback: Add distance to differentiate
   const elLat = element.center?.lat ?? element.lat
   const elLng = element.center?.lon ?? element.lon
+  if (typeof elLat !== "number" || typeof elLng !== "number") {
+    return cleanName
+  }
   const distance = haversineDistance(userLat, userLng, elLat, elLng)
   return `${cleanName} (${distance.toFixed(2)}km)`
+}
+
+function hasCoordinates(
+  supermarket: Omit<Supermarket, "lat" | "lng"> & {
+    lat: number | undefined
+    lng: number | undefined
+  }
+): supermarket is Supermarket {
+  return typeof supermarket.lat === "number" && typeof supermarket.lng === "number"
 }
 
 /**
@@ -146,23 +182,28 @@ export async function findNearbySupermarkets(
   try {
     const data = await queryOverpass(query)
 
-    return data.elements
-      .map((el: any) => {
-        const elLat = el.center?.lat ?? el.lat
-        const elLng = el.center?.lon ?? el.lon
+    const supermarkets: Array<
+      Omit<Supermarket, "lat" | "lng"> & {
+        lat: number | undefined
+        lng: number | undefined
+      }
+    > = data.elements.map((el: OverpassElement) => {
+      const elLat = el.center?.lat ?? el.lat
+      const elLng = el.center?.lon ?? el.lon
 
-        return {
-          id: `supermarket-${el.id}`,
-          name: formatSupermarketName(el, lat, lng),
-          lat: elLat,
-          lng: elLng,
-          type: "supermarket" as const,
-          suburb: el.tags?.["addr:suburb"],
-          street: el.tags?.["addr:street"],
-          postcode: el.tags?.["addr:postcode"],
-        }
-      })
-      .filter((s: Supermarket) => s.lat && s.lng) // Ensure valid coordinates
+      return {
+        id: `supermarket-${el.id}`,
+        name: formatSupermarketName(el, lat, lng),
+        lat: elLat,
+        lng: elLng,
+        type: "supermarket" as const,
+        suburb: el.tags?.["addr:suburb"],
+        street: el.tags?.["addr:street"],
+        postcode: el.tags?.["addr:postcode"],
+      }
+    })
+
+    return supermarkets.filter(hasCoordinates)
   } catch (error) {
     console.error("Overpass supermarkets query failed:", error)
     throw error

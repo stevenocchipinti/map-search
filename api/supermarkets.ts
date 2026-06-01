@@ -7,12 +7,6 @@ import type { VercelRequest, VercelResponse } from "@vercel/node"
 import { findNearbySupermarkets } from "../src/lib/overpass.js"
 import { haversineDistance, estimateWalkingTime } from "../src/lib/haversine.js"
 
-interface SupermarketRequest {
-  lat: number
-  lng: number
-  radius?: number
-}
-
 interface SupermarketPOI {
   id: string
   name: string

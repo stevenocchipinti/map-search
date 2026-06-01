@@ -1,4 +1,5 @@
 import { flushSync } from "react-dom"
+import { useState, useEffect } from "react"
 import type { RecentSearch } from "../../hooks/useRecentSearches"
 
 interface RecentSearchesProps {
@@ -9,6 +10,7 @@ interface RecentSearchesProps {
   onRemove: (displayName: string) => void
   searchValue?: string
   onClearSearch?: () => void
+  searchFocused?: boolean
 }
 
 /**
@@ -36,11 +38,25 @@ export function RecentSearches({
   onRemove,
   searchValue = "",
   onClearSearch,
+  searchFocused = false,
 }: RecentSearchesProps) {
   const hasRecents = recents.length > 0
-  const showClear = searchValue.trim().length > 0 && !expanded
+  const showClear = searchValue.trim().length > 0 && searchFocused && !expanded
 
-  if (!hasRecents && !showClear) return null
+  // Keep the button mounted for the duration of the exit transition (200ms)
+  // so the scale+opacity+blur animation has time to play out before unmounting.
+  const [clearVisible, setClearVisible] = useState(showClear)
+  useEffect(() => {
+    if (showClear) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setClearVisible(true)
+    } else {
+      const timer = setTimeout(() => setClearVisible(false), 200)
+      return () => clearTimeout(timer)
+    }
+  }, [showClear])
+
+  if (!hasRecents && !clearVisible) return null
 
   const handleToggle = () => {
     withViewTransition(onToggle)
@@ -74,8 +90,19 @@ export function RecentSearches({
           )}
           {onClearSearch && (
             <button
-              onClick={onClearSearch}
-              className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white dark:bg-gray-900 shadow-lg text-xs font-medium text-gray-500 dark:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-800 transition-opacity duration-200 ease-[cubic-bezier(0.2,0,0,1)] ${showClear ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+              onTouchStart={e => {
+                // On touch devices, touchstart fires before the input blurs.
+                // Prevent default to stop the browser from blurring the input
+                // and from generating synthetic mouse events (which would double-fire).
+                e.preventDefault()
+                onClearSearch()
+              }}
+              onMouseDown={e => {
+                // On pointer devices, prevent the input from losing focus.
+                e.preventDefault()
+                onClearSearch()
+              }}
+              className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white dark:bg-gray-900 shadow-lg text-xs font-medium text-gray-500 dark:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-800 active:scale-[0.96] transition-[opacity,filter,scale] duration-200 ease-[cubic-bezier(0.2,0,0,1)] ${showClear ? "opacity-100 scale-100 blur-0" : "opacity-0 scale-[0.25] blur-[4px] pointer-events-none"}`}
               tabIndex={showClear ? 0 : -1}
             >
               <svg

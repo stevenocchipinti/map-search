@@ -19,7 +19,7 @@ interface StationFeature {
     name: string
     state: string
     operationalstatus: string
-    [key: string]: any
+    [key: string]: unknown
   }
   geometry: {
     type: "Point"
@@ -30,7 +30,7 @@ interface StationFeature {
 interface GeoJSON {
   type: "FeatureCollection"
   features: StationFeature[]
-  [key: string]: any
+  [key: string]: unknown
 }
 
 interface Station {

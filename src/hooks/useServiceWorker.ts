@@ -4,7 +4,7 @@
  * Phase 6: Full service worker registration and lifecycle management
  */
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 
 interface ServiceWorkerResult {
   registration: ServiceWorkerRegistration | null
@@ -22,29 +22,22 @@ export function useServiceWorker(): ServiceWorkerResult {
   const [updateAvailable, setUpdateAvailable] = useState(false)
   const [installing, setInstalling] = useState(false)
 
-  useEffect(() => {
-    // Only register in production or when explicitly enabled
-    if (
-      "serviceWorker" in navigator &&
-      (import.meta.env.PROD || import.meta.env.VITE_SW_DEV === "true")
-    ) {
-      registerServiceWorker()
-    } else {
-      console.log(
-        "[SW Hook] Service worker not registered (dev mode or not supported)"
-      )
-    }
+  /**
+   * Handle service worker state changes
+   */
+  const handleStateChange = useCallback((event: Event) => {
+    const worker = event.target as ServiceWorker
+    console.log("[SW Hook] Worker state changed:", worker.state)
 
-    // Cleanup on unmount
-    return () => {
-      // No cleanup needed - service worker persists beyond component lifecycle
+    if (worker.state === "activated") {
+      setInstalling(false)
     }
   }, [])
 
   /**
    * Register the service worker
    */
-  async function registerServiceWorker() {
+  const registerServiceWorker = useCallback(async () => {
     try {
       console.log("[SW Hook] Registering service worker...")
 
@@ -55,13 +48,11 @@ export function useServiceWorker(): ServiceWorkerResult {
       setRegistration(reg)
       console.log("[SW Hook] Service worker registered:", reg)
 
-      // Set initial installing state
       if (reg.installing) {
         setInstalling(true)
         reg.installing.addEventListener("statechange", handleStateChange)
       }
 
-      // Listen for updates
       reg.addEventListener("updatefound", () => {
         console.log("[SW Hook] Update found")
         const newWorker = reg.installing
@@ -76,7 +67,6 @@ export function useServiceWorker(): ServiceWorkerResult {
               newWorker.state === "installed" &&
               navigator.serviceWorker.controller
             ) {
-              // New service worker available
               setUpdateAvailable(true)
               setInstalling(false)
               console.log("[SW Hook] Update available - reload to activate")
@@ -87,7 +77,6 @@ export function useServiceWorker(): ServiceWorkerResult {
         }
       })
 
-      // Check for updates periodically (every 5 minutes)
       setInterval(
         () => {
           console.log("[SW Hook] Checking for updates...")
@@ -96,7 +85,6 @@ export function useServiceWorker(): ServiceWorkerResult {
         5 * 60 * 1000
       )
 
-      // Listen for controller change (new SW activated)
       navigator.serviceWorker.addEventListener("controllerchange", () => {
         console.log("[SW Hook] Controller changed - reloading page")
         window.location.reload()
@@ -104,19 +92,27 @@ export function useServiceWorker(): ServiceWorkerResult {
     } catch (error) {
       console.error("[SW Hook] Service worker registration failed:", error)
     }
-  }
+  }, [handleStateChange])
 
-  /**
-   * Handle service worker state changes
-   */
-  function handleStateChange(event: Event) {
-    const worker = event.target as ServiceWorker
-    console.log("[SW Hook] Worker state changed:", worker.state)
-
-    if (worker.state === "activated") {
-      setInstalling(false)
+  useEffect(() => {
+    // Only register in production or when explicitly enabled
+    if (
+      "serviceWorker" in navigator &&
+      (import.meta.env.PROD || import.meta.env.VITE_SW_DEV === "true")
+    ) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      registerServiceWorker()
+    } else {
+      console.log(
+        "[SW Hook] Service worker not registered (dev mode or not supported)"
+      )
     }
-  }
+
+    // Cleanup on unmount
+    return () => {
+      // No cleanup needed - service worker persists beyond component lifecycle
+    }
+  }, [registerServiceWorker])
 
   /**
    * Trigger service worker update

@@ -121,6 +121,7 @@ function App() {
 
   // Search input state (controlled by URL)
   const [searchInput, setSearchInput] = useState<string>("")
+  const [floatingSearchFocused, setFloatingSearchFocused] = useState(false)
 
   // AbortController for canceling in-flight search requests
   const searchAbortController = useRef<AbortController | null>(null)
@@ -365,6 +366,7 @@ function App() {
       handleSearch(query)
     }
     // else: No params, show landing overlay (default state)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []) // Only run on mount
 
   // Handle browser back/forward navigation
@@ -417,6 +419,7 @@ function App() {
 
     window.addEventListener("popstate", handlePopState)
     return () => window.removeEventListener("popstate", handlePopState)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []) // Empty deps - handler uses current state via closures
 
   /**
@@ -462,6 +465,7 @@ function App() {
         }
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sectors, schoolTypes])
 
   /**
@@ -551,6 +555,7 @@ function App() {
         deferredAbortController.current = null
       }
     })()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pendingRoutesFetch, drawerSnapIndex])
 
   /**
@@ -1578,10 +1583,12 @@ function App() {
               onUseLocation={handleUseMyLocation}
               onOpenSettings={() => setShowSettingsMobile(true)}
               loading={loading}
+              onFocus={() => setFloatingSearchFocused(true)}
+              onBlur={() => setFloatingSearchFocused(false)}
             />
             {/* Recent searches - positioned below floating search bar */}
             <div
-              className="fixed left-8 right-8 z-[999]"
+              className="fixed left-8 right-8 z-[9999]"
               style={{ top: "calc(1rem + 64px)" }}
             >
               <RecentSearches
@@ -1592,6 +1599,7 @@ function App() {
                 onRemove={removeRecent}
                 searchValue={searchInput}
                 onClearSearch={() => setSearchInput("")}
+                searchFocused={floatingSearchFocused}
               />
             </div>
           </>
@@ -1620,6 +1628,10 @@ function App() {
                 setRecentsExpanded(true)
               })
             }}
+            onClearSearch={() => setSearchInput("")}
+            searchFocused={floatingSearchFocused}
+            onFocus={() => setFloatingSearchFocused(true)}
+            onBlur={() => setFloatingSearchFocused(false)}
           />
         )}
 

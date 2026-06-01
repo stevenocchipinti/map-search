@@ -22,12 +22,17 @@ export function useInstallPrompt(): InstallPromptResult {
   const [deferredPrompt, setDeferredPrompt] =
     useState<BeforeInstallPromptEvent | null>(null)
   const [installable, setInstallable] = useState(false)
-  const [installed, setInstalled] = useState(false)
+  const [installed, setInstalled] = useState(() => {
+    if (typeof window === "undefined") {
+      return false
+    }
+
+    return window.matchMedia("(display-mode: standalone)").matches
+  })
 
   useEffect(() => {
     // Check if already installed
-    if (window.matchMedia("(display-mode: standalone)").matches) {
-      setInstalled(true)
+    if (installed) {
       console.log("[Install Prompt] App already installed")
       return
     }
@@ -62,7 +67,7 @@ export function useInstallPrompt(): InstallPromptResult {
       )
       window.removeEventListener("appinstalled", handleAppInstalled)
     }
-  }, [])
+  }, [installed])
 
   /**
    * Show the install prompt

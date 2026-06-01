@@ -10,6 +10,8 @@ interface FloatingSearchBarProps {
   loading?: boolean
   className?: string
   autoFocus?: boolean
+  onFocus?: () => void
+  onBlur?: () => void
 }
 
 export function FloatingSearchBar({
@@ -21,6 +23,8 @@ export function FloatingSearchBar({
   loading,
   className = "",
   autoFocus = false,
+  onFocus,
+  onBlur,
 }: FloatingSearchBarProps) {
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -65,6 +69,8 @@ export function FloatingSearchBar({
           value={value}
           onChange={e => onChange(e.target.value)}
           onKeyDown={handleKeyDown}
+          onFocus={onFocus}
+          onBlur={onBlur}
           placeholder="Search address..."
           className="flex-1 min-w-0 px-4 py-2 text-sm focus:outline-none bg-transparent text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500"
           aria-label="Search address"

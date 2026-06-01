@@ -1,5 +1,6 @@
 import { Logo } from "../UI/Logo"
 import { FloatingSearchBar } from "./FloatingSearchBar"
+import { RecentSearches } from "../Sidebar/RecentSearches"
 import type { RecentSearch } from "../../hooks/useRecentSearches"
 
 interface LandingOverlayProps {
@@ -12,6 +13,10 @@ interface LandingOverlayProps {
   loading?: boolean
   recents?: RecentSearch[]
   onShowRecents?: () => void
+  onClearSearch?: () => void
+  searchFocused?: boolean
+  onFocus?: () => void
+  onBlur?: () => void
 }
 
 export function LandingOverlay({
@@ -24,6 +29,10 @@ export function LandingOverlay({
   loading = false,
   recents = [],
   onShowRecents,
+  onClearSearch,
+  searchFocused = false,
+  onFocus,
+  onBlur,
 }: LandingOverlayProps) {
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
     // Only dismiss if clicking the backdrop itself, not children
@@ -67,32 +76,23 @@ export function LandingOverlay({
         loading={loading}
         autoFocus={true}
         className="landing-search-bar !relative !left-0 !right-0 w-full max-w-full"
+        onFocus={onFocus}
+        onBlur={onBlur}
       />
 
-      {/* Recent searches pill - transitions to map screen with recents open */}
-      {recents.length > 0 && onShowRecents && (
-        <div className="w-full max-w-full mt-6 px-4">
-          <button
-            onClick={onShowRecents}
-            className="recent-searches inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white dark:bg-gray-900 shadow-lg text-xs font-medium text-gray-500 dark:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
-          >
-            <svg
-              className="w-3 h-3 text-gray-400 dark:text-gray-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-            Recent searches
-          </button>
-        </div>
-      )}
+      {/* Recent searches / clear pill */}
+      <div className="w-full max-w-full mt-6 px-4">
+        <RecentSearches
+          recents={recents}
+          expanded={false}
+          onToggle={() => onShowRecents?.()}
+          onSelect={() => {}}
+          onRemove={() => {}}
+          searchValue={value}
+          onClearSearch={onClearSearch}
+          searchFocused={searchFocused}
+        />
+      </div>
     </div>
   )
 }
