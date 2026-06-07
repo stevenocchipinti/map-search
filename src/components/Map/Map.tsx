@@ -21,8 +21,31 @@ const DOUBLE_TAP_MAX_DELAY_MS = 300
 const DOUBLE_TAP_MAX_DISTANCE_PX = 40
 const DOUBLE_TAP_HOLD_MOVE_THRESHOLD_PX = 10
 const DOUBLE_TAP_HOLD_ZOOM_SENSITIVITY_PX = 100
+const TWO_FINGER_TAP_MAX_DURATION_MS = 250
+const TWO_FINGER_TAP_MAX_MOVE_DISTANCE_PX = 20
+const TWO_FINGER_TAP_MAX_DISTANCE_CHANGE_PX = 24
 const SUPPRESS_DOUBLE_TAP_CLICK_MS = 400
 const RESTORE_DOUBLE_TAP_ZOOM_DELAY_MS = 300
+
+interface TouchSnapshot {
+  identifier: number
+  clientX: number
+  clientY: number
+}
+
+function getTouchDistance(firstTouch: TouchSnapshot, secondTouch: TouchSnapshot) {
+  return Math.hypot(firstTouch.clientX - secondTouch.clientX, firstTouch.clientY - secondTouch.clientY)
+}
+
+function findTrackedTouch(touchList: TouchList, identifier: number) {
+  for (const touch of Array.from(touchList)) {
+    if (touch.identifier === identifier) {
+      return touch
+    }
+  }
+
+  return null
+}
 
 interface MapProps {
   center: [number, number]
@@ -50,6 +73,15 @@ function MapClickHandler({ onMapClick }: { onMapClick: (lat: number, lng: number
     zoomSnap: number
     draggingWasEnabled: boolean
     doubleClickZoomWasEnabled: boolean
+  } | null>(null)
+  const twoFingerTapGesture = useRef<{
+    anchorPoint: Point
+    startTime: number
+    firstTouch: TouchSnapshot
+    secondTouch: TouchSnapshot
+    initialDistance: number
+    endedTouchIdentifiers: Set<number>
+    cancelled: boolean
   } | null>(null)
 
   const clearPendingClick = () => {
@@ -83,13 +115,55 @@ function MapClickHandler({ onMapClick }: { onMapClick: (lat: number, lng: number
       doubleTapHoldGesture.current = null
     }
 
+    const clearTwoFingerTapGesture = () => {
+      twoFingerTapGesture.current = null
+    }
+
     const container = map.getContainer()
 
     const handleTouchStart = (event: TouchEvent) => {
+      if (event.touches.length === 2) {
+        lastTouchEnd.current = null
+        finishDoubleTapHoldGesture()
+        clearPendingClick()
+
+        const [firstTouch, secondTouch] = Array.from(event.touches)
+        const bounds = container.getBoundingClientRect()
+        const centroidX = (firstTouch.clientX + secondTouch.clientX) / 2
+        const centroidY = (firstTouch.clientY + secondTouch.clientY) / 2
+        const firstTouchSnapshot = {
+          identifier: firstTouch.identifier,
+          clientX: firstTouch.clientX,
+          clientY: firstTouch.clientY,
+        }
+        const secondTouchSnapshot = {
+          identifier: secondTouch.identifier,
+          clientX: secondTouch.clientX,
+          clientY: secondTouch.clientY,
+        }
+
+        twoFingerTapGesture.current = {
+          anchorPoint: point(centroidX - bounds.left, centroidY - bounds.top),
+          startTime: Date.now(),
+          firstTouch: firstTouchSnapshot,
+          secondTouch: secondTouchSnapshot,
+          initialDistance: getTouchDistance(firstTouchSnapshot, secondTouchSnapshot),
+          endedTouchIdentifiers: new Set<number>(),
+          cancelled: false,
+        }
+
+        return
+      }
+
       if (event.touches.length !== 1) {
         lastTouchEnd.current = null
         finishDoubleTapHoldGesture()
+        clearTwoFingerTapGesture()
         return
+      }
+
+      if (twoFingerTapGesture.current) {
+        twoFingerTapGesture.current.cancelled = true
       }
 
       const touch = event.touches[0]
@@ -134,6 +208,43 @@ function MapClickHandler({ onMapClick }: { onMapClick: (lat: number, lng: number
     }
 
     const handleTouchMove = (event: TouchEvent) => {
+      const twoFingerGesture = twoFingerTapGesture.current
+
+      if (twoFingerGesture) {
+        if (event.touches.length !== 2) {
+          twoFingerGesture.cancelled = true
+        } else {
+          const currentFirstTouch = findTrackedTouch(event.touches, twoFingerGesture.firstTouch.identifier)
+          const currentSecondTouch = findTrackedTouch(event.touches, twoFingerGesture.secondTouch.identifier)
+
+          if (!currentFirstTouch || !currentSecondTouch) {
+            twoFingerGesture.cancelled = true
+          } else {
+            const firstTouchMoved = Math.hypot(
+              currentFirstTouch.clientX - twoFingerGesture.firstTouch.clientX,
+              currentFirstTouch.clientY - twoFingerGesture.firstTouch.clientY
+            )
+            const secondTouchMoved = Math.hypot(
+              currentSecondTouch.clientX - twoFingerGesture.secondTouch.clientX,
+              currentSecondTouch.clientY - twoFingerGesture.secondTouch.clientY
+            )
+            const currentDistance = Math.hypot(
+              currentFirstTouch.clientX - currentSecondTouch.clientX,
+              currentFirstTouch.clientY - currentSecondTouch.clientY
+            )
+
+            if (
+              firstTouchMoved > TWO_FINGER_TAP_MAX_MOVE_DISTANCE_PX ||
+              secondTouchMoved > TWO_FINGER_TAP_MAX_MOVE_DISTANCE_PX ||
+              Math.abs(currentDistance - twoFingerGesture.initialDistance) >
+                TWO_FINGER_TAP_MAX_DISTANCE_CHANGE_PX
+            ) {
+              twoFingerGesture.cancelled = true
+            }
+          }
+        }
+      }
+
       const gesture = doubleTapHoldGesture.current
 
       if (!gesture || event.touches.length !== 1) {
@@ -169,6 +280,39 @@ function MapClickHandler({ onMapClick }: { onMapClick: (lat: number, lng: number
     }
 
     const handleTouchEnd = (event: TouchEvent) => {
+      const twoFingerGesture = twoFingerTapGesture.current
+
+      if (twoFingerGesture) {
+        for (const touch of Array.from(event.changedTouches)) {
+          if (
+            touch.identifier === twoFingerGesture.firstTouch.identifier ||
+            touch.identifier === twoFingerGesture.secondTouch.identifier
+          ) {
+            twoFingerGesture.endedTouchIdentifiers.add(touch.identifier)
+          }
+        }
+
+        if (twoFingerGesture.endedTouchIdentifiers.size === 2) {
+          const didCompleteTap =
+            !twoFingerGesture.cancelled &&
+            Date.now() - twoFingerGesture.startTime <= TWO_FINGER_TAP_MAX_DURATION_MS
+
+          if (didCompleteTap) {
+            clearPendingClick()
+            suppressClicksUntil.current = Date.now() + SUPPRESS_DOUBLE_TAP_CLICK_MS
+
+            const targetZoom = Math.max(map.getMinZoom(), map.getZoom() - 1)
+
+            if (targetZoom !== map.getZoom()) {
+              map.setZoomAround(twoFingerGesture.anchorPoint, targetZoom, { animate: false })
+            }
+          }
+
+          clearTwoFingerTapGesture()
+          return
+        }
+      }
+
       if (doubleTapHoldGesture.current) {
         if (event.touches.length === 0) {
           finishDoubleTapHoldGesture()
@@ -192,6 +336,7 @@ function MapClickHandler({ onMapClick }: { onMapClick: (lat: number, lng: number
     const handleTouchCancel = () => {
       lastTouchEnd.current = null
       finishDoubleTapHoldGesture()
+      clearTwoFingerTapGesture()
     }
 
     container.addEventListener("touchstart", handleTouchStart, { passive: true })
