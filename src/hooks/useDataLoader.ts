@@ -5,7 +5,7 @@
  * caches in memory for the session, and provides filtering utilities.
  */
 
-import { useState, useCallback } from "react"
+import { useState, useCallback, useEffect, useRef } from "react"
 import type { AustralianState, School, Station } from "../types"
 
 interface DataLoaderResult {
@@ -34,16 +34,31 @@ export function useDataLoader(): DataLoaderResult {
   >(new Map())
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const loadedStatesRef = useRef(loadedStates)
+  const schoolsDataRef = useRef(schoolsData)
+  const stationsDataRef = useRef(stationsData)
+
+  useEffect(() => {
+    loadedStatesRef.current = loadedStates
+  }, [loadedStates])
+
+  useEffect(() => {
+    schoolsDataRef.current = schoolsData
+  }, [schoolsData])
+
+  useEffect(() => {
+    stationsDataRef.current = stationsData
+  }, [stationsData])
 
   const loadState = useCallback(
     async (
       state: AustralianState
     ): Promise<{ schools: School[]; stations: Station[] }> => {
       // Skip if already loaded
-      if (loadedStates.has(state)) {
+      if (loadedStatesRef.current.has(state)) {
         return {
-          schools: schoolsData.get(state) || [],
-          stations: stationsData.get(state) || [],
+          schools: schoolsDataRef.current.get(state) || [],
+          stations: stationsDataRef.current.get(state) || [],
         }
       }
 
@@ -53,25 +68,38 @@ export function useDataLoader(): DataLoaderResult {
       try {
         const stateCode = state.toLowerCase()
 
+        const loadDataset = async <T,>(
+          dataset: "schools" | "stations"
+        ): Promise<T[]> => {
+          const response = await fetch(`/data/${stateCode}/${dataset}.json`)
+          const contentType = response.headers.get("content-type") || ""
+
+          if (response.status === 404) {
+            console.warn(`No ${dataset} data packaged for ${state}`)
+            return []
+          }
+
+          if (!response.ok) {
+            throw new Error(
+              `Failed to load ${dataset} for ${state}: ${response.statusText}`
+            )
+          }
+
+          if (!contentType.includes("application/json")) {
+            console.warn(
+              `Skipping ${dataset} for ${state}: expected JSON but received ${contentType || "unknown content type"}`
+            )
+            return []
+          }
+
+          return response.json() as Promise<T[]>
+        }
+
         // Load schools and stations in parallel
-        const [schoolsResponse, stationsResponse] = await Promise.all([
-          fetch(`/data/${stateCode}/schools.json`),
-          fetch(`/data/${stateCode}/stations.json`),
+        const [schools, stations] = await Promise.all([
+          loadDataset<School>("schools"),
+          loadDataset<Station>("stations"),
         ])
-
-        if (!schoolsResponse.ok) {
-          throw new Error(
-            `Failed to load schools for ${state}: ${schoolsResponse.statusText}`
-          )
-        }
-        if (!stationsResponse.ok) {
-          throw new Error(
-            `Failed to load stations for ${state}: ${stationsResponse.statusText}`
-          )
-        }
-
-        const schools: School[] = await schoolsResponse.json()
-        const stations: Station[] = await stationsResponse.json()
 
         // Update state data maps
         setSchoolsData(prev => new Map(prev).set(state, schools))
@@ -94,7 +122,7 @@ export function useDataLoader(): DataLoaderResult {
         setLoading(false)
       }
     },
-    [loadedStates, schoolsData, stationsData]
+    []
   )
 
   const loadMultipleStates = useCallback(

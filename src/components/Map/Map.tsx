@@ -30,6 +30,7 @@ interface MapProps {
   bounds?: LatLngBounds | null
   children?: ReactNode
   onMapClick?: (lat: number, lng: number) => void
+  onViewportChange?: (bounds: LatLngBounds, zoom: number) => void
 }
 
 /**
@@ -265,7 +266,37 @@ function MapController({
   return null
 }
 
-export function Map({ center, zoom, bounds, children, onMapClick }: MapProps) {
+function MapViewportReporter({
+  onViewportChange,
+}: {
+  onViewportChange: (bounds: LatLngBounds, zoom: number) => void
+}) {
+  const map = useMap()
+
+  useEffect(() => {
+    onViewportChange(map.getBounds(), map.getZoom())
+  }, [map, onViewportChange])
+
+  useMapEvents({
+    moveend() {
+      onViewportChange(map.getBounds(), map.getZoom())
+    },
+    zoomend() {
+      onViewportChange(map.getBounds(), map.getZoom())
+    },
+  })
+
+  return null
+}
+
+export function Map({
+  center,
+  zoom,
+  bounds,
+  children,
+  onMapClick,
+  onViewportChange,
+}: MapProps) {
   const isDark = useDarkMode()
 
   return (
@@ -276,6 +307,7 @@ export function Map({ center, zoom, bounds, children, onMapClick }: MapProps) {
       zoomControl={false}
       scrollWheelZoom={true}
       attributionControl={false}
+      preferCanvas={true}
     >
       <TileLayer
         key={isDark ? "dark" : "light"}
@@ -285,6 +317,9 @@ export function Map({ center, zoom, bounds, children, onMapClick }: MapProps) {
       />
       <MapController center={center} zoom={zoom} bounds={bounds} />
       {onMapClick && <MapClickHandler onMapClick={onMapClick} />}
+      {onViewportChange && (
+        <MapViewportReporter onViewportChange={onViewportChange} />
+      )}
       {children}
     </MapContainer>
   )

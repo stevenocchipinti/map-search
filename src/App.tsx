@@ -4,7 +4,7 @@
  * Phase 6: PWA with Service Worker
  */
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 import { flushSync } from "react-dom"
 import type {
   SearchResponse,
@@ -44,10 +44,23 @@ import "@fontsource/zain"
 
 const MAX_WALKING_DISTANCE_KM = 2.5
 const MAX_RESULTS_PER_CATEGORY = 10
+const VIEWPORT_MARKER_MIN_ZOOM = 10
+const MAX_VIEWPORT_MARKERS_PER_CATEGORY = 300
+const PRELOADABLE_STATES: AustralianState[] = [
+  "NSW",
+  "VIC",
+  "QLD",
+  "WA",
+  "SA",
+  "TAS",
+  "ACT",
+  "NT",
+]
 
 function App() {
   // Hooks
-  const { loadState, getSchools, getStations, isStateLoaded } = useDataLoader()
+  const { loadState, getSchools, getStations, isStateLoaded, loadedStates } =
+    useDataLoader()
   const { fetchRoutesSequentially, getCachedRoute } = useWalkingRoutes()
   const { getCurrentLocation } = useGeolocation()
   const isOnline = useOnlineStatus()
@@ -94,6 +107,8 @@ function App() {
   )
   const [mapZoom, setMapZoom] = useState(initialMapState.zoom)
   const [mapBounds, setMapBounds] = useState<LatLngBounds | null>(null)
+  const [viewportBounds, setViewportBounds] = useState<LatLngBounds | null>(null)
+  const [viewportZoom, setViewportZoom] = useState(initialMapState.zoom)
 
   // Route loading states
   const [routeLoadingStates, setRouteLoadingStates] = useState({
@@ -118,6 +133,7 @@ function App() {
   const [offlineBannerDismissed, setOfflineBannerDismissed] = useState(false)
   const [hasSearched, setHasSearched] = useState(false)
   const [showLanding, setShowLanding] = useState(true)
+  const [backgroundDataReady, setBackgroundDataReady] = useState(false)
 
   // Search input state (controlled by URL)
   const [searchInput, setSearchInput] = useState<string>("")
@@ -126,6 +142,14 @@ function App() {
   // AbortController for canceling in-flight search requests
   const searchAbortController = useRef<AbortController | null>(null)
   const deferredAbortController = useRef<AbortController | null>(null)
+
+  const handleViewportChange = useCallback(
+    (bounds: LatLngBounds, zoom: number) => {
+      setViewportBounds(bounds)
+      setViewportZoom(zoom)
+    },
+    []
+  )
 
   /**
    * URL Validation and Sanitization Functions
@@ -421,6 +445,38 @@ function App() {
     return () => window.removeEventListener("popstate", handlePopState)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []) // Empty deps - handler uses current state via closures
+
+  useEffect(() => {
+    let cancelled = false
+
+    const preloadAvailableStateData = async () => {
+      const loadResults = await Promise.allSettled(
+        PRELOADABLE_STATES.map(async state => {
+          if (isStateLoaded(state)) {
+            return
+          }
+
+          try {
+            await loadState(state)
+          } catch (err) {
+            console.warn(`Skipping preload for ${state}:`, err)
+          }
+        })
+      )
+
+      if (!cancelled) {
+        const hasLoadedState = loadResults.some(result => result.status === "fulfilled")
+        setBackgroundDataReady(prev => prev || hasLoadedState)
+      }
+    }
+
+    void preloadAvailableStateData()
+
+    return () => {
+      cancelled = true
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   /**
    * Re-filter schools when sectors or school types change
@@ -1204,6 +1260,43 @@ function App() {
       .slice(0, MAX_RESULTS_PER_CATEGORY)
   }
 
+  const visibleSearchResultIds = new Set([
+    ...(searchResults?.schools.map(school => school.id) || []),
+    ...(searchResults?.stations.map(station => station.id) || []),
+  ])
+
+  const viewportSchools =
+    viewportBounds && viewportZoom >= VIEWPORT_MARKER_MIN_ZOOM
+      ? Array.from(loadedStates)
+          .flatMap(state => getSchools(state))
+          .filter(
+            school =>
+              viewportBounds.contains([school.latitude, school.longitude]) &&
+              sectors.has(school.sector) &&
+              schoolTypes.has(school.type) &&
+              !visibleSearchResultIds.has(`school-${school.name}-${school.postcode}`)
+          )
+          .slice(0, MAX_VIEWPORT_MARKERS_PER_CATEGORY)
+      : []
+
+  const viewportStations =
+    viewportBounds && viewportZoom >= VIEWPORT_MARKER_MIN_ZOOM
+      ? Array.from(loadedStates)
+          .flatMap(state => getStations(state))
+          .filter(
+            station =>
+              viewportBounds.contains([station.latitude, station.longitude]) &&
+              !visibleSearchResultIds.has(`station-${station.name}-${station.state}`)
+          )
+          .slice(0, MAX_VIEWPORT_MARKERS_PER_CATEGORY)
+      : []
+
+  const shouldShowViewportMarkers =
+    !showLanding &&
+    backgroundDataReady &&
+    viewportBounds &&
+    viewportZoom >= VIEWPORT_MARKER_MIN_ZOOM
+
   // Get selected POIs for map rendering
   const selectedSchool = searchResults?.schools[selectedPOIs.school]
   const selectedStation = searchResults?.stations[selectedPOIs.station]
@@ -1298,7 +1391,28 @@ function App() {
             zoom={mapZoom}
             bounds={mapBounds}
             onMapClick={handleMapClick}
+            onViewportChange={handleViewportChange}
           >
+            {shouldShowViewportMarkers &&
+              viewportSchools.map(school => (
+                <MapMarker
+                  key={`viewport-school-${school.name}-${school.postcode}`}
+                  position={[school.latitude, school.longitude]}
+                  type="school"
+                  isAlternative={true}
+                />
+              ))}
+
+            {shouldShowViewportMarkers &&
+              viewportStations.map(station => (
+                <MapMarker
+                  key={`viewport-station-${station.name}-${station.state}`}
+                  position={[station.latitude, station.longitude]}
+                  type="station"
+                  isAlternative={true}
+                />
+              ))}
+
             {/* User location marker - show immediately when we have coordinates */}
             {userLocation && (
               <MapMarker
@@ -1457,7 +1571,28 @@ function App() {
             zoom={mapZoom}
             bounds={mapBounds}
             onMapClick={handleMapClick}
+            onViewportChange={handleViewportChange}
           >
+            {shouldShowViewportMarkers &&
+              viewportSchools.map(school => (
+                <MapMarker
+                  key={`viewport-school-${school.name}-${school.postcode}`}
+                  position={[school.latitude, school.longitude]}
+                  type="school"
+                  isAlternative={true}
+                />
+              ))}
+
+            {shouldShowViewportMarkers &&
+              viewportStations.map(station => (
+                <MapMarker
+                  key={`viewport-station-${station.name}-${station.state}`}
+                  position={[station.latitude, station.longitude]}
+                  type="station"
+                  isAlternative={true}
+                />
+              ))}
+
             {/* User location marker - show immediately when we have coordinates */}
             {userLocation && (
               <MapMarker
