@@ -24,7 +24,7 @@ import {
   walkingRouteCacheKey,
 } from "./api-cache"
 
-const API_BASE_URL = import.meta.env.DEV ? "http://localhost:3001" : ""
+const API_BASE_URL = import.meta.env.DEV ? "http://localhost:3000" : ""
 
 /**
  * Geocode an address to get coordinates and Australian state
