@@ -6,7 +6,7 @@
 
 import { MapContainer, TileLayer, useMap, useMapEvents } from "react-leaflet"
 import type { ReactNode } from "react"
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 import type { LatLngBounds } from "leaflet"
 import { useDarkMode } from "../../hooks/useDarkMode"
 
@@ -27,11 +27,35 @@ interface MapProps {
  * MapClickHandler - Listens for click events on the map
  */
 function MapClickHandler({ onMapClick }: { onMapClick: (lat: number, lng: number) => void }) {
+  const pendingClickTimeout = useRef<number | null>(null)
+
+  useEffect(() => {
+    return () => {
+      if (pendingClickTimeout.current !== null) {
+        window.clearTimeout(pendingClickTimeout.current)
+      }
+    }
+  }, [])
+
   useMapEvents({
     click(e) {
-      onMapClick(e.latlng.lat, e.latlng.lng)
+      if (pendingClickTimeout.current !== null) {
+        window.clearTimeout(pendingClickTimeout.current)
+      }
+
+      pendingClickTimeout.current = window.setTimeout(() => {
+        pendingClickTimeout.current = null
+        onMapClick(e.latlng.lat, e.latlng.lng)
+      }, 250)
+    },
+    dblclick() {
+      if (pendingClickTimeout.current !== null) {
+        window.clearTimeout(pendingClickTimeout.current)
+        pendingClickTimeout.current = null
+      }
     },
   })
+
   return null
 }
 
