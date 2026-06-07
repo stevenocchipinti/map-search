@@ -46,7 +46,7 @@ export function SettingsModal({
     >
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0 z-[1100] bg-black/40 md:hidden" />
-        <Drawer.Content className="fixed top-0 right-0 bottom-0 z-[1101] flex flex-col bg-white dark:bg-gray-900 w-[85vw] max-w-md shadow-2xl md:hidden">
+        <Drawer.Content className="fixed top-0 right-0 bottom-0 z-[1200] flex flex-col bg-white dark:bg-gray-900 w-[85vw] max-w-md shadow-2xl md:hidden">
           {/* Header */}
           <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100 dark:border-gray-800">
             <Drawer.Title className="text-xl font-semibold text-gray-900 dark:text-gray-100">

@@ -1588,7 +1588,7 @@ function App() {
             />
             {/* Recent searches - positioned below floating search bar */}
             <div
-              className="fixed left-8 right-8 z-[9999]"
+              className="fixed left-8 right-8 z-[1200]"
               style={{ top: "calc(1rem + 64px)" }}
             >
               <RecentSearches
