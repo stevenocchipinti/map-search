@@ -126,7 +126,7 @@ function MapClickHandler({ onMapClick }: { onMapClick: (lat: number, lng: number
         anchorPoint: point(touch.clientX - bounds.left, touch.clientY - bounds.top),
         startClientY: touch.clientY,
         startZoom: map.getZoom(),
-        zoomSnap: map.options.zoomSnap,
+        zoomSnap: map.options.zoomSnap ?? 1,
         draggingWasEnabled,
         doubleClickZoomWasEnabled: map.doubleClickZoom.enabled(),
       }
