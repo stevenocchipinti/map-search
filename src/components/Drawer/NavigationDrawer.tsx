@@ -33,8 +33,7 @@ interface NavigationDrawerProps {
   // Visibility control
   hasSearched?: boolean
 
-  // Deferred loading state (map click → drawer open triggers fetch)
-  deferredLoading?: boolean
+  resultsLoading?: boolean
 }
 
 export function NavigationDrawer({
@@ -52,7 +51,7 @@ export function NavigationDrawer({
   activeTab,
   onActiveTabChange,
   hasSearched = false,
-  deferredLoading = false,
+  resultsLoading = false,
 }: NavigationDrawerProps) {
   // Tab click toggle behavior
   const handleTabClick = (category: POICategory) => {
@@ -209,12 +208,12 @@ export function NavigationDrawer({
           >
             <div
               className={`h-1.5 rounded-full transition-all duration-500 ease-in-out overflow-hidden ${
-                deferredLoading
+                resultsLoading
                   ? "w-1/2 bg-gray-200 dark:bg-gray-700"
                   : "w-12 bg-gray-300 dark:bg-gray-600"
               }`}
             >
-              {deferredLoading && (
+              {resultsLoading && (
                 <div className={`w-full h-full barber-pole ${
                   routeLoading.school
                     ? "barber-pole--school"
@@ -249,7 +248,7 @@ export function NavigationDrawer({
             selectedIndex={selectedPOIs[activeTab]}
             route={getCurrentRoute()}
             routeLoading={routeLoading[activeTab]}
-            deferredLoading={deferredLoading && getCurrentItems().length === 0}
+            resultsLoading={resultsLoading && getCurrentItems().length === 0}
           />
 
           {/* Alternatives list - visible at snap 2 */}

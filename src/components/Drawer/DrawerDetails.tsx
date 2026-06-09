@@ -11,8 +11,8 @@ interface DrawerDetailsProps {
   route?: WalkingRoute | null
   routeLoading?: boolean
 
-  // When true, show skeleton loader (data is being fetched)
-  deferredLoading?: boolean
+  // When true, show skeleton loader while results are loading.
+  resultsLoading?: boolean
 }
 
 export function DrawerDetails({
@@ -21,12 +21,11 @@ export function DrawerDetails({
   selectedIndex,
   route,
   routeLoading,
-  deferredLoading,
+  resultsLoading,
 }: DrawerDetailsProps) {
   const selectedItem = items[selectedIndex]
 
-  // Show skeleton when deferred loading is active and no data yet
-  if (deferredLoading && !selectedItem) {
+  if (resultsLoading && !selectedItem) {
     return (
       <div
         className="flex flex-col outline-none pb-6"
