@@ -2,7 +2,7 @@ import { forwardRef } from "react"
 import type { ButtonHTMLAttributes } from "react"
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "ghost"
+  variant?: "primary" | "secondary" | "ghost" | "ghost-secondary"
   size?: "sm" | "md" | "lg"
   loading?: boolean
   icon?: React.ReactNode
@@ -32,6 +32,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50 hover:border-gray-300 active:bg-gray-100 focus-visible:ring-gray-400 shadow-soft hover:shadow-soft-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-700 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:active:bg-gray-600",
       ghost:
         "text-gray-700 hover:bg-gray-100 active:bg-gray-200 focus-visible:ring-gray-400 dark:text-gray-300 dark:hover:bg-gray-800 dark:active:bg-gray-700",
+      "ghost-secondary":
+        "text-gray-500 hover:bg-gray-100 active:bg-gray-200 focus-visible:ring-gray-400 dark:text-gray-500 dark:hover:bg-gray-800 dark:active:bg-gray-700",
     }
 
     const sizeStyles = {

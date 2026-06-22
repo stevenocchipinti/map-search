@@ -1,6 +1,10 @@
-import { GraduationCap, Train, ShoppingCart } from "lucide-react"
 import type { POI, POICategory, SelectedPOIs, WalkingRoute } from "../../types"
 import { formatDuration } from "../../utils/format"
+import {
+  getCategoryIcon,
+  getCategoryLabel,
+  getCategoryTextColor,
+} from "../../utils/category"
 
 interface DrawerTabBarProps {
   activeTab: POICategory
@@ -80,42 +84,6 @@ export function DrawerTabBar({
     return `~${formatDuration(selectedItem.estimatedWalkingTime)}`
   }
 
-  // Get icon for category
-  const getIcon = (category: POICategory) => {
-    switch (category) {
-      case "school":
-        return GraduationCap
-      case "station":
-        return Train
-      case "supermarket":
-        return ShoppingCart
-    }
-  }
-
-  // Get label for category
-  const getLabel = (category: POICategory): string => {
-    switch (category) {
-      case "school":
-        return "School"
-      case "station":
-        return "Station"
-      case "supermarket":
-        return "Grocer"
-    }
-  }
-
-  // Get text color for category
-  const getTextColor = (category: POICategory): string => {
-    switch (category) {
-      case "school":
-        return "text-blue-400"
-      case "station":
-        return "text-violet-400"
-      case "supermarket":
-        return "text-teal-400"
-    }
-  }
-
   // Get active tab styling — only show when drawer is expanded
   const getActiveStyle = (): string => {
     return snapIndex > 0
@@ -137,8 +105,8 @@ export function DrawerTabBar({
       aria-label="Category navigation"
     >
       {categories.map(category => {
-        const Icon = getIcon(category)
-        const label = getLabel(category)
+        const Icon = getCategoryIcon(category)
+        const label = getCategoryLabel(category)
         const walkingTime = getWalkingTime(category)
         const hasData = hasResults(category)
         const isActive = activeTab === category
@@ -160,7 +128,7 @@ export function DrawerTabBar({
             aria-label={`${label}${hasData ? `, ${walkingTime}` : ", no results"}`}
           >
             <div
-              className={`flex items-center gap-1 ${getTextColor(category)}`}
+              className={`flex items-center gap-1 ${getCategoryTextColor(category)}`}
             >
               <Icon className="w-4 h-4" />
               <span className="text-xs font-semibold leading-none">
@@ -169,7 +137,7 @@ export function DrawerTabBar({
             </div>
             {hasData && walkingTime && (
               <span
-                className={`text-[10px] leading-none ${getTextColor(category)}`}
+                className={`text-[10px] leading-none ${getCategoryTextColor(category)}`}
               >
                 {walkingTime}
               </span>

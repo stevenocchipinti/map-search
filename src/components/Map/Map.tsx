@@ -54,6 +54,8 @@ interface MapProps {
   children?: ReactNode
   onMapClick?: (lat: number, lng: number) => void
   onViewportChange?: (bounds: LatLngBounds, zoom: number) => void
+  paddingTopLeft?: [number, number]
+  paddingBottomRight?: [number, number]
 }
 
 /**
@@ -390,23 +392,31 @@ function MapController({
   center,
   zoom,
   bounds,
+  paddingTopLeft,
+  paddingBottomRight,
 }: {
   center: [number, number]
   zoom: number
   bounds?: LatLngBounds | null
+  paddingTopLeft?: [number, number]
+  paddingBottomRight?: [number, number]
 }) {
   const map = useMap()
 
   useEffect(() => {
     if (bounds) {
       // If bounds are provided, fit the map to show all POIs
-      // Minimal padding and max zoom for testing
-      map.fitBounds(bounds, { padding: [10, 10], maxZoom: 19 })
+      // Use custom padding to account for floating UI elements
+      map.fitBounds(bounds, {
+        paddingTopLeft: paddingTopLeft || [10, 10],
+        paddingBottomRight: paddingBottomRight || [10, 10],
+        maxZoom: 19,
+      })
     } else {
       // Otherwise, just set center and zoom
       map.setView(center, zoom)
     }
-  }, [map, center, zoom, bounds])
+  }, [map, center, zoom, bounds, paddingTopLeft, paddingBottomRight])
 
   return null
 }
@@ -441,6 +451,8 @@ export function Map({
   children,
   onMapClick,
   onViewportChange,
+  paddingTopLeft,
+  paddingBottomRight,
 }: MapProps) {
   const isDark = useDarkMode()
 
@@ -460,7 +472,13 @@ export function Map({
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         maxZoom={19}
       />
-      <MapController center={center} zoom={zoom} bounds={bounds} />
+      <MapController
+        center={center}
+        zoom={zoom}
+        bounds={bounds}
+        paddingTopLeft={paddingTopLeft}
+        paddingBottomRight={paddingBottomRight}
+      />
       {onMapClick && <MapClickHandler onMapClick={onMapClick} />}
       {onViewportChange && (
         <MapViewportReporter onViewportChange={onViewportChange} />

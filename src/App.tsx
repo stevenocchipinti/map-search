@@ -46,6 +46,8 @@ const MAX_WALKING_DISTANCE_KM = 2.5
 const MAX_RESULTS_PER_CATEGORY = 10
 const VIEWPORT_MARKER_MIN_ZOOM = 10
 const MAX_VIEWPORT_MARKERS_PER_CATEGORY = 300
+const DESKTOP_MAP_PADDING_TOP_LEFT: [number, number] = [400, 20]
+const DESKTOP_MAP_PADDING_BOTTOM_RIGHT: [number, number] = [20, 20]
 const PRELOADABLE_STATES: AustralianState[] = [
   "NSW",
   "VIC",
@@ -84,7 +86,6 @@ function App() {
     supermarket: 0,
   })
   const [loading, setLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
 
   // Map state - Initialize with last search location or default to all of Australia
   const getInitialMapState = () => {
@@ -107,7 +108,9 @@ function App() {
   )
   const [mapZoom, setMapZoom] = useState(initialMapState.zoom)
   const [mapBounds, setMapBounds] = useState<LatLngBounds | null>(null)
-  const [viewportBounds, setViewportBounds] = useState<LatLngBounds | null>(null)
+  const [viewportBounds, setViewportBounds] = useState<LatLngBounds | null>(
+    null
+  )
   const [viewportZoom, setViewportZoom] = useState(initialMapState.zoom)
 
   // Route loading states
@@ -126,7 +129,7 @@ function App() {
   // Mobile drawer state
   const [drawerSnapIndex, setDrawerSnapIndex] = useState<number>(0)
   const [activeDrawerTab, setActiveDrawerTab] = useState<POICategory>("school")
-  const [showSettingsMobile, setShowSettingsMobile] = useState(false)
+  const [showSettings, setShowSettings] = useState(false)
   const [offlineBannerDismissed, setOfflineBannerDismissed] = useState(false)
   const [hasSearched, setHasSearched] = useState(false)
   const [showLanding, setShowLanding] = useState(true)
@@ -135,6 +138,39 @@ function App() {
   // Search input state (controlled by URL)
   const [searchInput, setSearchInput] = useState<string>("")
   const [floatingSearchFocused, setFloatingSearchFocused] = useState(false)
+
+  function searchControls(searchBarClassName = "") {
+    return (
+      <>
+        <FloatingSearchBar
+          value={searchInput}
+          onChange={setSearchInput}
+          onSearch={handleSearch}
+          onUseLocation={handleUseMyLocation}
+          onOpenSettings={() => setShowSettings(true)}
+          loading={loading}
+          onFocus={() => setFloatingSearchFocused(true)}
+          onBlur={() => setFloatingSearchFocused(false)}
+          className={searchBarClassName}
+        />
+        <div
+          className={`${searchBarClassName ? "absolute" : "fixed"} left-8 right-8 z-[1200]`}
+          style={{ top: "calc(1rem + 64px)" }}
+        >
+          <RecentSearches
+            recents={recents}
+            expanded={recentsExpanded}
+            onToggle={() => setRecentsExpanded(!recentsExpanded)}
+            onSelect={handleRecentSelect}
+            onRemove={removeRecent}
+            searchValue={searchInput}
+            onClearSearch={() => setSearchInput("")}
+            searchFocused={floatingSearchFocused}
+          />
+        </div>
+      </>
+    )
+  }
 
   // AbortController for canceling in-flight search requests
   const searchAbortController = useRef<AbortController | null>(null)
@@ -455,7 +491,9 @@ function App() {
       )
 
       if (!cancelled) {
-        const hasLoadedState = loadResults.some(result => result.status === "fulfilled")
+        const hasLoadedState = loadResults.some(
+          result => result.status === "fulfilled"
+        )
         setBackgroundDataReady(prev => prev || hasLoadedState)
       }
     }
@@ -741,9 +779,7 @@ function App() {
         })()
       }
     } catch (err) {
-      const errorMsg = err instanceof Error ? err.message : "Search failed"
       console.error("Search error:", err)
-      setError(errorMsg)
     } finally {
       setLoading(false)
     }
@@ -754,7 +790,6 @@ function App() {
    */
   const handleSearch = async (address: string): Promise<void> => {
     if (!address.trim()) {
-      setError("Please enter an address")
       return
     }
 
@@ -772,7 +807,6 @@ function App() {
     setSearchInput(address.trim())
 
     setLoading(true)
-    setError(null)
 
     try {
       // Step 1: Geocode the address with abort signal
@@ -807,9 +841,7 @@ function App() {
         return
       }
 
-      const errorMsg = err instanceof Error ? err.message : "Search failed"
       console.error("Search error:", err)
-      setError(errorMsg)
       setLoading(false)
     } finally {
       searchAbortController.current = null
@@ -827,7 +859,6 @@ function App() {
     cancelPendingSearch()
 
     setLoading(true)
-    setError(null)
 
     // Set user location on map immediately
     setUserLocation({ lat: recent.lat, lng: recent.lng })
@@ -855,7 +886,6 @@ function App() {
     cancelPendingSearch()
 
     setLoading(true)
-    setError(null)
 
     try {
       const coords = await getCurrentLocation()
@@ -887,9 +917,7 @@ function App() {
         )
       }
     } catch (err) {
-      const errorMsg =
-        err instanceof Error ? err.message : "Failed to get location"
-      setError(errorMsg)
+      console.error("Location error:", err)
       setLoading(false)
     }
   }
@@ -904,8 +932,6 @@ function App() {
     // Clear search input
     setSearchInput("")
 
-    // Clear error
-    setError(null)
     setLoading(true)
 
     // Dismiss landing if showing
@@ -1124,7 +1150,9 @@ function App() {
               viewportBounds.contains([school.latitude, school.longitude]) &&
               sectors.has(school.sector) &&
               schoolTypes.has(school.type) &&
-              !visibleSearchResultIds.has(`school-${school.name}-${school.postcode}`)
+              !visibleSearchResultIds.has(
+                `school-${school.name}-${school.postcode}`
+              )
           )
           .slice(0, MAX_VIEWPORT_MARKERS_PER_CATEGORY)
       : []
@@ -1136,7 +1164,9 @@ function App() {
           .filter(
             station =>
               viewportBounds.contains([station.latitude, station.longitude]) &&
-              !visibleSearchResultIds.has(`station-${station.name}-${station.state}`)
+              !visibleSearchResultIds.has(
+                `station-${station.name}-${station.state}`
+              )
           )
           .slice(0, MAX_VIEWPORT_MARKERS_PER_CATEGORY)
       : []
@@ -1197,17 +1227,13 @@ function App() {
         </div>
       )}
 
-      {/* Desktop: Side-by-side layout */}
-      <div className="hidden md:flex md:flex-row flex-1 overflow-hidden">
-        {/* Sidebar - Desktop: 40% fixed */}
-        <div className="w-2/5 lg:w-1/3 flex-shrink-0 h-full overflow-hidden">
+      {/* Desktop: full-screen map with floating controls */}
+      <div className="hidden md:block flex-1 overflow-hidden relative">
+        <div className="absolute left-0 top-0 bottom-0 z-[1100] w-[40%] lg:w-1/3 min-w-[360px] max-w-[520px] pointer-events-none">
+          <div className="pointer-events-auto">
+            {searchControls("!absolute")}
+          </div>
           <Sidebar
-            searchValue={searchInput}
-            onSearchChange={setSearchInput}
-            onSearch={handleSearch}
-            onUseLocation={handleUseMyLocation}
-            searchLoading={loading}
-            searchError={error}
             schools={searchResults?.schools || []}
             stations={searchResults?.stations || []}
             supermarkets={searchResults?.supermarkets || []}
@@ -1221,27 +1247,19 @@ function App() {
             schoolRouteLoading={routeLoadingStates.school}
             stationRouteLoading={routeLoadingStates.station}
             supermarketRouteLoading={routeLoadingStates.supermarket}
-            sectors={sectors}
-            onToggleSector={toggleSector}
-            schoolTypes={schoolTypes}
-            onToggleSchoolType={toggleSchoolType}
-            isOnline={isOnline}
-            recents={recents}
-            recentsExpanded={recentsExpanded}
-            onRecentsToggle={() => setRecentsExpanded(!recentsExpanded)}
-            onRecentSelect={handleRecentSelect}
-            onRecentRemove={removeRecent}
+            onOpenSettings={() => setShowSettings(true)}
           />
         </div>
 
-        {/* Map - Desktop: 60% flex */}
-        <div className="flex-1 h-full">
+        <div className="h-full">
           <Map
             center={mapCenter}
             zoom={mapZoom}
             bounds={mapBounds}
             onMapClick={handleMapClick}
             onViewportChange={handleViewportChange}
+            paddingTopLeft={DESKTOP_MAP_PADDING_TOP_LEFT}
+            paddingBottomRight={DESKTOP_MAP_PADDING_BOTTOM_RIGHT}
           >
             {shouldShowViewportMarkers &&
               viewportSchools.map(school => (
@@ -1373,6 +1391,11 @@ function App() {
             )}
           </Map>
         </div>
+        <AttributionToggle
+          hasSearched={hasSearched || !!userLocation}
+          isLanding={false}
+          className="!absolute !bottom-4"
+        />
       </div>
 
       {/* Mobile: Drawer with floating elements - hidden on desktop (md:hidden) */}
@@ -1559,36 +1582,7 @@ function App() {
         </div>
 
         {/* Floating search bar - shown after landing dismissed */}
-        {!showLanding && (
-          <>
-            <FloatingSearchBar
-              value={searchInput}
-              onChange={setSearchInput}
-              onSearch={handleSearch}
-              onUseLocation={handleUseMyLocation}
-              onOpenSettings={() => setShowSettingsMobile(true)}
-              loading={loading}
-              onFocus={() => setFloatingSearchFocused(true)}
-              onBlur={() => setFloatingSearchFocused(false)}
-            />
-            {/* Recent searches - positioned below floating search bar */}
-            <div
-              className="fixed left-8 right-8 z-[1200]"
-              style={{ top: "calc(1rem + 64px)" }}
-            >
-              <RecentSearches
-                recents={recents}
-                expanded={recentsExpanded}
-                onToggle={() => setRecentsExpanded(!recentsExpanded)}
-                onSelect={handleRecentSelect}
-                onRemove={removeRecent}
-                searchValue={searchInput}
-                onClearSearch={() => setSearchInput("")}
-                searchFocused={floatingSearchFocused}
-              />
-            </div>
-          </>
-        )}
+        {!showLanding && searchControls()}
 
         {/* Landing overlay - shown on initial load */}
         {showLanding && (
@@ -1597,7 +1591,7 @@ function App() {
             onChange={setSearchInput}
             onSearch={handleLandingSearch}
             onUseLocation={handleLandingUseLocation}
-            onOpenSettings={() => setShowSettingsMobile(true)}
+            onOpenSettings={() => setShowSettings(true)}
             onDismiss={() => {
               withViewTransition(() => {
                 setShowLanding(false)
@@ -1647,7 +1641,6 @@ function App() {
             stationRoute={stationRoute}
             supermarketRoute={supermarketRoute}
             routeLoading={routeLoadingStates}
-            onOpenSettings={() => setShowSettingsMobile(true)}
             snapIndex={drawerSnapIndex}
             onSnapIndexChange={setDrawerSnapIndex}
             activeTab={activeDrawerTab}
@@ -1656,17 +1649,15 @@ function App() {
             resultsLoading={resultsLoading}
           />
         )}
-
-        {/* Settings modal */}
-        <SettingsModal
-          open={showSettingsMobile}
-          onClose={() => setShowSettingsMobile(false)}
-          sectors={sectors}
-          onToggleSector={toggleSector}
-          schoolTypes={schoolTypes}
-          onToggleSchoolType={toggleSchoolType}
-        />
       </div>
+      <SettingsModal
+        open={showSettings}
+        onClose={() => setShowSettings(false)}
+        sectors={sectors}
+        onToggleSector={toggleSector}
+        schoolTypes={schoolTypes}
+        onToggleSchoolType={toggleSchoolType}
+      />
     </div>
   )
 }

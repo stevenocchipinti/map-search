@@ -121,16 +121,18 @@ h1 {
 }
 
 /* Recent searches pill/list morph animation */
-.recent-searches {
-  view-transition-name: recent-searches;
-}
+@media (max-width: 767px) {
+  .recent-searches {
+    view-transition-name: recent-searches;
+  }
 
-.recent-searches-icon {
-  view-transition-name: recent-searches-icon;
-}
+  .recent-searches-icon {
+    view-transition-name: recent-searches-icon;
+  }
 
-.recent-searches-label {
-  view-transition-name: recent-searches-label;
+  .recent-searches-label {
+    view-transition-name: recent-searches-label;
+  }
 }
 
 ::view-transition-group(recent-searches) {

@@ -4,11 +4,13 @@ import { Info } from "lucide-react"
 interface AttributionToggleProps {
   hasSearched?: boolean
   isLanding?: boolean
+  className?: string
 }
 
 export function AttributionToggle({
   hasSearched = false,
   isLanding = false,
+  className = "",
 }: AttributionToggleProps) {
   // Start expanded, collapse after first search
   const [isExpanded, setIsExpanded] = useState(true)
@@ -30,7 +32,7 @@ export function AttributionToggle({
         isLanding
           ? "left-1/2 -translate-x-1/2 landing-attribution"
           : "right-4 floating-attribution"
-      }`}
+      } ${className}`}
     >
       <div className="flex items-center justify-end">
         {/* Combined container with conditional background */}

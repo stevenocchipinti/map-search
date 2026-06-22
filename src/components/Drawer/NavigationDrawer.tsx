@@ -21,9 +21,6 @@ interface NavigationDrawerProps {
   supermarketRoute?: WalkingRoute | null
   routeLoading: { school: boolean; station: boolean; supermarket: boolean }
 
-  // Settings
-  onOpenSettings: () => void
-
   // State control (passed from App.tsx)
   snapIndex: number
   onSnapIndexChange: (index: number) => void
