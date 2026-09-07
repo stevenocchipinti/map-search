@@ -11,10 +11,9 @@ import { point } from "leaflet"
 import type { LatLngBounds, Point } from "leaflet"
 import { useDarkMode } from "../../hooks/useDarkMode"
 
-const LIGHT_TILES =
-  "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
-const DARK_TILES =
-  "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+const CARTO_KEY = import.meta.env.VITE_CARTO_API_KEY
+const LIGHT_TILES = `https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=${CARTO_KEY}`
+const DARK_TILES = `https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=${CARTO_KEY}`
 
 const SINGLE_TAP_DELAY_MS = 250
 const DOUBLE_TAP_MAX_DELAY_MS = 300
