@@ -194,9 +194,15 @@ export function SettingsPanel({
                   count={cacheStats.walkingRoutes.count}
                   max={cacheStats.walkingRoutes.max}
                 />
-                <CacheStatRow label="Supermarkets" note="Melbourne only" />
               </div>
             )}
+
+            {/* Bundled data files and their coverage */}
+            <div className="space-y-2 pt-3 border-t border-gray-100 dark:border-gray-800">
+              <CoverageRow label="Schools" coverage="All states" />
+              <CoverageRow label="Train stations" coverage="All states" />
+              <CoverageRow label="Supermarkets" coverage="Melbourne only" />
+            </div>
 
             {cacheStats &&
               cacheStats.geocode.count === 0 &&
@@ -242,38 +248,46 @@ export function SettingsPanel({
 
 interface CacheStatRowProps {
   label: string
-  count?: number
-  max?: number
-  note?: string
+  count: number
+  max: number
 }
 
-function CacheStatRow({ label, count, max, note }: CacheStatRowProps) {
+function CacheStatRow({ label, count, max }: CacheStatRowProps) {
   return (
     <div className="flex items-center justify-between">
-      <div className="flex items-center gap-2 min-w-0">
-        <span className="text-sm text-gray-700 dark:text-gray-300 truncate">
-          {label}
+      <span className="text-sm text-gray-700 dark:text-gray-300 truncate">
+        {label}
+      </span>
+      <span
+        className={`text-sm font-medium tabular-nums shrink-0 ml-3 ${
+          count > 0
+            ? "text-blue-600 dark:text-blue-300"
+            : "text-gray-400 dark:text-gray-500"
+        }`}
+      >
+        {count}
+        <span className="text-xs font-normal text-gray-400 dark:text-gray-600">
+          /{max}
         </span>
-        {note && (
-          <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0">
-            · {note}
-          </span>
-        )}
-      </div>
-      {count !== undefined && (
-        <span
-          className={`text-sm font-medium tabular-nums shrink-0 ml-3 ${
-            count > 0
-              ? "text-blue-600 dark:text-blue-300"
-              : "text-gray-400 dark:text-gray-500"
-          }`}
-        >
-          {count}
-          <span className="text-xs font-normal text-gray-400 dark:text-gray-600">
-            /{max}
-          </span>
-        </span>
-      )}
+      </span>
+    </div>
+  )
+}
+
+interface CoverageRowProps {
+  label: string
+  coverage: string
+}
+
+function CoverageRow({ label, coverage }: CoverageRowProps) {
+  return (
+    <div className="flex items-center justify-between">
+      <span className="text-sm text-gray-700 dark:text-gray-300 truncate">
+        {label}
+      </span>
+      <span className="text-sm text-gray-400 dark:text-gray-500 shrink-0 ml-3">
+        {coverage}
+      </span>
     </div>
   )
 }
