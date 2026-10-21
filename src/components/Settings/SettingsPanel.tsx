@@ -27,26 +27,16 @@ export function SettingsPanel({
   onClose,
 }: SettingsPanelProps) {
   const [cacheStats, setCacheStats] = useState<ApiCacheStats | null>(null)
-  const [cachedStates, setCachedStates] = useState<string[]>([])
   const [clearing, setClearing] = useState(false)
-  const { getCachedStates, clearCache: clearServiceWorkerCache } =
-    useServiceWorker()
+  const { clearCache: clearServiceWorkerCache } = useServiceWorker()
   const { installable, installed, promptInstall } = useInstallPrompt()
 
-  const updateCacheInfo = async () => {
+  const updateCacheInfo = () => {
     setCacheStats(getApiCacheStats())
-
-    try {
-      const states = await getCachedStates()
-      setCachedStates(states)
-    } catch (error) {
-      console.error("Failed to get cached states:", error)
-    }
   }
 
   useEffect(() => {
     updateCacheInfo()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const handleClearCache = async () => {
@@ -206,32 +196,13 @@ export function SettingsPanel({
                   max={cacheStats.walkingRoutes.max}
                   ttlLabel="30 days"
                 />
-              </div>
-            )}
-
-            {/* Cached state data files */}
-            {cachedStates.length > 0 && (
-              <div className="pt-3 border-t border-gray-100 dark:border-gray-800">
-                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-2">
-                  State data files
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {cachedStates.map(state => (
-                    <span
-                      key={state}
-                      className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800"
-                    >
-                      {state}
-                    </span>
-                  ))}
-                </div>
+                <CacheStatRow label="Supermarkets" ttlLabel="Melbourne only" />
               </div>
             )}
 
             {cacheStats &&
               cacheStats.geocode.count === 0 &&
-              cacheStats.walkingRoutes.count === 0 &&
-              cachedStates.length === 0 && (
+              cacheStats.walkingRoutes.count === 0 && (
                 <p className="text-xs text-gray-500 dark:text-gray-400">
                   No data cached yet. Search for an address to save results for
                   faster repeat searches.
@@ -273,8 +244,8 @@ export function SettingsPanel({
 
 interface CacheStatRowProps {
   label: string
-  count: number
-  max: number
+  count?: number
+  max?: number
   ttlLabel: string
 }
 
@@ -289,18 +260,20 @@ function CacheStatRow({ label, count, max, ttlLabel }: CacheStatRowProps) {
           · {ttlLabel}
         </span>
       </div>
-      <span
-        className={`text-sm font-medium tabular-nums shrink-0 ml-3 ${
-          count > 0
-            ? "text-blue-600 dark:text-blue-300"
-            : "text-gray-400 dark:text-gray-500"
-        }`}
-      >
-        {count}
-        <span className="text-xs font-normal text-gray-400 dark:text-gray-600">
-          /{max}
+      {count !== undefined && (
+        <span
+          className={`text-sm font-medium tabular-nums shrink-0 ml-3 ${
+            count > 0
+              ? "text-blue-600 dark:text-blue-300"
+              : "text-gray-400 dark:text-gray-500"
+          }`}
+        >
+          {count}
+          <span className="text-xs font-normal text-gray-400 dark:text-gray-600">
+            /{max}
+          </span>
         </span>
-      </span>
+      )}
     </div>
   )
 }
