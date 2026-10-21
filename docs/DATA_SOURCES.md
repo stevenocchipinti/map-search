@@ -8,7 +8,7 @@ The app uses three types of Point of Interest (POI) data:
 
 1. **Schools** - Pre-processed static data, split by state
 2. **Train Stations** - Pre-processed static data, split by state
-3. **Supermarkets** - Live data from Overpass API (OpenStreetMap)
+3. **Supermarkets** - Pre-processed OpenStreetMap data (BBBike extract), Melbourne only
 
 ## Schools Data
 
@@ -147,29 +147,63 @@ The processing script (`scripts/process-stations.ts`) performs the following:
 
 ### Source
 
-**API**: Overpass API (OpenStreetMap data)
+**Extract**: [BBBike's Melbourne OpenStreetMap extract](https://download.bbbike.org/osm/bbbike/Melbourne/)
+(`Melbourne.osm.geojson.xz`, rebuilt weekly). Every `shop=supermarket` feature is kept.
 
-**Query**: `shop=supermarket` within 2000m radius of search location
+**Coverage**: Melbourne only, roughly Werribee to Ringwood and Craigieburn to
+Mordialloc. Other states have no `supermarkets.json`, so searches there simply
+show no supermarkets (the 404 is treated as an empty list).
 
-**Format**: Real-time API response (not pre-processed)
+**Format**: Pre-processed static data (`public/data/vic/supermarkets.json`)
 
-### Why Not Pre-processed?
+### Why Pre-processed?
 
-Supermarket data changes more frequently than schools/stations:
+Supermarkets used to be fetched live from Overpass on every search, but the
+public Overpass servers now block or heavily restrict server-side and commercial
+callers (406 responses from Vercel, see
+[drolbr/Overpass-API#791](https://github.com/drolbr/Overpass-API/issues/791)).
+Building the file from Overpass at build time was also unreliable (refused
+connections, 429s and 504s), so a downloadable extract is used instead.
+Supermarket locations change slowly enough that periodic refreshes are fine, and
+static files also make supermarkets fast and available offline.
 
-- New stores open regularly
-- Stores close or relocate
-- Hours and details change
+### Processing
 
-Using live data ensures users always see current information.
+Requires `xz` (`brew install xz`).
 
-### Future Enhancement
+```bash
+npm run data:supermarkets               # Uses the cached extract if present
+npm run data:supermarkets -- --refresh  # Download a fresh extract (~130MB)
+```
 
-Consider pre-processing supermarket data (similar to schools/stations) if:
+1. Downloads the extract to `data-sources/supermarkets/` (git ignored)
+2. Streams it through `xz` and keeps `shop=supermarket` features
+3. Uses the centre of building outlines, and merges shops mapped as both a
+   point and a building
+4. Builds a display name with location context (e.g. "Coles - Richmond")
+5. Writes `public/data/vic/supermarkets.json`
+6. Commit the generated file
 
-- API rate limits become problematic
-- Offline support for supermarkets is required
-- Data freshness requirements change (e.g., quarterly updates acceptable)
+To cover more areas, BBBike has extracts for other cities (and custom areas),
+or a state-level extract could be processed the same way.
+
+**Output schema**:
+
+```typescript
+{
+  id: string // "lat,lng" to 5dp (the extract has no OSM ids)
+  name: string
+  suburb?: string
+  postcode?: string
+  state: AustralianState
+  latitude: number
+  longitude: number
+}
+```
+
+**Update Frequency**: Every few months
+
+**Attribution**: © OpenStreetMap contributors (ODbL), already shown in the map attribution
 
 ---
 

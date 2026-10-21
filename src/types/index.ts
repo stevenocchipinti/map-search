@@ -34,10 +34,13 @@ export interface Station {
 
 // Supermarket Types
 export interface Supermarket {
+  id: string // OSM element type initial + id, e.g. "n123", "w456"
   name: string
+  suburb?: string
+  postcode?: string
+  state: AustralianState
   latitude: number
   longitude: number
-  type: string
 }
 
 // POI (Point of Interest) Types
@@ -93,11 +96,6 @@ export interface GeocodeResponse {
   lng: number
   state: AustralianState
   displayName: string
-  error?: string
-}
-
-export interface SupermarketsResponse {
-  supermarkets: POI[]
   error?: string
 }
 

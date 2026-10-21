@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "data:schools": "tsx scripts/process-schools.ts",
     "data:stations": "tsx scripts/process-stations.ts",
+    "data:supermarkets": "tsx scripts/process-supermarkets.ts",
     "data:all": "tsx scripts/process-all.ts"
   },
   "dependencies": {

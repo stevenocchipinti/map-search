@@ -159,14 +159,13 @@ The app loads school and station data client-side, split by Australian state:
 Minimal server-side processing:
 
 - `/api/geocode` - Address → lat/lng/state (Nominatim)
-- `/api/supermarkets` - Fetch nearby supermarkets (Overpass API)
 - `/api/walking-routes` - Calculate accurate walking routes (OpenRouteService)
 
 ### Data Strategy
 
 - **Schools**: ~11,000 schools, split by state (~30-800KB per state)
 - **Stations**: ~1,700 operational stations, split by state (~0.3-60KB per state)
-- **Supermarkets**: Live API (Overpass) - updated in real-time
+- **Supermarkets**: OpenStreetMap supermarkets for Melbourne only (`npm run data:supermarkets`)
 - **Walking Routes**: OpenRouteService API with client-side caching
 
 ## Deployment
@@ -261,7 +260,7 @@ MIT
 
 - **Schools**: Australian school location data (official government source)
 - **Stations**: Australian train station data (GeoScience Australia)
-- **Supermarkets**: OpenStreetMap via Overpass API
+- **Supermarkets**: OpenStreetMap ([BBBike Melbourne extract](https://download.bbbike.org/osm/bbbike/Melbourne/))
 - **Geocoding**: Nominatim (OpenStreetMap)
 - **Walking Routes**: OpenRouteService
 - **Map Tiles**: Carto (Voyager style)

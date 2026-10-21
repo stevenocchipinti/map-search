@@ -12,7 +12,6 @@
 
 import type {
   GeocodeResponse,
-  SupermarketsResponse,
   WalkingRoutesResponse,
   RouteRequest,
 } from "../types"
@@ -20,7 +19,6 @@ import {
   getCached,
   setCached,
   geocodeCacheKey,
-  supermarketsCacheKey,
   walkingRouteCacheKey,
 } from "./api-cache"
 
@@ -73,53 +71,6 @@ export async function geocodeAddress(
     }
 
     console.error("Geocode API error:", error)
-    throw error
-  }
-}
-
-/**
- * Fetch nearby supermarkets within a given radius
- *
- * @param lat - Latitude
- * @param lng - Longitude
- * @param radius - Search radius in meters (default: 2000)
- * @returns List of supermarkets with distances
- */
-export async function fetchSupermarkets(
-  lat: number,
-  lng: number,
-  radius: number = 2000
-): Promise<SupermarketsResponse> {
-  // Check cache first
-  const cacheKey = supermarketsCacheKey(lat, lng, radius)
-  const cached = getCached<SupermarketsResponse>("supermarkets", cacheKey)
-  if (cached) {
-    console.log("[API] Supermarkets cache hit:", cacheKey)
-    return cached
-  }
-
-  try {
-    const response = await fetch(`${API_BASE_URL}/api/supermarkets`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ lat, lng, radius }),
-    })
-
-    if (!response.ok) {
-      const errorData = await response.json()
-      throw new Error(errorData.error || "Supermarkets fetch failed")
-    }
-
-    const data = await response.json()
-
-    // Cache successful response
-    if (!data.error) {
-      setCached("supermarkets", cacheKey, data)
-    }
-
-    return data
-  } catch (error) {
-    console.error("Supermarkets API error:", error)
     throw error
   }
 }

@@ -6,7 +6,6 @@
  *
  * Cache strategy:
  * - Geocode responses: 30-day TTL (addresses don't move)
- * - Supermarket responses: 7-day TTL (stores change occasionally)
  * - Walking routes: 30-day TTL (routes rarely change)
  *
  * Eviction: FIFO when exceeding max entries per cache type.
@@ -18,14 +17,12 @@ const CACHE_PREFIX = "api_cache:"
 /** TTL values in milliseconds */
 const TTL = {
   geocode: 30 * 24 * 60 * 60 * 1000, // 30 days
-  supermarkets: 7 * 24 * 60 * 60 * 1000, // 7 days
   walkingRoutes: 30 * 24 * 60 * 60 * 1000, // 30 days
 } as const
 
 /** Max entries per cache type */
 const MAX_ENTRIES = {
   geocode: 50,
-  supermarkets: 30,
   walkingRoutes: 100,
 } as const
 
@@ -169,17 +166,6 @@ export function geocodeCacheKey(address: string): string {
 }
 
 /**
- * Generate a deterministic cache key for supermarket requests
- */
-export function supermarketsCacheKey(
-  lat: number,
-  lng: number,
-  radius: number
-): string {
-  return `${lat.toFixed(6)},${lng.toFixed(6)},${radius}`
-}
-
-/**
  * Generate a deterministic cache key for walking route requests
  */
 export function walkingRouteCacheKey(
@@ -193,7 +179,6 @@ export function walkingRouteCacheKey(
 
 export interface ApiCacheStats {
   geocode: { count: number; max: number }
-  supermarkets: { count: number; max: number }
   walkingRoutes: { count: number; max: number }
 }
 
@@ -202,7 +187,7 @@ export interface ApiCacheStats {
  * Used by the settings panel to display meaningful cache info.
  */
 export function getApiCacheStats(): ApiCacheStats {
-  const counts = { geocode: 0, supermarkets: 0, walkingRoutes: 0 }
+  const counts = { geocode: 0, walkingRoutes: 0 }
   const now = Date.now()
 
   for (let i = 0; i < localStorage.length; i++) {
@@ -231,7 +216,6 @@ export function getApiCacheStats(): ApiCacheStats {
 
   return {
     geocode: { count: counts.geocode, max: MAX_ENTRIES.geocode },
-    supermarkets: { count: counts.supermarkets, max: MAX_ENTRIES.supermarkets },
     walkingRoutes: {
       count: counts.walkingRoutes,
       max: MAX_ENTRIES.walkingRoutes,

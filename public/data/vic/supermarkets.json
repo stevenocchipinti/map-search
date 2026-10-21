@@ -1,0 +1,6031 @@
+[
+  {
+    "id": "-37.79143,145.17184",
+    "name": "Coles - Tunstall Square",
+    "state": "VIC",
+    "latitude": -37.791434,
+    "longitude": 145.171842
+  },
+  {
+    "id": "-37.86826,145.24040",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.868257,
+    "longitude": 145.240404
+  },
+  {
+    "id": "-37.83496,145.16433",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.83496,
+    "longitude": 145.164335
+  },
+  {
+    "id": "-37.83583,145.16445",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.835829,
+    "longitude": 145.164453
+  },
+  {
+    "id": "-37.79420,145.27917",
+    "name": "Coles - Croydon",
+    "state": "VIC",
+    "latitude": -37.794199,
+    "longitude": 145.279174,
+    "suburb": "Croydon",
+    "postcode": "3136"
+  },
+  {
+    "id": "-37.92090,145.23755",
+    "name": "Coles - Stud",
+    "state": "VIC",
+    "latitude": -37.920895,
+    "longitude": 145.237552
+  },
+  {
+    "id": "-37.88554,145.08455",
+    "name": "Coles - Chadstone",
+    "state": "VIC",
+    "latitude": -37.88554,
+    "longitude": 145.084548
+  },
+  {
+    "id": "-37.88719,145.08428",
+    "name": "Woolworths - Dandenong",
+    "state": "VIC",
+    "latitude": -37.887188,
+    "longitude": 145.084282
+  },
+  {
+    "id": "-37.88638,145.08394",
+    "name": "ALDI Chadstone",
+    "state": "VIC",
+    "latitude": -37.886377,
+    "longitude": 145.083937
+  },
+  {
+    "id": "-37.79814,144.96836",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.798141,
+    "longitude": 144.968358
+  },
+  {
+    "id": "-37.85354,145.14870",
+    "name": "Coles East Burwood",
+    "state": "VIC",
+    "latitude": -37.853538,
+    "longitude": 145.148701
+  },
+  {
+    "id": "-37.94945,145.00337",
+    "name": "Coles - Waltham",
+    "state": "VIC",
+    "latitude": -37.949448,
+    "longitude": 145.003369
+  },
+  {
+    "id": "-37.87472,145.16486",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.874717,
+    "longitude": 145.164865
+  },
+  {
+    "id": "-37.87687,145.16459",
+    "name": "Coles - Springvale",
+    "state": "VIC",
+    "latitude": -37.876875,
+    "longitude": 145.164592
+  },
+  {
+    "id": "-37.90978,145.18987",
+    "name": "Woolworths - Wheelers Hill",
+    "state": "VIC",
+    "latitude": -37.909776,
+    "longitude": 145.189873
+  },
+  {
+    "id": "-37.75977,145.00070",
+    "name": "Psarakos Market",
+    "state": "VIC",
+    "latitude": -37.759775,
+    "longitude": 145.000701
+  },
+  {
+    "id": "-37.86128,145.28754",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.861283,
+    "longitude": 145.287544
+  },
+  {
+    "id": "-37.87842,145.12766",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.878418,
+    "longitude": 145.127662
+  },
+  {
+    "id": "-37.87635,145.12851",
+    "name": "Ritchies",
+    "state": "VIC",
+    "latitude": -37.876351,
+    "longitude": 145.128509
+  },
+  {
+    "id": "-37.98347,145.13299",
+    "name": "Woolworths - Dingley Village",
+    "state": "VIC",
+    "latitude": -37.983471,
+    "longitude": 145.13299,
+    "suburb": "Dingley Village"
+  },
+  {
+    "id": "-37.95905,145.05490",
+    "name": "Aldi - Nepean Highway",
+    "state": "VIC",
+    "latitude": -37.959051,
+    "longitude": 145.054897
+  },
+  {
+    "id": "-37.95891,145.05124",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.958913,
+    "longitude": 145.051236
+  },
+  {
+    "id": "-37.98285,145.21369",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.982851,
+    "longitude": 145.213694
+  },
+  {
+    "id": "-37.79886,144.95353",
+    "name": "North Melbourne IGA X-press - Flemington",
+    "state": "VIC",
+    "latitude": -37.798856,
+    "longitude": 144.953525
+  },
+  {
+    "id": "-37.99299,145.17262",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.992994,
+    "longitude": 145.172621
+  },
+  {
+    "id": "-37.99228,145.17195",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.992284,
+    "longitude": 145.171954
+  },
+  {
+    "id": "-37.82549,144.99479",
+    "name": "Coles - Swan",
+    "state": "VIC",
+    "latitude": -37.825491,
+    "longitude": 144.994794
+  },
+  {
+    "id": "-37.88453,145.05871",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.884529,
+    "longitude": 145.058708
+  },
+  {
+    "id": "-37.89525,144.75304",
+    "name": "Coles - Point Cook",
+    "state": "VIC",
+    "latitude": -37.89525,
+    "longitude": 144.753036
+  },
+  {
+    "id": "-37.78671,145.12578",
+    "name": "Coles - Doncaster",
+    "state": "VIC",
+    "latitude": -37.786708,
+    "longitude": 145.125778
+  },
+  {
+    "id": "-37.78672,145.12628",
+    "name": "Woolworths - Doncaster",
+    "state": "VIC",
+    "latitude": -37.786717,
+    "longitude": 145.126278
+  },
+  {
+    "id": "-37.86288,145.02711",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.862881,
+    "longitude": 145.02711
+  },
+  {
+    "id": "-37.70700,144.93879",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.707004,
+    "longitude": 144.938787
+  },
+  {
+    "id": "-37.65083,145.06874",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.650831,
+    "longitude": 145.068742
+  },
+  {
+    "id": "-37.65205,145.07415",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.652054,
+    "longitude": 145.07415
+  },
+  {
+    "id": "-37.82056,144.94360",
+    "name": "Woolworths - Victoria Harbour",
+    "state": "VIC",
+    "latitude": -37.820561,
+    "longitude": 144.943605
+  },
+  {
+    "id": "-37.79306,144.86079",
+    "name": "Aldi - Ashley",
+    "state": "VIC",
+    "latitude": -37.79306,
+    "longitude": 144.860791
+  },
+  {
+    "id": "-37.79366,144.86036",
+    "name": "Coles - Ashley",
+    "state": "VIC",
+    "latitude": -37.793657,
+    "longitude": 144.860361
+  },
+  {
+    "id": "-37.71516,145.14864",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.715156,
+    "longitude": 145.148644
+  },
+  {
+    "id": "-37.71298,145.15018",
+    "name": "Aldi - Luck",
+    "state": "VIC",
+    "latitude": -37.71298,
+    "longitude": 145.150176
+  },
+  {
+    "id": "-37.71269,145.09259",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.712693,
+    "longitude": 145.092587
+  },
+  {
+    "id": "-37.70242,145.10281",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.70242,
+    "longitude": 145.102808
+  },
+  {
+    "id": "-37.81551,145.22127",
+    "name": "Coles - Ringwood",
+    "state": "VIC",
+    "latitude": -37.815509,
+    "longitude": 145.221272,
+    "suburb": "Ringwood",
+    "postcode": "3134"
+  },
+  {
+    "id": "-37.81586,145.22314",
+    "name": "Aldi - Ringwood",
+    "state": "VIC",
+    "latitude": -37.815856,
+    "longitude": 145.223141,
+    "suburb": "Ringwood",
+    "postcode": "3134"
+  },
+  {
+    "id": "-37.68291,145.07041",
+    "name": "Coles - Janefield",
+    "state": "VIC",
+    "latitude": -37.682907,
+    "longitude": 145.070409
+  },
+  {
+    "id": "-37.84810,145.00524",
+    "name": "Woolworths Metro",
+    "state": "VIC",
+    "latitude": -37.848105,
+    "longitude": 145.005237
+  },
+  {
+    "id": "-37.85916,144.97778",
+    "name": "Woolworths Metro St Kilda West",
+    "state": "VIC",
+    "latitude": -37.859164,
+    "longitude": 144.977777,
+    "postcode": "3182"
+  },
+  {
+    "id": "-37.86852,144.97881",
+    "name": "Woolworths - Acland",
+    "state": "VIC",
+    "latitude": -37.868521,
+    "longitude": 144.978811
+  },
+  {
+    "id": "-37.86858,144.98060",
+    "name": "Coles - Barkly",
+    "state": "VIC",
+    "latitude": -37.868584,
+    "longitude": 144.980603
+  },
+  {
+    "id": "-37.78886,144.98955",
+    "name": "McCoppins Food & Wine - Queens Parade",
+    "state": "VIC",
+    "latitude": -37.78886,
+    "longitude": 144.989551
+  },
+  {
+    "id": "-37.97059,145.06878",
+    "name": "Foodworks - Follett",
+    "state": "VIC",
+    "latitude": -37.97059,
+    "longitude": 145.068785
+  },
+  {
+    "id": "-37.80271,144.97755",
+    "name": "KimChi Korean Japanese Grocery - Brunswick",
+    "state": "VIC",
+    "latitude": -37.802712,
+    "longitude": 144.977554
+  },
+  {
+    "id": "-37.89152,145.14381",
+    "name": "Coles - Centreway",
+    "state": "VIC",
+    "latitude": -37.891524,
+    "longitude": 145.14381
+  },
+  {
+    "id": "-37.81756,144.96497",
+    "name": "Coles - Flinders",
+    "state": "VIC",
+    "latitude": -37.817561,
+    "longitude": 144.964967
+  },
+  {
+    "id": "-37.90097,145.09101",
+    "name": "Woolworths - Hanover",
+    "state": "VIC",
+    "latitude": -37.900969,
+    "longitude": 145.091007
+  },
+  {
+    "id": "-37.82581,144.95702",
+    "name": "IGA X-press + Liquor - Southbank",
+    "state": "VIC",
+    "latitude": -37.825805,
+    "longitude": 144.957017,
+    "suburb": "Southbank",
+    "postcode": "3006"
+  },
+  {
+    "id": "-37.81648,144.96116",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.816481,
+    "longitude": 144.961159
+  },
+  {
+    "id": "-37.69941,144.77780",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.699412,
+    "longitude": 144.777801
+  },
+  {
+    "id": "-37.69931,144.77851",
+    "name": "ALDI",
+    "state": "VIC",
+    "latitude": -37.699312,
+    "longitude": 144.778514
+  },
+  {
+    "id": "-37.81110,144.96556",
+    "name": "Woolworths QV",
+    "state": "VIC",
+    "latitude": -37.811095,
+    "longitude": 144.965561
+  },
+  {
+    "id": "-37.98658,145.21835",
+    "name": "Coles - McCrae",
+    "state": "VIC",
+    "latitude": -37.986579,
+    "longitude": 145.218353
+  },
+  {
+    "id": "-37.84107,144.94028",
+    "name": "About Life - Bay",
+    "state": "VIC",
+    "latitude": -37.84107,
+    "longitude": 144.940275,
+    "postcode": "3207"
+  },
+  {
+    "id": "-37.84174,144.93966",
+    "name": "Port Melbourne IGA - Port Melbourne",
+    "state": "VIC",
+    "latitude": -37.84174,
+    "longitude": 144.939663,
+    "suburb": "Port Melbourne",
+    "postcode": "3207"
+  },
+  {
+    "id": "-37.72729,144.89536",
+    "name": "Coles - Essendon Fields",
+    "state": "VIC",
+    "latitude": -37.727292,
+    "longitude": 144.895358,
+    "suburb": "Essendon Fields",
+    "postcode": "3041"
+  },
+  {
+    "id": "-37.80442,144.97727",
+    "name": "Sika Supermarket - Brunswick",
+    "state": "VIC",
+    "latitude": -37.804418,
+    "longitude": 144.977268
+  },
+  {
+    "id": "-37.78715,144.92789",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.787152,
+    "longitude": 144.92789
+  },
+  {
+    "id": "-37.94040,145.10374",
+    "name": "Woolworths Clarinda",
+    "state": "VIC",
+    "latitude": -37.940396,
+    "longitude": 145.103743
+  },
+  {
+    "id": "-37.77582,144.96185",
+    "name": "Woolworths Barkly Square",
+    "state": "VIC",
+    "latitude": -37.775818,
+    "longitude": 144.96185
+  },
+  {
+    "id": "-37.77585,144.96263",
+    "name": "Coles Brunswick",
+    "state": "VIC",
+    "latitude": -37.775852,
+    "longitude": 144.962626
+  },
+  {
+    "id": "-37.81480,144.95180",
+    "name": "Coles - Spencer",
+    "state": "VIC",
+    "latitude": -37.814798,
+    "longitude": 144.951804
+  },
+  {
+    "id": "-37.76913,145.00134",
+    "name": "Coles - Separation",
+    "state": "VIC",
+    "latitude": -37.769134,
+    "longitude": 145.001338
+  },
+  {
+    "id": "-37.76896,145.00005",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.768958,
+    "longitude": 145.000045
+  },
+  {
+    "id": "-37.79793,144.97591",
+    "name": "Casa Iberica - Johnston",
+    "state": "VIC",
+    "latitude": -37.797926,
+    "longitude": 144.975908
+  },
+  {
+    "id": "-37.85776,144.88259",
+    "name": "Woolworths - Williamstown",
+    "state": "VIC",
+    "latitude": -37.857763,
+    "longitude": 144.882587,
+    "suburb": "Williamstown",
+    "postcode": "3016"
+  },
+  {
+    "id": "-37.77780,144.75594",
+    "name": "IGA Deer Park - Deer Park",
+    "state": "VIC",
+    "latitude": -37.7778,
+    "longitude": 144.755936,
+    "suburb": "Deer Park",
+    "postcode": "3023"
+  },
+  {
+    "id": "-37.80594,144.98017",
+    "name": "Foodworks - Fitzroy",
+    "state": "VIC",
+    "latitude": -37.805942,
+    "longitude": 144.98017,
+    "suburb": "Fitzroy",
+    "postcode": "3065"
+  },
+  {
+    "id": "-37.80989,144.97115",
+    "name": "IGA - X press",
+    "state": "VIC",
+    "latitude": -37.809886,
+    "longitude": 144.971151
+  },
+  {
+    "id": "-37.81047,144.97010",
+    "name": "Woolworths Metro - Exhibition",
+    "state": "VIC",
+    "latitude": -37.810472,
+    "longitude": 144.970104
+  },
+  {
+    "id": "-37.91333,144.99276",
+    "name": "Coles Brighton",
+    "state": "VIC",
+    "latitude": -37.913326,
+    "longitude": 144.992764,
+    "suburb": "Brighton"
+  },
+  {
+    "id": "-37.65055,145.06918",
+    "name": "ALDI",
+    "state": "VIC",
+    "latitude": -37.650551,
+    "longitude": 145.069177
+  },
+  {
+    "id": "-37.77295,145.11367",
+    "name": "Woolworths - Manningham",
+    "state": "VIC",
+    "latitude": -37.772949,
+    "longitude": 145.113666
+  },
+  {
+    "id": "-37.80314,144.94906",
+    "name": "The Local Grocer North Melbourne",
+    "state": "VIC",
+    "latitude": -37.80314,
+    "longitude": 144.949059
+  },
+  {
+    "id": "-37.81985,145.00941",
+    "name": "IGA - Bridge",
+    "state": "VIC",
+    "latitude": -37.819846,
+    "longitude": 145.009407,
+    "postcode": "3121"
+  },
+  {
+    "id": "-37.88159,144.70327",
+    "name": "Coles - Old Geelong",
+    "state": "VIC",
+    "latitude": -37.881594,
+    "longitude": 144.703268
+  },
+  {
+    "id": "-37.80938,144.99566",
+    "name": "Aldi - Victoria",
+    "state": "VIC",
+    "latitude": -37.809385,
+    "longitude": 144.99566
+  },
+  {
+    "id": "-37.85763,144.89742",
+    "name": "Coles - Douglas Parade",
+    "state": "VIC",
+    "latitude": -37.857626,
+    "longitude": 144.897416
+  },
+  {
+    "id": "-37.65688,145.08167",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.656882,
+    "longitude": 145.081674
+  },
+  {
+    "id": "-37.58118,144.71453",
+    "name": "Lucky",
+    "state": "VIC",
+    "latitude": -37.581183,
+    "longitude": 144.714527
+  },
+  {
+    "id": "-37.68754,144.88491",
+    "name": "Woolworths - Gladstone Park",
+    "state": "VIC",
+    "latitude": -37.687542,
+    "longitude": 144.884908,
+    "suburb": "Gladstone Park",
+    "postcode": "3043"
+  },
+  {
+    "id": "-37.58212,144.72884",
+    "name": "Morgan's IGA",
+    "state": "VIC",
+    "latitude": -37.582123,
+    "longitude": 144.728836
+  },
+  {
+    "id": "-37.81204,145.22846",
+    "name": "Woolworths - Ringwood",
+    "state": "VIC",
+    "latitude": -37.812041,
+    "longitude": 145.228458,
+    "suburb": "Ringwood",
+    "postcode": "3134"
+  },
+  {
+    "id": "-37.65434,145.01883",
+    "name": "Coles - High",
+    "state": "VIC",
+    "latitude": -37.654338,
+    "longitude": 145.018827
+  },
+  {
+    "id": "-37.86791,144.99198",
+    "name": "Coles - Camden",
+    "state": "VIC",
+    "latitude": -37.867913,
+    "longitude": 144.991985
+  },
+  {
+    "id": "-37.86824,144.99128",
+    "name": "Woolworths - Carlisle",
+    "state": "VIC",
+    "latitude": -37.868243,
+    "longitude": 144.991277
+  },
+  {
+    "id": "-37.76738,145.00177",
+    "name": "Coles - Separation",
+    "state": "VIC",
+    "latitude": -37.767381,
+    "longitude": 145.001767
+  },
+  {
+    "id": "-37.93559,145.18859",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.935591,
+    "longitude": 145.188593
+  },
+  {
+    "id": "-37.93667,145.19153",
+    "name": "Aldi - Police",
+    "state": "VIC",
+    "latitude": -37.936673,
+    "longitude": 145.191526
+  },
+  {
+    "id": "-37.93579,145.19060",
+    "name": "Coles - Police",
+    "state": "VIC",
+    "latitude": -37.935792,
+    "longitude": 145.1906
+  },
+  {
+    "id": "-37.84584,145.04526",
+    "name": "Coles - Toorak",
+    "state": "VIC",
+    "latitude": -37.845842,
+    "longitude": 145.045256
+  },
+  {
+    "id": "-37.80744,144.96219",
+    "name": "Aldi - Swanston",
+    "state": "VIC",
+    "latitude": -37.807444,
+    "longitude": 144.962194
+  },
+  {
+    "id": "-37.80783,144.96097",
+    "name": "IGA - Franklin",
+    "state": "VIC",
+    "latitude": -37.807833,
+    "longitude": 144.960971
+  },
+  {
+    "id": "-37.80937,144.99558",
+    "name": "Woolworths Abbotsford",
+    "state": "VIC",
+    "latitude": -37.809371,
+    "longitude": 144.99558
+  },
+  {
+    "id": "-37.97489,145.01610",
+    "name": "Black Rock Grocer",
+    "state": "VIC",
+    "latitude": -37.974887,
+    "longitude": 145.016104
+  },
+  {
+    "id": "-37.84255,145.26670",
+    "name": "Coles Bayswater",
+    "state": "VIC",
+    "latitude": -37.84255,
+    "longitude": 145.266702
+  },
+  {
+    "id": "-37.87595,145.17798",
+    "name": "French's IGA X-Press",
+    "state": "VIC",
+    "latitude": -37.875954,
+    "longitude": 145.17798
+  },
+  {
+    "id": "-37.80974,144.98563",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.809737,
+    "longitude": 144.98563
+  },
+  {
+    "id": "-37.87659,144.99656",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.876587,
+    "longitude": 144.996558
+  },
+  {
+    "id": "-37.80057,144.98383",
+    "name": "Hinoki Japanese Pantry - Smith",
+    "state": "VIC",
+    "latitude": -37.800573,
+    "longitude": 144.983832
+  },
+  {
+    "id": "-37.80065,144.98382",
+    "name": "Organic Wholefoods - Smith",
+    "state": "VIC",
+    "latitude": -37.800652,
+    "longitude": 144.983823
+  },
+  {
+    "id": "-37.79989,144.99224",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.799887,
+    "longitude": 144.992236
+  },
+  {
+    "id": "-37.79431,144.92986",
+    "name": "Foodworks - Macaulay",
+    "state": "VIC",
+    "latitude": -37.794315,
+    "longitude": 144.929863
+  },
+  {
+    "id": "-37.76452,144.92192",
+    "name": "Coles - Homer",
+    "state": "VIC",
+    "latitude": -37.764523,
+    "longitude": 144.92192
+  },
+  {
+    "id": "-37.77017,145.04162",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.770172,
+    "longitude": 145.041622
+  },
+  {
+    "id": "-37.90481,145.16227",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.904814,
+    "longitude": 145.162273
+  },
+  {
+    "id": "-37.90577,145.16276",
+    "name": "ALDI",
+    "state": "VIC",
+    "latitude": -37.905767,
+    "longitude": 145.162759
+  },
+  {
+    "id": "-37.84885,145.07647",
+    "name": "Coles Local - Summerhill",
+    "state": "VIC",
+    "latitude": -37.84885,
+    "longitude": 145.07647
+  },
+  {
+    "id": "-37.71498,144.88468",
+    "name": "Coles - Louis",
+    "state": "VIC",
+    "latitude": -37.714979,
+    "longitude": 144.88468
+  },
+  {
+    "id": "-37.71464,144.88724",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.714638,
+    "longitude": 144.887236
+  },
+  {
+    "id": "-37.90370,145.04077",
+    "name": "IGA - Ormond",
+    "state": "VIC",
+    "latitude": -37.903699,
+    "longitude": 145.040771,
+    "suburb": "Ormond",
+    "postcode": "3204"
+  },
+  {
+    "id": "-37.68757,145.10833",
+    "name": "IGA - 3088",
+    "state": "VIC",
+    "latitude": -37.687573,
+    "longitude": 145.108333,
+    "postcode": "3088"
+  },
+  {
+    "id": "-37.74346,145.06458",
+    "name": "IGA - Lower Plenty",
+    "state": "VIC",
+    "latitude": -37.743462,
+    "longitude": 145.064579,
+    "postcode": "3084"
+  },
+  {
+    "id": "-37.78039,144.83192",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.780395,
+    "longitude": 144.831923
+  },
+  {
+    "id": "-37.75184,144.77561",
+    "name": "Coles - Neale",
+    "state": "VIC",
+    "latitude": -37.751838,
+    "longitude": 144.77561
+  },
+  {
+    "id": "-37.75083,144.77341",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.750833,
+    "longitude": 144.773406
+  },
+  {
+    "id": "-37.73238,144.74252",
+    "name": "Coles - Caroline Springs",
+    "state": "VIC",
+    "latitude": -37.732376,
+    "longitude": 144.742524,
+    "suburb": "Caroline Springs",
+    "postcode": "3023"
+  },
+  {
+    "id": "-37.73157,144.74280",
+    "name": "Aldi - Caroline Springs",
+    "state": "VIC",
+    "latitude": -37.73157,
+    "longitude": 144.742797,
+    "suburb": "Caroline Springs",
+    "postcode": "3023"
+  },
+  {
+    "id": "-37.90123,145.09037",
+    "name": "Coles - Hanover",
+    "state": "VIC",
+    "latitude": -37.901233,
+    "longitude": 145.090372
+  },
+  {
+    "id": "-37.67493,145.03575",
+    "name": "Coles - McKimmies",
+    "state": "VIC",
+    "latitude": -37.674925,
+    "longitude": 145.035748
+  },
+  {
+    "id": "-37.76868,144.97235",
+    "name": "IGA X-press - Lygon",
+    "state": "VIC",
+    "latitude": -37.768679,
+    "longitude": 144.97235,
+    "postcode": "3057"
+  },
+  {
+    "id": "-37.70288,145.10331",
+    "name": "Aldi - Main",
+    "state": "VIC",
+    "latitude": -37.70288,
+    "longitude": 145.10331
+  },
+  {
+    "id": "-37.72627,144.89373",
+    "name": "LaManna Supermarket - English",
+    "state": "VIC",
+    "latitude": -37.72627,
+    "longitude": 144.89373
+  },
+  {
+    "id": "-37.57820,144.72932",
+    "name": "Coles - Evans",
+    "state": "VIC",
+    "latitude": -37.578196,
+    "longitude": 144.729317
+  },
+  {
+    "id": "-37.98647,145.03347",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.986465,
+    "longitude": 145.033466
+  },
+  {
+    "id": "-37.80675,144.89136",
+    "name": "Foodworks - Seddon",
+    "state": "VIC",
+    "latitude": -37.806746,
+    "longitude": 144.891357,
+    "suburb": "Seddon",
+    "postcode": "3011"
+  },
+  {
+    "id": "-37.92190,145.08349",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.921902,
+    "longitude": 145.083494
+  },
+  {
+    "id": "-37.82943,145.05897",
+    "name": "Woolworths - Camberwell",
+    "state": "VIC",
+    "latitude": -37.829429,
+    "longitude": 145.058971
+  },
+  {
+    "id": "-37.82915,145.05632",
+    "name": "Coles - Burke",
+    "state": "VIC",
+    "latitude": -37.829154,
+    "longitude": 145.05632
+  },
+  {
+    "id": "-37.74877,145.04072",
+    "name": "Aldi - Bell",
+    "state": "VIC",
+    "latitude": -37.748766,
+    "longitude": 145.040724,
+    "postcode": "3081"
+  },
+  {
+    "id": "-37.74911,145.04267",
+    "name": "Heidelberg IGA - The Mall",
+    "state": "VIC",
+    "latitude": -37.749107,
+    "longitude": 145.042674,
+    "postcode": "3081"
+  },
+  {
+    "id": "-37.98534,145.23922",
+    "name": "Supermarket",
+    "state": "VIC",
+    "latitude": -37.985339,
+    "longitude": 145.239216
+  },
+  {
+    "id": "-37.80629,144.98101",
+    "name": "Aunt Maggies - Fitzroy",
+    "state": "VIC",
+    "latitude": -37.806295,
+    "longitude": 144.981009,
+    "suburb": "Fitzroy",
+    "postcode": "3065"
+  },
+  {
+    "id": "-37.92870,145.25133",
+    "name": "Aldi - Wellington",
+    "state": "VIC",
+    "latitude": -37.928702,
+    "longitude": 145.251327
+  },
+  {
+    "id": "-37.92850,145.25252",
+    "name": "Ritchies",
+    "state": "VIC",
+    "latitude": -37.928496,
+    "longitude": 145.252517
+  },
+  {
+    "id": "-37.65501,145.01630",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.655013,
+    "longitude": 145.016305
+  },
+  {
+    "id": "-37.65419,145.01752",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.654193,
+    "longitude": 145.017518
+  },
+  {
+    "id": "-37.72739,144.80654",
+    "name": "Coles - Taylors",
+    "state": "VIC",
+    "latitude": -37.727388,
+    "longitude": 144.806542
+  },
+  {
+    "id": "-37.72631,144.80663",
+    "name": "Aldi - Taylors",
+    "state": "VIC",
+    "latitude": -37.726309,
+    "longitude": 144.806627
+  },
+  {
+    "id": "-37.96541,145.17306",
+    "name": "Coles - Douglas",
+    "state": "VIC",
+    "latitude": -37.965412,
+    "longitude": 145.173058
+  },
+  {
+    "id": "-37.78871,145.16103",
+    "name": "KFL Supermarkets - Doncaster",
+    "state": "VIC",
+    "latitude": -37.788711,
+    "longitude": 145.161029,
+    "postcode": "3109"
+  },
+  {
+    "id": "-37.78797,145.14832",
+    "name": "Jackson Court Corner Store Asian Grocery - Mitchell",
+    "state": "VIC",
+    "latitude": -37.787973,
+    "longitude": 145.14832
+  },
+  {
+    "id": "-37.77298,144.91581",
+    "name": "Woolworths Metro - Ascot Vale",
+    "state": "VIC",
+    "latitude": -37.772979,
+    "longitude": 144.915805,
+    "suburb": "Ascot Vale",
+    "postcode": "3032"
+  },
+  {
+    "id": "-37.83437,145.17203",
+    "name": "KFL Supermarkets - Forest Hill",
+    "state": "VIC",
+    "latitude": -37.834371,
+    "longitude": 145.172027,
+    "suburb": "Forest Hill",
+    "postcode": "3131"
+  },
+  {
+    "id": "-37.97757,145.25836",
+    "name": "Coles - Heatherton",
+    "state": "VIC",
+    "latitude": -37.977572,
+    "longitude": 145.258364
+  },
+  {
+    "id": "-37.97627,145.25930",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.976269,
+    "longitude": 145.259295
+  },
+  {
+    "id": "-37.98410,145.07711",
+    "name": "Woolworths - Thrift Park",
+    "state": "VIC",
+    "latitude": -37.9841,
+    "longitude": 145.077111,
+    "postcode": "3194"
+  },
+  {
+    "id": "-37.92600,145.11859",
+    "name": "Coles - Cooke",
+    "state": "VIC",
+    "latitude": -37.925999,
+    "longitude": 145.118592,
+    "postcode": "3168"
+  },
+  {
+    "id": "-37.92809,145.11815",
+    "name": "Coles - Clayton",
+    "state": "VIC",
+    "latitude": -37.92809,
+    "longitude": 145.118147,
+    "suburb": "Clayton",
+    "postcode": "3168"
+  },
+  {
+    "id": "-37.91952,145.04211",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.919522,
+    "longitude": 145.042112
+  },
+  {
+    "id": "-38.00603,145.08524",
+    "name": "Aldi - Mordialloc",
+    "state": "VIC",
+    "latitude": -38.006029,
+    "longitude": 145.085237,
+    "suburb": "Mordialloc",
+    "postcode": "3195"
+  },
+  {
+    "id": "-38.00801,145.08670",
+    "name": "Woolworths - Mordialloc",
+    "state": "VIC",
+    "latitude": -38.008012,
+    "longitude": 145.086701,
+    "suburb": "Mordialloc",
+    "postcode": "3195"
+  },
+  {
+    "id": "-37.97062,145.09077",
+    "name": "Aldi - Centre Dandenong",
+    "state": "VIC",
+    "latitude": -37.970619,
+    "longitude": 145.090773
+  },
+  {
+    "id": "-37.62780,145.02741",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.627802,
+    "longitude": 145.027406
+  },
+  {
+    "id": "-37.83003,144.96938",
+    "name": "Foodworks - Wells",
+    "state": "VIC",
+    "latitude": -37.830026,
+    "longitude": 144.969382
+  },
+  {
+    "id": "-37.77889,144.97814",
+    "name": "TT Mart - Brunswick East",
+    "state": "VIC",
+    "latitude": -37.77889,
+    "longitude": 144.978139,
+    "suburb": "Brunswick East",
+    "postcode": "3057"
+  },
+  {
+    "id": "-37.73920,144.94676",
+    "name": "Piedemonte's IGA - Bell",
+    "state": "VIC",
+    "latitude": -37.739205,
+    "longitude": 144.946764
+  },
+  {
+    "id": "-37.69980,145.05883",
+    "name": "Aldi - Grimshaw",
+    "state": "VIC",
+    "latitude": -37.699802,
+    "longitude": 145.058831
+  },
+  {
+    "id": "-37.88089,144.99157",
+    "name": "Elwood Supermarket",
+    "state": "VIC",
+    "latitude": -37.880889,
+    "longitude": 144.991567
+  },
+  {
+    "id": "-37.86503,144.98775",
+    "name": "Aldi - Inkerman",
+    "state": "VIC",
+    "latitude": -37.865029,
+    "longitude": 144.987755
+  },
+  {
+    "id": "-37.76533,144.92303",
+    "name": "Aldi - Hall",
+    "state": "VIC",
+    "latitude": -37.765333,
+    "longitude": 144.923031
+  },
+  {
+    "id": "-37.57445,144.92001",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.574446,
+    "longitude": 144.920011
+  },
+  {
+    "id": "-37.79202,144.91936",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.792018,
+    "longitude": 144.91936
+  },
+  {
+    "id": "-37.74970,144.86055",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.749705,
+    "longitude": 144.860554
+  },
+  {
+    "id": "-37.75024,144.86097",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.750245,
+    "longitude": 144.860968
+  },
+  {
+    "id": "-37.75922,144.75342",
+    "name": "Coles Burnside",
+    "state": "VIC",
+    "latitude": -37.759218,
+    "longitude": 144.753419
+  },
+  {
+    "id": "-37.72304,144.75160",
+    "name": "Woolworths Taylors Hill",
+    "state": "VIC",
+    "latitude": -37.723037,
+    "longitude": 144.7516
+  },
+  {
+    "id": "-37.71651,145.12099",
+    "name": "Natural Food Market - Were",
+    "state": "VIC",
+    "latitude": -37.716506,
+    "longitude": 145.120988
+  },
+  {
+    "id": "-37.71592,145.12117",
+    "name": "Foodworks - Montmorency",
+    "state": "VIC",
+    "latitude": -37.715915,
+    "longitude": 145.121166,
+    "suburb": "Montmorency",
+    "postcode": "3094"
+  },
+  {
+    "id": "-37.66668,145.06094",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.666681,
+    "longitude": 145.060937
+  },
+  {
+    "id": "-37.72062,145.13789",
+    "name": "Tip Top Butchers - Bolton",
+    "state": "VIC",
+    "latitude": -37.720616,
+    "longitude": 145.137888
+  },
+  {
+    "id": "-37.87328,144.77593",
+    "name": "Coles Altona Meadows",
+    "state": "VIC",
+    "latitude": -37.873278,
+    "longitude": 144.775932
+  },
+  {
+    "id": "-37.67776,144.99893",
+    "name": "Supa IGA Thomastown - Main",
+    "state": "VIC",
+    "latitude": -37.677757,
+    "longitude": 144.998932,
+    "postcode": "3074"
+  },
+  {
+    "id": "-37.78243,144.91481",
+    "name": "Coles - Epsom",
+    "state": "VIC",
+    "latitude": -37.782435,
+    "longitude": 144.91481
+  },
+  {
+    "id": "-37.92321,145.16611",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.923212,
+    "longitude": 145.166114
+  },
+  {
+    "id": "-37.75874,144.79011",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.758741,
+    "longitude": 144.790105
+  },
+  {
+    "id": "-37.80448,144.96610",
+    "name": "IGA X-press plus Liquor - Carlton",
+    "state": "VIC",
+    "latitude": -37.804482,
+    "longitude": 144.966104,
+    "suburb": "Carlton",
+    "postcode": "3053"
+  },
+  {
+    "id": "-37.93475,145.15684",
+    "name": "Coles - Princes Highway",
+    "state": "VIC",
+    "latitude": -37.934749,
+    "longitude": 145.156838
+  },
+  {
+    "id": "-37.76171,145.16959",
+    "name": "Aldi - Reynolds",
+    "state": "VIC",
+    "latitude": -37.761712,
+    "longitude": 145.169588
+  },
+  {
+    "id": "-37.76127,145.16973",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.761266,
+    "longitude": 145.169728
+  },
+  {
+    "id": "-37.76212,145.16809",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.762124,
+    "longitude": 145.16809
+  },
+  {
+    "id": "-37.85372,145.15104",
+    "name": "Aldi - Burwood East",
+    "state": "VIC",
+    "latitude": -37.853724,
+    "longitude": 145.151042
+  },
+  {
+    "id": "-37.86301,145.07730",
+    "name": "Fresh Central - Ashburton",
+    "state": "VIC",
+    "latitude": -37.863006,
+    "longitude": 145.077297,
+    "suburb": "Ashburton",
+    "postcode": "3147"
+  },
+  {
+    "id": "-37.86306,145.07779",
+    "name": "IGA - Ashburton",
+    "state": "VIC",
+    "latitude": -37.86306,
+    "longitude": 145.07779,
+    "suburb": "Ashburton",
+    "postcode": "3147"
+  },
+  {
+    "id": "-37.78889,144.99107",
+    "name": "Woolworths Metro - Queens Parade",
+    "state": "VIC",
+    "latitude": -37.788888,
+    "longitude": 144.991069,
+    "postcode": "3068"
+  },
+  {
+    "id": "-37.77091,144.96163",
+    "name": "Aldi - Brunswick",
+    "state": "VIC",
+    "latitude": -37.770912,
+    "longitude": 144.961626,
+    "suburb": "Brunswick",
+    "postcode": "3056"
+  },
+  {
+    "id": "-37.75816,144.93940",
+    "name": "IGA - Brunswick West",
+    "state": "VIC",
+    "latitude": -37.758164,
+    "longitude": 144.939403,
+    "suburb": "Brunswick West",
+    "postcode": "3055"
+  },
+  {
+    "id": "-37.82995,144.95738",
+    "name": "Aldi - Market",
+    "state": "VIC",
+    "latitude": -37.829949,
+    "longitude": 144.957383
+  },
+  {
+    "id": "-37.72734,145.07029",
+    "name": "IGA Xpress",
+    "state": "VIC",
+    "latitude": -37.727338,
+    "longitude": 145.070289
+  },
+  {
+    "id": "-37.80013,145.28303",
+    "name": "Woolworths - Croydon",
+    "state": "VIC",
+    "latitude": -37.800131,
+    "longitude": 145.283031,
+    "suburb": "Croydon",
+    "postcode": "3136"
+  },
+  {
+    "id": "-37.80825,144.95509",
+    "name": "Xin Fang Supermarket",
+    "state": "VIC",
+    "latitude": -37.808246,
+    "longitude": 144.955088
+  },
+  {
+    "id": "-37.78908,144.98902",
+    "name": "Frootz on Parade - Queens Parade",
+    "state": "VIC",
+    "latitude": -37.789079,
+    "longitude": 144.989017
+  },
+  {
+    "id": "-37.88251,144.73464",
+    "name": "Coles - Main",
+    "state": "VIC",
+    "latitude": -37.882505,
+    "longitude": 144.734637
+  },
+  {
+    "id": "-37.80253,144.98382",
+    "name": "Sonsa Foods - Smith",
+    "state": "VIC",
+    "latitude": -37.802531,
+    "longitude": 144.983816
+  },
+  {
+    "id": "-37.68037,144.91821",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.680374,
+    "longitude": 144.918211
+  },
+  {
+    "id": "-37.67969,144.91865",
+    "name": "Coles - Pascoe Vale",
+    "state": "VIC",
+    "latitude": -37.679686,
+    "longitude": 144.918651
+  },
+  {
+    "id": "-37.89530,144.75225",
+    "name": "Aldi - Point Cook",
+    "state": "VIC",
+    "latitude": -37.8953,
+    "longitude": 144.752252
+  },
+  {
+    "id": "-37.83066,144.95737",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.830656,
+    "longitude": 144.957365
+  },
+  {
+    "id": "-37.59767,144.93843",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.597671,
+    "longitude": 144.938426
+  },
+  {
+    "id": "-37.98748,145.21773",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.987477,
+    "longitude": 145.217731
+  },
+  {
+    "id": "-37.77329,144.88970",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.773286,
+    "longitude": 144.889696
+  },
+  {
+    "id": "-37.79966,144.97808",
+    "name": "Vegetable Connection - Fitzroy",
+    "state": "VIC",
+    "latitude": -37.799665,
+    "longitude": 144.97808,
+    "suburb": "Fitzroy",
+    "postcode": "3065"
+  },
+  {
+    "id": "-37.78371,144.77112",
+    "name": "Coles - Mount Derrimut",
+    "state": "VIC",
+    "latitude": -37.783713,
+    "longitude": 144.771121
+  },
+  {
+    "id": "-37.79110,144.88990",
+    "name": "IGA Friendly Grocer",
+    "state": "VIC",
+    "latitude": -37.7911,
+    "longitude": 144.889904
+  },
+  {
+    "id": "-37.63839,144.93236",
+    "name": "Coles - Somerton",
+    "state": "VIC",
+    "latitude": -37.638387,
+    "longitude": 144.932356
+  },
+  {
+    "id": "-37.63792,144.93289",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.63792,
+    "longitude": 144.932887
+  },
+  {
+    "id": "-37.82686,144.95933",
+    "name": "Woolworths Metro",
+    "state": "VIC",
+    "latitude": -37.826861,
+    "longitude": 144.959331
+  },
+  {
+    "id": "-37.70240,144.79945",
+    "name": "Woolworths - Taylors Lakes",
+    "state": "VIC",
+    "latitude": -37.702405,
+    "longitude": 144.799447
+  },
+  {
+    "id": "-37.70250,144.96574",
+    "name": "IGA Fawkner - Bonwick",
+    "state": "VIC",
+    "latitude": -37.702503,
+    "longitude": 144.965742
+  },
+  {
+    "id": "-37.65060,144.92246",
+    "name": "Supa IGA",
+    "state": "VIC",
+    "latitude": -37.650597,
+    "longitude": 144.922459
+  },
+  {
+    "id": "-37.80629,144.96093",
+    "name": "Lin's Asian Grocery",
+    "state": "VIC",
+    "latitude": -37.806289,
+    "longitude": 144.96093
+  },
+  {
+    "id": "-37.81858,144.96305",
+    "name": "Dae Bark Mart - Flinders",
+    "state": "VIC",
+    "latitude": -37.818584,
+    "longitude": 144.963055
+  },
+  {
+    "id": "-37.88961,145.04272",
+    "name": "Sarawan Spices Glen Huntly - Glen Huntly",
+    "state": "VIC",
+    "latitude": -37.889612,
+    "longitude": 145.042721
+  },
+  {
+    "id": "-37.88962,145.04282",
+    "name": "Nepsay Mart Glenhuntly",
+    "state": "VIC",
+    "latitude": -37.889623,
+    "longitude": 145.042821
+  },
+  {
+    "id": "-37.88978,145.04420",
+    "name": "India at home - Glen Huntly",
+    "state": "VIC",
+    "latitude": -37.889776,
+    "longitude": 145.044204
+  },
+  {
+    "id": "-37.73040,144.92790",
+    "name": "Pascoe Vale Express Store - Gaffney",
+    "state": "VIC",
+    "latitude": -37.730401,
+    "longitude": 144.927896
+  },
+  {
+    "id": "-37.82769,144.96652",
+    "name": "IGA - Sturt",
+    "state": "VIC",
+    "latitude": -37.827694,
+    "longitude": 144.96652
+  },
+  {
+    "id": "-37.88206,144.70244",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.882065,
+    "longitude": 144.702437
+  },
+  {
+    "id": "-37.90155,145.05454",
+    "name": "Pura Milk - Carnegie",
+    "state": "VIC",
+    "latitude": -37.901546,
+    "longitude": 145.054541,
+    "suburb": "Carnegie"
+  },
+  {
+    "id": "-37.77175,144.99868",
+    "name": "IGA - High",
+    "state": "VIC",
+    "latitude": -37.771753,
+    "longitude": 144.998681,
+    "postcode": "3070"
+  },
+  {
+    "id": "-37.81935,144.94834",
+    "name": "The Dome Express - Docklands",
+    "state": "VIC",
+    "latitude": -37.819346,
+    "longitude": 144.948342,
+    "suburb": "Docklands",
+    "postcode": "3008"
+  },
+  {
+    "id": "-37.89272,144.72870",
+    "name": "Big Bazaar",
+    "state": "VIC",
+    "latitude": -37.892723,
+    "longitude": 144.728699
+  },
+  {
+    "id": "-37.74779,145.20734",
+    "name": "Quintons SUPA IGA - Warrandyte",
+    "state": "VIC",
+    "latitude": -37.747786,
+    "longitude": 145.207343,
+    "suburb": "Warrandyte",
+    "postcode": "3113"
+  },
+  {
+    "id": "-37.78480,144.83310",
+    "name": "Sunshine Fruit Market",
+    "state": "VIC",
+    "latitude": -37.784805,
+    "longitude": 144.833103
+  },
+  {
+    "id": "-37.78391,144.83268",
+    "name": "Đại Phát Supermarket - Hampshire",
+    "state": "VIC",
+    "latitude": -37.78391,
+    "longitude": 144.832682
+  },
+  {
+    "id": "-37.78368,144.83262",
+    "name": "Hong Hung",
+    "state": "VIC",
+    "latitude": -37.783681,
+    "longitude": 144.832615
+  },
+  {
+    "id": "-37.68895,144.96000",
+    "name": "Coles - Sydney",
+    "state": "VIC",
+    "latitude": -37.688952,
+    "longitude": 144.96
+  },
+  {
+    "id": "-37.72018,144.95998",
+    "name": "Friendly Grocer - Merlyn",
+    "state": "VIC",
+    "latitude": -37.720176,
+    "longitude": 144.959983
+  },
+  {
+    "id": "-37.65940,145.02983",
+    "name": "Aldi - Dalton",
+    "state": "VIC",
+    "latitude": -37.659405,
+    "longitude": 145.029831
+  },
+  {
+    "id": "-37.79939,144.89980",
+    "name": "Tân Mỹ - Nicholson",
+    "state": "VIC",
+    "latitude": -37.799386,
+    "longitude": 144.8998
+  },
+  {
+    "id": "-37.72379,144.94692",
+    "name": "Foodworks - Pascoe Vale",
+    "state": "VIC",
+    "latitude": -37.72379,
+    "longitude": 144.946924,
+    "suburb": "Pascoe Vale",
+    "postcode": "3044"
+  },
+  {
+    "id": "-37.69597,144.96855",
+    "name": "Family Supermarket - Anderson",
+    "state": "VIC",
+    "latitude": -37.695967,
+    "longitude": 144.96855
+  },
+  {
+    "id": "-37.69591,144.96793",
+    "name": "Anderson Road Fruit Market - Anderson",
+    "state": "VIC",
+    "latitude": -37.695906,
+    "longitude": 144.967925
+  },
+  {
+    "id": "-37.80261,144.97810",
+    "name": "Foodworks - Fitzroy",
+    "state": "VIC",
+    "latitude": -37.802612,
+    "longitude": 144.978102
+  },
+  {
+    "id": "-37.79415,145.23576",
+    "name": "Ritchies - Ringwood North",
+    "state": "VIC",
+    "latitude": -37.79415,
+    "longitude": 145.235756,
+    "suburb": "Ringwood North",
+    "postcode": "3134"
+  },
+  {
+    "id": "-37.74248,144.96589",
+    "name": "Coles - Sydney",
+    "state": "VIC",
+    "latitude": -37.742482,
+    "longitude": 144.965886
+  },
+  {
+    "id": "-37.79512,144.94153",
+    "name": "IGA - North Melbourne",
+    "state": "VIC",
+    "latitude": -37.795117,
+    "longitude": 144.941526,
+    "suburb": "North Melbourne",
+    "postcode": "3051"
+  },
+  {
+    "id": "-37.74463,144.96616",
+    "name": "KFL Supermarkets - Sydney",
+    "state": "VIC",
+    "latitude": -37.744628,
+    "longitude": 144.966158
+  },
+  {
+    "id": "-37.75559,144.97542",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.755589,
+    "longitude": 144.975421
+  },
+  {
+    "id": "-37.80852,144.96076",
+    "name": "Hometown Asian Supermarket",
+    "state": "VIC",
+    "latitude": -37.808518,
+    "longitude": 144.960759
+  },
+  {
+    "id": "-37.84745,144.99271",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.847449,
+    "longitude": 144.992711
+  },
+  {
+    "id": "-37.78286,144.83420",
+    "name": "Aldi - Hampshire",
+    "state": "VIC",
+    "latitude": -37.782859,
+    "longitude": 144.834199
+  },
+  {
+    "id": "-37.71607,145.00518",
+    "name": "IGA - Reservoir",
+    "state": "VIC",
+    "latitude": -37.716068,
+    "longitude": 145.005175
+  },
+  {
+    "id": "-37.72968,144.98354",
+    "name": "Woolworths - Coburg North",
+    "state": "VIC",
+    "latitude": -37.72968,
+    "longitude": 144.983542,
+    "suburb": "Coburg North",
+    "postcode": "3058"
+  },
+  {
+    "id": "-37.79827,144.97911",
+    "name": "Cheaper Buy Miles - Fitzroy",
+    "state": "VIC",
+    "latitude": -37.798272,
+    "longitude": 144.979108,
+    "suburb": "Fitzroy",
+    "postcode": "3065"
+  },
+  {
+    "id": "-37.81476,144.95192",
+    "name": "Crown Asian Supermarket",
+    "state": "VIC",
+    "latitude": -37.814762,
+    "longitude": 144.951919
+  },
+  {
+    "id": "-37.71282,145.04760",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.712821,
+    "longitude": 145.047595
+  },
+  {
+    "id": "-37.82088,145.03634",
+    "name": "Woolworths Metro - Hawthorn",
+    "state": "VIC",
+    "latitude": -37.820875,
+    "longitude": 145.036342
+  },
+  {
+    "id": "-37.69924,145.03292",
+    "name": "IGA - Gertz",
+    "state": "VIC",
+    "latitude": -37.699237,
+    "longitude": 145.032919
+  },
+  {
+    "id": "-37.85327,145.04156",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.853266,
+    "longitude": 145.041559
+  },
+  {
+    "id": "-37.73538,144.99075",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.73538,
+    "longitude": 144.990753
+  },
+  {
+    "id": "-37.69729,145.05797",
+    "name": "Coles Bundoora",
+    "state": "VIC",
+    "latitude": -37.697285,
+    "longitude": 145.05797
+  },
+  {
+    "id": "-37.91093,145.13022",
+    "name": "Science Store",
+    "state": "VIC",
+    "latitude": -37.910932,
+    "longitude": 145.130219
+  },
+  {
+    "id": "-37.79761,144.80614",
+    "name": "Coles - The",
+    "state": "VIC",
+    "latitude": -37.797613,
+    "longitude": 144.806142
+  },
+  {
+    "id": "-37.88189,145.23343",
+    "name": "KFL Supermarkets",
+    "state": "VIC",
+    "latitude": -37.881891,
+    "longitude": 145.233428
+  },
+  {
+    "id": "-37.81663,144.89138",
+    "name": "IGA - Yarraville",
+    "state": "VIC",
+    "latitude": -37.816627,
+    "longitude": 144.891381,
+    "suburb": "Yarraville",
+    "postcode": "3013"
+  },
+  {
+    "id": "-37.88467,145.05889",
+    "name": "ALDI Carnegie",
+    "state": "VIC",
+    "latitude": -37.884673,
+    "longitude": 145.058885,
+    "suburb": "Carnegie",
+    "postcode": "3163"
+  },
+  {
+    "id": "-37.80529,144.95946",
+    "name": "KT Mart",
+    "state": "VIC",
+    "latitude": -37.805294,
+    "longitude": 144.959457
+  },
+  {
+    "id": "-37.81179,145.22997",
+    "name": "Coles - Ringwood",
+    "state": "VIC",
+    "latitude": -37.811793,
+    "longitude": 145.229972,
+    "suburb": "Ringwood",
+    "postcode": "3134"
+  },
+  {
+    "id": "-37.86739,144.74250",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.867388,
+    "longitude": 144.742497
+  },
+  {
+    "id": "-37.98595,145.21674",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.985954,
+    "longitude": 145.21674
+  },
+  {
+    "id": "-37.75006,144.77434",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.75006,
+    "longitude": 144.774344
+  },
+  {
+    "id": "-37.90609,145.00519",
+    "name": "Coles - Bay",
+    "state": "VIC",
+    "latitude": -37.906087,
+    "longitude": 145.005186
+  },
+  {
+    "id": "-37.86238,144.68718",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.862377,
+    "longitude": 144.687183
+  },
+  {
+    "id": "-37.70117,145.07210",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.701166,
+    "longitude": 145.072096
+  },
+  {
+    "id": "-38.00533,145.24833",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -38.005327,
+    "longitude": 145.248331
+  },
+  {
+    "id": "-37.84901,144.70372",
+    "name": "Coles Wyndham Village",
+    "state": "VIC",
+    "latitude": -37.849012,
+    "longitude": 144.703719
+  },
+  {
+    "id": "-37.84905,144.70530",
+    "name": "Aldi - Sayers",
+    "state": "VIC",
+    "latitude": -37.849048,
+    "longitude": 144.705302
+  },
+  {
+    "id": "-37.67353,145.15939",
+    "name": "Coles - Main Hurstbridge",
+    "state": "VIC",
+    "latitude": -37.673531,
+    "longitude": 145.159387
+  },
+  {
+    "id": "-37.70905,145.08257",
+    "name": "Andres SUPA IGA - Watsonia",
+    "state": "VIC",
+    "latitude": -37.709047,
+    "longitude": 145.082571
+  },
+  {
+    "id": "-37.75608,144.96418",
+    "name": "Foodworks - Brunswick",
+    "state": "VIC",
+    "latitude": -37.756083,
+    "longitude": 144.964175,
+    "suburb": "Brunswick",
+    "postcode": "3056"
+  },
+  {
+    "id": "-37.72480,145.02898",
+    "name": "Aldi - Plenty",
+    "state": "VIC",
+    "latitude": -37.724802,
+    "longitude": 145.028982
+  },
+  {
+    "id": "-37.72550,145.02811",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.7255,
+    "longitude": 145.028105
+  },
+  {
+    "id": "-37.84791,144.99355",
+    "name": "Coles - Chapel",
+    "state": "VIC",
+    "latitude": -37.847911,
+    "longitude": 144.993547
+  },
+  {
+    "id": "-37.67835,144.91953",
+    "name": "Aldi - Pascoe Vale",
+    "state": "VIC",
+    "latitude": -37.678354,
+    "longitude": 144.919529
+  },
+  {
+    "id": "-37.83719,144.99699",
+    "name": "Woolworths - South Yarra",
+    "state": "VIC",
+    "latitude": -37.83719,
+    "longitude": 144.99699,
+    "suburb": "South Yarra",
+    "postcode": "3141"
+  },
+  {
+    "id": "-37.73157,144.95034",
+    "name": "Coles - Gaffney",
+    "state": "VIC",
+    "latitude": -37.731566,
+    "longitude": 144.950345
+  },
+  {
+    "id": "-37.59237,144.91501",
+    "name": "Coles - Craigieburn",
+    "state": "VIC",
+    "latitude": -37.592369,
+    "longitude": 144.915008
+  },
+  {
+    "id": "-37.59419,144.91481",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.594193,
+    "longitude": 144.914809
+  },
+  {
+    "id": "-37.63934,144.88251",
+    "name": "Coles - Greenvale",
+    "state": "VIC",
+    "latitude": -37.639343,
+    "longitude": 144.882512,
+    "suburb": "Greenvale",
+    "postcode": "3059"
+  },
+  {
+    "id": "-37.95318,145.06333",
+    "name": "IGA Cheltenham - Bernard",
+    "state": "VIC",
+    "latitude": -37.953177,
+    "longitude": 145.063329
+  },
+  {
+    "id": "-37.81211,144.96749",
+    "name": "Tang Asian Grocery",
+    "state": "VIC",
+    "latitude": -37.812105,
+    "longitude": 144.96749
+  },
+  {
+    "id": "-37.80385,145.10218",
+    "name": "Coles East Balwyn",
+    "state": "VIC",
+    "latitude": -37.803854,
+    "longitude": 145.102179
+  },
+  {
+    "id": "-37.69519,145.01276",
+    "name": "Pickles and Spices",
+    "state": "VIC",
+    "latitude": -37.695189,
+    "longitude": 145.012757
+  },
+  {
+    "id": "-37.80380,144.98362",
+    "name": "Coles - Collingwood",
+    "state": "VIC",
+    "latitude": -37.803803,
+    "longitude": 144.983619,
+    "suburb": "Collingwood",
+    "postcode": "3066"
+  },
+  {
+    "id": "-37.80974,144.96087",
+    "name": "Crown Asian Supermarket",
+    "state": "VIC",
+    "latitude": -37.809741,
+    "longitude": 144.960871
+  },
+  {
+    "id": "-37.82848,144.84770",
+    "name": "Aldi - Millers",
+    "state": "VIC",
+    "latitude": -37.828484,
+    "longitude": 144.847699
+  },
+  {
+    "id": "-37.81040,144.99808",
+    "name": "Tân Hung Asian Grocery",
+    "state": "VIC",
+    "latitude": -37.810401,
+    "longitude": 144.998075
+  },
+  {
+    "id": "-37.81033,144.99737",
+    "name": "Richmond Grocery Store",
+    "state": "VIC",
+    "latitude": -37.810333,
+    "longitude": 144.997368
+  },
+  {
+    "id": "-37.78494,144.93858",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.784938,
+    "longitude": 144.938584
+  },
+  {
+    "id": "-37.80140,144.89753",
+    "name": "Coles - Albert",
+    "state": "VIC",
+    "latitude": -37.801398,
+    "longitude": 144.897529
+  },
+  {
+    "id": "-37.88435,144.73440",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.884353,
+    "longitude": 144.734404
+  },
+  {
+    "id": "-37.82963,144.88569",
+    "name": "Local Grocer IGA Spotswood",
+    "state": "VIC",
+    "latitude": -37.829634,
+    "longitude": 144.885688
+  },
+  {
+    "id": "-37.84586,144.99357",
+    "name": "Aldi Food Store",
+    "state": "VIC",
+    "latitude": -37.845864,
+    "longitude": 144.993573
+  },
+  {
+    "id": "-37.98080,145.16582",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.980796,
+    "longitude": 145.165818
+  },
+  {
+    "id": "-37.58703,145.12770",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.587027,
+    "longitude": 145.127697
+  },
+  {
+    "id": "-37.85125,144.70716",
+    "name": "International Foods",
+    "state": "VIC",
+    "latitude": -37.851248,
+    "longitude": 144.707157
+  },
+  {
+    "id": "-37.96614,145.05539",
+    "name": "The Fruit Men - Charman",
+    "state": "VIC",
+    "latitude": -37.966139,
+    "longitude": 145.055386
+  },
+  {
+    "id": "-37.82500,145.08163",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.824999,
+    "longitude": 145.081633
+  },
+  {
+    "id": "-37.86463,145.02812",
+    "name": "Shahi India",
+    "state": "VIC",
+    "latitude": -37.864631,
+    "longitude": 145.028124
+  },
+  {
+    "id": "-37.79124,145.09474",
+    "name": "ALDI Balwyn North",
+    "state": "VIC",
+    "latitude": -37.791235,
+    "longitude": 145.094738
+  },
+  {
+    "id": "-37.81605,145.19346",
+    "name": "KT Mart Asian Grocery - Maroondah Highway",
+    "state": "VIC",
+    "latitude": -37.816047,
+    "longitude": 145.193458
+  },
+  {
+    "id": "-37.87185,144.77510",
+    "name": "Aldi - Central",
+    "state": "VIC",
+    "latitude": -37.87185,
+    "longitude": 144.775104
+  },
+  {
+    "id": "-37.80155,145.06270",
+    "name": "Boccaccio SUPA IGA - Burke",
+    "state": "VIC",
+    "latitude": -37.801554,
+    "longitude": 145.062698
+  },
+  {
+    "id": "-37.94316,145.07135",
+    "name": "USA Foods - Moorabbin",
+    "state": "VIC",
+    "latitude": -37.943159,
+    "longitude": 145.07135,
+    "suburb": "Moorabbin",
+    "postcode": "3189"
+  },
+  {
+    "id": "-37.84056,145.00816",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.840563,
+    "longitude": 145.008165
+  },
+  {
+    "id": "-37.97202,145.14973",
+    "name": "Springvale South SUPA IGA",
+    "state": "VIC",
+    "latitude": -37.97202,
+    "longitude": 145.149732
+  },
+  {
+    "id": "-38.01615,145.22463",
+    "name": "Hindustan Wholesale & Retail Groceries - Greens",
+    "state": "VIC",
+    "latitude": -38.01615,
+    "longitude": 145.224631
+  },
+  {
+    "id": "-37.91399,145.25702",
+    "name": "IGA - Kelletts",
+    "state": "VIC",
+    "latitude": -37.913988,
+    "longitude": 145.257025
+  },
+  {
+    "id": "-37.91172,145.13613",
+    "name": "The Monash Merchant - Sports Walk",
+    "state": "VIC",
+    "latitude": -37.911719,
+    "longitude": 145.136134
+  },
+  {
+    "id": "-37.76643,144.96256",
+    "name": "Mediterranean Wholesalers Supermarket - Sydney",
+    "state": "VIC",
+    "latitude": -37.766434,
+    "longitude": 144.96256
+  },
+  {
+    "id": "-37.81955,145.12128",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.819549,
+    "longitude": 145.12128
+  },
+  {
+    "id": "-37.71701,145.01113",
+    "name": "Paradise Food City",
+    "state": "VIC",
+    "latitude": -37.71701,
+    "longitude": 145.011135
+  },
+  {
+    "id": "-37.71715,145.00998",
+    "name": "Magid Supermarket",
+    "state": "VIC",
+    "latitude": -37.717149,
+    "longitude": 145.009976
+  },
+  {
+    "id": "-37.71712,145.00967",
+    "name": "One Way Fresh Supermarket",
+    "state": "VIC",
+    "latitude": -37.717122,
+    "longitude": 145.009666
+  },
+  {
+    "id": "-37.71709,145.00945",
+    "name": "Supermarket",
+    "state": "VIC",
+    "latitude": -37.717087,
+    "longitude": 145.009446
+  },
+  {
+    "id": "-37.80956,144.96123",
+    "name": "Woolworths Metro",
+    "state": "VIC",
+    "latitude": -37.809559,
+    "longitude": 144.961227
+  },
+  {
+    "id": "-37.79157,145.09386",
+    "name": "Foodworks Greythorn",
+    "state": "VIC",
+    "latitude": -37.791567,
+    "longitude": 145.09386,
+    "suburb": "Balwyn North",
+    "postcode": "3104"
+  },
+  {
+    "id": "-37.76464,144.94416",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.764642,
+    "longitude": 144.944159
+  },
+  {
+    "id": "-37.62133,145.00643",
+    "name": "Coles - Harvest Home",
+    "state": "VIC",
+    "latitude": -37.62133,
+    "longitude": 145.006428
+  },
+  {
+    "id": "-37.82247,144.96508",
+    "name": "IGA - City",
+    "state": "VIC",
+    "latitude": -37.822473,
+    "longitude": 144.965077
+  },
+  {
+    "id": "-37.89790,144.72673",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.897903,
+    "longitude": 144.72673
+  },
+  {
+    "id": "-37.85283,144.77543",
+    "name": "Foodworks - Laverton",
+    "state": "VIC",
+    "latitude": -37.852831,
+    "longitude": 144.775426,
+    "suburb": "Laverton",
+    "postcode": "3028"
+  },
+  {
+    "id": "-37.71160,144.74157",
+    "name": "Coles - Taylors Hill",
+    "state": "VIC",
+    "latitude": -37.711603,
+    "longitude": 144.741565,
+    "suburb": "Taylors Hill",
+    "postcode": "3037"
+  },
+  {
+    "id": "-37.80345,145.08412",
+    "name": "IGA - Balwyn North",
+    "state": "VIC",
+    "latitude": -37.803449,
+    "longitude": 145.084124,
+    "suburb": "Balwyn North",
+    "postcode": "3104"
+  },
+  {
+    "id": "-38.01175,145.16070",
+    "name": "Woolworths Keysborough South",
+    "state": "VIC",
+    "latitude": -38.011753,
+    "longitude": 145.160696
+  },
+  {
+    "id": "-37.83193,144.96094",
+    "name": "Coles - Coventry",
+    "state": "VIC",
+    "latitude": -37.831929,
+    "longitude": 144.960937,
+    "postcode": "3205"
+  },
+  {
+    "id": "-37.88471,145.00389",
+    "name": "GloHealth",
+    "state": "VIC",
+    "latitude": -37.884714,
+    "longitude": 145.003886
+  },
+  {
+    "id": "-37.97419,145.20174",
+    "name": "LH Supermarket",
+    "state": "VIC",
+    "latitude": -37.974189,
+    "longitude": 145.201745
+  },
+  {
+    "id": "-37.92403,145.12050",
+    "name": "India At Home - Carinish",
+    "state": "VIC",
+    "latitude": -37.924032,
+    "longitude": 145.120495
+  },
+  {
+    "id": "-37.73833,145.00224",
+    "name": "ARC Asian Grocers - Cook",
+    "state": "VIC",
+    "latitude": -37.738325,
+    "longitude": 145.002241,
+    "postcode": "3072"
+  },
+  {
+    "id": "-37.82836,145.12119",
+    "name": "Roaring Bear Asian Grocery",
+    "state": "VIC",
+    "latitude": -37.828364,
+    "longitude": 145.121194
+  },
+  {
+    "id": "-37.96205,145.14270",
+    "name": "My Tam Grocery",
+    "state": "VIC",
+    "latitude": -37.962049,
+    "longitude": 145.1427
+  },
+  {
+    "id": "-37.96210,145.14323",
+    "name": "Pride Of Punjab",
+    "state": "VIC",
+    "latitude": -37.962101,
+    "longitude": 145.143228
+  },
+  {
+    "id": "-37.94096,145.16607",
+    "name": "Savemore",
+    "state": "VIC",
+    "latitude": -37.940963,
+    "longitude": 145.166073
+  },
+  {
+    "id": "-37.94898,145.15354",
+    "name": "One Stop Minimart - Sandown",
+    "state": "VIC",
+    "latitude": -37.948979,
+    "longitude": 145.153544
+  },
+  {
+    "id": "-37.95175,145.15171",
+    "name": "Vacancy - Windsor",
+    "state": "VIC",
+    "latitude": -37.951748,
+    "longitude": 145.151706
+  },
+  {
+    "id": "-37.94889,145.15113",
+    "name": "Thai Hoa Long Co",
+    "state": "VIC",
+    "latitude": -37.948894,
+    "longitude": 145.15113
+  },
+  {
+    "id": "-37.94595,145.15293",
+    "name": "Shahi",
+    "state": "VIC",
+    "latitude": -37.945952,
+    "longitude": 145.152934
+  },
+  {
+    "id": "-37.95058,145.15048",
+    "name": "KFL Supermarkets",
+    "state": "VIC",
+    "latitude": -37.950579,
+    "longitude": 145.150481
+  },
+  {
+    "id": "-37.96570,145.17438",
+    "name": "Siem Reap's Grocery",
+    "state": "VIC",
+    "latitude": -37.965701,
+    "longitude": 145.174382
+  },
+  {
+    "id": "-37.67273,145.01708",
+    "name": "Coles - Lalor",
+    "state": "VIC",
+    "latitude": -37.672729,
+    "longitude": 145.017081
+  },
+  {
+    "id": "-37.98641,145.21269",
+    "name": "Maiwand Supermarket",
+    "state": "VIC",
+    "latitude": -37.986408,
+    "longitude": 145.212691
+  },
+  {
+    "id": "-37.98682,145.21476",
+    "name": "MJ Butcher Fruit Veg - Langhorne",
+    "state": "VIC",
+    "latitude": -37.986824,
+    "longitude": 145.214765
+  },
+  {
+    "id": "-37.81666,144.96446",
+    "name": "Woolworths Metro",
+    "state": "VIC",
+    "latitude": -37.81666,
+    "longitude": 144.964458
+  },
+  {
+    "id": "-37.97185,145.14978",
+    "name": "Koh's Market Place",
+    "state": "VIC",
+    "latitude": -37.971849,
+    "longitude": 145.149779
+  },
+  {
+    "id": "-37.97152,145.14902",
+    "name": "Trường Giang Grocery",
+    "state": "VIC",
+    "latitude": -37.971519,
+    "longitude": 145.149025
+  },
+  {
+    "id": "-37.97177,145.14963",
+    "name": "Mekong Groceries - Athol",
+    "state": "VIC",
+    "latitude": -37.97177,
+    "longitude": 145.149632
+  },
+  {
+    "id": "-37.97167,145.14901",
+    "name": "Cường Phát - Springvale",
+    "state": "VIC",
+    "latitude": -37.971667,
+    "longitude": 145.14901
+  },
+  {
+    "id": "-37.69386,144.75453",
+    "name": "Foodworks - Melton Highway",
+    "state": "VIC",
+    "latitude": -37.693864,
+    "longitude": 144.75453
+  },
+  {
+    "id": "-37.72610,144.78092",
+    "name": "Morgan's IGA",
+    "state": "VIC",
+    "latitude": -37.726098,
+    "longitude": 144.780916
+  },
+  {
+    "id": "-37.98499,145.21218",
+    "name": "Dandy Bahar Supermarket - Thomas",
+    "state": "VIC",
+    "latitude": -37.984994,
+    "longitude": 145.212183
+  },
+  {
+    "id": "-37.98526,145.21367",
+    "name": "C.J. Spices & Videos",
+    "state": "VIC",
+    "latitude": -37.985262,
+    "longitude": 145.213675
+  },
+  {
+    "id": "-37.98440,145.21428",
+    "name": "Rockyz Minimart",
+    "state": "VIC",
+    "latitude": -37.984397,
+    "longitude": 145.21428
+  },
+  {
+    "id": "-37.98524,145.21264",
+    "name": "King Supermarket",
+    "state": "VIC",
+    "latitude": -37.98524,
+    "longitude": 145.212637
+  },
+  {
+    "id": "-37.98635,145.21232",
+    "name": "Sadaqat",
+    "state": "VIC",
+    "latitude": -37.986345,
+    "longitude": 145.212324
+  },
+  {
+    "id": "-37.90034,145.09075",
+    "name": "Golden Groceries - Portman",
+    "state": "VIC",
+    "latitude": -37.900342,
+    "longitude": 145.090747
+  },
+  {
+    "id": "-37.87503,145.16485",
+    "name": "ALDI Glen Waverley",
+    "state": "VIC",
+    "latitude": -37.875027,
+    "longitude": 145.164852
+  },
+  {
+    "id": "-37.75115,144.98817",
+    "name": "Thornbury Cellars IGA - Thornbury",
+    "state": "VIC",
+    "latitude": -37.751148,
+    "longitude": 144.988165,
+    "suburb": "Thornbury",
+    "postcode": "3071"
+  },
+  {
+    "id": "-37.88538,145.05755",
+    "name": "OK Asian Supermarket",
+    "state": "VIC",
+    "latitude": -37.885383,
+    "longitude": 145.057548
+  },
+  {
+    "id": "-37.88523,145.05759",
+    "name": "Indian Grocery",
+    "state": "VIC",
+    "latitude": -37.885233,
+    "longitude": 145.057588
+  },
+  {
+    "id": "-37.98929,145.21523",
+    "name": "MKS Spices n Things",
+    "state": "VIC",
+    "latitude": -37.989287,
+    "longitude": 145.215227
+  },
+  {
+    "id": "-37.98625,145.21522",
+    "name": "African Products",
+    "state": "VIC",
+    "latitude": -37.986246,
+    "longitude": 145.215215
+  },
+  {
+    "id": "-37.98839,145.21483",
+    "name": "Bestway Supermarket",
+    "state": "VIC",
+    "latitude": -37.988395,
+    "longitude": 145.214828
+  },
+  {
+    "id": "-37.79602,145.03547",
+    "name": "Kew Friendly Supermarket - Kew",
+    "state": "VIC",
+    "latitude": -37.796018,
+    "longitude": 145.035473,
+    "suburb": "Kew",
+    "postcode": "3101"
+  },
+  {
+    "id": "-37.99716,145.08441",
+    "name": "4 Cousins - Parkdale",
+    "state": "VIC",
+    "latitude": -37.997159,
+    "longitude": 145.084406,
+    "suburb": "Parkdale",
+    "postcode": "3195"
+  },
+  {
+    "id": "-37.95029,145.15098",
+    "name": "Frozen Mart",
+    "state": "VIC",
+    "latitude": -37.950287,
+    "longitude": 145.150985
+  },
+  {
+    "id": "-37.96698,145.05689",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.966981,
+    "longitude": 145.056895
+  },
+  {
+    "id": "-37.72714,145.11302",
+    "name": "Wellcome Grocer - Main",
+    "state": "VIC",
+    "latitude": -37.727139,
+    "longitude": 145.113019
+  },
+  {
+    "id": "-37.83737,144.69227",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.837366,
+    "longitude": 144.692272
+  },
+  {
+    "id": "-37.83728,144.69126",
+    "name": "Coles - Derrimut",
+    "state": "VIC",
+    "latitude": -37.837283,
+    "longitude": 144.691262
+  },
+  {
+    "id": "-37.91048,145.18961",
+    "name": "Four Seasons Supermarket",
+    "state": "VIC",
+    "latitude": -37.910478,
+    "longitude": 145.189614
+  },
+  {
+    "id": "-37.78315,144.93478",
+    "name": "Organic Wholefoods - Mount Alexander",
+    "state": "VIC",
+    "latitude": -37.783151,
+    "longitude": 144.934781
+  },
+  {
+    "id": "-37.77790,145.01811",
+    "name": "Oasis - Fairfield",
+    "state": "VIC",
+    "latitude": -37.777905,
+    "longitude": 145.018112,
+    "suburb": "Fairfield",
+    "postcode": "3078"
+  },
+  {
+    "id": "-37.77626,145.01833",
+    "name": "IGA - Fairfield",
+    "state": "VIC",
+    "latitude": -37.77626,
+    "longitude": 145.018332,
+    "suburb": "Fairfield",
+    "postcode": "3078"
+  },
+  {
+    "id": "-37.98822,145.21835",
+    "name": "Supermarket",
+    "state": "VIC",
+    "latitude": -37.988216,
+    "longitude": 145.218347
+  },
+  {
+    "id": "-37.77656,145.01876",
+    "name": "Cardamones Food and Wine - Fairfield",
+    "state": "VIC",
+    "latitude": -37.776563,
+    "longitude": 145.018759,
+    "suburb": "Fairfield",
+    "postcode": "3078"
+  },
+  {
+    "id": "-37.69970,144.99671",
+    "name": "Seven Days Food Store - Reservoir",
+    "state": "VIC",
+    "latitude": -37.699701,
+    "longitude": 144.996714,
+    "suburb": "Reservoir",
+    "postcode": "3073"
+  },
+  {
+    "id": "-37.75789,144.96385",
+    "name": "Woolworths Metro - Sydney",
+    "state": "VIC",
+    "latitude": -37.757895,
+    "longitude": 144.963849
+  },
+  {
+    "id": "-37.73890,145.00371",
+    "name": "Quoc Te United Asian Food Stores - Preston",
+    "state": "VIC",
+    "latitude": -37.7389,
+    "longitude": 145.00371,
+    "suburb": "Preston",
+    "postcode": "3072"
+  },
+  {
+    "id": "-37.73900,145.00369",
+    "name": "Dong Thinh International Food Store - Preston",
+    "state": "VIC",
+    "latitude": -37.738996,
+    "longitude": 145.003694,
+    "suburb": "Preston",
+    "postcode": "3072"
+  },
+  {
+    "id": "-37.73905,145.00369",
+    "name": "Big 8 Asian Foods - Preston",
+    "state": "VIC",
+    "latitude": -37.739046,
+    "longitude": 145.003686,
+    "suburb": "Preston",
+    "postcode": "3072"
+  },
+  {
+    "id": "-37.73975,145.00357",
+    "name": "888 Supermarket - Preston",
+    "state": "VIC",
+    "latitude": -37.739753,
+    "longitude": 145.003573,
+    "suburb": "Preston",
+    "postcode": "3072"
+  },
+  {
+    "id": "-37.77873,144.97643",
+    "name": "IGA - Xpress",
+    "state": "VIC",
+    "latitude": -37.778725,
+    "longitude": 144.97643
+  },
+  {
+    "id": "-37.78240,144.83360",
+    "name": "Bestow",
+    "state": "VIC",
+    "latitude": -37.782401,
+    "longitude": 144.8336
+  },
+  {
+    "id": "-37.78422,144.83246",
+    "name": "Bình Hưng",
+    "state": "VIC",
+    "latitude": -37.784225,
+    "longitude": 144.832461
+  },
+  {
+    "id": "-37.78417,144.83248",
+    "name": "Vạn Hưng",
+    "state": "VIC",
+    "latitude": -37.784174,
+    "longitude": 144.832477
+  },
+  {
+    "id": "-37.78242,144.83369",
+    "name": "Little India Groceries",
+    "state": "VIC",
+    "latitude": -37.782415,
+    "longitude": 144.833685
+  },
+  {
+    "id": "-37.78447,144.83242",
+    "name": "Tài Phát",
+    "state": "VIC",
+    "latitude": -37.784474,
+    "longitude": 144.832418
+  },
+  {
+    "id": "-37.78491,144.83361",
+    "name": "Sunshine Fresh Fruit Market",
+    "state": "VIC",
+    "latitude": -37.784913,
+    "longitude": 144.833609
+  },
+  {
+    "id": "-37.78618,144.83272",
+    "name": "Roshan",
+    "state": "VIC",
+    "latitude": -37.786184,
+    "longitude": 144.832717
+  },
+  {
+    "id": "-37.59403,145.08995",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.594025,
+    "longitude": 145.089951
+  },
+  {
+    "id": "-37.77813,144.85146",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.778132,
+    "longitude": 144.851465
+  },
+  {
+    "id": "-37.84563,145.04228",
+    "name": "Woolworths - Hawthorn East",
+    "state": "VIC",
+    "latitude": -37.84563,
+    "longitude": 145.042278,
+    "suburb": "Hawthorn East",
+    "postcode": "3123"
+  },
+  {
+    "id": "-37.79724,144.87709",
+    "name": "Bharat Traders - Barkly",
+    "state": "VIC",
+    "latitude": -37.797237,
+    "longitude": 144.877092
+  },
+  {
+    "id": "-37.74352,144.80093",
+    "name": "Thuan Khiem - Alfrieda",
+    "state": "VIC",
+    "latitude": -37.743523,
+    "longitude": 144.800928
+  },
+  {
+    "id": "-37.80073,144.86859",
+    "name": "Supermarket",
+    "state": "VIC",
+    "latitude": -37.800729,
+    "longitude": 144.868592
+  },
+  {
+    "id": "-37.78783,144.83092",
+    "name": "African Groceries",
+    "state": "VIC",
+    "latitude": -37.787833,
+    "longitude": 144.830916
+  },
+  {
+    "id": "-37.90996,145.10356",
+    "name": "Huntingdale IGA X-press - Huntingdale",
+    "state": "VIC",
+    "latitude": -37.909964,
+    "longitude": 145.103558
+  },
+  {
+    "id": "-37.79949,144.89856",
+    "name": "KFL Supermarkets",
+    "state": "VIC",
+    "latitude": -37.799486,
+    "longitude": 144.898556
+  },
+  {
+    "id": "-37.74361,144.96633",
+    "name": "Magid Afghan Supermarket - Sydney",
+    "state": "VIC",
+    "latitude": -37.743615,
+    "longitude": 144.966329
+  },
+  {
+    "id": "-37.89871,145.09087",
+    "name": "Friendly Cellars",
+    "state": "VIC",
+    "latitude": -37.898713,
+    "longitude": 145.090869
+  },
+  {
+    "id": "-37.88681,145.02229",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.88681,
+    "longitude": 145.022293
+  },
+  {
+    "id": "-37.95475,145.02558",
+    "name": "IGA - X Press",
+    "state": "VIC",
+    "latitude": -37.954749,
+    "longitude": 145.025575
+  },
+  {
+    "id": "-37.76209,144.96283",
+    "name": "Hyper Panda - Brunswick",
+    "state": "VIC",
+    "latitude": -37.762091,
+    "longitude": 144.962826,
+    "suburb": "Brunswick",
+    "postcode": "3056"
+  },
+  {
+    "id": "-37.82026,145.12611",
+    "name": "Asian Taiwanese Grocery",
+    "state": "VIC",
+    "latitude": -37.820258,
+    "longitude": 145.126115
+  },
+  {
+    "id": "-37.82019,145.12356",
+    "name": "Box Hill Asian Grocery Centre",
+    "state": "VIC",
+    "latitude": -37.820188,
+    "longitude": 145.123556
+  },
+  {
+    "id": "-37.75858,144.79041",
+    "name": "Minh Vi",
+    "state": "VIC",
+    "latitude": -37.75858,
+    "longitude": 144.790412
+  },
+  {
+    "id": "-37.67783,145.01397",
+    "name": "Mercato - High",
+    "state": "VIC",
+    "latitude": -37.677832,
+    "longitude": 145.013967
+  },
+  {
+    "id": "-37.81933,145.12459",
+    "name": "Seoul Grocery",
+    "state": "VIC",
+    "latitude": -37.819326,
+    "longitude": 145.124593
+  },
+  {
+    "id": "-37.99222,145.14548",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.992221,
+    "longitude": 145.145481
+  },
+  {
+    "id": "-37.99237,145.14607",
+    "name": "Aldi - Cheltenham",
+    "state": "VIC",
+    "latitude": -37.992366,
+    "longitude": 145.146075
+  },
+  {
+    "id": "-37.79636,144.94068",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.79636,
+    "longitude": 144.940678
+  },
+  {
+    "id": "-37.83055,145.05884",
+    "name": "Aldi - Station",
+    "state": "VIC",
+    "latitude": -37.83055,
+    "longitude": 145.058844
+  },
+  {
+    "id": "-37.86310,145.01018",
+    "name": "Woolworths Metro",
+    "state": "VIC",
+    "latitude": -37.863095,
+    "longitude": 145.010181
+  },
+  {
+    "id": "-37.82107,144.95010",
+    "name": "Woolworths - Docklands",
+    "state": "VIC",
+    "latitude": -37.821067,
+    "longitude": 144.950096,
+    "suburb": "Docklands",
+    "postcode": "3008"
+  },
+  {
+    "id": "-37.81012,144.96322",
+    "name": "Coles - La Trobe",
+    "state": "VIC",
+    "latitude": -37.810121,
+    "longitude": 144.963219
+  },
+  {
+    "id": "-37.79854,145.05208",
+    "name": "IGA - High",
+    "state": "VIC",
+    "latitude": -37.798545,
+    "longitude": 145.052075
+  },
+  {
+    "id": "-37.79281,145.07104",
+    "name": "ABC Supermarket - Doncaster",
+    "state": "VIC",
+    "latitude": -37.792806,
+    "longitude": 145.071036
+  },
+  {
+    "id": "-37.84670,144.99200",
+    "name": "The Source Bulk Foods - Commercial",
+    "state": "VIC",
+    "latitude": -37.846698,
+    "longitude": 144.991997
+  },
+  {
+    "id": "-37.81209,144.93913",
+    "name": "Woolworths - Waterfront Way",
+    "state": "VIC",
+    "latitude": -37.812089,
+    "longitude": 144.939127
+  },
+  {
+    "id": "-37.59384,144.71293",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.593841,
+    "longitude": 144.712926
+  },
+  {
+    "id": "-37.88494,145.00681",
+    "name": "Coles - Glen Huntly",
+    "state": "VIC",
+    "latitude": -37.884941,
+    "longitude": 145.006806
+  },
+  {
+    "id": "-37.60000,145.09524",
+    "name": "Coles - Plenty",
+    "state": "VIC",
+    "latitude": -37.600003,
+    "longitude": 145.095238
+  },
+  {
+    "id": "-37.85013,145.09449",
+    "name": "IGA Local Grocer + Liquor Camberwell - Toorak",
+    "state": "VIC",
+    "latitude": -37.850126,
+    "longitude": 145.094492
+  },
+  {
+    "id": "-37.84900,145.13397",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.848999,
+    "longitude": 145.133975
+  },
+  {
+    "id": "-37.80020,144.99494",
+    "name": "Woolworths Metro - Abbotsford",
+    "state": "VIC",
+    "latitude": -37.800203,
+    "longitude": 144.994942,
+    "suburb": "Abbotsford",
+    "postcode": "3067"
+  },
+  {
+    "id": "-37.81823,144.99758",
+    "name": "Frederick's Local Grocery - Richmond",
+    "state": "VIC",
+    "latitude": -37.818229,
+    "longitude": 144.997585,
+    "suburb": "Richmond",
+    "postcode": "3121"
+  },
+  {
+    "id": "-37.79264,144.96925",
+    "name": "Carlton Supermarket - Lygon",
+    "state": "VIC",
+    "latitude": -37.792642,
+    "longitude": 144.969251
+  },
+  {
+    "id": "-37.81269,144.93949",
+    "name": "East West Marketplace - Waterfront Way",
+    "state": "VIC",
+    "latitude": -37.812692,
+    "longitude": 144.939488,
+    "postcode": "3008"
+  },
+  {
+    "id": "-37.83400,145.07733",
+    "name": "Woolworths - Middle Camberwell",
+    "state": "VIC",
+    "latitude": -37.834,
+    "longitude": 145.077331
+  },
+  {
+    "id": "-37.77212,144.97847",
+    "name": "Coles - Brunswick East",
+    "state": "VIC",
+    "latitude": -37.772123,
+    "longitude": 144.978468,
+    "suburb": "Brunswick East",
+    "postcode": "3057"
+  },
+  {
+    "id": "-37.91122,144.77142",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.911217,
+    "longitude": 144.771423
+  },
+  {
+    "id": "-37.92122,145.13993",
+    "name": "Woolworths - M-City",
+    "state": "VIC",
+    "latitude": -37.921221,
+    "longitude": 145.139927
+  },
+  {
+    "id": "-37.84945,145.13404",
+    "name": "Hu Hui Supermarket",
+    "state": "VIC",
+    "latitude": -37.849449,
+    "longitude": 145.134036
+  },
+  {
+    "id": "-37.78817,145.14791",
+    "name": "ALDI Doncaster East",
+    "state": "VIC",
+    "latitude": -37.78817,
+    "longitude": 145.147908
+  },
+  {
+    "id": "-37.82409,144.96201",
+    "name": "Foodworks - Southbank",
+    "state": "VIC",
+    "latitude": -37.824092,
+    "longitude": 144.962014,
+    "suburb": "Southbank",
+    "postcode": "3006"
+  },
+  {
+    "id": "-37.81961,145.12034",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.819605,
+    "longitude": 145.120341
+  },
+  {
+    "id": "-37.72533,144.88116",
+    "name": "IGA Xpress",
+    "state": "VIC",
+    "latitude": -37.725327,
+    "longitude": 144.881164
+  },
+  {
+    "id": "-37.76461,144.92190",
+    "name": "Yahweh",
+    "state": "VIC",
+    "latitude": -37.764606,
+    "longitude": 144.921895
+  },
+  {
+    "id": "-37.85723,145.12370",
+    "name": "Andrew Street Grocer",
+    "state": "VIC",
+    "latitude": -37.857227,
+    "longitude": 145.123703
+  },
+  {
+    "id": "-37.96562,144.70666",
+    "name": "Wyndham Harbour Mini Mart",
+    "state": "VIC",
+    "latitude": -37.965617,
+    "longitude": 144.706665
+  },
+  {
+    "id": "-37.89900,144.73982",
+    "name": "IGA Point Cook",
+    "state": "VIC",
+    "latitude": -37.899002,
+    "longitude": 144.739824
+  },
+  {
+    "id": "-37.85295,145.15130",
+    "name": "Hokkien Market",
+    "state": "VIC",
+    "latitude": -37.852946,
+    "longitude": 145.151297
+  },
+  {
+    "id": "-37.78639,145.10673",
+    "name": "Orlando's - Stutt",
+    "state": "VIC",
+    "latitude": -37.786393,
+    "longitude": 145.106726
+  },
+  {
+    "id": "-37.86998,144.73142",
+    "name": "Grocer eez - Old Geelong",
+    "state": "VIC",
+    "latitude": -37.869978,
+    "longitude": 144.731421
+  },
+  {
+    "id": "-37.84596,144.99234",
+    "name": "Lee's Asian Grocery",
+    "state": "VIC",
+    "latitude": -37.845956,
+    "longitude": 144.99234
+  },
+  {
+    "id": "-37.84593,144.99261",
+    "name": "Paddlewheel",
+    "state": "VIC",
+    "latitude": -37.845926,
+    "longitude": 144.99261
+  },
+  {
+    "id": "-37.59447,144.72394",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.594469,
+    "longitude": 144.723936
+  },
+  {
+    "id": "-37.53651,144.92127",
+    "name": "Coles - Donnybrook",
+    "state": "VIC",
+    "latitude": -37.536514,
+    "longitude": 144.921267
+  },
+  {
+    "id": "-37.73639,144.96915",
+    "name": "Ritchies - Pentridge (Coburg)",
+    "state": "VIC",
+    "latitude": -37.736392,
+    "longitude": 144.969153
+  },
+  {
+    "id": "-37.88543,144.98794",
+    "name": "Foodworks - Elwood",
+    "state": "VIC",
+    "latitude": -37.885427,
+    "longitude": 144.987944,
+    "suburb": "Elwood",
+    "postcode": "3184"
+  },
+  {
+    "id": "-37.75498,144.89715",
+    "name": "Boundy's Supa IGA",
+    "state": "VIC",
+    "latitude": -37.754983,
+    "longitude": 144.897148
+  },
+  {
+    "id": "-37.73074,144.93871",
+    "name": "Pascoe Vale Mini Mart",
+    "state": "VIC",
+    "latitude": -37.730739,
+    "longitude": 144.938709
+  },
+  {
+    "id": "-37.72009,144.94060",
+    "name": "IGA - Pascoe Vale",
+    "state": "VIC",
+    "latitude": -37.720092,
+    "longitude": 144.940595,
+    "suburb": "Pascoe Vale",
+    "postcode": "3044"
+  },
+  {
+    "id": "-37.71515,144.88429",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.715153,
+    "longitude": 144.884292
+  },
+  {
+    "id": "-37.68753,144.88434",
+    "name": "Aldi - Gladstone Park",
+    "state": "VIC",
+    "latitude": -37.687534,
+    "longitude": 144.884336
+  },
+  {
+    "id": "-37.59464,144.91439",
+    "name": "Aldi - Craigieburn",
+    "state": "VIC",
+    "latitude": -37.594637,
+    "longitude": 144.91439
+  },
+  {
+    "id": "-37.80294,144.89884",
+    "name": "Ecopact Groceries - Footscray",
+    "state": "VIC",
+    "latitude": -37.802942,
+    "longitude": 144.898845,
+    "suburb": "Footscray",
+    "postcode": "3011"
+  },
+  {
+    "id": "-37.79870,144.98365",
+    "name": "Aldi - Fitzroy",
+    "state": "VIC",
+    "latitude": -37.798704,
+    "longitude": 144.983653,
+    "suburb": "Fitzroy",
+    "postcode": "3065"
+  },
+  {
+    "id": "-37.73571,145.27230",
+    "name": "IGA - Wonga Park",
+    "state": "VIC",
+    "latitude": -37.735715,
+    "longitude": 145.272302,
+    "suburb": "Wonga Park",
+    "postcode": "3115"
+  },
+  {
+    "id": "-37.68487,145.13569",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.684871,
+    "longitude": 145.135694
+  },
+  {
+    "id": "-37.67464,145.15885",
+    "name": "IGA - Diamond Creek",
+    "state": "VIC",
+    "latitude": -37.674639,
+    "longitude": 145.158855,
+    "suburb": "Diamond Creek",
+    "postcode": "3089"
+  },
+  {
+    "id": "-37.81099,145.00751",
+    "name": "Green Square IGA plus Liquor",
+    "state": "VIC",
+    "latitude": -37.81099,
+    "longitude": 145.007512
+  },
+  {
+    "id": "-37.79302,145.07219",
+    "name": "Balwyn North Asian Supermarket",
+    "state": "VIC",
+    "latitude": -37.793024,
+    "longitude": 145.07219
+  },
+  {
+    "id": "-37.79345,145.27855",
+    "name": "Aldi - Croydon",
+    "state": "VIC",
+    "latitude": -37.793447,
+    "longitude": 145.278547,
+    "suburb": "Croydon",
+    "postcode": "3136"
+  },
+  {
+    "id": "-37.82111,145.14192",
+    "name": "IGA - Blackburn",
+    "state": "VIC",
+    "latitude": -37.821108,
+    "longitude": 145.141915,
+    "suburb": "Blackburn",
+    "postcode": "3130"
+  },
+  {
+    "id": "-37.77493,144.96064",
+    "name": "Cheaper Buy Miles - Sydney",
+    "state": "VIC",
+    "latitude": -37.774926,
+    "longitude": 144.960639
+  },
+  {
+    "id": "-37.75857,144.96342",
+    "name": "Terra Madre - Brunswick",
+    "state": "VIC",
+    "latitude": -37.758574,
+    "longitude": 144.963421,
+    "suburb": "Brunswick",
+    "postcode": "3056"
+  },
+  {
+    "id": "-37.77107,145.29403",
+    "name": "Coles - Croydon North",
+    "state": "VIC",
+    "latitude": -37.771066,
+    "longitude": 145.294031,
+    "suburb": "Croydon North",
+    "postcode": "3136"
+  },
+  {
+    "id": "-37.72064,145.04877",
+    "name": "Agora IGA Xpress",
+    "state": "VIC",
+    "latitude": -37.720637,
+    "longitude": 145.048772
+  },
+  {
+    "id": "-37.61616,144.91530",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.616162,
+    "longitude": 144.9153
+  },
+  {
+    "id": "-37.74423,144.79833",
+    "name": "St Albans Supermarket & Halal Meat",
+    "state": "VIC",
+    "latitude": -37.744225,
+    "longitude": 144.798325
+  },
+  {
+    "id": "-37.81739,144.99887",
+    "name": "Coles - Church",
+    "state": "VIC",
+    "latitude": -37.817391,
+    "longitude": 144.998868
+  },
+  {
+    "id": "-37.69543,144.76555",
+    "name": "Overton Lea Indian Groceries - Overton Lea",
+    "state": "VIC",
+    "latitude": -37.695433,
+    "longitude": 144.765551
+  },
+  {
+    "id": "-37.82581,144.96356",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.82581,
+    "longitude": 144.963558
+  },
+  {
+    "id": "-37.82667,145.25614",
+    "name": "ABC Supermarket - Heathmont",
+    "state": "VIC",
+    "latitude": -37.82667,
+    "longitude": 145.256138,
+    "suburb": "Heathmont",
+    "postcode": "3135"
+  },
+  {
+    "id": "-37.82067,145.12410",
+    "name": "Korean World - Ellingworth Parade",
+    "state": "VIC",
+    "latitude": -37.820673,
+    "longitude": 145.124099
+  },
+  {
+    "id": "-37.79856,144.81723",
+    "name": "Cam Ngoc Asian Grocery",
+    "state": "VIC",
+    "latitude": -37.798558,
+    "longitude": 144.81723
+  },
+  {
+    "id": "-37.79852,144.81776",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.798524,
+    "longitude": 144.817762
+  },
+  {
+    "id": "-37.75705,145.12813",
+    "name": "The South African Shop - Templestowe",
+    "state": "VIC",
+    "latitude": -37.757048,
+    "longitude": 145.128126,
+    "suburb": "Templestowe",
+    "postcode": "3106"
+  },
+  {
+    "id": "-37.75973,145.00027",
+    "name": "Naturally On High - Thornbury",
+    "state": "VIC",
+    "latitude": -37.759733,
+    "longitude": 145.000269,
+    "suburb": "Thornbury",
+    "postcode": "3071"
+  },
+  {
+    "id": "-37.68138,145.02531",
+    "name": "Foodworks - Alexander",
+    "state": "VIC",
+    "latitude": -37.681379,
+    "longitude": 145.025309,
+    "postcode": "3074"
+  },
+  {
+    "id": "-37.84586,144.99368",
+    "name": "Fuji Mart - South Yarra",
+    "state": "VIC",
+    "latitude": -37.845855,
+    "longitude": 144.993683,
+    "suburb": "South Yarra",
+    "postcode": "3141"
+  },
+  {
+    "id": "-37.87604,145.03824",
+    "name": "Coles - Caulfield Village",
+    "state": "VIC",
+    "latitude": -37.876039,
+    "longitude": 145.038244
+  },
+  {
+    "id": "-37.77611,144.92851",
+    "name": "Woolworths Metro",
+    "state": "VIC",
+    "latitude": -37.776108,
+    "longitude": 144.928511
+  },
+  {
+    "id": "-37.86773,145.23879",
+    "name": "Aldi - Burwood Highway",
+    "state": "VIC",
+    "latitude": -37.86773,
+    "longitude": 145.238793
+  },
+  {
+    "id": "-37.86777,145.23792",
+    "name": "Woolworths - Knox",
+    "state": "VIC",
+    "latitude": -37.867769,
+    "longitude": 145.237922
+  },
+  {
+    "id": "-37.97420,145.20526",
+    "name": "Woolworths - Dandenong Junction",
+    "state": "VIC",
+    "latitude": -37.974201,
+    "longitude": 145.205262
+  },
+  {
+    "id": "-37.79485,144.94157",
+    "name": "Tiem Tap Hoa Asian Grocer",
+    "state": "VIC",
+    "latitude": -37.794846,
+    "longitude": 144.941568
+  },
+  {
+    "id": "-37.60257,145.10004",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.60257,
+    "longitude": 145.100038
+  },
+  {
+    "id": "-37.97388,145.01631",
+    "name": "Woolworths Metro - Black Rock",
+    "state": "VIC",
+    "latitude": -37.973878,
+    "longitude": 145.01631,
+    "suburb": "Black Rock",
+    "postcode": "3193"
+  },
+  {
+    "id": "-37.73014,144.74306",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.730144,
+    "longitude": 144.743062
+  },
+  {
+    "id": "-37.71258,144.72602",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.712582,
+    "longitude": 144.726016
+  },
+  {
+    "id": "-37.83890,144.99024",
+    "name": "Gum Tree Good Food - South Yarra",
+    "state": "VIC",
+    "latitude": -37.838898,
+    "longitude": 144.990238,
+    "suburb": "South Yarra",
+    "postcode": "3141"
+  },
+  {
+    "id": "-37.76344,144.97302",
+    "name": "Organic Wholefoods - Lygon",
+    "state": "VIC",
+    "latitude": -37.763438,
+    "longitude": 144.973018
+  },
+  {
+    "id": "-37.76315,144.97333",
+    "name": "Foodworks - Lygon",
+    "state": "VIC",
+    "latitude": -37.763148,
+    "longitude": 144.973332,
+    "postcode": "3057"
+  },
+  {
+    "id": "-37.81007,144.95878",
+    "name": "Woolworths Metro",
+    "state": "VIC",
+    "latitude": -37.810067,
+    "longitude": 144.95878
+  },
+  {
+    "id": "-37.82780,145.19434",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.827802,
+    "longitude": 145.194344
+  },
+  {
+    "id": "-37.84306,145.05439",
+    "name": "Serendipity - Burke",
+    "state": "VIC",
+    "latitude": -37.843058,
+    "longitude": 145.054391
+  },
+  {
+    "id": "-37.81128,145.15350",
+    "name": "Coles - Springfield",
+    "state": "VIC",
+    "latitude": -37.811282,
+    "longitude": 145.153505
+  },
+  {
+    "id": "-37.81234,145.15274",
+    "name": "Woolworths - Blackburn North",
+    "state": "VIC",
+    "latitude": -37.812339,
+    "longitude": 145.152735
+  },
+  {
+    "id": "-37.81128,145.15210",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.811279,
+    "longitude": 145.152096
+  },
+  {
+    "id": "-37.88215,145.10926",
+    "name": "Srini's Ceylon Madura - Huntingdale",
+    "state": "VIC",
+    "latitude": -37.882154,
+    "longitude": 145.109256
+  },
+  {
+    "id": "-37.94129,145.16836",
+    "name": "Aldi - Princes Highway",
+    "state": "VIC",
+    "latitude": -37.941289,
+    "longitude": 145.168358
+  },
+  {
+    "id": "-37.90434,144.99828",
+    "name": "Dockendorf Grocer - Cochrane",
+    "state": "VIC",
+    "latitude": -37.904342,
+    "longitude": 144.998276
+  },
+  {
+    "id": "-37.80626,144.96177",
+    "name": "Mr. Dad Super Market",
+    "state": "VIC",
+    "latitude": -37.806264,
+    "longitude": 144.961765
+  },
+  {
+    "id": "-37.81963,145.12252",
+    "name": "Tan Huang Asian Grocer",
+    "state": "VIC",
+    "latitude": -37.819635,
+    "longitude": 145.122518
+  },
+  {
+    "id": "-37.78839,145.14943",
+    "name": "Persian Halal Butchery & Grocery",
+    "state": "VIC",
+    "latitude": -37.788391,
+    "longitude": 145.149426
+  },
+  {
+    "id": "-37.83855,144.97693",
+    "name": "Fawkner Express Grovery Store - Melbourne",
+    "state": "VIC",
+    "latitude": -37.838546,
+    "longitude": 144.976934,
+    "suburb": "Melbourne",
+    "postcode": "3004"
+  },
+  {
+    "id": "-37.81768,144.95835",
+    "name": "IGA X-press - Collins",
+    "state": "VIC",
+    "latitude": -37.817684,
+    "longitude": 144.958348
+  },
+  {
+    "id": "-37.63893,144.88047",
+    "name": "IGA Greenvale",
+    "state": "VIC",
+    "latitude": -37.638926,
+    "longitude": 144.880468
+  },
+  {
+    "id": "-37.77150,144.91554",
+    "name": "IGA Local Grocer Plus Liquor Moonee Ponds - Maribyrnong",
+    "state": "VIC",
+    "latitude": -37.771496,
+    "longitude": 144.915536
+  },
+  {
+    "id": "-37.87849,145.09233",
+    "name": "Coles - Warrigal",
+    "state": "VIC",
+    "latitude": -37.878491,
+    "longitude": 145.092334
+  },
+  {
+    "id": "-37.80722,144.94302",
+    "name": "Woolworths Metro",
+    "state": "VIC",
+    "latitude": -37.807217,
+    "longitude": 144.943022
+  },
+  {
+    "id": "-37.70266,144.96527",
+    "name": "Fawkner Mini mart",
+    "state": "VIC",
+    "latitude": -37.70266,
+    "longitude": 144.965267
+  },
+  {
+    "id": "-37.74196,144.96534",
+    "name": "Mahalaxmi Grocery and convenience store - Coburg",
+    "state": "VIC",
+    "latitude": -37.74196,
+    "longitude": 144.96534,
+    "suburb": "Coburg",
+    "postcode": "3058"
+  },
+  {
+    "id": "-37.83180,144.88314",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.831802,
+    "longitude": 144.883138
+  },
+  {
+    "id": "-37.78472,144.77143",
+    "name": "NQR",
+    "state": "VIC",
+    "latitude": -37.784724,
+    "longitude": 144.771428
+  },
+  {
+    "id": "-37.75656,145.06817",
+    "name": "Heidelberg Pickles And Pappads",
+    "state": "VIC",
+    "latitude": -37.75656,
+    "longitude": 145.068173
+  },
+  {
+    "id": "-37.93601,145.06123",
+    "name": "Foodworks - Chesterville",
+    "state": "VIC",
+    "latitude": -37.936011,
+    "longitude": 145.06123,
+    "postcode": "3165"
+  },
+  {
+    "id": "-37.83831,144.99357",
+    "name": "Claremont Supermarket - Claremont",
+    "state": "VIC",
+    "latitude": -37.838311,
+    "longitude": 144.993572
+  },
+  {
+    "id": "-37.76625,145.02997",
+    "name": "Bivihome - Darebin",
+    "state": "VIC",
+    "latitude": -37.766249,
+    "longitude": 145.029972,
+    "postcode": "3071"
+  },
+  {
+    "id": "-37.97722,145.25861",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.977217,
+    "longitude": 145.258608
+  },
+  {
+    "id": "-37.83864,144.94173",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.838643,
+    "longitude": 144.941729
+  },
+  {
+    "id": "-37.77522,144.88664",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.775216,
+    "longitude": 144.886639
+  },
+  {
+    "id": "-37.57340,144.89944",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.573396,
+    "longitude": 144.89944
+  },
+  {
+    "id": "-37.91763,145.03429",
+    "name": "Bentleigh Supermarket",
+    "state": "VIC",
+    "latitude": -37.917629,
+    "longitude": 145.034288
+  },
+  {
+    "id": "-37.88573,145.05861",
+    "name": "IGA - Carnegie",
+    "state": "VIC",
+    "latitude": -37.885727,
+    "longitude": 145.058607,
+    "suburb": "Carnegie",
+    "postcode": "3163"
+  },
+  {
+    "id": "-37.81687,144.88107",
+    "name": "Coles - High",
+    "state": "VIC",
+    "latitude": -37.816873,
+    "longitude": 144.881066
+  },
+  {
+    "id": "-37.71913,144.90720",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.719129,
+    "longitude": 144.907195
+  },
+  {
+    "id": "-37.88356,144.68938",
+    "name": "Foodworks - Hoppers Crossing",
+    "state": "VIC",
+    "latitude": -37.883565,
+    "longitude": 144.689379,
+    "suburb": "Hoppers Crossing",
+    "postcode": "3029"
+  },
+  {
+    "id": "-37.88809,145.02215",
+    "name": "Woolworths - Hawthorn",
+    "state": "VIC",
+    "latitude": -37.888093,
+    "longitude": 145.022149
+  },
+  {
+    "id": "-37.82048,145.10528",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.820479,
+    "longitude": 145.105275
+  },
+  {
+    "id": "-37.79219,144.78950",
+    "name": "Morgan's IGA",
+    "state": "VIC",
+    "latitude": -37.79219,
+    "longitude": 144.789502
+  },
+  {
+    "id": "-37.81050,144.96217",
+    "name": "Pantre",
+    "state": "VIC",
+    "latitude": -37.810497,
+    "longitude": 144.962168
+  },
+  {
+    "id": "-37.81034,144.96308",
+    "name": "Hometown Grocer",
+    "state": "VIC",
+    "latitude": -37.810336,
+    "longitude": 144.963081
+  },
+  {
+    "id": "-37.73813,144.89289",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.738132,
+    "longitude": 144.892887
+  },
+  {
+    "id": "-37.70711,144.91861",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.707108,
+    "longitude": 144.918612
+  },
+  {
+    "id": "-37.80005,144.96533",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.800046,
+    "longitude": 144.965325
+  },
+  {
+    "id": "-37.81096,144.96144",
+    "name": "Tan Hung Asian Grocer",
+    "state": "VIC",
+    "latitude": -37.810963,
+    "longitude": 144.961441
+  },
+  {
+    "id": "-37.74384,144.80099",
+    "name": "Minh Hưng - Alfrieda",
+    "state": "VIC",
+    "latitude": -37.743842,
+    "longitude": 144.800994
+  },
+  {
+    "id": "-37.83002,144.99015",
+    "name": "IGA Local Grocer Cremorne - Cremorne",
+    "state": "VIC",
+    "latitude": -37.830017,
+    "longitude": 144.990153
+  },
+  {
+    "id": "-37.74153,144.96504",
+    "name": "Coburg Pasal - Coburg",
+    "state": "VIC",
+    "latitude": -37.741525,
+    "longitude": 144.965044,
+    "suburb": "Coburg",
+    "postcode": "3058"
+  },
+  {
+    "id": "-37.77326,145.11279",
+    "name": "Persian Market - Manningham",
+    "state": "VIC",
+    "latitude": -37.773256,
+    "longitude": 145.112789
+  },
+  {
+    "id": "-37.85326,145.15975",
+    "name": "289 Asian Supermarket",
+    "state": "VIC",
+    "latitude": -37.853257,
+    "longitude": 145.159746
+  },
+  {
+    "id": "-37.81746,145.19227",
+    "name": "Santosh Indian Grocery - Colombo",
+    "state": "VIC",
+    "latitude": -37.817458,
+    "longitude": 145.192271
+  },
+  {
+    "id": "-37.78840,144.93029",
+    "name": "KFL Supermarkets - Racecourse",
+    "state": "VIC",
+    "latitude": -37.788403,
+    "longitude": 144.930292
+  },
+  {
+    "id": "-37.78839,144.93016",
+    "name": "Cheaper Buy Miles - Racecourse",
+    "state": "VIC",
+    "latitude": -37.788389,
+    "longitude": 144.930164
+  },
+  {
+    "id": "-37.96088,145.10276",
+    "name": "Bakaloumas Fresh Fruit & Vegetable Market",
+    "state": "VIC",
+    "latitude": -37.960875,
+    "longitude": 145.102762
+  },
+  {
+    "id": "-37.91196,145.13306",
+    "name": "Monash Mini Merchant - Clayton",
+    "state": "VIC",
+    "latitude": -37.911962,
+    "longitude": 145.13306,
+    "suburb": "Clayton"
+  },
+  {
+    "id": "-37.81476,144.93835",
+    "name": "Xpress Supermarket",
+    "state": "VIC",
+    "latitude": -37.814758,
+    "longitude": 144.938347
+  },
+  {
+    "id": "-37.81855,145.12048",
+    "name": "Hui-Hui Supermarket",
+    "state": "VIC",
+    "latitude": -37.818546,
+    "longitude": 145.12048
+  },
+  {
+    "id": "-37.76565,144.95376",
+    "name": "Basfoods Direct - Victoria",
+    "state": "VIC",
+    "latitude": -37.765648,
+    "longitude": 144.95376
+  },
+  {
+    "id": "-37.69158,144.74787",
+    "name": "Woolworths - Banchory Grove",
+    "state": "VIC",
+    "latitude": -37.69158,
+    "longitude": 144.74787
+  },
+  {
+    "id": "-37.74450,144.86679",
+    "name": "Foodworks - Dinah Parade",
+    "state": "VIC",
+    "latitude": -37.7445,
+    "longitude": 144.866787
+  },
+  {
+    "id": "-37.80311,144.95744",
+    "name": "Woolworths Metro",
+    "state": "VIC",
+    "latitude": -37.80311,
+    "longitude": 144.957443
+  },
+  {
+    "id": "-37.63260,144.91845",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.632601,
+    "longitude": 144.91845
+  },
+  {
+    "id": "-37.62172,145.00644",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.621715,
+    "longitude": 145.006444
+  },
+  {
+    "id": "-37.79456,144.94984",
+    "name": "Royal Supermarket - Flemington",
+    "state": "VIC",
+    "latitude": -37.794559,
+    "longitude": 144.949838
+  },
+  {
+    "id": "-37.82020,144.72101",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.820201,
+    "longitude": 144.721008
+  },
+  {
+    "id": "-37.88297,144.69977",
+    "name": "Dehli Haat",
+    "state": "VIC",
+    "latitude": -37.882967,
+    "longitude": 144.69977
+  },
+  {
+    "id": "-37.88777,145.05710",
+    "name": "MVJ - Koornang",
+    "state": "VIC",
+    "latitude": -37.887772,
+    "longitude": 145.057096
+  },
+  {
+    "id": "-37.82014,144.94219",
+    "name": "Golden Express Supermarket",
+    "state": "VIC",
+    "latitude": -37.820136,
+    "longitude": 144.942193
+  },
+  {
+    "id": "-37.83232,144.97084",
+    "name": "Woolworths Metro - Melbourne",
+    "state": "VIC",
+    "latitude": -37.832325,
+    "longitude": 144.97084,
+    "suburb": "Melbourne",
+    "postcode": "3004"
+  },
+  {
+    "id": "-37.82892,145.12225",
+    "name": "Tatsing Food Stores",
+    "state": "VIC",
+    "latitude": -37.828924,
+    "longitude": 145.122252
+  },
+  {
+    "id": "-37.82496,145.12279",
+    "name": "Happinest Supermarket - Station",
+    "state": "VIC",
+    "latitude": -37.824958,
+    "longitude": 145.122792
+  },
+  {
+    "id": "-37.81839,145.12210",
+    "name": "Goldplus Supermarket - Box Hill",
+    "state": "VIC",
+    "latitude": -37.818386,
+    "longitude": 145.1221,
+    "suburb": "Box Hill",
+    "postcode": "3128"
+  },
+  {
+    "id": "-37.81399,145.01156",
+    "name": "Coles Victoria Gardens",
+    "state": "VIC",
+    "latitude": -37.813987,
+    "longitude": 145.011558
+  },
+  {
+    "id": "-37.74430,144.96593",
+    "name": "Coburg International Food Mart - Sydney",
+    "state": "VIC",
+    "latitude": -37.744299,
+    "longitude": 144.965926
+  },
+  {
+    "id": "-37.86881,144.78309",
+    "name": "Friendly Grocer",
+    "state": "VIC",
+    "latitude": -37.868805,
+    "longitude": 144.78309
+  },
+  {
+    "id": "-37.88312,144.78482",
+    "name": "The Local Grocery Store",
+    "state": "VIC",
+    "latitude": -37.883119,
+    "longitude": 144.784821
+  },
+  {
+    "id": "-37.79783,144.98465",
+    "name": "Clay Health and Organics - Collingwood",
+    "state": "VIC",
+    "latitude": -37.797828,
+    "longitude": 144.984654,
+    "suburb": "Collingwood",
+    "postcode": "3066"
+  },
+  {
+    "id": "-37.81536,145.19265",
+    "name": "Woolworths - Victoria",
+    "state": "VIC",
+    "latitude": -37.815358,
+    "longitude": 145.192646
+  },
+  {
+    "id": "-37.54407,144.89190",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.544067,
+    "longitude": 144.891901
+  },
+  {
+    "id": "-37.82470,144.96129",
+    "name": "Supermarket",
+    "state": "VIC",
+    "latitude": -37.824703,
+    "longitude": 144.961285
+  },
+  {
+    "id": "-37.79060,144.93557",
+    "name": "Ballbayan Groceries",
+    "state": "VIC",
+    "latitude": -37.790602,
+    "longitude": 144.935568
+  },
+  {
+    "id": "-37.81782,144.96563",
+    "name": "Tan Hung Asian Supermarket",
+    "state": "VIC",
+    "latitude": -37.817816,
+    "longitude": 144.965626
+  },
+  {
+    "id": "-37.83496,145.16575",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.834963,
+    "longitude": 145.165752
+  },
+  {
+    "id": "-37.80986,144.96226",
+    "name": "Hanaromart",
+    "state": "VIC",
+    "latitude": -37.809863,
+    "longitude": 144.962258
+  },
+  {
+    "id": "-37.84087,145.00928",
+    "name": "Coles Local",
+    "state": "VIC",
+    "latitude": -37.840871,
+    "longitude": 145.009284
+  },
+  {
+    "id": "-37.88755,145.02159",
+    "name": "Aldi - Caulfield South",
+    "state": "VIC",
+    "latitude": -37.887546,
+    "longitude": 145.021588
+  },
+  {
+    "id": "-37.86747,144.76195",
+    "name": "CU Mart",
+    "state": "VIC",
+    "latitude": -37.867468,
+    "longitude": 144.761949
+  },
+  {
+    "id": "-37.86683,144.76255",
+    "name": "Spice Town - Railway",
+    "state": "VIC",
+    "latitude": -37.866832,
+    "longitude": 144.762552
+  },
+  {
+    "id": "-37.61953,144.70298",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.619529,
+    "longitude": 144.70298
+  },
+  {
+    "id": "-37.65905,145.02980",
+    "name": "Dalton Food Store",
+    "state": "VIC",
+    "latitude": -37.659046,
+    "longitude": 145.029803
+  },
+  {
+    "id": "-37.65445,145.02331",
+    "name": "Indiagate Spices & Groceries",
+    "state": "VIC",
+    "latitude": -37.654451,
+    "longitude": 145.023308
+  },
+  {
+    "id": "-37.77279,145.11217",
+    "name": "Allhome Asian Grocery",
+    "state": "VIC",
+    "latitude": -37.772787,
+    "longitude": 145.112167
+  },
+  {
+    "id": "-37.77263,145.11220",
+    "name": "Zeytoon Persian Supermarket",
+    "state": "VIC",
+    "latitude": -37.772627,
+    "longitude": 145.112205
+  },
+  {
+    "id": "-37.66018,145.01929",
+    "name": "Deep Indian Supermarket",
+    "state": "VIC",
+    "latitude": -37.660185,
+    "longitude": 145.019287
+  },
+  {
+    "id": "-37.81165,144.96102",
+    "name": "Mr. Rhino Supermarket - Little Lonsdale",
+    "state": "VIC",
+    "latitude": -37.811652,
+    "longitude": 144.961016
+  },
+  {
+    "id": "-37.85567,145.18284",
+    "name": "Da Fu Asian Mart - Burwood Highway",
+    "state": "VIC",
+    "latitude": -37.85567,
+    "longitude": 145.182843
+  },
+  {
+    "id": "-37.99216,145.17306",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.992161,
+    "longitude": 145.173058
+  },
+  {
+    "id": "-37.85013,145.09434",
+    "name": "Fulin Grocery",
+    "state": "VIC",
+    "latitude": -37.850127,
+    "longitude": 145.094342
+  },
+  {
+    "id": "-37.73868,145.02869",
+    "name": "Fortune Asian Supermarket",
+    "state": "VIC",
+    "latitude": -37.73868,
+    "longitude": 145.028693
+  },
+  {
+    "id": "-37.73791,145.02848",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.737907,
+    "longitude": 145.028481
+  },
+  {
+    "id": "-37.80482,144.95641",
+    "name": "Excel Food Mart",
+    "state": "VIC",
+    "latitude": -37.804823,
+    "longitude": 144.956412
+  },
+  {
+    "id": "-37.80731,144.96019",
+    "name": "Pacific Asian Grocer",
+    "state": "VIC",
+    "latitude": -37.807312,
+    "longitude": 144.960187
+  },
+  {
+    "id": "-37.76978,144.96001",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.769784,
+    "longitude": 144.960012
+  },
+  {
+    "id": "-37.76776,144.92141",
+    "name": "Woolworths - Moonee Ponds",
+    "state": "VIC",
+    "latitude": -37.767755,
+    "longitude": 144.921413,
+    "suburb": "Moonee Ponds",
+    "postcode": "3039"
+  },
+  {
+    "id": "-37.79302,145.06475",
+    "name": "Coles Local - Balwyn North",
+    "state": "VIC",
+    "latitude": -37.793021,
+    "longitude": 145.064749,
+    "suburb": "Balwyn North",
+    "postcode": "3104"
+  },
+  {
+    "id": "-37.74387,144.96380",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.743869,
+    "longitude": 144.963804
+  },
+  {
+    "id": "-37.73815,144.89285",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.738155,
+    "longitude": 144.892846
+  },
+  {
+    "id": "-37.75116,145.00358",
+    "name": "Woolworths Preston South",
+    "state": "VIC",
+    "latitude": -37.751159,
+    "longitude": 145.003581,
+    "suburb": "Preston",
+    "postcode": "3072"
+  },
+  {
+    "id": "-37.88944,145.29370",
+    "name": "Woolworths - Ferntree Gully",
+    "state": "VIC",
+    "latitude": -37.889438,
+    "longitude": 145.293698,
+    "suburb": "Ferntree Gully",
+    "postcode": "3156"
+  },
+  {
+    "id": "-37.77241,144.94881",
+    "name": "Coles Brunswick West",
+    "state": "VIC",
+    "latitude": -37.772408,
+    "longitude": 144.948815
+  },
+  {
+    "id": "-37.83747,145.18440",
+    "name": "Woolworths - Stevens",
+    "state": "VIC",
+    "latitude": -37.837468,
+    "longitude": 145.1844
+  },
+  {
+    "id": "-37.88892,145.04103",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.888921,
+    "longitude": 145.041027
+  },
+  {
+    "id": "-37.91755,145.03851",
+    "name": "Coles - Bent",
+    "state": "VIC",
+    "latitude": -37.917552,
+    "longitude": 145.038507
+  },
+  {
+    "id": "-37.83110,144.93074",
+    "name": "Woolworths - Plummer",
+    "state": "VIC",
+    "latitude": -37.831102,
+    "longitude": 144.930744
+  },
+  {
+    "id": "-37.80629,145.02928",
+    "name": "Leo's Fine Food & Wine - Kew",
+    "state": "VIC",
+    "latitude": -37.806286,
+    "longitude": 145.029282,
+    "suburb": "Kew",
+    "postcode": "3101"
+  },
+  {
+    "id": "-37.98162,145.06241",
+    "name": "Woolworths - Mentone",
+    "state": "VIC",
+    "latitude": -37.981623,
+    "longitude": 145.062412
+  },
+  {
+    "id": "-37.98407,145.06437",
+    "name": "Coles - Mentone Parade",
+    "state": "VIC",
+    "latitude": -37.984073,
+    "longitude": 145.06437
+  },
+  {
+    "id": "-37.85277,145.13443",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.85277,
+    "longitude": 145.134431
+  },
+  {
+    "id": "-37.93472,145.03894",
+    "name": "Woolworths - Taylor",
+    "state": "VIC",
+    "latitude": -37.934722,
+    "longitude": 145.038941
+  },
+  {
+    "id": "-37.85940,145.24089",
+    "name": "IGA - Wantirna South",
+    "state": "VIC",
+    "latitude": -37.859401,
+    "longitude": 145.240895,
+    "suburb": "Wantirna South",
+    "postcode": "3152"
+  },
+  {
+    "id": "-37.70480,145.10009",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.704804,
+    "longitude": 145.100087
+  },
+  {
+    "id": "-37.67644,144.88655",
+    "name": "IGA - Westmeadows",
+    "state": "VIC",
+    "latitude": -37.676436,
+    "longitude": 144.886555,
+    "suburb": "Westmeadows",
+    "postcode": "3049"
+  },
+  {
+    "id": "-37.79785,144.97798",
+    "name": "Coles Local - Johnston",
+    "state": "VIC",
+    "latitude": -37.797853,
+    "longitude": 144.977979
+  },
+  {
+    "id": "-37.86892,144.82999",
+    "name": "Coles - Pier",
+    "state": "VIC",
+    "latitude": -37.868918,
+    "longitude": 144.829988
+  },
+  {
+    "id": "-37.88821,145.28891",
+    "name": "Aldi Ferntree Gully",
+    "state": "VIC",
+    "latitude": -37.888209,
+    "longitude": 145.288913,
+    "suburb": "Ferntree Gully",
+    "postcode": "3156"
+  },
+  {
+    "id": "-37.71412,145.15025",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.714124,
+    "longitude": 145.150246
+  },
+  {
+    "id": "-37.78428,144.89226",
+    "name": "Aldi - Edgewater",
+    "state": "VIC",
+    "latitude": -37.784278,
+    "longitude": 144.892263
+  },
+  {
+    "id": "-37.58045,144.72594",
+    "name": "NQR - Sunbury",
+    "state": "VIC",
+    "latitude": -37.580447,
+    "longitude": 144.725937,
+    "suburb": "Sunbury",
+    "postcode": "3429"
+  },
+  {
+    "id": "-37.57825,144.72790",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.578252,
+    "longitude": 144.7279
+  },
+  {
+    "id": "-37.84089,145.26270",
+    "name": "Woolworths - Bayswater",
+    "state": "VIC",
+    "latitude": -37.840889,
+    "longitude": 145.262703,
+    "suburb": "Bayswater",
+    "postcode": "3153"
+  },
+  {
+    "id": "-37.75857,144.94509",
+    "name": "Albion Budget Supermarket",
+    "state": "VIC",
+    "latitude": -37.758573,
+    "longitude": 144.945087
+  },
+  {
+    "id": "-37.88368,145.27532",
+    "name": "Coles Mountain Gate",
+    "state": "VIC",
+    "latitude": -37.883685,
+    "longitude": 145.275319,
+    "suburb": "Ferntree Gully",
+    "postcode": "3156"
+  },
+  {
+    "id": "-37.84306,145.26617",
+    "name": "Aldi Bayswater",
+    "state": "VIC",
+    "latitude": -37.843063,
+    "longitude": 145.266174
+  },
+  {
+    "id": "-37.84244,145.26548",
+    "name": "Food Factory Sales - Bayswater",
+    "state": "VIC",
+    "latitude": -37.842445,
+    "longitude": 145.265477,
+    "suburb": "Bayswater",
+    "postcode": "3153"
+  },
+  {
+    "id": "-37.88370,145.27781",
+    "name": "Woolworths Mountain Gate",
+    "state": "VIC",
+    "latitude": -37.883705,
+    "longitude": 145.277808,
+    "suburb": "Ferntree Gully",
+    "postcode": "3156"
+  },
+  {
+    "id": "-37.92097,145.23518",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.92097,
+    "longitude": 145.235182
+  },
+  {
+    "id": "-37.73916,145.02829",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.739158,
+    "longitude": 145.02829
+  },
+  {
+    "id": "-37.75571,145.06934",
+    "name": "Coles - Burgundy",
+    "state": "VIC",
+    "latitude": -37.75571,
+    "longitude": 145.06934
+  },
+  {
+    "id": "-37.75528,145.06881",
+    "name": "Aldi - Burgundy",
+    "state": "VIC",
+    "latitude": -37.755282,
+    "longitude": 145.068814
+  },
+  {
+    "id": "-37.76815,145.04186",
+    "name": "Coles - Livingstone",
+    "state": "VIC",
+    "latitude": -37.768153,
+    "longitude": 145.041856
+  },
+  {
+    "id": "-37.88768,145.05641",
+    "name": "Woolworths - Kokaribb",
+    "state": "VIC",
+    "latitude": -37.88768,
+    "longitude": 145.056412
+  },
+  {
+    "id": "-37.70524,144.91677",
+    "name": "Coles Glenroy",
+    "state": "VIC",
+    "latitude": -37.705237,
+    "longitude": 144.916774
+  },
+  {
+    "id": "-37.78838,145.11813",
+    "name": "No 1 Asian Supermarket - Doncaster",
+    "state": "VIC",
+    "latitude": -37.788384,
+    "longitude": 145.11813,
+    "suburb": "Doncaster",
+    "postcode": "3108"
+  },
+  {
+    "id": "-37.83125,145.14736",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.831249,
+    "longitude": 145.147358
+  },
+  {
+    "id": "-37.94906,145.04100",
+    "name": "Woolworths Highett",
+    "state": "VIC",
+    "latitude": -37.949055,
+    "longitude": 145.040996
+  },
+  {
+    "id": "-37.89373,144.72839",
+    "name": "Hua Li Asian Grocery - Tom Roberts Parade",
+    "state": "VIC",
+    "latitude": -37.893733,
+    "longitude": 144.728392,
+    "postcode": "3030"
+  },
+  {
+    "id": "-37.86043,145.02912",
+    "name": "Coles Malvern",
+    "state": "VIC",
+    "latitude": -37.860433,
+    "longitude": 145.029123
+  },
+  {
+    "id": "-37.72635,145.10422",
+    "name": "Asian Grocer",
+    "state": "VIC",
+    "latitude": -37.726353,
+    "longitude": 145.104221
+  },
+  {
+    "id": "-37.79814,144.88021",
+    "name": "SIMS IGA West Footscray - Footscray",
+    "state": "VIC",
+    "latitude": -37.798141,
+    "longitude": 144.880213,
+    "suburb": "Footscray",
+    "postcode": "3011"
+  },
+  {
+    "id": "-37.81264,145.08317",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.812641,
+    "longitude": 145.08317
+  },
+  {
+    "id": "-37.86642,145.09374",
+    "name": "Woolworths - Warrigal",
+    "state": "VIC",
+    "latitude": -37.866424,
+    "longitude": 145.093742
+  },
+  {
+    "id": "-38.00484,145.26650",
+    "name": "Coles - Princes Domain",
+    "state": "VIC",
+    "latitude": -38.004838,
+    "longitude": 145.266497
+  },
+  {
+    "id": "-37.79710,145.25697",
+    "name": "Coles - Croydon",
+    "state": "VIC",
+    "latitude": -37.7971,
+    "longitude": 145.256973,
+    "suburb": "Croydon",
+    "postcode": "3136"
+  },
+  {
+    "id": "-37.78328,145.26929",
+    "name": "Jefferies | Your Local Provedore - Plymouth",
+    "state": "VIC",
+    "latitude": -37.78328,
+    "longitude": 145.26929
+  },
+  {
+    "id": "-37.75209,145.00283",
+    "name": "Aldi - Preston",
+    "state": "VIC",
+    "latitude": -37.752087,
+    "longitude": 145.00283,
+    "suburb": "Preston",
+    "postcode": "3072"
+  },
+  {
+    "id": "-37.78350,144.98293",
+    "name": "Piedimonte's Supa IGA plus Liquor - Fitzroy North",
+    "state": "VIC",
+    "latitude": -37.783499,
+    "longitude": 144.982926,
+    "suburb": "Fitzroy North",
+    "postcode": "3068"
+  },
+  {
+    "id": "-37.67354,144.93026",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.673541,
+    "longitude": 144.930256
+  },
+  {
+    "id": "-37.73714,145.00284",
+    "name": "Woolworths Preston",
+    "state": "VIC",
+    "latitude": -37.737145,
+    "longitude": 145.002839,
+    "suburb": "Preston",
+    "postcode": "3072"
+  },
+  {
+    "id": "-37.80576,145.03093",
+    "name": "Woolworths Kew",
+    "state": "VIC",
+    "latitude": -37.805756,
+    "longitude": 145.030927,
+    "suburb": "Kew",
+    "postcode": "3101"
+  },
+  {
+    "id": "-37.95340,145.15159",
+    "name": "Woolworths - Springvale",
+    "state": "VIC",
+    "latitude": -37.953398,
+    "longitude": 145.151589
+  },
+  {
+    "id": "-37.73991,145.00183",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.739909,
+    "longitude": 145.001834
+  },
+  {
+    "id": "-37.78434,144.83256",
+    "name": "Thuận Hưng - Sunshine",
+    "state": "VIC",
+    "latitude": -37.784337,
+    "longitude": 144.832558,
+    "suburb": "Sunshine",
+    "postcode": "3020"
+  },
+  {
+    "id": "-37.67546,144.96473",
+    "name": "Campbellfield Welcome Mart - Campbellfield",
+    "state": "VIC",
+    "latitude": -37.675456,
+    "longitude": 144.964731,
+    "suburb": "Campbellfield",
+    "postcode": "3061"
+  },
+  {
+    "id": "-37.74373,144.91070",
+    "name": "Coles - Mount Alexander",
+    "state": "VIC",
+    "latitude": -37.743732,
+    "longitude": 144.910695
+  },
+  {
+    "id": "-37.79867,144.90099",
+    "name": "D&K",
+    "state": "VIC",
+    "latitude": -37.798672,
+    "longitude": 144.900988
+  },
+  {
+    "id": "-37.79985,144.90240",
+    "name": "Thành Phát - Hopkins",
+    "state": "VIC",
+    "latitude": -37.79985,
+    "longitude": 144.902401,
+    "postcode": "3011"
+  },
+  {
+    "id": "-37.67214,144.93134",
+    "name": "Fresh Plus",
+    "state": "VIC",
+    "latitude": -37.672141,
+    "longitude": 144.931337
+  },
+  {
+    "id": "-37.74488,144.80168",
+    "name": "Woolworths - St Albans",
+    "state": "VIC",
+    "latitude": -37.744881,
+    "longitude": 144.801682,
+    "suburb": "St Albans",
+    "postcode": "3021"
+  },
+  {
+    "id": "-37.82071,145.17660",
+    "name": "Thai Sun Food Market - Nunawading",
+    "state": "VIC",
+    "latitude": -37.820713,
+    "longitude": 145.176597,
+    "suburb": "Nunawading",
+    "postcode": "3131"
+  },
+  {
+    "id": "-37.82007,145.17534",
+    "name": "Canton Asian Grocery - Springvale",
+    "state": "VIC",
+    "latitude": -37.820067,
+    "longitude": 145.175339
+  },
+  {
+    "id": "-37.80960,144.99640",
+    "name": "Minh Phat Asian Supermarket - Nicholson",
+    "state": "VIC",
+    "latitude": -37.809597,
+    "longitude": 144.996403
+  },
+  {
+    "id": "-37.76743,144.86338",
+    "name": "Coles - Military",
+    "state": "VIC",
+    "latitude": -37.767434,
+    "longitude": 144.863378
+  },
+  {
+    "id": "-37.79983,144.99570",
+    "name": "IGA - Johnston",
+    "state": "VIC",
+    "latitude": -37.799834,
+    "longitude": 144.995705
+  },
+  {
+    "id": "-37.98339,145.21611",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.983391,
+    "longitude": 145.216112
+  },
+  {
+    "id": "-37.69502,145.05853",
+    "name": "Woolworths Bundoora",
+    "state": "VIC",
+    "latitude": -37.695019,
+    "longitude": 145.058525
+  },
+  {
+    "id": "-37.69430,145.05940",
+    "name": "Psarakos Market - McLeans",
+    "state": "VIC",
+    "latitude": -37.694299,
+    "longitude": 145.059396
+  },
+  {
+    "id": "-37.67234,145.01455",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.672336,
+    "longitude": 145.014546
+  },
+  {
+    "id": "-37.73831,145.02844",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.738312,
+    "longitude": 145.028436
+  },
+  {
+    "id": "-37.76309,144.96328",
+    "name": "Brunswick Supa IGA - Brunswick",
+    "state": "VIC",
+    "latitude": -37.763095,
+    "longitude": 144.963283,
+    "suburb": "Brunswick",
+    "postcode": "3056"
+  },
+  {
+    "id": "-37.80790,144.94862",
+    "name": "ALDI West Melbourne",
+    "state": "VIC",
+    "latitude": -37.807898,
+    "longitude": 144.94862,
+    "suburb": "West Melbourne",
+    "postcode": "3003"
+  },
+  {
+    "id": "-37.80458,144.94979",
+    "name": "IGA North Melbourne Plus Liquor - North Melbourne",
+    "state": "VIC",
+    "latitude": -37.804584,
+    "longitude": 144.949789,
+    "suburb": "North Melbourne",
+    "postcode": "3051"
+  },
+  {
+    "id": "-37.95584,145.03344",
+    "name": "Aldi - Bay",
+    "state": "VIC",
+    "latitude": -37.955845,
+    "longitude": 145.033437
+  },
+  {
+    "id": "-37.93712,145.00208",
+    "name": "Woolworths - Hampton",
+    "state": "VIC",
+    "latitude": -37.937123,
+    "longitude": 145.002081
+  },
+  {
+    "id": "-37.74424,144.98947",
+    "name": "Bell Cellar & Grocery",
+    "state": "VIC",
+    "latitude": -37.744243,
+    "longitude": 144.989473
+  },
+  {
+    "id": "-37.81611,145.22565",
+    "name": "Soon Lee Asian Grocery - Ringwood",
+    "state": "VIC",
+    "latitude": -37.81611,
+    "longitude": 145.225654,
+    "suburb": "Ringwood",
+    "postcode": "3134"
+  },
+  {
+    "id": "-37.57827,144.71239",
+    "name": "ALDI Sunbury",
+    "state": "VIC",
+    "latitude": -37.57827,
+    "longitude": 144.712385
+  },
+  {
+    "id": "-37.85062,144.96454",
+    "name": "IGA - Middle Park",
+    "state": "VIC",
+    "latitude": -37.850624,
+    "longitude": 144.964541,
+    "suburb": "Middle Park"
+  },
+  {
+    "id": "-37.85075,144.96375",
+    "name": "Gumtree - Middle Park",
+    "state": "VIC",
+    "latitude": -37.850747,
+    "longitude": 144.963752,
+    "suburb": "Middle Park",
+    "postcode": "3206"
+  },
+  {
+    "id": "-37.79425,144.97949",
+    "name": "Fitzroy IGA - Brunswick",
+    "state": "VIC",
+    "latitude": -37.794247,
+    "longitude": 144.979488
+  },
+  {
+    "id": "-37.71452,145.00731",
+    "name": "Coles - Reservoir",
+    "state": "VIC",
+    "latitude": -37.71452,
+    "longitude": 145.007312,
+    "suburb": "Reservoir",
+    "postcode": "3073"
+  },
+  {
+    "id": "-37.94531,145.02179",
+    "name": "Coles - Bluff",
+    "state": "VIC",
+    "latitude": -37.945307,
+    "longitude": 145.021791
+  },
+  {
+    "id": "-37.86109,145.28165",
+    "name": "NQR Boronia",
+    "state": "VIC",
+    "latitude": -37.861086,
+    "longitude": 145.281651
+  },
+  {
+    "id": "-37.86166,145.28438",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.861662,
+    "longitude": 145.284381
+  },
+  {
+    "id": "-37.81648,144.85243",
+    "name": "Stan Cash - Geelong",
+    "state": "VIC",
+    "latitude": -37.816477,
+    "longitude": 144.852429
+  },
+  {
+    "id": "-37.96158,145.14314",
+    "name": "Aldi - Heatherton",
+    "state": "VIC",
+    "latitude": -37.961575,
+    "longitude": 145.143143
+  },
+  {
+    "id": "-37.62965,145.07943",
+    "name": "Coles - Gordons",
+    "state": "VIC",
+    "latitude": -37.629648,
+    "longitude": 145.079434
+  },
+  {
+    "id": "-37.84477,144.84546",
+    "name": "Aldi - Altona North",
+    "state": "VIC",
+    "latitude": -37.844775,
+    "longitude": 144.845461,
+    "suburb": "Altona North",
+    "postcode": "3025"
+  },
+  {
+    "id": "-37.99701,145.18474",
+    "name": "New Eastland Pty Ltd",
+    "state": "VIC",
+    "latitude": -37.997015,
+    "longitude": 145.184744
+  },
+  {
+    "id": "-37.90123,145.23299",
+    "name": "Aldi - Stud",
+    "state": "VIC",
+    "latitude": -37.901227,
+    "longitude": 145.232992
+  },
+  {
+    "id": "-37.84274,144.84488",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.842737,
+    "longitude": 144.844883
+  },
+  {
+    "id": "-37.82135,144.89622",
+    "name": "Alligator Brand Pasta - Yarraville",
+    "state": "VIC",
+    "latitude": -37.821347,
+    "longitude": 144.896222,
+    "suburb": "Yarraville",
+    "postcode": "3013"
+  },
+  {
+    "id": "-37.82824,144.84801",
+    "name": "Coles",
+    "state": "VIC",
+    "latitude": -37.82824,
+    "longitude": 144.848005
+  },
+  {
+    "id": "-37.80384,145.03770",
+    "name": "Coles - Kew",
+    "state": "VIC",
+    "latitude": -37.803837,
+    "longitude": 145.037699,
+    "suburb": "Kew",
+    "postcode": "3101"
+  },
+  {
+    "id": "-37.82936,145.12088",
+    "name": "Aldi - Station",
+    "state": "VIC",
+    "latitude": -37.829358,
+    "longitude": 145.120875
+  },
+  {
+    "id": "-37.64860,145.07498",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.648603,
+    "longitude": 145.074979
+  },
+  {
+    "id": "-37.95048,145.15299",
+    "name": "Nan Yang Supermarket - Springvale",
+    "state": "VIC",
+    "latitude": -37.950477,
+    "longitude": 145.152993
+  },
+  {
+    "id": "-37.67366,145.01687",
+    "name": "Thiện Liên",
+    "state": "VIC",
+    "latitude": -37.673658,
+    "longitude": 145.016867
+  },
+  {
+    "id": "-37.67395,145.01680",
+    "name": "Dandy Mart",
+    "state": "VIC",
+    "latitude": -37.673955,
+    "longitude": 145.016798
+  },
+  {
+    "id": "-37.67400,145.01620",
+    "name": "Gran Monte Continental Grocery",
+    "state": "VIC",
+    "latitude": -37.673998,
+    "longitude": 145.016202
+  },
+  {
+    "id": "-37.67328,145.01632",
+    "name": "Afghan Supermarket",
+    "state": "VIC",
+    "latitude": -37.673284,
+    "longitude": 145.016319
+  },
+  {
+    "id": "-37.67304,145.01636",
+    "name": "Zahra Grocery",
+    "state": "VIC",
+    "latitude": -37.673041,
+    "longitude": 145.016362
+  },
+  {
+    "id": "-37.67289,145.01639",
+    "name": "Global Coffee & Nuts - Station",
+    "state": "VIC",
+    "latitude": -37.672885,
+    "longitude": 145.016393
+  },
+  {
+    "id": "-37.75985,145.00104",
+    "name": "Psarakos Market - Thornbury",
+    "state": "VIC",
+    "latitude": -37.759849,
+    "longitude": 145.001043,
+    "suburb": "Thornbury",
+    "postcode": "3071"
+  },
+  {
+    "id": "-37.92626,145.11909",
+    "name": "Hong Kong Supermarket - Clayton",
+    "state": "VIC",
+    "latitude": -37.926258,
+    "longitude": 145.119094,
+    "suburb": "Clayton"
+  },
+  {
+    "id": "-37.92762,145.11892",
+    "name": "Top Mart - Clayton",
+    "state": "VIC",
+    "latitude": -37.927615,
+    "longitude": 145.118925
+  },
+  {
+    "id": "-37.92502,145.11942",
+    "name": "Sarawan Spices & Home Entertainment - Clayton",
+    "state": "VIC",
+    "latitude": -37.92502,
+    "longitude": 145.119424
+  },
+  {
+    "id": "-37.92844,145.11942",
+    "name": "Alishaan India - Clayton",
+    "state": "VIC",
+    "latitude": -37.928443,
+    "longitude": 145.119416
+  },
+  {
+    "id": "-37.98559,145.21214",
+    "name": "Dandy Supermarket & Halal Meat",
+    "state": "VIC",
+    "latitude": -37.985593,
+    "longitude": 145.212144
+  },
+  {
+    "id": "-37.98809,145.21247",
+    "name": "Gulistan Supermarket",
+    "state": "VIC",
+    "latitude": -37.988091,
+    "longitude": 145.212474
+  },
+  {
+    "id": "-37.98653,145.21229",
+    "name": "Bamyan - Thomas",
+    "state": "VIC",
+    "latitude": -37.98653,
+    "longitude": 145.21229
+  },
+  {
+    "id": "-37.96641,145.17648",
+    "name": "Surur African Variety - Ian",
+    "state": "VIC",
+    "latitude": -37.966414,
+    "longitude": 145.176482
+  },
+  {
+    "id": "-37.89999,145.09042",
+    "name": "Asian Supermarket - Oakleigh",
+    "state": "VIC",
+    "latitude": -37.899994,
+    "longitude": 145.090421,
+    "suburb": "Oakleigh",
+    "postcode": "3166"
+  },
+  {
+    "id": "-37.98267,145.20290",
+    "name": "Babylon Groceries - Hemmings",
+    "state": "VIC",
+    "latitude": -37.98267,
+    "longitude": 145.202903
+  },
+  {
+    "id": "-37.98252,145.20255",
+    "name": "Dandenong IGA Plus Liquor - Hemmings",
+    "state": "VIC",
+    "latitude": -37.982522,
+    "longitude": 145.202553
+  },
+  {
+    "id": "-37.81652,144.89171",
+    "name": "Woolworths Metro - Yarraville",
+    "state": "VIC",
+    "latitude": -37.816518,
+    "longitude": 144.89171,
+    "suburb": "Yarraville",
+    "postcode": "3013"
+  },
+  {
+    "id": "-37.77311,145.11195",
+    "name": "Aldi - Manningham",
+    "state": "VIC",
+    "latitude": -37.773111,
+    "longitude": 145.111949
+  },
+  {
+    "id": "-37.83342,145.07734",
+    "name": "Coles - Riversdale",
+    "state": "VIC",
+    "latitude": -37.833425,
+    "longitude": 145.077339
+  },
+  {
+    "id": "-37.78390,144.83187",
+    "name": "Tân Đại - Hampshire",
+    "state": "VIC",
+    "latitude": -37.783903,
+    "longitude": 144.831872
+  },
+  {
+    "id": "-37.76008,145.00101",
+    "name": "Psarakos Market",
+    "state": "VIC",
+    "latitude": -37.760076,
+    "longitude": 145.001009
+  },
+  {
+    "id": "-37.87883,145.06800",
+    "name": "East Malvern IGA Xpress Plus Liquor - Waverley",
+    "state": "VIC",
+    "latitude": -37.878834,
+    "longitude": 145.068002
+  },
+  {
+    "id": "-37.74407,144.80089",
+    "name": "KFL - St Albans",
+    "state": "VIC",
+    "latitude": -37.744073,
+    "longitude": 144.800887,
+    "suburb": "St Albans",
+    "postcode": "3021"
+  },
+  {
+    "id": "-37.74322,144.79978",
+    "name": "IGA - St Albans",
+    "state": "VIC",
+    "latitude": -37.743216,
+    "longitude": 144.799784,
+    "suburb": "St Albans",
+    "postcode": "3021"
+  },
+  {
+    "id": "-37.74376,144.79788",
+    "name": "Parachinar Supermarket",
+    "state": "VIC",
+    "latitude": -37.743756,
+    "longitude": 144.797882
+  },
+  {
+    "id": "-37.73443,144.80599",
+    "name": "Foodworks - Theodore",
+    "state": "VIC",
+    "latitude": -37.734428,
+    "longitude": 144.805994
+  },
+  {
+    "id": "-37.80120,144.90123",
+    "name": "Western Halal Meat - Leeds",
+    "state": "VIC",
+    "latitude": -37.801199,
+    "longitude": 144.901231
+  },
+  {
+    "id": "-37.80113,144.90124",
+    "name": "Salaam Namasthe - Leeds",
+    "state": "VIC",
+    "latitude": -37.801132,
+    "longitude": 144.901243,
+    "postcode": "3011"
+  },
+  {
+    "id": "-37.77961,144.99664",
+    "name": "Terra Madre - High",
+    "state": "VIC",
+    "latitude": -37.779609,
+    "longitude": 144.996644
+  },
+  {
+    "id": "-37.80063,144.89918",
+    "name": "Famous Halal Quality - Nicholson",
+    "state": "VIC",
+    "latitude": -37.800626,
+    "longitude": 144.899183
+  },
+  {
+    "id": "-37.92048,145.05820",
+    "name": "Ritchies",
+    "state": "VIC",
+    "latitude": -37.920478,
+    "longitude": 145.058198
+  },
+  {
+    "id": "-37.86771,144.76129",
+    "name": "IGA - Laverton",
+    "state": "VIC",
+    "latitude": -37.867713,
+    "longitude": 144.761287,
+    "suburb": "Laverton",
+    "postcode": "3028"
+  },
+  {
+    "id": "-37.62602,144.71654",
+    "name": "FoodWorks",
+    "state": "VIC",
+    "latitude": -37.626017,
+    "longitude": 144.716536
+  },
+  {
+    "id": "-37.91760,145.03405",
+    "name": "Aldi - Centre",
+    "state": "VIC",
+    "latitude": -37.917596,
+    "longitude": 145.034052
+  },
+  {
+    "id": "-37.72337,144.96237",
+    "name": "ALDI Coburg North",
+    "state": "VIC",
+    "latitude": -37.723371,
+    "longitude": 144.96237
+  },
+  {
+    "id": "-37.75909,145.06863",
+    "name": "Woolworths - Heidelberg",
+    "state": "VIC",
+    "latitude": -37.759086,
+    "longitude": 145.068627,
+    "suburb": "Heidelberg",
+    "postcode": "3084"
+  },
+  {
+    "id": "-37.78800,144.93045",
+    "name": "Foodworks - Racecourse",
+    "state": "VIC",
+    "latitude": -37.787997,
+    "longitude": 144.930446,
+    "postcode": "3031"
+  },
+  {
+    "id": "-37.77294,145.05841",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.772939,
+    "longitude": 145.058415
+  },
+  {
+    "id": "-37.84738,144.94903",
+    "name": "Foodworks - Victoria",
+    "state": "VIC",
+    "latitude": -37.847376,
+    "longitude": 144.949034
+  },
+  {
+    "id": "-37.82003,145.03546",
+    "name": "Coles Local - Glenferrie",
+    "state": "VIC",
+    "latitude": -37.820028,
+    "longitude": 145.035465
+  },
+  {
+    "id": "-37.81765,145.22394",
+    "name": "NQR - Ringwood",
+    "state": "VIC",
+    "latitude": -37.817648,
+    "longitude": 145.223944,
+    "suburb": "Ringwood",
+    "postcode": "3134"
+  },
+  {
+    "id": "-37.84135,144.95559",
+    "name": "Gumtree - Dundas Place",
+    "state": "VIC",
+    "latitude": -37.841348,
+    "longitude": 144.955595
+  },
+  {
+    "id": "-37.84151,144.95399",
+    "name": "Foodworks - Albert Park",
+    "state": "VIC",
+    "latitude": -37.84151,
+    "longitude": 144.953987
+  },
+  {
+    "id": "-37.86460,144.81410",
+    "name": "Goods Grocer - Altona",
+    "state": "VIC",
+    "latitude": -37.864603,
+    "longitude": 144.814103,
+    "suburb": "Altona",
+    "postcode": "3018"
+  },
+  {
+    "id": "-37.82825,145.03463",
+    "name": "Ritchies IGA - Hawthorn",
+    "state": "VIC",
+    "latitude": -37.828251,
+    "longitude": 145.03463,
+    "suburb": "Hawthorn",
+    "postcode": "3122"
+  },
+  {
+    "id": "-37.87327,145.02500",
+    "name": "IGA - Hawthorn",
+    "state": "VIC",
+    "latitude": -37.873268,
+    "longitude": 145.025002
+  },
+  {
+    "id": "-37.81902,144.95331",
+    "name": "Woolworths Metro - Southern Cross",
+    "state": "VIC",
+    "latitude": -37.819023,
+    "longitude": 144.953305,
+    "postcode": "3008"
+  },
+  {
+    "id": "-37.80600,144.89157",
+    "name": "The Happy Apple - Seddon",
+    "state": "VIC",
+    "latitude": -37.806005,
+    "longitude": 144.891572,
+    "suburb": "Seddon",
+    "postcode": "3011"
+  },
+  {
+    "id": "-37.80966,144.99401",
+    "name": "Wing Chong Asian Supermarket - Victoria",
+    "state": "VIC",
+    "latitude": -37.80966,
+    "longitude": 144.994011
+  },
+  {
+    "id": "-37.77344,144.91554",
+    "name": "The Happy Apple - Ascot Vale",
+    "state": "VIC",
+    "latitude": -37.773441,
+    "longitude": 144.915539,
+    "suburb": "Ascot Vale",
+    "postcode": "3032"
+  },
+  {
+    "id": "-37.73598,145.04851",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.73598,
+    "longitude": 145.048512
+  },
+  {
+    "id": "-37.97525,145.06771",
+    "name": "Aldi - Nepean Highway",
+    "state": "VIC",
+    "latitude": -37.975248,
+    "longitude": 145.067706
+  },
+  {
+    "id": "-37.85454,145.01167",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.854537,
+    "longitude": 145.011674
+  },
+  {
+    "id": "-37.84445,145.29934",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.844454,
+    "longitude": 145.299339
+  },
+  {
+    "id": "-37.83042,145.24366",
+    "name": "Fair Price Supermarket - Heathmont",
+    "state": "VIC",
+    "latitude": -37.830421,
+    "longitude": 145.243664,
+    "suburb": "Heathmont",
+    "postcode": "3135"
+  },
+  {
+    "id": "-37.79763,145.28124",
+    "name": "European Grocery Store - Croydon",
+    "state": "VIC",
+    "latitude": -37.797629,
+    "longitude": 145.281242,
+    "suburb": "Croydon",
+    "postcode": "3136"
+  },
+  {
+    "id": "-37.79845,145.28106",
+    "name": "Rangoon City Mart - Croydon",
+    "state": "VIC",
+    "latitude": -37.798447,
+    "longitude": 145.281063,
+    "suburb": "Croydon",
+    "postcode": "3136"
+  },
+  {
+    "id": "-37.81855,145.24327",
+    "name": "Golden Burma Grocery - Ringwood East",
+    "state": "VIC",
+    "latitude": -37.818554,
+    "longitude": 145.243266,
+    "suburb": "Ringwood East",
+    "postcode": "3135"
+  },
+  {
+    "id": "-37.88225,145.29431",
+    "name": "IGA - Ferntree Gully",
+    "state": "VIC",
+    "latitude": -37.882253,
+    "longitude": 145.294313,
+    "suburb": "Ferntree Gully",
+    "postcode": "3156"
+  },
+  {
+    "id": "-37.88264,145.29661",
+    "name": "Foodworks",
+    "state": "VIC",
+    "latitude": -37.882639,
+    "longitude": 145.296608
+  },
+  {
+    "id": "-37.91546,144.99538",
+    "name": "Woolworths - Church",
+    "state": "VIC",
+    "latitude": -37.915463,
+    "longitude": 144.99538
+  },
+  {
+    "id": "-37.72797,145.11107",
+    "name": "ALDI Lower Plenty",
+    "state": "VIC",
+    "latitude": -37.727974,
+    "longitude": 145.111069
+  },
+  {
+    "id": "-37.95955,145.05559",
+    "name": "Woolworths",
+    "state": "VIC",
+    "latitude": -37.959554,
+    "longitude": 145.055594
+  },
+  {
+    "id": "-37.75768,145.12873",
+    "name": "IGA",
+    "state": "VIC",
+    "latitude": -37.757682,
+    "longitude": 145.128732
+  },
+  {
+    "id": "-37.74409,144.79696",
+    "name": "MA-B1 African Market - St Albans",
+    "state": "VIC",
+    "latitude": -37.744087,
+    "longitude": 144.796964,
+    "suburb": "St Albans",
+    "postcode": "3021"
+  },
+  {
+    "id": "-37.74441,144.80372",
+    "name": "MKS Spices 'n Things - St Albans",
+    "state": "VIC",
+    "latitude": -37.744411,
+    "longitude": 144.803717,
+    "suburb": "St Albans",
+    "postcode": "3021"
+  },
+  {
+    "id": "-37.81213,145.25167",
+    "name": "IGA - Ringwood East",
+    "state": "VIC",
+    "latitude": -37.81213,
+    "longitude": 145.251667,
+    "suburb": "Ringwood East",
+    "postcode": "3135"
+  },
+  {
+    "id": "-37.81255,145.24997",
+    "name": "Chinland Asian Grocery - Railway",
+    "state": "VIC",
+    "latitude": -37.812546,
+    "longitude": 145.249966
+  },
+  {
+    "id": "-37.81184,145.27017",
+    "name": "Golden Triangle Asian Grocery - The Mall",
+    "state": "VIC",
+    "latitude": -37.811837,
+    "longitude": 145.270166
+  },
+  {
+    "id": "-37.81191,145.27012",
+    "name": "Eastfield Natural Foods - Croydon South",
+    "state": "VIC",
+    "latitude": -37.811907,
+    "longitude": 145.270116,
+    "suburb": "Croydon South",
+    "postcode": "3136"
+  },
+  {
+    "id": "-37.82416,145.09723",
+    "name": "Coles Local - Surrey Hills",
+    "state": "VIC",
+    "latitude": -37.824157,
+    "longitude": 145.097229,
+    "suburb": "Surrey Hills",
+    "postcode": "3127"
+  },
+  {
+    "id": "-37.84775,145.23303",
+    "name": "Ritchies - Wantirna",
+    "state": "VIC",
+    "latitude": -37.847753,
+    "longitude": 145.233033,
+    "suburb": "Wantirna",
+    "postcode": "3152"
+  },
+  {
+    "id": "-37.89838,145.23187",
+    "name": "Woolworths - Scoresby",
+    "state": "VIC",
+    "latitude": -37.898378,
+    "longitude": 145.231869,
+    "suburb": "Scoresby",
+    "postcode": "3179"
+  },
+  {
+    "id": "-37.78947,145.15829",
+    "name": "Woolworths - Doncaster East",
+    "state": "VIC",
+    "latitude": -37.789468,
+    "longitude": 145.15829,
+    "suburb": "Doncaster East",
+    "postcode": "3109"
+  },
+  {
+    "id": "-37.89430,145.24974",
+    "name": "IGA Knoxfield Plus Liquor - Knoxfield",
+    "state": "VIC",
+    "latitude": -37.894296,
+    "longitude": 145.249738,
+    "suburb": "Knoxfield",
+    "postcode": "3180"
+  },
+  {
+    "id": "-37.53474,144.96054",
+    "name": "Woolworths - Kalllo Towncentre",
+    "state": "VIC",
+    "latitude": -37.534744,
+    "longitude": 144.960545
+  },
+  {
+    "id": "-37.73218,144.95163",
+    "name": "Sacca's Fine Foods - Gaffney",
+    "state": "VIC",
+    "latitude": -37.732184,
+    "longitude": 144.951632,
+    "postcode": "3058"
+  },
+  {
+    "id": "-37.95433,145.21251",
+    "name": "Foodworks - Dandenong North",
+    "state": "VIC",
+    "latitude": -37.95433,
+    "longitude": 145.212515,
+    "suburb": "Dandenong North",
+    "postcode": "3175"
+  },
+  {
+    "id": "-37.82786,145.24729",
+    "name": "IGA - Heathmont",
+    "state": "VIC",
+    "latitude": -37.827858,
+    "longitude": 145.247291,
+    "suburb": "Heathmont",
+    "postcode": "3135"
+  },
+  {
+    "id": "-37.82791,145.24723",
+    "name": "IGA Liquor - Heathmont",
+    "state": "VIC",
+    "latitude": -37.827915,
+    "longitude": 145.247229,
+    "suburb": "Heathmont",
+    "postcode": "3135"
+  },
+  {
+    "id": "-37.87720,145.22124",
+    "name": "Prime Sun Asian Groceries - Wantirna South",
+    "state": "VIC",
+    "latitude": -37.877203,
+    "longitude": 145.221241,
+    "suburb": "Wantirna South",
+    "postcode": "3152"
+  },
+  {
+    "id": "-37.87723,145.22198",
+    "name": "Foodworks - Wantirna South",
+    "state": "VIC",
+    "latitude": -37.877235,
+    "longitude": 145.221977,
+    "suburb": "Wantirna South",
+    "postcode": "3152"
+  },
+  {
+    "id": "-37.88234,145.27255",
+    "name": "Wholefood Merchants - Ferntree Gully",
+    "state": "VIC",
+    "latitude": -37.882343,
+    "longitude": 145.27255,
+    "suburb": "Ferntree Gully",
+    "postcode": "3156"
+  },
+  {
+    "id": "-37.88296,145.27281",
+    "name": "Wholefood Merchants - Ferntree Gully",
+    "state": "VIC",
+    "latitude": -37.882963,
+    "longitude": 145.272805,
+    "suburb": "Ferntree Gully",
+    "postcode": "3156"
+  },
+  {
+    "id": "-37.61041,144.93335",
+    "name": "Foodworks - Craigieburn",
+    "state": "VIC",
+    "latitude": -37.610413,
+    "longitude": 144.933351,
+    "suburb": "Craigieburn",
+    "postcode": "3064"
+  },
+  {
+    "id": "-37.78265,144.86431",
+    "name": "KFL Supermarkets - Braybrook",
+    "state": "VIC",
+    "latitude": -37.782652,
+    "longitude": 144.864307,
+    "suburb": "Braybrook",
+    "postcode": "3019"
+  },
+  {
+    "id": "-37.85469,145.18266",
+    "name": "Coles Vermont South",
+    "state": "VIC",
+    "latitude": -37.854688,
+    "longitude": 145.182662
+  },
+  {
+    "id": "-37.85554,145.18227",
+    "name": "Aldi - Burwood Highway",
+    "state": "VIC",
+    "latitude": -37.855538,
+    "longitude": 145.182271
+  },
+  {
+    "id": "-37.86139,145.25247",
+    "name": "Divya Indian Groceries - Boronia",
+    "state": "VIC",
+    "latitude": -37.861393,
+    "longitude": 145.25247,
+    "suburb": "Boronia",
+    "postcode": "3155"
+  },
+  {
+    "id": "-37.79787,144.98420",
+    "name": "Woolworths Metro - Fitzroy",
+    "state": "VIC",
+    "latitude": -37.797874,
+    "longitude": 144.984197,
+    "suburb": "Fitzroy",
+    "postcode": "3065"
+  },
+  {
+    "id": "-37.70489,144.94538",
+    "name": "North Street Supermarket",
+    "state": "VIC",
+    "latitude": -37.704892,
+    "longitude": 144.94538
+  },
+  {
+    "id": "-37.74332,145.06708",
+    "name": "Woolworths - Turnham",
+    "state": "VIC",
+    "latitude": -37.743319,
+    "longitude": 145.067085
+  },
+  {
+    "id": "-37.80287,144.98387",
+    "name": "The Source Bulk Foods - Smith",
+    "state": "VIC",
+    "latitude": -37.802869,
+    "longitude": 144.983872
+  },
+  {
+    "id": "-37.78376,145.26876",
+    "name": "McAdam's Apple - Croydon",
+    "state": "VIC",
+    "latitude": -37.783763,
+    "longitude": 145.26876,
+    "suburb": "Croydon",
+    "postcode": "3136"
+  },
+  {
+    "id": "-37.83818,144.74109",
+    "name": "Aldi",
+    "state": "VIC",
+    "latitude": -37.83818,
+    "longitude": 144.741086
+  },
+  {
+    "id": "-37.77210,145.11308",
+    "name": "Seasons Asian Grocery - Templestowe Lower",
+    "state": "VIC",
+    "latitude": -37.772101,
+    "longitude": 145.113078,
+    "suburb": "Templestowe Lower",
+    "postcode": "3107"
+  },
+  {
+    "id": "-37.76540,145.09181",
+    "name": "Coles - Manningham",
+    "state": "VIC",
+    "latitude": -37.7654,
+    "longitude": 145.091812
+  },
+  {
+    "id": "-37.76609,145.09151",
+    "name": "Sunny Asian Food",
+    "state": "VIC",
+    "latitude": -37.766086,
+    "longitude": 145.091507
+  }
+]

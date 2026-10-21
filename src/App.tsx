@@ -12,6 +12,7 @@ import type {
   POI,
   School,
   Station,
+  Supermarket,
   POICategory,
   AustralianState,
 } from "./types"
@@ -24,7 +25,7 @@ import { useSchoolTypePreferences } from "./hooks/useSchoolTypePreferences"
 import { useServiceWorker } from "./hooks/useServiceWorker"
 import { useRecentSearches } from "./hooks/useRecentSearches"
 import type { RecentSearch } from "./hooks/useRecentSearches"
-import { geocodeAddress, fetchSupermarkets } from "./lib/api-client"
+import { geocodeAddress } from "./lib/api-client"
 import { haversineDistance } from "./lib/haversine"
 import { estimateWalkingTime } from "./utils/format"
 import { Map } from "./components/Map/Map"
@@ -61,8 +62,14 @@ const PRELOADABLE_STATES: AustralianState[] = [
 
 function App() {
   // Hooks
-  const { loadState, getSchools, getStations, isStateLoaded, loadedStates } =
-    useDataLoader()
+  const {
+    loadState,
+    getSchools,
+    getStations,
+    getSupermarkets,
+    isStateLoaded,
+    loadedStates,
+  } = useDataLoader()
   const { fetchRoutesSequentially, getCachedRoute } = useWalkingRoutes()
   const { getCurrentLocation } = useGeolocation()
   const isOnline = useOnlineStatus()
@@ -622,21 +629,20 @@ function App() {
       console.log("Step 2: Loading state data:", state)
       let schools: School[] = []
       let stations: Station[] = []
+      let supermarketsData: Supermarket[] = []
 
       if (!isStateLoaded(state)) {
         const data = await loadState(state)
         schools = data.schools
         stations = data.stations
+        supermarketsData = data.supermarkets
       } else {
         schools = getSchools(state)
         stations = getStations(state)
+        supermarketsData = getSupermarkets(state)
       }
 
-      // Step 3: Fetch supermarkets in parallel with data processing
-      console.log("Step 3: Fetching supermarkets")
-      const supermarketsPromise = fetchSupermarkets(lat, lng)
-
-      // Step 4: Filter and sort schools
+      // Step 3: Filter and sort schools
       const filteredSchools = filterAndSortSchools(
         schools,
         lat,
@@ -645,13 +651,12 @@ function App() {
         schoolTypes
       )
 
-      // Step 5: Filter and sort stations
-      console.log("Step 5: Filtering stations")
+      // Step 4: Filter and sort stations
+      console.log("Step 4: Filtering stations")
       const filteredStations = filterAndSortStations(stations, lat, lng)
 
-      // Wait for supermarkets
-      const supermarketsResult = await supermarketsPromise
-      const supermarkets = supermarketsResult.supermarkets || []
+      // Step 5: Filter and sort supermarkets
+      const supermarkets = filterAndSortSupermarkets(supermarketsData, lat, lng)
 
       console.log("Search results:", {
         schools: filteredSchools.length,
@@ -1136,9 +1141,46 @@ function App() {
       .slice(0, MAX_RESULTS_PER_CATEGORY)
   }
 
+  /**
+   * Filter and sort supermarkets by distance
+   */
+  function filterAndSortSupermarkets(
+    supermarkets: Supermarket[],
+    lat: number,
+    lng: number
+  ): POI[] {
+    return supermarkets
+      .map(supermarket => {
+        const distance = haversineDistance(
+          lat,
+          lng,
+          supermarket.latitude,
+          supermarket.longitude
+        )
+
+        return {
+          id: `supermarket-${supermarket.id}`,
+          name: supermarket.name,
+          category: "supermarket" as const,
+          latitude: supermarket.latitude,
+          longitude: supermarket.longitude,
+          distance,
+          estimatedWalkingTime: estimateWalkingTime(distance),
+          details:
+            [supermarket.suburb, supermarket.postcode]
+              .filter(Boolean)
+              .join(", ") || undefined,
+        }
+      })
+      .filter(poi => poi.distance <= MAX_WALKING_DISTANCE_KM)
+      .sort((a, b) => a.distance - b.distance)
+      .slice(0, MAX_RESULTS_PER_CATEGORY)
+  }
+
   const visibleSearchResultIds = new Set([
     ...(searchResults?.schools.map(school => school.id) || []),
     ...(searchResults?.stations.map(station => station.id) || []),
+    ...(searchResults?.supermarkets.map(supermarket => supermarket.id) || []),
   ])
 
   const viewportSchools =
@@ -1167,6 +1209,21 @@ function App() {
               !visibleSearchResultIds.has(
                 `station-${station.name}-${station.state}`
               )
+          )
+          .slice(0, MAX_VIEWPORT_MARKERS_PER_CATEGORY)
+      : []
+
+  const viewportSupermarkets =
+    viewportBounds && viewportZoom >= VIEWPORT_MARKER_MIN_ZOOM
+      ? Array.from(loadedStates)
+          .flatMap(state => getSupermarkets(state))
+          .filter(
+            supermarket =>
+              viewportBounds.contains([
+                supermarket.latitude,
+                supermarket.longitude,
+              ]) &&
+              !visibleSearchResultIds.has(`supermarket-${supermarket.id}`)
           )
           .slice(0, MAX_VIEWPORT_MARKERS_PER_CATEGORY)
       : []
@@ -1277,6 +1334,16 @@ function App() {
                   key={`viewport-station-${station.name}-${station.state}`}
                   position={[station.latitude, station.longitude]}
                   type="station"
+                  isAlternative={true}
+                />
+              ))}
+
+            {shouldShowViewportMarkers &&
+              viewportSupermarkets.map(supermarket => (
+                <MapMarker
+                  key={`viewport-supermarket-${supermarket.id}`}
+                  position={[supermarket.latitude, supermarket.longitude]}
+                  type="supermarket"
                   isAlternative={true}
                 />
               ))}
@@ -1462,6 +1529,16 @@ function App() {
                   key={`viewport-station-${station.name}-${station.state}`}
                   position={[station.latitude, station.longitude]}
                   type="station"
+                  isAlternative={true}
+                />
+              ))}
+
+            {shouldShowViewportMarkers &&
+              viewportSupermarkets.map(supermarket => (
+                <MapMarker
+                  key={`viewport-supermarket-${supermarket.id}`}
+                  position={[supermarket.latitude, supermarket.longitude]}
+                  type="supermarket"
                   isAlternative={true}
                 />
               ))}

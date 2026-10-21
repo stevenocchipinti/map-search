@@ -3,10 +3,10 @@
  *
  * Handles caching for GET requests only:
  * - App Shell: Cache-first (HTML, CSS, JS, icons)
- * - Data Files: Cache-first with network fallback (schools.json, stations.json)
+ * - Data Files: Cache-first with network fallback (schools, stations, supermarkets)
  * - Map Tiles: Cache-first with LRU eviction
  *
- * NOTE: API endpoints (geocode, supermarkets, walking-routes) all use POST
+ * NOTE: API endpoints (geocode, walking-routes) all use POST
  * requests, which the Cache API cannot store. Those responses are cached
  * client-side in localStorage via src/lib/api-cache.ts with TTL-based
  * expiration instead.
@@ -21,7 +21,7 @@ const TILES_CACHE_NAME = `map-search-tiles-${CACHE_VERSION}`
 const APP_SHELL = ["/", "/index.html", "/manifest.json", "/icon.svg"]
 
 // Data files (will be cached on demand by state)
-const DATA_FILES_PATTERN = /\/data\/[a-z]+\/(schools|stations)\.json$/
+const DATA_FILES_PATTERN = /\/data\/[a-z]+\/(schools|stations|supermarkets)\.json$/
 
 // Map tiles from Carto
 const TILES_PATTERN = /https:\/\/.*\.basemaps\.cartocdn\.com/

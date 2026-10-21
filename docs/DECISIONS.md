@@ -247,21 +247,20 @@ console.groupEnd()
 
 ---
 
-### ❌ No Supermarket Pre-Processing (For Now)
+### ✅ Supermarket Pre-Processing
 
-**Decision**: Keep supermarkets as live API calls to Overpass, don't pre-process into static files.
+**Decision**: Pre-process supermarkets into a static file (`npm run data:supermarkets`), like schools and stations, built from BBBike's Melbourne OpenStreetMap extract. Originally they were live Overpass calls from `/api/supermarkets`. Only Melbourne is covered; other states show no supermarkets.
 
 **Rationale**:
 
-- Supermarket data changes frequently (stores open/close regularly)
-- Overpass API is fast enough (~200-500ms)
-- Static files would go stale quickly
-- Rate limits are manageable with caching (7 day TTL)
-- Can always add later if API becomes problematic
+- In 2026 the public Overpass servers started rejecting server-side/commercial callers (406 from Vercel), which broke supermarket results in production
+- Overpass usage policy discourages fanning out across mirrors or cloud workers to get around limits
+- Downloading from Overpass at build time also failed (refused connections, 429s, 504s); a weekly-rebuilt extract file is far more reliable
+- Melbourne is the area that matters for now, and a city extract is small (~130MB) and quick to process
+- Supermarket locations change slowly; refreshing every few months is acceptable
+- Removes a serverless function and makes supermarkets instant and offline-capable
 
-**Future Enhancement**: If Overpass becomes unreliable or rate-limited, generate state-based supermarket files updated weekly via automated script
-
-**Alternative Rejected**: Pre-process supermarkets now (data goes stale, adds complexity)
+**Trade-off**: Data can be a few months stale between refreshes, and there is no supermarket data outside Melbourne
 
 ---
 

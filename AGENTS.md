@@ -10,7 +10,7 @@
 - **Compiler**: React Compiler (experimental) - handles memoization automatically
 - **Styling**: Tailwind CSS with custom configuration
 - **Maps**: Leaflet + react-leaflet with Carto Voyager tiles
-- **Backend**: Vercel Serverless Functions (3 API endpoints)
+- **Backend**: Vercel Serverless Functions (2 API endpoints)
 - **Hosting**: Vercel
 - **PWA**: Service Worker with smart caching strategies
 
@@ -30,15 +30,15 @@
 local-search/
 ├── api/                      # Vercel serverless functions
 │   ├── geocode.ts           # Address → coordinates + state
-│   ├── supermarkets.ts      # Overpass API wrapper
 │   ├── walking-routes.ts    # OpenRouteService wrapper
 │   └── tsconfig.json        # API TypeScript config
 │
 ├── public/
 │   ├── data/                # State-based POI data
 │   │   └── {state}/
-│   │       ├── schools.json  # ~30-800KB per state
-│   │       └── stations.json # ~0.3-60KB per state
+│   │       ├── schools.json      # ~30-800KB per state
+│   │       ├── stations.json     # ~0.3-60KB per state
+│   │       └── supermarkets.json # OpenStreetMap supermarkets (vic only)
 │   ├── service-worker.js    # PWA service worker
 │   ├── manifest.json        # PWA manifest
 │   └── icon.svg            # App icon
@@ -75,7 +75,6 @@ local-search/
 │   ├── lib/                # External API clients
 │   │   ├── api-client.ts   # Backend API wrappers
 │   │   ├── haversine.ts    # Distance calculations
-│   │   ├── overpass.ts     # Overpass API client
 │   │   └── openroute.ts    # OpenRouteService client
 │   │
 │   ├── utils/              # Helper functions
@@ -93,6 +92,7 @@ local-search/
 ├── scripts/                # Data processing
 │   ├── process-schools.ts  # Split schools by state
 │   ├── process-stations.ts # Split stations by state
+│   ├── process-supermarkets.ts # Melbourne supermarkets from OSM extract
 │   └── process-all.ts      # Process both
 │
 ├── docs/                   # Documentation
@@ -124,9 +124,8 @@ local-search/
 **Client-side, state-based loading:**
 
 1. User searches address → geocode to get state (NSW, VIC, etc.)
-2. Load only that state's schools + stations (~100-300ms)
-3. Fetch supermarkets from Overpass API (~1-3s)
-4. Filter by Haversine distance client-side (~10ms for 10k records)
+2. Load only that state's schools + stations + supermarkets (~100-300ms)
+3. Filter by Haversine distance client-side (~10ms for 10k records)
 
 **Benefits:**
 
@@ -171,7 +170,6 @@ estimatedMinutes = (distanceKm / 5) * 60 * 1.4
 **Challenge**: Respect third-party API limits
 
 - Nominatim: 1 req/sec
-- Overpass: 1 req/sec
 - OpenRouteService: 40 req/min (free tier)
 
 **Solution**: Sequential fetching with 1-second delays
@@ -192,13 +190,12 @@ for (const route of routes) {
 
 **Data Files** (Cache-first):
 
-- `schools.json`, `stations.json` by state
+- `schools.json`, `stations.json`, `supermarkets.json` by state
 - User manually triggers updates (settings)
 
 **API Responses** (Network-first with cache fallback):
 
 - Geocode: 30-day TTL
-- Supermarkets: 7-day TTL
 - Walking routes: 30-day TTL
 - Falls back to stale cache if offline
 
@@ -370,6 +367,7 @@ useEffect(() => {
    npm run data:all        # Process both
    npm run data:schools    # Schools only
    npm run data:stations   # Stations only
+   npm run data:supermarkets  # Build Melbourne supermarkets from BBBike extract
    ```
 3. Output appears in `public/data/{state}/`
 4. Commit the processed files
@@ -489,7 +487,7 @@ npm run preview  # Serves production build
 
 ```typescript
 import { haversineDistance } from "./haversine.js"
-import { findNearbySupermarkets } from "../src/lib/overpass.js"
+import { estimateWalkingTime } from "../src/lib/haversine.js"
 ```
 
 **Incorrect:**
@@ -717,29 +715,24 @@ vercel --prod
 3. **Data Loading**
    - Load `public/data/{state}/schools.json`
    - Load `public/data/{state}/stations.json`
+   - Load `public/data/{state}/supermarkets.json`
    - Parallel fetch (~100-300ms)
    - Cached in memory for session
 
-4. **Supermarkets Fetch**
-   - POST to `/api/supermarkets`
-   - Overpass API query (2km radius)
-   - Returns ~40 results, sorted by distance
-   - Takes ~1-3 seconds
-
-5. **Client-side Filtering**
-   - Haversine distance calculation for all schools/stations
+4. **Client-side Filtering**
+   - Haversine distance calculation for all schools/stations/supermarkets
    - Filter: distance <= 2.5km
    - Apply sector filters (Government/Catholic/Independent)
    - Sort by distance
    - Take top 10 per category
    - ~10ms for 10k records
 
-6. **Display Results**
+5. **Display Results**
    - Render POI cards with estimated times (gray badges)
    - Show markers on map
    - Display immediately (0-100ms from data load)
 
-7. **Background Route Fetching**
+6. **Background Route Fetching**
    - For each selected POI (3 total):
      - POST to `/api/walking-routes`
      - Wait 1 second (rate limiting)
@@ -747,7 +740,7 @@ vercel --prod
      - Draw polyline on map
    - Total: ~3-4 seconds for all routes
 
-8. **User Interaction**
+7. **User Interaction**
    - Click alternative POI
    - Check route cache
    - If not cached, fetch route
@@ -932,7 +925,6 @@ interface RouteRequest {
 ### API Response Times
 
 - Geocode: ~200-500ms (Nominatim)
-- Supermarkets: ~1-3 seconds (Overpass)
 - Walking routes: ~500ms each (OpenRouteService)
 
 ### Data Loading

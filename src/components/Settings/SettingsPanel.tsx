@@ -201,12 +201,6 @@ export function SettingsPanel({
                   ttlLabel="30 days"
                 />
                 <CacheStatRow
-                  label="Supermarket searches"
-                  count={cacheStats.supermarkets.count}
-                  max={cacheStats.supermarkets.max}
-                  ttlLabel="7 days"
-                />
-                <CacheStatRow
                   label="Walking routes"
                   count={cacheStats.walkingRoutes.count}
                   max={cacheStats.walkingRoutes.max}
@@ -236,7 +230,6 @@ export function SettingsPanel({
 
             {cacheStats &&
               cacheStats.geocode.count === 0 &&
-              cacheStats.supermarkets.count === 0 &&
               cacheStats.walkingRoutes.count === 0 &&
               cachedStates.length === 0 && (
                 <p className="text-xs text-gray-500 dark:text-gray-400">
