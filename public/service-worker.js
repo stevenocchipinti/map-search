@@ -18,7 +18,7 @@ const DATA_CACHE_NAME = `map-search-data-${CACHE_VERSION}`
 const TILES_CACHE_NAME = `map-search-tiles-${CACHE_VERSION}`
 
 // App shell files to cache on install
-const APP_SHELL = ["/", "/index.html", "/manifest.json", "/icon.svg"]
+const APP_SHELL = ["/", "/index.html", "/manifest.json", "/favicon.svg"]
 
 // Data files (will be cached on demand by state)
 const DATA_FILES_PATTERN = /\/data\/[a-z]+\/(schools|stations|supermarkets)\.json$/

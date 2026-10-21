@@ -253,7 +253,7 @@ export function useServiceWorker(): ServiceWorkerResult {
       const keys = await cache.keys()
 
       // Extract state codes from cached URLs
-      const statePattern = /\/data\/([a-z]+)\/(schools|stations)\.json$/
+      const statePattern = /\/data\/([a-z]+)\/(schools|stations|supermarkets)\.json$/
       const states = new Set<string>()
 
       keys.forEach(request => {
