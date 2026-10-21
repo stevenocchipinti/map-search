@@ -2,8 +2,12 @@
  * Service Worker for Local Search PWA
  *
  * Handles caching for GET requests only:
- * - App Shell: Cache-first (HTML, CSS, JS, icons)
- * - Data Files: Cache-first with network fallback (schools, stations, supermarkets)
+ * - Pages (HTML): Network-first with cache fallback, so new deploys show up
+ *   on the next load and the app still opens offline (or after a few seconds
+ *   on a very slow connection)
+ * - App Shell: Cache-first (CSS, JS, icons; built assets have hashed names)
+ * - Data Files: Stale-while-revalidate (schools, stations, supermarkets), so
+ *   searches are instant but refreshed data still arrives in the background
  * - Map Tiles: Cache-first with LRU eviction
  *
  * NOTE: API endpoints (geocode, walking-routes) all use POST
@@ -12,7 +16,7 @@
  * expiration instead.
  */
 
-const CACHE_VERSION = "v1"
+const CACHE_VERSION = "v2"
 const CACHE_NAME = `map-search-${CACHE_VERSION}`
 const DATA_CACHE_NAME = `map-search-data-${CACHE_VERSION}`
 const TILES_CACHE_NAME = `map-search-tiles-${CACHE_VERSION}`
@@ -25,6 +29,9 @@ const DATA_FILES_PATTERN = /\/data\/[a-z]+\/(schools|stations|supermarkets)\.jso
 
 // Map tiles from Carto
 const TILES_PATTERN = /https:\/\/.*\.basemaps\.cartocdn\.com/
+
+// How long a page load waits for the network before using the cached copy
+const NAVIGATION_TIMEOUT_MS = 3000
 
 // Maximum cache sizes
 const MAX_TILES_CACHE_SIZE = 100
@@ -94,9 +101,13 @@ self.addEventListener("fetch", event => {
   }
 
   // Handle different resource types with appropriate strategies
-  if (DATA_FILES_PATTERN.test(url.pathname)) {
-    // Data files: Cache-first (they rarely change)
-    event.respondWith(cacheFirstStrategy(request, DATA_CACHE_NAME))
+  if (request.mode === "navigate") {
+    // Pages: Network-first so a new deploy's index.html (and its new asset
+    // hashes) is picked up straight away
+    event.respondWith(networkFirstStrategy(request, CACHE_NAME))
+  } else if (DATA_FILES_PATTERN.test(url.pathname)) {
+    // Data files: serve the cached copy, refresh it in the background
+    event.respondWith(staleWhileRevalidateStrategy(event, request, DATA_CACHE_NAME))
   } else if (TILES_PATTERN.test(url.href)) {
     // Map tiles: Cache-first with LRU eviction
     event.respondWith(
@@ -150,6 +161,75 @@ async function cacheFirstStrategy(request, cacheName, maxSize = null) {
 
     throw error
   }
+}
+
+/**
+ * Network-first strategy: Try the network, fall back to cache when offline or
+ * when the network takes longer than NAVIGATION_TIMEOUT_MS
+ */
+async function networkFirstStrategy(request, cacheName) {
+  const cache = await caches.open(cacheName)
+  const network = fetch(request).then(response => {
+    // Update the cache even if we've already answered from it
+    if (response && response.status === 200) {
+      cache.put(request, response.clone())
+    }
+    return response
+  })
+  // Avoid an unhandled rejection if we answer from cache and the network
+  // later fails
+  network.catch(() => {})
+
+  const cached = async () =>
+    (await cache.match(request)) || (await cache.match("/"))
+
+  try {
+    return await Promise.race([
+      network,
+      new Promise((_, reject) =>
+        setTimeout(() => reject(new Error("timeout")), NAVIGATION_TIMEOUT_MS)
+      ),
+    ])
+  } catch (error) {
+    const fallback = await cached()
+    if (fallback) {
+      console.log(`[SW] Serving cached page (${error.message}):`, request.url)
+      return fallback
+    }
+    // Nothing cached yet (first visit), so keep waiting for the network
+    return network
+  }
+}
+
+/**
+ * Stale-while-revalidate strategy: Serve from cache immediately and update
+ * the cache from the network in the background
+ */
+async function staleWhileRevalidateStrategy(event, request, cacheName) {
+  const cache = await caches.open(cacheName)
+  const cached = await cache.match(request)
+
+  const refresh = fetch(request)
+    .then(response => {
+      if (response && response.status === 200) {
+        return cache.put(request, response.clone()).then(() => response)
+      }
+      return response
+    })
+    .catch(error => {
+      console.log("[SW] Background refresh failed:", request.url, error)
+      return undefined
+    })
+
+  if (cached) {
+    // Keep the worker alive until the background refresh finishes
+    event.waitUntil(refresh)
+    return cached
+  }
+
+  const response = await refresh
+  if (response) return response
+  throw new Error(`Failed to fetch ${request.url}`)
 }
 
 /**

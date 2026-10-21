@@ -183,15 +183,20 @@ for (const route of routes) {
 
 ### 5. Caching Strategy (Service Worker)
 
+**Pages** (Network-first):
+
+- `index.html` comes from the network so new deploys appear on the next load
+- Falls back to the cached page when offline
+
 **App Shell** (Cache-first):
 
-- HTML, CSS, JS, icons, manifest
-- Always serve from cache, update in background
+- CSS, JS, icons, manifest (built assets have content-hashed names)
 
-**Data Files** (Cache-first):
+**Data Files** (Stale-while-revalidate):
 
 - `schools.json`, `stations.json`, `supermarkets.json` by state
-- User manually triggers updates (settings)
+- Served from cache instantly, refreshed from the network in the background
+- Vercel serves `/data/*` with `max-age=0, must-revalidate`, so refreshes are cheap 304s
 
 **API Responses** (Network-first with cache fallback):
 
