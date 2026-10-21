@@ -4,7 +4,8 @@
  * All API endpoints run on localhost:3001 during development (Vercel CLI)
  * and on the deployed domain in production.
  *
- * Responses are cached in localStorage with TTL-based expiration so that
+ * Responses are cached in localStorage (size-limited, least recently used
+ * evicted first) so that
  * page refreshes and repeat searches don't hit the network unnecessarily.
  * The service worker cannot cache these because they use POST requests
  * (Cache API only supports GET).

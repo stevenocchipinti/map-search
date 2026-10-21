@@ -1,35 +1,33 @@
 /**
- * API Response Cache - TTL-based localStorage caching for API responses
+ * API Response Cache - size-limited localStorage caching for API responses
  *
  * Provides persistent caching across page refreshes for POST API responses
  * that the service worker cannot cache (Cache API only supports GET requests).
  *
- * Cache strategy:
- * - Geocode responses: 30-day TTL (addresses don't move)
- * - Walking routes: 30-day TTL (routes rarely change)
+ * Entries never expire: addresses don't move and walking routes rarely
+ * change, and keeping them means repeat searches work offline. Each cache
+ * type has a max entry count instead, and the least recently used entries
+ * are evicted first.
  *
- * Eviction: FIFO when exceeding max entries per cache type.
  * Clearing: localStorage.clear() wipes everything (used by Settings > Clear Cache).
  */
 
 const CACHE_PREFIX = "api_cache:"
 
-/** TTL values in milliseconds */
-const TTL = {
-  geocode: 30 * 24 * 60 * 60 * 1000, // 30 days
-  walkingRoutes: 30 * 24 * 60 * 60 * 1000, // 30 days
-} as const
-
-/** Max entries per cache type */
+/**
+ * Max entries per cache type. Entries are small (~300 characters), so even
+ * full caches use well under 1MB of the ~5MB localStorage quota.
+ */
 const MAX_ENTRIES = {
-  geocode: 50,
-  walkingRoutes: 100,
+  geocode: 200,
+  walkingRoutes: 1000,
 } as const
 
-type CacheType = keyof typeof TTL
+type CacheType = keyof typeof MAX_ENTRIES
 
 interface CacheEntry<T> {
   data: T
+  // When the entry was last stored or read, used for LRU eviction
   timestamp: number
 }
 
@@ -41,7 +39,7 @@ function buildKey(type: CacheType, identifier: string): string {
 }
 
 /**
- * Get a cached value if it exists and is within TTL
+ * Get a cached value if it exists, marking it as recently used
  */
 export function getCached<T>(type: CacheType, identifier: string): T | null {
   try {
@@ -50,18 +48,21 @@ export function getCached<T>(type: CacheType, identifier: string): T | null {
     if (!raw) return null
 
     const entry: CacheEntry<T> = JSON.parse(raw)
-    const age = Date.now() - entry.timestamp
-
-    if (age > TTL[type]) {
-      // Expired - remove it
-      localStorage.removeItem(key)
-      return null
-    }
+    entry.timestamp = Date.now()
+    localStorage.setItem(key, JSON.stringify(entry))
 
     return entry.data
   } catch {
     return null
   }
+}
+
+/**
+ * Mark a cached value as recently used without reading it, for callers that
+ * keep their own in-memory copy (e.g. hydrated walking routes)
+ */
+export function touchCached(type: CacheType, identifier: string): void {
+  getCached(type, identifier)
 }
 
 /**
@@ -88,7 +89,7 @@ export function setCached<T>(
 }
 
 /**
- * Get all entries for a cache type, sorted oldest-first
+ * Get all entries for a cache type, sorted least recently used first
  */
 function getEntriesForType(
   type: CacheType
@@ -111,13 +112,13 @@ function getEntriesForType(
     }
   }
 
-  // Sort oldest first
+  // Sort least recently used first
   entries.sort((a, b) => a.timestamp - b.timestamp)
   return entries
 }
 
 /**
- * Remove oldest entries if we exceed the max for this cache type
+ * Remove least recently used entries if we exceed the max for this cache type
  */
 function evictIfNeeded(type: CacheType): void {
   const max = MAX_ENTRIES[type]
@@ -132,7 +133,7 @@ function evictIfNeeded(type: CacheType): void {
 
   if (toRemove.length > 0) {
     console.log(
-      `[API Cache] Evicted ${toRemove.length} old ${type} entries (max: ${max})`
+      `[API Cache] Evicted ${toRemove.length} least recently used ${type} entries (max: ${max})`
     )
   }
 }
@@ -183,12 +184,11 @@ export interface ApiCacheStats {
 }
 
 /**
- * Count live (non-expired) entries per cache type.
+ * Count entries per cache type.
  * Used by the settings panel to display meaningful cache info.
  */
 export function getApiCacheStats(): ApiCacheStats {
   const counts = { geocode: 0, walkingRoutes: 0 }
-  const now = Date.now()
 
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i)
@@ -199,19 +199,9 @@ export function getApiCacheStats(): ApiCacheStats {
     const colonIdx = withoutPrefix.indexOf(":")
     if (colonIdx === -1) continue
     const type = withoutPrefix.slice(0, colonIdx) as CacheType
-    if (!(type in TTL)) continue
+    if (!(type in MAX_ENTRIES)) continue
 
-    try {
-      const raw = localStorage.getItem(key)
-      if (!raw) continue
-      const entry: CacheEntry<unknown> = JSON.parse(raw)
-      const age = now - entry.timestamp
-      if (age <= TTL[type]) {
-        counts[type]++
-      }
-    } catch {
-      // Skip corrupt entries
-    }
+    counts[type]++
   }
 
   return {
@@ -240,14 +230,9 @@ export function getAllCachedWalkingRoutes<T>(): Map<string, T> {
       if (!raw) continue
 
       const entry: CacheEntry<T> = JSON.parse(raw)
-      const age = Date.now() - entry.timestamp
-
-      // Only return entries within TTL
-      if (age <= TTL.walkingRoutes) {
-        // Extract the route identifier (everything after the prefix)
-        const routeKey = key.slice(prefix.length)
-        routes.set(routeKey, entry.data)
-      }
+      // Extract the route identifier (everything after the prefix)
+      const routeKey = key.slice(prefix.length)
+      routes.set(routeKey, entry.data)
     } catch {
       // Skip corrupt entries
     }

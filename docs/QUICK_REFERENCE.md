@@ -238,15 +238,14 @@ interface WalkingRoute {
 
 **Strategy**: Network-First with Smart Caching
 
-**TTL Values**:
+**Limits** (no expiry, least recently used evicted first):
 
-- Geocode: 30 days
-- Supermarkets: 7 days
-- Walking routes: 30 days
+- Geocode: 200 entries
+- Walking routes: 1000 entries
 
 **Smart Behaviors**:
 
-- Fresh cache (within TTL) → instant return
+- Cached → instant return
 - Request in-flight → deduplicate
 - Network fails → stale cache fallback
 
@@ -438,7 +437,7 @@ if (sharedText) {
 - [x] Service worker registers
 - [x] Static assets cached
 - [x] Data files cached
-- [x] API responses cached with TTL
+- [x] API responses cached (size-limited LRU)
 - [x] Offline mode works
 - [x] PWA installable
 

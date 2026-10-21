@@ -12,7 +12,7 @@ import { useState, useCallback, useEffect } from "react"
 import type { WalkingRoute, RouteRequest, POI, SearchLocation } from "../types"
 import { fetchWalkingRoutes } from "../lib/api-client"
 import { getCacheKey } from "../utils/format"
-import { getAllCachedWalkingRoutes } from "../lib/api-cache"
+import { getAllCachedWalkingRoutes, touchCached } from "../lib/api-cache"
 
 interface WalkingRoutesResult {
   routeCache: Map<string, WalkingRoute>
@@ -102,6 +102,8 @@ export function useWalkingRoutes(): WalkingRoutesResult {
       // Check cache first
       const cached = routeCache.get(key)
       if (cached) {
+        // Keep frequently used routes from being evicted from localStorage
+        touchCached("walkingRoutes", key)
         return cached
       }
 

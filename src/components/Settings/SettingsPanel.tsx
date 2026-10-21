@@ -188,15 +188,13 @@ export function SettingsPanel({
                   label="Addresses"
                   count={cacheStats.geocode.count}
                   max={cacheStats.geocode.max}
-                  ttlLabel="30 days"
                 />
                 <CacheStatRow
                   label="Walking routes"
                   count={cacheStats.walkingRoutes.count}
                   max={cacheStats.walkingRoutes.max}
-                  ttlLabel="30 days"
                 />
-                <CacheStatRow label="Supermarkets" ttlLabel="Melbourne only" />
+                <CacheStatRow label="Supermarkets" note="Melbourne only" />
               </div>
             )}
 
@@ -246,19 +244,21 @@ interface CacheStatRowProps {
   label: string
   count?: number
   max?: number
-  ttlLabel: string
+  note?: string
 }
 
-function CacheStatRow({ label, count, max, ttlLabel }: CacheStatRowProps) {
+function CacheStatRow({ label, count, max, note }: CacheStatRowProps) {
   return (
     <div className="flex items-center justify-between">
       <div className="flex items-center gap-2 min-w-0">
         <span className="text-sm text-gray-700 dark:text-gray-300 truncate">
           {label}
         </span>
-        <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0">
-          · {ttlLabel}
-        </span>
+        {note && (
+          <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0">
+            · {note}
+          </span>
+        )}
       </div>
       {count !== undefined && (
         <span

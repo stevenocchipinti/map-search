@@ -198,11 +198,11 @@ for (const route of routes) {
 - Served from cache instantly, refreshed from the network in the background
 - Vercel serves `/data/*` with `max-age=0, must-revalidate`, so refreshes are cheap 304s
 
-**API Responses** (Network-first with cache fallback):
+**API Responses** (localStorage, `src/lib/api-cache.ts`):
 
-- Geocode: 30-day TTL
-- Walking routes: 30-day TTL
-- Falls back to stale cache if offline
+- POST responses, so the service worker can't cache them
+- Cache-first, no expiry: addresses don't move and routes rarely change
+- Size-limited (200 addresses, 1000 walking routes), least recently used evicted first
 
 **Map Tiles** (Cache-first with LRU):
 

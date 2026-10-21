@@ -103,27 +103,26 @@ This document captures all major decisions made during planning and implementati
 
 ---
 
-### ✅ TTL-Based localStorage Caching for API Responses
+### ✅ Size-Limited localStorage Caching for API Responses
 
-**Decision**: Cache API responses in localStorage with TTL-based expiration, not in the service worker.
+**Decision**: Cache API responses in localStorage with a max entry count and least-recently-used eviction (no expiry), not in the service worker.
 
 **Rationale**:
 
 - All API endpoints use POST requests, which the Cache API cannot store
 - localStorage persists across page refreshes and browser restarts
-- TTL expiration ensures data freshness without manual intervention
+- No expiry: addresses don't move and walking routes rarely change, and keeping entries means repeat searches keep working offline (an earlier 30-day TTL only made offline searches stop working after a month)
 - Deterministic cache keys from request parameters enable efficient lookups
-- FIFO eviction prevents unbounded storage growth
+- Least-recently-used eviction prevents unbounded storage growth while keeping frequently used entries
 
-**TTL Values**:
+**Max Entries** (entries are ~300 characters, well under the ~5MB quota):
 
-- Geocoding: 30 days (addresses don't change)
-- Supermarkets: 7 days (stores change occasionally)
-- Walking routes: 30 days (routes rarely change)
+- Geocoding: 200
+- Walking routes: 1000
 
 **Smart Behaviors**:
 
-- If cached data is fresh (within TTL), return immediately (no API call)
+- If cached data exists, return immediately (no API call) and mark it recently used
 - Walking routes hydrated into in-memory cache on mount for instant access
 - Duplicate in-flight requests prevented by useWalkingRoutes loading state
 - If network fails and no cache exists, error propagates normally
@@ -571,7 +570,7 @@ console.groupEnd()
 
 1. **Simple is better**: Avoided over-engineering (no border detection, no pre-caching)
 2. **Progressive enhancement works**: Users get value immediately, accuracy comes later
-3. **Caching is powerful**: Eliminates most API calls with smart TTL strategy
+3. **Caching is powerful**: Eliminates most API calls by keeping responses locally
 4. **Mobile-first pays off**: Easier to enhance than shrink
 5. **Documentation matters**: This file will save hours of future debugging
 

@@ -206,9 +206,10 @@ cache.match(request).then(cached => {
 
 ### API Response Caching (localStorage)
 
-API endpoints (`/api/geocode`, `/api/supermarkets`, `/api/walking-routes`) all
-use POST requests, which the Cache API cannot store. Instead, responses are
-cached client-side in localStorage with TTL-based expiration.
+API endpoints (`/api/geocode`, `/api/walking-routes`) both use POST requests,
+which the Cache API cannot store. Instead, responses are cached client-side in
+localStorage. Entries don't expire; each type has a max entry count and the
+least recently used entries are evicted first.
 
 **Implementation**: `src/lib/api-cache.ts`
 
@@ -221,17 +222,10 @@ if (cached) return cached  // No network request made
 setCached("geocode", cacheKey, data)
 ```
 
-**TTL Values**:
+**Max Entries** (least recently used evicted when exceeded):
 
-- Geocode: 30 days (addresses don't move)
-- Supermarkets: 7 days (stores change occasionally)
-- Walking routes: 30 days (routes rarely change)
-
-**Max Entries** (FIFO eviction when exceeded):
-
-- Geocode: 50 entries
-- Supermarkets: 30 entries
-- Walking routes: 100 entries
+- Geocode: 200 entries
+- Walking routes: 1000 entries
 
 **Cache Persistence**:
 
@@ -244,9 +238,9 @@ setCached("geocode", cacheKey, data)
 
 1. URL params preserve search coordinates
 2. State data files served from service worker cache (GET, cache-first)
-3. Geocode/supermarket/route responses served from localStorage cache
+3. Geocode/route responses served from localStorage cache
 4. Walking routes hydrated into React state from localStorage
-5. No network requests needed if all data is within TTL
+5. No network requests needed for a repeat search
 
 ## Sequential API Fetching Strategy
 
